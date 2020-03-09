@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Heat balance of a sheep. {#heatbalance}
 
 Heat Balance of a Sheep in the Sun. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes.
@@ -103,6 +108,7 @@ In this expression $v (m s^{-1})$ is the velocity of the fluid relative to the b
 | $4\times10^4-4\times10^5$ | $0.024Re^{0.81}$ |
 
 To obtain some feeling for the magnitude of the convective term $H$, let us assume that our wind speed is $v = 2.0 m s^{-1} = 4.5 \mbox{ miles } hr^{-1}$. Then $Re = (2.0)(0.5)/(1.5\times10^{-5}) = 6.67\times 10^4$, and we calculate $Nu = (0.024)(6.67\times10^4)^{0.81}= 194$. The thermal conductivity $k_a$ of air at 20°C is approximately $2.57\times10^{-2} W m^{-1}°C^{-1}$, and since the surface area $A_h$ of the sheep is $5\pi\times10^{-1}m^2$,
+
 \begin{eqnarray}
 H&=&(194)(2.57\times10^{-2})(5\pi\times10^{-1})(T_h-T_a)/.50=15.7(T_h-T_a)W \\
 &=&2.35W,\; \mbox{ if } \;T_h = 25°C\; \mbox{ and }\; T_a = \mbox{10°C.}
@@ -171,6 +177,7 @@ and, since $a_5=1$, $A_h=\pi dL$ and $A_5=1/2A_h$,
 R_{Nh}-R_{Na}=-\pi dL\sigma(T_h^4-T_a^4)(1/2-\varepsilon)
 (\#eq:23)
 \end{equation}
+
 We now write
 \begin{equation}
 R_{Nh}\stackrel{.}{=}R_{Na}=2T_a^3(T_h-T_a)A_h
@@ -361,7 +368,7 @@ The conversion is 5.30g of grass day$^{-1}$ W$^{-1}$.
 |                            |  0.32 |  0.50 |
 |----------------------------|:-----:|:-----:|
 | Required M (W)             | 228.9 | 83.21 |
-| Required grass (g day^-1^) |  1213 |  441  |
+| Required grass (g day^-1) |  1213 |  441  |
 
 
 4. The problem assumes the same conditions as problem 1 for $T_a = 30°C$ and $d = 0.32$ and $0.50 m$, but $R_{Na}$ will be larger.
@@ -384,17 +391,18 @@ The animals need to lower their metabolic rate or seek shade if they are to prev
 $$M=H$$
 or
 $$\frac{T_b-T_s}{Z_f}=\frac{Nuk_w}{d}A_s(T_s-T_w)$$
+
 \begin{eqnarray}
-\alpha&=&\frac{Nuk_wA_s}{d} \\
+\alpha &=&\frac{Nuk_wA_s}{d} \\
 T_s&=&\frac{T_b+Z_f\alpha T_w}{1+Z_f\alpha} \\
 k_f&=&2.052\times10^{-1}Wm^{-1}C^{-1} \\
 r_s&=&2.5m\;\;\;\;r_b=2.0m\;\;\;\;A=392.7m^2 \\
 Z_f&=&6.923\times10^{-3}°CW^{-1}k_w=0.57Wm^{-1}°C^{-1} \\
-\alpha&=&\frac{1.64\cdot10^3\cdot392.7\cdot 0.57}{10}=30.571\times10^4W°C^{-1} \\
+\alpha &=&\frac{1.64\cdot10^3\cdot392.7\cdot 0.57}{10}=30.571\times10^4W°C^{-1} \\
 T_s&=&\frac{33+254.1\times5}{1+254.1}=5.11°C \\
 M&=&\frac{33-5.11}{0.006923}=4028W \\
 &=&3.48\times10^5kJ\:day^{-1} \mbox{ with perfect efficiency} \\
-&=&2.32\times10^6kJ\:day^{-1} \mbox{ at 15 percent conversion efficiency} \\
+&=&2.32\times10^6kJ\:day^{-1} \mbox{ at 15 percent conversion efficiency}
 \end{eqnarray}
 
 6. There are several ways one might attack this problem. One could simply assume a conduction model in which the water surrounding the animal offered no resistance to heat flow ($T_s = 5.0°C$). A Nusselt number calculation could be made using the Grashof number as in problem 9. Or finally, as is done here, one could assume that still water is equivalent to some very slow velocity (in air this is about 0.10 m s$^{-1}$).
@@ -403,7 +411,7 @@ M&=&\frac{33-5.11}{0.006923}=4028W \\
 Nu&=&80.5\;\;\;\;\;\;\;\alpha=1.802\times10^3 \\
 T_s&=&\frac{33+6.923\times10^{-3}\cdot1.802\cdot10^3\cdot5}{1+6.923\cdot10^{-3}\cdot1.802\cdot10^3} \\
 M&=&\frac{33-7.08}{0.006923}=3.744\times10^3W \\
-&=& \mbox{ 93 % of metabolic costs while swimming at over } 4 m s^{-1} \\
+&=& \mbox{ 93 percent of metabolic costs while swimming at over 4 m/s}
 \end{eqnarray}
 
 | | |**0.02**|**0.07**
@@ -415,7 +423,7 @@ $Z_f$| | |0.4544
 $Z_n$| |12.018|2.3063
 $\beta$ (W°C-1)| |0.08321|0.36222
 $\alpha$ (W°C-1)|10°|$\frac{0.04833}{0.13154}$|$\frac{0.36285}{0.72507}$
-| |30°|$\frac{0.05009}{0.13330}$|$\frac{0.38567}{.74789}$
+| |30°|$\frac{0.05009}{0.13330}$|$\frac{0.38567}{0.74789}$
 $R_{Na}$|10|-0.13812|-1.7404
 | |30|-0.2096|-2.6409
 $T_h$ (°C)|10|27.29|22.09
@@ -438,10 +446,12 @@ $$r(-k\frac{dT}{dr})=\mbox{ const}$$
 $$dT=c_1\frac{1}{r}dr$$
 $$T(r)=c_1lnr+c$$
 (c) Using Eqn. \@ref(eq:22) and 
+
 \begin{eqnarray}
 R_{Na}&=&a_1A_1S+a_2A_2s+a_3A_3(S+s) \\
-&+&a_4A_4R+a_5A_5\sigma T_a^4-\varepsilon\sigma A_nT_a^4 \\
+&+&a_4A_4R+a_5A_5\sigma T_a^4-\varepsilon\sigma A_nT_a^4 
 \end{eqnarray}
+
 we substract the two
 $$R_{Nh}-R_{Na}=a_5A_5\sigma T_h^4-\varepsilon\sigma A_hT_h^4-a_5A_5\sigma T_a^4-\varepsilon\sigma A_hT_a^4$$
 making the following assumptions:

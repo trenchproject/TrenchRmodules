@@ -848,10 +848,7 @@ The effect of changing color is also illustrated in Figure \@ref(fig:fig-climate
 
 Increased wind speed increases the relative importance of the convective term and couples the body temperature of the animal more closely to the air temperature. Figure \@ref(fig:fig-climatespace-7) shows the influence of wind speed on the energy balance. As the wind speed increases from $0.1 m s^{-1}$ to $10.0 m s^{-1}$ the physiological line becomes more horizontal.
 
-<<<<<<< HEAD
 We can visualize the effect of size by picking body masses of 0.001, 0.10, 10.0 and 100.0 kg to insert in Equation \@ref(eq:8) and plotting the lines in Figure \@ref(fig:fig-climatespace-8). As size or weight increases, the boundary layer thickens, decreasing the rate of convective exchange (a smaller component of the heat balance). This is readily seen algebraically by re-examining the convection term. We conclude that increasing size has the same effect as decreasing wind speed. It is also clear from Figure \@ref(fig:fig-climatespace-8) that most lizards (less than 1.0 kg) are closely tied to the air temperature.
-=======
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 ```{r fig-climatespace-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The hatched area is the climate space of a lizard with absorptivity to sunlight of 0.8. If the animal decreases its absorptivity to 0.6 it can increase the air temperature it can withstand from 30 to 32.5 degrees C. The darkened areas refer to problem 4.'}
 knitr::include_graphics('figures/fig-climatespace-6.png')
@@ -859,7 +856,7 @@ knitr::include_graphics('figures/fig-climatespace-6.png')
 
 There are several observations which suggest that the thermoregulation behaviors we might predict from considering this model indeed occur. Porter and Gates (1969) observed that the small lizard (*Uta stansburiana*) (0.004 kg approximately) which is tightly coupled to the air temperature climbs rocks early in the morning. They hypothesized that this behavior was taken to avoid the cold layer of air at the ground surface. Alternatively we might ask what options are available if the lizard does not want to become too hot. From Equation \@ref(eq:8) we see that there are at least two strategies. The animal can reduce the absorbed radiation $Q_a$ by going to a shaded environment or it can increase its convective heat loss by climbing bushes where the wind speed is greater and $T_a$ is lower. Descriptions of the daily activity patterns of the desert iguana (*Dipsosaurus dorsalis*) from field observations, show that both these options are used. The lizard emerges from its burrow in the morning. As $T_a$ and $Q_a$ increase, the animals move into the shade, then higher into the shrubs, and finally retreat Porter et al. (1973) found good agreement between the predicted behavior from their heat transfer model and the morning activity pattern of this species.
 
-```{r fig-climatespace-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='To investigate the effect of windspeed on the thermal balance, values of V from 0.1 to 10.0 m s-1 are used in equation 8.'}
+```{r fig-climatespace-7, echo=FALSE, fig.cap='To investigate the effect of windspeed on the thermal balance', fig.fullwidth=FALSE, fig.height=4}
 knitr::include_graphics('figures/fig-climatespace-7.png')
 ```
 
