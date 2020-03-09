@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Turbulence and Fluid Flow {#turbulence}
 
 Turbulence and Fluid Flow: Perspectives
@@ -415,7 +420,7 @@ Two things are of importance to note. First of all, since $Re$ is proportional t
 
 4. Equation \@ref(eq:10) is $u_*=kz\frac{d\bar u }{dz}$  
 rearranging terms $\frac{k}{u_*}d\bar u =\frac{dz}{z}$  
-integrating $\frac{k}{u_+} \int_0^\bar u d \bar u=\int_0^z\frac{dz}{z}$
+integrating $\frac{k}{u_+} \int_0^{\bar u} d \bar u=\int_0^z\frac{dz}{z}$
 $$\frac{k\bar u}{u_*}=lnz-ln0$$
 But, $ln0$ is infinite, so we introduce a small constant called the **surface roughness** ($z_0$), and integrate from $z=z_0$ to $z=z$. Thus, we are saying that the velocity is zero a small distance ($z_0$) above the surface
 $$\frac{k}{u_*}=lnz-lnz_0=ln(\frac{z}{z_0})$$
