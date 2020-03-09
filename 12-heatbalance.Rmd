@@ -126,7 +126,7 @@ Here $T_h$ is the absolute (Kelvin) temperature of the surface of the body in ou
 
 **page missing**
 
-```{r fig-heatbalance-3, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Temperature profile across fleece and air. delta represents boundary layer thickness, Th=fleece-tip temperature, Ta = air temperature.'}
+```{r fig-heatbalance-3, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Temperature profile across fleece and air. Delta represents boundary layer thickness, Th=fleece-tip temperature, Ta = air temperature.'}
 knitr::include_graphics('figures/fig-heatbalance-3.png')
 ```
 
@@ -165,7 +165,7 @@ $$M+R_+=R_-+C+H+E$$
 Our objective at this point is to calculate $T_h$, the fleece-tip temperature. We now define net radiation received by the animal at the fleece tips as
 \begin{eqnarray}
 R_{Nh}=R_+-R_-&=&a_1A_1S+a_2A_2s+a_3A_s(S+s) \\
-&-&a_4A_4R_a+a_5A_5R_g-\varepsilon A_h\sigma T_h^4 \\
+&-&a_4A_4R_a+a_5A_5R_g-\varepsilon A_h\sigma T_h^4 
 (\#eq:22)
 \end{eqnarray}
 and $R_{Na}$ as the net radiation which would be received in the same environment if the fleece tips were at air temperature, so that
@@ -186,7 +186,7 @@ R_{Nh}\stackrel{.}{=}R_{Na}=2T_a^3(T_h-T_a)A_h
 To obtain this relationship, we have assumed $\varepsilon\stackrel{.}{=}1$ and have used an approximation based on the Taylor Series expansion of $T_h^4 = g(T_h)$, say, near the point $T_h = T_a$:
 \begin{eqnarray}
 T_h^4=g(T_h)&=&g(T_a)+g^,(T_a)(T_h-T_a)+... \\
-&=&T_a^4+4T_a^3(T_h-T_a)+... \\
+&=&T_a^4+4T_a^3(T_h-T_a)+... 
 \end{eqnarray}
 Since from Eqns. \@ref(eq:1) and
 $$M-E+R_{Nh}=H+C$$
@@ -252,6 +252,7 @@ $$\frac{T_b-T_h}{Z_h+Z_f}=4.6W$$
 $$R_{Nh}=R_+-R_-=387.3+16.2+104.1+2.05+386.2-757.7=336W$$
 3. convective heat loss
 $$\frac{Nu}{d}k_aA_h(T_h-T_a)=341W$$
+
 Thus, in this case, net incoming radiation at the fleece tips is approximately equal to convective heat loss and metabolic heat loss by conduction from the body through fat and fleece is very small. This is due in part to the high "radiant" temperature at the fleece tips and the resulting low temperature gradient between body and fleece tips.
 
 These examples illustrate only some of the types of problems we can solve with this technique. We have shown that, if the sheep's environment is given in terms of temperature, wind speed, and incoming radiation, it is possible to determine the range of rates of body metabolism and evaporative losses due to respiration and sweating that will allow the animal to maintain thermal equilibrium. Porter and Gates (1969) have worked out the converse problem for a number of animals: given a range of metabolic rates that the animal can maintain as well as its physical characteristics (size, thickness of fur, etc.), the range of environmental conditions within which it can survive can be calculated.
@@ -295,8 +296,8 @@ $5.7 \times 10^{-3} J cm^{-1} s^{-1} °C^{-1}$.
 7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39°C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
 
 8. a. Derive equation \@ref(eq:5) from equation \@ref(eq:6).  
-    b. Derive equation \@ref(eq:7) from equation \@ref(eq:6).  
-    c. Derive equation \@ref(eq:23) in the text.
+b. Derive equation \@ref(eq:7) from equation \@ref(eq:6).  
+c. Derive equation \@ref(eq:23) in the text.
 
 9. When heat transfer depends on air movements caused by differences in fluid density (i.e., buoyancy effects), the Nusselt number can be shown to depend on another dimensionless parameter, the Grashof number,
 $$Gr=\frac{\beta gd^3}{v^2}(T_h-T_a)$$
@@ -362,7 +363,7 @@ Diameter (m)
 
 
 3. 5060 kcal day$^{-1}$ = 245.25 W  
-    990 kcal day$^{-1}$ = 47.98 W  
+990 kcal day$^{-1}$ = 47.98 W  
 The conversion is 5.30g of grass day$^{-1}$ W$^{-1}$.
 
 |                            |  0.32 |  0.50 |
