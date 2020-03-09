@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Calculus-Integration. {#calcint}
 
 author: Hertzberg, R. H.
@@ -677,8 +682,8 @@ $$\frac{d}{dy} \int^b_a f(x,y)dx = \int^b_a (\partial f / \partial y)dx$$
 Thus we evaluate:
 
 \begin{equation}
-\frac{\partial (E^2)}{\partial A} &=& \int^{30}_3 \frac{\partial f}{\partial A} dx \\
-&=& \int^{30}_3 2(7.3[x+3.5]e^{-0.05x}-Ax-B)(-x)dx \\
+\frac{\partial (E^2)}{\partial A} = \int^{30}_3 \frac{\partial f}{\partial A} dx \\
+= \int^{30}_3 2(7.3[x+3.5]e^{-0.05x}-Ax-B)(-x)dx \\
 (\#eq:18)
 \end{equation}
 

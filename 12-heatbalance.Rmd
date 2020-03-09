@@ -26,8 +26,8 @@ To fix our ideas, we choose an unshorn domestic sheep as our study organism. The
 
 **page missing**
 
-```{r fig-heatbalance-2, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, Ta, Tb, Ts, Th and Tf are the temperatures of the air, body, skin, hair tips and fat; rb,rs, and rh the corresponding radii of the cylinder; and Ka, Kb and Kf the thermal conductivities of air,fleece and fat.'}
-knitr::include_graphics('figures/fig-heatbalance-2.png')
+```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, Ta, Tb, Ts, Th and Tf are the temperatures of the air, body, skin, hair tips and fat; rb,rs, and rh the corresponding radii of the cylinder; and Ka, Kb and Kf the thermal conductivities of air,fleece and fat.'}
+knitr::include_graphics('figures/fig-heatbalance-1.png')
 ```
 
 present, we will assume that $T_b > T_h$, so that metabolic heat is lost to the environment, and will defer a discussion of the factors which combine to determine the surface temperature, $T_h$, which is of paramount importance in our model.
@@ -120,7 +120,7 @@ Here $T_h$ is the absolute (Kelvin) temperature of the surface of the body in ou
 
 **page missing**
 
-```{r fig-heatbalance-3, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Temperature profile across fleece and air. $\delta$ represents boundary layer thickness, Th=fleece-tip temperature, Ta = air temperature.'}
+```{r fig-heatbalance-3, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Temperature profile across fleece and air. delta represents boundary layer thickness, Th=fleece-tip temperature, Ta = air temperature.'}
 knitr::include_graphics('figures/fig-heatbalance-3.png')
 ```
 
