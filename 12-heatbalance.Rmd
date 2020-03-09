@@ -6,7 +6,7 @@ output:
 # Heat balance of a sheep. {#heatbalance}
 
 Heat Balance of a Sheep in the Sun. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes.
-author: Hatheway, W. H.
+author: Hatheway, W. H. (Note: module was editted to fill in missing pages)
 
 ***
 ## Preface
@@ -30,20 +30,37 @@ If we assume that the animal is in thermal equilibrium with its environment, our
 To fix our ideas, we choose an unshorn domestic sheep as our study organism. The sheep is convenient because it is a familiar animal which has been thoroughly studied by a number of veterinary scientists (e.g., Blaxter, 1962; Brockway, McDonald and Pullar, 1965; Joyce, Blaxter and Park, 1966). In addition, the energy balance of the sheep has been studied by Priestley (1957), Monteith (1973), Porter and Gates (1969), and Vera et al. (1975). Experimental work by Walsberg et al. (1978) and the theoretical studies of Kowalski (1973) have shown that under certain environmental conditions it becomes important to take into consideration the penetration of radiation and wind into the wool. These complications are not included in the present model, which must therefore be considered only a first approximation to a more correct approach. In the present module, we adopt the general method of analysis put forward by Porter and Gates, but in may details we follow Priestley and, in some cases, Monteith.
 
 **page missing**
+Assuming that an animal's body temperature is constrant (steady state), energy input to the animals must equal energy out. We can write the animal's energy balance as follows:
+\begin{equation}
+M + R_+ = R_- + C + H + E
+(\#eq:1)
+\end{equation}
+where $M$ is the metabolic rate, $R_+$ is the amount of radiation absorbed by the animal surface, $R_-$ is the thermal radiation emitted from the animal surface, $C$ is the heat conducted from the animal to any surface it is in contact with, $H$ is the heat loss from the animal to the environment via convection, and E is evaporative heat loss.
 
-```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, Ta, Tb, Ts, Th and Tf are the temperatures of the air, body, skin, hair tips and fat; rb,rs, and rh the corresponding radii of the cylinder; and Ka, Kb and Kf the thermal conductivities of air,fleece and fat.'}
+##Heat transfer within the animal
+Heat is conducted between the surface of the animal and the body core with the direction determined by the relative temepratures of the animal's core and surface. Heat transfer can be modelled by approximating the animal as a series of concentric cylinders (Figure \@ref(fig:fig-thermintro-1)). Within the animal's core, metabolic heat production is offset by respiratory moisture loss to determine the animal's core body temperature $T_b$. We additionally indicate the skin ($T_s$), fat layer ($T_f$), hair tip ($T_h$), and air ($T_a$) temperatures. 
+
+Heat is conducted within the animal based on the thickness of each layer. Boundary layer thickness, which determiens rates of conduction, is proportion to the two-roots root of the diameter of the animal and is influences by surface roughness, shape, and orientation.  The distances from the core are indicated by the radii of cycliners corresponding to the body ($r_b$), skin ($r_s$), and hair tips ($r_h$). 
+
+The thickness of the boundary layer varies invesely with the one-third root of windspeed. Heat is conducted across the boundary layer and then carried away by convection associated with free-air movement. The convection coefficient describing rates of heat flow through each layer is given by:
+\begin{equation}
+h_c=K \frac{V^{1/3}}{r^{2/3}}
+(\#eq:2)
+\end{equation}
+where $V$ is the wind speed in cm/sec, $r$ is the radius of the layer in cm, and $K$ is a constant describing thermal conductivity. The thermal condonductivities of the fat ($K_f$), fleece ($K_h$), and air ($K_a$) additionally detmine rates of heat exchange.
+
+```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, Ta, Tb, Ts, Th and Tf are the temperatures of the air, body, skin, hair tips and fat; rb,rs, and rh the corresponding radii of the cylinders; and Ka, Kb and Kf the thermal conductivities of air,fleece and fat.'}
 knitr::include_graphics('figures/fig-heatbalance-1.png')
 ```
 
-present, we will assume that $T_b > T_h$, so that metabolic heat is lost to the environment, and will defer a discussion of the factors which combine to determine the surface temperature, $T_h$, which is of paramount importance in our model.
+At present, we will assume that $T_b > T_h$, so that metabolic heat is lost to the environment, and will defer a discussion of the factors which combine to determine the surface temperature, $T_h$, which is of paramount importance in our model.
 
-The means by which metabolic energy is transported in the form of
-heat from the body to the fleece tips is conduction. It was observed by
-Fourier in 1822 that the rate of movement of heat $Q(W)$ perpendicular to surface of area $A$ through a material such as body fat or wool is proportional to the gradient of temperature $T(K)$ in the material:
+The means by which metabolic energy is transported in the form of heat from the body to the fleece tips is conduction. It was observed by Fourier in 1822 that the rate of movement of heat $Q(W)$ perpendicular to surface of area $A$ through a material such as body fat or wool is proportional to the gradient of temperature $T(K)$ in the material:
 \begin{equation}
 Q=-kAdT/dr
 (\#eq:4)
 \end{equation}
+
 Here $k (W m^{-1} K^{-1})$ is a thermal conductivity coefficient, a property of the conducting material, and $r (m)$ is the distance from the center of the cylinder measured along a radius. The steady-state temperature in a cylinder, such as our idealized sheep, is given by Laplace's equation,
 \begin{equation}
 d^2T/dr^2+\frac{1}{r}dT/dr=0
@@ -54,7 +71,9 @@ $$q_sA_s=q_s(2\pi r_sL)=q_h(2\pi r_hL)$$
 so that $q_br_b=q_sr_s=q_hr_h=$ const, or
 $$rq(r)=\mbox{const}$$
 
-**pages missing**
+**2 pages missing**
+
+define Z rates [conduction rates]
 
 where
 \begin{equation}
@@ -79,15 +98,13 @@ M=E_r-\frac{E_s}{1+\frac{Z_f}{Z_h}}\frac{T_b-T_h}{Z_h+Z_f}
 \end{equation}
 This important equation governs the rate of heat movement away from the animal's body. Body heat produced by metabolism $M$ is removed by evaporative losses due to respiration $E_r$ and sweating $E_s/(1 + Z_f/Z_h)$ and by conduction of sensible heat to the fleece tips $(T_b - T_h)/(Z_h + Z_f)$. Total evaporation is then
 
-
-**pages missing**
+**2 pages missing**
 
 ```{r fig-heatbalance-2, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Energy gained by sheep from envrionment. Symbols are as follows: S= direct solar radiation, s=sky radiation, rS = reflected solar radiation; Rg, Ra = long-wave (thermal) radiation from ground and air, respectively.'}
 knitr::include_graphics('figures/fig-heatbalance-2.png')
 ```
 
-past the solid surface, and it is to this effect that we now direct our
-attention.
+past the solid surface, and it is to this effect that we now direct our attention.
 
 It is customary to rewrite Eqn. \@ref(eq:18) in the form
 \begin{equation}
@@ -122,7 +139,13 @@ All warm bodies lose heat energy by emitting long-wave thermal radiation accordi
 R_\_=\varepsilon A_h\sigma T_h^4
 (\#eq:20)
 \end{equation}
-Here $T_h$ is the absolute (Kelvin) temperature of the surface of the body in our case, the fleece tips of the sheep, $\sigma$ is the Stefan-Boltzmann constant, and $\varepsilon$ is the emissivity of the body. Total heat energy lost this way by the sheep is then $R_\_ = (\pi dL)(\varepsilon\sigma T_h^4)$. To obtain a rough
+Here $T_h$ is the absolute (Kelvin) temperature of the surface of the body in our case, the fleece tips of the sheep, $\sigma$ is the Stefan-Boltzmann constant, and $\varepsilon$ is the emissivity of the body. Total heat energy lost this way by the sheep is then $R_\_ = (\pi dL)(\varepsilon\sigma T_h^4)$. 
+
+**ADD**
+To obtain a rough estimate of heat loss by radiation, we substitute the following parameter values dL=0.5*1.0, 
+Assume Th=20C, 293K
+sigma: 5.67x10^{-8}
+
 
 **page missing**
 

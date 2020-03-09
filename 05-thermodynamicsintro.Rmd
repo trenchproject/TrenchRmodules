@@ -131,7 +131,7 @@ There are four kinds of heat transfer mechanisms relevant to this discussion: (1
 
 The process by which energy can be transmitted without the presence of an intervening medium is called **radiation**. All objects, living and nonliving, radiate energy. The amount and kind (wavelength in the electromagnetic spectrum) of energy depends on the temperature and physical characteristics of the radiating body. Figure \@ref(fig:fig-thermintro-2) shows the electromagnetic spectrum, which is characterized by either of two scales, frequency $f$ or wavelength $\lambda$, (the scales are inversely proportional). Radiation is a field phenomenon having both particulate (photons) and wave characteristics. Acoustic waves, however, require an intervening medium. The physics of radiation is described in greater detail in other modules.
 
-```{r fig-thermintro-2, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Electromagnetic spectrum as a function of both frequency (f) (Hertz or cycles sec) and wavelength ($\\lambda$) (meters). From Byers, H.R. 1974. General Meteorology. P. 8.'}
+```{r fig-thermintro-2, echo=FALSE, fig.height=2, fig.fullwidth=FALSE, fig.cap='Electromagnetic spectrum as a function of both frequency (f) (Hertz or cycles sec) and wavelength ($\\lambda$) (meters). From Byers, H.R. 1974. General Meteorology. P. 8.'}
 knitr::include_graphics('figures/fig-thermintro-2.png')
 ```
 
@@ -170,11 +170,11 @@ where $P$ is the external pressure. For reversible processes the system pressure
 
 One such relationship is known as the Ideal Gas Law. Historically it can be arrived at from experimental evidence but it can also be derived using a statistical mechanics approach. It is called an equation of state because it describes the relation among the macroscopic variables of the system ($P$, $V$, $T$) at an equilibrium state. Thus these variables $P$, $V$, $T$ are called state variables.
 
-```{r fig-thermintro-3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Ideal gas contained in a piston chamber. $\\Delta Q$ will be zero if the wall surrounding the system is perfectly insulated (adiabatic). $\\Delta W$ represents the change it work accomplished by moving the piston.'}
+```{r fig-thermintro-3, echo=FALSE, fig.height=3, fig.fullwidth=FALSE, fig.cap='Ideal gas contained in a piston chamber. $\\Delta Q$ will be zero if the wall surrounding the system is perfectly insulated (adiabatic). $\\Delta W$ represents the change it work accomplished by moving the piston.'}
 knitr::include_graphics('figures/fig-thermintro-3.png')
 ```
 
-```{r fig-thermintro-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Pressure-volume diagram. A cycle is composed of going from 1 to 2, 2 to 3 and so on back to 1. When the cycle is composed of isothermal and adiabatic processes it is called a Carnot Cycle. Other cycles can involve constant pressure or constant volume steps. Note that $T_1$ is greater than $T_2$.'}
+```{r fig-thermintro-4, echo=FALSE, fig.height=3, fig.fullwidth=FALSE, fig.cap='Pressure-volume diagram. A cycle is composed of going from 1 to 2, 2 to 3 and so on back to 1. When the cycle is composed of isothermal and adiabatic processes it is called a Carnot Cycle. Other cycles can involve constant pressure or constant volume steps. Note that $T_1$ is greater than $T_2$.'}
 knitr::include_graphics('figures/fig-thermintro-4.png')
 ```
 
