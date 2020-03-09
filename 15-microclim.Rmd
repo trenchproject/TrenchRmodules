@@ -65,7 +65,7 @@ library(raster)
 path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' # put your path here for microclim data folder
 
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-solar<-brick(paste0("solar_radiation_Wm2/SOLR_",month,".nc")) # read the file into memory
+solar<-brick(paste0(path,"solar_radiation_Wm2/SOLR_",month,".nc")) # read the file into memory
 ```
 
 The paste command combined our microclimate data path, the name of the folder holding the data, and then the month we wanted, thus specifying the file "microclim\_aust/solar\_radiation\_Wm2/SOLR_1.nc". We use the `brick` function of the 'raster' package to load this multi-layer file. There are 24 layers, one for each hour of the day. Let's plot the first one - in the plot command we can specify this using double square brackets.

@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
 # Calculus-Integration. {#calcint}
 
 author: Hertzberg, R. H.
@@ -599,11 +594,7 @@ Many experiments produce data as pairs of numbers
 $$(x_1,y_1),(x_2,y_2), \ldots, (x_n,y_n)$$
 The underlying relationship is often assumed to be linear, that is, the model is assumed to be
 $$y = Ax + B, \text{ where }A,B = \text{constants}$$
-<<<<<<< HEAD
 The points ($x_i,y_i$) are usually not collinear (see figure \@ref(fig:fig-calcint-18)) due to experimental error, inaccuracies in the model, round-off error during measurement, etc. Thus the problem is to choose the constants $A,B$ so the line matches the data points as closely as possible. The method of least squares uses the sum of squared deviations for the error function, $E^2$ (see figure \@ref(fig:fig-calcint-18)):
-=======
-The points ($x_i,y_i$) are usually not collinear (see figure 18) due to experimental error, inaccuracies in the model, round-off error during measurement, etc. Thus the problem is to choose the constants $A,B$ so the line matches the data points as closely as possible. The method of least squares uses the sum of squared deviations for the error function, $E^2$ (see figure \@ref(fig:fig-calcint-18)):
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 \begin{equation}
 E^2 = \sum^n_{i=1} [y(x_i)-y_i]^2
@@ -687,7 +678,7 @@ Thus we evaluate:
 
 \begin{equation}
 \frac{\partial (E^2)}{\partial A} &=& \int^{30}_3 \frac{\partial f}{\partial A} dx \\
-&=& \int^{30}_3 2(7.3[x+3.5]e^{-0.05x}-Ax-B(-x)dx \\
+&=& \int^{30}_3 2(7.3[x+3.5]e^{-0.05x}-Ax-B)(-x)dx \\
 (\#eq:18)
 \end{equation}
 
@@ -959,7 +950,7 @@ Handbook of Mathematical Tables, 1964. Weast, R. C., Selby, M. and Hodgman, C. D
 a. Write the definite integral representing $A(T)$ in terms of a general function $P(t)$. 
 b. Evaluate the integral for general $T\geq0$ by substituting the above exponential function for P(t).
 c. In 1973 (say t = 0), the world use of copper was estimated to be 6.99 x $10^9$ kg, and the demand was increasing at an exponential rate of 8% per year. How many tons of copper will then be used from 1973 to 1983? (Hint: First find $P_0$, k, T and then use your answer to b.)
-d. If the rate of growth in demand for copper remains at 8% and no new reserves are discovered, when will the world **missing word** copper be exhausted? Assume the reserves in 1973 are 336 x $10^9$ kg, and no recycling occurs.
+d. If the rate of growth in demand for copper remains at 8% and no new reserves are discovered, when will the world supply of copper be exhausted? Assume the reserves in 1973 are 336 x $10^9$ kg, and no recycling occurs.
 
 2. Five thousand trout, each weighing 80 grams, are planted in a lake. The population size, N(t), declines exponentially according to the equation $N(t) = 5000e^{-0.5t}$ where t is measured in months. Each fish grows according to the formula $W(t) = 10000 (1 - 0.8e^{-0.05t})$ where W is the weight in grams. 
 

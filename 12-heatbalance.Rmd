@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
 # Heat balance of a sheep. {#heatbalance}
 
 Heat Balance of a Sheep in the Sun. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes.
@@ -21,7 +16,7 @@ Moreover, it is clear that there is a good deal of variation in temperature regi
 
 For this reason, it is exceedingly important to identify the factors which determine an animal's temperature and to understand the relative magnitude of their contributions. How important is sweating as a cooling process? Is a layer of fat as effective as one of feathers or fur in preventing bodily heat loss? Is there a relationship between body size and heat loss, and if so, how large must a warm-blooded aquatic animal be if it is to survive, say, in the waters surrounding Antarctica? It is only by carefully calculating the contributions of sweating, insulation, body size, ambient temperature, radiation, wind, humidity, and other factors to an animal's heat balance that we can make useful answers to these questions.
 
-Accordingly, it is the objective of this module to provide the reader with some of the intellectual equipment he will need to calculate the heat balance of an organism. Our approach will be to develop a mathematical model that represents the energy balance of an animal, to discuss briefly the theory of some of the components of the model (e.g., heat conduction, convection, and absorption and emission of radiation), and to apply these theories by working out the details of the energy budget of a familiar animal. Since the principles are perfectly general, the techniques developed here may be used for any organism, plant or animal, or the reader may even wish to apply them to such practical problems as determining the effect of additional insulation on his yearly household fuel bill or the practicality of attempting to capture solar energy in Seattle, Chicago, or New York!
+Accordingly, it is the objective of this module to provide the reader with some of the intellectual equipment they will need to calculate the heat balance of an organism. Our approach will be to develop a mathematical model that represents the energy balance of an animal, to discuss briefly the theory of some of the components of the model (e.g., heat conduction, convection, and absorption and emission of radiation), and to apply these theories by working out the details of the energy budget of a familiar animal. Since the principles are perfectly general, the techniques developed here may be used for any organism, plant or animal, or the reader may even wish to apply them to such practical problems as determining the effect of additional insulation on his yearly household fuel bill or the practicality of attempting to capture solar energy in Seattle, Chicago, or New York!
 
 An animal can exchange heat with its environment by absorption or emission of radiation, by evaporation of water from its surface, and by conductive or convective exchanges of heat with its surroundings. Moreover, heat moves from the animal's body through its layers of insulation (fat and fleece) by the process of conduction. We will confine our attention to the equilibrium or "steady state" case, in which rates of heat loss and gain are equal. A solution to the more complicated situation, in which the rate at which the organism gains or loses heat in response to changing environmental conditions, is available in the computer model of Vera et al. (1975). 
 
@@ -31,7 +26,9 @@ To fix our ideas, we choose an unshorn domestic sheep as our study organism. The
 
 **page missing**
 
->Figure 1
+```{r fig-heatbalance-2, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, Ta, Tb, Ts, Th and Tf are the temperatures of the air, body, skin, hair tips and fat; rb,rs, and rh the corresponding radii of the cylinder; and Ka, Kb and Kf the thermal conductivities of air,fleece and fat.'}
+knitr::include_graphics('figures/fig-heatbalance-2.png')
+```
 
 present, we will assume that $T_b > T_h$, so that metabolic heat is lost to the environment, and will defer a discussion of the factors which combine to determine the surface temperature, $T_h$, which is of paramount importance in our model.
 
@@ -80,7 +77,9 @@ This important equation governs the rate of heat movement away from the animal's
 
 **pages missing**
 
->Figure 2
+```{r fig-heatbalance-2, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Energy gained by sheep from envrionment. Symbols are as follows: S= direct solar radiation, s=sky radiation, rS = reflected solar radiation; Rg, Ra = long-wave (thermal) radiation from ground and air, respectively.'}
+knitr::include_graphics('figures/fig-heatbalance-2.png')
+```
 
 past the solid surface, and it is to this effect that we now direct our
 attention.
@@ -121,7 +120,9 @@ Here $T_h$ is the absolute (Kelvin) temperature of the surface of the body in ou
 
 **page missing**
 
->Figure 3
+```{r fig-heatbalance-3, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Temperature profile across fleece and air. $\delta$ represents boundary layer thickness, Th=fleece-tip temperature, Ta = air temperature.'}
+knitr::include_graphics('figures/fig-heatbalance-3.png')
+```
 
 ###Direct Solar Radiation
 We may make an approximate calculation of $a_1A_1S$, the direct solar radiation absorbed by the sheep's body in unit time, if we consider the amount of sunlight intercepted by a cylinder of diameter $d$ and length $L$. Clearly, if the sun is directly overhead, the shadow cast by the cylinder on the ground has area $dL$. It follows immediately that the surface of the cylinder absorbs the same amount of radiation as would a plane of area $dL$. (The average amount of energy absorbed per unit area of the cylinder is then $a_1 (dL) S/(\pi dL/2) = 2a_1 S/\pi(W m^{-2})$, since the cylinder presents half its area to the sun.) As long as the sheep maintains its body at right angles to the sun, it intercepts the same fraction of incoming solar radiation.
