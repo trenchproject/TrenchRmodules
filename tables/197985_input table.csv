@@ -1,0 +1,31 @@
+﻿Name,Type and Dimensions,Range Limits,Description,,,,,,,
+NFC,Integer,"1,5","Identifies function to be plotted. 
+Default value: NFC = 1 ",,,,,,,
+P1,Real (6),"-10,10","Function parameters. Their physical significance and, to some extent, their range limits, depend on the particular function specified. 
+Default values: 
+P1 = 1,1,1,1,1,1 
+P2 = 1,1,1,1,1,1      ",,,,,,,
+P2,Real (6),"-10,10",,,,,,,,
+,,,,,,,,,,
+XSLICE,Real,"XMIN,XMAX","Deletes part of the function by setting Z=ZMIN for x < XSLICE, y<YSLICE. 
+Default values: 
+XSLICE = 0 
+YSLICE = 0",,,,,,,
+YSLICE,Real,"YMIN,YMAX",,,,,,,,
+,,,,,,,,,,
+NPLOTS,Integer,"1,6","The number of plots to be drawn. NPLOTS is used only when NFC=2. 
+Default value: NPLOTS = 1",,,,,,,
+,,,,,,,,,,
+IPRINT,Logical,".F., .T.","A logical value which causes the current values for all input variables (default as well as current user input) to be printed. 
+Default value: IPRINT = .F.    ",,,,,,,
+,,,,,,,,,,
+ECHO,Logical,".F., .T.","A logical value which causes the user's input to be echoed if ECHO = .T., or suppresses echoing if ECHO = .F. 
+Default value is: ECHO = .T.",,,,,,,
+,,,,,,,,,,
+NODFLT,Logical,".F., .T.","A logical value which suppresses the input of default values if NODFLT = .T. 
+Default value: NODFLT = .F.",,,,,,,
+,,,,,,,,,,
+FINIS,Logical,".F., .T.","A logical value which causes program termination if and only if FINIS = .T. 
+Default value: FINIS = .F.",,,,,,,
+,,,,,,,,,,
+"Note: XMIN, YMIN, determine the range of points to be plotted are internally for each function.",,,,,,,,,,
