@@ -40,14 +40,14 @@ where $M$ is the metabolic rate, $R_+$ is the amount of radiation absorbed by th
 ##Heat transfer by Conduction within the Animal
 Heat is conducted between the surface of the animal and the body core with the direction determined by the relative temperatures of the animal's core and surface. Heat transfer can be modeled by approximating the animal as a series of concentric cylinders (Figure \@ref(fig:fig-thermintro-1)). Within the animal's core, metabolic heat production is offset by respiratory moisture loss to determine the animal's core body temperature $T_b$. We additionally indicate the skin ($T_s$), fat layer ($T_f$), hair tip ($T_h$), and air ($T_a$) temperatures. 
 
-Heat is conducted within the animal based on the thickness of each layer. Boundary layer thickness, which determines rates of conduction, is proportion to the two-roots root of the diameter of the animal and is influences by surface roughness, shape, and orientation.  The distances from the core are indicated by the radii of cylinders corresponding to the body ($r_b$), skin ($r_s$), and hair tips ($r_h$). 
+Heat is conducted within the animal based on the thickness of each layer. Boundary layer thickness, which determines rates of conduction, is proportional to the two-roots root of the diameter of the animal and is influenced by surface roughness, shape, and orientation.  The distances from the core are indicated by the radii of cylinders corresponding to the body ($r_b$), skin ($r_s$), and hair tips ($r_h$). 
 
 The thickness of the boundary layer varies inversely with the one-third root of wind speed. Heat is conducted across the boundary layer and then carried away by convection associated with free-air movement. The convection coefficient describing rates of heat flow through each layer is given by:
 \begin{equation}
-h_c=K \frac{V^{1/3}}{r^{2/3}}
+h_L=k \frac{V^{1/3}}{r^{2/3}}
 (\#eq:2)
 \end{equation}
-where $V$ is the wind speed in cm/sec, $r$ is the radius of the layer in cm, and $K$ is a constant describing thermal conductivity. The thermal conductivities of the fat ($K_f$), fleece ($K_h$), and air ($K_a$) additionally determine rates of heat exchange.
+where $V$ is the wind speed in cm/sec, $r$ is the radius of the layer in cm, and $k$ is a constant describing thermal conductivity. The thermal conductivities of the fat ($k_f$), fleece ($k_h$), and air ($k_a$) additionally determine rates of heat exchange. (See further analysis below.)
 
 ```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, Ta, Tb, Ts, Th and Tf are the temperatures of the air, body, skin, hair tips and fat; rb,rs, and rh the corresponding radii of the cylinders; and Ka, Kb and Kf the thermal conductivities of air,fleece and fat.'}
 knitr::include_graphics('figures/fig-heatbalance-1.png')
@@ -348,47 +348,21 @@ Environmental temperature, energy metabolism and heat regulation in sheep. I. En
 
 Hales, J.R. and G.D. Brown. 1974. Net energetic and thermoregulatory efficiency during panting in the sheep. Comp. Bioch. Physiol. A 49:413-422:
 
-
-**pages missing**
 ##PROBLEMS
-1.Brockway et al. (1965. Evaporative heat-loss mechanisms in sheep. J. Physiology 179: 554-568) compared the contributions of metabolism and evaporative water loss in sheep. Use the model in this modules to estimate the total and evaporative heat losses at three temperatures (10,20,30 C) and three body diameters ($r_h$=0.32, 0.36, 0.50) corresponding the three fur thicknesses ($r_s$=0.3) adn compare your results to those of Brockway et al. We will assume windspeed v=0.2778 $m s^{-1}$. You can estiamte net radiation under the assumption that the sheep's body temperature is steady state such that the tips of its fleece are at air temperature. Assume the following relationships for how the kinematic viscosity of air $\nu$ and the thermal conductivity or air $k_a$ vary with temperature.
+1. Brockway et al. (1965. Evaporative heat-loss mechanisms in sheep. J. Physiology 179: 554-568) compared the contributions of metabolism and evaporative water loss in sheep. Use the model in this modules to estimate the total and evaporative heat losses at three temperatures (10, 20, 30 C) and three body diameters ($r_h$=0.32, 0.36, 0.50) corresponding to three fur thicknesses ($r_s$=0.3). Then roughly compare your results to heat losses measured by Brockway et al. We will assume windspeed v=0.2778 $m s^{-1}$. You can estimate net radiation under the assumption that the sheep's body temperature is steady state such that the tips of its fleece are at air temperature. Assume the following relationships for how the kinematic viscosity of air $\nu$ and the thermal conductivity or air $k_a$ vary with temperature.
 
 | $T_a$(°C)                              |  10  |  20  |  30  |
 |----------------------------------------|:----:|:----:|:----:|
 | $\nu \:(m^2s^{-1}\times10^{-5})$          | 1.42 | 1.51 | 1.60 |
 | $k_a \:(W m^{-1}°C^{-1}\times10^{-2})$ | 2.50 | 2.57 | 2.64 |
 
-2. Assuming the following parameters, estimate the metabolic rate (W) required to maintain a steady state body tempertature given $T_a$=XXXX ?????????
+2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39C given that $T_a$=2.92C for sheep with diameters of 0.32m and 0.5m? Assume, $k_a= 2.37\times10^{-2}Wm^{-1}C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$, $v=2.778ms^{-1}$, and evaporative heat losses $E$=20.4W.
+[Please check calcuations. Might change solution numbers so that T_b=3C.]
 
-\begin{eqnarray}
-k_a&=&2.37\times10^{-2}Wm^{-1}C^{-1} \\
-v&=&1.24\times10^{-5}m^2s^{-1} \\
-v&=&2.778ms^{-1} \\
-E&=&20.4W
-\end{eqnarray}
+3. Use the values in problem 2 but now assume $T_h$=20C and $T_a$=0C. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to offset convective heat loss if consuming 5.30g of grass per day is required to offset 1W? 
 
-Diameter (m)
-
-|                      |  0.32  |  0.50  |
-|:--------------------:|:------:|:------:|
-|          Re          |  71960 | 112016 |
-|          Nu          | 205.65 | 295.21 |
-|  $\alpha$ (W°C^-1^)  | 17.387 |  25.22 |
-|   $\beta$ (W°C^-1^)  |  4.43  |  0.705 |
-|     $R_{Na}$ (W)     | -38.08 | -59.51 |
-|      $T_h$ (°C)      |  -1.85 | -10.97 |
-| $\beta(T_b-T_h)$ (W) | 180.96 |  35.23 |
-|        $M$ (W)       |  201.4 |  55.6  |
-
-
-3. how much grass is required per day? 
-how much grass (in g day$^{-1}$) must it consume to maintain thermal equilibrium?
-
-4.
-The problem assumes the same conditions as problem 1 for $T_a = 30°C$ and $d = 0.32$ and $0.50 m$, but $R_{Na}$ will be larger.
-S= direct solar radiation=800 W, s=sky radiation= 150W
-
-from clouds). Suppose your sheep is standing in a pasture in which reflectivity of the grass is 25 percent. Wind speed is 1 km hr$^{-1}$. Assume cutaneous evaporative heat loss equals 4 kcal kg$^{-1}$ day$^{-1}$, but respiratory heat loss can vary. It is known that sheep can breathe as few as 20 times or as many as 250 times per minute, and the corresponding respiratory heat loss varies from 2.0 to 18.0 kcal kg$^{-1}$ day$^{-1}$. Calculate the rate of heat loss if the sheep is shorn (fleece 1 cm thick) and unshorn (fleece 10 cm thick). Assume that total metabolic heat produced is 1900 kcal day$^{-1}$. What does the comparison of these heat fluxes suggest about whether evaporative water loss will be sufficient for the cow to avoid overheating in the sun?
+4. Consider a sheep on a sunny day experiencing direct solar radiation of 800W and diffuse sky radiation of 150W. Suppose your sheep is standing in a pasture in which reflectivity of the grass is 25 percent. Wind speed is 1 km hr$^{-1}$. Assume cutaneous evaporative heat loss equals 4 kcal kg$^{-1}$ day$^{-1}$, but respiratory heat loss can vary. It is known that sheep can breathe as few as 20 times or as many as 250 times per minute, and the corresponding respiratory heat loss varies from 2.0 to 18.0 kcal kg$^{-1}$ day$^{-1}$. Calculate the rate of heat loss if the sheep is shorn (fleece 1 cm thick) and unshorn (fleece 10 cm thick). Assume that total metabolic heat produced is 1900 kcal day$^{-1}$. What does the comparison of these heat fluxes suggest about whether evaporative water loss will be sufficient for the cow to avoid overheating in the sun?
+**Likely needs more fixing**
 
 5. Now assume that instead of a sheep your study animal is a blue whale, which you can idealize as a cylinder 25 m long and 5 m in diameter, with a layer of blubber 50 cm thick. Its body temperature is maintained at 33°C. If the whale swims at a rate of 15 km hr$^{-1}$ through 5°C water, how much food (in kcal day$^{-1}$) must it consume to maintain thermal equilibrium? Take the Nusselt number $Nu$ as $0.332 (Re_x)^{1/2} \stackrel{.}{=} 1.6 \times 10^4$ (since $V = 15 km \:hr^{-1}$, $x \stackrel{.}{=} 10 m$, $v = 1.7 \times 10^{-5} m^2 sec^{-1}$).
 
@@ -397,9 +371,7 @@ $5.7 \times 10^{-3} J cm^{-1} s^{-1} °C^{-1}$.
 
 7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39°C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
 
-8. a. Derive equation \@ref(eq:5) from equation \@ref(eq:6).  
-b. Derive equation \@ref(eq:7) from equation \@ref(eq:6).  
-c. Derive equation \@ref(eq:23) in the text.
+8. Derive equation \@ref(eq:23) in the text.
 
 9. When heat transfer depends on air movements caused by differences in fluid density (i.e., buoyancy effects), the Nusselt number can be shown to depend on another dimensionless parameter, the Grashof number,
 $$Gr=\frac{\beta gd^3}{v^2}(T_h-T_a)$$
@@ -416,11 +388,7 @@ where $\beta$ is the coefficient of thermal expansion of the fluid, $g$ is the a
 | $\nu \:(m^2s^{-1}\times10^{-5})$          | 1.42 | 1.51 | 1.60 |
 | $k_a \:(W m^{-1}°C^{-1}\times10^{-2})$ | 2.50 | 2.57 | 2.64 |
 
-> tables
-
-**probably best to copy them because there is no way to put the letters from down to up**
-
-Nusselt Numbers Diameter (m)
+Nusselt Numbers Diameter (m) as a function of air temperature (C)
 
 |    | 0.32  | 0.36  | 0.50  |
 |----|-------|-------|-------|
@@ -428,7 +396,8 @@ Nusselt Numbers Diameter (m)
 | 20 | 36.96 | 39.76 | 48.75 |
 | 30 | 35.66 | 38.36 | 47.03 |
 
-
+>tables 
+**please add tables, noting "as a function of air temperature (C)"**
 
 From equation \@ref(eq:17), the total heat loss can be estimated at $M$ since $T_b$ is always greater than $T_h$. At moderate air temperatures (15 to 30°C), metabolic rate will be high and fairly constant which from the text we will take as $8800 kJ day^{-1}= 101.8 W$. At 10°C, however, it is assumed that evaporative water loss is 20.4 (W) and total heat loss is calculated.
 
@@ -462,14 +431,16 @@ Diameter (m)
 |        $M$ (W)       |  201.4 |  55.6  |
 
 
-3. 5060 kcal day$^{-1}$ = 245.25 W  
-990 kcal day$^{-1}$ = 47.98 W  
-The conversion is 5.30g of grass day$^{-1}$ W$^{-1}$.
+3. 
+The conversion is 5.30g of grass day$^{-1}$ W$^{-1}$. Using the relationship for convective heat loss convective heat loss,
+$$\frac{Nu}{d}k_aA_h(T_h-T_a)=341W,$$
+we estimate the following feeding requirements:
+
 
 |                            |  0.32 |  0.50 |
 |----------------------------|:-----:|:-----:|
-| Required M (W)             | 228.9 | 83.21 |
-| Required grass (g day^-1) |  1213 |  441  |
+| Required M (W)             | 48.739 | 76.03 |
+| Required grass (g day^-1) |  258.3 |  403.0  |
 
 
 4. The problem assumes the same conditions as problem 1 for $T_a = 30°C$ and $d = 0.32$ and $0.50 m$, but $R_{Na}$ will be larger.
@@ -515,6 +486,7 @@ M&=&\frac{33-7.08}{0.006923}=3.744\times10^3W \\
 &=& \mbox{ 93 percent of metabolic costs while swimming at over 4 m/s}
 \end{eqnarray}
 
+7.
 | | |**0.02**|**0.07**
 :-----:|:-----:|:-----:|:-----:
 $A_n$|(m^2^)|0.003142|.039584
@@ -538,15 +510,7 @@ Metabolic rate per unit area (W m^-2^)|10|350.1|194.8
 | |30|171.2|114.9
 
 
-8.(a)
-$$d\big(r\frac{dT}{dr}\big)=\frac{d\big(\frac{\mbox{const}}{-k}\big)}{dr}$$
-$$\frac{dT}{dr}+r\frac{d^2T}{dr^2}=0$$
-(b)
-$$r(-k\frac{dT}{dr})=\mbox{ const}$$
-
-$$dT=c_1\frac{1}{r}dr$$
-$$T(r)=c_1lnr+c$$
-(c) Using Eqn. \@ref(eq:22) and 
+8. Using Eqn. \@ref(eq:22) and 
 
 \begin{eqnarray}
 R_{Na}&=&a_1A_1S+a_2A_2s+a_3A_3(S+s) \\
@@ -581,4 +545,4 @@ X&=&\frac{k_aA_h}{d}0.48Gr^{0.25}(T_h-T_a) \\
 \end{eqnarray}
 
 >appendix 1
-
+**PLEASE ADD APPENDIX IF REASONABLY EASY TO DO SO**
