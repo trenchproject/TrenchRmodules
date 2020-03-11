@@ -835,12 +835,7 @@ points(Q_a_plot, T_a_plot, type="l")
 
 ```
 
-
-<<<<<<< HEAD
 To construct the climate space of the lizard, we need to make assumptions about the variables of Equation \@ref(eq:8). If $V$, $M_b$ and $T_b$ are specified as constants, there is a linear relationship between $Q_a$ and $T_a$. We illustrate this in Figure \@ref(fig:fig-climatespace-6) by plotting the upper line for $V = 1.0 m s^{-1}$, $M_b = 0.027 kg$, and $T_b = 39^\circ{C}$, and the bottom line with only $T_b$ changed to $3^\circ{C}$. The shaded region in Figure \@ref(fig:fig-climatespace-6) is the climate space of the reptile if the wind speed is the average value for the microclimate that the lizard inhabits, and if the body temperatures given are the upper and lower bounds that the animal can tolerate.
-=======
-To construct the climate space of the lizard, we need to make assumptions about the variables of Equation \@ref(eq:8). If $V$, $M_b$ and $T_b$ are specified as constants, there is a linear relationship between $Q_a$ and $T_a$. We illustrate this in Figure \@ref(fig:fig-climatespace-6) by plotting the upper line for $V = 1.0 m s^{-1}$, $M_b = 0.027 kg$, and $T_b = 39^\circ{C}$, and the bottom line with only $T_b$ changed to $3^\circ{C}$. The shaded region in Figure 6 is the climate space of the reptile if the wind speed is the average value for the microclimate that the lizard inhabits, and if the body temperatures given are the upper and lower bounds that the animal can tolerate.
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 Examination of the climate space diagram allows interpretation of several of the parameters of the heat energy balance model. The boundary points of the space indicate the extreme values that the lizard is likely to encounter and still survive. The lower left-hand point of the diagram tells us that if the reptile is exposed to a clear sky at night, its body temperature will remain high enough to survive as long as the air temperature is above $7^\circ{C}$. The opposite corner shows that $27^\circ{C}$ is the extreme air temperature that the lizard could endure if it were exposed to strong sunlight.
 
@@ -884,14 +879,9 @@ where
 * $h_c$ = convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$)
 * and $E_{ex}$ = energy flux due to respiration ($W m^{-2}$).
 </div>
-<<<<<<< HEAD
 
 Since there are internal sources and sinks of energy production ($M$ and $E_{ex}$) introduced into the equation we must consider heat transfer within the animal. Figure \@ref(fig:fig-climatespace-9) from Porter and Gates (1969) shows a schematic view of an idealized animal in the shape of a cylinder. The isothermal core is at body temperature $T_b$, the skin surface is at temperature $T_s$, and the outer surface of the feathers (or fur) is at $T_r$. Water loss through the skin, $E_{sw}$ (sweating), is included for generality. For the First Law of Thermodynamics and our steady state assumption we know that the energy crossing each boundary is the same. Beginning with the two inside circles the energy flow across the region of thickness $d_b$ is equal to the potential (temperature difference) times the resistance (but see problem 6).
-Therefore, [10]
-=======
-Since there are internal sources and sinks of energy production ($M$ and $E_{ex}$) introduced into the equation we must consider heat transfer within the animal. Figure 9 from Porter and Gates (1969) shows a schematic view of an idealized animal in the shape of a cylinder. The isothermal core is at body temperature $T_b$, the skin surface is at temperature $T_s$, and the outer surface of the feathers (or fur) is at $T_r$. Water loss through the skin, $E_{sw}$ (sweating), is included for generality. For the First Law of Thermodynamics and our steady state assumption we know that the energy crossing each boundary is the same. Beginning with the two inside circles the energy flow across the region of thickness $d_b$ is equal to the potential (temperature difference) times the resistance (but see problem 6).
-Therefore,
-
+Therefore, 
 \begin{equation}
 M - E_{ex} = \frac{k_b}{d_b} (T_b - T_s)
 (\#eq:10)
@@ -926,11 +916,7 @@ T_b + T_r = (M - E_{ex}) (\frac{d_b}{k_b} + \frac{d_f}{k_f})
 (\#eq:14)
 \end{equation}
 
-<<<<<<< HEAD
 Equation \@ref(eq:14) can be used to calculate the surface temperature $T_r$ if the other variables are specified. Once $T_r$ is known, Equation \@ref(eq:9) can be used to construct the climate space. Values for the parameters of Equations \@ref(eq:9) and \@ref(eq:14) are taken from Porter and Gates (1969) and reproduced in Table 1. These are used to construct the climate space of the cardinal in Figure \@ref(fig:fig-climatespace-10). The numerals correspond to those in the table. Given these conditions the cardinal needs increased metabolic output and thicker insulation to withstand cold conditions. Such low levels of radiation and air temperature will occur just before sunrise during the winter. One would expect the bird to minimize its heat loss by seeking a sheltered microhabitat to avoid radiating to the atmosphere and to reduce the wind speed. Porter and Gates (1969, p. 237) add, "By tucking its bill under its wing, the cardinal will also reduce surface area and water loss." It is also interesting to examine the range of conditions for which the animal can remain in steady state if its metabolic output is at a minimum and $T_b$ is constant. The set of lines numbered II and III illustrate these conditions. Line IV is the upper limit ofstress that the cardinal can endure.
-=======
-Equation \@ref(eq:14) can be used to calculate the surface temperature $T_r$ if the other variables are specified. Once $T_r$ is known, Equation \@ref(eq:9) can be used to construct the climate space. Values for the parameters of Equations \@ref(eq:9) and \@ref(eq:14) are taken from Porter and Gates (1969) and reproduced in Table 1. These are used to construct the climate space of the cardinal in Figure \@ref(fig:fig-climatespace-10). The numerals correspond to those in the table. Given these conditions the cardinal needs increased metabolic output and thicker insulation to withstand cold conditions. Such low levels of radiation and air temperature will occur just before sunrise during the winter. One would expect the bird to minimize its heat loss by seeking a sheltered microhabitat to avoid radiating to the atmosphere and to reduce the wind speed. Porter and Gates (1969, p. 237) add, "By tucking its bill under its wing, the cardinal will also reduce surface area and water loss." It is also interesting to examine the range of conditions for which the animal can remain in steady state if its metabolic output is at a minimum and $T_b$ is constant. The set of lines numbered II and III illustrate these conditions. Line IV is the upper limit of stress that the cardinal can endure.
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 ```{r fig-climatespace-9, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Concentric cylinder model of animal for heat transfer analysis. M=metabolism,$E_{ex}$=respiratory moisture loss, $E_{sw}$=moisture loss by sweating, $T_b$=body temperature, $T_s$=skin temperature, $T_r$= radiant surface temperature, $k_b$ = conductivity of fat, $k_f$ = conductivity of fur or feathers, $d_b$=thickness of fat, and $d_f$= thickness of fur or feathers. From Porter, W.P.and D.M. Gates. 1969. P. 230.'}
 knitr::include_graphics('figures/fig-climatespace-9.png')
@@ -964,11 +950,7 @@ where
 * $\frac{C_a P}{r_{hr}}$ = equivalent conductivity ($W m^{-2} {^{\circ}C^{-1}}$)
 </div>
 
-<<<<<<< HEAD
 The equivalent conductivity is due to a weighing of the resistance to convection and radiation transfer. Figures \@ref(fig:fig-climatespace-11) and \@ref(fig:fig-climatespace-12) taken from Monteith illustrate his method. Notice that there is a substantial metabolic contribution to the energy balance when the locust is flying and that when the insect is resting the environmental temperature is equal to the skin temperature $T_s$ which will also equal the body temperature. Furthermore, if the environmental conditions (air temperature, wind speed, and net radiation) are given, then a range of physiological parameters (metabolism, fat thickness, fur thickness, water loss) can be found that will allow the animal to remain in thermal equilibrium. If the physiological values are known the converse problem can be solved (Monteith 1973, p. 165). The climate space concept has the advantage that it has put an outer bound on the physical environment. It may also be easier to interpret because absorbed radiation is kept separate from reradiation. Monteith's method, however, allows one to visualize the relative magnitude of each resistance element between the animal and the environment. For an example of this method see Cena and Clark (1974).
-=======
-The equivalent conductivity is due to a weighing of the resistance to convection and radiation transfer. Figures 11 and 12 taken from Monteith illustrate his method. Notice that there is a substantial metabolic contribution to the energy balance when the locust is flying and that when the insect is resting the environmental temperature is equal to the skin temperature $T_s$ which will also equal the body temperature. Furthermore, if the environmental conditions (air temperature, wind speed, and net radiation) are given, then a range of physiological parameters (metabolism, fat thickness, fur thickness, water loss) can be found that will allow the animal to remain in thermal equilibrium. If the physiological values are known the converse problem can be solved (Monteith 1973, p. 165). The climate space concept has the advantage that it has put an outer bound on the physical environment. It may also be easier to interpret because absorbed radiation is kept separate from re radiation. Monteith's method, however, allows one to visualize the relative magnitude of each resistance element between the animal and the environment. For an example of this method see Cena and Clark (1974).
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 ```{r fig-climatespace-11, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Main features of temperature/heat-flux diagram for dry systems. $T_s$ is skin temperature, $T_o$ coat surface temperature, $T_e$ effective environment temperature, and $T_a$ air temperature. From Monteith, J. L. 1973. P. 165.'}
 knitr::include_graphics('figures/fig-climatespace-11.png')

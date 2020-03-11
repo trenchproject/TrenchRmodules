@@ -469,11 +469,7 @@ The cylinder can be described by revolving a straight line around the axis, as i
 knitr::include_graphics('figures/fig-calcint-9.png')
 ```
 
-<<<<<<< HEAD
 Unrolling the surface gives a rectangle whose width equals the circumference of the circular end face of the cylinder. This **surface area of revolution** equals the line length multiplied by the width, thus $A=2\pi r\:l$ (fig. \@ref(fig:fig-calcint-10))
-=======
-Unrolling the surface gives a rectangle whose width equals the circumference of the circular end face of the cylinder. This surface area of revolution equals the line length multiplied by the width, thus $A=2\pi r\:l$ (fig. \@ref(fig:fig-calcint-10))
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 ```{r fig-calcint-10, echo=FALSE, fig.height=4, out.width = "25%", fig.cap='Surface of unrolled cylinder.'}
 knitr::include_graphics('figures/fig-calcint-10.png')
