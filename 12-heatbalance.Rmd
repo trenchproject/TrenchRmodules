@@ -449,6 +449,7 @@ For $T_a = 10 C$ and $d = 0.50 m$, $A_h$ is 1.069. and
 For $T_a = 30 C$ and $d = 0.5 m$, $A_h = 1.58 \approx \pi/2$ (which is what it is specified as in the previous problem so could be the correct value?).
 Proving that either the equation or the answer is wrong.
 
+**End Notes**
 
 
 $\alpha$ and $\beta$ values (W °C^-1^) as a function of air temperature (°C) and diameter (m)
@@ -523,9 +524,16 @@ E&=&20.4W
 **Notes**  
 Here again, up to Nusselt number calculation is good. To get $\alpha$, $A_h$ needs to be known.
 
-$T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ with $\alpha = 17.387$, $\beta = 4.43$, $T_a = 2.92$, $T_b = 39$ and $R_{Na} = -38.08$ won't even produce the listed value of -1.85.
+Solving for $T_h$ using $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ with $\alpha = 17.387$, $\beta = 4.43$, $T_a = 2.92$, $T_b = 39$ (both converted to kelvin. won't work as celcius either) and $R_{Na} = -38.08$ won't even produce the listed value of -1.85.
 
 Maybe $T_a$ or $T_b$ is wrong?  
+
+I solved for $T_a$ and $T_b$ using $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$, and the values listed would only make sense if $T_a = -6.5 °C$ and $T_b = 23.6 °C$.
+
+At the same time, it says $\beta(T_b-T_h) = 180.96$ when $\beta = 4.43$ and $T_h = -1.85$, making $T_b = 39 °C$ correct.
+
+Overall, there seems to be issues on either the calculations they made, or the equations to be used.
+
 **End Notes**
 
 3. 
@@ -541,12 +549,23 @@ we estimate the following feeding requirements:
 
 ```
 Notes:  
-How was 341W calculated? What value of $A_h$ was used? We also have no information on $k_a$ when $T_a$ is 0 °C
+How was 341 W calculated? A_h isn't provided, and there are two options for d.
+A_h = 1.12 must have been used to get 341 W if d = 0.32.
+
+Not sure how M was calculated either...
 ```
 
 4. The problem assumes the same conditions as problem 1 for $T_a = 30°C$ and $d = 0.32$ and $0.50 m$, but $R_{Na}$ will be larger.
 
 $$R_{Na}=\frac{\pi dL}{2}\bigg(\frac{2}{\pi}\cdot 0.74\cdot 800+0.74\cdot 150+0.25\cdot 0.75\cdot \frac{2}{3}(950)-2\cdot0.1396\sigma T_a^4\bigg)$$
+
+**Notes**  
+This equation must be corresponding to 
+$$R_{Na}=a_1A_1S+a_2A_2s+a_3A_3(S+s)+a_4A_4R_a+a_5A_5\sigma T_a^4-\varepsilon A_h\sigma T_a^4$$
+but disregarding $a_4$ and $a_5$.  
+S = 800, s = 150 are stated but we are not provided with $L$, $a_1, a_2, a_3$ (= 0.74, 0.74, 0.75 respectively), $\varepsilon$ (= 0.1396), $A_1 = dL$, $A_2 = \frac{\pi dL}{2}$, $A_3 = \frac{\pi dL}{3}$, $A_h = \pi dL$, all assuming from comparing the equations.  
+**End notes**
+
 
 |                           |  0.32  |  0.50  |
 |:-------------------------:|:------:|:------:|
