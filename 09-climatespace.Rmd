@@ -18,7 +18,7 @@ In earlier modules of the thermodynamics series, we considered the application o
 \Delta U = M + Q_a - Q_e - LE - C - G
 (\#eq:climatespace-1)
 \end{equation}
-where ^[In some of the biological literature the units of Equation \@ref(eq:1) are cal cm^-2^ min^-1^, but we have adopted the mks system here. The reader may find Appendix I, modules already referenced and Fletcher (1977) helpful in making conversions.]
+where ^[In some of the biological literature the units of Equation \@ref(eq:climatespace-1) are cal cm^-2^ min^-1^, but we have adopted the mks system here. The reader may find Appendix I, modules already referenced and Fletcher (1977) helpful in making conversions.]
 <div class="nobullet">
 * $\Delta U$ = change in internal energy ($W m^{-2}$),
 * $M$ = metabolism ($W m^{-2}$ ),
