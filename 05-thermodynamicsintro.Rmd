@@ -316,8 +316,7 @@ $$\frac{988}{2 kg\cdot 4184Jkg^{-1}°C^{-1}}=0.12°C$$
 
 6. Class discussion
 
-7. (a) This is an ongoing area of research. Hamilton (1973) used a general comparative approach and found the hotter is faster up to about 40°C for many terrestrial organisms. Eppley (1972) found a similar result for phytoplankton. Calloway (1975) has suggested this is due to the thermodynamic properties of liquid water, the medium in which life processes are carried out. 
-**UPDATE**
+7. (a) This is an ongoing area of research. Hamilton (1973) used a general comparative approach and found the hotter is faster up to about 40°C for many terrestrial organisms. Eppley (1972) found a similar result for phytoplankton. Calloway (1975) has suggested this is due to the thermodynamic properties of liquid water, the medium in which life processes are carried out. [Many more recent examples are available.]
 
 (b) Having a higher body temperature implies faster growth and response to environmental stimuli. The homeothermic animals must process a great deal more energy for the same amount of growth but being "hot-blooded" they are more independent from the physical environment.
 

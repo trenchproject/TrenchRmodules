@@ -271,6 +271,7 @@ knitr::include_graphics('figures/fig-calcdiff-11.png')
 ##BIBLIOGRAPHY
 
 **CALCULUS**
+
 Ayres, F., Jr., 1964. Theory and Problems of Differential and Integral Calculus, second ed., Schaum's Outline Series, McGraw-Hill, New York.
 
 Clow, D. J. and Urquhart, N. S., 1974. Mathematics in Biology, Norton, New York.
@@ -282,6 +283,7 @@ Sternberg, W., Walker, R. J. et al., 1968. Calculus, A Computer Oriented Present
 Thomas, G. B., Jr., 1968. Calculus and Analytic Geometry, fourth ed., Addison-Wesley, Reading, Massachusetts.
 
 **TABLES**
+
 Handbook of Mathematical Functions, 1964. Abramowitz, M. and I. Stegun, eds., National Bureau of Standards, Applied Mathematics Series, 55, Washington, D.C.
 
 Handbook of Mathematical Tables, 1964. Weast, R. C., Selby, S. M. and C. D. Hodgman, eds., The Chemical Rubber Co., Cleveland. GENERAL

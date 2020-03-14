@@ -52,7 +52,7 @@ h_L=k \frac{V^{1/3}}{r^{2/3}}
 \end{equation}
 where $V$ is the wind speed in cm/s, $r$ is the radius of the layer in cm, and $k$ is a constant describing thermal conductivity. The thermal conductivities of the fat ($k_f$), fleece ($k_h$), and air ($k_a$) additionally determine rates of heat exchange. (See further analysis below.)
 
-```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, T~a~, T~b~, T~s~, T~h~ and T~f~ are the temperatures of the air, body, skin, hair tips and fat; r~b~,r~s~, and r~h~ the corresponding radii of the cylinders; and K~a~, K~b~ and K~f~ the thermal conductivities of air,fleece and fat.'}
+```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='Sheep idealized as a cylinder. In the diagram, T~a~, T~b~, T~s~, T~h~ and T~f~ are the temperatures of the air, body, skin, hair tips and fat; r~b~,r~s~, and r~h~ the corresponding radii of the cylinders; and K~a~, K~b~ and K~f~ the thermal conductivities of air, fleece and fat.'}
 knitr::include_graphics('figures/fig-heatbalance-1.png')
 ```
 
@@ -414,6 +414,7 @@ Walsberg G, Campbell J, King. 1978. Animal coat color and radiative heat gain: A
 $5.7 \times 10^{-3} J cm^{-1} s^{-1} °C^{-1}$.
 
 7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39°C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
+
 8. Derive equation \@ref(eq:23) in the text.
 
 9. When heat transfer depends on air movements caused by differences in fluid density (i.e., buoyancy effects), the Nusselt number can be shown to depend on another dimensionless parameter, the Grashof number,

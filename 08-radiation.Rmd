@@ -390,7 +390,7 @@ The actual mean measured opening for a bee is $20.9\mu$ (Barlow 1952, p. 671). A
 
 Most vertebrates are able to detect phase differences between ears, so that the interferometer is the correct model for calculating resolution. A consideration of Rayleigh's criterion shows that if all other parameters remain constant, the greater the separation of the detectors, the greater the resolving power of the system. Many organisms have optimized their ability to locate sound sources by maintaining a maximal separation between the ears. Another biological application of interferometers is illustrated in the following problem. 
 
-```{r fig-rad-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Insect eye - ommatidial diameter vs. the squareroot of eye radii. Points are 27 observations on hymenoptera (Barlow 1952). RECREATE FIGURE? using Barlow 1952, https://jeb.biologists.org/content/jexbio/29/4/667.full.pdf'}
+```{r fig-rad-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Insect eye - ommatidial diameter vs. the squareroot of eye radii. Points are 27 observations on hymenoptera (Barlow 1952).'}
 knitr::include_graphics('figures/fig-rad-4.png')
 ```
 
@@ -409,14 +409,14 @@ The derivation presented below is for the Doppler effect as it applies to the sp
 
 Let $V_L$ and $V_S$ denote the velocities of the listener and source respectively. The positive direction for the velocities is taken to be from the position of the observer to the position of the source. 
 
-An illustration of the situation when the listener. $L$ and the source $S$ are moving away from each other is presented in Fig. \@ref(fig:fig-rad-5). At time $t = 0$, the source is at point $X_T$. The outermost circle is the representation of the position of the wave front at time $t = T$, caused by a disturbance at the source at time $t = 0$. The speed of propagation $C_S$ of a wave in a nondispersive medium such as air is dependent only upon the characteristics of the supporting medium and is independent of the motion of the source relative to the medium. Thus the outermost circle in Fig. \@ref(fig:fig-rad-5) represents a sphere in 3 dimensions with center at $x_0$ and radius $C_ST$.
-
-The source has moved a distance $V_ST$ in the time $T$ so that
-$$x_0-x_T=V_ST$$
 ```{r fig-rad-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The source $S$, moving with velocity $V_S$ is emiting sound at a constant frequency, $f_S$. The wave fronts of this sound, which travel radially outward at velocity $C_S$, are compressed together (wavelength equals $\\lambda_F$) in front of the source and spread out (wavelength equals $\\lambda_B$) behind the source. By the time the wavefront emitted by the source at $x_0$ at time t = 0 has reached a radius of $C_ST$, the source has moved to a position $x_T$. The listner $L$ moving with velocity $V_L$ will hear the sound at a different frequency than as actually emitted by the source because it encounters wave fronts which are $\\lambda_B$ apart. An exact derivation is given in the text. [Adapted from Sears and Zemansky p. 327.]'}
 knitr::include_graphics('figures/fig-rad-5.png')
 ```
 
+An illustration of the situation when the listener $L$ and the source $S$ are moving away from each other is presented in Fig. \@ref(fig:fig-rad-5). At time $t = 0$, the source is at point $X_T$. The outermost circle is the representation of the position of the wave front at time $t = T$, caused by a disturbance at the source at time $t = 0$. The speed of propagation $C_S$ of a wave in a nondispersive medium such as air is dependent only upon the characteristics of the supporting medium and is independent of the motion of the source relative to the medium. Thus the outermost circle in Fig. \@ref(fig:fig-rad-5) represents a sphere in 3 dimensions with center at $x_0$ and radius $C_ST$.
+
+The source has moved a distance $V_ST$ in the time $T$ so that
+$$x_0-x_T=V_ST$$
 and the following equalities are true:
 $$a-x_T=(C_S+V_S)T$$
 $$x_T-b=(C_S-V_S)T$$

@@ -768,7 +768,7 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ### A Lizard
 
-As a final example, we will review the work of Bartlett and Gates (1967) who computed the heat energy budget for the Western fence lizard, *Sceloporus occidentalis*, on a tree trunk. They hypothesized that *S. occidentalis* oriented itself on the tree trunk so as to maintain its body temperature relatively high and constant. The daily temperature variation of the tree surfaces supported their idea (Fig. \@ref(fig:fig-heattrans-13). The heat energy equation for equilibrium is 
+As a final example, we will review the work of Bartlett and Gates (1967) who computed the heat energy budget for the Western fence lizard, *Sceloporus occidentalis*, on a tree trunk. They hypothesized that *S. occidentalis* oriented itself on the tree trunk so as to maintain its body temperature relatively high and constant. The daily temperature variation of the tree surfaces supported their idea (Fig. \@ref(fig:fig-heattrans-13)). The heat energy equation for equilibrium is 
 
 \begin{equation}
 Q_a + M - Q_e - LE - C - G = 0

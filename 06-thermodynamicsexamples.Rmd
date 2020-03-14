@@ -92,7 +92,7 @@ where
 * and $V$ is the volume of one mole.
 </div>
 
-Combining \@ref(eq:8) and \@ref(eq:9) and rearranging we have
+Combining equations \@ref(eq:8) and \@ref(eq:9) and rearranging we have
 \begin{equation}
 V dP = -g m dh
 (\#eq:10)
@@ -274,7 +274,7 @@ b) Assume a horse drinks 10 gallons of water at 20°C and urinates it at 38°C d
 
 1. At the earth's surface incoming = outgoing or 105 + 24 + 17 + 6 = 101 + 18 + 23 + 10. For the earth's atmosphere incoming = outgoing or 101 + 23 + 10 + 19 = 105 + 48.
 
-2.From the adiabatic lapse rate calculation, we know that the mean annual temperature will decrease 10°C/km. We might expect then that similar communities will be found on the same isotherm (convergence), if other factors such as water availability are similar (Fig \@ref(fig:fig-thermex-1)). Tropical mountain vegetation therefore may look like temperate forests and temperate alpine meadows will resemble tundra communities. (See Bliss (1956) for comparison of last two communities.) Table 1 shows the mean and mean annual range in temperature for the northern and southern hemisphere (Miller and Thompson 1970)
+2. From the adiabatic lapse rate calculation, we know that the mean annual temperature will decrease 10°C/km. We might expect then that similar communities will be found on the same isotherm (convergence), if other factors such as water availability are similar (Fig \@ref(fig:fig-thermex-1)). Tropical mountain vegetation therefore may look like temperate forests and temperate alpine meadows will resemble tundra communities. (See Bliss (1956) for comparison of last two communities.) Table 1 shows the mean and mean annual range in temperature for the northern and southern hemisphere (Miller and Thompson 1970)
 
 > Table 1. Mean annual temperature and temperature range, and their variation with latitude.
 

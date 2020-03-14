@@ -650,7 +650,7 @@ text(day_hot$Q_abs+50,day_hot$T_air, round(day_hot$T_air,1))
 
 Notice how strikingly similar the climate space is for the Zebra Finch and the Desert Iguana (re-plotted below), despite their extremely different body temperature limits. What are the key differences between them in the environments they can tolerate, and what is it about the physiology of these two species that makes them have such similar climate spaces? Does the similarity extend to environments of higher wind speed?
 
-In the next module you will learn now to work with gridded microclimate data and map biophysical calculations of climate spaces onto geographic spaces.
+In a subsequent module you will learn now to work with gridded microclimate data and map biophysical calculations of climate spaces onto geographic spaces.
 
 ```{r, fig.width = 7, fig.height = 6, echo=FALSE}
 pars <- subset(climate_space_pars, Name=="Desert Iguana")
@@ -902,10 +902,9 @@ T_b - T_r = (T_b - T_s) + (T_s - T_r)
 \end{equation}
 
 Rearranging our heat flow equations (\@ref(eq:10) and \@ref(eq:11)) and substituting into Equation \@ref(eq:12) for $T_b - T_s$ and $T_s - T_r$ we have 
->>>>>>> cd3a13727c78c591548db0b89e267f63caac747f
 
 \begin{equation}
-T_b - T_r = \frac{d_b}{k_b} (M - E_{ex}) + \frac{d_f}{k_f} (M - E_{ex} - E_{sw})
+T_b - T_r = \frac{d_b}{k_b} (M - E_{ex}) + \frac{d_f}{k_f} (M - E_{ex} - E_{sw}).
 (\#eq:13)
 \end{equation}
 
