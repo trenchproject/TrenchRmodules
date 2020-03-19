@@ -392,21 +392,25 @@ Vera, R.R., Koong, L.J. & Morris, J.G., 1975. A model of heat flow in the sheep 
 Walsberg G, Campbell J, King. 1978. Animal coat color and radiative heat gain: A re-evaluation. Journal of Comparative Physiology B. 126(3):211–222.
 
 ## PROBLEMS
-1. Brockway et al. (1965. Evaporative heat-loss mechanisms in sheep. J. Physiology 179: 554-568) compared the contributions of metabolism and evaporative water loss in sheep. Use the model in this modules to estimate the total and evaporative heat losses at three temperatures (10, 20, 30 °C) and three body diameters ($r_h$=0.32, 0.36, 0.50) corresponding to fur thicknesses (Also, $r_s$=0.3). Then roughly compare your results to heat losses measured by Brockway et al. We will assume windspeed $v$=0.2778 m s^-1^. You can estimate net radiation under the assumption that the sheep's body temperature is steady state such that the tips of its fleece are at air temperature. Assume the following relationships for how the kinematic viscosity of air $\nu$ and the thermal conductivity or air $k_a$ vary with temperature.
 
+Assume $T_b = 39$°C, $v=1$km/hr = 0.2778ms^-1^, $A_h = \pi d L$m^2^, $L=1$m, $r_b=0.29$m, $r_s$=0.3, $k_h = 5.91 \times 10^{-2}$, $k_f = 0.251$, $\varepsilon = 1$ and $e = 10$mb for the following problems unless specified.
+
+1. Brockway et al. (1965. Evaporative heat-loss mechanisms in sheep. J. Physiology 179: 554-568) compared the contributions of metabolism and evaporative water loss in sheep. Use the model in this modules to estimate the total evaporative heat losses at three temperatures (10, 20, 30 °C) and three body diameters ($r_h$=0.32, 0.36, 0.50) corresponding to fur thicknesses. Then roughly compare your results to heat losses measured by Brockway et al. You can estimate net radiation under the assumption that the sheep's body temperature is steady state such that the tips of its fleece are at air temperature. The sheep is in an enclosed area so we can neglect the energy gain through direct, sky, and reflected radiations. At moderate air temperatures (15 to 30°C), metabolic rate will be high and fairly constant which from the text we will take as $8800 kJ day^{-1}$. At 10°C, however, it is assumed that evaporative water loss is 20.4 (W). Assume the following relationships for how the kinematic viscosity of air $\nu$ and the thermal conductivity or air $k_a$ vary with temperature.  
 
 | $T_a$(°C)                              |  10  |  20  |  30  |
 |:----------------------------------------:|:----:|:----:|:----:|
 | $\nu \:(m^2s^{-1}\times10^{-5})$          | 1.42 | 1.51 | 1.60 |
 | $k_a \:(W m^{-1}°C^{-1}\times10^{-2})$ | 2.50 | 2.57 | 2.64 |
 
-2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39 °C given that $T_a$ = 2.92 °C for sheep with diameters of 0.32m and 0.5m? Assume, $k_a= 2.37\times10^{-2}Wm^{-1}°C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$, $v=2.778ms^{-1}$, and evaporative heat losses $E = 20.4W$.
-[Please check calcuations. Might change solution numbers so that T_b=3C.]
 
-3. Use the values in problem 2 but now assume $T_h$ = 20°C and $T_a$ = 0°C. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to offset convective heat loss if consuming 5.30g of grass per day is required to offset 1W? 
+2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39 °C given that $T_a$ = -10 °C for sheep with diameters of 0.32m and 0.5m? The sheep is in an enclosed area so we can neglect the energy gain through direct, sky, and reflected radiations. Assume, $k_a= 2.37\times10^{-2}Wm^{-1}°C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$ and evaporative heat losses $E = 20.4W$.
 
-4. Consider a sheep on a sunny day experiencing direct solar radiation of 800W and diffuse sky radiation of 150W. Suppose your sheep is standing in a pasture in which reflectivity of the grass is 25 percent. Wind speed is 1 km hr^-1^. Assume cutaneous evaporative heat loss equals 4 kcal kg^-1^ day^-1^, but respiratory heat loss can vary. It is known that sheep can breathe as few as 20 times or as many as 250 times per minute, and the corresponding respiratory heat loss varies from 2.0 to 18.0 kcal kg^-1^ day^-1^. Calculate the rate of heat loss if the sheep is shorn (fleece 1 cm thick) and unshorn (fleece 10 cm thick). Assume that total metabolic heat produced is 1900 kcal day^-1^. What does the comparison of these heat fluxes suggest about whether evaporative water loss will be sufficient for the sheep to avoid overheating in the sun?
-**Likely needs more fixing**
+<!-- 3. Use the values in problem 2 but now assume $T_h$ = 20°C and $T_a$ = 0°C. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to offset convective heat loss if consuming 5.30g of grass per day is required to offset 1W?  -->
+
+3. Use the values in problem 2 but now assume that the evaporative heat loss is 990 kcal per day. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to compensate for the metabolic heat lossif consuming 5.30g of grass per day is required to offset 1W? 
+
+
+4. Consider a 70 kg sheep on a sunny day with $T_a$ of 30°C experiencing direct solar radiation of 800W right from above and diffuse sky radiation of 150W with one-third of the solid angle occupied by the sheep’s shadow. Suppose your sheep is standing in a pasture in which reflectivity of the grass is 25 percent. Assume cutaneous evaporative heat loss equals 4 kcal kg^-1^ day^-1^, but respiratory heat loss can vary. It is known that sheep can breathe as few as 20 times or as many as 250 times per minute, and the corresponding respiratory heat loss varies from 3.0 to 18.0 kcal kg^-1^ day^-1^. Calculate the rate of heat loss when the sheep is shorn ($r_h = 0.32$) and unshorn ($r_h = 0.50$). Assume that total metabolic heat produced is 1900 kcal day^-1^. What does the comparison of these heat fluxes suggest about whether evaporative water loss will be sufficient for the sheep to avoid overheating in the sun? $\varepsilon = 0.1396$, $a = 0.74$ and heat received by long-wave radiation can be ignored. You may use the corresponding $\alpha$ and $\beta$ values from problem 1.
 
 5. Now assume that instead of a sheep your study animal is a blue whale, which you can idealize as a cylinder 25 m long and 5 m in diameter, with a layer of blubber 50 cm thick. Its body temperature is maintained at 33°C. If the whale swims at a rate of 15 km hr$^{-1}$ through 5°C water, how much food (in kcal day$^{-1}$) must it consume to maintain thermal equilibrium? Take the Nusselt number $Nu$ as $0.332 (Re_x)^{1/2} \stackrel{.}{=} 1.6 \times 10^4$ (since $V = 15 km \:hr^{-1}$, $x \stackrel{.}{=} 10 m$, $v = 1.7 \times 10^{-5} m^2 sec^{-1}$).
 
@@ -425,12 +429,9 @@ where $\beta$ is the coefficient of thermal expansion of the fluid, $g$ is the a
 
 ## PROBLEM SOLUTIONS
 
-1. We need to find the total and evaporative heat losses and compare them with the results of Brockway et al. Since there are three air temperatures and three fleece thicknesses, there will be nine separate calculations. We need to calculate $T_h$ using equation \@ref(eq:24). To do this, we need the $\alpha$'s and the Nusselt numbers. Here $v= 0.2778 m s^{-1}$.
+1. We need to find the total and evaporative heat losses and compare them with the results of Brockway et al. Since there are three air temperatures and three fleece thicknesses, there will be nine separate calculations. We need to calculate $T_h$ using equation \@ref(eq:27). To do this, we need the $\alpha$'s, $\beta$'s and the Nusselt numbers. 
 
-| $T_a$(°C)                              |  10  |  20  |  30  |
-|----------------------------------------|:----:|:----:|:----:|
-| $\nu \:(m^2s^{-1}\times10^{-5})$       | 1.42 | 1.51 | 1.60 |
-| $k_a \:(W m^{-1}°C^{-1}\times10^{-2})$ | 2.50 | 2.57 | 2.64 |
+Nusselt numbers can be calculated from section 12.5 by first obtaining Reynolds number and using the right coefficients $a$ and $b$.
 
 Nusselt Numbers as a function of air temperature (°C) and diameter (m)
 
@@ -440,24 +441,7 @@ Nusselt Numbers as a function of air temperature (°C) and diameter (m)
 | 20 | 36.96 | 39.76 | 48.75 |
 | 30 | 35.66 | 38.36 | 47.03 |
 
-**Notes**  
-Up until here is good. Using the equation $Re = \frac{v d}{\nu}$ and values $v=0.2778$, $d=0.32$ and $\nu=1.42 \times 10^{-5}$, we can get $Re$. Then $Nu = 0.17Re^{0.62}$ to produce the exact value as listed.
-
-After this, $A_h$ isn't specified to I tried to calculate what it would be using what's already known.
-Upon that I used the only equation in this module to get $\alpha$, which is $\alpha = A_h(\frac{Nuk_a}{d}+2\sigma T_a^3)$. On the table in the solution, $Nu$ and $\alpha$ are listed, $k_a$ is given and $\sigma$ is a constant.
-
-For $T_a = 10 °C$ and $d=0.32 m$, $A_h$ turned out to be 1.014.  
-For $T_a = 10 °C$ and $d = 0.50 m$, $A_h$ is 1.069. and  
-For $T_a = 30 °C$ and $d = 0.50 m$, $A_h = 1.58 \approx \pi/2$ (which is what it is specified as in the previous problem so could be the correct value?).  
-This proves that either the equation or the answer is wrong. Or we are simply missing an equation to get $\alpha$ more easily.
-
-If we are only limited to the equation above to get $\alpha$, I would provide a new value of $A_h$ and update the table to match the answer.  
-
-In terms of $\beta$, it's more complicated because the only equation to get it is $\beta=1/(Z_h+Z_f)$, and $Z_f=\frac{1}{2\pi k_fL}ln(\frac{r_s}{r_b})$, $Z_h=\frac{1}{2\pi k_hL}ln(\frac{r_h}{r_s})$ are needed to get $Z_f$ and $Z_h$ unless specified.
-
-We would need to provide $L$, $k_f$, $k_h$, $r_b$ to get it.
-**End Notes**
-
+Once we have $Nu$ $\alpha$ can be obtained from $\alpha=A_h(Nuk_a/d+2\sigma T_a^3)$ \@ref(eq:28). The calculations for $\beta$ is $\beta=1/(Z_h+Z_f)$ \@ref(eq:29). $Z_f$ and $Z_h$ to get $\beta$ are calculated from \@ref(eq:10) and \@ref(eq:11).
 
 $\alpha$ and $\beta$ values (W °C^-1^) as a function of air temperature (°C) and diameter (m)
 
@@ -468,6 +452,7 @@ $\alpha$ and $\beta$ values (W °C^-1^) as a function of air temperature (°C) a
 |         30        | 6.178 | 6.803 | 8.927 |
 | $\beta$(W °C^-1^) |  4.43 | 1.850 | 0.705 |
 
+Since we are only taking long-wave radiation into consideration, $R_{Na} = \frac{1}{2}A_h(1.04B−σT_a^4)$. 
 
 $R_{Na}$ (W) values as a function of air temperature (°C) and diameter (m)
 
@@ -477,6 +462,8 @@ $R_{Na}$ (W) values as a function of air temperature (°C) and diameter (m)
 | 20 | -59.09 | -66.48 |  -92.33 |
 | 30 | -67.58 | -76.03 | -105.60 |
 
+Using $\alpha$, $\beta$, $T_a$, $R_{Na}$ and $T_b = 39°C$, $T_h$ can be calculated from $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ \@ref(eq:27).
+
 $T_h$ (°C) values as a function of air temperature (°C) and diameter (m)
 
 |    |  0.32 |  0.36 |  0.50 |
@@ -485,7 +472,8 @@ $T_h$ (°C) values as a function of air temperature (°C) and diameter (m)
 | 20 | 22.43 | 16.24 | 11.41 |
 | 30 | 27.39 | 23.14 | 19.69 |
 
-From equation \@ref(eq:17), the total heat loss can be estimated at $M$ since $T_b$ is always greater than $T_h$. At moderate air temperatures (15 to 30°C), metabolic rate will be high and fairly constant which from the text we will take as $8800 kJ day^{-1}= 101.8 W$. At 10°C, however, it is assumed that evaporative water loss is 20.4 (W) and total heat loss is calculated.
+From equation \@ref(eq:17), the total heat loss can be estimated at $M$ since $T_b$ is always greater than $T_h$. 
+$M=\beta(T_b-T_h) + E$, and $M$ = 8800 (kJ/day) = 101.8 (J/s = W) for $T_a$ = 15 ~ 30 °C and $E$ = 20.4 (W) for 10 °C.
 
 Total Heat Loss (W) as a function of air temperature (°C) and diameter (m)
 
@@ -523,71 +511,54 @@ E&=&20.4W
 |  $\alpha$ (W°C^-1^)  | 17.387 |  25.22 |
 |   $\beta$ (W°C^-1^)  |  4.43  |  0.705 |
 |     $R_{Na}$ (W)     | -38.08 | -59.51 |
-|      $T_h$ (°C)      |  -1.85 | -10.97 |
-| $\beta(T_b-T_h)$ (W) | 180.96 |  35.23 |
-|        $M$ (W)       |  201.4 |  55.6  |
+|      $T_h$ (°C)      | -0.695 | -11.09 |
+| $\beta(T_b-T_h)$ (W) |  203.2 |  35.86 |
+|        $M$ (W)       |  223.6 |  56.3  |
 
-
-**Notes**  
-Here again, up to Nusselt number calculation is good. To get $\alpha$, $A_h$ needs to be known.
-
-I solved for $T_h$ using $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ with $\alpha = 17.387$, $\beta = 4.43$, $T_a = 2.92$, $T_b = 39$ (both converted to kelvin) and $R_{Na} = -38.08$ to make sure that the values match. The result is that it
-didn't even produce the listed value of -1.85.
-
-I thought maybe $T_a$ or $T_b$ is wrong because those are the only values that are not on the table.  
-So, I solved for $T_a$ and $T_b$ using $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ and the parameters for two scenarios. I got $T_a = -6.5 °C$ and $T_b = 23.6 °C$.
-
-At the same time, the table says $\beta(T_b-T_h) = 180.96$ when $\beta = 4.43$ and $T_h = -1.85$, making $T_b = 39 °C$ correct.
-
-Overall, there seems to be issues on either the calculations they made, or the equations to be used.  
-We would probably need to be clear on what values we are giving and update all the answers accordingly.
-
-**End Notes**
 
 3. 
-The conversion is 5.30g of grass day$^{-1}$ W$^{-1}$. Using the relationship for convective heat loss,
-$$\frac{Nu}{d}k_aA_h(T_h-T_a)=341W,$$
-we estimate the following feeding requirements:
+<!-- The conversion is 5.30g of grass day$^{-1}$ W$^{-1}$. Using the relationship for convective heat loss, -->
+<!-- $$\frac{Nu}{d}k_aA_h(T_h-T_a)=341W,$$ -->
+<!-- we estimate the following feeding requirements: -->
+
+<!-- |                            |  0.32 |  0.50 | -->
+<!-- |----------------------------|:-----:|:-----:| -->
+<!-- | Required M (W)             | 48.739 | 76.03 | -->
+<!-- | Required grass (g day^-1^) |  258.3 |  403.0  | -->
+
+991 kcal day^-1^ = 47.98 W.  
+$M = E + \beta (T_b - T_h)$ and insert the values from problem 2.
 
 |                            |  0.32 |  0.50 |
 |----------------------------|:-----:|:-----:|
-| Required M (W)             | 48.739 | 76.03 |
-| Required grass (g day^-1^) |  258.3 |  403.0  |
+| Required M (W)             | 251.2 | 83.84 |
+| Required grass (g day^-1^) | 1331.4 | 444.4 |
 
 
-```
-Notes:  
-I am wondering how 341 W was calculated? A_h isn't provided, and there are two options for d so it shouldn't be able to be solved.  
-A_h = 1.12 must have been used to get 341 W if d = 0.32 but that is pretty random.
 
-Not sure how M was calculated either...
-```
+4. 
+Since 1 cal = 4.184 J,  
+$M$ = 1900 kcal/day = 92.0 W  
+$E_s$ = 4 kcal/kg$\cdot$day = 13.6 W  
 
-4. The problem assumes the same conditions as problem 1 for $T_a = 30°C$ and $d = 0.32$ and $0.50 m$, but $R_{Na}$ will be larger.
-
-$$R_{Na}=\frac{\pi dL}{2}\bigg(\frac{2}{\pi}\cdot 0.74\cdot 800+0.74\cdot 150+0.25\cdot 0.75\cdot \frac{2}{3}(950)-2\cdot0.1396\sigma T_a^4\bigg)$$
-
-**Notes**  
-This equation must be corresponding to 
+To get $R_{Na}$, the following formula is used.
 $$R_{Na}=a_1A_1S+a_2A_2s+a_3A_3(S+s)+a_4A_4R_a+a_5A_5\sigma T_a^4-\varepsilon A_h\sigma T_a^4$$
-but disregarding $a_4$ and $a_5$.  
-S = 800, s = 150 are stated but we are not provided with $L$, $a_1, a_2, a_3$ (= 0.74, 0.74, 0.75 respectively), $\varepsilon$ (= 0.1396), $A_1 = dL$, $A_2 = \frac{\pi dL}{2}$, $A_3 = \frac{\pi dL}{3}$, $A_h = \pi dL$, all assuming from comparing the equations.  
-
-The question is asking to calculate the rate of heat loss of shorn and unshorn sheep. The answer isn't answering them.  
-
-**End notes**
+Since heat gain from long-wave radiation can be ignored, 
+$$R_{Na}=a_1A_1S+a_2A_2s+a_3A_3(S+s)-\varepsilon A_h\sigma T_a^4$$
+Inserting the provided values, we get
+$$R_{Na}=0.74 \cdot dL\cdot 800+0.74\cdot\frac{\pi d L}{2}\cdot 150+0.25\cdot 0.74\cdot \frac{2}{3}\frac{\pi dL}{2}(800+150)- 0.1396 \cdot \pi dL\sigma T_a^4$$
 
 |                           |  0.32  |  0.50  |
 |:-------------------------:|:------:|:------:|
-|        $R_{Na}$ (W)       |  236.7 |  369.8 |
-|         $T_h$ (°C)        |  56.27 |  69.4  |
-|      $\beta(T_b-T_h)$     | -76.51 | -21.36 |
-| $\frac{E_s}{1+(Z_f/Z_h)}$ |  10.4  |  13.1  |
-|         $E_r$ (W)         |  158.2 |  100.4 |
+|        $R_{Na}$ (W)       |  237.1 |  370.4 |
+|         $T_h$ (°C)        |  55.96 |  68.96 |
+|      $\beta(T_b-T_h)$     | -75.13 | -21.12 |
+| $\frac{E_s}{1+(Z_f/Z_h)}$ |  12.10 |  13.39 |
+|         $E_r$ (W)         |  155.0 |  99.73 |
 
-$E_s=13.6W$, $M=92.1W$  
-$E_r$ range was $8.93W$ to $60.9W$.  
-The animals need to lower their metabolic rate or seek shade if they are to prevent a large increase in body temperature.
+(Recall that $M = \beta(T_b-T_h) + E_r + \frac{E_s}{1+(Z_f/Z_h)}$.)  
+
+$E_r$ ranges from 6.78 to 61.0 W, which is far less than needed to maintain the steady body temperature. The animals need to lower their metabolic rate or seek shade if they are to prevent a large increase in body temperature.
 
 5. For a whale, $M=H$ or
 \begin{eqnarray}
