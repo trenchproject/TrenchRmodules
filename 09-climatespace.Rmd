@@ -86,7 +86,7 @@ and the other symbols are as in Equation \@ref(eq:climatespace-2). Gates has ass
 
 Finally, we consider the condition when an organism is exposed to full sunlight with an absorptivity to shortwave radiation of 0.8. In this case, the radiation as a function of air temperature is given by the line to the right of the blackbody line. This line is "fuzzy" to remind us that this relationship is less well-defined than the other curves. The assumptions and calculations necessary to plot this line are discussed in Appendix II. If we now consider the difference between a blackbody and a full sunlight habitat, both at $20^{\circ}C$ air temperature, we see that the latter would receive $300 W m^{-2}$ more radiation.
 
-The importance of Figure \@ref(fig:fig-climatespace-1) is that we have established a region bounded by the clear sky, plus ground radiation line and the 0.8 absorptivity line that limits the combinations of $Q_a$ and $T_a$ found in the natural environment. This region can be divided into areas: one between the clear sky at night and blackbody line which governs the range of all nighttime conditions ($S$ and $s$ of Equation \@ref(eq:2) are zero), and a second area enclosed by the blackbody and the 0.8 absorptivity lines which gives the range of most daytime conditions. The average radiation intensity can be less than blackbody levels during the day when clouds prevent the surface from receiving shortwave radiation. To see this we need to compute the absorbed radiation in the open, $Q_{a0}$ , and compare it to that absorbed in a blackbody cavity, $Q_{ac}$. If solar radiation is zero ($S = s = 0$) then Equation \@ref(eq:climatespace-3) reduces to $Q_{a0} = \frac{(R_a + R_g)}{2}$. We assume that the surface temperature is equal to the air temperature and the temperature at the base of the clouds is less than air temperature so $R_a < R_g$ and $Q_{a0} < Q_{ac}$ . In this case, the higher the clouds the cooler the radiating surface of their bases. This radiation, however, will always be greater than the radiation from a clear sky at night.
+The importance of Figure \@ref(fig:fig-climatespace-1) is that we have established a region bounded by the clear sky, plus ground radiation line and the 0.8 absorptivity line that limits the combinations of $Q_a$ and $T_a$ found in the natural environment. This region can be divided into areas: one between the clear sky at night and blackbody line which governs the range of all nighttime conditions ($S$ and $s$ of Equation \@ref(eq:climatespace-2) are zero), and a second area enclosed by the blackbody and the 0.8 absorptivity lines which gives the range of most daytime conditions. The average radiation intensity can be less than blackbody levels during the day when clouds prevent the surface from receiving shortwave radiation. To see this we need to compute the absorbed radiation in the open, $Q_{a0}$ , and compare it to that absorbed in a blackbody cavity, $Q_{ac}$. If solar radiation is zero ($S = s = 0$) then Equation \@ref(eq:climatespace-3) reduces to $Q_{a0} = \frac{(R_a + R_g)}{2}$. We assume that the surface temperature is equal to the air temperature and the temperature at the base of the clouds is less than air temperature so $R_a < R_g$ and $Q_{a0} < Q_{ac}$ . In this case, the higher the clouds the cooler the radiating surface of their bases. This radiation, however, will always be greater than the radiation from a clear sky at night.
 
 ```{r fig-climatespace-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Relationship between the total amount of radiation flux incident on an object as a function of the air temperature. At night the object receives thermal radiation from the ground and atmosphere. In the daytime the object receives direct, reflected and scattered sunlight, in addition to the thermal radiation from the ground and atmosphere. The absorptivity to sunlight is 0.8. The right-hand boundary line is fuzzy to remind us that it is an average value. From Porter, W. P. and D. M. Gates. 1969. p. 234.'}
 knitr::include_graphics('figures/fig-climatespace-1.png')
@@ -132,9 +132,9 @@ For the second scenario of a clear sky at night, we need to compute the radiatio
 
 $$Q_{sky} = 1.22 \sigma T_{air}^4 - 171$$
 
-where, again, $T_{air}$ is in Kelvin. If we assume that ground temperature is equal to air temperature, as Porter and Gates (1969) did, we simply take the average of the sky and blackbody radiation values and that then becomes the night sky radiation for a given air temperature. Note, however, that the clear sky night sky radiation in Porter and Gates (1969) is not what you would predict from the Swinbank formulation and appears to be erroneous - it seems like they subtracted 20 degrees C from the air temperature when computing the radiation emitted by the ground. 
+where, again, $T_{air}$ is in Kelvin. If we assume that ground temperature is equal to air temperature, as Porter and Gates (1969) did, we simply take the average of the sky and blackbody radiation values and that then becomes the night sky radiation for a given air temperature. Note, however, that the clear sky night sky radiation in Porter and Gates (1969) is not what you would predict from the Swinbank formulation and appears to be erroneous - it seems like they subtracted 20 °C from the air temperature when computing the radiation emitted by the ground. 
 
-The third and most involved computation is the radiation environment outdoors in full sun, which combines the longwave radiation plus the direct and diffuse solar radiation from above, $_hS$ and $_hD$, and the reflected radiation from the ground $_hG$. The longwave radiation component we obtain as above. To get a rough approximation of the direct solar radiation we first take the solar constant $\bar S_o$, which is the average radiation flux hitting a horizontal plane on the outer edge of the earth's atmosphere over a year, and multiply it by a correction factor accounting for the distance between the earth and sun at the time of year of interest $(\bar d / d)^2$ where $\bar d$ is the average distance between the earth and the sun and $d$ is the actual distance. This gives us the extra-terrestrial radiation $S_o$. Then we need to account for the attenuation due to the depth of atmosphere the beams of sunlight are travelling through before hitting the ground, which depends in part on the angle of the sun $z$ (in radians). For example, at sunrise the rays are passing through more atmosphere than at midday. To compute this we need the optical air mass $m  = sec(z) = 1/cos(z)$ and the transmittance of the atmosphere $\tau$ (around 0.6), which can then be used in equation 6.36 from Gates (1980)
+The third and most involved computation is the radiation environment outdoors in full sun, which combines the longwave radiation plus the direct and diffuse solar radiation from above, $_hS$ and $_hD$, and the reflected radiation from the ground $_hG$. The longwave radiation component we obtain as above. To get a rough approximation of the direct solar radiation we first take the solar constant $\overline S_o$, which is the average radiation flux hitting a horizontal plane on the outer edge of the earth's atmosphere over a year, and multiply it by a correction factor accounting for the distance between the earth and sun at the time of year of interest $(\overline d / d)^2$ where $\overline d$ is the average distance between the earth and the sun and $d$ is the actual distance. This gives us the extra-terrestrial radiation $S_o$. Then we need to account for the attenuation due to the depth of atmosphere the beams of sunlight are travelling through before hitting the ground, which depends in part on the angle of the sun $z$ (in radians). For example, at sunrise the rays are passing through more atmosphere than at midday. To compute this we need the optical air mass $m  = sec(z) = 1/cos(z)$ and the transmittance of the atmosphere $\tau$ (around 0.6), which can then be used in equation 6.36 from Gates (1980)
 
 $$_hS = S_o \tau ^ m cos(z)$$
 
@@ -159,8 +159,8 @@ The R function `Qbound` below makes all of these calculations as a function of a
 # Computes climate space following the equations of Porter and Gates (1969) and Gates (1980)
 
 # inputs
-# Tair, A value, or vector of values, of air temperatures, degrees C
-# Tsub, A value, or vector of values (for each air temperature), of substrate temperatures, degrees C
+# Tair, A value, or vector of values, of air temperatures, °C
+# Tsub, A value, or vector of values (for each air temperature), of substrate temperatures, °C
 # Zenith, A value, or vector of values (for each air temperature), of the Zenith angle of the sun, degrees
 # tau, Transmittance of the atmosphere, decimal percent
 # alpha_s, Solar absorptivity of object, decimal percent
@@ -201,10 +201,10 @@ Qbound <-
 
 Now that we have defined the equation for computing bounding values of radiation to go with air temperature under different scenarios, we are ready to make a figure showing these boundary conditions. The figure will be similar to Figure 12 of Porter an Gates (1969) but will be in SI units with a slightly different line for clear night sky conditions (due to the apparent error in Porter and Gates discussed above). 
 
-The next chunk of R code defines a sequence of air temperatures between -60 and 60 degrees C in 0.1 degree intervals. It also defines a set of zenith angles (in degrees, not radians) from 60 (low sun angle) to 0 (directly overhead). This is to roughly account for the fact that, in places with low air temperature, we are typically at high latitude and thus have low sun angles, as discussed just after equation 13 in Porter and Gates (1969).
+The next chunk of R code defines a sequence of air temperatures between -60 and 60 °C in 0.1 degree intervals. It also defines a set of zenith angles (in degrees, not radians) from 60 (low sun angle) to 0 (directly overhead). This is to roughly account for the fact that, in places with low air temperature, we are typically at high latitude and thus have low sun angles, as discussed just after equation 13 in Porter and Gates (1969).
 
 ```{r}
-T_air <- seq(-60,60,0.1) # air temperature range to consider, degrees C
+T_air <- seq(-60,60,0.1) # air temperature range to consider, °C
 Zenith <- seq(60,0,-0.05) # zenith angles to go with air temperatures, degrees
 ```
 
@@ -234,16 +234,16 @@ Now we can plot the results, first plotting the blackbody relationship as a dott
 plot(Q_blackbody, T_air, ylim = c(-40,50), xlim = c(0,1300), type = 'l', col = 'black', lwd = 2, lty = 2, xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "Porter and Gates Figure 12")
 ```
 
-This shows, for example that if the object was in a cave at an air temperature of 2 degrees C it would experience a load of 325 $W\:m^{-2}$. You can compute this exactly by typing `Qbound(Tair = 2)$Q_blackbody`.
+This shows, for example that if the object was in a cave at an air temperature of 2 °C it would experience a load of 325 $W\:m^{-2}$. You can compute this exactly by typing `Qbound(Tair = 2)$Q_blackbody`.
 
 Now let's add the clear night sky curve.
 
 ```{r, fig.width = 7, fig.height = 6, echo = 2:2}
-plot(Q_blackbody, T_air, ylim = c(-40,50), xlim = c(0,1300), type='l', col='black', lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = "Porter and Gates Figure 12")
+plot(Q_blackbody, T_air, ylim = c(-40,50), xlim = c(0,1300), type='l', col='black', lwd=2, lty = 2, xlab='Radiation, W/m^2', ylab='Air temperature, °C', main = "Porter and Gates Figure 12")
 points(Q_night, T_air, type = 'l',col = 'blue',lwd = 2)
 ```
 
-You can see now that, on a night where the air temperature is 2 degrees, the object would now have a lower radiation load of 275 $W\:m^{-2}$ because of the reduced downward flux of radiation from the cold night sky. In fact, this reduced radiation load is enough to drop the ground temperature to zero degrees and cause a frost - i.e. frosts often happen on clear nights when the air temperature measured by a weather station (1-2m above the ground) is 2 degrees C or lower.
+You can see now that, on a night where the air temperature is 2 degrees, the object would now have a lower radiation load of 275 $W\:m^{-2}$ because of the reduced downward flux of radiation from the cold night sky. In fact, this reduced radiation load is enough to drop the ground temperature to zero degrees and cause a frost - i.e. frosts often happen on clear nights when the air temperature measured by a weather station (1-2m above the ground) is 2 °C or lower.
 
 Finally, let's add the sunny day curve.
 
@@ -253,7 +253,7 @@ points(Q_night, T_air, type = 'l',col = 'blue',lwd = 2)
 points(Q_day, T_air, type = 'l',col = 'red',lwd = 2)
 ```
 
-Now, on a day of 2 degrees C in the sunshine an object would have a radiation load of around 610 $W\:m^{-2}$, if it absorbed all the solar radiation hitting it.
+Now, on a day of 2 °C in the sunshine an object would have a radiation load of around 610 $W\:m^{-2}$, if it absorbed all the solar radiation hitting it.
 
 The next code chunk loops through a sequence of object absorptivities from 0.2 to 0.8, computes the daytime solar load and plots the results as orange lines on the graph, so we have a figure equivalent to Figure 12 in Porter and Gates (1969).
 
@@ -308,7 +308,7 @@ As in Porter and Gates (1969) p. 235, we can substitute $T_r$ with
 
 $$T_b - (M - E_{ex} - E_{sw}) / K_b + 273.15$$
 
-with $T_b$ in degrees C and where the skin's thermal conductance $K_b = k_b/d_b$, where $k_b$ is the conductivity of the skin and $d_b$ is the thickness of the skin. 
+with $T_b$ in °C and where the skin's thermal conductance $K_b = k_b/d_b$, where $k_b$ is the conductivity of the skin and $d_b$ is the thickness of the skin. 
 
 Also, to compute the convection coefficient  $h_c$ we deviate slightly from Porter and Gates (1969) and instead follow the recommendation of Gates (1980) (equation 12.52, p. 422) where
 
@@ -329,7 +329,7 @@ Here is the code to create this function.
 # epsilon, emissivity of the skin, -
 
 # environmental inputs
-# Tair, A value, or vector of values, of air temperatures, degrees C
+# Tair, A value, or vector of values, of air temperatures, °C
 # V, wind speed, m/s
 
 # output
@@ -362,10 +362,10 @@ points(Q_night,T_air,type='l',col='blue',lwd=2)
 points(Q_day,T_air,type='l',col='red',lwd=2)
 ```
 
-Next, we will get the input data for the `Qabs_ecto` function we just created from the 'pars' table for the situation where a Desert Iguana has a body temperature of 3 degrees C, its lower survivable limit.
+Next, we will get the input data for the `Qabs_ecto` function we just created from the 'pars' table for the situation where a Desert Iguana has a body temperature of 3 °C, its lower survivable limit.
 
 ```{r}
-# choose data for the first row of the 'pars' table, which are the values for when T_b is 3 degrees C
+# choose data for the first row of the 'pars' table, which are the values for when T_b is 3 °C
 D <- pars$D[1] # diameter, m
 T_b_lower <- pars$T_b[1] # body temperature, deg C
 M <- pars$M[1] # metabolic rate, W/m2
@@ -380,23 +380,23 @@ Finally, we need to choose a wind speed and set of air temperatures at which to 
 
 ```{r}
 V <- 0.1 # wind speed, m/s
-T_air<-seq(-60,60,0.1) # air temperature range to consider, degrees C
+T_air<-seq(-60,60,0.1) # air temperature range to consider, °C
 Q_abs_lower <- Qabs_ecto(D = D, T_b = T_b_lower, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 ```    
 
-Now, in the 'Q_abs_lower' variable we have a vector of amounts of absorbed radiation corresponding to each air temperature in our 'T_air' variable that would result in a 'T_b' of 3 degrees C if the wind speed was 0.1 m/s. We will now plot this result on our climate space diagram.
+Now, in the 'Q_abs_lower' variable we have a vector of amounts of absorbed radiation corresponding to each air temperature in our 'T_air' variable that would result in a 'T_b' of 3 °C if the wind speed was 0.1 m/s. We will now plot this result on our climate space diagram.
 
 ```{r, fig.width = 7, fig.height = 6, echo = 4:4}
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower," °C, wind ", V, " m/s"))
 points(Q_night,T_air,type='l',col='blue',lwd=2)
 points(Q_day,T_air,type='l',col='red',lwd=2)
 points(Q_abs_lower, T_air, type = 'l', lwd = 2)
 ```
 
-Let's now repeat the calculation but for the case of the extreme upper 'T_b' of 45 degrees C.
+Let's now repeat the calculation but for the case of the extreme upper 'T_b' of 45 °C.
 
 ```{r, fig.width = 7, fig.height = 6, echo = c(1:11,17)}
-# choose data for the fifth row of the 'pars' table, which are the vales for when T_b is 45 degrees C
+# choose data for the fifth row of the 'pars' table, which are the vales for when T_b is 45 °C
 D <- pars$D[5] # diameter, m
 T_b_upper <- pars$T_b[5] # body temperature, deg C
 M <- pars$M[5] # metabolic rate, W/m2
@@ -408,7 +408,7 @@ epsilon <- 1 # emissivity, -
 
 Q_abs_upper <- Qabs_ecto(D = D, T_b = T_b_upper, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," °C, wind ", V, " m/s"))
 points(Q_night,T_air,type='l',col='blue',lwd=2)
 points(Q_day,T_air,type='l',col='red',lwd=2)
 points(Q_abs_lower, T_air, type = 'l', lwd = 2)
@@ -456,7 +456,7 @@ limits_night <- subset(night,Q_night > as.numeric(night_cold[1]) & Q_night < as.
 limits_day <- subset(day,Q_day > as.numeric(day_cold[1]) & Q_day < as.numeric(day_hot[1]))
 
 # plot the final subsetted data
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," °C, wind ", V, " m/s"))
 points(limits_night[,1], limits_night[,2],type='l',col='blue',lwd=2)
 points(limits_day[,1], limits_day[,2],type='l',col='red',lwd=2)
 points(limits_lower$Q_abs, limits_lower$T_air, type = 'l', lwd = 2)
@@ -504,7 +504,7 @@ Here is the code to create the endotherm-specific function for obtaining radiati
 # epsilon, emissivity of the skin, -
 
 # environmental inputs
-# Tair, A value, or vector of values, of air temperatures, degrees C
+# Tair, A value, or vector of values, of air temperatures, °C
 # V, wind speed, m/s
 
 # output
@@ -537,10 +537,10 @@ points(Q_night,T_air,type='l',col='blue',lwd=2)
 points(Q_day,T_air,type='l',col='red',lwd=2)
 ```
 
-Next, we will get the input data for the `Qabs_endo` function for the situation where the Zebra Finch body temperature is 38.5 degrees, its lower survivable limit (far higher than that of the Desert Iguana!).
+Next, we will get the input data for the `Qabs_endo` function for the situation where the Zebra Finch body temperature is 38.5 °C, its lower survivable limit (far higher than that of the Desert Iguana!).
 
 ```{r}
-# choose data for the first row of the 'pars' table, which are the vales for when T_b is 38.5 degrees C
+# choose data for the first row of the 'pars' table, which are the vales for when T_b is 38.5 °C
 D <- pars$D[1] # diameter, m
 T_b_lower <- pars$T_b[1] # body temperature, deg C
 M <- pars$M[1] # metabolic rate, W/m2
@@ -557,23 +557,23 @@ And as with the Desert Iguana, again we need to choose a wind speed and set of a
 
 ```{r}
 V <- 0.1 # wind speed, m/s
-T_air <- seq(-60,60,0.1) # air temperature range to consider, degrees C
+T_air <- seq(-60,60,0.1) # air temperature range to consider, °C
 Q_abs_lower <- Qabs_endo(D = D, T_b = T_b_lower, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, K_f = K_f, epsilon = epsilon, T_air = T_air, V = V)
 ```    
 
-Now, in the 'Q\_abs\_lower' variable we have a vector of amounts of absorbed radiation corresponding to each air temperature in our 'T\_air' variable that would result in a 'T\_b' of 38.5 degrees C if the wind speed was 0.1 m/s. We will now plot this result on our climate space diagram.
+Now, in the 'Q\_abs\_lower' variable we have a vector of amounts of absorbed radiation corresponding to each air temperature in our 'T\_air' variable that would result in a 'T\_b' of 38.5 °C if the wind speed was 0.1 m/s. We will now plot this result on our climate space diagram.
 
 ```{r, fig.width = 7, fig.height = 6, echo = 4:4}
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Zebra Finch, T_b ",T_b_lower," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Zebra Finch, T_b ",T_b_lower," °C, wind ", V, " m/s"))
 points(Q_night,T_air,type='l',col='blue',lwd=2)
 points(Q_day,T_air,type='l',col='red',lwd=2)
 points(Q_abs_lower, T_air, type = 'l', lwd = 2)
 ```
 
-Let's now repeat the calculation but for the case of the extreme upper 'T_b' of 42.5 degrees C.
+Let's now repeat the calculation but for the case of the extreme upper 'T_b' of 42.5 °C.
 
 ```{r}
-# choose data for the third row of the 'pars' table, which are the vales for when T_b is 42.5 degrees C
+# choose data for the third row of the 'pars' table, which are the vales for when T_b is 42.5 °C
 D <- pars$D[3] # diameter, m
 T_b_upper <- pars$T_b[3] # body temperature, deg C
 M = pars$M[3] # metabolic rate, W/m2
@@ -589,7 +589,7 @@ Q_abs_upper <- Qabs_endo(D = D, T_b = T_b_lower, M = M, E_ex = E_ex, E_sw = E_sw
 ```
 
 ```{r, fig.width = 7, fig.height = 6, echo = 5:5}
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Zebra Finch, T_b ",T_b_lower," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Zebra Finch, T_b ",T_b_lower," °C, wind ", V, " m/s"))
 points(Q_night,T_air,type='l',col='blue',lwd=2)
 points(Q_day,T_air,type='l',col='red',lwd=2)
 points(Q_abs_lower, T_air, type = 'l', lwd = 2)
@@ -635,7 +635,7 @@ limits_night <- subset(night,Q_night > as.numeric(night_cold[1]) & Q_night < as.
 limits_day <- subset(day,Q_day > as.numeric(day_cold[1]) & Q_day < as.numeric(day_hot[1]))
 
 # plot the final subsetted data
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Zebra Finch, T_b ",T_b_lower,"-",T_b_upper," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Zebra Finch, T_b ",T_b_lower,"-",T_b_upper," °C, wind ", V, " m/s"))
 points(limits_night[,1], limits_night[,2],type='l',col='blue',lwd=2)
 points(limits_day[,1], limits_day[,2],type='l',col='red',lwd=2)
 points(limits_lower$Q_abs, limits_lower$T_air, type = 'l', lwd = 2)
@@ -658,7 +658,7 @@ pars[,4:6] <- pars[,4:6] * (4.185 / 60 * 10000) # convert heat flows from cal/mi
 pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)# convert thermal conductivities from cal/(min cm C) to J/(s m C) = W/(m C)
 pars[,c(7:8,11,16)] <- pars[,c(7:8,11,16)] / 100 # convert cm to m
 
-# choose data for the first row of the 'pars' table, which are the vales for when T_b is 3 degrees C
+# choose data for the first row of the 'pars' table, which are the vales for when T_b is 3 °C
 a_max <- pars$abs_max[1] # get the maximum solar absorptivity value, choosing row 1
 D <- pars$D[1] # diameter, m
 T_b_lower <- pars$T_b[1] # body temperature, deg C
@@ -676,7 +676,7 @@ Q_night <- climspace$Q_night
 Q_blackbody <- climspace$Q_blackbody
 
 V <- 0.1 # wind speed, m/s
-T_air <- seq(-60,60,0.1) # air temperature range to consider, degrees C
+T_air <- seq(-60,60,0.1) # air temperature range to consider, °C
 Q_abs_lower <- Qabs_ecto(D = D, T_b = T_b_lower, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 
 D <- pars$D[5] # diameter, m
@@ -726,7 +726,7 @@ limits_night <- subset(night,Q_night > as.numeric(night_cold[1]) & Q_night < as.
 limits_day <- subset(day,Q_day > as.numeric(day_cold[1]) & Q_day < as.numeric(day_hot[1]))
 
 # plot the final subsetted data
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," degrees C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," °C, wind ", V, " m/s"))
 points(limits_night[,1], limits_night[,2],type='l',col='blue',lwd=2)
 points(limits_day[,1], limits_day[,2],type='l',col='red',lwd=2)
 points(limits_lower$Q_abs, limits_lower$T_air, type = 'l', lwd = 2)
@@ -845,7 +845,7 @@ Increased wind speed increases the relative importance of the convective term an
 
 We can visualize the effect of size by picking body masses of 0.001, 0.10, 10.0 and 100.0 kg to insert in Equation \@ref(eq:8) and plotting the lines in Figure \@ref(fig:fig-climatespace-8). As size or weight increases, the boundary layer thickens, decreasing the rate of convective exchange (a smaller component of the heat balance). This is readily seen algebraically by re-examining the convection term. We conclude that increasing size has the same effect as decreasing wind speed. It is also clear from Figure \@ref(fig:fig-climatespace-8) that most lizards (less than 1.0 kg) are closely tied to the air temperature.
 
-```{r fig-climatespace-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The hatched area is the climate space of a lizard with absorptivity to sunlight of 0.8. If the animal decreases its absorptivity to 0.6 it can increase the air temperature it can withstand from 30 to 32.5 degrees C. The darkened areas refer to problem 4.'}
+```{r fig-climatespace-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The hatched area is the climate space of a lizard with absorptivity to sunlight of 0.8. If the animal decreases its absorptivity to 0.6 it can increase the air temperature it can withstand from 30 to 32.5 °C. The darkened areas refer to problem 4.'}
 knitr::include_graphics('figures/fig-climatespace-6.png')
 ```
 
@@ -1028,7 +1028,7 @@ Rank the homeotherms from the highest to lowest difference between body temperat
 
 Table A
 
-| |**M**| |**$E_{ex}$**| |**$E_{sw}$**| |**$d_b$**| |**$d_f$**| 
+| |M| |**$E_{ex}$**| |**$E_{sw}$**| |**$d_b$**| |**$d_f$**| 
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 | |Max.|Min.|Max.|Min.|Max.|Min.|Max.|Min.|Max.|Min.
 Shrew|396|139|26|0|26|0|1|1|3|2
@@ -1072,13 +1072,13 @@ Table B
 
 | Animal   | Diameter (m) | Body Mass (kg) |
 |----------|:------------:|:--------------:|
-| Sheep    | .40 (fleece) |      70.0      |
-| Cardinal |     .050     |      .020      |
-| Lizard   |     .015     |      .050      |
-| Shrew    |     .018     |      .010      |
+| Sheep    | 0.40 (fleece) |      70.0      |
+| Cardinal |     0.050     |      0.020      |
+| Lizard   |     0.015     |      0.050      |
+| Shrew    |     0.018     |      0.010      |
 
 
-6. W. P. Porter (personal communication) has pointed out that Equations \@ref(eq:climatespace-10) and \@ref(eq:climatespace-11) apply to heat flow in a slab not a cylinder as shown in Figure \@ref(fig:fig-climatespace-9). Derive the equation for heat flow through a cylinder (see Kreith 1973 or Ilatheway 1977) and through a plate of the same average area under steady state conditions. When will the two formulae give approximately the same result?
+6. W. P. Porter (personal communication) has pointed out that Equations \@ref(eq:10) and \@ref(eq:11) apply to heat flow in a slab not a cylinder as shown in Figure \@ref(fig:fig-climatespace-9). Derive the equation for heat flow through a cylinder (see Kreith 1973 or Ilatheway 1977) and through a plate of the same average area under steady state conditions. When will the two formulae give approximately the same result?
 
 Compare this with the values used in Porter and Gates (1969) tabled below. Why does this work?
 
@@ -1095,11 +1095,11 @@ Compare this with the values used in Porter and Gates (1969) tabled below. Why d
 
 7. Morhardt and Gates (1973) measured both the metabolic rate and the evaporative water loss as a function of effective ambient temperature These graphs are included below (Figures \@ref(fig:fig-climatespace-13) and \@ref(fig:fig-climatespace-14)). We know that both these physiological parameters should also depend on the radiation levels and wind speeds. Consider the metabolic chambers to be equivalent to a blackbody environment and then plot-lines of constant metabolic rate and evaporative rates on the climate space diagram (let $M_b$ = 0.2 kg, $V$ = ms^-1^). Now repeat this process on the climate space of Figure \@ref(fig:fig-climatespace-3). What are times of environmental stress? What might be the preferred activity period of the animal? Remember that the metabolic curve is for a resting and fasting animal. How does that change your answer? Consult the original paper and investigate what other thermal microhabitats were available. Is it critical that we do not have any information about the animal in its burrow?
 
-```{r fig-climatespace-13, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Metabolic rates of all squirrels used in this study as a function of effective ambient temperature. Open circles represent metabolic rates of resting squirrels at effective ambient temperatures below the thermal neutral zone. Closed circles represent metabolic rates of resting squirrels at effective ambient temperatures above the lower critical temperature of 28C. Open squares represent meta bolic rates of exceptionally active squirrels, or those whose body temperature was falling below normal levels. The solid line is a least squres regression line fitted to the open circles, and the broken lines delineate the 95% confid ence interval of the least squares line. The equation of the line and the correlation coefficient (r) are shown.'}
+```{r fig-climatespace-13, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Metabolic rates of all squirrels used in this study as a function of effective ambient temperature. Open circles represent metabolic rates of resting squirrels at effective ambient temperatures below the thermal neutral zone. Closed circles represent metabolic rates of resting squirrels at effective ambient temperatures above the lower critical temperature of 28°C. Open squares represent meta bolic rates of exceptionally active squirrels, or those whose body temperature was falling below normal levels. The solid line is a least squres regression line fitted to the open circles, and the broken lines delineate the 95% confid ence interval of the least squares line. The equation of the line and the correlation coefficient (r) are shown.'}
 knitr::include_graphics('figures/fig-climatespace-13.png')
 ```
 
-```{r fig-climatespace-14, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Evaporative water loss as a function of effective temperature (corrected to 4 mg 820/liter air). The data collected at different relative humidities have been corrected to a constant relative humidity (vapor density = 4 mg 820/liter air by using Eq. (14) A logistic curve cf the form y = ae^bx^ is fitted to the data, and the correlation coefficient (r) is shown.'}
+```{r fig-climatespace-14, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Evaporative water loss as a function of effective temperature (corrected to 4 mg 820/liter air). The data collected at different relative humidities have been corrected to a constant relative humidity (vapor density = 4 mg 820/liter air by using Eq. \\@ref(eq:14)) A logistic curve cf the form y = ae^bx^ is fitted to the data, and the correlation coefficient (r) is shown.'}
 knitr::include_graphics('figures/fig-climatespace-14.png')
 ```
 
@@ -1224,10 +1224,28 @@ $$h_{c2}=17.24V^{0.60}M_b^{-0.133}\;\;\;\;\;\;\;\mbox{ Mitchell}$$
 | Shrew    |   14.76  |   31.85  |       2.2       |
 
 Mitchell's $h_c$
-**!TABLE
+
+|      |            | 0.00001 |  0.001 |  0.1  |  1.01 |  10.0 | 160.0 |      $M_b$      |
+|:----:|:----------:|:-------:|:------:|:-----:|:-----:|:-----:|:-----:|:---------------:|
+|  $V$ | $V^{0.33}$ |  4.640  |  2.511 | 1.359 |  1.0  | 0.736 | 0.398 | $M_b^{-0.1333}$ |
+|  0.1 |    0.251   |  20.08  |  10.86 |  5.88 |  4.32 |  3.18 |  1.72 |                 |
+|  0.5 |    0.660   |  52.80  |  28.57 | 15.46 | 11.38 |  8.37 |  4.53 |                 |
+|  1.0 |     1.0    |  79.99  |  43.30 | 23.43 | 17.24 | 12.69 |  6.66 |                 |
+|  3.0 |    1.933   |  154.63 |  83.68 | 46.29 | 33.32 | 24.53 | 13.26 |                 |
+| 10.0 |    3.981   |  318.45 | 172.34 | 93.27 | 68.63 | 50.51 | 27.32 |                 |
 
 Porter and Gates' $h_c$
-**!TABLE
+
+|      |             | 0.00001 | 0.001 |   0.1  |  1.01 |  10.0 | 160.0 |     $M_b$    |
+|:----:|:-----------:|:-------:|:-----:|:------:|:-----:|:-----:|:-----:|:------------:|
+|      |             |  0.0022 |  0.01 | 0.0464 |  0.10 | 0.215 |  1.00 |      $D$     |
+|  $V$ | $V^{0.333}$ |  59.95  | 21.54 |  7.743 | 4.641 | 2.783 |  1.00 | $D^{-0.667}$ |
+|  0.1 |    0.464    |  25.80  |  9.27 |  3.33  |  2.00 |  1.20 |  0.43 |              |
+|  0.5 |    0.794    |  44.14  | 15.86 |  5.76  |  3.42 |  2.05 |  0.74 |              |
+|  1.0 |     1.0     |  55.60  | 19.97 |  7.18  |  4.30 |  2.58 |  0.92 |              |
+|  3.0 |    1.442    |  80.17  | 28.80 |  10.35 |  6.20 |  3.72 |  1.33 |              |
+| 10.0 |    2.154    |  119.75 | 43.03 |  15.47 |  9.27 |  5.56 |  1.99 |              |
+
 
 Let $D=L=(\frac{M_b}{\rho})^{1/3}$ from Appendix III, $\rho = 1 \times 10^3 kg\;m^{-3}$ then
 $$\frac{h_{c2}}{h_{c1}}=\frac{17.24V^{0.60}M_b^{-0.133}}{0.927V^{0.3}[(\frac{M_b}{\rho})^{1/3}]^{-2/3}}=4.01V^{0.27}M_b^{0.089}$$
@@ -1274,7 +1292,18 @@ For a cylinder we have
 knitr::include_graphics('figures/fig-climatespace-p6b.png')
 ```
 
-Now if we assume the area of the slab is equal to $L\times2\pi\frac{r_i+r_0}{2}$ and the thickness to be $r_0-r_i$ we can set the two equations [\@ref(eq:climatespace-B)] and [C] equal.
+\begin{eqnarray}
+q_c &=& -kA\frac{dT}{dr} \\
+A &=& 2\pi rL \\
+q_c &=& -k 2\pi rL \frac{dT}{dr} \\
+dT &=& -\frac{q_c}{2\pi Lk}\frac{dr}{r} \\
+\int^{T_0}_{T_i}dT &=& -\frac{q_c}{2\pi Lk}\int^{r_0}_{r_i}\frac{dr}{r} \\
+T_0 - T_i &=& \frac{-q}{2\pi Lk}ln(\frac{r_0}{r_i}) \\
+q_c &=& \frac{2\pi Lk}{ln(\frac{r_0}{r_1})}(T_i-T_0)
+(\#eq:climatespace-C)
+\end{eqnarray}
+
+Now if we assume the area of the slab is equal to $L\times2\pi\frac{r_i+r_0}{2}$ and the thickness to be $r_0-r_i$ we can set the two equations \@ref(eq:climatespace-B) and \@ref(eq:climatespace-C) equal.
 
 $$\frac{kL2\pi\frac{r_i+r_0}{2}(T_i-T_0)}{r_0-r_i}\stackrel{?}{=}\frac{2\pi Lk(T_i-T_0)}{ln(\frac{r_0}{r_i})}$$
 
@@ -1346,8 +1375,80 @@ knitr::include_graphics('figures/fig-climatespace-p7.png')
 > Appendix I
 **!ADD APPENDIX?**
 
-> Appendix II
-**!ADD APPENDIX?**
+## Appendix II
+**Calculation of the Right-Hand Limit of the Climate Space**  
+In their original paper, Porter and Gates (1969) state with regard to
+Equation \@ref(eq:climatespace-3), "... An estimate was made of $\overline{Q_a}$ as generally related to air temperature for value of absorptivity from 0.2 to 1.0." Gates (1977) shows how to calculate $S$ and $s$ as a function of latitude, time of year, and time of day. A representative value of 40° was chosen for latitude and then values of $S$, $s$ were calculated under clear sky conditions in the late morning and afternoon. For $r$, a representative value of 0.15 was probably used. Curves of $T_a$ and $T_g$ as a function of time of day such as shown in Figure \@ref(fig:fig-climatespace-2) were then taken from weather bureau statistics. $R_a$ and $R_g$ could then be calculated using the Stefan-Boltzmann law. All the numbers necessary to estimate $\overline{Q_a}$ are then available. The final step is to choose pairs of $T_a$ and $Q_a$ that are to be used. In Figure \@ref(fig:fig-climatespace-3), 9:00-10:00 are hours of the day when this is true. This procedure is repeated at several latitudes and times of the year, from which the right-hand boundary can be derived.
 
-> Appendix III
-**!ADD APPENDIX?**
+Campbell (1977 pp.89-92) presents simplified equations to calculate the left- and right-hand boundaries of the climate space. He includes a correction factor to average the longwave radiation from the ground and the sky for the left-hand boundary. The direct beam and diffuse shortwave radiation fluxes are simply given for the right-hand boundary. The reflected shortwave component seems to be included in the diffuse term which at 25% of the direct flux is higher than Gates (1978) gives.
+The absorbed shortwave radiation is then added to the left-hand boundary values. Therefore as $T_a$ increases the shortwave component is constant using Campbell's equations but using Gates' method the shortwave flux increases.
+
+### Appendix III
+**Derivation of the Constant $k_s$ for the Convection Coefficient**  
+Mitchell (1976) reported that the best overall relationship between the Reynolds and Nusselt numbers is given by
+
+\begin{equation}
+Nu = 0.34Re^{0.6}
+(\#eq:ap1)
+\end{equation}
+Recalling that Reynolds number $Re$ is the ratio of interim forces to viscous forces in the fluid, we write
+
+\begin{equation}
+Re = \frac{VL}{\nu}
+(\#eq:ap2)
+\end{equation}
+
+where  
+$V$ = the fluid velocity (m s^-1^)  
+$L$ = the characteristic length (m), and  
+$\nu$ = the kinematic viscosity (m^2^ s^-1^)
+
+The Nusselt number is a way to scale the rate of heat transfer as a function of wind velocity, size of the organism and fluid thermal diffusivity.  
+It can also be expressed as
+
+\begin{equation}
+Nu = \frac{h_cL}{k}
+(\#eq:ap3)
+\end{equation}
+
+where  
+$h_c$ = heat transfer coefficient (W m^-2^ °C^-1^),  
+$L$ = characteristic length (m), and  
+$k$ = thermal conductivity W m^-1^ °C^-1^).
+
+Mitchell (1976) defined the characteristic length as
+
+\begin{equation}
+L = (\frac{M_b}{\rho})^{1/3}
+(\#eq:ap4)
+\end{equation}
+
+where $M_b$ is the mass kg  
+$\rho$ is the mass density kg m^-3^.  
+Using these expressions we can solve for the heat transfer coefficient as a function of weight and wind velociy. Rearranging Equation \@ref(eq:ap3) and substituting the Equation \@ref(eq:ap1) for $Nu$, we have
+$$h_c = \frac{k}{L}(0.34Re^{0.6})$$
+We can use Equations \@ref(eq:ap2) and \@ref(eq:ap4) to incorporate wind velocity and weight, respectively.
+
+\begin{eqnarray}
+h_c &=& 0.34\frac{k}{L}(\frac{VL}{\nu})^{0.6} \\
+&=& \frac{0.34k}{\nu^{0.6}}V^{0.6}L^{-0.4} \\
+&=& \frac{0.34 \times k}{\nu^{0.6}}V^{0.6}(\frac{M_b}{\rho})^{-0.133} \\
+&=& \frac{0.34 \times k \times \rho^{-0.133}}{\nu^{0.6}}V^{0.6}M_b^{-0.133} \\
+\end{eqnarray}
+
+Letting $k_s = \frac{0.34 \times k \times \rho^{0.133}}{\nu^{0.6}}$
+if $\rho = 1 \times 10^3$ kg m^-3^ which is the density of water
+$$k = 2.57 \times 10^{-2} W m^{-1} K^{-1}$$
+$$\nu = 1.51 \times 10^{-5} m^2s^{-1}$$
+at 20 °C.  
+then $k_s = 17.24$.  
+To see the error of assumng $k$ and $\nu$ at 20 °C we can compare the ratio of $\frac{k}{\nu^{0.6}}$.
+
+| Air temperature (°C) | $\frac{k}{\nu^{0.6}}$ |
+|:--------------------:|:---------------------:|
+|          -10         |         20.79         |
+|          20          |         20.07         |
+|          50          |         19.51         |
+
+The difference over the 20 °C value is $\frac{1.28}{20.79} = 6.4$ percent.
+

@@ -211,7 +211,7 @@ In this introduction to thermodynamics we have tried to stimulate the reader's i
 
 ***
 
-##PROBLEMS
+## PROBLEMS
 1. (a) Definitions to review: temperature, system, radiation, equilibrium, convection, steady-state, reversible, evaporation, heat, work, conduction, thermodynamics, internal energy, The First Law 
 
 (b) True or false  
@@ -251,7 +251,7 @@ Acquaint yourself with the activity times of several different kinds of organism
 
 7. In general if an organism is at a warmer temperature does it grow and reproduce more quickly? What implications might this have for ecology? How might thermodynamics be helpful?
 
-##PROBLEM SOLUTIONS
+## PROBLEM SOLUTIONS
 1. (a) Definitions are in the text. 
 
 (b) All false.  

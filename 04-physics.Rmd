@@ -6,13 +6,13 @@ author: Pearson, Nolan E.
 This module is one of two units on the foundations of physical theory and the application of physics to the biosciences. It is intended that the modules will provide sufficient background in physics so that other more advanced modules in the series can be understood without difficulty. It is presumed that the student has had a previous course in physics and has some facility with calculus. This module deals with atomic theory, basic force laws, and energy. Problems and examples used to illustrate principles of physics are directly related to the biosciences.
 
 
-##THE ATOMIC THEORY
+## THE ATOMIC THEORY
 
 Perhaps the most important hypothesis in all of biology is that "there is nothing that living things do that cannot be understood from the point of view that they are made of atoms acting according to the laws of physics" (Feynman 1963). The atoms of which all things are made are moving about in a state of perpetual motion (even at a temperature of absolute zero), exerting forces on each other (attractive when far apart, repulsive when very close), joining into or dissolving partnerships with each other (i.e., forming molecules) when conditions are right and ultimately organizing into such relatively simple collections of molecules as a grain of sand or a lump of coal, or into very complicated collections of molecules capable of writing "Hamlet" or of composing the "Jupiter" Symphony.
 
 It is the job of physics (or let us say, of the biophysicist) to figure out how atoms interact with one another, why certain atoms have the preferences they do for certain other atoms (and the preferences in combining with them in certain particular angles), and what eventually makes these preferences important to sustaining life in its almost infinite variety of forms. To begin this job, we will have to know something about the forces acting on and between these atoms. We will also study the closely allied concept of the energy associated with these forces, which turns out to be a much more powerful method for understanding atomic (or life) processes than if we were to study only the forces. 
 
-Before discussing the fundamental forces and associated energies in detail, it will be useful to demonstrate the power of the atomic hypothesis by examining the structure of the water molecule (Fig. \@ref(fig:fig-physics-1), and the implications of this structure for biology.
+Before discussing the fundamental forces and associated energies in detail, it will be useful to demonstrate the power of the atomic hypothesis by examining the structure of the water molecule (Fig. \@ref(fig:fig-physics-1)), and the implications of this structure for biology.
 
 ```{r fig-physics-1, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Water vapor (steam) (from Feynman 1963).'}
 knitr::include_graphics('figures/fig-physics-1.png')
@@ -42,7 +42,7 @@ As the surface water of a lake cools ice forms and floats to the surface. The ic
 
 We now have an inkling of the power of the atomic hypothesis. We begin next a discussion of the basic force laws of physics, and will continue to invoke the atomic hypothesis in the ensuing discussions.
 
-##BASIC FORCE LAWS
+## BASIC FORCE LAWS
 
 The "stage" on which inorganic or organic processes take place was thought before 1905 to be the ordinary three-dimensional space of Euclidean geometry, with change occurring in a medium called "time." Einstein, in his theory of relativity, demonstrated the need for us to reshape our notions of space and time, since in different frames of reference (moving at different velocities with respect to each other), lengths and times will differ. Events which seem to occur simultaneously in one frame will not appear to be simultaneous to an observer in another frame. Relativity is of course a rather heady subject, and one which we won't discuss further, but it points up the difficulties which arise in defining precisely and appreciating the most basic quantities in physics.
 
@@ -56,13 +56,13 @@ The atomic theory in conjunction with a knowledge of the force laws will allow u
 
 The understanding of these things based on so few underlying principles, is a remarkable achievement. We shall proceed by discussing the notions of mass and force, and then by describing the force laws.
 
-###Inertia
+### Inertia
 
 In just the same way that "time" and "length" were so difficult, in fact impossible, to provide true definitions for (in the mathematical sense of definition), we shall find that "mass" and "force" must also be defined with some hand-waving. The student should not despair---this is not the fault of physics, nor of this presentation---it's just the way life is. Even the mathematician must face up to a fundamental imperfection in his otherwise perfect discipline. For mathematics must eventually trace all of its definitions back to some primitive concept, the universally accepted primitive concept being that of the "set." What is a "set" of objects? Well, it's a "collection" of them. What's a collection? It's a "group." Et cetera. Eventually we use up all our synonyms for "set," and return to..."set." The definition is circular. Thus mathematicians rely on grasping intuitively, without precise definition, the notion of set. Once that is accepted, of course, mathematics is on sound footing.
 
 Thus we shall simultaneously introduce the ideas of force and mass (and hence, inertia) by presenting Newton's first and second laws:
 
-Newton's fit3t law (law of inertia): Every body will remain in a state of uniform motion unless acted on by external force. 
+Newton's first law (law of inertia): Every body will remain in a state of uniform motion unless acted on by external force. 
 
 Newton's second law: The acceleration of a particle is directly proportional to the resultant external force acting on the particle, is inversely proportional to the mass of the particle, and has the same direction as the resultant force. 
 
@@ -84,7 +84,7 @@ This we'll do, upon noting that if Newton's second law holds, we may assign the 
 
 1 newton (nt) $\equiv$ 1 k m/s^2^
 
-##Gravitational Force
+## Gravitational Force
 
 The story of gravitation begins with the ancients observing the motions of the planets among the stars, and eventually concluding that they went around the sun, a fact much later picked up by Copernicus. Tycho Brahe had the revolutionary idea (at least by comparison to the ancients) that one could measure the movements of the planets and establish their paths in space, which then might resolve the arguments as to whether they indeed moved around the sun. Tycho made extensive measurements, which Kepler then used to establish his three famous laws: (1) planets move in ellipses, with the sun at one focus, (2) the radius vector from sun to planet sweeps out equal areas in equal times, and (3) the period of revolution about the sun is proportional to the 3/2 power of the semimajor axis of its orbit.
 
@@ -108,10 +108,11 @@ This force is the weakest of the four known basic force laws. We tend only to no
 
 The weakness of gravity makes the determination of $G$ tricky. Cavendish was the first to successfully measure $G$ in the laboratory, which he did with an apparatus called a torsion balance. It consists of a horizontal arm suspended by a thin torsion fiber. Lead balls on each end of the arm are gravitationally attracted to a pair of large stationary lead balls, which applies a twist to the fiber in proportion to the force.
 
-PROBLEM 1: Cavendish claimed to be "weighing the earth" by his experiment. Using Newton's second law in combination with his law of universal gravitation, and using the facts that the acceleration due to gravity at the surface of the earth is g = 9.81 m/s^2^, and the radius of the earth is 6368 km, compute the mass of the earth. (In solving this problem, assume the mass is all at a point in the center of the body. It is a remarkable truth, as proved by Gauss, that as long as the bodies possess spherical symmetry, this gives the correct answer.)
+PROBLEM 1:  
+Cavendish claimed to be "weighing the earth" by his experiment. Using Newton's second law in combination with his law of universal gravitation, and using the facts that the acceleration due to gravity at the surface of the earth is g = 9.81 m/s^2^, and the radius of the earth is 6368 km, compute the mass of the earth. (In solving this problem, assume the mass is all at a point in the center of the body. It is a remarkable truth, as proved by Gauss, that as long as the bodies possess spherical symmetry, this gives the correct answer.)
 
 
-###Electromagnetic Force
+### Electromagnetic Force
 
 The classical theory of electromagnetism as it was ultimately developed in the 19th century, and which culminated in Maxwell's synthesis of the laws of electricity and magnetism with those laws of the behavior of light, is one of great beauty and also of great complexity. It is too complicated to present here in entirely correct detail, but though the formulas we give are approximations, they will suffice for our purposes of understanding something of life systems.
 
@@ -133,9 +134,11 @@ The unit of charge, the coulomb, is formally defined today in terms of the amoun
 $$e=1.6019\times10^{-19}coul$$
 The coulomb is one of the five fundamental units (length, time, mass, electrical charge, and temperature) in terms of which *all* physical units may be expressed. The constant of proportionality ($\frac{1}{4\pi\varepsilon_o}$) is arbitrarily assigned this strange form by physicists so that certain other of their expressions derived from Coulomb's law are more aesthetic in appearance than they otherwise would be.
 
-PROBLEM 2. Determine the repulsive force between two electrons placed at a distance of 1 mm from each other.
+PROBLEM 2:  
+Determine the repulsive force between two electrons placed at a distance of 1 mm from each other.
 
-PROBLEM 3: Determine the attractive force due to gravitation between the above two electrons (mass of electron $- 9.107 \times 10^{-31}$kg). Hence demonstrate that for electron the electrical force is about 10^42^ times as strong as the gravitational force.
+PROBLEM 3:  
+Determine the attractive force due to gravitation between the above two electrons (mass of electron $- 9.107 \times 10^{-31}$kg). Hence demonstrate that for electron the electrical force is about 10^42^ times as strong as the gravitational force.
 
 As the above problems illustrate, the magnitude of the electrostatic force is enormous. Yet in our everyday experience the balance between negatively and positively charged matter (electrons and protons) is so nearly perfect in most objects that we fail to notice it. In fact, if you were standing at arm's length from someone, and each of you had one percent more electrons than protons, the repulsive force between you would be sufficient to lift a weight equal to that of the earth (Feynman 1963).
 
@@ -147,7 +150,7 @@ But what holds the protons together in such close proximity in the nucleus? The 
 
 We have described the law of interaction between charges at rest. To complete our description of electrical forces in this module, we must set down the law by which forces act between charges in motion. This is the phenomenon of magnetism, which when coupled with the law for electrostatics (and in fact we know now from the special theory of relativity that they are inseparable) forms the basis for what we term electromagnetic phenomena. The description of the magnetic force is difficult without introducing the intermediary concept of a magnetic field (it's difficult enough even this way!). It goes like this: (1) a moving charge sets up what we call a *magnetic field*; (2) another charge in motion experiences a force as it moves through this magnetic field.
 
-The Biot-Savart law (sometimes called Ampere's law) describes the magnetic field set up at a distance $r$ from moving charges (current) in a wire (see Fig. \@ref(fig:fig-physics-4):
+The Biot-Savart law (sometimes called Ampere's law) describes the magnetic field set up at a distance $r$ from moving charges (current) in a wire (see Fig. \@ref(fig:fig-physics-4)):
 \begin{equation}
 dB=\frac{\mu_o\;i\;dl\;sin\theta}{4\pi r^4}
 (\#eq:4)
@@ -168,7 +171,8 @@ knitr::include_graphics('figures/fig-physics-4.png')
 
 If the thumb of your right hand is pointed in the direction of the current, the magnetic field circles about the wire in the direction of the fingers of your right hand.
 
-PROBLEM 4: Compute the total magnetic field at the point in Fig.\@ref(fig:fig-physics-4) by summing (integrating) the contribution from all elements $dl$, in a very long wire carrying current $i$. (Assume the point is a perpendicular distance $R$ from the wire.)  
+PROBLEM 4:  
+Compute the total magnetic field at the point in Fig.\@ref(fig:fig-physics-4) by summing (integrating) the contribution from all elements $dl$, in a very long wire carrying current $i$. (Assume the point is a perpendicular distance $R$ from the wire.)  
 The force on a charge $(q)$ moving through a magnetic field $(B)$ is given by:
 
 \begin{equation}
@@ -200,7 +204,7 @@ Note that $\varepsilon_0$ and $\mu_0$ were measured in the laboratory under stat
 
 In conclusion, the electromagnetic forces are by far the most important of any of the basic force laws in understanding the living organism. Atomic processes, whether they be the "physical" processes involved in changes of state...solid, gas, or liquid...or the "chemical" processes involved in exchanges of partners between atoms, are basically manifestations of the electromagnetic force laws (sometimes necessarily being modified by the rules of quantum physics). Certain other processes, such as elastic collisions between molecules or between large objects, hence friction, are really the result of an electrostatic repulsion between molecules at close range. In short, most of biophysics and biochemistry could ultimately be explainable (in theory, at least!) by an elaborate application of Maxwell's classical laws and those of modern quantum electrodynamics.
 
-###Other Force "Laws"--Friction, Intermolecular Forces, Hooke's Law
+### Other Force "Laws"--Friction, Intermolecular Forces, Hooke's Law
 
 There are other so-called force laws which are usually treated in elementary presentations, which, though apparently having a reality of their own, are seen on closer inspection to be consequences of the basic laws of electromagnetism. For example, the frictional "drag" force on a body moving through a fluid (liquid or gaseous) is observed to be proportional to the velocity of the body relative to the fluid if the velocity is slow enough that no turbulence is present. At higher velocities, the force opposing the motion may be more nearly proportional to the square of the velocity. This is the case when an airplane flies through the atmosphere at subsonic speed. The frictional force "law" is actually a consequence of the molecules of the fluid bombarding the object, changing their momentum during the act of collision, which is in turn a consequence of the strong repulsive electrostatic force between two molecules as they approach too closely. The sum of the basic electromagnetic interactions between a myriad of molecules results in the measured drag forces in a manner so complicated that the frictional effects have never been calculated from first principles.
 
@@ -230,9 +234,9 @@ where
 
 The various chemical interactions or exchanges of atoms between molecules are largely consequences of these and more complicated force laws (for more complex molecules) derivable from the basic laws of electromagnetism. The force laws by themselves however are not always so easy to work with. A much more elegant and deeper understanding of the interactions between molecules, and hence the life process, requires an understanding of the concept of energy, which we deal with next.
 
-##ENERGY
+## ENERGY
 
-###Work and Potential Energy
+### Work and Potential Energy
 Suppose we carry a bucket of water up ten flights of stairs. We would probably all agree that some work had been done. If we had had a course in physics, we would be inclined to say that we had done some work on the bucket of water (as well as on our own selves) in carrying it up ten stories. From our everyday use of the word "energy" we might also note that we expended considerable energy in getting the bucket of water to that great height, and we might intuitively believe that in some way we have imparted some of that energy to the bucket of water, though of course it doesn't look any different to us from ten stories up as it did at ground level. We will be calling this energy which we endowed to the bucket of water, the "potential energy," and justify this terminology by noting that if we were to open the window and pour out the water with careful aim onto the blades of a turbine at ground level, the energy of motion (i.e., the "kinetic energy") which the water builds up as it hurtles turbineward at an acceleration of 9.81 m/sec^2^, will set the blades of the turbine in motion, which in turn will generate several milliwatt-hours of electrical energy. On our return to the ground floor we will no doubt be confronted by the chief physicist of the project who will deprecatingly inform us that though, while we were ten stories up we had a good deal of potential energy ourselves, in walking back down we had lost it all and had effectively performed no net work beyond that which we performed on the bucket of water (or on just the water if we brought the bucket back with us). The water itself, while no longer possessing potential energy, *did* indeed convert that energy into some useful work in turning the blades of the turbine to produce electricity, but we did no useful work ourselves in descending the ten stories with the empty bucket.
 
 Do physicists and physiologists have different ideas as to what work and energy are? Though it was a lot easier coming back downstairs with the empty bucket than it was going up with the full one, we know that it took some energy expenditure in getting back down the ten flights. And besides, if we had done no net work on ourselves, why do we need the food energy from a bologna sandwich before we can repeat the trip? To understand, we must become precise in our definitions, which we will do on the physicist's own terms (and which the physiologist will eventually find perfectly acceptable), and then we must bring these into accord with what we know must be true about our own bodily energy expenditure during the round trip.
@@ -256,7 +260,7 @@ W_{12}=\int_{x_1}^{x_2}F_xdx
 
 where $x = x_1$ at the start of our travail, and $x = x_2$ at the finish. Note that work is done only by that component of the force acting in the direction of motion. Any component for force perpendicular to the motion does no work under this definition.
 
-If the path of motion is not straight, we must give the most general definition of work, which takes the form of a line integral (see Fig. \@ref(fig:fig-physics-8):
+If the path of motion is not straight, we must give the most general definition of work, which takes the form of a line integral (see Fig. \@ref(fig:fig-physics-8)):
 \begin{equation}
 W_{AB}=\int_A^BFcos\theta ds
 (\#eq:9)
@@ -267,7 +271,7 @@ where $ds$ = incremental distance in direction of the path of travel
 
 Note that $F cos \theta$ is the component of force in the actual direction of motion. Also note that the work done is computed from the force we must apply to the object, not from the force that is opposing our motion. (Otherwise it would have the opposite sign.)
 
-```{r fig-physics-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Relations between F, $\theta$, and ds used in computing work in moving an object from A to B.'}
+```{r fig-physics-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Relations between F, $\\theta$, and $d_s$ used in computing work in moving an object from A to B.'}
 knitr::include_graphics('figures/fig-physics-8.png')
 ```
 
@@ -279,7 +283,7 @@ W=mgh
 (\#eq:10)
 \end{equation}
 
-What if, instead of climbing a vertical ladder, we had carried the water up a plane inclined at the angle $(\phi)$ (Fig. \@ref(fig:fig-physics-9)?
+What if, instead of climbing a vertical ladder, we had carried the water up a plane inclined at the angle $(\phi)$ (Fig. \@ref(fig:fig-physics-9))?
 
 ```{r fig-physics-9, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Relations between quantiles needed to calculate work against gravity on an object being taken up an inclined plane.'}
 knitr::include_graphics('figures/fig-physics-9.png')
@@ -317,10 +321,11 @@ The energy which makes muscles contract comes mostly from the chemical energy st
 
 It seems strange that nature should have evolved such an inefficient scheme for muscle action, but apparently this is what we must give up in order to have "fast" muscle. Nature seems to have been unable to have evolved muscle which can act rapidly and also sustain large static loads. The smooth muscle (such as that surrounding the intestines) is built quite differently, and acts much more like the table in holding a constant load, where the molecules essentially lock into position to sustain that load. The abductor muscle of the clam represents a good example of smooth (hence "slow") muscle which can effortlessly sustain a load over long periods. 
 
-PROBLEM 5: Determine the potential energy stored in a spring stretched from equilibrium a distance $x$. (Recall, Hooke's Law is $F = kx$.) Hooke's Law is, as you know, the same force law as that between two molecules at distances very near their equilibrium distance. This potential energy is a way of representing the vibrational energy of a diatomic molecule, which in the course of vibrating is rapidly exchanging potential energy (maximum at the maximum distance from equilibrium) for kinetic energy (maximum at the equilibrium distance).
+PROBLEM 5:  
+Determine the potential energy stored in a spring stretched from equilibrium a distance $x$. (Recall, Hooke's Law is $F = kx$.) Hooke's Law is, as you know, the same force law as that between two molecules at distances very near their equilibrium distance. This potential energy is a way of representing the vibrational energy of a diatomic molecule, which in the course of vibrating is rapidly exchanging potential energy (maximum at the maximum distance from equilibrium) for kinetic energy (maximum at the equilibrium distance).
 
 
-###Kinetic Energy
+### Kinetic Energy
 
 We must now formally obtain a formula for kinetic energy, which is defined to be the amount of work we do in overcoming the inertial force of a body of mass $m$, in getting it from zero velocity to a velocity $v$. The inertial force is given by Newton's second law, which we manipulate a bit using the chain rule for derivatives and recalling that the rate of change of velocity is acceleration:
 $$F=ma=m\frac{dv}{dt}=m\frac{dv}{dx}\frac{dx}{dt}=mv\frac{dv}{dx}$$
@@ -331,7 +336,7 @@ We may insert this into the definition of work (Equation \@ref(eq:8)) to get:
 \end{equation}
 We are now ready to establish the law of conservation of energy, which we do forthwith.
 
-###Conservation of Energy
+### Conservation of Energy
 
 It's interesting to note that this cornerstone physics, the principle of conservation of energy, was first demonstrated by the German physician, Dr. Julius Robert Mayer, based on his observation that the venous blood of a patient in the tropics is redder than the venous blood of a patient in the temperate zone. This difference, he concluded, resulted from the body's lower oxidation rate required to maintain body temperature in the tropics: Mayer viewed the organism not as an independent entity, but as a part of the environment and responsive to its external surroundings, which led him eventually to an understanding of the mechanical equivalent of heat, and ultimately to a statement of the law of conservation of energy, which he published in 1842 in Liebig's *Annalen* on "The Forces of Inorganic Nature." Thus did biology make a signal contribution to physical theory.
 
@@ -394,7 +399,7 @@ The principal assumption in this development is that the forces acting on the bo
 In passing, we point out one more assumption made in the development of the law, which though not of professional interest to biologists, should be of some philosophical interest. In the development of the expression for the kinetic energy, the mass of the object was assumed constant. In everyday circumstances this is true, but as you're no doubt aware, at velocities near the speed of light it is not true. When Einstein used his formula for mass as a function of velocity in the development of an expression for kinetic energy, he discovered that in order for the formulation to be consistent with conservation of energy, a net change in mass in an isolated system would be associated with a net opposite change in energy of magnitude $E = mc^2$, where $m$ is the change in mass and $c$ is the velocity of light. This is the form of energy previously referred to as mass-energy, and is of utmost importance to the under standing of nuclear reactions, though it won't concern us further here.
 
 
-###Gravitational and Electrostatic Potential Energy
+### Gravitational and Electrostatic Potential Energy
 
 We can now establish formulas for gravitational and electrostatic potential energy. For reasons that will become apparent in the development, we usually choose $r = \infty$ to be the reference point for the potential energy; that is, we shall define $V_{\infty} = 0$. Thus if we take equation \@ref(eq:15) and \@ref(eq:8) in combination to define potential energy, then substitution of equation \@ref(eq:2), Newton's law of universal gravitation, into the defining potential energy relations gives:
 \begin{eqnarray}
@@ -418,7 +423,8 @@ where $R$ = radius of earth.
 
 Thus the escape velocity is $v = \sqrt{\frac{2GM}{R}}$.
 
-PROBLEM 6: Show that $\frac{GM}{R^2}=g$, the acceleration due to gravity at the surface of the earth. Hence show that the escape velocity is approximately seven miles per second, knowing that $g$ = 9.81 m/s^2^ and $R$ = 6368 km.
+PROBLEM 6:  
+Show that $\frac{GM}{R^2}=g$, the acceleration due to gravity at the surface of the earth. Hence show that the escape velocity is approximately seven miles per second, knowing that $g$ = 9.81 m/s^2^ and $R$ = 6368 km.
 
 Of greater biological importance is the potential energy associated with the electrostatic force. Since, like gravity, it is an inverse square law, there is no need to derive it again, but rather just write:
 
@@ -429,16 +435,19 @@ V=\frac{1}{4\pi \varepsilon_o}\frac{q_1q_2}{r}
 
 where once again infinity is chosen as the reference point. The sign is positive since, unlike gravity, the force between like charges is repulsive. (Of course, if the charges are unlike, we would come up with the negative energy associated with attractive forces.)
 
-PROBLEM 7: A glaucous-winged gull weighing 2 kg carries a cockle weighing 0.25 kg to a height of 10 m where at a horizontal flight speed of 3 m/sec it releases the cockle whose shell will shatter on the rocks below, as soon thereafter as possible to be devoured by the gull. What is the minimum energy that the gull could have expended in rising to 10 m and achieving its level flight?
+PROBLEM 7:  
+A glaucous-winged gull weighing 2 kg carries a cockle weighing 0.25 kg to a height of 10 m where at a horizontal flight speed of 3 m/sec it releases the cockle whose shell will shatter on the rocks below, as soon thereafter as possible to be devoured by the gull. What is the minimum energy that the gull could have expended in rising to 10 m and achieving its level flight?
 
-PROBLEM 8: At what speed will the cockle hit the ground?
+PROBLEM 8:  
+At what speed will the cockle hit the ground?
 
-PROBLEM 9: The lowest energy state for the electron in the hydrogen atom has been measured to be -217.3 $\times$ 10^-20^ joules. What is the radius of the hydrogen atom under this condition? (HINT: The centrifugal force" of a mass moving in a circular orbit is $\frac{mv^2}{r}$. When this is equated to the electrostatic force holding the electron in orbit, a simple expression for the kinetic energy of the electron is obtained. Add this to the potential energy to get the total energy, which is -217.3 $\times$ 10^-20^ joules. Solve for $r$.)
+PROBLEM 9:  
+The lowest energy state for the electron in the hydrogen atom has been measured to be -217.3 $\times$ 10^-20^ joules. What is the radius of the hydrogen atom under this condition? (HINT: The centrifugal force" of a mass moving in a circular orbit is $\frac{mv^2}{r}$. When this is equated to the electrostatic force holding the electron in orbit, a simple expression for the kinetic energy of the electron is obtained. Add this to the potential energy to get the total energy, which is -217.3 $\times$ 10^-20^ joules. Solve for $r$.)
 
 With the background that we've now gathered, we are ready to begin a discussion of the application of the principles we've developed to the study of thermodynamics, which we will find to result in a most elegant set of tools for the handling of some otherwise vexing, but nonetheless important, biological problems.
 
 
-##SOLUTIONS TO PROBLEMS
+## SOLUTIONS TO PROBLEMS
 
 1. 5.964 $\times$ 10^18^ kg  
 2. 2.306 $\times$ 10^-22^ nt  

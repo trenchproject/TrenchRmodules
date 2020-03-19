@@ -24,7 +24,7 @@ with an obvious correspondence between fundamental unit magnitudes "km" and "hr"
 
 There is a certain arbitrariness of choice in the number and nature of the "fundamental" dimensions, whether we are thinking of our needs in choosing dimensions for actual measurement purposes or for the more formalistic requirements of theoretical models (and there is also considerable latitude in the selection of the scale units we might regard as fundamental; those suited for one problem may not be suited for another). Because of the strong historical precedent of Newtonian mechanics, the three natural concepts of space, time, and mass are often regarded as being fundamental in the absolute sense, but, in fact, more than three fundamental dimensions are sometimes desirable, and we shall see that differing sets of fundamental dimensions can be selected, none of which need be regarded as absolutely fundamental.
 
-###PROBLEM SET 1.
+### PROBLEM SET 1.
 1. Employ the dimensional set $M$ (mass), $V$ (velocity), $T$ (time), and do the following exercise. The attached solutions may be consulted if necessary.  
     (a) The linear acceleration of a particle can be envisioned as the increase or decrease in the velocity of the particle, measured over a short time period. Write the dimensions of linear acceleration.  
     (b) The magnitude of force on a body wholly free to move can be calculated as the product of the body's mass and its linear acceleration. Write the dimensions of mechanical force.  
@@ -47,7 +47,7 @@ In the making of scientific syntheses, our mutual needs for clear thinking and p
 The following definitions for mechanical quantities have been abstracted from publications of NBS (1964,1968) and Cray (1972). For comprehensive tabulations of the quantities appropriate to optics, acoustics, and electricity, see the *Handbook of the American Institute of Physics*, the *Handbook of Chemistry and Physics* (Chemical Rubber Co.), or the
 *Handbook of the National Bureau of Standards*, which is edited and published annually.
 
-###FUNDAMENTAL MECHANICAL UNITS
+### FUNDAMENTAL MECHANICAL UNITS
 
 *Meter*. Unit of length mks system. Symbol m, dimension L. By international agreement (1960) defined to be 1,650,763.73 wavelengths of the orange-red line of krypton 86, which replaces the length standard based on the platinum-iridium meter bar in Paris.
 
@@ -55,12 +55,12 @@ The following definitions for mechanical quantities have been abstracted from pu
 
 *Second*. Unit of time mks system. Symbol sec, dimension T. By international agreement (1960) defined to be 1/31,556,925.9747 of the tropical year 1900. (A "tropical year" is the interval of time between two successive passages of the sun through the vernal equinox.) A more recent international conference adopted provisionally a new definition of the second as the time corresponding to 9,192,631,770 oscillations of the cesium atom in the so-called atomic clock.
 
-###TEMPERATURE SCALES
+### TEMPERATURE SCALES
 In 1968 the International Committee on Weights and Measures officially adopted the "International Practical Temperature Scale", which is based on the concept of temperature (variable symbol 0, dimension 0) as being that of thermodynamic temperature. The unit magnitude of the International Scale is the degree Kelvin (symbol °K). The degree Kelvin is the fraction 1/273.16 of the triple point of water. The Celsius temperature scale is defined in terms of the Kelvin scale as
 $$\theta_c=\frac{1°C}{1°K}\Big(\theta_k-\theta_0\Big)$$
 where $\theta_c$ is the temperature magnitude on the Celsius scale, $\theta_k$ the temperature magnitude on the Kelvin scale, and $\theta_0$ = 273.15°K (the ice point of water). The scale unit of the Celsius temperature is the degree Celsius (symbol °C), equal in magnitude to the degree Kelvin. Reference point relationships between Kelvin, Celsius, and Fahrenheit scales are:  
 
- *  0°K = 273.15 °C = 459.67°F ("absolute" zero),  
+ *  0°K = -273.15 °C = -459.67°F ("absolute" zero),  
  *  273.15°K = 0°C = 32°F (the ice point),  
  *  273.16°K = 0.01°C = 32.018°F (equilibrium between solid, liquid, and vapor phases of water; the triple point),  
  *  373.15°K = 100°C = 212°F (the boiling point of water).
@@ -68,7 +68,7 @@ where $\theta_c$ is the temperature magnitude on the Celsius scale, $\theta_k$ t
 The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear and appear as straight lines when graphed.
 
 
-###SUPPLEMENTARY MECHANICAL UNITS (cgs and English systems)
+### SUPPLEMENTARY MECHANICAL UNITS (cgs and English systems)
 *Centimeter*. Unit of length cgs system. Symbol cm, dimension L. Defined to be 1/100 meter.
 
 *Gram*. Unit of mass cgs system. Symbol g, dimension M. Defined to be 1/1000 kilogram.
@@ -85,12 +85,12 @@ The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear 
 
 *Micron*. See micrometer.
 
-ANGULAR UNITS  
+### ANGULAR UNITS  
 *Degree*. Unit of angular measure. Symbol deg or ° (superscript), dimensionless, Defined as the angle subtended at the center by a circular arc 1/360 the circumference.
 
 *Radian*. Unit of angular measure. Symbol radian, dimensionless. Defined as the angle subtended at the center by a circular arc equal in length to the radius of the circle. 1 radian = 360/2$\pi$ degrees angular measure.
 
-DERIVED UNITS  
+### DERIVED UNITS  
 *Atmosphere*. Unit of pressure. Symbol atm, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Defined to be the pressure exerted by dry atmosphere, 0°C, at mean sea level. Equivalent to $1.013250 \times 10^6 dyn\cdot cm^{-2}$ in cgs units.
 
 *Bar*. Unit of pressure. Symbol bar, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Equal to $10^5 nt\cdot m^{-2}$ in mks units.
@@ -125,8 +125,7 @@ DERIVED UNITS
 An appendix summarizing the SI units and dimensions is attached.
 
 
->AUXILIARY PREFIXES OF THE METRIC SYSTEM TO INDICATE DECIMAL MULTIPLES
-AND SUBMULTIPLES
+### AUXILIARY PREFIXES OF THE METRIC SYSTEM TO INDICATE DECIMAL MULTIPLES AND SUBMULTIPLES
 
 | Multiples and sub-multiples  | Prefix |
 |:---------------------------:|:------:|
@@ -146,7 +145,7 @@ AND SUBMULTIPLES
 |            10^12^           |  tera  |
 
 
-###PROBLEM SET 2
+### PROBLEM SET 2
 
 1. Determine the number of 24-hour days in the tropical year 1900.
 
@@ -185,7 +184,7 @@ AND SUBMULTIPLES
 
 Should we reduce to its fundamental dimensions each of the quantities occurring in a valid physical equation, all *terms* of the equation must then consist of like fundamental dimensions raised to like powers. The equation must be *dimensionally homogeneous*. This is a truism for definitional equations, and for those equations of empirical basis it expresses a condition of physical necessity. The principle of dimensional homogeneity, or its equivalent, is the basic axiom for the operational rules in the general method of *dimensional analysis*.
 
-###THE DIMENSIONAL CONSTRAINTS ON DEFINITIONAL AND EMPIRICAL EQUATIONS
+### THE DIMENSIONAL CONSTRAINTS ON DEFINITIONAL AND EMPIRICAL EQUATIONS
 
 The principle of homogeneity applies to equations of purely dimensional content, and it applies to equations that contain scale magnitudes and quantities of measurement. It excludes any equation that might be mathematically complete but physically meaningless. For example, the equation
 
@@ -274,7 +273,7 @@ Hence, our equation is dimensionally homogeneous; its dimensions are those of ac
 $$LT^{-2}=\frac{MLT^{-2}}{M}=\frac{F}{M}$$
 which are the dimensions of force per unit mass (of fluid).
 
-###INTENSIVE AND EXTENSIVE PROPERTIES
+### INTENSIVE AND EXTENSIVE PROPERTIES
 Properties that depend on the total quantity of matter (or total effect) being measured are called **extensive** properties. If we take twice as much matter of a given substance, for example, it will contain twice as much volume and twice as much mass, implying that mass and volume are to be regarded as extensive properties of a substance. Properties independent of the quantity of matter or total effect being measured are called **intensive** properties. The density of a substance and its temperature are examples of the intensive properties of the substance. The density of water, say, is the same--under similar conditions--whether we measure one cupful or one cubic kilometer. Intensive properties are properties of the substances themselves, and, like the density of water, can be used in the identification of a substance, since, generally speaking, unlike substances differ in their intensive properties. The name of an intensive property will often bear the prefix "specific". Examples are specific volume (the volume occupied by a unit mass of a substance) and specific luminous intensity (the luminous intensity per unit area of source).
 
 Physical equations often contain a mixture of intensive and extensive quantities, but the principle of dimensional homogeneity still holds. When multiplied by density $\rho$, for example, our last sample equation becomes
@@ -285,7 +284,7 @@ which, of course, is typical of all the terms. We can also write the term dimens
 $$ML^{-2}T^{-2}=MLL^{-3}T^{-2}=\frac{MLT^{-2}}{L^3}=\frac{F}{L^3}$$
 which are the dimensions of force per unit volume (of fluid).
 
-###CONVERSION FACTORS
+### CONVERSION FACTORS
 Very often the magnitude of a quantity must be transformed from one set of scale units to a different set of scale units (pounds to grams, miles per hour to meters per second, and so on). Such a transformation is commonly called a conversion of units, and conversions between two units can be made whenever the two units have the same dimensions (pounds and grams both have dimension $M$, miles per hour and meters per second both have dimensions $LT^{-1}$, and so on), and whenever we know the equation (the identity) that relates the two units. To convert, say, the magnitude of the mass of some object from units of pounds to units of kilograms, we make use of the identity
 $$1 lb=0.45359237kg$$
 or the identity
@@ -334,7 +333,8 @@ And finally, we perform the necessary multiplication and get the desired convers
 $$30mi/hr=1340cm/sec$$
 The rational operations of algebra extend with great convenience to the operations (and conversions) on scale units. 
 
-Example. Convert the area magnitude of 1 square inch to units of square centimeters:  
+Example.  
+Convert the area magnitude of 1 square inch to units of square centimeters:  
 The identity between the inch and the centimeter is
 $$1in=2.54cm$$
 and by squaring both sides of the identity we get
@@ -378,7 +378,7 @@ $$\frac{1.600g}{1cm^3}=\frac{1.600\rlap{-}g}{1\rlap{--}cm^3}\Big(\frac{1\rlap{-}
 $$1.600g\cdot cm^{-3}=0.9248oz\cdot in^{-3}$$
 which is the desired conversion.
 
-###PROBLEM SET 3
+### PROBLEM SET 3
 1. Determine the dimensions of the following:  
     (a)$\int_{x_1}^{x_2}mv(x)dv$, where $m$ is the mass of a body and $v$ its velocity along a path from $x_1$ to $x_2$.  
     (b)$\frac{\partial}{\partial x}\int mvdv$  
@@ -418,7 +418,7 @@ where $\vec{q}$ is the vector of heat current density (quantity of heat per unit
 
 10. A phonograph needle makes contact with a record surface over a circular area of diameter 80 $\mu$m. Calculate the pressure on the record when the needle arm weighs 2 ounces.
 
-##ANSWERS AND SOLUTIONS
+## ANSWERS AND SOLUTIONS
 
 PROBLEM SET 1  
 
@@ -647,7 +647,7 @@ p&=&F\cdot A^{-1} = (2oz)(980cm\cdot sec^{-2})\Big(\frac{1}{\pi\cdot 1600\mu m^2
 \end{eqnarray}
 
 
-##REFERENCES
+## REFERENCES
 Gray, D.E. (1972) Handbook of the American Journal of Physics, 3rd ed. McGraw-Hill, N.Y.
 
 National Bureau of Standards (1968) The English and metric systems of measurement, NBS Special Publ. 304A.

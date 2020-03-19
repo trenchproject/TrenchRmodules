@@ -34,7 +34,7 @@ Thus, we can modify the function to give the solution
 
 $$N = N_0 e^{kt}$$
 
-since differentiating $N_0 e^{kt}$ gives eqn. \@ref{eq:1). 
+since differentiating $N_0 e^{kt}$ gives eqn. \@ref{eq:1}. 
 
 $$\frac{dN}{dt} = \frac{d(N_0 e^{kt})}{dt} = kN_0 e^{kt} = kN $$
 
@@ -55,7 +55,7 @@ $$g(t) = df/dt$$
 
 Thus $g(t)$ is the derivative of $f(t)$ and, conversely, $f(t)$ is an **antiderivative** of $g(t)$. But there is a slight problem. The antiderivative is not unique. If we define  
 
-$$x(t) = N_O e^{kt} + 10, \;\;\;\;y(t) = N_O e^{kt} +354  $$
+$$x(t) = N_0 e^{kt} + 10, \;\;\;\;y(t) = N_ e^{kt} +354  $$
 
 then $x(t)$ and $y(t)$ are also antiderivatives of $g(t)$, as can be checked by differentiating: $dx/dt = g(t), dy/dt = g(t)$. One interpretation of this is that the graphs of $x(t)$ and $y(t)$ have the same slope (derivative) for any given value of $t$. Since the functions differ by only a constant, we can write the general form of the antiderivative as $f(t) + C$ where $C$ can be any constant. We usually write the antiderivative as the **indefinite integral**
 
@@ -188,7 +188,7 @@ L &=& \lim_{a \rightarrow r} \int^q_0 \frac{r}{\sqrt{r^2-x^2}} dx \\
 &=& \lim_{a \rightarrow r} [r \sin^{-1} (a/r) ] = r\pi/2 \\
 \end{eqnarray}
 
-```{r fig-calcint-5, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='The quarter-circle, $y=sqrt(r^2 -x^2)$'}
+```{r fig-calcint-5, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='The quarter-circle, $y=\\sqrt{r^2 -x^2}$'}
 knitr::include_graphics('figures/fig-calcint-5.png')
 #x=seq(0,10,0.1)
 #r=5
@@ -196,7 +196,7 @@ knitr::include_graphics('figures/fig-calcint-5.png')
 
 ```
 
-```{r fig-calcint-6, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Integrand of arc-length formula, $y=r/ sqrt(r^2 -x^2)$'}
+```{r fig-calcint-6, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Integrand of arc-length formula, $y=r/ \\sqrt{(r^2 -x^2)}$'}
 knitr::include_graphics('figures/fig-calcint-6.png')
 ```
 
@@ -389,18 +389,18 @@ For the upper curve,
 \begin{eqnarray}
 \overline y &=& \frac{1}{27} \int^{30}_3 7.3(x + 3.5)e^{-0.5x}dx \\
 &=& \frac{7.3}{27} \int^{30}_3 3.5e^{-0.5x}dx + {\frac{7.3}{27}}\int^{30}_3 xe^{-0.05x}dx \\
-&=& 0.95 \int^{30}_3 e^{-0.5x}dx + 0.27\int^{30}_3 xe^{-.05x}dx \\
+&=& 0.95 \int^{30}_3 e^{-0.5x}dx + 0.27\int^{30}_3 xe^{-0.05x}dx \\
 \end{eqnarray}
 
 The first integral is the same form as in previous examples.
-$$.95 \int^{30}_3 3.5e^{-0.5x}dx = .95[-\frac{1}{.05} e^{-.05x}]^{30}_3$$
-$$= 19(-e^{-.05(30)}+e^{-.05(3)}) =12.07$$
+$$0.95 \int^{30}_3 3.5e^{-0.5x}dx = 0.95[-\frac{1}{0.05} e^{-.05x}]^{30}_3$$
+$$= 19(-e^{-0.05(30)}+e^{-0.05(3)}) =12.07$$
 
 Rather than finding the second integral in tables, we will evaluate it using **integration by parts**.
 
 With $dv(x)$ representing the differential of $v(x)$, the second integral can be written
 $$\int^{30}_3 xe^{-0.05x}dx = \int^{30}_3 u(x)dv(x)$$
-where $u(x) = x, dv(x) = e^{-.05x}dx$.
+where $u(x) = x, dv(x) = e^{-0.05x}dx$.
 
 Recall that integration by parts uses the formula
 $$\int udv = uv - \int vdu$$
@@ -408,12 +408,12 @@ Since $du = dx$, and $v = \int dv = -e^{-0.05x}/0.05$, we get
 
 \begin{eqnarray}
 \int^{30}_3 xe^{-0.05x}dx &=& [{\frac{-xe^{-0.05x}}{0.05}}]^{30}_3 - \int^{30}_3 \frac{-e^{-0.05x}}{0.05}dx \\
-&=& \frac{1}{.05} \bigg([-30e^{-1.5}+3e^{-0.15}]-[{\frac {e^{-0.05x}}{.05}}^{30}_3]\bigg) \\
+&=& \frac{1}{0.05} \bigg([-30e^{-1.5}+3e^{-0.15}]-[{\frac {e^{-0.05x}}{0.05}}^{30}_3]\bigg) \\
 &=& 20[-30e^{-1.5}+3e^{-0.15} + \frac{e^{-0.15}}{0.05} - \frac{e^{-1.5}}{0.05} = 173.04 \\
 \end{eqnarray}
 
 Thus,
-$$\overline y =  12.07 + .27(173.04) = 58.8$$
+$$\overline y =  12.07 + 0.27(173.04) = 58.8$$
 In summary, we have the averages:
 
 
@@ -860,7 +860,7 @@ n_2(t) = n_0 e^{Rt/3}
 (\#eq:27)
 \end{equation}
 
-Note that $n_1(t)$ tapers off at the carrying capacity, but $n_2(t)$ is exponential growth for $n_2 \approx 0$; both are properties the exact solution must possess. Which approximation is better? We compare $n_1$ and $n_2$ by evaluating their least-squares residual norms. Rewrite eqn. (25) as $L(n) = 0$, where $L(n)$ represents the differential operator acting on $n$:
+Note that $n_1(t)$ tapers off at the carrying capacity, but $n_2(t)$ is exponential growth for $n_2 \approx 0$; both are properties the exact solution must possess. Which approximation is better? We compare $n_1$ and $n_2$ by evaluating their least-squares residual norms. Rewrite eqn.\@ref(eq:25) as $L(n) = 0$, where $L(n)$ represents the differential operator acting on $n$:
 $$L(n) = dn/dt - Rn(1-n/K) + e^{-t}n = 0 $$
 
 We expect a good approximate solution, $n_a$, to give
@@ -870,7 +870,7 @@ $$ \| R(n_a) \|_2 \equiv [\int^T_0 (L(n_a))^2 dt]^{1/2} \approx 0$$
 Intuitively, the smaller $\| R \|_2$ is, the better the approximation should be. For this example, assume the following values:
 $$K = 2000, \; R=1, \; n_0=400, \; T=3$$
 
-The integrands in $\| R(n_1) \|_2$ and $\| R(n_2) \|_2$ are now calculated. From eqn. (\@ref(eq:26)) we obtain, after a few steps,
+The integrands in $\| R(n_1) \|_2$ and $\| R(n_2) \|_2$ are now calculated. From eqn. \@ref(eq:26) we obtain, after a few steps,
 
 \begin{equation}
 [L(n_1)]^2 = (2000 e^{-t}- 1600 e^{-1.2t} + 1280 e^{-0.4t} -2800 e^{-0.2t} +1600)^2
@@ -889,7 +889,7 @@ $$\| R(n_1) \|_2 = 661.8$$
 $$\| R(n_2) \|_2 = 172.3$$
 Figure \@ref(fig:fig-calcint-19) shows the accuracy of the two approximate solutions as compared to a numerical solution to the original differential equation \@ref(eq:25). It appears that, for the chosen values of $R$, $K$ and $n_0$, the approximation $n_2(t)$ is better, and the residual norm for $n_2$ supports this evaluation. The 60% of carrying capacity, i.e. 1200, is reached in 3.30 years using $n_2(t)$, and in 3.08 years according to the numerical solution $n(t)$. It is interesting that, without the term for hunting (curve $n_0(t)$ in fig. \@ref(fig:fig-calcint-19)), the population reaches the 60% level in only 1.79 years.
 
-```{r fig-calcint-19, echo=FALSE, fig.height=4, out.width = "75%"}
+```{r fig-calcint-19, echo=FALSE, fig.height=4, out.width = "75%", fig.cap= "Approximate growth functions"}
 knitr::include_graphics('figures/fig-calcint-19.png')
 #MAKE PLOT
 ```
@@ -934,7 +934,7 @@ Handbook of applied mathematics. 1974. C. Pearson, ed. Van NostrandReinhold, New
 
 Warren, C. E. 1971. Biology and water pollution control. W. B. Saunders, Philadelphia, 434 pp.
 
-## Tables
+**Tables**
 
 Handbook of Mathematical Functions, 1964. Abramowitz, M. and Stegun, I., eds., National Bureau of Standards, Applied Mathematics Series, 55, Washington, D.C.
 
@@ -946,22 +946,22 @@ Handbook of Mathematical Tables, 1964. Weast, R. C., Selby, M. and Hodgman, C. D
 
 **General**
 
-1. An application of both the definite integral and exponential growth is modelling demand for natural resources. Assume P(t) represents the rate of use of a resource at time $t\geq0$, and $P(t)$ represents the rate of consumption at time t = 0. The exponential model then gives $P(t) = P_0 e^{kt}$. The constant $k$ can be defined as the rate of increase in the use of this resource. Let $A(T)$ represent the amount of resource used during the interval [0,T], $T\geq0$. 
+1. An application of both the definite integral and exponential growth is modelling demand for natural resources. Assume $P(t)$ represents the rate of use of a resource at time $t\geq0$, and $P(t)$ represents the rate of consumption at time $t = 0$. The exponential model then gives $P(t) = P_0 e^{kt}$. The constant $k$ can be defined as the rate of increase in the use of this resource. Let $A(T)$ represent the amount of resource used during the interval $[0,T]$, $T\geq0$. 
 
 a. Write the definite integral representing $A(T)$ in terms of a general function $P(t)$. 
-b. Evaluate the integral for general $T\geq0$ by substituting the above exponential function for P(t).
-c. In 1973 (say t = 0), the world use of copper was estimated to be 6.99 x $10^9$ kg, and the demand was increasing at an exponential rate of 8% per year. How many tons of copper will then be used from 1973 to 1983? (Hint: First find $P_0$, k, T and then use your answer to b.)
-d. If the rate of growth in demand for copper remains at 8% and no new reserves are discovered, when will the world supply of copper be exhausted? Assume the reserves in 1973 are 336 x $10^9$ kg, and no recycling occurs.
+b. Evaluate the integral for general $T\geq0$ by substituting the above exponential function for $P(t)$.
+c. In 1973 (say $t = 0$), the world use of copper was estimated to be 6.99 x 10^9^ kg, and the demand was increasing at an exponential rate of 8% per year. How many tons of copper will then be used from 1973 to 1983? (Hint: First find $P_0$, $k$, $T$ and then use your answer to b.)
+d. If the rate of growth in demand for copper remains at 8% and no new reserves are discovered, when will the world supply of copper be exhausted? Assume the reserves in 1973 are 336 x 10^9^ kg, and no recycling occurs.
 
-2. Five thousand trout, each weighing 80 grams, are planted in a lake. The population size, N(t), declines exponentially according to the equation $N(t) = 5000e^{-0.5t}$ where t is measured in months. Each fish grows according to the formula $W(t) = 10000 (1 - 0.8e^{-0.05t})$ where W is the weight in grams. 
+2. Five thousand trout, each weighing 80 grams, are planted in a lake. The population size, $N(t)$, declines exponentially according to the equation $N(t) = 5000e^{-0.5t}$ where $t$ is measured in months. Each fish grows according to the formula $W(t) = 10000 (1 - 0.8e^{-0.05t})^3$ where $W$ is the weight in grams. 
 
-a. Check that both N(t) and W(t) satisfy the given initial conditions. 
-b. Write the formula for the biomass (total weight of all the planted trout) in the lake as a function of t, and calculate the biomass at 12 months. 
+a. Check that both $N(t)$ and $W(t)$ satisfy the given initial conditions. 
+b. Write the formula for the biomass (total weight of all the planted trout) in the lake as a function of $t$, and calculate the biomass at 12 months. 
 c. What is the average biomass for the first 12 months? What was the  initial biomass? Sketch how you think the graph of biomass versus time would appear. Mark on the vertical axis the initial, final and average biomass values. 
 
-3. Assume that a radioactive element disintegrates so that the number (N) of atoms present at a given time (t) decreases at a rate proportional to N itself. Let k be the constant of proportionality and $N_0$ be the number of atoms present at t = 0 (thus $N(0) = N_0$). 
-a. With the derivative representing the rate of change of N, use the above defined parameters and variables to write an equation for the rate of decrease in the number of radioactive atoms with passing time. 
-b. Solve this differential equation for N(t) so that the solution satisfies the initial condition, $N(0) = N_0$. (Hint: first separate variables. Do not forge the integration constant!) 
+3. Assume that a radioactive element disintegrates so that the number ($N$) of atoms present at a given time ($t$) decreases at a rate proportional to $N$ itself. Let $k$ be the constant of proportionality and $N_0$ be the number of atoms present at $t = 0$ (thus $N(0) = N_0$). 
+a. With the derivative representing the rate of change of $N$, use the above defined parameters and variables to write an equation for the rate of decrease in the number of radioactive atoms with passing time. 
+b. Solve this differential equation for $N(t)$ so that the solution satisfies the initial condition, $N(0) = N_0$. (Hint: first separate variables. Do not forge the integration constant!) 
 c. Determine the "half-life" : the time ($t_1$) such that $N(t_1) = 0.5 N_0$. At $t =t_1$, half of the original number of radioactive atoms have disintegrated (decayed). 
 d. We now make certain assumptions which will allow us to estimate the age of a piece of wood by radiocarbon dating: 
 i) living organic material contains the carbon isotopes $C^{12}$ and in a fixed proportion independent of time, 
@@ -1003,22 +1003,22 @@ i) $\frac{\partial f}{\partial x}=\frac{\partial f}{\partial y}=0$,
 ii) $\frac{\partial^2 f}{\partial x^2}-\frac{\partial^2 f}{\partial y^2}>0$, and 
 iii) $\frac{\partial^2 f}{\partial^2 x}>0$.
 
-Data from figure \@ref(fig-calcint-8) in text
+Data from figure \@ref(fig:fig-calcint-8) in text
 ```{r}
 x=c(3,5.3,9.6,18,30)
 y=c(39,55,57.5,60,57)
 ```
 
-b. Now determine a "best" exponential fit to the above data. First transform the desired function $y = Axe^{Bx}$ into a linear function (with respect to x): $h(x,y) = f(A,B) + g(A,B)x$. A neater format is $h= f + gx$. Make a table of values for x and h. Determine the least squares line through this new data set and, in the process, calculate f, g, and thus A, B.
+b. Now determine a "best" exponential fit to the above data. First transform the desired function $y = Axe^{Bx}$ into a linear function (with respect to $x$): $h(x,y) = f(A,B) + g(A,B)x$. A neater format is $h= f + gx$. Make a table of values for $x$ and $h$. Determine the least squares line through this new data set and, in the process, calculate $f$, $g$, and thus $A$, $B$.
 
-###ANSWERS TO THE PROBLEM SET
+### ANSWERS TO THE PROBLEM SET
 **General**
 
-1. A(T) represents the total change in the resource. Thus the rate of change, P(t), is integrated:
-$$A(T)=\int^T_0 P(t)dt. $$
+1. $A(T)$ represents the total change in the resource. Thus the rate of change, $P(t)$, is integrated:
+$$A(T)=\int^T_0 P(t)dt $$
 b. With $P(t) = P_0 e^{kt}$,
 $$A(T)=\int^T_0 P_0 e^{kt} dt= (P_0/k)(e^{kT}-1) $$
-c. The initial use rate in $P_0$, the rate of increase is k, and the time interval ends at 1983-1973= 10 years. Thus
+c. The initial use rate in $P_0$, the rate of increase is $k$, and the time interval ends at 1983-1973 = 10 years. Thus
 ```{r}
 P0= 6.99 * 10^9 #kg
 k=0.08
@@ -1028,7 +1028,7 @@ T=10.0 #years
 #Estimate A(T) in kg
 (P0/k)*(exp(k*T)-1)
 ```
-d. We solve for T. The total change equals the current reserves (at t=0); thus, the parameters are
+d. We solve for $T$. The total change equals the current reserves (at $t=0$); thus, the parameters are
 ```{r}
 require("stats")
 library(stats)
@@ -1054,20 +1054,19 @@ W_t(0)
 b. 
 ```{r}
 #Biomass B(t)=N(t)*W(t)
-
 #Calculate biomass at 12 months
 B_t= function(time) 5000*exp(-0.5*time) * 10000*(1-0.8*exp(-0.05*time))^3
 B_t(12)
 ```
 c. Average biomass (g) for the first 12 months, $\overline B(12)$ uses the definite integral.
 $$\overline B(12)= (1/12) \int^{12}_0 B(t)dt $$
-Substitution for B(T) gives
+Substitution for $B(T)$ gives
 $$\overline B(12)= (1/12) \int^{12}_0 5.0*10^7 e^{-0.5t} (1-0.8e^{-0.05t})^3 dt $$
-$$\overline B(12)= 4.17*10^6 \int^{12}_0 e^{-0.5t}*(1-0.8e^{-0.05t})^3 dt$$
+$$\overline B(12)= 4.17 \times 10^6 \int^{12}_0 e^{-0.5t}(1-0.8e^{-0.05t})^3 dt$$
 Integrate by parts where $u=(1-0.8e^{-0.05t})^3$ and $dv= e^{-0.5t} dt$
-$$\int^{12}_0 e^{-0.5t}*(1-0.8e^{-0.05t})^3 dt$$
+$$\int^{12}_0 e^{-0.5t}(1-0.8e^{-0.05t})^3 dt$$
 
-$$= \frac{e^{-0.5t}}{-0.5}*(1-0.8e^{-0.05t})^3 \Biggr|^{12}_0 - \int^{12}_0 \frac{e^{-0.5t}}{-0.5}(3)(1-0.8e^{-0.05t})^2(0.04)e^{-0.05t}dt $$
+$$= \frac{e^{-0.5t}}{-0.5}(1-0.8e^{-0.05t})^3 \Biggr|^{12}_0 - \int^{12}_0 \frac{e^{-0.5t}}{-0.5}(3)(1-0.8e^{-0.05t})^2(0.04)e^{-0.05t}dt $$
 $$=(-0.00496)(0.177)+0.016+0.24 \int^{12}_0 e^{-0.55t}(1-0.8e^{-0.05t})^2 dt$$
 Integrate by parts again with $u=(1-0.8e^{-0.05t})^2$ and $dv= e^{-0.55t} dt$
 An intermediate stage is (two steps skipped), with the left side included,
@@ -1091,12 +1090,12 @@ plot(0:12, B_t(0:12)/10^3, ylab="Production (kg)", xlab= "Time (months)", type='
 
 ```
 
-3a. The rate of change of N is a decrease (i.e. negative) and proportional to N. For k > 0, we have $\frac{dN}{dt}=-kN$.
+3a. The rate of change of $N$ is a decrease (i.e. negative) and proportional to $N$. For $k > 0$, we have $\frac{dN}{dt}=-kN$.
 
 b. Separate variables
 $$\frac{dN}{N}=-kdt$$
 $$\int \frac{dN}{N}= \int -kdt$$
-$\ln N= -kt+C$, C= integration constant
+$\ln N= -kt+C$, $C$ = integration constant
 $$N= e^{-kt}e^{C}$$
 But $N(0)=N_0$. Thus $N(0)=N_0=e^0 e^C=e^C$
 and the solution is $N(t)= N_0e^{-kt}$.
@@ -1119,7 +1118,7 @@ N(t)/N_0=e^{-kt} \\
 t=1119 years
 \end{eqnarray}
 
-4.  a is the amplitude (half the total change in tidal height); b is $2\pi/p$ where p=period=$2|T_{high}-T_{low}|$; and $T_h$ is the phase shift or lag. The simple cosine function begins at t=0 so the lag is the time of high tide. $H_a$ is the vertical shift.
+4.  a is the amplitude (half the total change in tidal height); b is $2\pi/p$ where p=period=$2|T_{high}-T_{low}|$; and $T_h$ is the phase shift or lag. The simple cosine function begins at $t=0$ so the lag is the time of high tide. $H_a$ is the vertical shift.
 
 
 ```{r}
@@ -1148,7 +1147,7 @@ H=function(a,b,time, time_h, Ha) a*cos(b*(time-time_h))+Ha
 plot(1:24, H(a=a,b=b,time=1:24, time_h=time_h, Ha=Ha), type='l', xlab="Tide height (m)", ylab="Time (hours)")
 
 ```
-b. $\overline H$= average height, first interval= 7.24 hours.
+b. $\overline H$= average height, first interval = 7.24 hours.
 \begin{eqnarray}
 \overline H= \frac{1}{7.24} \int^{11.82}_{4.58}a \cos(bT-bT_h)+H_a dt \\
 = \frac{1}{7.24} (-a/b)(\sin(11.82b-4.58b)-sin(4.58b-4.58b)) + \frac{1}{7.24} (H_a)(11.82-4.58)\\
@@ -1163,14 +1162,14 @@ For the two intervals combined, we must weight the average height in each interv
 =\frac{7.24}{15.09} \overline H_1 +\frac{7.85}{15.09} \overline H_2\\
 \end{eqnarray}
 
-c. We need the times of day when the 0.0 tide level is reached. The easiest way is to invert the function H(t) for each subinterval.
+c. We need the times of day when the 0.0 tide level is reached. The easiest way is to invert the function $H(t)$ for each subinterval.
 \begin{eqnarray}
 H= a \cos(b(T-T_h))+H_a\\
 (H-H_a)/a= \cos(b(T-T_h))\\
 \cos^{-1}((H-H_a)/a)=b(T-T_h)\\
 (1/b) \cos^{-1}((H-H_a)/a)+T_h=T\\
 \end{eqnarray}
-Now substitute the appropriate constants and 0 for H.
+Now substitute the appropriate constants and 0 for $H$.
 ```{r}
 #first interval
 h_h= 2.47
@@ -1196,16 +1195,15 @@ H=0
 (1/b)*acos((H-Ha)/a)+time_h
 
 ```
-This answer is obviously wrong since the 0.0 height must be attained sometime between low tide (11.82hours) and the next high tide (19.67 hours). The fallacy is in treating the "arcos x" as an inverse function. It is one-to-one only when the domain of "cos x" is restricted to $[0,\pi]$; i.e., arcos x always has $[0,\pi]$ as its range. Thus the first term is
+This answer is obviously wrong since the 0.0 height must be attained sometime between low tide (11.82 hours) and the next high tide (19.67 hours). The fallacy is in treating the "arcos x" as an inverse function. It is one-to-one only when the domain of "cos x" is restricted to $[0,\pi]$; i.e., arcos x always has $[0,\pi]$ as its range. Thus the first term is
 $$\frac{1}{0.400}\cos^{-1}(-0.975/1.795)$$
-correctly tells how far the maximum ($T_h$) is from the desired time T, but now whether T lies above or below $T_h$. With the second subinterval, T is obviously below $T_h$ and hence we subtract from $T_h$:
+correctly tells how far the maximum ($T_h$) is from the desired time $T$, but now whether $T$ lies above or below $T_h$. With the second subinterval, $T$ is obviously below $T_h$ and hence we subtract from $T_h$:
 ```{r}
 19.67-1/0.400*acos(-0.975/1.795)
 ```
 
 5.
 $$\frac{\partial E}{\partial B} =\sum^n_{i=1}2[Ax_i+B-y_i]$$
-
 
 \begin{eqnarray}
 E= \sum^n_{i=1}[Ax_i+B-y_i]^2\\
@@ -1216,14 +1214,26 @@ Set equal to zero:
 \sum^n_{i=1}2[Ax_i+B-y_i]x_i=0\\
 \sum^n_{i=1}[Ax_i+B-y_i]x_i=0\\
 \frac{\partial E}{\partial B} =\sum^n_{i=1}2[Ax_i+B-y_i]
+(\#eq:a)
 \end{eqnarray}
 
 Equate to 0 and divide by 2:
-$$\sum^n_{i=1}[Ax_i+B-y_i]=0$$
-Thus we have two equations which are linear in A and B. This is more easily seen if we rework them. From (a)
-$$A(\sum^n_{i=1}x_i^2)+B(\sum^n_{i=1}x_i)-(\sum^n_{i=1}x_iy_i)=0 $$
-And (b) becomes
-$$A(\sum^n_{i=1}x_i^2)+nB-(\sum^n_{i=1}y_i)=0 $$
+\begin{equation}
+\sum^n_{i=1}[Ax_i+B-y_i]=0
+(\#eq:b)
+\end{equation}
+Thus we have two equations which are linear in A and B. This is more easily seen if we rework them. From (\@ref(eq:a))
+
+\begin{equation}
+A(\sum^n_{i=1}x_i^2)+B(\sum^n_{i=1}x_i)-(\sum^n_{i=1}x_iy_i)=0
+(\#eq:a*)
+\end{equation}
+
+And (\@ref(eq:b)) becomes
+\begin{equation}
+A(\sum^n_{i=1}x_i^2)+nB-(\sum^n_{i=1}y_i)=0
+(\#eq:b*)
+\end{equation}
 
 6. 
 
@@ -1272,7 +1282,7 @@ Substituting into (ii) gives
 $$(2\sum_ix^2_i)(2n)-4(\sum_ix_i)^2=20\sum_ix^2_i-4(\sum_ix_i)^2$$
 $$ = 20(1353.25) - 4(65.90)^2$$
 $$=9693.76 > 0$$
-Note that (iii) is obviously satisfied so we have a minimum for f.
+Note that (iii) is obviously satisfied so we have a minimum for $f$.
 
 b. Begin with
 $$y = Axe^{Bx}$$
@@ -1320,7 +1330,7 @@ knitr::include_graphics('figures/fig-calcint-p72.png')
 knitr::include_graphics('figures/fig-calcint-p69.png')
 ```
 
-##COMPUTER EXERCISES
+## COMPUTER EXERCISES
 1. The function used in eqns.(12) and (15) was determined by trial-and-error. The values of the three function parameters were changed until a combination gave an acceptable visual fit to the data points. A more consistent approach is to use least squares. The function is
 
 2.
@@ -1339,7 +1349,9 @@ of the sun's energy flux due to the angle at which the rays strike the earth's
 surface. The dilution is caused by a fixed amount of solar energy being spread over a larger area (as the rays become more horizontal) and thus the energy per unit area decreases as compared to the energy density of vertical rays.
 The situation is pictured below, giving a top and side view for two inclination angles.The sunlight passes through a circular hole in an opaque sheet and strikes the earth at an angle R from the perpendicular.
 
-##SOLUTION TO THE COMPUTER EXERCISES
+
+
+## SOLUTION TO THE COMPUTER EXERCISES
 1. The starting parameter set (A, B, C) = (5.0, 0.05, 5.0) causes convergence to the values (5.0, 0.045, 6.2), with sum of squares equal to 52.2. The starting set (A, B, C) = (6.0, 0.05, 5.0) iterates (50 times) to the values(12535,0.05,0.04), with sum of squares equal to 454. The graph for the latter set is essentially a straight line, and a terribly poor fit.
 
 ```{r}

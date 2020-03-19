@@ -256,7 +256,7 @@ Q_{emit} = 0.977 \times 5.67 \times 10^{-8} (10 + 273)^4 = 355.5 W m^{-2}
 \end{equation}
 If we wish to know the total heat loss per second ($1 watt = 1 J s^{-1}$) for the plant, we must multiply our answer by the surface area of the cactus.
 
-The TrenchR functions for thermal radiation account for surface area and calculate net radiation based on the difference between the organism's surface and the environment. The rate of emission of thermal radiation from the surface of an animal, $Q_{emit} (W)$, is determined by the difference between the surface temperature of the animal $T_b (K)$ and the temperatures of the air $T_a (K)$ and ground $T_g (K)$.  $T_a$ is additionally used to estimate sky temperature $T_{sky} (K)$, the effective radiant temperature of the sky as $T_{sky}=1.22*(T_a-273.15)-20.4+273.15$ [Gates 1980]. The following expressions can be used to estimate $Q_{emit} (W)$ for animals in enclosed and open environments, respectively:
+The TrenchR functions for thermal radiation account for surface area and calculate net radiation based on the difference between the organism's surface and the environment. The rate of emission of thermal radiation from the surface of an animal, $Q_{emit} (W)$, is determined by the difference between the surface temperature of the animal $T_b (K)$ and the temperatures of the air $T_a (K)$ and ground $T_g (K)$.  $T_a$ is additionally used to estimate sky temperature $T_{sky} (K)$, the effective radiant temperature of the sky as $T_{sky}=1.22(T_a-273.15)-20.4+273.15$ [Gates 1980]. The following expressions can be used to estimate $Q_{emit} (W)$ for animals in enclosed and open environments, respectively:
 $$
 enclosed: Q_{emit}= A_r \epsilon \sigma (T_b^4 - T_a^4)\\
 open: Q_{emit}= \epsilon \sigma (A_s (T_b^4 - T_{sky}^4)+A_r (T_b^4 - T_g^4)),
@@ -271,7 +271,7 @@ Qemitted_thermal_radiation(epsilon=0.96, A=1, psa_dir=0.4, psa_ref=0.6, T_b=303,
 
 The calculation of absorbed radiation $Q_{abs}$, although straightforward with some assumptions, is a lengthy task because several longwave and shortwave components must be included. Gates and Stevenson (1979) have devoted an entire module to this topic to which the interested reader should refer for additional information. We briefly review the basic TrenchR functions for estimating absorbed radiation here. The solar and thermal radiation absorbed by animals, $Q_{abs} (W)$, is the sum of direct $S_{dir}$, diffuse $S_{dif}$, and reflected $S_{ref}$ solar radiation ($W/m^2$). The sum is weighted by the organism's surface area $A$ exposed to the radiation sources. Additionally, all forms of incoming radiation are multiplied by the solar absorptivity of the animal surface ($a$ proportion) to estimate absorbed radiation. The summation of incoming solar radiation is thus as follows:
 
-$$Q_{abs}= a*A_{dir}*S_{dir} + a*A_{dif}*S_{dif} + a*A_{ref}*S_{ref},$$
+$$Q_{abs}= aA_{dir}S_{dir} + aA_{dif}S_{dif} + aA_{ref}S_{ref},$$
 where $A_{dir}$,$A_{dif}$,and $A_{ref}$ are the surface areas exposed to direct, diffuse, and reflected solar radiation, respectively.
 
 The summation is available in R as follows
@@ -326,11 +326,11 @@ and
 </div>
 
 The TrenchR package includes similar functions for modelling convection based on whether the thermal conductivity of the animal or the substrate is the limited step. When animal conductance is the rate limiting step, $Q_{cond}$ can be estimated as follows:
-$$Q_{cond}= A*proportion*k*(T_g-T_b)/d, $$
+$$Q_{cond}= A\cdot proportion\cdot k(T_g-T_b)/d, $$
 where $k$ is thermal conductivity ($W K^{-1} m^{-1} {^{\circ}C^{-1}}$), $T_g$ is ground (surface) temperature (K), $T_b$ is body temperature (K), and $d$ is the mean thickness of the animal skin (surface, $m$). This formulation assumes the organism has a well mixed interior rather than an interior temperature gradient.
 
 When substrate thermal conductivity is the rate limiting step, $Qcond$ can be estimated as follows:
-$$Qcond= A*proportion*(2K_g/D)*(T_b-T_g),$$
+$$Qcond= A\cdot proportion \cdot(2K_g/D)(T_b-T_g),$$
 where $K_g$ is the thermal conductivity of substrate ($W K^{-1} m^{-1}$) and $D$ is the characteristic dimension of the animal ($m$).
 
 The functions are available in R:
@@ -376,7 +376,7 @@ and
 Usually, $A_c$, $T_s$ and $T$ can be evaluated. The heat transfer coefficient, on the other hand, is often a difficult parameter to estimate in the natural environment because of turbulence (Kowalski and Mitchell 1976, and Noble 1975).
 
 TrenchR offers the following function for modelling convection. The function accounts for the proportion of the surface area in contact with the substrate, $proportion$, and an enhancement factor multiplier, $e_f$, that can be incorporated to account for increases in heat exchange resulting from air turbulence in field conditions. Conduction can be estimated as follows:
-$$Q_{conv}= ef*h_c*(A*proportion)*(Ta-Tb).$$
+$$Q_{conv}= ef\cdot h_c(A\cdot proportion)(Ta-Tb).$$
 
 The function is available in R:
 ```{r}
@@ -523,7 +523,7 @@ The answer is found to 960 J for the granite and 2,200 J for the peat.
 
 **MATERIAL**|**DENSITY**|**SPECIFIC HEAT**|**THERMAL CONDUCTIVITY**|**THERMALCAPACITY**|**THERMAL DIFFUSIVITY**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
-| |$\rho$|$c$|$k$|$C\_V=\rho c$|$k = \frac{k}{\rho c}$
+| |$\rho$|$c$|$k$|$C_V=\rho c$|$k = \frac{k}{\rho c}$
 | |kg m^-3^ $\times$ 10^3^|J kg^-1^ °C^-1^ $\times$ 10^3^|Wm^-1^°C^-1^|J m^-3^ °C^-1^ $\times$ 10^6^|m^2^s^-1^ $\times$ 10^-6^
 Granite|2.6|0.8|4.61|2.08|2.22
 Quartz|2.66|0.8|8.8|2.13|4.14
@@ -830,10 +830,10 @@ Finally, they calculated the energy losses and gains every hour at $45^{\circ}$ 
 
 This module has attempted to develop the aspects of heat transfer that are important to biology. Emphasis has been placed on the physical processes, radiation, evaporation, conduction and convection, that influence the physiological, behavioral and ecological activities of all organisms. The discussion in conjunction with the modules on the First Law of Thermodynamics presents the basic physical laws that are needed to describe the heat energy balance of ecological systems.
 
-##PROBLEMS
-1a. To measure the oxygen consumption of resting homeotherms as a function of the thermal environment, animals are commonly placed in an environmental chamber where the air temperature can be changed and monitored. The results of the experiment are given as a plot of $0_2$ consumption versus air temperature. Imagine that for some reason the wall temperature is not equal to the air temperature. Plot the radiation emitted by the wall per unit surface area, $Q_{ew}$, as a function of wall temperature using Stefan-Boltzmann's Law (assume emissivity equals 0.96).
+## PROBLEMS
+1a. To measure the oxygen consumption of resting homeotherms as a function of the thermal environment, animals are commonly placed in an environmental chamber where the air temperature can be changed and monitored. The results of the experiment are given as a plot of O~2~ consumption versus air temperature. Imagine that for some reason the wall temperature is not equal to the air temperature. Plot the radiation emitted by the wall per unit surface area, $Q_{ew}$, as a function of wall temperature using Stefan-Boltzmann's Law (assume emissivity equals 0.96).
 
-1b. If the emissivity of an environmental chamber with plastic walls is 0.6 for longwave radiation what is its absorptivity to longwave radiation? Imagine that the air is much cooler than the animal's surface. The radiation leaving the animal, incident on the walls, could heat the walls above the air temperature and increase the radiation incidence on the animal. Name two ways to avoid this problem. A chamber with metal walls will have a small emissivity (~.15) to longwave radiation. What will be its reflectivity? What will happen to the radiation leaving the animal in this case? How can this effect be minimized?
+1b. If the emissivity of an environmental chamber with plastic walls is 0.6 for longwave radiation what is its absorptivity to longwave radiation? Imagine that the air is much cooler than the animal's surface. The radiation leaving the animal, incident on the walls, could heat the walls above the air temperature and increase the radiation incidence on the animal. Name two ways to avoid this problem. A chamber with metal walls will have a small emissivity (~0.15) to longwave radiation. What will be its reflectivity? What will happen to the radiation leaving the animal in this case? How can this effect be minimized?
 
 2a. It is also possible to represent Planck's Law as a function of frequency $f$ rather than wavelength $\lambda$:
 $$E_f=\frac{2\pi h}{C_L^2}f^3\bigg[exp(\frac{hf}{K_bT})-1\bigg]^{-1}$$
@@ -889,7 +889,7 @@ Assume that wind velocity is $2 m s^{-1}$ and $0.1 m s^{-1}$, the diameter is 0.
 
 b. Show the region $Re < 2 \times 10^4$ on a graph of wind velocity $V$ versus the characteristic length $D$. When $Re < 2 \times 10^4$, Monteith suggests $0.032 Re^{0.8}$. How likely is this to occur naturally? Would a leaf be rigid in these wind speeds?
 
-8. In the text, we discussed the physical process of free convection. To determine the importance of free convection, one must compute the ratio of the Grashof number to the square of the Reynolds number. If the ratio is approximately 1, then free convection.cannot be ignored. The Grashof number is   
+8. In the text, we discussed the physical process of free convection. To determine the importance of free convection, one must compute the ratio of the Grashof number to the square of the Reynolds number. If the ratio is approximately 1, then free convection cannot be ignored. The Grashof number is   
     $Gr=\frac{agD^3(T_s-T)}{v^2}$   
     $g$ = gravitational acceleration ($9.8 m s^{-2}$)   
     $a$ = coefficient of thermal expansion for fluid (a = 1/273 for air),   
@@ -942,7 +942,7 @@ and
 
 From Morhardt and Gates (1974, page 20, Fig. 2c), I have taken $R_p$, $R_a$ and $R_g$ for a sunny day and converted the units to W m$^{-2}$ as tabulated below:
 
-**Hour of the day**|**$R\_p$**|**$R\_a$**|**R\_g$**|**$T\_a$**
+**Hour of the day**|**$R_p$**|**$R_a$**|**$R_g$**|**$T_a$**
 :-----:|:-----:|:-----:|:-----:|:-----:
 | |(W m^-2^)|(W m^-2^)|(W m^-2^)|(°C)
 7|35|223|335|7.5
@@ -977,7 +977,7 @@ Linearized heat transfer relations in biology. G. S. Bakken and D. M. Gates; T. 
 
 Bakken, G. S., and D. M. Gates. 1974. Notes on "Heat loss from a Newtonian animal," J. Theoret. 'Biol. 45:283-292.
 
-##PROBLEM SOLUTIONS
+## PROBLEM SOLUTIONS
 1
 
 >graph
@@ -1090,7 +1090,7 @@ $T_a$|$\frac{T_a+T_b}{2}$|$C_e$|$C_e'$|$C_i$|$(C_e-C_i)$|$(C_e-C_i)'$|$R_v$|$LE$
 4. The conduction transfer during steady state can be calculated according to the following formula:
 $$G=\frac{kA_c(T_b-T_g)}{\Delta x}$$
 
-| $T_g$ (°C)\\$k$(W m^-1^ °C^-1^) |  0.02  |  0.08  |   0.17  |
+| $T_g$ (°C) \\ $k$ (W m^-1^ °C^-1^) |  0.02  |  0.08  |   0.17  |
 |:------------------------------:|:-----:|:-----:|:------:|
 |                2               |  3.89 | 15.55 |  33.05 |
 |               14               |  1.30 |  5.18 |  11.02 |
@@ -1119,21 +1119,21 @@ c. The skin will warm from its initial temperature of 22 °C towards ground temp
 6.
 $Re$:
 
-| $D$\\$V$ |  0.1 |   2   |
+| $D$ \\ $V$ |  0.1 |   2   |
 |:-------:|:----:|:-----:|
 |  0.46   | 3239 | 64789 |
 |  1002   |  14  |  282  |
 
 $Nu$: $Nu = aRe^b$
 
-| $D$\\$V$ |  0.1  |    2   |
+| $D$ \\ $V$ |  0.1  |    2   |
 |:-------:|:-----:|:------:|
 |  0.46   | 26.59 | 178.51 |
 |  1002   |  2.27 |  8.52  |
 
 $h_c$: $h_c = \frac{Nuk}{D}$
 
-| $D$\\$V$ |  0.1  |   2   |
+| $D$ \\ $V$ |  0.1  |   2   |
 |:-------:|:-----:|:-----:|
 |  0.46   |  1.45 |  9.70 |
 |  1002   | 28.38 | 106.5 |
@@ -1180,9 +1180,9 @@ $$k=0.025Wm^{-1}K^{-1},\:h_c=6.8V^{0.6}D^{-0.4}$$
 $h_c$ for a sphere
 
 
-V(m/s)
 
-**D(m)**|**0.1**|**1.0**|**10.0**
+
+D (m) \\ V (m/s)|0.1|1.0|10.0
 :-----:|:-----:|:-----:|:-----:
 0.01|10.8|42.9|170.8
 0.04|6.2|24.6|98.1
@@ -1200,9 +1200,9 @@ For 7 o'clock
 
 $T_f$ values (°C)
 
-V (m/s)
 
-**D (m)**|**0.1**|**1.0**|**10.0**
+
+D (m) \\ V (m/s)|0.1|1.0|10.0
 :-----:|:-----:|:-----:|:-----:
 0.01|4.6|6.6|7.2
 0.04|3.3|6.0|7.1
@@ -1212,9 +1212,9 @@ For 2 o'clock
 
 $T_f$ values (°C)
 
-V (m/s)
 
-**D(m)**|**0.1**|**1.0**|**10.0**
+
+D(m) \\ V (m/s)|0.1|1.0|10.0
 :-----:|:-----:|:-----:|:-----:
 0.01|38.7|29.1|25.4
 0.04|43.9|32.1|26.4

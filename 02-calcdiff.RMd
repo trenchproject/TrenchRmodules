@@ -6,14 +6,14 @@ author: Hertzberg, R. H.
 This module is used to introduce the biology student to differential calculus, a branch of mathematics that is often used in ecological and physiological models. Since biological systems are dynamic, their mathematical models must describe rates of change of relevant variables,a process which requires calculus. The module introduces modeling in biology by reviewing differential calculus and using only examples from life sciences. A problem set reviews information in the text proper and presents additional information not included in the text. The module uses computer programming to graphically check the user's own calculations and to demonstrate the validity of general solutions.
 
 
-##INTRODUCTION
+## INTRODUCTION
 
 Differential calculus is being used more often in recent ecological and physiological models as data become more precise and the processes become better understood. Since most biological systems are dynamic, their mathematical models must describe rates of change, not just current values, of the relevant variables. Although most models consider changes over time, the techniques of calculus depend only on the mathematical function involved and thus any independent variable may be used, such as spatial dimensions, organism weight, temperature, etc. As a result, the implications from a model of one process may be applied to the model of a different process as long as the mathematical functions involved are the same.
 
 
-##FUNCTIONS OF ONE VARIABLE
+## FUNCTIONS OF ONE VARIABLE
 
-###Rates of Change
+### Rates of Change
 
 The simplest graph of a dynamic relationship is a straight line. The equation for a straight line is
 
@@ -26,12 +26,12 @@ where $y$ and $x$ are variables, $m$ and $b$ are constants. An example of this r
 
 ```{r fig-calcdiff-1, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Oxygen consumption.'}
 x= seq(0,3,0.2)
-plot(x, 0.004*x+0.016, type="l")
+plot(x, 0.004*x+0.016, type="l", ylab = "y(x)")
 ```
 
 The equation for this function is
 $$y(x)=0.004x+0.016$$
-The number 0.004 represents the slope of the line; that is, the ratio of the change in $y$ to the change in $x$. When $x$ changes by 1 unit, $y$ changes by 0.004 units. In this particular application, when the water O~2~ concentration increases by one ml/l, the lobster O~2~ consumption increases by 0.004 ml per hour-gm body weight. The slope (m in Equation \@ref(eq:1)) then represents the rate of change of $y$ with $x$.
+The number 0.004 represents the slope of the line; that is, the ratio of the change in $y$ to the change in $x$. When $x$ changes by 1 unit, $y$ changes by 0.004 units. In this particular application, when the water O~2~ concentration increases by one ml/l, the lobster O~2~ consumption increases by 0.004 ml per hour-gm body weight. The slope ($m$ in Equation \@ref(eq:1)) then represents the rate of change of $y$ with $x$.
 
 When the graph is not a straight line, the function it represents is more complex than above and the rate of change cannot be expressed so easily. Note that for each unit change in $x$ in Fig. \@ref(fig:fig-calcdiff-1), $y$ changes by 0.004, regardless of the value of $x$. The rate of change is then constant. In the graph of Fig. \@ref(fig:fig-calcdiff-2), the rate of change is not constant. To see this, approximate Fig. \@ref(fig:fig-calcdiff-2) by two connected tangent lines (Fig. \@ref(fig:fig-calcdiff-3)a) and note that the slope differs with each line. As the approximation improves (Fig. \@ref(fig:fig-calcdiff-3)b), it uses more lines and thus presents more slopes. Using an infinite number of lines, we would duplicate the curve (in Fig. \@ref(fig:fig-calcdiff-2)) and have a slope that changes with each value of $x$. The slope then depends on $x$ and clearly is not constant. In fact, one definition of the slope of a curve at a point is the slope of the tangent line at that point.
 
@@ -81,7 +81,7 @@ Table 1 gives the more common functions and their derivatives.
 
 For a more complete table, see any calculus text, or any math handbook (see Bibliography).
 
-###Composite Functions
+### Composite Functions
 
 When a function is composed of several simple functions its derivative can be evaluated in stages. In the simple cases where $y$ equals the sum or product of two functions, $f(x)$, $g(x)$, the rules for differentiation (finding the derivative) are:
 $$y(x)=f(x)+g(x),\;\;\;\;\frac{dy}{dx}=\frac{df}{dx}+\frac{dg}{dx}$$
@@ -107,7 +107,7 @@ Write $u(t)$ as $u=-be^{v(t)}$ where $v=-kt$. Then
 $$\frac{dv}{dt}=-k,\;\;\;\;\frac{du}{dt}=\frac{du}{dv}\frac{dv}{dt}=-be^v(-k)$$
 $$\frac{dN}{dt}=\frac{dN}{du}\frac{du}{dv}\frac{dv}{dt}=ae^u(-be^v)(-k)=abke^{-be^{-kt}}\cdot e^{-kt}$$
 
-###Higher Derivatives
+### Higher Derivatives
 The derivative $dy/dx$ of a function $y(x)$ is called the **first derivative** of $y(x)$. If we write
 $$\frac{dy}{dx}=g(x)$$
 then differentiating $g(x)$ produces
@@ -117,7 +117,7 @@ which is called the **second derivative** of $y(x)$, and is written $\frac{d^2y}
 Other notation used for the first derivative includes $y'$ and $\dot{y}$, for the second derivative, $y''$ and $\ddot{y}$. Since the second derivative is also a function, it too can be differentiated to give the third derivative, and so on. The $n^{th}$ derivative is written (there is no general dot notation)
 $$\frac{d^ny}{dx^n},\;\;\;\; y^{[n]}$$
 
-###Critical Points
+### Critical Points
 The first and second derivatives can be used to determine three special points on the graph of the function, namely, the relative maxima, relative minima and the inflection points. The relative maximum is easily visualized: the curve rises, reaches a peak, and then falls. The peak is the relative maximum. It is **relative** because the curve may rise even higher in a different place on the graph. Similarly, the relative minimum constitutes a low point on the curve. An inflection point is best illustrated by an example.
 
 The logistic growth function describing population size is
@@ -156,9 +156,9 @@ and then substituting into the original expression for $N$,
 $$N_1=N_0(1+b)(1+be^{-k(\frac{1}{k}ln\,b)})^{-1}=N_0(1+b)/2$$
 this says that the growth rate is highest when the population is one-half of the carrying capacity.
 
-##FUNCTIONS OF SEVERAL VARIABLES
+## FUNCTIONS OF SEVERAL VARIABLES
 
-###Partial Derivatives
+### Partial Derivatives
 
 The models treated thus far involve functions of one variable. Oxygen uptake is given as a function of just the surrounding oxygen concentration. The population size depends only on time. A more complicated model, however, may involve many variables. Growth certainly depends on available food supply in addition to time. Oxygen consumption also depends on more factors than ambient oxygen concentration. One such model is discussed by Bayne, Thompson and Widdows (1973).
 
@@ -233,7 +233,7 @@ Q=1.87(m+1)W^{(0.7)}
 \end{equation}
 This last expression is similar in form to \@ref(eq:5) and its graph has a similar shape. Problem 3 discusses \@ref(eq:7) in more detail.
 
-###Critical Points in Three Dimensions
+### Critical Points in Three Dimensions
 
 The extension of a critical point to functions of two variables is quite natural. A point $P=(x_0,\;y_0,\;z_0)$ is a critical point for the function
 $$z=f(x,y)$$
@@ -268,7 +268,7 @@ knitr::include_graphics('figures/fig-calcdiff-10.png')
 knitr::include_graphics('figures/fig-calcdiff-11.png')
 ```
 
-##BIBLIOGRAPHY
+## BIBLIOGRAPHY
 
 **CALCULUS**
 
@@ -306,7 +306,7 @@ Nay, R., 1978. "Mathematical Aspects of the Dynamics of Animal Populations," in 
 
 Sladen,13. 1969. "The Ecology of Animal Communities," in Biology of Populations, Sladen, B. and F. Bang, eds., Elsevier, New York.
 
-##PROBLEM SET
+## PROBLEM SET
 1. a. The logistic population growth function satisfies the differential equation
 $$\frac{dx}{dt}=Ax(N-x)$$
 where $x=x(t)$ is the population size and $N$ is the carrying capacity of the environment. Use this equation to show that the maximum growth rate (max $dx/dt$) occurs at the inflection point $x=N/2$. Assume $A$ is positive. (HINT: write the equation with $v = dx/dt$, and set $dv/dx = 0$).
@@ -374,7 +374,7 @@ with
 $$d=(2a/\omega)^{1/2}$$
 Be sure to verify that this function satisfies the diffusion equation **and** the boundary conditions.
 
-##ANSWERS TO THE PROBLEM SET
+## ANSWERS TO THE PROBLEM SET
 
 1. a. Find the $x$ which gives max$(dx/dt)$. Differentiate $dx/dt$ **with respect to $x$**, equate to zero and solve for $x$:
 $$\frac{d}{dx}(\frac{dx}{dt})=A(N-2x)$$
@@ -488,7 +488,7 @@ Substituting for $d$, we obtain
 $$\omega = 2a/[(2a/\omega)^{1/2}]^2=\omega$$
 Thus the equation is indeed satisfied.
 
-##COMPUTER EXERCISES
+## COMPUTER EXERCISES
 
 Program DIFF is basically a plotting routine where the graph of a function demonstrates some property or use of derivatives. The program is designed to motivate the following concepts: the derivative as a slope, the zero slope at a critical point, partial derivatives, and the distinction between continuous and discrete rates of change.
 
@@ -586,7 +586,7 @@ Find the dose that has "maximum sensitivity," i.e. where the **rate of increase*
 &nbsp;&nbsp;&nbsp;&nbsp;2. Choose $P1$, $P2$ so that $0 \le P1 \le 5$, $.1 \le P2 \le 1.0$.  
 &nbsp;&nbsp;&nbsp;&nbsp;Plot the function and calculate the correct value for $X$ at the "critical point." Check that the graph of $Y(X)$ has the behavior you predicted at this point.
 
-##ANSWERS TO THE COMPUTER EXERCISES
+## ANSWERS TO THE COMPUTER EXERCISES
 
 1. $\partial z/\partial x=(0.00187y^{0.7})=$constant for given $y$.  
 Exposed profile should be a straight line.  
@@ -650,19 +650,19 @@ The value for $Y$ is then
 $$Y=\Big[\frac{P1}{2(P2)}\Big]^2\Big[\frac{P1}{2}-\frac{(P1)(P2)}{6(P2)}\Big]=\frac{(P1)^3}{12(P2)^2}$$
 This point is an inflection point on the graph $Y$ versus $X$.
 
-##USER'S GUIDE FOR PROGRAM DIFF
+## USER'S GUIDE FOR PROGRAM DIFF
 
-###Identification
+### Identification
 
 DIFF - A program which displays properties of derivatives of mathematical functions
 
 Authors - Richard Hertzberg, Mark Bailey, Center for Quantitative Science in Forestry, Fisheries and Wildlife, University of Washington,
 Seattle. February 1979.
 
-###Purpose
+### Purpose
 Program DIFF is the computer supplement to the instructional module "Calculus-Differentiation," by Richard Hertzberg, which reviews the basic principles and uses of differential calculus, with special emphasis on ecological and physiological applications. The computer program displays graphs of selected functions so that certain derivatives are visible. Most plots serve as checks to the user's own calculations.
 
-###Operation
+### Operation
 The user controls program DIFF through certain input variables. The principal one, NFC, selects the function to be displayed and also enables or disables other Inputs listed in the INPUT TABLE below. Other inputs control the parameters in a function, the portions of a function to be displayed, the number of plots, and the structure of the plots themselves.
 
 Setting NFC = 1 selects the function
@@ -702,13 +702,13 @@ Setting NFC = 5 selects the function
 $$F(x)=(p_1/2)x^2-(p_2/3)x^3$$
 This option disables the input variables XSLICE, YSLICE, NPLOTS, and the last five elements of the arrays $P1$ and $P2$, The function parameters $p_1$ and $p_2$ are represented by $P1(1)$ and $P2(1)$.
 
-###Program Organization
+### Program Organization
 
 The program is organized according to the following flow chart:
 
 > chart
 
-###Input
+### Input
 
 All input is handled by the format free input package (Gales and Anderson, 1978) which permits a user to assign values to variables by a "name = value" convention. Not all variables need be explicitly assigned by the user, however, as unassigned variables automatically assume default values. The input consists of any number of data sets, each of which is terminated by a dollar sign ($). Each data set generates a separate printer plot.
 
@@ -747,7 +747,7 @@ FINIS = TRUE, $
 
 as the very last input set. If, FINIS is not set, the program will terminate abnormally.
 
-###Output
+### Output
 DIFF produces sets of plots, via subroutine PRNT3D, which display function values. Each plot contains a title, legend, $x$ and $y$ axis annotation, and printer plot lines or surfaces. The title displays some of the values, and ranges of values, for the variables used to generate
 the plot.
 
@@ -757,7 +757,7 @@ SCALE FACTORS = X-AXIS:E+00 Y-AXIS:E-01 Z-AXIS:E+00
 
 hence the point, indicated by a "1" character near the top right of the plot, is near ($x$ = 1.246, $y$ = 3.100) = ($x$ = 1.246 $\times$ 10^0^, $y$ = 3.100 $\times$ 10^-1^) = ($x$ = 1.246, $y$ = 0.31). The remaining two lines of the legend specify the number of points mapped to each $z$-level (-9 means > 99).
 
-###Restrictions
+### Restrictions
 
 The input values are restricted to the ranges given in the INPUT TABLE. Due to the physical interpretation of the function parameters, further restrictions are indicated in the description of each computer exercise.
 

@@ -172,7 +172,7 @@ In Figs. \@ref(fig:fig-thermex-3)a and \@ref(fig:fig-thermex-3)b similar graphs 
 
 The values depicted in Figs. \@ref(fig:fig-thermex-4)a and \@ref(fig:fig-thermex-4)b are for a site which also was unforested. Unlike the previous example where the bed of the stream was gravel and conduction was small, this site had a solid rock bottom and here heat passed from the stream into the stream bed, indicating a substantial conduction component of the energy balance. 
 
-Generally the results indicate that the model is very successful in predicting water temperature. The evaporation and convection fluxes are small at all sites. Net radiation is the major component of the heat balance of which the major factor is direct solar radiation. This is especially true for the nonforested sites (Figs. \@ref(fig:fig-thermex-3)a and \@ref(fig:fig-thermex-4)a). It is also interesting to note that conduction is an important component of the heat balance for the rocky-bottomed streambed (Fig. \@ref(fig-thermex-4)a) but not the gravel bottom (Fig. \@ref(fig:fig-thermex-3)a).
+Generally the results indicate that the model is very successful in predicting water temperature. The evaporation and convection fluxes are small at all sites. Net radiation is the major component of the heat balance of which the major factor is direct solar radiation. This is especially true for the nonforested sites (Figs. \@ref(fig:fig-thermex-3)a and \@ref(fig:fig-thermex-4)a). It is also interesting to note that conduction is an important component of the heat balance for the rocky-bottomed streambed (Fig. \@ref(fig:fig-thermex-4)a) but not the gravel bottom (Fig. \@ref(fig:fig-thermex-3)a).
 
 ```{r fig-thermex-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "50%", fig.align = "default", fig.cap='a) The daily pattern in net thermal radiation ($Q_{NR}$), evaporation ($Q_E$), and convection ($Q_H$) for the forested Deer Creek study section. From Brown, G. W. 1969: P. 71,72. b) Observed and predicted hourly temperature for the forested Deer Creek study section. From Brown, G. W. 1969. P. 71,72.'}
 knitr::include_graphics(c("figures/fig-thermex-2a.png", "figures/fig-thermex-2b.png"))
@@ -193,7 +193,7 @@ To illustrate how the First Law can be applied to plant systems we will examine 
 \end{equation}
 where
 <div class="nobullet">
-* where $Q_a$ = radiant energy absorbed by the leaves ($W m^{-2}$),
+* $Q_a$ = radiant energy absorbed by the leaves ($W m^{-2}$),
 * $Q_e$ = radiation emitted by the leaves ($W m^{-2}$),
 * $C$ = convection flux ($W m^{-2}$),
 * and $LE$ = evaporative flux ($W m^{-2}$).
@@ -212,7 +212,7 @@ where
 
 Of the three habitats considered the model predicts increasing thermal stress in the following order: mixed grassland depression, mixed grassland surface, and lava surface. Field observations have confirmed these predictions. Riechert and Tracy also found that the spiders did not randomly  orient the direction toward which their funnels faced. In fact the general tendency was to face northerly which would eliminate direct solar radiation.  Fig. \@ref(fig:fig-thermex-5) shows a plot of orientations and gives the mean direction. The tendency is strongest in \@ref(fig:fig-thermex-5)c which shows all webs from unprotected sites.
 
-To find out whether or not the energy budget influences the activity time of the spiders Riechert and Tracy measured spider activity. The barred region of Fig. \@ref(fig:fig-thermex-6) indicates when more than 50 percent of the spiders were active. This corresponds to a time of day when the body temperature of  the spiders would be between 21 and $35 ^{\circ}C$. This study emphasizes the importance of the thermal environment for *A. aperta*.
+To find out whether or not the energy budget influences the activity time of the spiders Riechert and Tracy measured spider activity. The barred region of Fig. \@ref(fig:fig-thermex-6) indicates when more than 50 percent of the spiders were active. This corresponds to a time of day when the body temperature of  the spiders would be between 21 and 35 °C. This study emphasizes the importance of the thermal environment for *A. aperta*.
 
 ```{r fig-thermex-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Funnel orientations for various habitats and sample groups in June 1971. (A) All webs in lava study area, (B) all webs in mixed-grassland study area, (C) all unprotected surface webs from all habitats, and (D) all webs from a rangeland plot lacking depressions and shrubs. Orientations represent compass directions to which the funnels face. From Riechert, S.E., and C. R. Tracy. 1975. P. 271.'}
 knitr::include_graphics('figures/fig-thermex-5.png')
@@ -248,7 +248,7 @@ There are three important ideas in this module for the reader to remember: First
 
 ***
 
-##PROBLEMS
+## PROBLEMS
 
 1. Using the data in Figure \@ref(fig:fig-thermex-1), show that the First Law holds for the earth's surface and the earth's atmosphere.
 
@@ -270,7 +270,7 @@ b) Assume a horse drinks 10 gallons of water at 20°C and urinates it at 38°C d
 
 8. In the last section of the module we on the interaction of regulation of body temperature and the acquisition of food energy. Describe the steps necessary to convert energy in the environment to usable chemical energy for the body. During each step of the process what is the importance of the thermal environment for a poikilotherm and a homeotherm?
 
-##PROBLEM SOLUTIONS
+## PROBLEM SOLUTIONS
 
 1. At the earth's surface incoming = outgoing or 105 + 24 + 17 + 6 = 101 + 18 + 23 + 10. For the earth's atmosphere incoming = outgoing or 101 + 23 + 10 + 19 = 105 + 48.
 
@@ -401,11 +401,11 @@ Steps c. through e. complete the transition of food into what might be parts (ma
 
 The range of thermal environments covered does not include crisis situations. In \@ref(fig:fig-thermex-10a) the response Of the endotherm drops off at either end because the animal must maintain a constant body temperature. Therefore, in cold weather the animal must huddle up to avoid hypothermia and in hot weather it must retard its foraging rate to keep from overheating. The shape of the ectotherm curve reflects the overall performance ability of the animal. (Since these curves are generalizations one should expect to find curves where the shape is different than suggested here).
 
-```{r fig-thermex-10a, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Search and capture rates as a function of temperature for an endotherm (---) and an ectotherm (-.-).'}
+```{r fig-thermex-10a, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Search and capture rates as a function of temperature for an endotherm (---) and an ectotherm (- $\\cdot$ -).'}
 knitr::include_graphics('figures/fig-thermex-10a.png')
 ```
 
-```{r fig-thermex-10b, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Digestion, absorption and chemical processing rates as a function of temperature for an endotherm (---) and an ectotherm (-.-).'}
+```{r fig-thermex-10b, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Digestion, absorption and chemical processing rates as a function of temperature for an endotherm (---) and an ectotherm (- $\\cdot$ -).'}
 knitr::include_graphics('figures/fig-thermex-10b.png')
 ```
 
@@ -557,49 +557,3 @@ Zemansky, M. W., and H. C. Van Ness. 1966. Basic Engineering Thermodynamic, 7,Mc
 
 
 ***
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
