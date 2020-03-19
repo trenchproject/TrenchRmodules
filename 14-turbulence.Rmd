@@ -88,7 +88,7 @@ $$\frac{\partial \theta}{ T} \sim \gamma \frac{\nabla \theta}{L^2}$$
 Rearranging terms, one obtains an expression for the time scale $T_m$ of the molecular diffusion,
 \begin{equation}
 T_m \sim \frac{L^2}{\gamma}
-(\#eq:turbulence-turbulence-1)
+(\#eq:turbulence-1)
 \end{equation}
 Notice that all diffusion processes are governed by this relation, where the diffusivity relates a penetration distance to a time independent of the quantity being diffused (notice that $\theta$ cancels out). The dimensions of diffusivity are *always* ($L^2 /T$). In the present example with $L=5m$ and $\gamma = 2 \times 10^{-5} m^2 s^{-1} , T_m \sim 1.25 \times 10^6 s$ or about 14 days. Such a long characteristic time scale compared with the time actually required to heat a room indicates that some other transfer process must be operating.
 
@@ -99,7 +99,7 @@ T_t \sim \frac{L}{U_c}
 \end{equation}
 Notice that the dimensions of a length divided by velocity is a time. It is assumed that the length scale of the turbulent motion in the air is characterized by the length $L$. It certainly is no larger, and it seems reasonable that the large eddy (illustrated by arrows in Fig. \@ref(fig:fig-turb-3) will be most effective in transport. It remains to estimate the convective velocity $U_c$. Experience suggests that it must be small, somewhere on the order of $U_c=0.05 m s^{-1}$ (see Tennekes and Lumley 1972). Then $L=5m$ implies a $T_t$ of about $100 s$, In conclusion, it is clear that turbulence is much more efficient than molecular diffusion in the transport of quantities such as heat.
 
-The considerations discussed in the example of the heating of the air in the room can be extended to the situation in the atmosphere. It should be made clear that the eddy sizes in the atmosphere, or in the room, are limited in size by the flow boundaries. This only sets the upper limit, albeit the most efficient for transport, as illustrated below. Actually, a whole range of smaller eddy sizes exists, until they become so small that molecular forces become significant. The turbulent structure in the atmosphere in simplest terms can be envisioned as a whole series of eddies, such as in our room example, being carried along by the mean wind, $\overline U(z)$ (Fig. \@ref(fig:fig-turb-4).
+The considerations discussed in the example of the heating of the air in the room can be extended to the situation in the atmosphere. It should be made clear that the eddy sizes in the atmosphere, or in the room, are limited in size by the flow boundaries. This only sets the upper limit, albeit the most efficient for transport, as illustrated below. Actually, a whole range of smaller eddy sizes exists, until they become so small that molecular forces become significant. The turbulent structure in the atmosphere in simplest terms can be envisioned as a whole series of eddies, such as in our room example, being carried along by the mean wind, $\overline U(z)$ (Fig. \@ref(fig:fig-turb-4)).
 
 ```{r fig-turb-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='A range of eddies exists, with mean diameter k proportional to height z.'}
 knitr::include_graphics('figures/fig-turb-4.png')
@@ -292,7 +292,7 @@ A convenient tabulation of various dimensionless numbers is in Campbell (1977, p
 $$ Nu \frac{k}{d} = h = \frac{\rho c_p}{r}$$
 where $\rho$ is fluid density and $c_p$ is specific heat.
 
-```{r fig-turb-10, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='A plot ofthe Nusselt number versus the Reynolds number compares convective heat transfer from a man (-.-) and a sheep (...). The data are fairly close to theoretical calculations made for a cylinder (-). From Monteith 1972, p. 111.'}
+```{r fig-turb-10, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='A plot ofthe Nusselt number versus the Reynolds number compares convective heat transfer from a man (- -) and a sheep (...). The data are fairly close to theoretical calculations made for a cylinder (-). From Monteith 1972, p. 111.'}
 knitr::include_graphics('figures/fig-turb-10.png')
 ```
 
@@ -362,7 +362,7 @@ Wiebe, P. 1976. The biology of cold core rings. Oceanus 19:69-76.
 
 ## PROBLEMS
 
-1. What is the Reynolds number for an elephant in a 0.1 and a 10.0 m s$^{-1}$ wind? (Make your own estimate for d.)
+1. What is the Reynolds number for an elephant in a 0.1 and a 10.0 m s^-1^ wind? (Make your own estimate for $d$.)
 
 2. Given the set of equations below, solve for the unknowns x, y, z.
 $$x + 2y + 3z = 10$$
@@ -391,7 +391,7 @@ Notice that $u'$ represents the RMS (root-mean-square) value of the velocity flu
     Air temperature = 20°C
 
 
-##PROBLEM SOLUTIONS
+## PROBLEM SOLUTIONS
 1. 
 \begin{eqnarray}
 Re&=&\frac{\bar{u}d}{v} \\

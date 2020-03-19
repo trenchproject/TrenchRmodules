@@ -394,14 +394,14 @@ Van Wijk, W.R., and D.A. DeVries. 1966. Periodic temperature variation in a homo
 
 4. Based on the following figure, comment on possible explanations for the shape of the curves. Hint: Compare Figures \@ref(fig:fig-soil-6) and \@ref(fig:fig-soil-7).
 
-```{r fig-soil-15, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=''}
+```{r fig-soil-15, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='For problem 4'}
 knitr::include_graphics('figures/fig-soil-15.png')
 ```
 
 ## PROBLEM SOLUTIONS
 1.(a) $T(z,t)=\overline{T}+A(z)sin[\omega t+B(z)]$
 
-Now $T=\overline{T}+A(0)exp(-z/D)sin[\omega t-z/D]$, substituting expressions \@ref(eq:soil-12) and \@ref(eq:soil-soil-13) into \@ref(eq:soil-soil-11). Taking partial derivatives as indicated by Equation \@ref(eq:soil-soil-8):
+Now $T=\overline{T}+A(0)exp(-z/D)sin[\omega t-z/D]$, substituting expressions \@ref(eq:soil-12) and \@ref(eq:soil-13) into \@ref(eq:soil-11). Taking partial derivatives as indicated by Equation \@ref(eq:soil-8):
 \begin{eqnarray}
 \frac{\partial T}{\partial t}&=&\omega A(0)exp(-z/D)cos[\omega t-z/D] \\
 \frac{\partial T}{\partial z}&=&-\frac{A(0)}{D}exp(-z/D)sin[\omega t-z/D]-\frac{A(0)}{D}exp(-z/D)cos[\omega t-z/D] \\
@@ -414,7 +414,7 @@ $$\omega A(0)exp(-z/D)cos[\omega t-z/D]+K(2A/D^2)exp(-z/D)cos[\omega t-z/D]$$
 or $\omega A(0)=K\frac{2A}{D^2}$
 Canceling the $A(0)$'s, and rearranging the terms, we get $D=(2K/\omega)^{1/2}$, the identity of Equation \@ref(eq:soil-14).
 
-(b) The first boundary condition, $T(\infty,t) = \bar{T}$ (Equation \@ref(eq:soil-9)) is a constant, so it trivially satisfies Equation \@ref(eq:soil-8) (0 = 0).
+(b) The first boundary condition, $T(\infty,t) = \overline{T}$ (Equation \@ref(eq:soil-9)) is a constant, so it trivially satisfies Equation \@ref(eq:soil-8) (0 = 0).
 
 The second boundary condition (Equation \@ref(eq:soil-10)) represents a special case of the solution (Equation \@ref(eq:soil-11)) when $z = 0$. Hence part (a) of this problem constitutes proof that the second boundary condition satisfies this problem.
 
