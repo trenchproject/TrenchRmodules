@@ -69,7 +69,7 @@ Newton's second law: The acceleration of a particle is directly proportional to 
 The second law is usually written:
 \begin{equation}
 F=ma
-(\#eq:1)
+(\#eq:physics-1)
 \end{equation}
 where  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$a$ = acceleration (change in velocity per unit time)  
@@ -95,7 +95,7 @@ In the process of his theoretical studies on the motion of planets, Newton inven
 Newton's law of universal gravitation is:
 \begin{equation}
 F=G\frac{m_1m_2}{r^2}
-(\#eq:2)
+(\#eq:physics-2)
 \end{equation}
 
 where  
@@ -121,7 +121,7 @@ As students of cellophane laundry bags have observed in dry weather, there seems
 In 1785, Coulomb discovered with the use of a torsion balance that, like gravity, the force between charged bodies varies inversely as the square of the distance between them. Nowadays, Coulomb's electrostatic force law is written:
 \begin{equation}
 F=\frac{1}{4\pi\varepsilon_o}\frac{q_1q_2}{r^2}
-(\#eq:3)
+(\#eq:physics-3)
 \end{equation}
 where  
 &nbsp;&nbsp;&nbsp;&nbsp;$F$ = force (newtons)  
@@ -153,7 +153,7 @@ We have described the law of interaction between charges at rest. To complete ou
 The Biot-Savart law (sometimes called Ampere's law) describes the magnetic field set up at a distance $r$ from moving charges (current) in a wire (see Fig. \@ref(fig:fig-physics-4)):
 \begin{equation}
 dB=\frac{\mu_o\;i\;dl\;sin\theta}{4\pi r^4}
-(\#eq:4)
+(\#eq:physics-4)
 \end{equation}
 where  
 &nbsp;&nbsp;&nbsp;&nbsp;$dB$ = incremental magnetic field (weber/m^2^)  
@@ -163,7 +163,7 @@ where
 &nbsp;&nbsp;&nbsp;&nbsp;$\theta$ = angle between $dl$ and $r$  
 &nbsp;&nbsp;&nbsp;&nbsp;$\frac{\mu_o}{4\pi}$ = 10^-7^ weber/amp-m
 
-The units for magnetic field $(B)$ will be seen from Equation \@ref(eq:5) (next page) to be nt-sec per coul-m, which is conventionally called weber/m^2^ instead.
+The units for magnetic field $(B)$ will be seen from Equation \@ref(eq:physics-5) (next page) to be nt-sec per coul-m, which is conventionally called weber/m^2^ instead.
 
 ```{r fig-physics-4, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Magnetic field produced by current-carrying wire (Biot-Savart)'}
 knitr::include_graphics('figures/fig-physics-4.png')
@@ -177,7 +177,7 @@ The force on a charge $(q)$ moving through a magnetic field $(B)$ is given by:
 
 \begin{equation}
 F=qvBsin\Psi
-(\#eq:5)
+(\#eq:physics-5)
 \end{equation}
 
 where  
@@ -224,7 +224,7 @@ As seen in Fig. \@ref(fig:fig-physics-7), there is a distance $d$ at which there
 
 \begin{equation}
 F=kx
-(\#eq:6)
+(\#eq:physics-6)
 \end{equation}
 
 where
@@ -244,7 +244,7 @@ Do physicists and physiologists have different ideas as to what work and energy 
 If we slowly move an object a certain distance in a straight line, and if we must apply a force in the direction we move it (not counting the force necessary to overcome inertia---that's why we're moving slowly, so inertial "force" is negligible), the work done on the object by us is defined to be the force we applied, times the distance we moved, thus:
 \begin{equation}
 W=F_xx
-(\#eq:7)
+(\#eq:physics-7)
 \end{equation}
 where  
 &nbsp;&nbsp;&nbsp;&nbsp;$W$ = work (joules $\equiv$ nt-m)  
@@ -255,7 +255,7 @@ When the distance traveled is great enough that the force is changing as we move
 
 \begin{equation}
 W_{12}=\int_{x_1}^{x_2}F_xdx
-(\#eq:8)
+(\#eq:physics-8)
 \end{equation}
 
 where $x = x_1$ at the start of our travail, and $x = x_2$ at the finish. Note that work is done only by that component of the force acting in the direction of motion. Any component for force perpendicular to the motion does no work under this definition.
@@ -263,7 +263,7 @@ where $x = x_1$ at the start of our travail, and $x = x_2$ at the finish. Note t
 If the path of motion is not straight, we must give the most general definition of work, which takes the form of a line integral (see Fig. \@ref(fig:fig-physics-8)):
 \begin{equation}
 W_{AB}=\int_A^BFcos\theta ds
-(\#eq:9)
+(\#eq:physics-9)
 \end{equation}
 
 where $ds$ = incremental distance in direction of the path of travel  
@@ -280,7 +280,7 @@ The actual calculation of a line integral is beyond the scope of this module, bu
 Let's use the definition in order to compute the work done on the water in the bucket as we carry it up ten stories to a height $h$ above the ground. The force due to gravity, which is acting downward on the water (of mass $m$), is equal to $mg$. If we were to carry the water straight up (such as by climbing a vertical ladder) we would be applying an upward force mg, in the direction of motion. Thus the work we do on the water is force times distance, or:
 \begin{equation}
 W=mgh
-(\#eq:10)
+(\#eq:physics-10)
 \end{equation}
 
 What if, instead of climbing a vertical ladder, we had carried the water up a plane inclined at the angle $(\phi)$ (Fig. \@ref(fig:fig-physics-9))?
@@ -303,7 +303,7 @@ Since the law of conservation of energy depends on the forces being conservative
 
 If you are wondering whether this work against friction can be recovered to perform work on something else, that is, if we could use the enhanced kinetic energy of the Molecules of the anvil and the highway to do work, the answer is we could use some of it, but not all. A good deal of this energy will be forever unavailable to do work, which we will see later is a consequence of the second law of thermodynamics and which we shall have to elaborate upon in terms of what we call the "entropy" and "free energy."
 
-We can now begin to understand some of the differences between "physical work" (as defined by Equation \@ref(eq:9) and "physiological work," such as we do when we run downstairs, or hold a heavy weight in a stationary position. In running downstairs, or at a constant level, though we're doing negative, or at best zero work against gravity, it seems apparent that we're doing considerable work against friction. Some of this results in a direct heating up of the environment---the air molecules we bump into are sped up, the molecules of the earth under our feet are given a jolt with each stride---but more significantly, there is a good deal of friction within our bodies as we run, many parts sliding and rubbing each other as our muscles contract and extend. We might think that since this energy remains within the body, in the form of kinetic energy, that it's not lost to us---we should still be able to get some useful work out of it. Again, the second law of thermodynamics denies this possibility for the most part, saying that we cannot get useful work solely by extracting energy from the kinetic energy of a randomly moving, i.e. disordered, array of molecules. Thus, since the body cannot make good use of this energy, it must release most of it, or else this kinetic energy will result in a disastrous rise in body temperature. Consequently, water is made to appear on the surface of our skin through the pores (i.e., we sweat) and as we learned previously, the more highly energetic of these water molecules will depart, leaving behind the slower ones. And the body cools.
+We can now begin to understand some of the differences between "physical work" (as defined by Equation \@ref(eq:physics-9) and "physiological work," such as we do when we run downstairs, or hold a heavy weight in a stationary position. In running downstairs, or at a constant level, though we're doing negative, or at best zero work against gravity, it seems apparent that we're doing considerable work against friction. Some of this results in a direct heating up of the environment---the air molecules we bump into are sped up, the molecules of the earth under our feet are given a jolt with each stride---but more significantly, there is a good deal of friction within our bodies as we run, many parts sliding and rubbing each other as our muscles contract and extend. We might think that since this energy remains within the body, in the form of kinetic energy, that it's not lost to us---we should still be able to get some useful work out of it. Again, the second law of thermodynamics denies this possibility for the most part, saying that we cannot get useful work solely by extracting energy from the kinetic energy of a randomly moving, i.e. disordered, array of molecules. Thus, since the body cannot make good use of this energy, it must release most of it, or else this kinetic energy will result in a disastrous rise in body temperature. Consequently, water is made to appear on the surface of our skin through the pores (i.e., we sweat) and as we learned previously, the more highly energetic of these water molecules will depart, leaving behind the slower ones. And the body cools.
 
 But there's more to the explanation of physiological work than just external and internal friction. For imagine that we're not running, but instead are standing as still as we can, while holding an anvil at  chest height. There is no physical work being done, but there certainly is some physical exertion! If we were to set the anvil on a table, we know that neither physical work nor physical exertion would be required of the table. Why must we work so hard to do no physical work? The answer lies in the way our *striated* or *skeletal* muscles function.
 
@@ -329,10 +329,10 @@ Determine the potential energy stored in a spring stretched from equilibrium a d
 
 We must now formally obtain a formula for kinetic energy, which is defined to be the amount of work we do in overcoming the inertial force of a body of mass $m$, in getting it from zero velocity to a velocity $v$. The inertial force is given by Newton's second law, which we manipulate a bit using the chain rule for derivatives and recalling that the rate of change of velocity is acceleration:
 $$F=ma=m\frac{dv}{dt}=m\frac{dv}{dx}\frac{dx}{dt}=mv\frac{dv}{dx}$$
-We may insert this into the definition of work (Equation \@ref(eq:8)) to get:
+We may insert this into the definition of work (Equation \@ref(eq:physics-physics-8)) to get:
 \begin{equation}
 \mbox{Kinetic Energy}\equiv T=\int mv\frac{dv}{dx}dx=\int_0^vmvdv=\frac{1}{2}mv^2
-(\#eq:11)
+(\#eq:physics-physics-11)
 \end{equation}
 We are now ready to establish the law of conservation of energy, which we do forthwith.
 
@@ -355,41 +355,41 @@ Let's see if this relationship holds in the case of a body of mass $m$ falling f
 
 \begin{equation}
 \frac{1}{2}mv^2+mgh=\mbox{constant}
-(\#eq:13)
+(\#eq:physics-13)
 \end{equation}
 
-If equation \@ref(eq:13) is true then the time derivative of the left hand side must be zero. Taking this derivative:
+If equation \@ref(eq:physics-13) is true then the time derivative of the left hand side must be zero. Taking this derivative:
 \begin{eqnarray}
 \frac{d}{dt}(\frac{1}{2}mv^2+mgh)=\frac{1}{2}m\frac{d}{dt}(v^2)+mg\frac{dh}{dt}&=&\frac{1}{\rlap{-}2}m\rlap{-}2v\frac{dv}{dt}+mg\frac{dh}{dt} \\
 &=&mv(-g)+mgv=0
 \end{eqnarray}
 
-where we have chosen the positive direction for $h$ to be upward, $\frac{dh}{dt} = v$ (both $\frac{dh}{dt}$ and $v$ are negative), and the acceleration due to gravity $(\frac{dv}{dt} = -g)$ is a negative quantity since it is directed downward. Thus, the derivatives of both sides of \@ref(eq:13) are zero and \@ref(eq:13) is satisfied. We also interpret this to mean that the principle of conservation of energy is satisfied.
+where we have chosen the positive direction for $h$ to be upward, $\frac{dh}{dt} = v$ (both $\frac{dh}{dt}$ and $v$ are negative), and the acceleration due to gravity $(\frac{dv}{dt} = -g)$ is a negative quantity since it is directed downward. Thus, the derivatives of both sides of \@ref(eq:physics-13) are zero and \@ref(eq:physics-13) is satisfied. We also interpret this to mean that the principle of conservation of energy is satisfied.
 
 To show that conservation of energy holds in general is best done using the tools of vector analysis, which is beyond the scope of this module. It is easy to show without vector analysis that it must be true for an object moving in a straight line. Then if you're satisfied to think of an arbitrary curved path as being made up of infinitesimal straight line segments, you will be satisfied with the following:
 
-All that need be done is to return to the development of the formula \@ref(eq:11) for the kinetic energy, which was defined as the work necessary to get a body from zero velocity to a velocity $v$. If we wish to find the work done *on* the body in getting from a velocity $v_1$ (at point 1 in space) to a velocity $v_2$ (at point 2 in space), the steps are the same as in obtaining equation \@ref(eq:11) except the final integral has limits $v_1$ and $v_2$:
+All that need be done is to return to the development of the formula \@ref(eq:physics-11) for the kinetic energy, which was defined as the work necessary to get a body from zero velocity to a velocity $v$. If we wish to find the work done *on* the body in getting from a velocity $v_1$ (at point 1 in space) to a velocity $v_2$ (at point 2 in space), the steps are the same as in obtaining equation \@ref(eq:physics-11) except the final integral has limits $v_1$ and $v_2$:
 
 \begin{eqnarray}
 \mbox{Work in getting from 1 to 2} \equiv W_{12}&=&\int_{v_1}^{v_2}mvdv \\
 &=&\frac{1}{2}m(v_2^2-v_1^2) \\
 &=&T_2-T_1
-(\#eq:14)
+(\#eq:physics-14)
 \end{eqnarray}
 
 Equivalently, if the force acting on the body is conservative (work done is independent of path from 1 to 2), then we may figure out a potential energy (relative to an arbitrary point) of the body at each point, say and the work we must do $V_1$ and $V_2$, on the body in getting it from 1 to 2 is $V_2 - V_1$. If we release the body at point 2, the force associated with the p(potential (let's say it's gravity) will do en amount of work $W_{21} = V_2 - V_1$ on the body in getting it from point 2 to point 1. We may write:
 
 \begin{equation}
 W_{12}=-W_{21}=V_1-V_2
-(\#eq:15)
+(\#eq:physics-15)
 \end{equation}
 
-Comparing this to equation \@ref(eq:14) gives us the statement of conservation of energy:
+Comparing this to equation \@ref(eq:physics-14) gives us the statement of conservation of energy:
 $$V_1-V_2=T_2-T_1$$
 or
 \begin{equation}
 T_1+V_1=T_2+V_2=\mbox{constant}
-(\#eq:16)
+(\#eq:physics-16)
 \end{equation}
 
 since points 1 and 2 were arbitrary.
@@ -401,11 +401,11 @@ In passing, we point out one more assumption made in the development of the law,
 
 ### Gravitational and Electrostatic Potential Energy
 
-We can now establish formulas for gravitational and electrostatic potential energy. For reasons that will become apparent in the development, we usually choose $r = \infty$ to be the reference point for the potential energy; that is, we shall define $V_{\infty} = 0$. Thus if we take equation \@ref(eq:15) and \@ref(eq:8) in combination to define potential energy, then substitution of equation \@ref(eq:2), Newton's law of universal gravitation, into the defining potential energy relations gives:
+We can now establish formulas for gravitational and electrostatic potential energy. For reasons that will become apparent in the development, we usually choose $r = \infty$ to be the reference point for the potential energy; that is, we shall define $V_{\infty} = 0$. Thus if we take equation \@ref(eq:physics-15) and \@ref(eq:physics-8) in combination to define potential energy, then substitution of equation \@ref(eq:physics-2), Newton's law of universal gravitation, into the defining potential energy relations gives:
 \begin{eqnarray}
 V_r-V_{\infty}&=&-\int_r^{\infty}g\frac{Mm}{r^2}dr \\
 V_r&=&-G\frac{Mm}{r}
-(\#eq:17)
+(\#eq:physics-17)
 \end{eqnarray}
 
 where  
@@ -430,7 +430,7 @@ Of greater biological importance is the potential energy associated with the ele
 
 \begin{equation}
 V=\frac{1}{4\pi \varepsilon_o}\frac{q_1q_2}{r}
-(\#eq:18)
+(\#eq:physics-18)
 \end{equation}
 
 where once again infinity is chosen as the reference point. The sign is positive since, unlike gravity, the force between like charges is repulsive. (Of course, if the charges are unlike, we would come up with the negative energy associated with attractive forces.)

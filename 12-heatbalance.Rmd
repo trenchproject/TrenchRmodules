@@ -36,7 +36,7 @@ To fix our ideas, we choose an unshorn domestic sheep as our study organism. The
 Assuming that an animal's body temperature is constant (steady state), energy input to the animals must equal energy out. We can write the animal's energy balance as follows:
 \begin{equation}
 M + R_+ = R_- + C + H + E
-(\#eq:1)
+(\#eq:heatbalance-1)
 \end{equation}
 where $M$ is the metabolic rate, $R_+$ is the amount of radiation absorbed by the animal surface, $R_-$ is the thermal radiation emitted from the animal surface, $C$ is the heat conducted from the animal to any surface it is in contact with, $H$ is the heat loss from the animal to the environment via convection, and E is evaporative heat loss.
 
@@ -48,7 +48,7 @@ Heat is conducted within the animal based on the thickness of each layer. Bounda
 The thickness of the boundary layer varies inversely with the one-third root of wind speed. Heat is conducted across the boundary layer and then carried away by convection associated with free-air movement. The convection coefficient describing rates of heat flow through each layer is given by:
 \begin{equation}
 h_L=k \frac{V^{1/3}}{r^{2/3}}
-(\#eq:2)
+(\#eq:heatbalance-2)
 \end{equation}
 where $V$ is the wind speed in cm/s, $r$ is the radius of the layer in cm, and $k$ is a constant describing thermal conductivity. The thermal conductivities of the fat ($k_f$), fleece ($k_h$), and air ($k_a$) additionally determine rates of heat exchange. (See further analysis below.)
 
@@ -61,7 +61,7 @@ At present, we will assume that $T_b > T_h$, so that metabolic heat is lost to t
 The means by which metabolic energy is transported in the form of heat from the body to the fleece tips is conduction. It was observed by Fourier in 1822 that the rate of movement of heat $Q(W)$ perpendicular to surface of area $A$ through a material such as body fat or wool is proportional to the gradient of temperature $T(K)$ in the material is:
 \begin{equation}
 Q=-kAdT/dr
-(\#eq:4)
+(\#eq:heatbalance-4)
 \end{equation}
 
 Here $k (W m^{-1} K^{-1})$ is a thermal conductivity coefficient, a property of the conducting material, and $r (m)$ is the distance from the center of the cylinder measured along a radius. 
@@ -69,74 +69,74 @@ Here $k (W m^{-1} K^{-1})$ is a thermal conductivity coefficient, a property of 
 Assuming a constant heat flow rate, integration of the expressions yields
 \begin{equation}
 Qr=-kAT + \mbox{const}.
-(\#eq:5)
+(\#eq:heatbalance-5)
 \end{equation}
 We can find the integration constant using $T=T_b$ and $d=0$ which gives $\mbox{const}=kAT_b$. 
 
-Incorporating the constant in \@ref(eq:5) gives 
+Incorporating the constant in \@ref(eq:heatbalance-5) gives 
 \begin{equation}
 \frac{Qr}{kA}= T_b-T_r.
-(\#eq:6)
+(\#eq:heatbalance-6)
 \end{equation}
 
 Here we can invoke the concept of **thermal resistance** (also referred to as thermal impedance), which is defined as the temperature variation produced by a unit heat flow rate: 
 \begin{equation}
 Z= \frac{\Delta T}{r}.
-(\#eq:7)
+(\#eq:heatbalance-7)
 \end{equation}
 
-Incorporating the concepts of resistance into \@ref(eq:6) allows us to express resistance perpendicular to a surface area as
+Incorporating the concepts of resistance into \@ref(eq:heatbalance-6) allows us to express resistance perpendicular to a surface area as
 \begin{equation}
 Z= \frac{r}{kA}.
-(\#eq:8)
+(\#eq:heatbalance-8)
 \end{equation}
 
 Consultation with engineering texts indicates that the expression resistance corresponding to heat conduction through a hollow cylinder of internal radius $r_i$ and external radius $r_o$, length $L$, and thermal conductivity $k$ is
 \begin{equation}
 Z= \frac{1}{2\pi k_fL}ln(\frac{r_o}{r_i}).
-(\#eq:9)
+(\#eq:heatbalance-9)
 \end{equation}
 
 We are now ready to use this expression to conduct an energy balance describing the internal heat conduction through layers of a sheep. We can define the resistances of fat layer as
 \begin{equation}
 Z_f=\frac{1}{2\pi k_fL}ln(\frac{r_s}{r_b})
-(\#eq:10)
+(\#eq:heatbalance-10)
 \end{equation}
 and the fur layer as
 \begin{equation}
 Z_h=\frac{1}{2\pi k_hL}ln(\frac{r_h}{r_s})
-(\#eq:11)
+(\#eq:heatbalance-11)
 \end{equation}
 
 The temperature differences between the layers can then be expressed as the product of incoming heat and thermal resistances. The expressions for the fat and fur layers are thus as follows:
 \begin{equation}
 Z_f Q_f =  T_b - T_s\\
 Z_h Q_h =  T_s - T_h
-(\#eq:12)
+(\#eq:heatbalance-12)
 \end{equation}
 where $Q_f$ and $Q_h$ are the quantities of heat reaching the outer surfaces of the fat and fur layers, respectively.
 
 Analogous to electrical resistances, thermal resistance can be connected in series such that the expression for heat flow through the two layers is
 \begin{equation}
 Z_h Q_h + Z_f Q_f =  (T_s - T_h) + (T_b - T_s)
-(\#eq:13)
+(\#eq:heatbalance-13)
 \end{equation}
 
 Eliminating $T_s$, we obtain
 \begin{equation}
 Z_h Q_h+Z_f Q_f=T_b-T_h
-(\#eq:14)
+(\#eq:heatbalance-14)
 \end{equation}
 At this point, it is important to point out that in general $Q_h$ will not be equal to $Q_f$. In the fat, rate of heat flow is exactly equal to that leaving the body,
 $$Q_f=M-E_r$$
 At the surface of the skin, however, heat is lost by sweating, so that
 $$Q_h=Q_f-E_s=M-E_r-E_s$$
-Substituting these results in \@ref(eq:14), we obtain
+Substituting these results in \@ref(eq:heatbalance-14), we obtain
 $$Z_h(M-E_r-E_s)+Z_f(M-E_r)=T_b-T_h$$
 or
 \begin{equation}
 M=E_r+\frac{E_s}{1+\frac{Z_f}{Z_h}}+\frac{T_b-T_h}{Z_h+Z_f}
-(\#eq:17)
+(\#eq:heatbalance-17)
 \end{equation}
 This important equation governs the rate of heat movement away from the animal's body. Body heat produced by metabolism $M$ is removed by evaporative losses due to respiration $E_r$ and sweating $E_s/(1 + Z_f/Z_h)$ and by conduction of sensible heat to the fleece tips $(T_b - T_h)/(Z_h + Z_f)$. 
 
@@ -144,7 +144,7 @@ This important equation governs the rate of heat movement away from the animal's
 We can then return to heat flow between the sheep and the external environment to calculate heat exchange via convection with the air. The sheep exchanges heat with the surrounding air at a rate determined by the temperature difference between the surface of the animal $T_h$ and the air $T_a$. The rate is also determined by the sheep's surface area exposed to the air, which we approximate here the surface area of the animal at the fleece tips $A_h$. Convection can be estimated as follows
 \begin{equation}
 H= H_L A_h(T_h-T_a)
-(\#eq:19)
+(\#eq:heatbalance-19)
 \end{equation}
 where $H_L$ is a convective heat transfer coefficient ($W m^{-2}K^{-1}$). $H_L$ is related to the boundary layer thickness and depends on whether the heat exchange is free or forced. The variables involved in heat transfer can be combined into dimensionless groups that are used to compare the scales of heat exchange processes and thus whether modeling free or forced convection is more appropriate. The Nusselt number (Nu) provides a dimensionless estimate of conductance as is estimated as $Nu = H_L \times d / k$, where $H_L$ is the convective heat transfer coefficient ($W m^{-2} K^{-1}$), $d$ is the characteristic dimension ($m$), and $k$ is thermal conductivity ($W K^{-1}m^{-1}$). 
 
@@ -185,7 +185,7 @@ It is also possible to calculate the heat lost by "free convection," which is im
 All warm bodies lose heat energy by emitting long-wave thermal radiation according to the Stefan-Boltzmann law:
 \begin{equation}
 R_\_=\varepsilon A_h\sigma T_h^4
-(\#eq:20)
+(\#eq:heatbalance-20)
 \end{equation}
 Here $T_h$ is the absolute (Kelvin) temperature of the surface of the body in our case, the fleece tips of the sheep, $\sigma$ is the Stefan-Boltzmann constant, and $\varepsilon$ is the emissivity of the body. Total heat energy lost this way by the sheep is then $R_\_ = (\pi dL)(\varepsilon\sigma T_h^4)$. 
 
@@ -247,13 +247,13 @@ It probably comes as no surprise to the reader to learn that metabolic rates of 
 ## An Energy Balance Calculation
 In making the calculations that follow, we assume fleece thickness of 0.1 m, which is the depth of wool usually attained by Cheviot sheep (Brockway et al., 1965). Then skin diameter for our "standard sheep" is 0.3 m. The layer of subcutaneous fat is about 0.01 m thick (Porter and Gates, 1969). We take thermal conductivity of sheep's wool as $5.91\times10^{-2}W m^{-2}°C^{-1}$ (Blaxter, Graham, and Weinman, 1959) and that of fat as $20.51\times10^{-2} W m^{-2}°C^{-1}$(Porter and Gates, 1969). Body temperature of the sheep is taken as 39°C (Priestley, 1957). We assume a body weight of 70 kg.
 
-To consolidate our calculation, we return to our general heat balance relation (Eqn. \@ref(eq:1)):
+To consolidate our calculation, we return to our general heat balance relation (Eqn. \@ref(eq:heatbalance-1)):
 $$M+R_+=R_-+C+H+E$$
 Our objective at this point is to calculate $T_h$, the fleece-tip temperature. We now define net radiation received by the animal at the fleece tips as
 \begin{eqnarray}
 R_{Nh}=R_+-R_-&=&a_1A_1S+a_2A_2s+a_3A_s(S+s) \\
 &+&a_4A_4R_a+a_5A_5R_g-\varepsilon A_h\sigma T_h^4 
-(\#eq:22)
+(\#eq:heatbalance-22)
 \end{eqnarray}
 and $R_{Na}$ as the net radiation which would be received in the same environment if the fleece tips were at air temperature, so that
 $$R_{Na}=a_1A_1S+a_2A_2s+a_3A_3(S+s)+a_4A_4R_a+a_5A_5\sigma T_a^4-\varepsilon A_h\sigma T_a^4$$
@@ -262,47 +262,47 @@ $$R_{Nh}-R_{Na}=a_5A_5\sigma T_h^4-\varepsilon A_h\sigma T_h^4-(a_5A_5\sigma T_a
 and, since $a_5=1$, $A_h=\pi dL$ and $A_5=1/2A_h$,
 \begin{equation}
 R_{Nh}-R_{Na}=-\pi dL\sigma(T_h^4-T_a^4)(1/2-\varepsilon)
-(\#eq:23)
+(\#eq:heatbalance-23)
 \end{equation}
 
 We now write
 \begin{equation}
 R_{Nh}\stackrel{.}{=}R_{Na}=2T_a^3(T_h-T_a)A_h
-(\#eq:24)
+(\#eq:heatbalance-24)
 \end{equation}
 To obtain this relationship, we have assumed $\varepsilon\stackrel{.}{=}1$ and have used an approximation based on the Taylor Series expansion of $T_h^4 = g(T_h)$, say, near the point $T_h = T_a$:
 \begin{eqnarray}
 T_h^4=g(T_h)&=&g(T_a)+g^,(T_a)(T_h-T_a)+... \\
 &=&T_a^4+4T_a^3(T_h-T_a)+... 
 \end{eqnarray}
-Since from Eqns. \@ref(eq:1) and
+Since from Eqns. \@ref(eq:heatbalance-1) and
 $$M-E+R_{Nh}=H+C$$
-If we ignore heat loss through sweat (which can be relatively low in cool air temperatures), we can use Eqn. \@ref(eq:17) to obtain,
+If we ignore heat loss through sweat (which can be relatively low in cool air temperatures), we can use Eqn. \@ref(eq:heatbalance-17) to obtain,
 \begin{equation}
 \frac{T_b-T_h}{Z_h+Z_f}+R_{Nh}=H
-(\#eq:25)
+(\#eq:heatbalance-25)
 \end{equation}
-We have dropped the conductive term $C$, since heat conduction from the animal to the ground is small in comparison to other heat loss if the sheep is not lying down. We now substitute Eqn. \@ref(eq:24) into Eqn. \@ref(eq:25) and, remembering that $H$ is given by Eqn. \@ref(eq:19), we obtain an expression which we will use to determine $T_h$:
+We have dropped the conductive term $C$, since heat conduction from the animal to the ground is small in comparison to other heat loss if the sheep is not lying down. We now substitute Eqn. \@ref(eq:heatbalance-24) into Eqn. \@ref(eq:heatbalance-25) and, remembering that $H$ is given by Eqn. \@ref(eq:heatbalance-19), we obtain an expression which we will use to determine $T_h$:
 \begin{equation}
 \frac{T_b-T_h}{Z_h+Z_f}+R_{Na}-2T_a^3\sigma A_h(T_h-T_a)=\frac{Nu}{d}k_aA_h(T_h-T_a)
-(\#eq:26)
+(\#eq:heatbalance-26)
 \end{equation}
 Rearranging, we obtain
 \begin{equation}
 T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}
-(\#eq:27)
+(\#eq:heatbalance-27)
 \end{equation}
 where
 \begin{equation}
 \alpha=A_h(Nuk_a/d+2\sigma T_a^3)
-(\#eq:28)
+(\#eq:heatbalance-28)
 \end{equation}
 and
 \begin{equation}
 \beta=1/(Z_h+Z_f)
-(\#eq:29)
+(\#eq:heatbalance-29)
 \end{equation}
-Formula \@ref(eq:27) states that the temperature at the fleece tips $T_h$ is a weighted average of air and body temperatures $T_a$ and $T_b$, increased by a contribution from all sources of radiation. The weights $\alpha$ and $\beta$ have the units of "conductances," that is, of conductivities multiplied by the areas across which heat flows. The conductance $\alpha$ has components associated with convection and radiation, $\beta$ with conduction in fleece and fat.
+Formula \@ref(eq:heatbalance-27) states that the temperature at the fleece tips $T_h$ is a weighted average of air and body temperatures $T_a$ and $T_b$, increased by a contribution from all sources of radiation. The weights $\alpha$ and $\beta$ have the units of "conductances," that is, of conductivities multiplied by the areas across which heat flows. The conductance $\alpha$ has components associated with convection and radiation, $\beta$ with conduction in fleece and fat.
 
 To illustrate the calculation of $T_h$, we take $T_a=10°C$, $T_b=39°C$, $A_h=0.5\pi m^2$, $Nu=194$, $k_a=2.48\times10^{-2}Wm^{-1}°C^{-1}$,   $k_h=5.91\times10^{-2}Wm^{-1}°C^{-1}$, $k_f=2.51\times10^{-1}Wm^{-1}°C^{-1}$, $d=0.5m$, $L=1.0m$, $r_b=0.145m$, $r_s=0.15m$, and $r_h=0.25m$.
 
@@ -327,11 +327,11 @@ Thus, in this case, the temperature of the fleece tips is approximately 22°C hi
 
 4. Contribution of fat to total resistance to heat flow from the animal is very small compared to that of the wool.
 
-Once we have determined $T_h$, a number of very important calculations become possible. The first of these is the total heat of metabolic origin that passes outward through the fleece tips, which is given by Eqn. \@ref(eq:17):
+Once we have determined $T_h$, a number of very important calculations become possible. The first of these is the total heat of metabolic origin that passes outward through the fleece tips, which is given by Eqn. \@ref(eq:heatbalance-17):
 $$\frac{T_b-T_h}{Z_h+Z_f}=M-E_r-E_s/(1+\frac{Z_f}{Z_h})$$
 In the present case, the quantity on the left works out to be $(39 - 32.5)/1.428 = 4.55 W = 393 kJ$ day$^{-1}$. Checking the other side, we have already noted that sweating heat loss is in the neighborhood of $16.8 kJ kg^{-1} day^{-1} = 1170 kJ day^{-1}$ for a 70 kg animal, independent of air temperature (Brockway et al., 1965). Many experiments have shown that 70 kg sheep lose between 8,800 and 10,000 kJ day$^{-1}$ heat. If we take $M = 8,800 kJ$, then $E_r = 7630 kJ day^{-1}$, which is about twice as great as the 3,660 kJ day reported by Brockway et al. (1965). In their experiment, however, there was no net absorption of radiation at the fleece tips, so that higher conductive heat losses were possible.
 
-For comparative purposes, it is also useful to calculate the magnitudes of the terms in the energy balance equations \@ref(eq:24) and \@ref(eq:25). These are
+For comparative purposes, it is also useful to calculate the magnitudes of the terms in the energy balance equations \@ref(eq:heatbalance-24) and \@ref(eq:heatbalance-25). These are
 
 1. metabolic sensible heat loss
 $$\frac{T_b-T_h}{Z_h+Z_f}=4.6W$$
@@ -419,7 +419,7 @@ $5.7 \times 10^{-3} J cm^{-1} s^{-1} °C^{-1}$.
 
 7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39°C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
 
-8. Derive equation \@ref(eq:23) in the text.
+8. Derive equation \@ref(eq:heatbalance-23) in the text.
 
 9. When heat transfer depends on air movements caused by differences in fluid density (i.e., buoyancy effects), the Nusselt number can be shown to depend on another dimensionless parameter, the Grashof number,
 $$Gr=\frac{\beta gd^3}{v^2}(T_h-T_a)$$
@@ -429,7 +429,7 @@ where $\beta$ is the coefficient of thermal expansion of the fluid, $g$ is the a
 
 ## PROBLEM SOLUTIONS
 
-1. We need to find the total and evaporative heat losses and compare them with the results of Brockway et al. Since there are three air temperatures and three fleece thicknesses, there will be nine separate calculations. We need to calculate $T_h$ using equation \@ref(eq:27). To do this, we need the $\alpha$'s, $\beta$'s and the Nusselt numbers. 
+1. We need to find the total and evaporative heat losses and compare them with the results of Brockway et al. Since there are three air temperatures and three fleece thicknesses, there will be nine separate calculations. We need to calculate $T_h$ using equation \@ref(eq:heatbalance-27). To do this, we need the $\alpha$'s, $\beta$'s and the Nusselt numbers. 
 
 Nusselt numbers can be calculated from section 12.5 by first obtaining Reynolds number and using the right coefficients $a$ and $b$.
 
@@ -441,7 +441,7 @@ Nusselt Numbers as a function of air temperature (°C) and diameter (m)
 | 20 | 36.96 | 39.76 | 48.75 |
 | 30 | 35.66 | 38.36 | 47.03 |
 
-Once we have $Nu$ $\alpha$ can be obtained from $\alpha=A_h(Nuk_a/d+2\sigma T_a^3)$ \@ref(eq:28). The calculations for $\beta$ is $\beta=1/(Z_h+Z_f)$ \@ref(eq:29). $Z_f$ and $Z_h$ to get $\beta$ are calculated from \@ref(eq:10) and \@ref(eq:11).
+Once we have $Nu$ $\alpha$ can be obtained from $\alpha=A_h(Nuk_a/d+2\sigma T_a^3)$ \@ref(eq:heatbalance-28). The calculations for $\beta$ is $\beta=1/(Z_h+Z_f)$ \@ref(eq:heatbalance-29). $Z_f$ and $Z_h$ to get $\beta$ are calculated from \@ref(eq:heatbalance-10) and \@ref(eq:heatbalance-11).
 
 $\alpha$ and $\beta$ values (W °C^-1^) as a function of air temperature (°C) and diameter (m)
 
@@ -462,7 +462,7 @@ $R_{Na}$ (W) values as a function of air temperature (°C) and diameter (m)
 | 20 | -59.09 | -66.48 |  -92.33 |
 | 30 | -67.58 | -76.03 | -105.60 |
 
-Using $\alpha$, $\beta$, $T_a$, $R_{Na}$ and $T_b = 39°C$, $T_h$ can be calculated from $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ \@ref(eq:27).
+Using $\alpha$, $\beta$, $T_a$, $R_{Na}$ and $T_b = 39°C$, $T_h$ can be calculated from $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ \@ref(eq:heatbalance-27).
 
 $T_h$ (°C) values as a function of air temperature (°C) and diameter (m)
 
@@ -472,7 +472,7 @@ $T_h$ (°C) values as a function of air temperature (°C) and diameter (m)
 | 20 | 22.43 | 16.24 | 11.41 |
 | 30 | 27.39 | 23.14 | 19.69 |
 
-From equation \@ref(eq:17), the total heat loss can be estimated at $M$ since $T_b$ is always greater than $T_h$. 
+From equation \@ref(eq:heatbalance-17), the total heat loss can be estimated at $M$ since $T_b$ is always greater than $T_h$. 
 $M=\beta(T_b-T_h) + E$, and $M$ = 8800 (kJ/day) = 101.8 (J/s = W) for $T_a$ = 15 ~ 30 °C and $E$ = 20.4 (W) for 10 °C.
 
 Total Heat Loss (W) as a function of air temperature (°C) and diameter (m)
@@ -608,7 +608,7 @@ Metabolic rate per unit area (W m^-2^)|10|350.1|194.8
 | |30|171.2|114.9
 
 
-8. Using Eqn. \@ref(eq:22) and 
+8. Using Eqn. \@ref(eq:heatbalance-22) and 
 
 \begin{eqnarray}
 R_{Na}&=&a_1A_1S+a_2A_2s+a_3A_3(S+s) \\

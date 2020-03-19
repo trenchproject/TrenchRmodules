@@ -17,7 +17,7 @@ The purpose of this module is to illustrate several ways in which the First Law 
 
 \begin{equation}
 \Delta U = Q - W
-(\#eq:1)
+(\#eq:thermex-thermex-1)
 \end{equation}
 
 where 
@@ -26,7 +26,7 @@ where
 * $Q$ is the heat added to the system, 
 * and $W$ is the work done by the system to the surroundings. 
 </div>
-The reader may find it helpful to consult the Appendix on Units, Symbols, and Dimensions and/or the module on that subject. In the examples we will make different kinds of assumptions about the terms of equation \@ref(eq:1) to illustrate different applications. First, we will consider an adiabatic process in which no heat is added to the system, so $Q = 0$. A second type of application, with $W = 0$, is often used to describe the heat energy balance of organisms. Much of the energy balance literature has also been devoted to steady state analysis for which $\Delta U = 0$. Finally,  we will extend the formulation of the First Law to nonclassical thermodynamics in which mass flows are also considered.
+The reader may find it helpful to consult the Appendix on Units, Symbols, and Dimensions and/or the module on that subject. In the examples we will make different kinds of assumptions about the terms of equation \@ref(eq:thermex-thermex-1) to illustrate different applications. First, we will consider an adiabatic process in which no heat is added to the system, so $Q = 0$. A second type of application, with $W = 0$, is often used to describe the heat energy balance of organisms. Much of the energy balance literature has also been devoted to steady state analysis for which $\Delta U = 0$. Finally,  we will extend the formulation of the First Law to nonclassical thermodynamics in which mass flows are also considered.
 
 ***
 
@@ -45,45 +45,45 @@ The following example can be found in many introductory micrometeorology texts a
 What we would like is an expression to relate the change in height to the change in temperature. The physical law needed is the First Law of Thermodynamics with no heat flux ($Q = 0$, adiabatic process). We have then
 \begin{equation}
 dU = -W
-(\#eq:2)
+(\#eq:thermex-thermex-2)
 \end{equation}
 
 In the module developing the theory of the First Law we also developed two other relationships in the piston example. One is that the change in internal energy $dU$ is equal to the heat capacity $C_V$ times the change in temperature $dT$ (for a reversible process revolving an ideal gas).
 \begin{equation}
 dU = C_V dT
-(\#eq:3)
+(\#eq:thermex-3)
 \end{equation}
 Secondly we discovered that the work $W$ done by the system on the surroundings is equal to $P dV$ so
 \begin{equation}
 W = P dV
-(\#eq:4)
+(\#eq:thermex-4)
 \end{equation}
-By substituting \@ref(eq:3) and \@ref(eq:4) into \@ref(eq:2) we express the First Law as
+By substituting \@ref(eq:thermex-3) and \@ref(eq:thermex-4) into \@ref(eq:thermex-2) we express the First Law as
 \begin{equation}
 C_V dT = -P dV
-(\#eq:5)
+(\#eq:thermex-5)
 \end{equation}
 Furthermore, we know that the state variables are related by the Ideal Gas Law $P V = R T$ which in total differential form is
 \begin{equation}
 V dP +P dV = R dT
-(\#eq:6)
+(\#eq:thermex-6)
 \end{equation}
-Since our goal is to express the temperature change as a function of height or elevation we will eliminate $P dV$ from equation \@ref(eq:5) by substituting in \@ref(eq:6) which yields 
+Since our goal is to express the temperature change as a function of height or elevation we will eliminate $P dV$ from equation \@ref(eq:thermex-5) by substituting in \@ref(eq:thermex-6) which yields 
 \begin{equation}
 C_V dT = -R dT + V dP
-(\#eq:7)
+(\#eq:thermex-7)
 \end{equation}
 The rationale for this step is based on the fact that we can define the change in pressure with the change in altitude. This relation is derived by considering a parcel of air.
 
 If we assume a unit cross section, then the change of pressure is equal to the unit weight $w$ of air at height $h$ times the change in height
 \begin{equation}
 dP = -w\:dh
-(\#eq:8)
+(\#eq:thermex-8)
 \end{equation}
 Furthermore
 \begin{equation}
 w = g \frac{m}{V}
-(\#eq:9)
+(\#eq:thermex-9)
 \end{equation}
 where
 <div class="nobullet">
@@ -92,13 +92,13 @@ where
 * and $V$ is the volume of one mole.
 </div>
 
-Combining equations \@ref(eq:8) and \@ref(eq:9) and rearranging we have
+Combining equations \@ref(eq:thermex-8) and \@ref(eq:thermex-9) and rearranging we have
 \begin{equation}
 V dP = -g m dh
-(\#eq:10)
+(\#eq:thermex-10)
 \end{equation}
 
-Substituting \@ref(eq:10) into \@ref(eq:7) and rearranging we have $(c_V + R) dT = -g m d$ the desired result; a formula that tells us how temperature changes with height. (Also recall that for an ideal diatomic gas that the heat capacity at constant volume $C_V = 2.5 R.$)
+Substituting \@ref(eq:thermex-10) into \@ref(eq:thermex-7) and rearranging we have $(c_V + R) dT = -g m d$ the desired result; a formula that tells us how temperature changes with height. (Also recall that for an ideal diatomic gas that the heat capacity at constant volume $C_V = 2.5 R.$)
 $$ \frac{dT}{dh} = \frac{-g\,m}{C_V + R} = \frac{-9.8ms^{-2} \cdot  0.029 kg mole^{-1}}{8.314 J {^{\circ}C}^{-1} (2.5+1) J {^{\circ}C}^{-1} mole^{-1}} = 0.0098 \frac{^{\circ}C}{m} = -9.8 \frac{^{\circ}C}{km}$$
 
 Thus the air temperature will be $10 ^{\circ}C$ lower for each kilometer increase in altitude. This is called the adiabatic lapse rate (no external source of heat). In many locations the rising air contains moisture, which condenses as the air rises thus adding the heat of condensation to the dry adiabatic lapse rate. Therefore the "moist adiabatic" lapse rate of about $6 \frac{^{\circ}C}{km}$ is less than the dry adiabatic lapse rate. Interestingly enough the reverse effect, air moving down a mountain, also occurs. These winds are known as foehn winds in the Alps and the Chinook winds in the Rocky Mountains. As the winds come down the leeward side of the mountain the atmospheric pressure increases causing as much as a 15-20 $^{\circ}C$ rise in temperature.
@@ -108,13 +108,13 @@ Thus the air temperature will be $10 ^{\circ}C$ lower for each kilometer increas
 The next set of examples is used to illustrate the First Law for systems in which it can be assumed that the work term is zero. Therefore
 \begin{equation}
 \Delta U = Q
-(\#eq:11)
+(\#eq:thermex-11)
 \end{equation}
 
 Any change in the internal energy of the system as measured by a change in temperature is due to heat flow. The general heat balance equation is
 \begin{equation}
 \Delta U = Q_a + M + P - Q_e - LE - G - C
-(\#eq:12)
+(\#eq:thermex-12)
 \end{equation}
 where
 <div class="nobullet">
@@ -129,12 +129,12 @@ where
 * and $C$ = convection ($W m^{-2}$).
 </div>
 
-Equation \@ref(eq:12) is a general heat flow equation. In most cases except for water vapor flux $LE$, mass exchange can be neglected. Similarly, the system's internal sources of heat energy, photosynthesis and metabolism, are also very small components of the heat energy budget and can usually be ignored. We note, however, there are important exceptions of which the largest group includes endothermic vertebrates, birds and mammals. The other terms $Q_a$, $Q_e$, $LE$, $C$, $G$ of \@ref(eq:12) represent the basic heat transfer processes that were described in the first module entitled "The First Law of Thermodynamics for Ecosystems."
+Equation \@ref(eq:thermex-12) is a general heat flow equation. In most cases except for water vapor flux $LE$, mass exchange can be neglected. Similarly, the system's internal sources of heat energy, photosynthesis and metabolism, are also very small components of the heat energy budget and can usually be ignored. We note, however, there are important exceptions of which the largest group includes endothermic vertebrates, birds and mammals. The other terms $Q_a$, $Q_e$, $LE$, $C$, $G$ of \@ref(eq:thermex-12) represent the basic heat transfer processes that were described in the first module entitled "The First Law of Thermodynamics for Ecosystems."
 
 The first example we wish to consider is the heat energy budget of the earth. Since the average temperature of both the earth and the atmosphere is not changing with time we assume $\Delta U = 0$. Therefore the sum of the heat fluxes is zero, thus
 \begin{equation}
 0 = Q_a - Q_e -LE -C 
-(\#eq:13)
+(\#eq:thermex-13)
 \end{equation}
 where
 <div class="nobullet">
@@ -153,7 +153,7 @@ knitr::include_graphics('figures/fig-thermex-1.png')
 Our next example is that of a small stream taken from Brown (1969). Fish and game managers noted that clear cutting to the water's edge eliminated trout and salmon populations. Brown modeled the energy exchange to determine how manipulation of streamside vegetation could reduce large diurnal fluctuations and high water temperatures, a potential cause of mortality. Again the First Law is used to say that the change in internal energy is equal to the sum of the heat flows.
 \begin{equation}
 \Delta U = + Q_{NR} - LE - G - C
-(\#eq:14)
+(\#eq:thermex-14)
 \end{equation}
 where
 <div class="nobullet">
@@ -166,7 +166,7 @@ where
 
 Brown measured the heat fluxes of three different systems: 1) a forested section, 2) a nonforested gravel bottom section, and 3) a nonforested rockbottom section. Changes in water temperature were computed hourly using the fact that $\Delta T = \Delta U$ divided by heat capacity where the heat capacity is equal to the surface area of the water divided by the flow rate times the specific heat of water. In Part a of Figs. \@ref(fig:fig-thermex-2) through \@ref(fig:fig-thermex-4) Brown used the energy fluxes to calculate $\Delta U$. From these values $\Delta T$ is calculated and added to the water temperature at the beginning of the stream section to get the predicted water temperatures shown in part b of each figure.
 
-In Fig. \@ref(fig:fig-thermex-2)a the energy components of equation \@ref(eq:14) are plotted as a function of time of day for a section of the stream covered by the forest. The water temperature at the end of the reach can be predicted as described above. In Fig. \@ref(fig:fig-thermex-2)b the observed and predicted temperatures at the end of the section are compared. Since net radiation is small because the section is forested there is not much change in temperature throughout the day. 
+In Fig. \@ref(fig:fig-thermex-2)a the energy components of equation \@ref(eq:thermex-14) are plotted as a function of time of day for a section of the stream covered by the forest. The water temperature at the end of the reach can be predicted as described above. In Fig. \@ref(fig:fig-thermex-2)b the observed and predicted temperatures at the end of the section are compared. Since net radiation is small because the section is forested there is not much change in temperature throughout the day. 
 
 In Figs. \@ref(fig:fig-thermex-3)a and \@ref(fig:fig-thermex-3)b similar graphs illustrate the results Brown got for a nonforested gravel bottom section. Net radiation is the largest term of the energy budget and causes a large increase in water temperature.
 
@@ -189,7 +189,7 @@ knitr::include_graphics(c('figures/fig-thermex-4a.png', 'figures/fig-thermex-4b.
 To illustrate how the First Law can be applied to plant systems we will examine the heat balance of a leaf. The discussion is taken from Gates (1968). This is a natural first step towards understanding the heat balance of a plant because the leaf has a distinct geometry and, is the unit of photosynthesis. The First Law is used in a steady state condition ($\Delta U$ = 0) which assumes that the heat capacity of the leaf is not an important component of the heat fluxes. The heat balance is written
 \begin{equation}
 0 = + Q_a - Q_e - C - LE
-(\#eq:15)
+(\#eq:thermex-15)
 \end{equation}
 where
 <div class="nobullet">
@@ -199,7 +199,7 @@ where
 * and $LE$ = evaporative flux ($W m^{-2}$).
 </div>
 
-A positive sign indicates energy is being added to the system. Equation \@ref(eq:15) describes completely the heat balance of a leaf. This is very important since the heat energy balance determines leaf temperature which affects the photosynthetic activity and shape of the leaf. A more complete analysis of the leaf system and the biological implications will be given in another module (Gates). In this module, it is most important to realize that we can write down the heat energy budget of the leaf and that there are four basic components to the heat balance: $Q_a$, $Q_e$, $C$, and $LE$. 
+A positive sign indicates energy is being added to the system. Equation \@ref(eq:thermex-15) describes completely the heat balance of a leaf. This is very important since the heat energy balance determines leaf temperature which affects the photosynthetic activity and shape of the leaf. A more complete analysis of the leaf system and the biological implications will be given in another module (Gates). In this module, it is most important to realize that we can write down the heat energy budget of the leaf and that there are four basic components to the heat balance: $Q_a$, $Q_e$, $C$, and $LE$. 
 
 To further illustrate the generality and wide application of the First Law, let us examine an animal as the system. Riechert and Tracy (1975)  considered the thermal characteristic of the funnel web-building spider, *Agelenopsis aperta*. They hypothesized that reproductive success would be influenced by the microhabitat of the spider because this animal reproduces during the warmest season which is probably physiologically costly. More specifically, if *A. aperta* could spend more time on the web catching food, more young could be produced. The energy balance equation for the spider was assumed to be
 $$Q_a - Q_e - C = 0$$
@@ -227,14 +227,14 @@ Lindeman (1941, 1942) provided information about the standing crop of eight cate
 A more general version of the First Law is written in differential form as
 \begin{equation}
 d U = d \phi - dW
-(\#eq:17)
+(\#eq:thermex-17)
 \end{equation}
 where $d \phi$ includes both heat $dQ$ and mass changes $dM$. The change in any particular trophic level can then be viewed as a conservation of heat and mass energy. If we assume work changes are zero, the change in the internal energy of the $i^{th}$ trophic level (or organism is you wish) is equal to the sum of the j heat and/or mass fluxes
 \begin{equation}
 \sum_j d U_{ij} = \sum_j d M_{ij} + \sum_j d Q_{ij}
-(\#eq:18)
+(\#eq:thermex-18)
 \end{equation}
-If we consider the carnivores in Lindeman's study as the $i^{th}$ trophic level, each prey item taken would be an increase in mass $M$. Heat exchange through the water is represented by a $Q$ term. Defecation products are usually the most important mass losses. Gallucci (1973) has reviewed the ecological literature and summarized this more general approach. Before passing on, it is important to realize that as equation \@ref(eq:18) is written heat and mass fluxes are independent. Since many biology processes are temperature dependent, this is in general not true. Brett (1971) has provided an ecological example of the interaction of body temperature and food acquisition (also see problem 8). These kinds of interaction occur in plants also (Went 1957). Finally, since all life is far from equilibrium, in the sense of a thermodynamic system, classical representations do not always apply (e.g. Wilke 1975). Non-equilibrium theory, as discussed in later modules, is the first step toward handling these problems and it is an area of current research (Haken 1978, Lamprecht and Zotin 1978). A bibliography is included at the end of the module which, combined with the problems, should illustrate the pervasiveness of thermodynamics in biology. 
+If we consider the carnivores in Lindeman's study as the $i^{th}$ trophic level, each prey item taken would be an increase in mass $M$. Heat exchange through the water is represented by a $Q$ term. Defecation products are usually the most important mass losses. Gallucci (1973) has reviewed the ecological literature and summarized this more general approach. Before passing on, it is important to realize that as equation \@ref(eq:thermex-18) is written heat and mass fluxes are independent. Since many biology processes are temperature dependent, this is in general not true. Brett (1971) has provided an ecological example of the interaction of body temperature and food acquisition (also see problem 8). These kinds of interaction occur in plants also (Went 1957). Finally, since all life is far from equilibrium, in the sense of a thermodynamic system, classical representations do not always apply (e.g. Wilke 1975). Non-equilibrium theory, as discussed in later modules, is the first step toward handling these problems and it is an area of current research (Haken 1978, Lamprecht and Zotin 1978). A bibliography is included at the end of the module which, combined with the problems, should illustrate the pervasiveness of thermodynamics in biology. 
 
 ```{r fig-thermex-6, echo=FALSE, fig.height=3, fig.fullwidth=FALSE, fig.cap='Graph of percent of spiders active on the sheet with time of day on the mixed-grassland study area in midsummer (July and August) imposed on predicted spider temperature under these conditions and assuming a web-over-litter substrate. Barred area under flushability curve represents time periods during which over 50 percent of the individuals were active. Stippled area represents range of spider temperatures, exact temperature dependent upon amount of exposure to solar radiation. Upper boundary of predicted temperature curve signifies spider temperature if in full sunlight. Lower boundary signifies spider temperature if in full shade. Area enclosed by dashed lines represents body temperature range within which over 50 percent of the spiders are active. From Riechert, S. E., and C. R. Tracy. 1975. P. 272.'}
 knitr::include_graphics('figures/fig-thermex-6.png')

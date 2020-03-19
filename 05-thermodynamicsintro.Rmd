@@ -97,7 +97,7 @@ The definitions included above should serve as a basis for thermodynamic languag
 The First Law of Thermodynamics applies the principle of energy conservation to the boundaries of a system of interest. The First Law says that the change in internal energy is equal to the heat added to the system minus the work done by the system to the surroundings. This is written
 \begin{equation}
 \Delta U = Q - W
-(\#eq:1)
+(\#eq:thermintro-1)
 \end{equation}
 where 
 <div class="nobullet">
@@ -106,18 +106,18 @@ where
 * and $W$ is the work done by the system to the surroundings.
 </div>
 
-Equation \@ref(eq:1) can also be written in differential form as
+Equation \@ref(eq:thermintro-1) can also be written in differential form as
 \begin{equation}
 dU = \delta Q - \delta W
-(\#eq:2)
+(\#eq:thermintro-2)
 \end{equation}
 
-This formulation is important for describing infinitesimal changes and reversible processes. Thermodynamics texts often use $d$ and $\delta$ symbols to make the distinction between exact and inexact differentials, respectively. To clarify this consider the following example. If we were to call the internal energy of an ideal gas system $U_A$ at state A, then as we will discuss in more detail later, the state variables of the system are $P$ for pressure, $V$ for volume, and $T$ for temperature which together specify $U_A$. Now if the system changes to a new state B, where $U_B = f (P_B,V_B, T_B)$, we know that this change in state is described by \@ref(eq:2). However, work and heat cannot be uniquely expressed in terms of the system variables $P$, $V$ and $T$. Thus, although we know the magnitude of the difference for the change of state, $dU$, we cannot resolve it into components of heat and work. The total change in $W$ and $Q$ depends upon the particular "path" through which the system goes from $U_A$ to $U_B$ (see Figure \@ref(fig:fig-thermintro-4) for a simplified representation which is described in detail later), i.e., the path of integration of $\delta W$ and $\delta Q$ between $U_A$ and $U_B$. The inexact differential, $\delta$, is used to remind the reader of this fact.
+This formulation is important for describing infinitesimal changes and reversible processes. Thermodynamics texts often use $d$ and $\delta$ symbols to make the distinction between exact and inexact differentials, respectively. To clarify this consider the following example. If we were to call the internal energy of an ideal gas system $U_A$ at state A, then as we will discuss in more detail later, the state variables of the system are $P$ for pressure, $V$ for volume, and $T$ for temperature which together specify $U_A$. Now if the system changes to a new state B, where $U_B = f (P_B,V_B, T_B)$, we know that this change in state is described by \@ref(eq:thermintro-2). However, work and heat cannot be uniquely expressed in terms of the system variables $P$, $V$ and $T$. Thus, although we know the magnitude of the difference for the change of state, $dU$, we cannot resolve it into components of heat and work. The total change in $W$ and $Q$ depends upon the particular "path" through which the system goes from $U_A$ to $U_B$ (see Figure \@ref(fig:fig-thermintro-4) for a simplified representation which is described in detail later), i.e., the path of integration of $\delta W$ and $\delta Q$ between $U_A$ and $U_B$. The inexact differential, $\delta$, is used to remind the reader of this fact.
 
  
 One will find other sign conventions for the First Law. Here, we defined $dU$ to be positive when the energy flows into the system. Therefore the heat $Q$ flows into the system adds to its internal energy while the work $W$ done by the system subtracts from the internal energy. It is important to realize that once a convention has been agreed upon one must be consistent to account properly for the changes in the internal energy of the system.
 
-The units of equation \@ref(eq:1) are energy units. A variety of different units are used in the engineering as well as the biological literature. The calorie is a common unit for biological measurements. It is defined as the energy necessary to raise one gram of water from $14.5^{\circ}C$ to $15.5^{\circ}C$ at atmospheric pressure. We will use the International System of Units (SI), consistent with most scientific research. Therefore, the joule will be used as the basic energy unit. Appendix I is included to help the reader with units. One may also wish to review the module devoted to units and dimensions. Furthermore, the student should also be aware that the First Law is often used with other dimensions such as (1) energy per unit area, (2) energy per unit time (power or flux), and (3) power per unit area (flux density).
+The units of equation \@ref(eq:thermintro-1) are energy units. A variety of different units are used in the engineering as well as the biological literature. The calorie is a common unit for biological measurements. It is defined as the energy necessary to raise one gram of water from $14.5^{\circ}C$ to $15.5^{\circ}C$ at atmospheric pressure. We will use the International System of Units (SI), consistent with most scientific research. Therefore, the joule will be used as the basic energy unit. Appendix I is included to help the reader with units. One may also wish to review the module devoted to units and dimensions. Furthermore, the student should also be aware that the First Law is often used with other dimensions such as (1) energy per unit area, (2) energy per unit time (power or flux), and (3) power per unit area (flux density).
 
 ### Internal Energy
 
@@ -137,7 +137,7 @@ knitr::include_graphics('figures/fig-thermintro-2.png')
 
 The last heat transfer process important in the heat term of the First Law is evaporation. **Evaporation** is the process that transports water by changing it from a liquid to a gas. For animals, water vapor may be lost during respiration, through special sweat glands, or through any part of the skin. The physiology of the species must be known to estimate this heat and mass flow. Higher green plants lose water vapor to the atmosphere through stomata in a process called transpiration. The physics of this heat transfer process will also be presented in a later module.
 
-Before considering work, the last term of eq. \@ref(eq:2), we will define the heat capacity. It is
+Before considering work, the last term of eq. \@ref(eq:thermintro-thermintro-2), we will define the heat capacity. It is
 \begin{equation}
 C_x = (\frac{\delta Q}{dT})_x
 \end{equation}
@@ -145,15 +145,15 @@ where $x$ is some state variable such as pressure, volume or temperature for a g
 
 \begin{equation}
 C_V = (\frac{\delta Q}{dt})_V
-(\#eq:3)
+(\#eq:thermintro-thermintro-3)
 \end{equation}
 
 and
 \begin{equation}
 C_P = (\frac{\delta Q}{dT})_P
-(\#eq:4)
+(\#eq:thermintro-4)
 \end{equation}
-In eq. \@ref(eq:3) $V$ means that the process of adding heat to the system is carried out at constant volume. $C_V$ represents the proportionality constant for the change in temperature per unit amount of heat added. Similarly in eq. \@ref(eq:4) $P$ stands for a constant pressure process.
+In eq. \@ref(eq:thermintro-3) $V$ means that the process of adding heat to the system is carried out at constant volume. $C_V$ represents the proportionality constant for the change in temperature per unit amount of heat added. Similarly in eq. \@ref(eq:thermintro-4) $P$ stands for a constant pressure process.
 
 ### Work
 To complete the introduction of the First Law of Thermodynamics we need to examine the concept of work. When considering work we usually think of mechanical work, which is a force times a distance operating in some system. In this module work is done by the system on the surroundings, thus decreasing the system's energy. Furthermore we consider only **external work** and are not concerned with processes that go on inside the system.
@@ -163,7 +163,7 @@ If our system is an organism then we would not be concerned with the work associ
 To illustrate work and the other terms in the First Law we use the classical thermodynamic example of the gas in a piston. This example is also of historical importance because one motivation for the development of thermodynamic theory was to describe and predict the behavior of steam engines, which used heated water vapor as a source of energy to derive mechanical work. Figure \@ref(fig:fig-thermintro-3) depicts the system of interest where the thick line represents the boundary enclosing the system, in this case a gas. Here the work done by the system is
 \begin{equation}
 \delta W = PdV
-(\#eq:5)
+(\#eq:thermintro-5)
 \end{equation}
 
 where $P$ is the external pressure. For reversible processes the system pressure can be used. Figure \@ref(fig:fig-thermintro-4) shows a plot of $P$ versus $V$. To calculate the work done we need to know the area under the curve which can be obtained numerically or by integration if $P$ is given as a function of volume.
@@ -181,14 +181,14 @@ knitr::include_graphics('figures/fig-thermintro-4.png')
 The Ideal Gas Law is
 \begin{equation}
 PV = nRT
-(\#eq:6)
+(\#eq:thermintro-6)
 \end{equation}
 where $R$ is the gas constant which depends on the particular gas being considered (8.314 joules mole^-1^ K^-1^ for the ideal gas), $n$ is the number of moles, and the other variables are as above.
 
 To complete our discussion of the piston example we need to examine several specific cases of the First Law. If the system is perfectly insulated then $Q$ is zero and the First Law becomes
 \begin{equation}
 \Delta U = -W
-(\#eq:7)
+(\#eq:thermintro-7)
 \end{equation}
 
 This is called an adiabatic process. Here since the internal energy is a function of state then the work done will also just depend on the end points and not the path.
@@ -196,14 +196,14 @@ This is called an adiabatic process. Here since the internal energy is a functio
 If we wish to consider an ideal gas, the change in internal energy with respect to volume at constant temperature is zero so
 \begin{equation}
 dU = C_V d T
-(\#eq:8)
+(\#eq:thermintro-8)
 \end{equation}
 Thus the First Law becomes
 \begin{equation}
 C_V d T = \delta Q - PdV
-(\#eq:9)
+(\#eq:thermintro-9)
 \end{equation}
-If eq. \@ref(eq:9) applies then it is possible to calculate $\Delta U$, $Q$ and $W$ for any path. $W$ can be evaluated numerically, $\Delta V$ can be calculated from the change in temperature (from the Ideal Gas Law) and $Q$ is gotten by subtraction.
+If eq. \@ref(eq:thermintro-9) applies then it is possible to calculate $\Delta U$, $Q$ and $W$ for any path. $W$ can be evaluated numerically, $\Delta V$ can be calculated from the change in temperature (from the Ideal Gas Law) and $Q$ is gotten by subtraction.
 
 These equations are not directly applicable to ecological systems but they help give an understanding of the First Law and provide a foundation for understanding heat engines and the Second Law of Thermodynamics.
 

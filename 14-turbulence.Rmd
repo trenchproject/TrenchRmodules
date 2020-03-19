@@ -88,14 +88,14 @@ $$\frac{\partial \theta}{ T} \sim \gamma \frac{\nabla \theta}{L^2}$$
 Rearranging terms, one obtains an expression for the time scale $T_m$ of the molecular diffusion,
 \begin{equation}
 T_m \sim \frac{L^2}{\gamma}
-(\#eq:1)
+(\#eq:turbulence-turbulence-1)
 \end{equation}
 Notice that all diffusion processes are governed by this relation, where the diffusivity relates a penetration distance to a time independent of the quantity being diffused (notice that $\theta$ cancels out). The dimensions of diffusivity are *always* ($L^2 /T$). In the present example with $L=5m$ and $\gamma = 2 \times 10^{-5} m^2 s^{-1} , T_m \sim 1.25 \times 10^6 s$ or about 14 days. Such a long characteristic time scale compared with the time actually required to heat a room indicates that some other transfer process must be operating.
 
 Removing the first simplifying assumption and allowing for the presence of gravity leads to the weak convective circulation indicated in Fig. \@ref(fig:fig-turb-3). The heating of the radiator induces density differences in the air that when acted upon by gravity cause "the hotter air to rise and the cooler air to sink," so that the circulation illustrated is not unexpected. Therefore, using dimensional analysis of the convective velocity in the room ($U_c$); a characteristic time for turbulent diffusion can be expressed as
 \begin{equation}
 T_t \sim \frac{L}{U_c}
-(\#eq:2)
+(\#eq:turbulence-2)
 \end{equation}
 Notice that the dimensions of a length divided by velocity is a time. It is assumed that the length scale of the turbulent motion in the air is characterized by the length $L$. It certainly is no larger, and it seems reasonable that the large eddy (illustrated by arrows in Fig. \@ref(fig:fig-turb-3) will be most effective in transport. It remains to estimate the convective velocity $U_c$. Experience suggests that it must be small, somewhere on the order of $U_c=0.05 m s^{-1}$ (see Tennekes and Lumley 1972). Then $L=5m$ implies a $T_t$ of about $100 s$, In conclusion, it is clear that turbulence is much more efficient than molecular diffusion in the transport of quantities such as heat.
 
@@ -179,73 +179,73 @@ As a practical example of this, let us consider flow in the atmospheric surface 
 
 \begin{equation}
 \frac{d \overline u}{dt} = - \frac{1}{\rho}\frac{d \overline P}{dx} + \frac{\partial}{\partial z} \bigg(- \overline{u'w'} + \frac{\mu}{\rho} \frac{\partial \overline u}{\partial z} \bigg)
-(\#eq:3)
+(\#eq:turbulence-3)
 \end{equation}
 
-Here $\rho$ is air density (assumed constant), $\overline P$ is wean air pressure, $w$ is vertical velocity, and $\mu$ is air viscosity (also assumed constant). Each term has the units of acceleration. The first term on the right represents acceleration due to pressure gradients. The first term in brackets is the "additional" term introduced by Reynolds averaging, and it represents acceleration due to turbulent shear stresses (see the section on Turbulent Shear Flow). The last term in brackets accounts for acceleration due to viscous (laminar) shear stress, which, as may be surmised from earlier discussion, is negligible compared to turbulent shear stress (except right at the surface, in the laminar boundary layer). We recognize that, using equation \@ref(eq:3), we could rewrite the bracketed portion of equation \@ref(eq:4) as
+Here $\rho$ is air density (assumed constant), $\overline P$ is wean air pressure, $w$ is vertical velocity, and $\mu$ is air viscosity (also assumed constant). Each term has the units of acceleration. The first term on the right represents acceleration due to pressure gradients. The first term in brackets is the "additional" term introduced by Reynolds averaging, and it represents acceleration due to turbulent shear stresses (see the section on Turbulent Shear Flow). The last term in brackets accounts for acceleration due to viscous (laminar) shear stress, which, as may be surmised from earlier discussion, is negligible compared to turbulent shear stress (except right at the surface, in the laminar boundary layer). We recognize that, using equation \@ref(eq:turbulence-3), we could rewrite the bracketed portion of equation \@ref(eq:turbulence-4) as
 
 \begin{equation}
 - \frac{1}{\rho} \rho \overline{u'w'} + \frac{1}{\rho} \tau
-(\#eq:4)
+(\#eq:turbulence-4)
 \end{equation}
 
 One would then be tempted (if they were also a turbulence researcher!) to assume that the first term also represents a stress $\tau_t$, possibly due to the turbulence ($\tau_t$ is a subscripted stress and does not represent a time derivative.):
 
 \begin{equation}
 \tau_t = -\rho \overline{u'w'}
-(\#eq:5)
+(\#eq:turbulence-5)
 \end{equation}
 
-In fact, it turns out that equation \@ref(eq:5) does not represent the contribution of the turbulent motion to the mean stress. This was discussed in the section on Turbulent Shear Flow, but further development is warranted here.
+In fact, it turns out that equation \@ref(eq:turbulence-5) does not represent the contribution of the turbulent motion to the mean stress. This was discussed in the section on Turbulent Shear Flow, but further development is warranted here.
 
-An averaged product of fluctuating variables such as equation \@ref(eq:5) is called a correlation. If the variables in such a product have the same (opposite) sign for most of the time as do $a$ and $b$ in Fig. \@ref(fig:fig-turb-8), then the product is greater than (less than) zero. Notice that the variable $c$, on the other hand, is uncorrelated with either $a$ or $b$, hence the products $\overline{ac}$ or $\overline{be}$ probably equal zero. In terms of $u'$ and $w'$, this means that if the vertical wind fluctuations are positive (upward) when the horizontal wind fluctuations are negative, and vice versa, then $u'$ and $w'$ are negatively correlated, hence the minus sign in equation \@ref(eq:5). Such an interpretation also agrees with the turbulent velocity profile in Fig. \@ref(fig:fig-turb-6) and the subsequent discussion. Momentum is constantly being transported downward (or momentum deficit is being transported upward). The end result is that the surface absorbs momentum from the flow, and consequently experiences a frictional force acting in the direction of the flow. As required by Newton's Third Law, this force is opposed by frictional drag exerted on the air by the surface.
+An averaged product of fluctuating variables such as equation \@ref(eq:turbulence-5) is called a correlation. If the variables in such a product have the same (opposite) sign for most of the time as do $a$ and $b$ in Fig. \@ref(fig:fig-turb-8), then the product is greater than (less than) zero. Notice that the variable $c$, on the other hand, is uncorrelated with either $a$ or $b$, hence the products $\overline{ac}$ or $\overline{be}$ probably equal zero. In terms of $u'$ and $w'$, this means that if the vertical wind fluctuations are positive (upward) when the horizontal wind fluctuations are negative, and vice versa, then $u'$ and $w'$ are negatively correlated, hence the minus sign in equation \@ref(eq:turbulence-5). Such an interpretation also agrees with the turbulent velocity profile in Fig. \@ref(fig:fig-turb-6) and the subsequent discussion. Momentum is constantly being transported downward (or momentum deficit is being transported upward). The end result is that the surface absorbs momentum from the flow, and consequently experiences a frictional force acting in the direction of the flow. As required by Newton's Third Law, this force is opposed by frictional drag exerted on the air by the surface.
 
 ```{r fig-turb-8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Variables and b are corelated (adapted from Tenekes and Lumley 1972).'}
 knitr::include_graphics('figures/fig-turb-8.png')
 ```
 
-In practice, expressions such as equation \@ref(eq:5) are used in the actual measurement of surface fluxes in the atmosphere. It has been found that the fluctuating horizontal velocity term ($u'$) can be replaced with the fluctuating component of virtually any trace constituent (such as water vapor or CO~2~), thus obtaining the flux of that quantity. However, an emphasis on obtaining the maximum amount of information with the minimum amount of measurement precludes use of this correlation technique in most biological applications at present. This is due to the fact that the quantities to be measured are generally varying quite rapidly, so that a measurement and multiplication must be accomplished up to ten times a second. The next section introduces a more common general method of flux determination, which though simpler loses some of the insight into the actual physical processes which the correlation approach provides.
+In practice, expressions such as equation \@ref(eq:turbulence-5) are used in the actual measurement of surface fluxes in the atmosphere. It has been found that the fluctuating horizontal velocity term ($u'$) can be replaced with the fluctuating component of virtually any trace constituent (such as water vapor or CO~2~), thus obtaining the flux of that quantity. However, an emphasis on obtaining the maximum amount of information with the minimum amount of measurement precludes use of this correlation technique in most biological applications at present. This is due to the fact that the quantities to be measured are generally varying quite rapidly, so that a measurement and multiplication must be accomplished up to ten times a second. The next section introduces a more common general method of flux determination, which though simpler loses some of the insight into the actual physical processes which the correlation approach provides.
 
 ### K Theory 
 
-Recall the discussion of the section titled Origins of Turbulence, in particular the similarities pointed out between turbulent and laminar shear stress. These similarities, in addition to the complexity of the equations of motion, make it tempting to write the expression for turbulent stress in a manner analogous to equation \@ref(eq:3),
+Recall the discussion of the section titled Origins of Turbulence, in particular the similarities pointed out between turbulent and laminar shear stress. These similarities, in addition to the complexity of the equations of motion, make it tempting to write the expression for turbulent stress in a manner analogous to equation \@ref(eq:turbulence-3),
 
 \begin{equation}
 \tau_t = \rho K \frac{d \overline u}{dy}
-(\#eq:6)
+(\#eq:turbulence-6)
 \end{equation}
 
-As the previous section demonstrated, such an assumption considerably simplifies the mathematics. In addition, it turns out that in many cases of substantial practical interest, such an approach has adequate predictive abilities. However, several objections can be raised to these so-called "K-theories". First of all, it must be remembered that viscosity is a property of the fluid itself, depending basically upon its molecular makeup. Turbulence, and hence the "eddy viscosity" ($K$) in equation \@ref(eq:6), are properties of the flow, and do not depend on the fluid. A perhaps more subtle distinction is that the time and length scales of turbulent flow are generally of the same order of magnitude as those scales representing the distribution of the property of interest, while the scales for molecular diffusion are much smaller. Thus the similarity of turbulent and molecular diffusion must be approached with caution (Lumley and Panfsky 1964). So while the adoption of a K theory formulation implies that the attempt to understand the turbulence has been de-emphasized; the success that K theories have enjoyed in certain useful applications have made them a valuable tool.
+As the previous section demonstrated, such an assumption considerably simplifies the mathematics. In addition, it turns out that in many cases of substantial practical interest, such an approach has adequate predictive abilities. However, several objections can be raised to these so-called "K-theories". First of all, it must be remembered that viscosity is a property of the fluid itself, depending basically upon its molecular makeup. Turbulence, and hence the "eddy viscosity" ($K$) in equation \@ref(eq:turbulence-6), are properties of the flow, and do not depend on the fluid. A perhaps more subtle distinction is that the time and length scales of turbulent flow are generally of the same order of magnitude as those scales representing the distribution of the property of interest, while the scales for molecular diffusion are much smaller. Thus the similarity of turbulent and molecular diffusion must be approached with caution (Lumley and Panfsky 1964). So while the adoption of a K theory formulation implies that the attempt to understand the turbulence has been de-emphasized; the success that K theories have enjoyed in certain useful applications have made them a valuable tool.
 
-It is useful to again use the tool of dimensional analysis to extend the discussion of the section titled "Diffusivity" and derive a dimensional estimate for $K$. Analogous to the development of equation \@ref(eq:1), one may write a time scale for turbulent diffusion $(\tau_t)$ as
+It is useful to again use the tool of dimensional analysis to extend the discussion of the section titled "Diffusivity" and derive a dimensional estimate for $K$. Analogous to the development of equation \@ref(eq:turbulence-1), one may write a time scale for turbulent diffusion $(\tau_t)$ as
 $$T_t \sim \frac{L^2}{K_H}$$
-where $K_H$ is the eddy diffusivity for heat analogous to $\gamma$, the thermal diffusivity constant. It is reasonable to require that this time be of the same order as the characteristic time defined in equation \@ref(eq:2). Thus we can write
+where $K_H$ is the eddy diffusivity for heat analogous to $\gamma$, the thermal diffusivity constant. It is reasonable to require that this time be of the same order as the characteristic time defined in equation \@ref(eq:turbulence-2). Thus we can write
 $$T_t \sim \frac{L}{K_H} \sim \frac{1}{U_c}$$
 which gives us the following expression for $K_H$:
 \begin{equation}
 K_H \sim U_cL
-(\#eq:7)
+(\#eq:turbulence-7)
 \end{equation}
-Diffusion type equations may be written for quantities besides heat, including mass and momentum. Hence expressions such as equation \@ref(eq:7) are perfectly general, and one finds them frequently in applications.
+Diffusion type equations may be written for quantities besides heat, including mass and momentum. Hence expressions such as equation \@ref(eq:turbulence-7) are perfectly general, and one finds them frequently in applications.
 
-Let us illustrate a common method of utilizing an expression like equation \@ref(eq:7) in practical applications. The previous discussion of atmospheric turbulence suggests that the natural choice of a length scale for a wallbounded flow would be the distance from the surface to the measuring point, $z$. Recall that this can be thought of as the size of the most efficient energy transporting eddy. $u_*$, the so-called friction velocity, is the velocity scale used. It is defined by the expression
+Let us illustrate a common method of utilizing an expression like equation \@ref(eq:turbulence-7) in practical applications. The previous discussion of atmospheric turbulence suggests that the natural choice of a length scale for a wallbounded flow would be the distance from the surface to the measuring point, $z$. Recall that this can be thought of as the size of the most efficient energy transporting eddy. $u_*$, the so-called friction velocity, is the velocity scale used. It is defined by the expression
 \begin{equation}
 \tau = \rho u^2_*
-(\#eq:8)
+(\#eq:turbulence-8)
 \end{equation}
 which can be easily shown to be correct dimensionally. Qualitatively, it can be thought of as the tangential rate of rotation of the eddies. In this way, it can be related to the expression for dynamic wind pressure in Bernoulli's equation, $1/2\rho u^2$ (see, e.g., Vennard and Street 1975). Also, there is the relation
 \begin{equation}
 K_M = ku_*z
-(\#eq:9)
+(\#eq:turbulence-9)
 \end{equation}
 where $K_M$ is the eddy transport coefficient of momentum of eddy viscosity and where $k$ has been shown experimentally to be a constant, approximately equal to 0.4, and is known as von Karman's'constant.
 
-Normal practice in micrometeorology, for example, is to substitute equations \@ref(eq:8) and \@ref(eq:9) into the gradient relation (equation \@ref(eq:6)) and solve for $u_*$,
+Normal practice in micrometeorology, for example, is to substitute equations \@ref(eq:turbulence-8) and \@ref(eq:turbulence-9) into the gradient relation (equation \@ref(eq:turbulence-6)) and solve for $u_*$,
 \begin{equation}
 u_* = kz \frac{d \overline u}{dz}
-(\#eq:10)
+(\#eq:turbulence-10)
 \end{equation}
-This of course is tantamount to finding $\tau$. $u_*$ is important in certain mean gradient methods for finding the fluxes of heat and mass, notably the aerodynamic method (see, e.g., Campbell 1977 or Monteith 1973 or 1975) and the combination or Penman type methods. A particularly lucid exposition of these methods as applied to evapotranspiration can be found in Chapter 3 of Taylor and Ashcroft (1972). It should be apparent from the one-dimensional nature of equations \@ref(eq:6), \@ref(eq:9) and \@ref(eq:10) that we are considering transport to be occurring in only one direction, normal to the surface. This is the case when we consider flow over an essentially infinitely long, horizontal and homogeneous surface. Transport to or from small objects such as animals requires a different approach.
+This of course is tantamount to finding $\tau$. $u_*$ is important in certain mean gradient methods for finding the fluxes of heat and mass, notably the aerodynamic method (see, e.g., Campbell 1977 or Monteith 1973 or 1975) and the combination or Penman type methods. A particularly lucid exposition of these methods as applied to evapotranspiration can be found in Chapter 3 of Taylor and Ashcroft (1972). It should be apparent from the one-dimensional nature of equations \@ref(eq:turbulence-6), \@ref(eq:turbulence-9) and \@ref(eq:turbulence-10) that we are considering transport to be occurring in only one direction, normal to the surface. This is the case when we consider flow over an essentially infinitely long, horizontal and homogeneous surface. Transport to or from small objects such as animals requires a different approach.
 
 ### Boundary Layers and Non-dimensional Numbers: A Bulk Approach
 
@@ -260,35 +260,35 @@ K theory, or the gradient approach, requires measurements to be taken in the bou
 The bulk approach is actually an integrated form of the gradient approach (Businger 1973) and thus is still based on the same molecular analogy. Taking heat transfer as an example, one may write the flux of heat ($F_H$) for a still fluid as
 \begin{equation}
 F_H = \frac{k}{\delta} (T_0 - T_\infty)
-(\#eq:11)
+(\#eq:turbulence-11)
 \end{equation}
-where $k$ is the thermal conductivity of the fluid, $\delta$ is the uniform boundary layer depth, and $(T_0 - T_\infty)$. is the difference between surface and environmental temperatures, respectively. Equation \@ref(eq:11), as presented, is exact in its description. In the more general case, where the fluid can be in motion, the boundary layer may be turbulent and of variable depth and structure. In this case, $\gamma$ becomes a sort of average or equivalent boundary layer depth, not directly measurable. An empirical approach has been proposed (Monteith 1973) which is well borne out by experiment. First, write equation \@ref(eq:11) as
+where $k$ is the thermal conductivity of the fluid, $\delta$ is the uniform boundary layer depth, and $(T_0 - T_\infty)$. is the difference between surface and environmental temperatures, respectively. Equation \@ref(eq:turbulence-11), as presented, is exact in its description. In the more general case, where the fluid can be in motion, the boundary layer may be turbulent and of variable depth and structure. In this case, $\gamma$ becomes a sort of average or equivalent boundary layer depth, not directly measurable. An empirical approach has been proposed (Monteith 1973) which is well borne out by experiment. First, write equation \@ref(eq:turbulence-11) as
 \begin{equation}
 F_H = (\frac{d}{\delta}) \frac{k}{d} (T_0 - T_\infty)
-(\#eq:12)
+(\#eq:turbulence-12)
 \end{equation}
-were $d$ is a characteristic length (e.g. the diameter of a sphere or cylinder, the length of a flat plate in the direction of flow). Then rearrange equation \@ref(eq:12) 
+were $d$ is a characteristic length (e.g. the diameter of a sphere or cylinder, the length of a flat plate in the direction of flow). Then rearrange equation \@ref(eq:turbulence-12) 
 \begin{equation}
 Nu = \frac{d}{\delta} = \frac{F_H}{(k/d)(T_0 - T_\infty)}
-(\#eq:13)
+(\#eq:turbulence-13)
 \end{equation}
-This is the defining relation for the Nusselt number ($Nu$). When determining the heat flux, equation \@ref(eq:11) would normally be written
+This is the defining relation for the Nusselt number ($Nu$). When determining the heat flux, equation \@ref(eq:turbulence-11) would normally be written
 \begin{equation}
 F_H = Nu(k/d)(T_0 - T_\infty)
-(\#eq:14)
+(\#eq:turbulence-14)
 \end{equation}
-Notice that all quantities on the right-hand side of equation \@ref(eq:14) are directly available except $Nu$. If equation \@ref(eq:14) is to be of any more practical use than equation \@ref(eq:11), a means of determining $Nu$ is required.
+Notice that all quantities on the right-hand side of equation \@ref(eq:turbulence-14) are directly available except $Nu$. If equation \@ref(eq:turbulence-14) is to be of any more practical use than equation \@ref(eq:turbulence-11), a means of determining $Nu$ is required.
 
-Equation \@ref(eq:13) points in the general direction of the method used to find $Nu$. It can be regarded as a purely empirical constant, and under suitable conditions $F_H$ and $k/d(T_o - T_\infty)$ can be determined independently for different conditions of flow and geometry, and its values tabulated. It turns out that for a given geometry and orientation to the flow, $Nu$ can be written
+Equation \@ref(eq:turbulence-13) points in the general direction of the method used to find $Nu$. It can be regarded as a purely empirical constant, and under suitable conditions $F_H$ and $k/d(T_o - T_\infty)$ can be determined independently for different conditions of flow and geometry, and its values tabulated. It turns out that for a given geometry and orientation to the flow, $Nu$ can be written
 \begin{equation}
 Nu = A Re^n
-(\#eq:15)
+(\#eq:turbulence-15)
 \end{equation}
-for forced convection. Thus, once $A$ and $n$ are determined for a particular geometry and orientation, $Nu$ is calculable. This should not be surprising, since $Re$ is an indicator of turbulence, and it has been demonstrated that $Nu$, an indicator of heat transfer, is a function of the degree of turbulence. Notice also that equation \@ref(eq:15), by use of $Re$ instead of just the velocity, has taken into account the effects of fluid viscosity and characteristic length of the body, making $A$ and $n$ independent of body size.
+for forced convection. Thus, once $A$ and $n$ are determined for a particular geometry and orientation, $Nu$ is calculable. This should not be surprising, since $Re$ is an indicator of turbulence, and it has been demonstrated that $Nu$, an indicator of heat transfer, is a function of the degree of turbulence. Notice also that equation \@ref(eq:turbulence-15), by use of $Re$ instead of just the velocity, has taken into account the effects of fluid viscosity and characteristic length of the body, making $A$ and $n$ independent of body size.
 
-This dependence of $Nu$ on $Re$ indicates that $Nu$ is not "purely empirical." Consider the ratio in the defining relation of equation \@ref(eq:13), $F_H/\frac{k}{d}(T_0 - T_\infty)$. This can be thought of as the ratio of actual heat flux ($F_H$) to that which would result in a stationary fluid layer of depth $d$ due to the same temperature difference ($T_0 - T_\infty$). Thus, for a still fluid layer over a flat plate, we would expect $Nu=1$. Heat transfer is of course more efficient in a flowing fluid, especially, as discussed earlier, if the flow is turbulent. Therefore we would expect $Nu>1$ in these cases. $Nu$ is also a function of geometry. For example, $Nu=2$ for a sphere in a still fluid (see Businger 1973, p.68 for a derivation). In practice, then, we find different geometries (and orientations) treated separately. Note, however, in Fig. \@ref(fig:fig-turb-10), that geometry is not extremely critical, e.g. a man and a sheep behave essentially as cylinders. Another nondimensional number, the Grashof number ($Gr$), assumes the place of $Re$ for the free convection case.
+This dependence of $Nu$ on $Re$ indicates that $Nu$ is not "purely empirical." Consider the ratio in the defining relation of equation \@ref(eq:turbulence-13), $F_H/\frac{k}{d}(T_0 - T_\infty)$. This can be thought of as the ratio of actual heat flux ($F_H$) to that which would result in a stationary fluid layer of depth $d$ due to the same temperature difference ($T_0 - T_\infty$). Thus, for a still fluid layer over a flat plate, we would expect $Nu=1$. Heat transfer is of course more efficient in a flowing fluid, especially, as discussed earlier, if the flow is turbulent. Therefore we would expect $Nu>1$ in these cases. $Nu$ is also a function of geometry. For example, $Nu=2$ for a sphere in a still fluid (see Businger 1973, p.68 for a derivation). In practice, then, we find different geometries (and orientations) treated separately. Note, however, in Fig. \@ref(fig:fig-turb-10), that geometry is not extremely critical, e.g. a man and a sheep behave essentially as cylinders. Another nondimensional number, the Grashof number ($Gr$), assumes the place of $Re$ for the free convection case.
 
-A convenient tabulation of various dimensionless numbers is in Campbell (1977, p.65). Monteith (1973, pp.224-225) tabulates $Nu$ for forced and free convection, various geometries, and ranges of $Re$ (or $Gr$). Part of this table is reproduced in Table 1. Using the information there, in conjunction with equation \@ref(eq:14), one can obtain estimates of heat flux for various body geometries, wind speeds, and body size. The quantity $Nu \frac{k}{d}$ is related to similar terms used by various authors such as the heat transfer coefficient ($h$) and the exchange resistance ($r$) by the expression
+A convenient tabulation of various dimensionless numbers is in Campbell (1977, p.65). Monteith (1973, pp.224-225) tabulates $Nu$ for forced and free convection, various geometries, and ranges of $Re$ (or $Gr$). Part of this table is reproduced in Table 1. Using the information there, in conjunction with equation \@ref(eq:turbulence-14), one can obtain estimates of heat flux for various body geometries, wind speeds, and body size. The quantity $Nu \frac{k}{d}$ is related to similar terms used by various authors such as the heat transfer coefficient ($h$) and the exchange resistance ($r$) by the expression
 $$ Nu \frac{k}{d} = h = \frac{\rho c_p}{r}$$
 where $\rho$ is fluid density and $c_p$ is specific heat.
 
@@ -381,7 +381,7 @@ Notice that $u'$ represents the RMS (root-mean-square) value of the velocity flu
 
 4. Solve (10) in the text for $\overline{u}$ as a function of $z$. Use as limits of integration $z=0$ and $z=z$. What are the corresponding limits for velocity? (Hint: remember the "no slip" condition.) What problem arises at the lower limit ($z=0$)? To remedy this, assume that $u=0$ at $z=z_0$ , where $z_0$ is a small distance above the surface. Assuming that $k=0.4$, $z_0=1 cm$ and $u_*=0.2 m s^{-1}$, plot $u$ (horizontal axis) versus $lnz$. What is the potential significance of a plot such as this?
 
-5. Given the following conditions, solve for the heat transfer from a leaf using \@ref(eq:14), \@ref(eq:15) and Table 
+5. Given the following conditions, solve for the heat transfer from a leaf using \@ref(eq:turbulence-14), \@ref(eq:turbulence-15) and Table 
     $Re=\frac{\overline{u}d}{v}$
     $v=151\times10^{-7}m^2s^{-1}$(kinematic viscosity of air)
     $d$ = characteristic length = 0.042m
@@ -418,7 +418,7 @@ As was probably obvious from the outset, no solution is possible without some fu
 
 Two things are of importance to note. First of all, since $Re$ is proportional to velocity, and from the problem statement it is fair to assume fluid viscosity, density and flow geometry have stayed the same. It is safe to surmise that $\overline{u}$ doubled when $Re$ was increased from 3000 to 6000. Secondly, while $d$ increased with $Re$, which tends to oppose mixing, $T$ decreases in larger proportion. In a similar line of argument to that of the text, we may argue that $T$ gives an indication of the life span of the average eddy of size $d$. Over a time equivalent to several time scales, an eddy can be expected to have become completely mixed with other eddies. Thus, apparently the decrease in $T$ more than makes up for the increase in $d$, so that mixing becomes more efficient as $Re$ gets larger.
 
-4. Equation \@ref(eq:10) is $u_*=kz\frac{d\bar u }{dz}$  
+4. Equation \@ref(eq:turbulence-10) is $u_*=kz\frac{d\bar u }{dz}$  
 rearranging terms $\frac{k}{u_*}d\bar u =\frac{dz}{z}$  
 integrating $\frac{k}{u_+} \int_0^{\bar u} d \bar u=\int_0^z\frac{dz}{z}$
 $$\frac{k\bar u}{u_*}=lnz-ln0$$

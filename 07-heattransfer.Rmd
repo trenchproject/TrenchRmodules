@@ -63,7 +63,7 @@ Radiation is a process of energy transfer that requires no intervening medium. T
 Since radiation travels at the speed of light $c_L$, the product of the frequency $f$ and the wavelength $\lambda$ is a constant:
 \begin{equation}
 c_L = f \lambda
-(\#eq:1)
+(\#eq:heattrans-1)
 \end{equation}
 
 ```{r fig-heattrans-3, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='The electromagnetic spectrum.'}
@@ -79,7 +79,7 @@ All objects, living and nonliving, radiate thermal energy. The amount and kind (
 Three physical laws are associated with figure \@ref(fig:fig-heattrans-4). Planck's Law gives the energy emitted, $E_\lambda$, as a function of the wavelength, $\lambda$, if the temperature of the radiating body is known:
 \begin{equation}
 E_\lambda = c_1 \lambda^{-5} [exp(c_2 / \lambda T)] -1 ]^{-1}
-(\#eq:2)
+(\#eq:heattrans-2)
 \end{equation}
 where
 <div class="nobullet">
@@ -103,7 +103,7 @@ It is obvious that no one has actually measured the surface temperature of the s
 
 \begin{equation}
 \lambda_{max} = \frac{2.897}{T} \times 10^{-3}
-(\#eq:3)
+(\#eq:heattrans-3)
 \end{equation}
 where
 <div class="nobullet">
@@ -115,7 +115,7 @@ and
 Third, the Stefan-Boltzmann Law provides the even more remarkable result that the total energy emitted, $Q_{emit}$, by a radiating body (the area under the curve (Fig. \@ref(fig:fig-heattrans-4))) is proportional to the fourth power of the surface temperature $T_s$.
 \begin{equation}
 Q_{emit} = \varepsilon \sigma (273 + T_s)^4
-(\#eq:4)
+(\#eq:heattrans-4)
 \end{equation}
 where
 <div class="nobullet">
@@ -238,7 +238,7 @@ This, however, is not true in the visible part of the spectrum. In general, any 
 
 \begin{equation}
 a(\lambda) + r(\lambda) + t(\lambda) = 1
-(\#eq:5)
+(\#eq:heattrans-5)
 \end{equation}
 
 where
@@ -252,7 +252,7 @@ and each term is between zero and one (see Siegel and Howell 1972 for a more com
 As an example of radiation flux, let us calculate the radiant energy emitted by the cactus, *Opuntia rufida*. To do this, we must specify the emissivity $\varepsilon$ and the surface temperature $T_s$. In Table 1, $\varepsilon = 0.977$ for *O. rufida* and, if we take $T_s = 10 ^{\circ}C$, then:
 \begin{equation}
 Q_{emit} = 0.977 \times 5.67 \times 10^{-8} (10 + 273)^4 = 355.5 W m^{-2}
-(\#eq:6)
+(\#eq:heattrans-6)
 \end{equation}
 If we wish to know the total heat loss per second ($1 watt = 1 J s^{-1}$) for the plant, we must multiply our answer by the surface area of the cactus.
 
@@ -284,11 +284,11 @@ Additional TrenchR functions are available to estimate the radiation components.
 
 **Conduction**, $Q_{cond}$, describes the physical process of molecular thermal energy flow within a solid, fluid or gas. In fluids and especially gases, motion of the medium usually makes the process of convection a more important mechanism of heat transfer than conduction. Heat flows by conduction when nearby molecules have more internal energy (higher temperature) and thus a greater mean kinetic energy. Energy can be transferred by molecular collisions (fluids) or by diffusion (solids) (Kreith 1973, pages 4-5).
 
-In conduction, the rate of heat flow depends on the thermal conductivity of the material, the area through which the heat flows and the temperature gradient in the material. Equation \@ref(eq:7) describes the relation as:
+In conduction, the rate of heat flow depends on the thermal conductivity of the material, the area through which the heat flows and the temperature gradient in the material. Equation \@ref(eq:heattrans-7) describes the relation as:
 
 \begin{equation}
 Q_{cond} = -k A_c \frac{dT}{dx}
-(\#eq:7)
+(\#eq:heattrans-7)
 \end{equation}
 
 where
@@ -300,7 +300,7 @@ and
 * $\frac{dT}{dx}$ is the thermal gradient ($^{\circ}C m^{-1}$).
 </div>
 
-The negative sign in equation \@ref(eq:7) is to indicate that the direction of heat flow is from regions of higher temperature to lower temperature (opposite the temperature gradient). This is shown in Fig. \@ref(fig:fig-heattrans-5).
+The negative sign in equation \@ref(eq:heattrans-7) is to indicate that the direction of heat flow is from regions of higher temperature to lower temperature (opposite the temperature gradient). This is shown in Fig. \@ref(fig:fig-heattrans-5).
 
 ```{r fig-heattrans-5, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Sketch illustrating sign convention for conduction heat flow. From Kreith, F. 1973. P. 8.'}
 knitr::include_graphics('figures/fig-heattrans-5.png')
@@ -308,11 +308,11 @@ knitr::include_graphics('figures/fig-heattrans-5.png')
 
 The thermal conductivity depends on the molecular structure of the material. Some cooking pots have copper-coated bottoms because this metal transfers heat better than other materials. Home insulation materials reduce the flow of heat because they trap air which has a low thermal conductivity. The hollow centers of the hair shafts of some mammals reduces the conduction of heat along the fiber. The thermal conductivity can be calculated by measuring the heat flow when the temperature slope (Fig. \@ref(fig:fig-heattrans-5)) is one.
 
-As an example of conduction, we will examine the heat flow between the alligator, *Alligator mississippiensis*, and substratum. We assume that the skin is she same temperature as the ground and that the animal is in good thermal contact with the surface (there are no air pockets reducing heat flow). The conduction exchange can now be calculated as follows: The thermal conductivity of fat is 0.20 $W m^{-1} {^{\circ}C^{-1}}$ while the soil-rock range of conductivity is between 0.556 and 3.25 $W m^{-1} {^{\circ}C^{-1}}$. Since the fat layer of 0.7 cm has a lower conductivity, it controls the rate of heat flow. Here we also assume that 0.5 $m^2$ of the alligator at $T_b = 22^{\circ}C$ are in contact with the ground at $T_g = 30 ^{\circ}C$. In steady state, the conductive heat flux is then a linear function of the potential, as given in equation \@ref(eq:7).
+As an example of conduction, we will examine the heat flow between the alligator, *Alligator mississippiensis*, and substratum. We assume that the skin is she same temperature as the ground and that the animal is in good thermal contact with the surface (there are no air pockets reducing heat flow). The conduction exchange can now be calculated as follows: The thermal conductivity of fat is 0.20 $W m^{-1} {^{\circ}C^{-1}}$ while the soil-rock range of conductivity is between 0.556 and 3.25 $W m^{-1} {^{\circ}C^{-1}}$. Since the fat layer of 0.7 cm has a lower conductivity, it controls the rate of heat flow. Here we also assume that 0.5 $m^2$ of the alligator at $T_b = 22^{\circ}C$ are in contact with the ground at $T_g = 30 ^{\circ}C$. In steady state, the conductive heat flux is then a linear function of the potential, as given in equation \@ref(eq:heattrans-7).
 
 \begin{equation}
 Q_{cond} = \frac{k A_c}{x} (T_b - T_g) = \frac{0.198 \times 0.5}{0.007} (22-30) = -114 W
-(\#eq:8)
+(\#eq:heattrans-8)
 \end{equation}
 
 where
@@ -339,11 +339,11 @@ Qconduction_animal(T_g= 293,T_b=303,d=10^-6,K=0.5,A=10^-3, proportion=0.2)
 Qconduction_substrate(T_g= 293,T_b=303,D=0.01,K_g=0.3,A=10^-2, proportion=0.2)
 ```
 
-Before proceeding to a discussion of convection, it is important to talk about an alternative view of conduction. It is possible to rewrite equation \@ref(eq:8) as
+Before proceeding to a discussion of convection, it is important to talk about an alternative view of conduction. It is possible to rewrite equation \@ref(eq:heattrans-8) as
 
 \begin{equation}
 G = k_g (T_b - T_g)
-(\#eq:9)
+(\#eq:heattrans-9)
 \end{equation}
 
 The rate of heat flow is then equal to a conductance $k_g$ times a potential, the temperature difference. The conductivity, area of contact and length have all been subsumed into $k_g$. When working heat transfer problems, it is also common to speak and think of resistances to heat transfer. A resistance is simply the reciprocal of the conductance. If there is a large resistance to heat flow, there is a low conductance. Monteith (1973) and Campbell (1977) have adopted the resistance approach for describing mass and momentum fluxes as well as heat transport. This concept originated with Ohm's Law where the electrical current flow is equal to the potential or voltage drop divided by the resistance of the material. Thus, the correspondence of a flux driven by a potential is called Ohm's Law analogy. Kreith (1973, chapters 1 and 2) shows how radiation, convection and evaporation can also be thought of in these terms. It should be remembered though that in general the Ohm's Law analogy, due to the complications introduced by turbulent mass and turbulent energy transfer, is an approximation (see Tennekes and Lumley 1973).
@@ -356,11 +356,11 @@ Conduction is often ignored in the heat transfer of plants and animals because o
 
 Water and air are the two fluids that commonly interest the thermobiologist. Most aquatic organisms are at ambient water temperature; hence, convective transfer is unimportant because there is no temperature difference. Marine mammals, birds, a few large fish and turtles, however, maintain body temperatures above water temperature, which requires thick insulation (Bartholomew 1977, Schmidt Nielsen 1975). This is because the high specific heat ($4.18 \times 10^3 J kg^-1 {^{\circ}C^{-1}}$) and thermal conductivity ($59.8 W m^{-2} {^{\circ}C^{-1}}$) of water create a large heat loss. The extra heat transferred due to the movement of the fluid has not been examined for many organisms (but see Eskine and Spotila 1977 and Lueke et al. 1976). Although the specific heat and thermal conductivity of air are much less than for water, convection is still a significant mode of heat transfer for terrestrial organisms.
 
-As with conduction, convective heat flow can be thought of as a potential (the difference in temperature between the surface of the object and the surrounding fluid) times a conductance. The conductance is most commonly written as the product of two terms as in equation \@ref(eq:10):
+As with conduction, convective heat flow can be thought of as a potential (the difference in temperature between the surface of the object and the surrounding fluid) times a conductance. The conductance is most commonly written as the product of two terms as in equation \@ref(eq:heattrans-10):
 
 \begin{equation}
 Q_{conv} = h_c A_c (T_s - T)
-(\#eq:10)
+(\#eq:heattrans-10)
 \end{equation}
 
 where
@@ -387,7 +387,7 @@ Generally, the heat transfer coefficient is evaluated as follows:
 
 \begin{equation}
 h_c = \frac{Nu \, k}{D}
-(\#eq:11)
+(\#eq:heattrans-11)
 \end{equation}
 where
 <div class="nobullet">
@@ -403,7 +403,7 @@ In practice, another non-dimensional number, the Reynolds number, $Re$, which is
 
 \begin{equation}
 Re = \frac{\rho vD}{\mu}
-(\#eq:12)
+(\#eq:heattrans-12)
 \end{equation}
 where
 <div class="nobullet">
@@ -417,9 +417,9 @@ For a particular geometry, a functional relationship between the Nusselt number 
 
 \begin{equation}
 Nu = a {Re}^b
-(\#eq:13)
+(\#eq:heattrans-13)
 \end{equation}
-where $a$ and $b$ are determined by regression. The parameters will be different for different shaped objects (Kreith 1973). Then, using equation \@ref(eq:12), the $Nu$ can be calculated which in turn will yield the convection coefficient from equation \@ref(eq:11). This procedure is the standard method used in engineering. In ecological studies, where one is concerned about the effects of wind speed and size and the geometry of the system is constant, the convection coefficient is sometimes given without specifically indicating the coefficient of equation \@ref(eq:13) as in the following example. This approach is more direct and is fine to use as long as the student realizes what has been implied.
+where $a$ and $b$ are determined by regression. The parameters will be different for different shaped objects (Kreith 1973). Then, using equation \@ref(eq:heattrans-12), the $Nu$ can be calculated which in turn will yield the convection coefficient from equation \@ref(eq:heattrans-11). This procedure is the standard method used in engineering. In ecological studies, where one is concerned about the effects of wind speed and size and the geometry of the system is constant, the convection coefficient is sometimes given without specifically indicating the coefficient of equation \@ref(eq:heattrans-13) as in the following example. This approach is more direct and is fine to use as long as the student realizes what has been implied.
 
 The Nusselt and Reynolds numbers and additional dimensionless groups are available in TrenchR as follows:
 ```{r}
@@ -438,7 +438,7 @@ heat_transfer_coefficient_simple(V=0.5,D=0.05)
 Tibbals et al. (1964), from earlier experimental work by Gates and Benedict (1963), were able to use the following formula to evaluate convective exchange for a leaf:
 \begin{equation}
 Q_{conv} = k_1 \bigg(\frac{V}{D}\bigg)^{0.5} (T_s - T_a)
-(\#eq:14)
+(\#eq:heattrans-heattrans-14)
 \end{equation}
 where
 <div class="nobullet">
@@ -457,10 +457,10 @@ The theory of convective transfer is more complex than presented here. Although 
 
 ### Evaporation
 
-Evaporation is the process of water changing from a liquid to a gas. For animals, water can be lost through respiration, through special glands, or through any part of the skin. Water loss is usually a small component of the heat balance for animals but may be large for animals with moist skins. It usually increases quickly at higher temperatures. Figure \@ref(fig:fig-heattrans-6) from Dawson and Templeton (1963), shows this effect for the collared lizard, *Crotaphytus collaris*. In general, the water loss, $E$, is given by equation \@ref(eq:15). Again, this is in the form of a potential divided by a resistance (an Ohm's Law analogy).
+Evaporation is the process of water changing from a liquid to a gas. For animals, water can be lost through respiration, through special glands, or through any part of the skin. Water loss is usually a small component of the heat balance for animals but may be large for animals with moist skins. It usually increases quickly at higher temperatures. Figure \@ref(fig:fig-heattrans-6) from Dawson and Templeton (1963), shows this effect for the collared lizard, *Crotaphytus collaris*. In general, the water loss, $E$, is given by equation \@ref(eq:heattrans-heattrans-15). Again, this is in the form of a potential divided by a resistance (an Ohm's Law analogy).
 \begin{equation}
 E = \frac{C_o - C_a}{r_e}
-(\#eq:15)
+(\#eq:heattrans-15)
 \end{equation}
 where
 <div class="nobullet">
@@ -477,10 +477,10 @@ knitr::include_graphics('figures/fig-heattrans-6.png')
 
 The water vapor concentration at the surface of the water loss site may be saturated such as that of a leaf or a lung of a bird but it may be less than saturated as in the skin of a lizard. The concentration in the air is equal to the saturated concentration (at air temperature $T_a$) times the relative humidity. The resistance to water loss in the skin of a lizard will be controlled by the resistance to water movement in the skin and the boundary layer resistance. In a leaf, the total resistance to water loss is a combination of the stomatal resistance and the boundary layer resistance. But the water loss resistance from the moist skin of a frog was assumed to be equal to the boundary layer resistance only (Tracy 1976). In general, the boundary layer resistance is a function of the diffusion coefficient of water vapor in air and the boundary layer thickness. This thickness in turn depends on the size of the object as well as the wind speed.
 
-To relate the water transport calculated in equation \@ref(eq:15) to the energy balance, the mass flux $E$ must be multiplied by the latent heat of evaporation $L$. $L$ can be closely approximated as a function of temperature.
+To relate the water transport calculated in equation \@ref(eq:heattrans-15) to the energy balance, the mass flux $E$ must be multiplied by the latent heat of evaporation $L$. $L$ can be closely approximated as a function of temperature.
 \begin{equation}
 L(T) = 2.50 \times 10^6 - 2.38 \times 10^3 T
-(\#eq:16)
+(\#eq:heattrans-16)
 \end{equation}
 where
 <div class="nobullet">
@@ -488,7 +488,7 @@ where
 * $T$ is the surface temperature at the site of evaporation ($^{\circ}C$).
 </div>
 
-As an example of the energy flux, the water loss at $T_a = 40^{\circ}C$ for *C. collaris* is 0.8 mg of $H_2 O\,g^{-1} {hr}^{-1}$ Correcting the units to kg $s^{-1}$ for a 30 g lizard yields $6.67 \times 10^{-9} kg\:s^{-1}$. Therefore, using equation \@ref(eq:16), the energy loss for the animal is $1.6 \times 10^{-2} W$. In this example, we have not calculated $E$ explicitly, mechanistically accounting for wind speed or water vapor concentration of the environment, but animal physiologists often report evaporation as a function of air or body temperature only. These factors become more important when water loss is a larger fraction of the total energy budget or when one is concerned with the water balance of the organism (Welsh and Tracy 1977). Later in the text, a functional relationship to include these factors is given for water loss from a leaf. Generally, transpiration is a significant energy loss for plants which has led Monteith (1973) to make the distinction between "wet" and "dry" systems.
+As an example of the energy flux, the water loss at $T_a = 40^{\circ}C$ for *C. collaris* is 0.8 mg of $H_2 O\,g^{-1} {hr}^{-1}$ Correcting the units to kg $s^{-1}$ for a 30 g lizard yields $6.67 \times 10^{-9} kg\:s^{-1}$. Therefore, using equation \@ref(eq:heattrans-16), the energy loss for the animal is $1.6 \times 10^{-2} W$. In this example, we have not calculated $E$ explicitly, mechanistically accounting for wind speed or water vapor concentration of the environment, but animal physiologists often report evaporation as a function of air or body temperature only. These factors become more important when water loss is a larger fraction of the total energy budget or when one is concerned with the water balance of the organism (Welsh and Tracy 1977). Later in the text, a functional relationship to include these factors is given for water loss from a leaf. Generally, transpiration is a significant energy loss for plants which has led Monteith (1973) to make the distinction between "wet" and "dry" systems.
 
 ## THERMAL PROPERTIES OF MATERIALS
 
@@ -497,7 +497,7 @@ In the above examples, we have mentioned several thermal properties such as ther
 **Specific heat** is defined as: 
 \begin{equation}
 c = \frac{\Delta O}{\Delta T \, M}
-(\#eq:17)
+(\#eq:heattrans-17)
 \end{equation}
 where
 <div class="nobullet">
@@ -512,10 +512,10 @@ We cannot measure the amount of heat a body can hold, so in a sense the term spe
 The heat capacity of the system can then be obtained by multiplying the mass of the system by specific heat:
 \begin{equation}
 C = Mc
-(\#eq:18)
+(\#eq:heattrans-18)
 \end{equation}
 
-For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table 3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} {^{\circ}C^{-1}}$ the peat. To calculate the energy necessary to raise each system $10^{\circ}C$, we can employ equation \@ref(eq:18) in the form
+For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table 3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} {^{\circ}C^{-1}}$ the peat. To calculate the energy necessary to raise each system $10^{\circ}C$, we can employ equation \@ref(eq:heattrans-18) in the form
 $$\Delta Q = \Delta T \, M \, c$$
 The answer is found to 960 J for the granite and 2,200 J for the peat.
 
@@ -548,7 +548,7 @@ Wood|0.6|1.3|0.15|0.78|0.19
 An equally valid way of considering the heat capacity of a system is to define the thermal capacity. It is the heat added per degree change per unit volume and thus is equal to the specific heat times the density of the material of the system (see Table 3).
 \begin{equation}
 c_v = \frac{\Delta Q}{\Delta T \, V}
-(\#eq:19)
+(\#eq:heattrans-19)
 \end{equation}
 where
 <div class="nobullet">
@@ -564,7 +564,7 @@ Thermal conductivity along with the notions of conductance and thermal resistanc
 \begin{equation}
 K = \frac{k}{\rho c} \bigg(\frac{J m^{-1} {^{\circ}C^{-1}} s^{-1}}{kg \, m^{-3} \, kg^{-1} {^{\circ}C^{-1}}}\bigg) \\
 = m^2 s^{-1}
-(\#eq:20)
+(\#eq:heattrans-20)
 \end{equation}
 The thermal diffusity is important in non-steady state conduction problems where thermal energy can be stored or transported as shown in the first example of heat flow in the soil.
 
@@ -579,7 +579,7 @@ In soil, heat flow has great biological importance. Not only does the energy bal
 The simplest representation of heat flow in the soil is a conduction process where the heat flux $dQ$ per unit time $dt$ is equal to the conductivity $k$ times the difference in temperature $dT$ over a unit path length $dz$.
 \begin{eqnarray}
 \frac{dQ}{dt} = -k \frac{dT}{dz}
-(\#eq:21)
+(\#eq:heattrans-21)
 \end{eqnarray}
 The minus sign is used to indicate that the potential gradient is in the direction of decreasing temperature.
 
@@ -589,9 +589,9 @@ Another result can be derived by considering Fig. \@ref(fig:fig-heattrans-7). Th
 c \rho \Delta T \, d z &=& k \bigg(\frac{dT}{dz}\bigg)_U - k \bigg(\frac{dT}{dz}\bigg)_L \\
 \Delta T &=& \frac{k}{c\rho} \frac{1}{dz} \Bigg( \bigg(\frac{dT}{dz}\bigg)_U - \bigg(\frac{dT}{dz}\bigg)_L\Bigg) \\
 \frac{\partial T}{\partial t} &=& \frac{k}{c \rho} \frac{\partial^2 T}{\partial z^2}
-(\#eq:22)
+(\#eq:heattrans-22)
 \end{eqnarray}
-Equation \@ref(eq:22) is a form of the diffusion equation and $\frac{k}{c \rho}$ is called the thermal diffusivity. This equation can be solved analytically if simple enough boundary conditions are assumed and the thermal diffusivity remains constant. In general, the diffusivity is a function of the water content of the soil and the soil temperature (here numerical methods must be used). We can, however, get a feeling for the heat transfer profile by noting the general boundary conditions. We know that at the soil surface under steady state conditions the temperature will cycle daily while at some depth $z_0$ below the surface the temperature will not change.
+Equation \@ref(eq:heattrans-22) is a form of the diffusion equation and $\frac{k}{c \rho}$ is called the thermal diffusivity. This equation can be solved analytically if simple enough boundary conditions are assumed and the thermal diffusivity remains constant. In general, the diffusivity is a function of the water content of the soil and the soil temperature (here numerical methods must be used). We can, however, get a feeling for the heat transfer profile by noting the general boundary conditions. We know that at the soil surface under steady state conditions the temperature will cycle daily while at some depth $z_0$ below the surface the temperature will not change.
 
 Figures \@ref(fig:fig-heattrans-8) and \@ref(fig:fig-heattrans-9) from Lowry (1969) give different representations of how the soil might change with time and depth. Simpson (1977), Carslaw and Jaeger (1959), and Van Wijk (1966) present a more detailed discussion of soil heat flow.
 
@@ -613,7 +613,7 @@ Our second example is the energy balance of a leaf. Gates (1968) chose to model 
 
 \begin{equation}
 Q_a = Q_e + C + LE
-(\#eq:23)
+(\#eq:heattrans-23)
 \end{equation}
 where
 <div class="nobullet">
@@ -624,10 +624,10 @@ and
 * $LE$ is the evaporative flux ($W m^{-2}$).
 </div>
 
-With empirical measurements and some assumptions (see Gates 1977), equation \@ref(eq:23) is expanded as: 
+With empirical measurements and some assumptions (see Gates 1977), equation \@ref(eq:heattrans-23) is expanded as: 
 \begin{equation}
 Q_a = \varepsilon \sigma (T_l + 273)^4 + k_1 \bigg(\frac{V}{D}\bigg)^{0.5} (T_l - T_a) + L (T_l) \frac{_s d_l (T_l) - [r.h.]_s d_a (T_a)}{r_l + k_2 (D^{0.3} W^{0.20}) / V^{0.50}}
-(\#eq:24)
+(\#eq:heattrans-24)
 \end{equation}
 where
 <div class="nobullet">
@@ -647,7 +647,7 @@ and
 * $r_l$ is the internal diffusion resistance of the leaf ($s m^{-1}$).
 </div>
 
-Inspection of equation \@ref(eq:24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures 10 and 11 illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure 12 clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
+Inspection of equation \@ref(eq:heattrans-24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures 10 and 11 illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure 12 clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
 
 We analyze this equation in R as follows.
 ```{r}
@@ -772,7 +772,7 @@ As a final example, we will review the work of Bartlett and Gates (1967) who com
 
 \begin{equation}
 Q_a + M - Q_e - LE - C - G = 0
-(\#eq:25)
+(\#eq:heattrans-25)
 \end{equation}
 where
 <div class="nobullet">
@@ -785,11 +785,11 @@ and
 * $G$ is conduction ($W m^{-2}$).
 </div>
 
-Equation \@ref(eq:25) may be rewritten:
+Equation \@ref(eq:heattrans-25) may be rewritten:
 
 \begin{equation}
 Q_a + M - \varepsilon \sigma A_e (273 + T_s)^4 - LE - h_c A_c (T_s - T_a) - k A_c \frac{dT}{dx} = 0
-(\#eq:26)
+(\#eq:heattrans-26)
 \end{equation}
 
 where
@@ -809,7 +809,7 @@ where
 knitr::include_graphics('figures/fig-heattrans-13.png')
 ```
 
-The terms of equation \@ref(eq:26) were either experimentally determined or taken from the literature. It was then solved for a variety of situations to obtain a range of values for the animal's energy balance: 
+The terms of equation \@ref(eq:heattrans-26) were either experimentally determined or taken from the literature. It was then solved for a variety of situations to obtain a range of values for the animal's energy balance: 
 
 1. A maximum heat gain: If the lizard's surface temperature $T_s$ equaled 29.3 °C and the lizard was in close contact with the tree.
 2. A minimum heat gain: If $T_s = 39.9 ^{\circ}C$ and the lizard was not in contact with the tree. 
@@ -837,11 +837,11 @@ This module has attempted to develop the aspects of heat transfer that are impor
 
 2a. It is also possible to represent Planck's Law as a function of frequency $f$ rather than wavelength $\lambda$:
 $$E_f=\frac{2\pi h}{C_L^2}f^3\bigg[exp(\frac{hf}{K_bT})-1\bigg]^{-1}$$
-Equation \@ref(eq:1) of the text gives the relationship between $\lambda$ and $f$. Show how $E_f$ and $E_{\lambda}$ are related. What is the difference in dimensions between $E_f$ and $E_{\lambda}$? The concept of wave number is often introduced to plot $E_f$ and $E_{\lambda}$ of the same graph. Wave number $n = \lambda^{-1}$. How are $f$ and $n$ related? Plot $E_{\lambda}$ and $E_f$ for T = 280 K as a function of $\lambda$. Repeat for T = 6,000 K but show both the $\lambda$ and $n$ scales. How does the relationship of bandwidth/wave number and bandwidth/wavelength change over the spectrum?
+Equation \@ref(eq:heattrans-1) of the text gives the relationship between $\lambda$ and $f$. Show how $E_f$ and $E_{\lambda}$ are related. What is the difference in dimensions between $E_f$ and $E_{\lambda}$? The concept of wave number is often introduced to plot $E_f$ and $E_{\lambda}$ of the same graph. Wave number $n = \lambda^{-1}$. How are $f$ and $n$ related? Plot $E_{\lambda}$ and $E_f$ for T = 280 K as a function of $\lambda$. Repeat for T = 6,000 K but show both the $\lambda$ and $n$ scales. How does the relationship of bandwidth/wave number and bandwidth/wavelength change over the spectrum?
 
 2b. Planck also found that the energy in a photon, $e$, is proportional to its frequency ($e = hf$). What does this imply for a $E_{\lambda}$ versus $E_f$ representation? At what wavelength does the sun radiate the most energy? Assume its surface temperature is 6,000 K. How does this value compare with that in Fig. \@ref(fig:fig-heattrans-4)?
 
-3a. Using equation \@ref(eq:8), plot the heat of vaporization as a function of temperature. Schmidt-Nielsen (1975, page 313) says that $580 cal \cdot g^{-1}$ is a commonly used value in physiology. Is this a good approximation? Evaluate the error over the range 0 to 40 °C.
+3a. Using equation \@ref(eq:heattrans-8), plot the heat of vaporization as a function of temperature. Schmidt-Nielsen (1975, page 313) says that $580 cal \cdot g^{-1}$ is a commonly used value in physiology. Is this a good approximation? Evaluate the error over the range 0 to 40 °C.
 
 b. Schmidt-Nielsen (1975, page 37) gives the lung volume for mammals as a function of weight as
 $$V=0.0567M^{1.02}$$
@@ -1037,7 +1037,7 @@ b. The absorptivity is 0.96. Two ways to minimize wall heating are to make the c
 
 b. A frequency or wave number plot has the property that equal areas represent equal amounts of energy which is not true of a wavelength plot. The maximum energy is at $\lambda \approx 0.85 \times 10^{-6}$ which is in the near infrared of the spectrum, while Fig.\@ref(fig:fig-heattrans-4) shows $\lambda_{max}\approx 0.48\times10^{-6}m$.
 
-3a. Equation \@ref(eq:16) is
+3a. Equation \@ref(eq:heattrans-16) is
 
 > figure
 

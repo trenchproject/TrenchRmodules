@@ -145,7 +145,7 @@ It seems quite natural that the ecologists studying thermoregulation should beco
 What about ecologists interested in predicting an animal's food items? Investigators modeling feeding strategies (although not specifically concerned with thermoregulation costs) have provided some insight into temporal patterns and foraging modes (see Pyke et al. 1977 and Norberg 1977). Schoener (1974) states that an organism should forage during a given period if the energetic gain is greater than resting during that period. Symbolically this is stated: The animal shall forage if
 \begin{equation}
 e_x > {-W}_x
-(\#eq:1)
+(\#eq:thermoreg-1)
 \end{equation}
 where
 <div class="nobullet">
@@ -158,7 +158,7 @@ He summarizes:
 
 `... Of course it is possible that animals will not be as generalized with respect to time as contingency models imply, if by being so generalized they gain more food than they can process. Such animals, or any animal with a fixed caloric requirement should specialize with respect to time as food abundance increases, just as they should for food or habitat. Thus contingency feeders and restricted feeders should react in opposite ways to changes in overall food abundance. Williams (10) reports that during poor weather when yield from the best feeding periods is less, certain animals (daddy-longlegs, cattle) enlarge their activity times.Such animals are behaving as if they have a fixed caloric quota.`
 
-It is instructive to separate the net energy gained during a period $x$ into the food ingested and the metabolic costs of foraging in that environment. Often the foraging environment is thermodynamically different from the resting place. Feeding also means a concomitant increase in metabolic rate. Bearing these facts in mind, equation \@ref(eq:1) can be expanded into the following form:
+It is instructive to separate the net energy gained during a period $x$ into the food ingested and the metabolic costs of foraging in that environment. Often the foraging environment is thermodynamically different from the resting place. Feeding also means a concomitant increase in metabolic rate. Bearing these facts in mind, equation \@ref(eq:thermoreg-1) can be expanded into the following form:
 $$F_x - M_{fx} > M_{rx}$$
 where
 <div class="nobullet">
@@ -186,14 +186,14 @@ $$ \mbox{Energy In} = \mbox{Energy Out}$$
 and thus
 \begin{equation}
 Q_{a} + K ( T_b - T_r ) = Q_{e} + C + E_r.
-(\#eq:3)
+(\#eq:thermoreg-3)
 \end{equation}
 The first energy in term $Q_a$ is absorbed thermal and solar radiation. The second term is conductance through the animal as a function of the gradient between internal body temperature $T_b$ and surface temperature $T_r$, where $K$ is thermal conductance of the organism. The energy out terms correspond to emitted thermal radiation $Q_{e}$, convective heat exchange with the air $C$, and evaporative heat loss from the outer surface $E_r$. 
 
 The heat balance at the core of the animal can be likewise expressed as
 \begin{equation}
 M-E_b= K ( T_b - T_r ),
-(\#eq:4)
+(\#eq:thermoreg-4)
 \end{equation}
 where $M$ is metabolism and $E_b$ is the evaporative heat loss from the respiratory system.
 
@@ -206,18 +206,18 @@ the mean surface temperature $T_r$ as
 $${T_r}^4 \cong {\overline{T}_r}^4 + 4{\overline{T}_r}^3 (T_r - \overline{T}_r) = (4{\overline{T}_r}^3) T_r - 3{\overline{T}_r}^4$$
 We can thus approximate $Q_e$ as
 $$\sigma \varepsilon {T_r}^4 \cong (4 \sigma \varepsilon {\overline T_r}^3)T_r - 3 \sigma \varepsilon {\overline T_r}^4.$$
-For convenience, we follow Bakken and Gates (1975) and let $4 \sigma \varepsilon {\overline T_r}^3 = R$ and define $Q_n$ as the net rate of heat tranfer by all radiative processes. Thus, $Q_n = Q_a + 3 \sigma \varepsilon {T_r}^4$. Equation \@ref(eq:3) can then be rewritten as
+For convenience, we follow Bakken and Gates (1975) and let $4 \sigma \varepsilon {\overline T_r}^3 = R$ and define $Q_n$ as the net rate of heat tranfer by all radiative processes. Thus, $Q_n = Q_a + 3 \sigma \varepsilon {T_r}^4$. Equation \@ref(eq:thermoreg-3) can then be rewritten as
 \begin{equation}
 Q_n + K(T_b - T_r) = R T_r + h_c (T_r - T_a) + E_r
-(\#eq:5)
+(\#eq:thermoreg-5)
 \end{equation}
-Equations \@ref(eq:4) and \@ref(eq:5) are then solved simultaneously to eliminate the surface temperature $T_r$. The rationale for this manipulation is the one not really concerned with the surface temperature. The question is: How are the animal's body temperature and physiological processes being influenced by the thermal environment? Completing the elimination yields
+Equations \@ref(eq:thermoreg-4) and \@ref(eq:thermoreg-5) are then solved simultaneously to eliminate the surface temperature $T_r$. The rationale for this manipulation is the one not really concerned with the surface temperature. The question is: How are the animal's body temperature and physiological processes being influenced by the thermal environment? Completing the elimination yields
 \begin{equation}
 T_b = \frac{h_c T_a + Q_n}{R + h_c} + (M - E_b) \frac{K + h_c + R}{K(h_c + R)} - \frac{E_r}{R+ h_c}
-(\#eq:6)
+(\#eq:thermoreg-6)
 \end{equation}
 
-The important point of equation \@ref(eq:6) is that the first term of the right-hand side does not depend on any physiological processes. It measures the component of the body temperature that is strictly due to the physical environment. This is the term Bakken and Gates (1975) labeled the operative environmental temperature, $T_e$. They say
+The important point of equation \@ref(eq:thermoreg-6) is that the first term of the right-hand side does not depend on any physiological processes. It measures the component of the body temperature that is strictly due to the physical environment. This is the term Bakken and Gates (1975) labeled the operative environmental temperature, $T_e$. They say
 
 `$T_e$ may be identified as the temperature of an inanimate object of zero heat capacity with the same size, shape  and radiative properties as the animal and exposed to the same microclimate. It is also equivalent to the temperature of a blackbody cavity producing the same thermal load on the animal as the actual non-blackbody microclimate, and therefore may be regarded as the true environmental temperature seen by that animal.`
 
@@ -276,7 +276,7 @@ A second laboratory application of the $T_e$ concept is given by Bakken (1976b).
 
 \begin{equation}
 \frac{d T_b}{dt} = \frac{K_n}{C} (T_b - T_a)
-(\#eq:7)
+(\#eq:thermoreg-thermoreg-7)
 \end{equation}
 where
 <div class="nobullet">
@@ -287,31 +287,31 @@ where
 * $t$ is time ($s$).
 </div>
 
-Equation \@ref(eq:7) says that the change in body temperature will be zero when the animal's temperature is equal to that of the air. This is not a bad approximation if $T_a = T_e$ and if the metabolic and water loss rates of the animal are small. Bakken (1976a) has shown that a better approximation of the cooling curve is given by
+Equation \@ref(eq:thermoreg-thermoreg-7) says that the change in body temperature will be zero when the animal's temperature is equal to that of the air. This is not a bad approximation if $T_a = T_e$ and if the metabolic and water loss rates of the animal are small. Bakken (1976a) has shown that a better approximation of the cooling curve is given by
 
 \begin{equation}
 \frac{d T_b}{dt} = \frac{K_0}{C} (T_b - (T_e + \frac{M-E}{K_0}))
-(\#eq:8)
+(\#eq:thermoreg-thermoreg-8)
 \end{equation}
 When $\frac{d T_b}{dt} = 0$,
 
 $$T_b = T_e + \frac{M-E}{K_0}$$
 
-If the cutaneous water loss is small than equation \@ref(eq:8) has the same form as the steady-state equation \@ref(eq:6) developed earlier, where
+If the cutaneous water loss is small than equation \@ref(eq:thermoreg-8) has the same form as the steady-state equation \@ref(eq:thermoreg-6) developed earlier, where
 \begin{equation}
 T_e = \frac{h_c T_a + Q_n}{h_c + R}
-(\#eq:9)
+(\#eq:thermoreg-9)
 \end{equation}
 and
 \begin{equation}
 K_0 = \frac{K (h_c + R)}{K + h_c + R}
-(\#eq:10)
+(\#eq:thermoreg-10)
 \end{equation}
-$K_0$ is a function of the convection coefficient, $h_c$, which depends specifically on wind speed, a physical characteristic of the environment. Bakken (1976b) has provided a detailed discussion of the use of equation \@ref(eq:7). As an illustration, consider the case when $M$ and $E$ are small (most insects and lizards). Then equation \@ref(eq:8) reduces to
+$K_0$ is a function of the convection coefficient, $h_c$, which depends specifically on wind speed, a physical characteristic of the environment. Bakken (1976b) has provided a detailed discussion of the use of equation \@ref(eq:thermoreg-7). As an illustration, consider the case when $M$ and $E$ are small (most insects and lizards). Then equation \@ref(eq:thermoreg-8) reduces to
 
 \begin{equation}
 \frac{d T_b}{dt} = \frac{- K_0}{C} (T_b - T_e)
-(\#eq:11)
+(\#eq:thermoreg-11)
 \end{equation}
 If wind speed and orientation are constant, the only physiological characteristic of the organism that would make it different from that of an inanimate object is its ability to regulate blood flow. (As an example, see Fig. \@ref(fig:fig-thermoreg-8).)
 
@@ -629,11 +629,11 @@ Animal|(W m^-2^)|(W m^-2^)|(W m^-2^)|(W m^-2^)|(W m^-2^ °C^-1^)|(°C)|(kg)
 Assume $\varepsilon = 0.95$, $V = 0.25 m s^{-1}$, $\overline{T}_r = 25°C$,$h_c = 17.24V^{0.60}M_b^{-0.133}$.
 
 
-9. Using the data in problem 8 for the two ectotherms, calculate $k_0$ for V = 0.1, 0.5, and 3.0 m s$^{-1}$. Assume that the difference between metabolism and water loss is zero. What is $T_b$ in each case now? If the heat capacity is equal to the specific heat (3430 J kg$^{-1}$ °C$^{-1}$ ) times the mass of the animal, what is the heat capacity for each? Assuming $Q_a  = 600 W m^{-2}$and $T_a = 20°C$ for the range of wind speeds above which animal will get warmer. Are your conclusions still the same if $Q_a = 380 W m^{-2}$? Integrate equation \@ref(eq:11) to find $T_b$ as a function of time. If the initial body temperature of both animals is 10°C at time equal to zero, which animal will get to $T_b = 25°C$ first? Use the following relationship from Mitchell (1976).  
+9. Using the data in problem 8 for the two ectotherms, calculate $k_0$ for V = 0.1, 0.5, and 3.0 m s$^{-1}$. Assume that the difference between metabolism and water loss is zero. What is $T_b$ in each case now? If the heat capacity is equal to the specific heat (3430 J kg$^{-1}$ °C$^{-1}$ ) times the mass of the animal, what is the heat capacity for each? Assuming $Q_a  = 600 W m^{-2}$and $T_a = 20°C$ for the range of wind speeds above which animal will get warmer. Are your conclusions still the same if $Q_a = 380 W m^{-2}$? Integrate equation \@ref(eq:thermoreg-11) to find $T_b$ as a function of time. If the initial body temperature of both animals is 10°C at time equal to zero, which animal will get to $T_b = 25°C$ first? Use the following relationship from Mitchell (1976).  
 $$\mbox{Area}=11.0\times\bigg(\frac{\mbox{body mass}}{\mbox{body density}}\bigg)^{2/3}$$
 where body density equals $1\times10^3 kg m^{-3}$ to correct the dimensions of the equations. What is the difference in time between when each will arrive at 25°C? (Hint: Solve the integrated equation for time.) Answer the preceding two questions for V=0.1 and 0.5 m s^-1^. Assume the animals are lizards and comment on Cowles' suggestion.
 
-10. Include a conduction term of the form $G(T_r-T_g)$ in equation \@ref(eq:3) and find an equation analogous to equation \@ref(eq:6) for $T_b$.
+10. Include a conduction term of the form $G(T_r-T_g)$ in equation \@ref(eq:thermoreg-3) and find an equation analogous to equation \@ref(eq:thermoreg-6) for $T_b$.
 
 11. Imagine you are employed as an entomologist with the U.S.D.A. working with a team of research scientists studying a pest that drills into the stalks of corn. Your assignment is to investigate the importance of the physical environment in the corn-insect interaction. Ten years of historical data suggest that during cold springs the corn is not badly infected. Also it is known that chemical treatments are most effective on the third instar. These specific questions are important to managing this pest.
 a) Will this be a high density year for the corn drill so that biological or chemical controls will be needed?

@@ -23,7 +23,7 @@ The inverse operation to differentiation is called **antidifferentiation** or, m
 
 \begin{equation}
 \frac{dN}{dt} = kN
-(\#eq:1)
+(\#eq:calcint-calcint-1)
 \end{equation}
 
 where $N$ is the population size, $t$ is time and $k$ is a proportionality constant. We could solve for $N$ as a function of time by integrating the derivative. However, we know that the exponential function is the only function which equals its derivative. 
@@ -34,22 +34,22 @@ Thus, we can modify the function to give the solution
 
 $$N = N_0 e^{kt}$$
 
-since differentiating $N_0 e^{kt}$ gives eqn. \@ref{eq:1}. 
+since differentiating $N_0 e^{kt}$ gives eqn. \@ref{eq:calcint-calcint-1}. 
 
 $$\frac{dN}{dt} = \frac{d(N_0 e^{kt})}{dt} = kN_0 e^{kt} = kN $$
 
-If we write eqn. \@ref(eq:1) as
+If we write eqn. \@ref(eq:calcint-calcint-1) as
 
 \begin{equation}
 \frac{dN}{dt} = kN_0 e^{kt}
-(\#eq:2)
+(\#eq:calcint-2)
 \end{equation}
 
 then the "antidifferentiation" becomes more obvious: find $N$ so that its derivative equals $kN_0 e^{kt}$. If we define 
 
 $$g(t) = kN_0 e^{kt}, \;\;\;\;\;f(t) = N_0 e^{kt} $$
 
-then eqn. \@ref(eq:2) becomes 
+then eqn. \@ref(eq:calcint-2) becomes 
 
 $$g(t) = df/dt$$
 
@@ -61,7 +61,7 @@ then $x(t)$ and $y(t)$ are also antiderivatives of $g(t)$, as can be checked by 
 
 \begin{equation}
 \int g(t)dt = f(t) + C
-(\#eq:3)
+(\#eq:calcint-3)
 \end{equation}
 
 and call $C$ the **integration constant**. Recall that the term "$dt$" identifies the variable of integration just as it does the variable of differentiation in the derivative $df/dt$.
@@ -73,7 +73,7 @@ and call $C$ the **integration constant**. Recall that the term "$dt$" identifie
 The integration constant does not appear if the integral is a **definite integral**, written as
 
 $$A = \int^b_a g(x)dx$$
-where $a$, $g$ are called the **limits** of the integral. In this case, the integral is determined by evaluating the antiderivative of $g(x)$ at the values $x = b$, $x = a$ and subtracting. Thus, as with eqn. \@ref(eq:3), if
+where $a$, $g$ are called the **limits** of the integral. In this case, the integral is determined by evaluating the antiderivative of $g(x)$ at the values $x = b$, $x = a$ and subtracting. Thus, as with eqn. \@ref(eq:calcint-3), if
 
 $$\frac{df}{dx} = g(x)$$
 
@@ -151,7 +151,7 @@ Assume that self-inhibition by the microorganism population causes the oxygen de
 
 \begin{equation}
 \frac{dC}{dt} = te^{-t^2} + e^{-t}
-(\#eq:4)
+(\#eq:calcint-4)
 \end{equation}
 
 where $C$ represents the quantity of oxygen consumed. A graph of $dC/dt$ looks like figure \@ref(fig:fig-calcint-4).
@@ -160,7 +160,7 @@ where $C$ represents the quantity of oxygen consumed. A graph of $dC/dt$ looks l
 knitr::include_graphics('figures/fig-calcint-4.png')
 ```
 
-The total amount of oxygen consumed by time $T$ is then found by integrating eqn. \@ref(eq:4). 
+The total amount of oxygen consumed by time $T$ is then found by integrating eqn. \@ref(eq:calcint-4). 
 
 $$C(T) = \int^T_0 (te^{-t^2} + e^{-t}) dt $$
 
@@ -171,7 +171,7 @@ With most nicely behaved models, we can evaluate $C(\infty)$ directly. The above
 
 \begin{equation}
 C(\infty) = \int^\infty_0 (te^{-t^2} + e^{-t}) dt
-(\#eq:5)
+(\#eq:calcint-5)
 \end{equation}
 
 and is evaluated as with previous definite integrals.
@@ -228,11 +228,11 @@ Often, $h(x)$ appears explicitly in the integrand so that $u$ is substituted dir
 
 **Example 3**
 
-The problem presented above on the oxygen depletion due to sewage dumping can now be solved. The integral in eqn. \@ref(eq:5) is first separated.
+The problem presented above on the oxygen depletion due to sewage dumping can now be solved. The integral in eqn. \@ref(eq:calcint-5) is first separated.
 
 \begin{equation}
 \int^{\infty}_0(te^{-t^2} +e^{-t}) dt = \int^{\infty}_0 te^{-t^2}dt + \int^{\infty}_0|e^{-t}dt
-(\#eq:6)
+(\#eq:calcint-6)
 \end{equation}
 
 The antiderivative of $te^{-t^2}$ is not obvious, so we substitute a new function into the integral. Let $u = t^2$. Then the differential $du$ is 
@@ -249,7 +249,7 @@ The limits remain, since $u = 0$ when $t = 0$ and $u = \infty$ when $t = \infty$
 &=& \frac{1}{2} \\
 \end{eqnarray}
 
-Since the second term in eqn. \@ref(eq:6) is now obvious $\int^{\infty}_0 e^{-u}du = \int^{\infty}_0 e^{-t}dt=1$, we obtain the solution to eqn. \@ref(eq:5) of
+Since the second term in eqn. \@ref(eq:calcint-6) is now obvious $\int^{\infty}_0 e^{-u}du = \int^{\infty}_0 e^{-t}dt=1$, we obtain the solution to eqn. \@ref(eq:calcint-5) of
 $$C(\infty) = 1/2 + 1 = 3/2$$
 
 ### Integration by Parts
@@ -260,20 +260,20 @@ If we evaluate antiderivatives, we obtain
 
 \begin{equation}
 uv = \int udv + \int vdu
-(\#eq:7)
+(\#eq:calcint-7)
 \end{equation}
 
-Rearrangement of eqn. \@ref(eq:7) gives the integration by parts formula
+Rearrangement of eqn. \@ref(eq:calcint-7) gives the integration by parts formula
 $$\int udv = uv - \int vdu$$
 With definite integrals, we usually write this formula as
 
 \begin{equation}
 \int^b_a [u(x)\frac{dv}{dx}]dx = [uv]^b_a - \int^b_a [v(x)\frac{du}{dx}]dx
-(\#eq:8)
+(\#eq:calcint-8)
 \end{equation}
 
 
-Again, the goal is to change a difficult integral, the left side of eqn. \@ref(eq:8), into a simpler one, the right side of eqn. \@ref(eq:8). An example is presented later.
+Again, the goal is to change a difficult integral, the left side of eqn. \@ref(eq:calcint-8), into a simpler one, the right side of eqn. \@ref(eq:calcint-8). An example is presented later.
 
 ### Partial Fractions
 
@@ -289,14 +289,14 @@ where $C_1$ and $C_2$ are constants. Multiplication by $A(x)B(x)$ gives
 
 \begin{equation}
 F(x) = C_1B(x) + C_2A(x)
-(\#eq:9)
+(\#eq:calcint-9)
 \end{equation}
 
 
-Let $r_1, r_2$ be zeros of $A(x), B(x)$, respectively, i.e. $A(r_1 ) = B(r_2 ) = 0$. Then, with $x = r_1$, eqn. \@ref(eq:9) is 
+Let $r_1, r_2$ be zeros of $A(x), B(x)$, respectively, i.e. $A(r_1 ) = B(r_2 ) = 0$. Then, with $x = r_1$, eqn. \@ref(eq:calcint-9) is 
 $$F(r_1) = C_1 B(r_1)$$ 
 
-and with $x = r_2$, eqn. \@ref(eq:9) becomes 
+and with $x = r_2$, eqn. \@ref(eq:calcint-9) becomes 
 $$F(r_2) = C_2 A(r_2)$$
 so that $C_1,C_2$ can be easily determined.
 
@@ -311,11 +311,11 @@ which is integrated to yield the equation
 
 \begin{equation}
 \int \frac{dN}{N(1 - N/K)} = \int rdt
-(\#eq:10)
+(\#eq:calcint-10)
 \end{equation}
 
 
-The right side of eqn. \@ref(eq:10) is easily integrated. The left side, however, must be reworked. First rewrite the integral as 
+The right side of eqn. \@ref(eq:calcint-10) is easily integrated. The left side, however, must be reworked. First rewrite the integral as 
 $$\frac{1}{N(1 - N/K)} = \frac{K}{N(K-N)}$$
 
 Now expand in partial fractions as 
@@ -324,18 +324,18 @@ Multiplying both sides by $N(K - N)$ gives
 
 \begin{equation}
 K = a_1(K - N) + a_2N
-(\#eq:11)
+(\#eq:calcint-11)
 \end{equation}
 
 
-Since \@ref(eq:11) must hold for all values of $N$ (Clow and Urquhart 1974, p. 562), then setting $N = 0$ gives 
+Since \@ref(eq:calcint-11) must hold for all values of $N$ (Clow and Urquhart 1974, p. 562), then setting $N = 0$ gives 
 $$a_1 = 1$$
 and $N = K$ gives 
 
 $$a_2 = 1$$
 so that  
 $$\frac{K}{N(K-N)} = \frac{1}{N} + \frac{1}{K-N}$$
-Then eqn. \@ref(eq:10) is
+Then eqn. \@ref(eq:calcint-10) is
 $$\int \frac{dN}{N} + \int \frac{dN}{K-N} = \int rdt$$
 which integrates to
 
@@ -369,7 +369,7 @@ An interesting example is a study (Fisher 1963 in Warren 1971, pp. 161-163) of t
 
 \begin{equation}
 y = 7.3 (x + 3.5) e^{-0.05x}
-(\#eq:12)
+(\#eq:calcint-12)
 \end{equation}
 
 The lower curve is the straight line 
@@ -599,7 +599,7 @@ The points ($x_i,y_i$) are usually not collinear (see figure \@ref(fig:fig-calci
 
 \begin{equation}
 E^2 = \sum^n_{i=1} [y(x_i)-y_i]^2
-(\#eq:13)
+(\#eq:calcint-13)
 \end{equation}
 
 where $y(x_i) = Ax_i + B$. The goal is then to choose $A$, $B$ so that $E^2$ is minimal. By writing $E^2$ as a function of the parameters $A$, $B$, we minimize $E^2$ by setting the partial derivatives equal to zero:
@@ -624,10 +624,10 @@ When a curve $y = f(x)$ is approximated by a least-squares straight line $y = Ax
 
 \begin{equation}
  E^2 = \int^b_a [Ax + B - f(x)]^2 dx
-(\#eq:14)
+(\#eq:calcint-14)
 \end{equation}
 
-Note that equation \@ref(eq:13) is a discrete analog of equation \@ref(eq:14).
+Note that equation \@ref(eq:calcint-13) is a discrete analog of equation \@ref(eq:calcint-14).
 
 The norm can be used for evaluating the closeness of fit of one curve to another, or for obtaining a qualitative estimate of the accuracy of an approximate solution to an equation. The $L_p$ norm of a function $f(x)$ is defined as
 $$L_p (f(x)) = \| f(x)\|_\rho = \bigg[\int^b_a |f(x)|^P dx\bigg]^{1/p}   $$
@@ -639,27 +639,27 @@ $$E^2 = [\|f(x)\|_2]^2 = [L_2(f(x))]^2$$
 
 **Example 8**
 
-An interesting comparison is between the line fitted to the data points of example 5 and the line fitted to the smooth exponential curve of eqn. \@ref(eq:12), rewritten as follows.
+An interesting comparison is between the line fitted to the data points of example 5 and the line fitted to the smooth exponential curve of eqn. \@ref(eq:calcint-12), rewritten as follows.
 
 \begin{equation}
 y_1 = 7.3 (x + 3.5) e^{-0.05x}
-(\#eq:15)
+(\#eq:calcint-15)
 \end{equation}
 
 We can approximate this function with a linear function, 
 
 \begin{equation}
 y_2 = Ax + B
-(\#eq:16)
+(\#eq:calcint-16)
 \end{equation}
 
 by choosing $A$ and $B$ to minimize the $L_2$ (least squares) norm of the difference between them, $y_1 - y_2$. Denote the norm by
 $$E = \|y_1 - y_2\|_2 = [\int^{30}_3 (y_1-y_2) dx]^{1/2}$$
-Substituting eqns. \@ref(eq:15) and \@ref(eq:16) yields
+Substituting eqns. \@ref(eq:calcint-15) and \@ref(eq:calcint-16) yields
 
 \begin{equation}
 E = [\int^{30}_{3} (7.3[x+3.5]e^{-0.05x} - Ax - B)^2dx]^{1/2}
-(\#eq:17)
+(\#eq:calcint-17)
 \end{equation}
 
 We now minimize $E$ by taking partial derivatives with respect to $A$ and $B$ (see Hertzberg 1977 for a review of differentiation). One first derivative will now be calculated, with the remainder of the minimization left as computer exercise 2.
@@ -680,12 +680,12 @@ Thus we evaluate:
 \begin{equation}
 \frac{\partial (E^2)}{\partial A} = \int^{30}_3 \frac{\partial f}{\partial A} dx \\ 
  = \int^{30}_3 2(7.3[x+3.5]e^{-0.05x}-Ax-B)(-x)dx
-(\#eq:18)
+(\#eq:calcint-18)
 \end{equation}
 
 which can now be integrated (computer exercise 2).
 
-No justification has yet been given for the constants in eqn. \@ref(eq:15). These, too, may be determined by a least squares norm. See computer exercise 1 for details.
+No justification has yet been given for the constants in eqn. \@ref(eq:calcint-15). These, too, may be determined by a least squares norm. See computer exercise 1 for details.
 
 The norm can also be used to estimate qualitatively the relative accuracies of approximate solutions to a differential equation. The limits are determined as above by the interval in which the accuracy is to be judged. An example is presented in the next section.
 
@@ -710,12 +710,12 @@ Let us return to example 4. The equation is
 
 \begin{equation}
 \frac{dN}{dt} = rN(1 - N/K)
-(\#eq:19)
+(\#eq:calcint-19)
 \end{equation}
 
 The simple representation given above fails here:
 $$N(t) = \int rN(1 - N/K)dt$$
-To integrate, we need to know $N$ as an explicit function of $t$, which of course we do not know. However, by multiplying both sides of eqn. \@ref(eq:19) by the differential $dt$, we obtain
+To integrate, we need to know $N$ as an explicit function of $t$, which of course we do not know. However, by multiplying both sides of eqn. \@ref(eq:calcint-19) by the differential $dt$, we obtain
 $$dN = rN(1 - N/K)dt$$
 
 and by dividing by $N(1 - N/K)$ we successfully separate the variables $N$, $t$ on either side of the equality:
@@ -752,36 +752,36 @@ A mathematical model has been devised which shows the effect of duration ($T$) a
 
 \begin{equation}
 \partial M / \partial T = a_1T^{1.5}
-(\#eq:20)
+(\#eq:calcint-20)
 \end{equation}
 
 
 \begin{equation}
 \partial M / \partial F = a_2 F^{1.8}
-(\#eq:21)
+(\#eq:calcint-21)
 \end{equation}
 
 where $a_1$ is a function of $F$ and $a_2$ is a function of $T$. Another model was derived by curve fitting, using Table A and is quite different. For a given $M$,
 
 \begin{equation}
 ln(T)=b_1 - b_2 \ln F
-(\#eq:22)
+(\#eq:calcint-22)
 \end{equation}
 
 
 where it is now assumed that $b_1$ is a function of $M$:
 $$b_1 = 2.16 + 0.40 \ln M$$
 
-Can both of these models hold? Are they consistent? We can answer this by integrating the first model to derive a single expression for $M$ as a function of $F, T$. Each equation \@ref(eq:20), \@ref(eq:21) involves a single partial derivative, so that one of the variables can be assumed constant. By holding $F$ constant, we integrate eqn. \@ref(eq:20) to obtain
+Can both of these models hold? Are they consistent? We can answer this by integrating the first model to derive a single expression for $M$ as a function of $F, T$. Each equation \@ref(eq:calcint-20), \@ref(eq:calcint-21) involves a single partial derivative, so that one of the variables can be assumed constant. By holding $F$ constant, we integrate eqn. \@ref(eq:calcint-20) to obtain
 $$M = (a_1/1.5)T^{2.5} + C_1$$
 which is more precisely written, with $a_1$ as a function of $F$, as
 
 \begin{equation}
 M = \frac{a_1(F)}{1.5}T^{2.5}+C_1
-(\#eq:23)
+(\#eq:calcint-23)
 \end{equation}
 
-Similarly, we integrate eqn. \@ref(eq:21) with respect to $F$, holding $T$ constant.
+Similarly, we integrate eqn. \@ref(eq:calcint-21) with respect to $F$, holding $T$ constant.
 
 \begin{eqnarray}
 M &=& \int a_2 F^{1.8} dF = (a_2 / 1.8) F^{2.8} + C_2 \\
@@ -796,14 +796,14 @@ $$\frac{a_1(F)}{1.5} T^{2.5} = \frac{a_2(T)}{1.8} F^{2.8}$$
 Therefore, we must conclude that
 $$a_1(F) = 1.5C F^{2.8}$$
 $$a_2(T) = 1.8C T^{2.5}$$
-where $C$ is some proportionality constant. From eqn. \@ref(eq:23) we have
+where $C$ is some proportionality constant. From eqn. \@ref(eq:calcint-23) we have
 
 \begin{equation}
 M = C F^{2.8} T^{2.5}
-(\#eq:24)
+(\#eq:calcint-24)
 \end{equation}
 
-It is now straightforward to manipulate eqn. \@ref(eq:22) to look like eqn: \@ref(eq:24).
+It is now straightforward to manipulate eqn. \@ref(eq:calcint-22) to look like eqn: \@ref(eq:calcint-24).
 $$\ln T = (2.16 + 0.40 \ln M) - b_2 \ln F$$
 $$\frac{\ln T + b_2 \ln F - 2.16}{0.40} = \ln M$$
 $$\frac{\ln T + ln(F^{b_2}) - \ln(e^{2.16})}{0.40} = \ln M$$
@@ -842,7 +842,7 @@ Assume that the current population size is 400, the carrying capacity ($K$) is 2
 
 \begin{equation}
 \frac{dn}{dt} = Rn(1-n/K) - e^{-t}n
-(\#eq:25)
+(\#eq:calcint-25)
 \end{equation}
 
 
@@ -852,15 +852,15 @@ Assume also that you do not have access to either a programmable calculator or a
 
 \begin{equation}
 n_1(t) = (K-n_0)(1-e^{-Rt/5} ) + n_0
-(\#eq:26)
+(\#eq:calcint-26)
 \end{equation}
 
 \begin{equation}
 n_2(t) = n_0 e^{Rt/3}
-(\#eq:27)
+(\#eq:calcint-27)
 \end{equation}
 
-Note that $n_1(t)$ tapers off at the carrying capacity, but $n_2(t)$ is exponential growth for $n_2 \approx 0$; both are properties the exact solution must possess. Which approximation is better? We compare $n_1$ and $n_2$ by evaluating their least-squares residual norms. Rewrite eqn.\@ref(eq:25) as $L(n) = 0$, where $L(n)$ represents the differential operator acting on $n$:
+Note that $n_1(t)$ tapers off at the carrying capacity, but $n_2(t)$ is exponential growth for $n_2 \approx 0$; both are properties the exact solution must possess. Which approximation is better? We compare $n_1$ and $n_2$ by evaluating their least-squares residual norms. Rewrite eqn.\@ref(eq:calcint-25) as $L(n) = 0$, where $L(n)$ represents the differential operator acting on $n$:
 $$L(n) = dn/dt - Rn(1-n/K) + e^{-t}n = 0 $$
 
 We expect a good approximate solution, $n_a$, to give
@@ -870,24 +870,24 @@ $$ \| R(n_a) \|_2 \equiv [\int^T_0 (L(n_a))^2 dt]^{1/2} \approx 0$$
 Intuitively, the smaller $\| R \|_2$ is, the better the approximation should be. For this example, assume the following values:
 $$K = 2000, \; R=1, \; n_0=400, \; T=3$$
 
-The integrands in $\| R(n_1) \|_2$ and $\| R(n_2) \|_2$ are now calculated. From eqn. \@ref(eq:26) we obtain, after a few steps,
+The integrands in $\| R(n_1) \|_2$ and $\| R(n_2) \|_2$ are now calculated. From eqn. \@ref(eq:calcint-26) we obtain, after a few steps,
 
 \begin{equation}
 [L(n_1)]^2 = (2000 e^{-t}- 1600 e^{-1.2t} + 1280 e^{-0.4t} -2800 e^{-0.2t} +1600)^2
-(\#eq:28)
+(\#eq:calcint-28)
 \end{equation}
 
-From eqn. \@ref(eq:27) we obtain
+From eqn. \@ref(eq:calcint-27) we obtain
 
 \begin{equation}
 [L(n_2)]^2=[ (400/3) e^{t/3} - (1-400 e^{t/3}/2000 -e^{-t}) 400 e^{t/3}]2
-(\#eq:29)
+(\#eq:calcint-29)
 \end{equation}
 
-After multiplying out the square in each equation and collecting terms, we can write both \@ref(eq:28) and \@ref(eq:29) as sums of exponential functions, and thus both can be integrated by hand easily (but tediously). The results are, upon integrating over the interval $[0,3]$:
+After multiplying out the square in each equation and collecting terms, we can write both \@ref(eq:calcint-28) and \@ref(eq:calcint-29) as sums of exponential functions, and thus both can be integrated by hand easily (but tediously). The results are, upon integrating over the interval $[0,3]$:
 $$\| R(n_1) \|_2 = 661.8$$
 $$\| R(n_2) \|_2 = 172.3$$
-Figure \@ref(fig:fig-calcint-19) shows the accuracy of the two approximate solutions as compared to a numerical solution to the original differential equation \@ref(eq:25). It appears that, for the chosen values of $R$, $K$ and $n_0$, the approximation $n_2(t)$ is better, and the residual norm for $n_2$ supports this evaluation. The 60% of carrying capacity, i.e. 1200, is reached in 3.30 years using $n_2(t)$, and in 3.08 years according to the numerical solution $n(t)$. It is interesting that, without the term for hunting (curve $n_0(t)$ in fig. \@ref(fig:fig-calcint-19)), the population reaches the 60% level in only 1.79 years.
+Figure \@ref(fig:fig-calcint-19) shows the accuracy of the two approximate solutions as compared to a numerical solution to the original differential equation \@ref(eq:calcint-25). It appears that, for the chosen values of $R$, $K$ and $n_0$, the approximation $n_2(t)$ is better, and the residual norm for $n_2$ supports this evaluation. The 60% of carrying capacity, i.e. 1200, is reached in 3.30 years using $n_2(t)$, and in 3.08 years according to the numerical solution $n(t)$. It is interesting that, without the term for hunting (curve $n_0(t)$ in fig. \@ref(fig:fig-calcint-19)), the population reaches the 60% level in only 1.79 years.
 
 ```{r fig-calcint-19, echo=FALSE, fig.height=4, out.width = "75%", fig.cap= "Approximate growth functions"}
 knitr::include_graphics('figures/fig-calcint-19.png')
@@ -1214,32 +1214,32 @@ Set equal to zero:
 \sum^n_{i=1}2[Ax_i+B-y_i]x_i=0\\
 \sum^n_{i=1}[Ax_i+B-y_i]x_i=0\\
 \frac{\partial E}{\partial B} =\sum^n_{i=1}2[Ax_i+B-y_i]
-(\#eq:a)
+(\#eq:calcint-a)
 \end{eqnarray}
 
 Equate to 0 and divide by 2:
 \begin{equation}
 \sum^n_{i=1}[Ax_i+B-y_i]=0
-(\#eq:b)
+(\#eq:calcint-b)
 \end{equation}
-Thus we have two equations which are linear in A and B. This is more easily seen if we rework them. From (\@ref(eq:a))
+Thus we have two equations which are linear in A and B. This is more easily seen if we rework them. From (\@ref(eq:calcint-a))
 
 \begin{equation}
 A(\sum^n_{i=1}x_i^2)+B(\sum^n_{i=1}x_i)-(\sum^n_{i=1}x_iy_i)=0
-(\#eq:a*)
+(\#eq:calcint-a*)
 \end{equation}
 
-And (\@ref(eq:b)) becomes
+And (\@ref(eq:calcint-b)) becomes
 \begin{equation}
 A(\sum^n_{i=1}x_i^2)+nB-(\sum^n_{i=1}y_i)=0
-(\#eq:b*)
+(\#eq:calcint-b*)
 \end{equation}
 
 6. 
 
-a. Eq. \@ref(eq:a*) is:
+a. Eq. \@ref(eq:calcint-a*) is:
 $$A(1353.25) + B(65.90) - (3750.50) = 0$$
-Eq. \@ref(eq:b*) is:
+Eq. \@ref(eq:calcint-b*) is:
 $$A(65.90) + 5B - (268.50) = 0$$
 
 We solve for A and B.
@@ -1315,7 +1315,7 @@ and thus
 
 $$y = 14.041x e^{-0.071x}$$
 
-c. The following graph (fig. 4A) compares the least squares line and exponential curve of parts (a) and (b) with the data and the exponential curve in the text (eqn. \@ref(eq:12)). The fit of eqn. (\@ref(eq:12)) seems superior to that of the curve from (b).
+c. The following graph (fig. 4A) compares the least squares line and exponential curve of parts (a) and (b) with the data and the exponential curve in the text (eqn. \@ref(eq:calcint-12)). The fit of eqn. (\@ref(eq:calcint-12)) seems superior to that of the curve from (b).
 However, the fit of
 
 $$h = 2.642 - 0.071x$$

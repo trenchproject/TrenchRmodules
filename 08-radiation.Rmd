@@ -142,45 +142,45 @@ If $E$ is the total energy density in all frequencies $(J m^{-3})$:
 
 \begin{equation}
 E=\int_0^\infty E(\nu)d\nu=\frac{8\pi h}{c^3}\int_0^\infty\frac{\nu^3d\nu}{e^{h\nu/kT}-1}
-(\#eq:1)
+(\#eq:radiation-radiation-1)
 \end{equation}
 
 Making a change of variable,  
 $$x=h\nu/kT \;\;\mbox{ which implies }\;\; dv=\frac{kT}{h}dx$$  
-Equation \@ref(eq:1) becomes 
+Equation \@ref(eq:radiation-1) becomes 
 
 \begin{equation}
 E=\frac{8\pi h}{c^3}(\frac{kT}{h})^4\int_0^\infty\frac{x^3dx}{e^x-1}
-(\#eq:2)
+(\#eq:radiation-2)
 \end{equation}
 
-The value of the integral in Equation \@ref(eq:2)
+The value of the integral in Equation \@ref(eq:radiation-2)
 
 \begin{equation}
 I=\int_0^\infty\frac{x^3dx}{e^x-1}
-(\#eq:3)
+(\#eq:radiation-3)
 \end{equation}
 
-can be obtained by numerical integration. This is a technique for approximating a definite integral by a finite sum. The value of the integral in Equation \@ref(eq:3) is found in Appendix 2 to be:
+can be obtained by numerical integration. This is a technique for approximating a definite integral by a finite sum. The value of the integral in Equation \@ref(eq:radiation-3) is found in Appendix 2 to be:
 
 $$I=6.4983$$
 
-Equation \@ref(eq:2) can be re-expressed as 
+Equation \@ref(eq:radiation-2) can be re-expressed as 
 \begin{equation}
 E=[\frac{8\pi h}{c^3}(\frac{k}{h})^4I]T^4=aT^4
-(\#eq:4)
+(\#eq:radiation-4)
 \end{equation}
 
-where the constant $a$ is equal to the value of the constants in the square brackets in Equation \@ref(eq:4). The value of $a$ is found to be
+where the constant $a$ is equal to the value of the constants in the square brackets in Equation \@ref(eq:radiation-4). The value of $a$ is found to be
 $$a=\frac{8\pi h}{c^3}\frac{k^4}{h^4}(6.4983)=7.5643\times10^{-10}Jm^{-3}K^{-4}$$
 The energy radiated by a black body per unit area per unit time, that is, the radiation emittance $E_n$, can be shown to be 
 \begin{equation}
 E_n=\sigma T^4
-(\#eq:5)
+(\#eq:radiation-5)
 \end{equation}
 where $E_n\equiv$ radiation emmitance and
 $$\sigma=(\frac{1}{4})ca=5.6693\times10^{-8}Wm^{-2}K^{-4}$$
-Equation \@ref(eq:5) is called the Stefan-Boltzmann law and the constant $\sigma$ is called the Stefan-Boltzmann constant. Although Equation \@ref(eq:5) is quantitatively precise, the functional relationship of the variables is more important than the exact numerical value of the constants. Of particular interest is that the radiation emittance is proportional to the fourth power of the absolute temperature.
+Equation \@ref(eq:radiation-5) is called the Stefan-Boltzmann law and the constant $\sigma$ is called the Stefan-Boltzmann constant. Although Equation \@ref(eq:radiation-5) is quantitatively precise, the functional relationship of the variables is more important than the exact numerical value of the constants. Of particular interest is that the radiation emittance is proportional to the fourth power of the absolute temperature.
 
 The equation is of direct biological interest when it is realized that the Stefan-Boltzmann law governs the radiative energy exchange between an organism and its environment. Although this exchange of energy is usually not considered when calculating the energy budget of an organism, it can in some circumstances be a major factor affecting the heat balance of an organism. The following example and problem constitute a brief introduction to the application of this physical law to biology. For a more detailed exploration of this relationship, see Gates (1978) and Hatheway (1977).
 
@@ -239,41 +239,41 @@ The solar constant can be calculated theoretically from the Stefan-Boltzmann law
 
 \begin{equation}
 E_s=\sigma T_s^4
-(\#eq:5)
+(\#eq:radiation-5)
 \end{equation}
 
 Thus the total power emitted by the sun can be found by integrating $E_s$ over the sun's surface. Since $T_s$ is (assumed to be) constant, this is equivalent to multiplying the constant $E_s$ by the surface area of a sphere with the sun's radius ($r_s$). The total power is given by:
 
 \begin{equation}
 E=4\pi r_s^2 E_s
-(\#eq:6)
+(\#eq:radiation-6)
 \end{equation}
 
 By conservation of energy, if no energy is lost in the intervening space, all of the radiation emitted radially out from the sun will be intercepted by an (imaginary) sphere centered on the sun with a radius equal to the mean distance from the sun to the earth ($r_E$). The power flow per unit area ($E_E$) across this (imaginary) sphere will be equal to the total power available ($E$), divided by the surface area of the sphere ($4\pi r_E^2$). That is,
 
 \begin{equation}
 E_E=E/4\pi r_E^2
-(\#eq:7)
+(\#eq:radiation-7)
 \end{equation}
 
-Substituting Equation \@ref(eq:6) in Equation \@ref(eq:7) gives
+Substituting Equation \@ref(eq:radiation-6) in Equation \@ref(eq:radiation-7) gives
 
 \begin{equation}
 E_E=\frac{4 \pi r_s^2E_s}{4\pi r_E^2}=\frac{r_s^2}{r_E^2}E_s
-(\#eq:8)
+(\#eq:radiation-8)
 \end{equation}
 
 The quantity $E_E$ which is the power available (per unit area per unit time) on a surface at the earth's distance from the sun, is the parameter of interest, the solar constant.
-Inserting Equation \@ref(eq:5) into Equation \@ref(eq:8) gives immediately:
+Inserting Equation \@ref(eq:radiation-5) into Equation \@ref(eq:radiation-8) gives immediately:
 
 \begin{equation}
 E_E=(\frac{r_s^2}{r_E^2})\sigma T_s^4
-(\#eq:9)
+(\#eq:radiation-9)
 \end{equation}
 
 **Problem 4**
 
-Use Equation \@ref(eq:9) and the following physical parameters to calculate the solar constant:
+Use Equation \@ref(eq:radiation-9) and the following physical parameters to calculate the solar constant:
 
 \begin{eqnarray}
 T_s&=&5700K \\
@@ -296,31 +296,31 @@ Rayleigh's criterion is derived from the theory of Fresnel diffraction by a circ
 
 \begin{equation}
 sin\alpha=0.61\lambda/r
-(\#eq:11)
+(\#eq:radiation-11)
 \end{equation}
 where
 $\lambda =$ the wavelength of radiation which forms the image,  
 $r=$ the radius of the objective,  
 $\alpha=$ the angle between the images of the objects.
 
-The limit to resolution given by Eq. \@ref(eq:12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
+The limit to resolution given by Eq. \@ref(eq:radiation-12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
 
 ```{r fig-rad-3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The Rayleigh criterion: Fresnel diffraction by circular aperture. '}
 knitr::include_graphics('figures/fig-rad-3.png')
 ```
 
-The limit to resolution given by Eq. \@ref(eq:12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
+The limit to resolution given by Eq. \@ref(eq:radiation-12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
 $$sin\alpha=\alpha-\alpha^3+\alpha^5-\alpha^7+...$$
 or 
 $$sin\alpha=\alpha+0(\alpha^3)$$.  
 Here $0(\alpha^3)$ means terms of order (size) strictly less than $\alpha^3$. If $\alpha$ is small, then $\alpha^3$ is very small and one can make the small angle approximation
 $$sin\alpha \approx \alpha$$
-which when substituted into Eq. \@ref(eq:11) yields:
+which when substituted into Eq. \@ref(eq:radiation-11) yields:
 \begin{equation}
 \alpha=0.61\lambda/r
-(\#eq:12)
+(\#eq:radiation-12)
 \end{equation}
-Rayleigh's criterion in the simple form of Eq. \@ref(eq:12) is a powerful tool in an analysis by the biologist of the evolution of sense organs. In particular, such questions as the scaling of eye size with organismal size (e.g., why are a whale's eyes the same size as those of a cow?), or the cellular organization of the organs themselves (e.g. the distribution of cones on the retina) have relatively simple answers when analyzed in this way. The ramifications of this analysis are explored in the following examples and problems.
+Rayleigh's criterion in the simple form of Eq. \@ref(eq:radiation-12) is a powerful tool in an analysis by the biologist of the evolution of sense organs. In particular, such questions as the scaling of eye size with organismal size (e.g., why are a whale's eyes the same size as those of a cow?), or the cellular organization of the organs themselves (e.g. the distribution of cones on the retina) have relatively simple answers when analyzed in this way. The ramifications of this analysis are explored in the following examples and problems.
 
 **Example 4**
 
@@ -331,7 +331,7 @@ $\lambda_m=5.08\times10^{-7}m$ (from prob. 2a)
 $r=1.0mm=1.0\times10^{-3}m$
 
 Putting these parameters into the formula for the Rayleigh criterion,</br>
-Eq. \@ref(eq:12), we get:
+Eq. \@ref(eq:radiation-12), we get:
 
 \begin{eqnarray}
 \alpha &=&0.61\lambda/r \\
@@ -368,9 +368,9 @@ The cones of the human eye happen to be maximally sensitive to the wavelength $\
 Answer:
 \begin{equation}
 \delta x=5.4\times10^{-6}m
-(\#eq:13)
+(\#eq:radiation-13)
 \end{equation}
-Anatomists have determined that the diameter of a retinal cone cell (which mediates color vision) is about $3.0 \times 10^{-6}m$. The separation between densely packed cone cells is smaller than the limit in Eq. \@ref(eq:13). Thus thinner cones will not produce higher visual acuity. The resolution is constrained by the physical parameters of the optical system. 
+Anatomists have determined that the diameter of a retinal cone cell (which mediates color vision) is about $3.0 \times 10^{-6}m$. The separation between densely packed cone cells is smaller than the limit in Eq. \@ref(eq:radiation-13). Thus thinner cones will not produce higher visual acuity. The resolution is constrained by the physical parameters of the optical system. 
 
 Since the eyes of all vertebrates are constructed from the same design, the same physical dimensions that determine the resolution of the human eye will determine resolution throughout the sub-phylum. It is the absolute, not relative, size of the physical components of the optical system which constrain resolution. If the diameters of cone cells are at present at the minimum which is biologically feasible, then a slight increase in the other dimensions of the human eye will give greater resolving power, but beyond a point $(\delta x = 3.0 \times 10^{-6}m)$, there is no payoff in visual acuity for larger eyes.
 
@@ -430,14 +430,14 @@ $$f_L=(C_S+V_L)/\lambda_B=\frac{C_S+V_L}{(C_S+V_S)/f_S}$$
 or
 \begin{equation}
 f_L=\frac{C_S+V_L}{C_S+V_S}f_S
-(\#eq:14)
+(\#eq:radiation-14)
 \end{equation}
 When the source and listener are moving toward each other a frequency
 $$f_L=\frac{C_S+V_L}{\lambda_f}=\frac{C_S+V_L}{(C_S-V_S)/f_S}$$
 or
 \begin{equation}
 f_L=\frac{C_S+V_S}{C_S-V_S}f_S
-(\#eq:14a)
+(\#eq:radiation-14a)
 \end{equation}
 is detected.
 
