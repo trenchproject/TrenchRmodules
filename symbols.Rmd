@@ -1,0 +1,207 @@
+---
+title: "List of symbols"
+author: "Lauren B. Buckley, Bryan Briones Ortiz, Aji John, Ofir Levy, Yutaro Sakairi"
+date: "March 19, 2020"
+output: html_document
+---
+
+**Symbol**|**Quantity**|**Unit**|**Dimension**
+:-----:|:-----:|:-----:|:-----:
+$A$|Area|m^2^|L^2^
+$A_b$|Area of cylinder representing animal’s body, measured inside fat|m^2^|L^2^
+$A_c$|Area in contact with substrate|m^2^|L^2^
+$A_e$|Area of emittance|m^2^|L^2^
+$A_h$|Area of cylinder representing animal’s body, measured at fleece tips|m^2^|L^2^
+$A_i$|Percent of total surface area exposed to radiation source $i$|dimensionless|—
+$A_s$|Area of cylinder representing animal’s body, measured at the skin|m^2^|L^2^
+$a$|Absorptivity|dimensionless|—
+$a_l$|Average absorptivity to long-wave radiation|dimensionless|—
+$a_s$|Average absorptivity to short-wave radiation|dimensionless|—
+$a(\lambda)$|Absorptivity at wavelength $\lambda$|dimensionless|—
+$B$|Sky thermal radiation|W m^-2^|H L^-2^
+$Br$|Breathing rate|min^-1^|T^-1^
+$b$|Wien constant|2.8978 $\times$ 10^-3^ m K|Lθ
+$C$|Total heat exchanged by conduction between animal and environment|W|H
+$C$|Convection|W m^-2^|M T^-1^
+$C$|Heat capacity|J K^-1^|H θ^-1^
+$c, c_p$|specific heat|J kg^-1^ K^-1^|L^2^ T^-2^ θ^-1^
+$C_a$|Water vapor concentration of the air|kg m^-1^|M L^-1^
+$C_e$|Water vapor concentration of exhaled air|kg m^-1^|M L^-1^
+$c$, $c_L$|Speed of light|3 $\times$ 10^8^ m s^-1^|L T^-1^
+$C_o$|Water vapor concentration at the surface of the organism|kg m^-1^|M L^-1^
+$C_S$|speed of sound|3.50 $\times$ 10^2^ m s^-1^|L T^-1^
+$C_V$|Specific heat of air at constant volume|20.79 J K^-1^ mol^-1^|L^2^ T^-2^ θ^-1^
+$c_v$|Volumetric specific heat|J m^-3^ K^-1^|H L^-3^ θ^-1
+$D, L$|Characteristic length|m|L
+$D$|Distance|m|L
+$D$|Leaf dimension parallel to the wind direction|M|L
+$d$|Diameter of cylinder representing animal’s body|m|L
+$_sd_a$|Saturation density of the air|kg m^-3^|M L^-3^
+$_sd_l$|Saturation density of the leaf|kg m^-3^|M L^-3^
+$d_i$|i^th^ difference term|dimensionless|—
+$d_b$|Fat thickness|m|L
+$d_f$|Fur or feather thickness|m|L
+$DD$|Degree days|K day|θ T
+$e$|Vapor pressure of atmosphere|millibar|M L^-1^ T^-2^
+$e$|Energy in a photon|J|H
+$E$|Rate of heat exchange between animal and environment by evaporation|W|H
+$E$|Total power|J s^-1^|M L^2^ T^-3^
+$E$|Water loss|kg s^-1^ m^-2^|M T^-1^ L^-2^
+$E$|Transpiration rate|kg m^-2^ s^-1^|M L^-2^ T^-1^
+$E_E$|power flow at earth's surface|J m^-2^ s^-1^|M T^-3^
+$E_b$|Body water losses|W m^-2^|H L^-2^ T^-1^
+$E_{ex}$|Respiratory water loss|W m^-2^|H L^-2^ T^-1^
+$E_f$|Radiation flux per unit frequency|J m^-2^|H L^-2^
+$E_k$|Kinetic energy|W|H
+$E_n$|Radiation emittance|J m^-2^ s^-1^|M T^-3^
+$E_{sw}$|Cutaneous water loss|W m^-2^|H L^-2^ T^-1^
+$E_r$|Rate of loss of heat by respiratory mechanisms|W|H
+$E_r$|Surface water loss|W m^-2^|H L^-2^ T^-1^
+$E_s$|Rate of loss of heat by sweating|W|H
+$E_s$|Power flow at sun's surface|J m^-3^ s^-1^|M T^-3^
+ | | | 
+$E_{\lambda}$|Radiation flux per unit wavelength|J m^-3^ s^-1^|H L^-3^ T^-1^
+$E(\lambda)$|Energy density as a function of wavelength|J m^-4^|M L^-2^ T^-2^
+$E(\nu)$|Energy density as a function of frequency|J m^-3^ s|M L ^-1^ T^-1^
+$e_x$|Net energy gained in period $x$|W|H T^-1^
+$F_H$|Heat flux|J s^-1^ m^-2^|M T^-3^
+$F_x$|Food captured in period $x$|W|H T^-1^
+$f$|frequency|m^-1^|L^-1^
+$f_L$|Frequency at listener|s^-1^|T^-1^
+$f_s$|Frequency at source|s^-1^|T^-1^
+$G$|Conduction|W m^-2^|M T^-1^
+$G$|Heat flux density|W m^-2^|H T^-1^ L^-2^
+$g$|gravity|m s^-2^|L T^-2^
+$Gr$|Grashof number|dimensionless|—
+$H$|Rate of heat exchange by convection between animal and environment|W|H
+$h$|height|m|L
+$h$|Planck's constant|6.63 $\times$ 10^-34^ J s|H T
+$h$|Heat transfer coefficient|J s^-1^ m^-2^ K^-1^|M T^-3^ θ^-1^
+$h_c$|Convection coefficient|W K^-1^|H T^-1^ θ^-1^
+$K$|von Karmen's constant| | 
+$K, K_M$|Eddy viscosity|m^2^ s^-1^|L^2^ T^-1^
+$K_0, K_n$|Conductance|W m^-2^ K^-1^|H L^-2^ T^-1^ θ^-1^
+$K_b$|Boltzmann's constant|1.38 $\times$ 10^-23^ J K^-1^|H θ^-1^
+$K_H$|Eddy diffusivity for heat|m^2^ s^-1^|L^2^ T^-1^
+$k$|Thermal conductivity coefficient|W m^-1^ K^-1^|H L^-1^ θ^-1^
+$k_a$|Thermal conductivity of air|W m^-1^ K^-1^|H L^-1^ θ^-1^
+$k_c$|Constant for convection coefficient of a cylinder|W m^-2^ K^-1^|H L^-2^ θ^-1^ T^-1^
+$k_f$|Thermal conductivity of fur or feathers|W m^-1^ K^-1^|H L^-1^ θ^-1^ T^-1^
+$k_d, k_f$|Thermal conductivity of fat|W m^-1^ K^-1^|H L^-1^ θ^-1^
+$K_g$|Thermal conductance|W K^-1^|H θ^-1^ T^-1^
+$k_h$|Thermal conductivity of hair (fleece)|W m^-1^ K^-1^|H L^-1^ θ^-1^
+$k_s$|Constant for convection coefficient of a sphere|W m^-2^ K^-1^|H L^-2^ θ^-1^ T^-1^
+$L$|Length of cylinder representing the body length of the animal|m|L
+$L$|Latent heat of evaporation|J kg^-1^|L^2^ T^-2^
+$M$|Metabolism|W m^-2^|H L^-2^ T^-1^
+$m$|mass|kg|M
+$m$|molecular weight|g mol^-1^|M
+$M_b$|Body mass|kg|M
+$M_{fx}$|Metabolic cost of foraging in period $x$|W|H T^-1^
+$M_{rx}$|Metabolic cost while resting in period $x$|W|H T^-1^
+$n$|number of moles|mol|—
+$n$|Wave number|m^-1^|L^-1^
+$Nu$|Nusselt number|dimensionless|—
+$P$|Photosynthesis|W m^-2^|H L^-2^ T^-1^
+$\overline{P}$|Mean air pressure|kg m^-1^ s^-2^|M L^-1^ T^-2^
+$p$|pressure|kg m^-1^ s^-2^|M L^-1^ T^-2^
+$Q$|Rate of heat loss|W|H
+$Q$|Heat energy|W m^-2^|H L^-2^ T^-1^
+$Q_a$|Absorbed radiation|W|H T^-1^
+$Q_a$|Abnormal radiation|W m^-2^|H L^-2^ T^-1^
+$Q_e$|Emitted radiation|W m^-2^|H L^-2^ T^-1^
+$Q_h$|Rate of loss of heat across hair (fleece)|W|H
+$Q_f$|Rate of loss of heat across fat|W|H
+$Q_H$|Rate of heat loss from fleect tips by convection|W|H
+$Q_{n}$|Radiation factor|W m^-2^|H L^-2^ T^-1^
+$Q_{NR}$|Net Radiation|W m^-2^|H L^-2^ T^-1^
+$q$|Rate of heat loss per unit area|W m^-2^|H L^-2^
+$R$|ideal gas constant|J kg^-1^ mol^-1^|M L^2^ T^-2^
+$R$|Radiation conductance|W m^-2^ K^-1^|H L^-2^ T^-1^ θ^-1^
+$R$|Black body radiation|W m^-2^|H L^-2^ T^-1^
+$R_+$|Total long- and short-wave radiation absorbed by the animal per unit time|W|H
+$R_−$|Total long-wave radiation emitted by the animal per unit time|W|H
+$R_a$|Thermal radiation originating in atmosphere|W m^-2^|H L^-2^
+$Re$|Reynolds number|dimensionless|—
+$R_g$|Thermal radiation originating from earth’s surface (including vegetation)|W m^-2^|H L^-2^
+$R_{Nh}$|Net radiation absorbed or emitted at hair tips|W|H
+$R_{Na}$|Net radiation absorbed or emitted at hair tips if temperature of hair tips were the same as that of the air|W|H
+$R_p$|short-wave radiation from the sun and sky|W m^-2^|H L^-2^ T^-1^
+$R_v$|Respiration rate|m^3^ s^-1^|L^3^ T^-1^
+$r$|radius|m|L
+$r$|Reflectivity|dimensionless|—
+$r$|Distance along a radius of a cylinder measured from its center|m|L
+$r_E$|Mean distance from earth to sun|1.5 $\times$ 10^11^ m|L
+$r_a$|Resistance to water diffusion across the boundary layer of air|s m^-1^|T L^-1^
+$r_b$|Body radius (not including fat)|m|L
+$r_e$|Resistance to water vapor loss|s m^-1^|T L^-1^
+$r_l$|Internal resistance of leaf|s m^-1^|T L^-1^
+$r_s$|Skin radius|m|L
+$r_s$|Radius of sun|7.1 $\times$ 10^8^ m|L
+$r_h$|Hair (fleece-tip) radius|m|L
+$r. h.$|Relative humidity|dimensionless|—
+$r(\lambda)$|Reflectivity at wavelength $\lambda$|dimensionless|—
+$S$|Direct solar radiation|W m^-2^|H L^-2^ T^-1^
+$S$|Sky radiation|W m^-2^|H L^-2^ T^-1^
+$SA$|Surface area|m^2^|L^2^
+$s$|Sky (scattered and reflected solar) radiation per unit area impinging on animal|W m^-2^|H
+$T$|Temperature|K|θ
+$T_a$|Air temperature|K|θ
+$T_{amax}$|Maximum daily air temperature|K|θ
+$T_{amin}$|Minimum daily air temperature|K|θ
+$T_B$|Boundary temperature|K|θ
+$T_b$|Body temperature of animal|K|θ
+$T_e$|Effective temperature, operative temperature|K|θ
+$T_f$|Fruit temperature|K|θ
+$T_g$|Ground temperature|K|θ
+$T_h$|Surface, "radiant or hair (fleece-tip) temperature of animal|K|θ
+$T_l$|Leaf temperature|K|θ
+$T_o$|Temperature of organism |K|θ
+$T_o, T_r, T_S$|Surface temperature|K|θ
+$T_s$|Skin temperature of animal|K|θ
+$T_s$|Surface temperature of sun|K|θ
+$T_t$|Threshold temperature|K|θ
+$T_w$|Wall temperature|K|θ
+$t$|time|s|T
+$t(\lambda)$|Transmittance at wavelength $\lambda$|dimensionless|—
+$U$|iternal energy|J|M L^2^ T^-2^
+$V$|volume|m^3^|L^3^
+$V$|Fluid velocity|m s^-1^|L T^-1^
+$V_L$|Volume of the lungs|m^3^|L^3^
+$V_L$|Listener velocity|m s^-1^|L T^-1^
+$V_s$|Source velocity|m s^-1^|L T^-1^
+$v$|velocity|m s^-1^|L T^-1^
+$v, w$|Wind speed|m s^-1^|L T^-1^
+$v$|volume|m^3^|L^3^
+$W$|work|kg m^2^ s^-2^ = J|M L^2^ T^-2^
+$W$|Leaf dimension transverse to the wind|m|L
+$W_x$|Metabolic cost of waiting through period $x$|W|H T^-1^
+$w$|Weight per unit height|kg s^-2^|M T^-2^
+$x$|Boundary layer thickness|m|L
+$X_a$|Volume fraction - air|dimensionless|—
+$X_m$|Volume fraction - minerals|dimensionless|—
+$X_o$|Volume fraction - organics|dimensionless|—
+$X_w$|Volume fraction - water|dimensionless|—
+$Z_f$|“Impedance” to flow of heat through fat|s K J^-1^|θ W^-1^
+$Z_h$|“Impedance” to flow of heat through hair|s K J^-1^|θ W^-1^
+$z$|Depth|m|L
+α|“Conductance” associated with radiation and convection|W K^-1^|W^-1^
+$\alpha$|angle|radians|—
+β|“Conductance” associated with animal’s insulation (fat and hair)|W K^-1^|W^-1^
+δ|Boundary layer thickness|m|L
+ε|Emissivity|dimensionless|—
+$\nu$|Kinematic viscosity|m^2^ s^-1^|L^2^ T^-1^
+$\nu$|frequency|s^-1^|T^-1^
+$σ$|Stefan-Boltzmann constant| 5.67 $\times$ 10^-8^ W m^-2^ K^-4^|H L^-2^ θ^-4^
+$\lambda$|wavelength|m|L
+$\lambda_B$|Wavelength behind source|m|L
+$\lambda_F$|Wavelength in front of source|m|L
+$\lambda_m$|wavelength at which black-body spectrum has maximum energy density|m|L
+$\lambda_{max}$|Wavelength of maximum radiation|m|L
+$\phi$|Energy flux|W m^-2^|H L^-2^ T^-1^
+$\rho$|Density|kg m^-3^|M L^-3^
+$\mu$|Fluid viscosity|kg m^-1^ s^-1^|M L T^-1^
+$\gamma$|Thermal diffusivity|m^2^ s^-1^|L^2^ T^-1^
+$\eta$|Small scale eddy size|m|L
+$\tau$|Shear stress|kg m^-1^ s^-2^|M L^-1^ T^-2^
+$\tau_t$|Shear stress attributed to turbulence|kg m^-1^ s^-2^|M L^-1^ T^-2^
