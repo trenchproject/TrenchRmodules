@@ -26,7 +26,7 @@ The remainder of the module is devoted to developing and analyzing simple models
 
 In the following pages, the reader is formally introduced to the leaf energy budget. Typical values for environment variables and leaf parameters are discussed. Some simple calculations are then made to see how radiation, convection and transpiration affect leaf temperature.
 
-The graphical method of analysis used by Gates (1968) is then employed to understand a more detailed energy budget model. Problems with accompanying solutions are followed by an appendix on symbols, units and dimensions. 
+The graphical method of analysis used by Gates (1968) is then employed to understand a more detailed energy budget model. Problems with accompanying solutions conclude the chapter. 
 
 ## LEAF ENERGY BUDGET
 

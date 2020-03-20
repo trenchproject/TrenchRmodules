@@ -18,7 +18,7 @@ In earlier modules of the thermodynamics series, we considered the application o
 \Delta U = M + Q_a - Q_e - LE - C - G
 (\#eq:climatespace-1)
 \end{equation}
-where ^[In some of the biological literature the units of Equation \@ref(eq:climatespace-1) are cal cm^-2^ min^-1^, but we have adopted the mks system here. The reader may find Appendix I, modules already referenced and Fletcher (1977) helpful in making conversions.]
+where ^[In some of the biological literature the units of Equation \@ref(eq:climatespace-1) are cal cm^-2^ min^-1^, but we have adopted the mks system here.]
 <div class="nobullet">
 * $\Delta U$ = change in internal energy ($W m^{-2}$),
 * $M$ = metabolism ($W m^{-2}$ ),
@@ -37,7 +37,7 @@ In this module we will discuss a model for which the animal's temperature is not
 
 To describe the physical heat energy limits that an organism can tolerate, Porter and Gates (1969) began by examining the abiotic components of the environment. Four climatic factors -- radiation, air temperature, wind speed and humidity -- were recognized as affecting an animal's thermal balance. The authors decided that evaporative losses would be small for many organisms and could be included as maximum and minimum rates without making the losses a function of the humidity.
 
-Tracy (1976) has, however, shown that when investigating the thermal and mass balance of wet-skinned animals such as slugs, frogs and salamanders, the water vapor concentration of the soil and the air must be known to accurately quantify these exchanges. The climate space concept has generally not been extended to include the environmental variable of water vapor concentration. Likewise, the formulation of Porter and Gates (1969) does not consider the effects of wind direction. Nor is surface temperature of the ground explicitly indicated (but see Equation \@ref(eq:climatespace-3) and Appendix II for calculation of $Q_a$). Radiation, air temperature and wind speed, though, which are the physical factors included in the climate space concept, are the most important abiotic variables for the thermal heat balance of most terrestrial animals.
+Tracy (1976) has, however, shown that when investigating the thermal and mass balance of wet-skinned animals such as slugs, frogs and salamanders, the water vapor concentration of the soil and the air must be known to accurately quantify these exchanges. The climate space concept has generally not been extended to include the environmental variable of water vapor concentration. Likewise, the formulation of Porter and Gates (1969) does not consider the effects of wind direction. Nor is surface temperature of the ground explicitly indicated (but see Equation \@ref(eq:climatespace-3) and Appendix I for calculation of $Q_a$). Radiation, air temperature and wind speed, though, which are the physical factors included in the climate space concept, are the most important abiotic variables for the thermal heat balance of most terrestrial animals.
 
 ### Absorbed radiation
 
@@ -84,7 +84,7 @@ where
 
 and the other symbols are as in Equation \@ref(eq:climatespace-2). Gates has assumed that the $A_i$s are one-half in each case (Siegel and Howell 1972 show how this can be derived). As before, we will let $\bar{a}_L = 1.0$. It is also convenient to approximate the ground temperature with the air temperature. In the early evening $T_g > T_a$, but several hours before sunrise the reverse is true. Equation \@ref(eq:climatespace-4) with the aforementioned assumptions is the leftmost line plotted in Figure \@ref(fig:fig-climatespace-1). This means that if an animal were out foraging under a clear sky at night at an air temperature  of $20^{\circ}C$, it would receive $50 W m^{-2}$ less than if it were resting in a burrow.
 
-Finally, we consider the condition when an organism is exposed to full sunlight with an absorptivity to shortwave radiation of 0.8. In this case, the radiation as a function of air temperature is given by the line to the right of the blackbody line. This line is "fuzzy" to remind us that this relationship is less well-defined than the other curves. The assumptions and calculations necessary to plot this line are discussed in Appendix II. If we now consider the difference between a blackbody and a full sunlight habitat, both at $20^{\circ}C$ air temperature, we see that the latter would receive $300 W m^{-2}$ more radiation.
+Finally, we consider the condition when an organism is exposed to full sunlight with an absorptivity to shortwave radiation of 0.8. In this case, the radiation as a function of air temperature is given by the line to the right of the blackbody line. This line is "fuzzy" to remind us that this relationship is less well-defined than the other curves. The assumptions and calculations necessary to plot this line are discussed in Appendix I. If we now consider the difference between a blackbody and a full sunlight habitat, both at $20^{\circ}C$ air temperature, we see that the latter would receive $300 W m^{-2}$ more radiation.
 
 The importance of Figure \@ref(fig:fig-climatespace-1) is that we have established a region bounded by the clear sky, plus ground radiation line and the 0.8 absorptivity line that limits the combinations of $Q_a$ and $T_a$ found in the natural environment. This region can be divided into areas: one between the clear sky at night and blackbody line which governs the range of all nighttime conditions ($S$ and $s$ of Equation \@ref(eq:climatespace-2) are zero), and a second area enclosed by the blackbody and the 0.8 absorptivity lines which gives the range of most daytime conditions. The average radiation intensity can be less than blackbody levels during the day when clouds prevent the surface from receiving shortwave radiation. To see this we need to compute the absorbed radiation in the open, $Q_{a0}$ , and compare it to that absorbed in a blackbody cavity, $Q_{ac}$. If solar radiation is zero ($S = s = 0$) then Equation \@ref(eq:climatespace-3) reduces to $Q_{a0} = \frac{(R_a + R_g)}{2}$. We assume that the surface temperature is equal to the air temperature and the temperature at the base of the clouds is less than air temperature so $R_a < R_g$ and $Q_{a0} < Q_{ac}$ . In this case, the higher the clouds the cooler the radiating surface of their bases. This radiation, however, will always be greater than the radiation from a clear sky at night.
 
@@ -773,7 +773,7 @@ where
 * $D$ = diameter of the animal or cylinder ($m$).
 </div>
 
-Recently Mitchell (1976) found a spherical shape is the best overall model for convective transfer in the terrestrial environment. He used weight divided by density, which is equal to the volume, all to the one-third power as the characteristic dimension instead of the diameter. (Using laboratory measurements it is often possible to get better estimates of he for a particular geometry.) Generally one would calculate the Reynolds and Nusselt numbers to find the heat transfer coefficient (Kreith 1973). This procedure is outlined in the module on heat transfer processes (Stevenson 1978). With a number of assumptions which introduce only small errors, it is possible to write Mitchell's result in the same form as that of Porter and Gates (see Appendix III). We have
+Recently Mitchell (1976) found a spherical shape is the best overall model for convective transfer in the terrestrial environment. He used weight divided by density, which is equal to the volume, all to the one-third power as the characteristic dimension instead of the diameter. (Using laboratory measurements it is often possible to get better estimates of he for a particular geometry.) Generally one would calculate the Reynolds and Nusselt numbers to find the heat transfer coefficient (Kreith 1973). This procedure is outlined in the module on heat transfer processes (Stevenson 1978). With a number of assumptions which introduce only small errors, it is possible to write Mitchell's result in the same form as that of Porter and Gates (see Appendix II). We have
 
 \begin{equation}
 h_c = k_s V^{0.60} {M_b}^{-0.133}
@@ -810,7 +810,7 @@ a_L=1 #mean absorptivity to longwave radiation
 Q_a_plot= Q_a(T_a_plot)
 plot(Q_a_plot, T_a_plot, type="l", xlim=range(0,1000), xlab="Absorbed Radiation Q_a (Wm^-2)", ylab= "Air temperature T_a (C)")
 
-#right line: full sun ##see Appendix II##
+#right line: full sun ##see Appendix I##
 a_L=0.8 #mean absorptivity to longwave radiation
 Q_a_plot= Q_a(T_a_plot)
 points(Q_a_plot, T_a_plot, type="l")
@@ -1068,7 +1068,7 @@ Table B
 
 4. Spotila et al. (1973) suggests that the area labeled A in the climate space of Figure \@ref(fig:fig-climatespace-6) need not be included. Why might this be true? Are there any other areas like this? How does your answer compare with the information in Figure \@ref(fig:fig-climatespace-3)? 
 
-5. A comparison of the climate space diagrams in this module with those found in the Porter and Gates paper shows that the slopes of the lines are usually different under the same set of environmental and physiological conditions. This is because a different convection coefficient is used. Below is a table of weights and diameters for the same animals. Compute the convection coefficient in two ways: 1) using the formula that Porter and Gates (1969) provided; 2) using Mitchell's (1976) relationship, assume $V$ = 1.0 ms^-1^. Now make the comparison in a more systematic fashion; Let $V$ = 0.1, 0.5, 1.0, 3.0, and 10 ms^-1^ and $M_b$ = 0.00001, 0.0001, 0.1, 10 and 1000 kg. Use the relationship between length and weight given in Appendix III to find a diameter corresponding to the weight values given. Compare the values by forming the ratio of Mitchell's $h_c$ divided by that of Porter and Gates.
+5. A comparison of the climate space diagrams in this module with those found in the Porter and Gates paper shows that the slopes of the lines are usually different under the same set of environmental and physiological conditions. This is because a different convection coefficient is used. Below is a table of weights and diameters for the same animals. Compute the convection coefficient in two ways: 1) using the formula that Porter and Gates (1969) provided; 2) using Mitchell's (1976) relationship, assume $V$ = 1.0 ms^-1^. Now make the comparison in a more systematic fashion; Let $V$ = 0.1, 0.5, 1.0, 3.0, and 10 ms^-1^ and $M_b$ = 0.00001, 0.0001, 0.1, 10 and 1000 kg. Use the relationship between length and weight given in Appendix II to find a diameter corresponding to the weight values given. Compare the values by forming the ratio of Mitchell's $h_c$ divided by that of Porter and Gates.
 
 | Animal   | Diameter (m) | Body Mass (kg) |
 |----------|:------------:|:--------------:|
@@ -1247,7 +1247,7 @@ Porter and Gates' $h_c$
 | 10.0 |    2.154    |  119.75 | 43.03 |  15.47 |  9.27 |  5.56 |  1.99 |              |
 
 
-Let $D=L=(\frac{M_b}{\rho})^{1/3}$ from Appendix III, $\rho = 1 \times 10^3 kg\;m^{-3}$ then
+Let $D=L=(\frac{M_b}{\rho})^{1/3}$ from Appendix II, $\rho = 1 \times 10^3 kg\;m^{-3}$ then
 $$\frac{h_{c2}}{h_{c1}}=\frac{17.24V^{0.60}M_b^{-0.133}}{0.927V^{0.3}[(\frac{M_b}{\rho})^{1/3}]^{-2/3}}=4.01V^{0.27}M_b^{0.089}$$
 
 Ratio of $hc_2/hc_1$
@@ -1372,10 +1372,7 @@ If the animal were simply resting outside, to reduce its metabolism to the lowes
 knitr::include_graphics('figures/fig-climatespace-p7.png')
 ```
 
-> Appendix I
-**!ADD APPENDIX?**
-
-## Appendix II
+## Appendix I
 **Calculation of the Right-Hand Limit of the Climate Space**  
 In their original paper, Porter and Gates (1969) state with regard to
 Equation \@ref(eq:climatespace-3), "... An estimate was made of $\overline{Q_a}$ as generally related to air temperature for value of absorptivity from 0.2 to 1.0." Gates (1977) shows how to calculate $S$ and $s$ as a function of latitude, time of year, and time of day. A representative value of 40° was chosen for latitude and then values of $S$, $s$ were calculated under clear sky conditions in the late morning and afternoon. For $r$, a representative value of 0.15 was probably used. Curves of $T_a$ and $T_g$ as a function of time of day such as shown in Figure \@ref(fig:fig-climatespace-2) were then taken from weather bureau statistics. $R_a$ and $R_g$ could then be calculated using the Stefan-Boltzmann law. All the numbers necessary to estimate $\overline{Q_a}$ are then available. The final step is to choose pairs of $T_a$ and $Q_a$ that are to be used. In Figure \@ref(fig:fig-climatespace-3), 9:00-10:00 are hours of the day when this is true. This procedure is repeated at several latitudes and times of the year, from which the right-hand boundary can be derived.
@@ -1383,7 +1380,7 @@ Equation \@ref(eq:climatespace-3), "... An estimate was made of $\overline{Q_a}$
 Campbell (1977 pp.89-92) presents simplified equations to calculate the left- and right-hand boundaries of the climate space. He includes a correction factor to average the longwave radiation from the ground and the sky for the left-hand boundary. The direct beam and diffuse shortwave radiation fluxes are simply given for the right-hand boundary. The reflected shortwave component seems to be included in the diffuse term which at 25% of the direct flux is higher than Gates (1978) gives.
 The absorbed shortwave radiation is then added to the left-hand boundary values. Therefore as $T_a$ increases the shortwave component is constant using Campbell's equations but using Gates' method the shortwave flux increases.
 
-### Appendix III
+### Appendix II
 **Derivation of the Constant $k_s$ for the Convection Coefficient**  
 Mitchell (1976) reported that the best overall relationship between the Reynolds and Nusselt numbers is given by
 
