@@ -488,39 +488,21 @@ Substituting for $d$, we obtain
 $$\omega = 2a/[(2a/\omega)^{1/2}]^2=\omega$$
 Thus the equation is indeed satisfied.
 
-## COMPUTER EXERCISES
-
-Program DIFF is basically a plotting routine where the graph of a function demonstrates some property or use of derivatives. The program is designed to motivate the following concepts: the derivative as a slope, the zero slope at a critical point, partial derivatives, and the distinction between continuous and discrete rates of change.
-
-The specific user options and program features are detailed in the User's Guide for Program DIFF. The program is designed for easy conversion to be compatible with a continuous off-line plotter (such as Calcomp). Thus one option is setting XSLICE, YSLICE to "slice" and remove part of the three-dimensional graph to expose a hidden profile. This option is of limited benefit with a line printer, but is of great advantage with an off-line plotter for displaying critical points.
-
-In each exercise, the user must input certain parameter values. By repeating an exercise with different parameter values, the user can gain a better intuitive understanding of how the behavior of functions and their derivatives depends on the chosen parameter values.
+## ADDITIONAL EXERCISES
 
 1. In the example in the text treating oxygen consumption(see also problem 3 above), the oxygen consumption $(Q)$ depended on both the activity level $(m)$ and the dry weight $(W)$:
 $$Q=0.00187(m+1)W^{.7}$$
-where the units of $Q$ are mlO~2~/hr. For the computer exercise, we use the correspondence
+where the units of $Q$ are mlO~2~/hr. For this exercise, we use the correspondence
 $$Q \rightarrow z,\;m \rightarrow x,\;W\rightarrow y$$
 so that the equation is
 $$z=0.00187(x+1)y^{0.7}$$
-Choose a value for $y$ with $0<y\le3000$ mg and evaluate the first partial derivative $\partial z/\partial x$ at that value of $y$. Now use program DIFF:
+a. Evaluate the first partial derivative $\partial z/\partial x$. If you plot $\partial z/\partial x$ with increasing $x$, is it supposed to be a straight line, concave upward, concave downward?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Choose function 1.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2a. If a line printer is used, obtain the plot and check that the curvature with increasing $x$ agrees with what your partial derivative suggests. Is the shape supposed to be a straight line, concave upward, concave downward?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2b. If an off-line printer is used, set XSLICE = 0 and YSLICE = your choice of $y$. Obtain the plot. Does the exposed profile agree with your partial derivative? Repeat the exercise with XSLICE = 0, YSLICE = 0. Does the graph have the same general shape as Fig. \@ref(fig:fig-calcdiff-7) in the text? What is different? Now reverse the roles of $x$, $y$: pick $x$ so that $0 \le x \le 1$, evaluate $\partial z/\partial y$ at that value, set YSLICE = 0 and XSLICE = your value for $x$ and obtain your plot. Does the exposed profile agree with your function for $\partial z/\partial y$? That is, is the shape supposed to be a straight line, circle, parabola ... ?
+b. Now reverse the roles of $x$, $y$: evaluate $\partial z/\partial y$.If you were to plot $\partial z/\partial y$ against $x$, is the shape supposed to be a straight line, circle, parabola ... ?
 
 2. This exercise illustrates how different parameter values can affect the properties of a function and its critical points. Function 2 is used in this exercise and is a simple polynomial in two independent variables:
 $$z=(P1)x^2+(P2)y^2$$
-First calculate all the partial derivatives needed to locate and classify a critical point for general values of $P1$, $P2$. Now use program DIFF:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Choose function 2.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2a. If a line printer is used, set values for $P1$, $P2$ (from -1.0 to 1.0) and obtain the plot. Locate and classify the critical point for these parameter values. Now check that the plot does show the same type of critical point at the same location given by your calculations. Repeat for several values of. $P1$, $P2$ and note the dramatic change in type of critical point. How does the location change?
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2b. If an off-line plotter is used, choose values for $P1$, $P2$, XSLICE and YSLICE and obtain the plot. Repeat the exercise with different values for XSLICE, YSLICE only, and obtain the plot. Classify the critical point as described in the text and compare with the plot. By repeating the exercise with different slicing values (XSLICE, YSLICE), you can search for the critical point by observing the changes in the exposed profile. For example, run the program four times using the following values:
-
-(XSLICE,YSLICE) = $(-2,-2)$, $(-2,-1)$, $(-2,0)$, $(-2,1)$
-
-You can also keep YSLICE = -2 and vary XSLICE. Check that the exposed profile agrees with your first derivative. For example, if XSLICE = -2, YSLICE = -1, then the sliced edge should represent $\partial z/\partial x$ at $y$ = -1.
+Calculate all the partial derivatives needed to locate and classify a critical point. Set values for $P1$, $P2$ and evaluate the critical point.
 
 3. When a beam of rectangular cross-section is cut lengthwise from a log, its strength can sometimes be well described by the following function:
 $$S=kWD^2$$
@@ -528,16 +510,9 @@ where
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$S$ = strength of beam  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$W$ = width of beam  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$D$ = depth of beam
-as shown in Figure A, and where $k$ is a constant which depends on the type of tree used. Assume that the log is circular in cross-section and that the beam is cut so each corner reaches the outside of the log, as shown. Assume $k$ = 0.1.
+as shown in Figure A, and where $k$ is a constant which depends on the type of tree used. Assume that the log is circular in cross-section and that the beam is cut so each corner reaches the outside of the log, as shown. Assume $k$ = 0.1. Find the width and depth of the beam which give the maximum strength. Assume the radius of the log is $r$.  
 
 > Figure A. Rectangular beam cut from a log.
-
-&nbsp;&nbsp;&nbsp;&nbsp;a. Find the width and depth of the beam which give the maximum strength. Assume the radius of the log is r.  
-&nbsp;&nbsp;&nbsp;&nbsp;b. Now use program DIFF:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Choose function 3.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Let $P2$ = radius of the log. Choose $P2$ so that $0 < P2 \le 10$.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Plot the function. From the graph with $y$ representing $S$ and $x$ representing $W$, estimate the width $W$ which gives the maximum strength.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Now calculate the depth $D$. Check that your estimates for $W$, $D$ agree with your general formula of part a.  
 
 4. Animal populations newly introduced into a region have been observed to increase rapidly in number and soon thereafter to fall drastically (Caughley 1970a, b) as indicated in Figure B. One theory is that the population at first "senses" an infinite food supply and then reproduces rapidly to the point of overgrazing the area. The birth rate remains the same but the death rate (perhaps of young) dramatically increases until the population is low enough to match the food supply. The population then increases more slowly and seems to stabilize. Migration is also involved but is poorly understood. The second population rise to a "steady-state" suggests some adaptation or social "learning" by the population concerning their new environment.
 
@@ -553,24 +528,7 @@ From this formulation, we see that the logistic model assumes that the populatio
 
 The computer is used here to illustrate this inadequacy of differential calculus. The derivative above is replaced by a difference:
 $$\frac{N(t+1)-N(t)}{(t+1)-t}=rN(t)\Big(\frac{K-N(t)}{K}\Big)$$
-This model assumes the population changes only once per time period (e.g. annually) and is unable to adjust in between. Is this more or less realistic than the original logistic model?
-
-The computer program for this problem plots the population size $(N)$ as a function of time $(t)$ for a given set of parameters (constants). You should note in each plot whether $N$ fluctuates at all, whether the initial drop is steep, and whether the population size eventually stabilizes at the carrying capacity $(K)$.
-
-The input parameters are identified as:  
-&nbsp;&nbsp;&nbsp;&nbsp;$P1$ = initial size
-&nbsp;&nbsp;&nbsp;&nbsp;$P2$ = growth rate $(r)$
-
-However, the computer program restricts $P1$ to $[-10,10]$. The range of $N_o$ (initial population size) is chosen to be $[50,250]$. Thus we use $P1$ to represent, but not equal, the initial size as follows:
-$$P1=\frac{N_0-150}{10}$$
-The carrying capacity is fixed at $K = 500$. Investigate the different kinds of behavior of the solution by using program DIFF:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Choose function 4.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Choose $P1$, $P2$ so that $-10\le P1 \le 10$ and $1 \le P2 \le 4$.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Obtain the plot.  
-
-Check that the initial size on the graph is correctly represented by your choice of $P1$. Repeat the exercise if you wish, but be sure two of your plots have $P1 = -10$, $P2 = 3.5$ and $P1 = -10$, $P2 = 1.5$. Can you estimate the value for P2 above which the oscillations are no longer regular (or periodic). i.e. May's "chaos" (1978)?
-
-Do you think this "difference" model could be a fairly good description of the introduced population? How would you include social or genetic "learning" into the model? That is, once the population size rises and then falls, what parameters might change in the model so that the next rise would be more gradual?
+This model assumes the population changes only once per time period (e.g. annually) and is unable to adjust in between. Is this more or less realistic than the original logistic model? How would you include social or genetic "learning" into the model? That is, once the population size rises and then falls, what parameters might change in the model so that the next rise would be more gradual?
 
 5. The reaction $(Y)$ of the body to a dose $(X)$ of drug can be represented by the function:
 \begin{eqnarray}
@@ -581,12 +539,8 @@ Y(X)&=&X^2(P1/2-P2\cdot X/3) \\
 where $P1$ and $P2$ depend on certain body characteristics and on the maximum dosage which can be administered. $Y$ indicates the strength of the reaction, measured in millimeters of mercury if blood pressure is being tested, or perhaps degrees Celsius if change in body temperature is being measured.
 
 Find the dose that has "maximum sensitivity," i.e. where the **rate of increase** of $Y$ is greatest. Is this "critical point" a maximum or minimum for $Y$"? What is this point called on the graph for $Y$?  
-&nbsp;&nbsp;&nbsp;&nbsp;Now use program DIFF:  
-&nbsp;&nbsp;&nbsp;&nbsp;1. Choose function 5.  
-&nbsp;&nbsp;&nbsp;&nbsp;2. Choose $P1$, $P2$ so that $0 \le P1 \le 5$, $.1 \le P2 \le 1.0$.  
-&nbsp;&nbsp;&nbsp;&nbsp;Plot the function and calculate the correct value for $X$ at the "critical point." Check that the graph of $Y(X)$ has the behavior you predicted at this point.
 
-## ANSWERS TO THE COMPUTER EXERCISES
+## ANSWERS TO THE ADDITIONAL EXERCISES
 
 1. $\partial z/\partial x=(0.00187y^{0.7})=$constant for given $y$.  
 Exposed profile should be a straight line.  
@@ -599,7 +553,7 @@ $\partial z/\partial x=0$ if $x=0$
 $\partial z/\partial y=0$ if $y=0$  
 Thus $(x,y)=(0,0)$ is the only critical point.  
 To classify the critical point, evaluate:
-$$\frac{\partial^2x}{\partial x^2}\frac{\partial^2z}{\partial y^2}-\Big(\frac{\partial^2 z}{\partial x\partial y}\Big)^2=4(P1)(P2)$$
+$$\frac{\partial^2z}{\partial x^2}\frac{\partial^2z}{\partial y^2}-\Big(\frac{\partial^2 z}{\partial x\partial y}\Big)^2=4(P1)(P2)$$
 Pick $P1=.6$, $P2=1.0$  
 Then $4(P1)(P2)>0$, $\frac{\partial^2z}{\partial x^2}=2(P1)>0$ and the point is a relative minimum.
 
@@ -611,7 +565,7 @@ $$(2r)^2=W^2+D^2$$
 Thus
 \begin{eqnarray}
 D^2&=&4r^2-W^2 \\
-S&=&(0.1)(4)r^2W-(0.1)W^3 \\
+S&=&(0.1)4r^2W-(0.1)W^3 \\
 \frac{dS}{dW}&=&(0.4)r^2-(0.3)W^2 \\
 0&=&(0.4)r^2-(0.3)W^2
 \end{eqnarray}
