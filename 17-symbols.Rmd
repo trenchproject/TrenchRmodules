@@ -2,8 +2,11 @@
 title: "List of symbols"
 author: "Lauren B. Buckley, Bryan Briones Ortiz, Aji John, Ofir Levy, Yutaro Sakairi"
 date: "March 19, 2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
+# List of Symbols
 
 **Symbol**|**Quantity**|**Unit**|**Dimension**
 :-----:|:-----:|:-----:|:-----:
@@ -24,26 +27,24 @@ $b$|Wien constant|2.8978 $\times$ 10^-3^ m K|Lθ
 $C$|Total heat exchanged by conduction between animal and environment|W|H
 $C$|Convection|W m^-2^|M T^-1^
 $C$|Heat capacity|J K^-1^|H θ^-1^
-$c, c_p$|specific heat|J kg^-1^ K^-1^|L^2^ T^-2^ θ^-1^
 $C_a$|Water vapor concentration of the air|kg m^-1^|M L^-1^
 $C_e$|Water vapor concentration of exhaled air|kg m^-1^|M L^-1^
-$c$, $c_L$|Speed of light|3 $\times$ 10^8^ m s^-1^|L T^-1^
 $C_o$|Water vapor concentration at the surface of the organism|kg m^-1^|M L^-1^
 $C_S$|speed of sound|3.50 $\times$ 10^2^ m s^-1^|L T^-1^
 $C_V$|Specific heat of air at constant volume|20.79 J K^-1^ mol^-1^|L^2^ T^-2^ θ^-1^
+$c$, $c_L$|Speed of light|3 $\times$ 10^8^ m s^-1^|L T^-1^
+$c, c_p$|specific heat|J kg^-1^ K^-1^|L^2^ T^-2^ θ^-1^
 $c_v$|Volumetric specific heat|J m^-3^ K^-1^|H L^-3^ θ^-1
-$D, L$|Characteristic length|m|L
 $D$|Distance|m|L
 $D$|Leaf dimension parallel to the wind direction|M|L
+$D, L$|Characteristic length|m|L
+$DD$|Degree days|K day|θ T
 $d$|Diameter of cylinder representing animal’s body|m|L
 $_sd_a$|Saturation density of the air|kg m^-3^|M L^-3^
 $_sd_l$|Saturation density of the leaf|kg m^-3^|M L^-3^
 $d_i$|i^th^ difference term|dimensionless|—
 $d_b$|Fat thickness|m|L
 $d_f$|Fur or feather thickness|m|L
-$DD$|Degree days|K day|θ T
-$e$|Vapor pressure of atmosphere|millibar|M L^-1^ T^-2^
-$e$|Energy in a photon|J|H
 $E$|Rate of heat exchange between animal and environment by evaporation|W|H
 $E$|Total power|J s^-1^|M L^2^ T^-3^
 $E$|Water loss|kg s^-1^ m^-2^|M T^-1^ L^-2^
@@ -63,6 +64,8 @@ $E_s$|Power flow at sun's surface|J m^-3^ s^-1^|M T^-3^
 $E_{\lambda}$|Radiation flux per unit wavelength|J m^-3^ s^-1^|H L^-3^ T^-1^
 $E(\lambda)$|Energy density as a function of wavelength|J m^-4^|M L^-2^ T^-2^
 $E(\nu)$|Energy density as a function of frequency|J m^-3^ s|M L ^-1^ T^-1^
+$e$|Vapor pressure of atmosphere|millibar|M L^-1^ T^-2^
+$e$|Energy in a photon|J|H
 $e_x$|Net energy gained in period $x$|W|H T^-1^
 $F_H$|Heat flux|J s^-1^ m^-2^|M T^-3^
 $F_x$|Food captured in period $x$|W|H T^-1^
@@ -71,8 +74,8 @@ $f_L$|Frequency at listener|s^-1^|T^-1^
 $f_s$|Frequency at source|s^-1^|T^-1^
 $G$|Conduction|W m^-2^|M T^-1^
 $G$|Heat flux density|W m^-2^|H T^-1^ L^-2^
-$g$|gravity|m s^-2^|L T^-2^
 $Gr$|Grashof number|dimensionless|—
+$g$|gravity|m s^-2^|L T^-2^
 $H$|Rate of heat exchange by convection between animal and environment|W|H
 $h$|height|m|L
 $h$|Planck's constant|6.63 $\times$ 10^-34^ J s|H T
@@ -82,26 +85,26 @@ $K$|von Karmen's constant| |
 $K, K_M$|Eddy viscosity|m^2^ s^-1^|L^2^ T^-1^
 $K_0, K_n$|Conductance|W m^-2^ K^-1^|H L^-2^ T^-1^ θ^-1^
 $K_b$|Boltzmann's constant|1.38 $\times$ 10^-23^ J K^-1^|H θ^-1^
+$K_g$|Thermal conductance|W K^-1^|H θ^-1^ T^-1^
 $K_H$|Eddy diffusivity for heat|m^2^ s^-1^|L^2^ T^-1^
 $k$|Thermal conductivity coefficient|W m^-1^ K^-1^|H L^-1^ θ^-1^
 $k_a$|Thermal conductivity of air|W m^-1^ K^-1^|H L^-1^ θ^-1^
 $k_c$|Constant for convection coefficient of a cylinder|W m^-2^ K^-1^|H L^-2^ θ^-1^ T^-1^
 $k_f$|Thermal conductivity of fur or feathers|W m^-1^ K^-1^|H L^-1^ θ^-1^ T^-1^
 $k_d, k_f$|Thermal conductivity of fat|W m^-1^ K^-1^|H L^-1^ θ^-1^
-$K_g$|Thermal conductance|W K^-1^|H θ^-1^ T^-1^
 $k_h$|Thermal conductivity of hair (fleece)|W m^-1^ K^-1^|H L^-1^ θ^-1^
 $k_s$|Constant for convection coefficient of a sphere|W m^-2^ K^-1^|H L^-2^ θ^-1^ T^-1^
 $L$|Length of cylinder representing the body length of the animal|m|L
 $L$|Latent heat of evaporation|J kg^-1^|L^2^ T^-2^
 $M$|Metabolism|W m^-2^|H L^-2^ T^-1^
-$m$|mass|kg|M
-$m$|molecular weight|g mol^-1^|M
 $M_b$|Body mass|kg|M
 $M_{fx}$|Metabolic cost of foraging in period $x$|W|H T^-1^
 $M_{rx}$|Metabolic cost while resting in period $x$|W|H T^-1^
+$m$|mass|kg|M
+$m$|molecular weight|g mol^-1^|M
+$Nu$|Nusselt number|dimensionless|—
 $n$|number of moles|mol|—
 $n$|Wave number|m^-1^|L^-1^
-$Nu$|Nusselt number|dimensionless|—
 $P$|Photosynthesis|W m^-2^|H L^-2^ T^-1^
 $\overline{P}$|Mean air pressure|kg m^-1^ s^-2^|M L^-1^ T^-2^
 $p$|pressure|kg m^-1^ s^-2^|M L^-1^ T^-2^
@@ -185,23 +188,23 @@ $X_w$|Volume fraction - water|dimensionless|—
 $Z_f$|“Impedance” to flow of heat through fat|s K J^-1^|θ W^-1^
 $Z_h$|“Impedance” to flow of heat through hair|s K J^-1^|θ W^-1^
 $z$|Depth|m|L
-α|“Conductance” associated with radiation and convection|W K^-1^|W^-1^
+$\alpha$|“Conductance” associated with radiation and convection|W K^-1^|W^-1^
 $\alpha$|angle|radians|—
-β|“Conductance” associated with animal’s insulation (fat and hair)|W K^-1^|W^-1^
-δ|Boundary layer thickness|m|L
-ε|Emissivity|dimensionless|—
-$\nu$|Kinematic viscosity|m^2^ s^-1^|L^2^ T^-1^
-$\nu$|frequency|s^-1^|T^-1^
-$σ$|Stefan-Boltzmann constant| 5.67 $\times$ 10^-8^ W m^-2^ K^-4^|H L^-2^ θ^-4^
+$\beta$|“Conductance” associated with animal’s insulation (fat and hair)|W K^-1^|W^-1^
+$\gamma$|Thermal diffusivity|m^2^ s^-1^|L^2^ T^-1^
+$\delta$|Boundary layer thickness|m|L
+$\varepsilon$|Emissivity|dimensionless|—
+$\phi$|Energy flux|W m^-2^|H L^-2^ T^-1^
+$\eta$|Small scale eddy size|m|L
 $\lambda$|wavelength|m|L
 $\lambda_B$|Wavelength behind source|m|L
 $\lambda_F$|Wavelength in front of source|m|L
 $\lambda_m$|wavelength at which black-body spectrum has maximum energy density|m|L
 $\lambda_{max}$|Wavelength of maximum radiation|m|L
-$\phi$|Energy flux|W m^-2^|H L^-2^ T^-1^
-$\rho$|Density|kg m^-3^|M L^-3^
 $\mu$|Fluid viscosity|kg m^-1^ s^-1^|M L T^-1^
-$\gamma$|Thermal diffusivity|m^2^ s^-1^|L^2^ T^-1^
-$\eta$|Small scale eddy size|m|L
+$\nu$|Kinematic viscosity|m^2^ s^-1^|L^2^ T^-1^
+$\nu$|frequency|s^-1^|T^-1^
+$\rho$|Density|kg m^-3^|M L^-3^
+$\sigma$|Stefan-Boltzmann constant| 5.67 $\times$ 10^-8^ W m^-2^ K^-4^|H L^-2^ θ^-4^
 $\tau$|Shear stress|kg m^-1^ s^-2^|M L^-1^ T^-2^
 $\tau_t$|Shear stress attributed to turbulence|kg m^-1^ s^-2^|M L^-1^ T^-2^
