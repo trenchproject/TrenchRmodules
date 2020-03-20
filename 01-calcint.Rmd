@@ -1330,37 +1330,92 @@ knitr::include_graphics('figures/fig-calcint-p72.png')
 knitr::include_graphics('figures/fig-calcint-p69.png')
 ```
 
-## COMPUTER EXERCISES
-1. The function used in eqns.(12) and (15) was determined by trial-and-error. The values of the three function parameters were changed until a combination gave an acceptable visual fit to the data points. A more consistent approach is to use least squares. The function is
+## ADDITIONAL EXERCISES
+1. One way to use least-squares is to approximate one function by another. Here we approximate the curve
+$$y = 6.1(x+5.0)e^{-0.045x}$$
+by a straight line
+$$ y = Ax + B$$
+
+Evaluate both $\partial (E^2)/\partial A$ and $\partial (E^2)/\partial B$, then set both equal to zero to obtain two equations in A and B. The goal is to minimize:
+$$E^2 = \int^{30}_3[6.1(x+5.0)e^{-0.045x}-Ax-B]^2dx$$
+(Hint: when evaluating $\partial E^2/\partial A$ and $\partial E^2/\partial B$, differentiate under the integral sign.)
+
+Solve your equations for A and B and the least squares integral.
+
+2. The stomates in leaves are small pores which permit the exchange of gases and water vapor. The stomates change shape from a near circle to a slit in order to adjust this exchange in response to varying environmental conditions. Each stomate is roughly elliptical in shape with constant perimeter throughout the shape change. The area of the opening is then given by
+$$A= \frac{2b}{a}\int^a_{-a}(a^2-x^2)^{1/2}dx$$
+where $2a$, $2b$ are the lengths of the major and minor axes, respectively, of the ellipse.
+
+a. First evaluate this integral using either of two trigonometric substitutions: let $x = a cos \theta$ or let $x = a sin \theta$. Be sure to check the limits on $\theta$ and the sign of each trig function in the transformed integrand. Your result must be non-negative since the area is non-negative. For a fixed perimeter, say $35 \mu$, the area should be maximal when the hole is a circle, i.e. $a=b$. Demonstrate this by evaluating the area when $a=b=5.57$, and when $a=5$, $b=6.09$. (The perimeter formula is $P = 2\pi\sqrt{(a^2+b^2)/2}$.)
+
+b. Use your area formula (the answer to part a) to investigate the dilution of the sun's energy flux due to the angle at which the rays strike the earth's surface. The dilution is caused by a fixed amount of solar energy being spread over a larger area (as the rays become more horizontal) and thus the energy per unit area decreases as compared to the energy density of vertical rays. The situation is pictured below, giving a top and side view for two inclination angles. The sunlight passes through a circular hole in an opaque sheet and strikes the earth at an angle $R$ from the perpendicular.
+
+> figures
+
+The illuminated area changes from a circle ($R=0$) to an elongated ellipse (as $R$ increases). For a given diameter $B$, write the illuminated area $A$ as a function of the angle of inclination $R$. Check your result by choosing values for $B$ and $R$ and calculating the dilution $D$, which equals the circle's area divided by the ellipse's area. Does $D = 0.6$ mean more dilution (less energy density) than $D = 0.3$ or vice versa? The inclination angle in Minnesota changes from about 20° in summer to 65° in winter. What is the resulting change in energy density, measured by $D$?
+
+## SOLUTION TO THE ADDITIONAL EXERCISES
+1.
+First partial derivatives:
+\begin{eqnarray}
+\frac{\partial E^2}{\partial A} &=& \int^{30}_3\frac{\partial}{\partial A}(6.1(x+5.0)e^{-0.045x}-Ax-B)^2dx \\
+&=& 2 \int^{30}_3(6.1(x+5.0)e^{-0.045x}-Ax-B)(-x)dx
+\end{eqnarray}
+Equating to zero and dividing by 2 gives
+$$0 = -\int^{30}_36.1(x-2+5x)e^{-0.045x}dx +\int^{30}_3Ax^2+Bxdx$$
+Successive integration by parts (for the first integral) and direct integration (for the second integral) yield the first equation:
+$$0 = 8991.0A + 445.5B - 25984.9$$
+\begin{eqnarray}
+\frac{\partial E^2}{\partial B} &=& \int^{30}_3\frac{\partial}{\partial B}(6.1(x+5.0)e^{-0.045x}-Ax-B)^2dx \\
+&=& -2 \int^{30}_3(6.1(x+5.0)e^{-0.045x}-Ax-B)dx
+\end{eqnarray}
+
+Equating to zero, dividing by 2 and solving yields the second equation:
+$$0 = 445.5A + 27.0B - 1568.8$$
+
+The solutions are $A= 0.061$, $B = 57.1$. The least squares integral using the approximation $Y = 0.061x + 57.1$
+is 546.452.
 
 2.
+a. Let $x=a\:sin\theta$. The limits of integration are then changed as follows
+$$-a \le x \le a$$
+$$ -a \le asin\theta \le a$$
+$$ -1 \le sin\theta \le 1$$
 
-3. The stomates in leaves are small pores which permit the exchange of gases and water vapor. The stomates change shape from a near circle to a slit in order to adjust this exchange in response to varying environmental conditions. Each stomate is roughly elliptical is shape with constant perimeter throughout the shape change. The area of the opening is then given by
-$$A= \frac{2b}{a}\int^a_{-a}(a^2-x^2)^{1/2}dx$$
-```{r}
-#integrate(f, lower, upper)
-```
+There are many options for the range of $\theta$. We first change the integrand to see which range is suitable. We know the integrand is non-negative since $x^2 \le a^2$. Substitution gives
+$$x = asin\theta$$
+$$dx = acos\theta\:d\theta$$
+$$\sqrt{a^2-x^2}dx = \sqrt{a^2 - a^2sin^2\theta}\cdot acos\theta \:d\theta$$
+The integrand is then non-negative when the positive square root is used and when $cos \theta$ is non-negative. Thus, we choose the limits of integration to be $-\frac{\pi}{2}$, $\frac{\pi}{2}$ since $sin(-\frac{\pi}{2}) = 1, sin(\frac{\pi}{2}=1)$ and $cos\theta \le0$ if $-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}$.  
+The integral is then
+$$\int^{\pi/2}_{-\pi/2}\sqrt{a^2-a^2sin^2\theta}acos\theta \:d\theta = a^2\int^{\pi/2}_{-\pi/2}\sqrt{1-sin^2\theta}cos\theta\:d\theta$$
+\begin{eqnarray}
+&=& a^2\int^{\pi/2}_{-\pi/2}cos^2\theta\:d\theta=a^2[\frac{\theta}{2}+\frac{sin2\theta}{4}]^{\pi/2}_{-\pi/2} \\
+&=& a^2[\pi/4+(1/4)(0)-(-\pi/4)-(1/4)(0)] =\pi a^2/2
+\end{eqnarray}
+Thus
+$$A=\frac{2b}{a}\int^a_{-a}\sqrt{a^2-x^2}dx = \pi ab$$
+When $a = b = 5.57$, $A = 97.47$.  
+When $a = 5$, $b = 6.09$, $A = 95.66$.
 
-where 2a, 2b are the lengths of the major and minor  axes, respectively, of the ellipse. 
+b.
 
-a. First evaluate this integral using either of two trigonometric substitutions: let $x = a\:cos\theta$ or let $x = a\:sin\theta$. Be sure to check the limits on 8 and the sign of each trig function in the transformed integrand. Your result must be non-negative since the area is non-negative. For a fixed perimeter, say 35 p, the area should be maximal when the hole is a circle, i.e. a=b. Demonstrate this by evaluating the area when a=b=5.57, and when a=5, b=6.09. (The perimeter formula is P = 2n12+b2)/2 .)
-b. Use your area formula (the answer to part a) to investigate the dilution
-of the sun's energy flux due to the angle at which the rays strike the earth's
-surface. The dilution is caused by a fixed amount of solar energy being spread over a larger area (as the rays become more horizontal) and thus the energy per unit area decreases as compared to the energy density of vertical rays.
-The situation is pictured below, giving a top and side view for two inclination angles.The sunlight passes through a circular hole in an opaque sheet and strikes the earth at an angle R from the perpendicular.
+>Figures
 
+From the right-hand diagram, we have
+$$cosR = B/x$$
+and thus
+$$x=B/cosR$$
+The minor axis is then the circle's diameter, $B$. In the answer to part "a", we replace $2a$ by $B/cos R$ and $2b$ by $B$.
 
+\begin{eqnarray}
+A &=& \pi ab = \pi(B/2cosR)(B/2) \\
+&=& \pi B^2 / (4 cosR)
+\end{eqnarray}
 
-## SOLUTION TO THE COMPUTER EXERCISES
-1. The starting parameter set (A, B, C) = (5.0, 0.05, 5.0) causes convergence to the values (5.0, 0.045, 6.2), with sum of squares equal to 52.2. The starting set (A, B, C) = (6.0, 0.05, 5.0) iterates (50 times) to the values(12535,0.05,0.04), with sum of squares equal to 454. The graph for the latter set is essentially a straight line, and a terribly poor fit.
+Since the area of the circle is $\pi B^2/4$,the dilution coefficient is
+$$D = \frac{\pi B^2/4}{\pi B^2/4cosR} = cosR$$
+Thus $D=0.6$ means less dilution than $D=0.3$, and $D=1.0$ means no dilution at all. For Minnesota, the coefficients are  
+$D=0.94$ for $R=20°$  
+$D=0.42$ for $R=65°$
 
-```{r}
-
-```
-
-3. The solutions are A=0.061, B=57.1
-The least squares integral using the approximation Y= 0.061x + 57.1 is 546.452.
-```{r}
-
-#A= \frac{2b}{a}\int^a_{-a}(a^2-x^2)^{1/2}dx
-```
