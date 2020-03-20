@@ -446,5 +446,3 @@ Nu&=&ARe^n=0.6Re^{0.5}=55 \\
 F_H&=&55\times\frac{26mWm^{-1}°C^{-1}}{0.042m}(30-20)°C \\
 &=&339000\frac{mW}{m^2}=339\frac{W}{m^2} 
 \end{eqnarray}
-
-> appendix

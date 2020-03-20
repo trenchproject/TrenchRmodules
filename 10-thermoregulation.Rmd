@@ -219,7 +219,7 @@ T_b = \frac{h_c T_a + Q_n}{R + h_c} + (M - E_b) \frac{K + h_c + R}{K(h_c + R)} -
 
 The important point of equation \@ref(eq:thermoreg-6) is that the first term of the right-hand side does not depend on any physiological processes. It measures the component of the body temperature that is strictly due to the physical environment. This is the term Bakken and Gates (1975) labeled the operative environmental temperature, $T_e$. They say
 
-`$T_e$ may be identified as the temperature of an inanimate object of zero heat capacity with the same size, shape  and radiative properties as the animal and exposed to the same microclimate. It is also equivalent to the temperature of a blackbody cavity producing the same thermal load on the animal as the actual non-blackbody microclimate, and therefore may be regarded as the true environmental temperature seen by that animal.`
+`Te may be identified as the temperature of an inanimate object of zero heat capacity with the same size, shape  and radiative properties as the animal and exposed to the same microclimate. It is also equivalent to the temperature of a blackbody cavity producing the same thermal load on the animal as the actual non-blackbody microclimate, and therefore may be regarded as the true environmental temperature seen by that animal.`
 
 Bakken (1976a,b) and Bakken and Gates (1975) have extended these ideas in several ways. Most importantly they show that more complicated models including conduction can be incorporated into this same framework. Second, as Bakken (1976a) notes, the operative environmental temperature strictly speaking is not a temperature. This is because two systems are said to have the same temperature if each is in thermal equilibrium with a third system (Stevenson 1977a, Zemansky and Van Ness 1966). If the animals were of different size, the convection coefficient would be different and the two $T_e$s would not be equal. Yet each model organism would be in thermal equilibrium with the microclimate but not each other. Therefore, the zeroth law is not satisfied. This, however, is not a drawback for the use of $T_e$ in temperature regulation studies.
 
@@ -765,11 +765,6 @@ T_b&=&\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+(M-E_b)\frac{K+R+h_c+G}{K(R+h_c+G)}+\frac
 11. a) Many ecological factors will be important in determining the success of the corn drill in any particular spring. Over-wintering density of the pest, predator densities and parasite densities may be necessary variables to include in a predictive equation. Laboratory facilities which can reproduce the climate that the animals experience in field will help define the physiological limits that the insect can tolerate. Statistical models might be employed to provide survival estimates based on microclimate variables.
 
 b) During the spring a similar approach as described above will help determine when the third instar will occur given the history of the climate that spring. Then appropriate control actions could be initiated to consider the physiological state of the host plant because this will influence the quality of the food that the pest is getting. Certain weather patterns might favor a strong plant defense response lowering the tissue nutritional quality. Depending on how the insect responds to the same weather patterns the net effect may be an increase or a decrease in survival rates. Simultaneous field work documenting survival and development rates as a function of climate would be important complementary research.
-
-> Appendix 1
-
-
-
 
 
 

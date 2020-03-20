@@ -170,7 +170,7 @@ In Fig. \@ref(fig:fig-thermex-2)a the energy components of equation \@ref(eq:the
 
 In Figs. \@ref(fig:fig-thermex-3)a and \@ref(fig:fig-thermex-3)b similar graphs illustrate the results Brown got for a nonforested gravel bottom section. Net radiation is the largest term of the energy budget and causes a large increase in water temperature.
 
-The values depicted in Figs. \@ref(fig:fig-thermex-4)a and \@ref(fig:fig-thermex-4)b are for a site which also was unforested. Unlike the previous example where the bed of the stream was gravel and conduction was small, this site had a solid rock bottom and here heat passed from the stream into the stream bed, indicating a substantial conduction component of the energy balance. 
+The values depicted in Figs. \@ref(fig:fig-thermex-4)a and \@ref(fig:fig-thermex-4)b are for a site which also was unforested. Unlike the previous example where the bed of the stream was gravel and conduction was small, this site had a solid rock bottom and here heat passed from the stream into the stream bed, indicating a substantial conduction component of the energy balance.
 
 Generally the results indicate that the model is very successful in predicting water temperature. The evaporation and convection fluxes are small at all sites. Net radiation is the major component of the heat balance of which the major factor is direct solar radiation. This is especially true for the nonforested sites (Figs. \@ref(fig:fig-thermex-3)a and \@ref(fig:fig-thermex-4)a). It is also interesting to note that conduction is an important component of the heat balance for the rocky-bottomed streambed (Fig. \@ref(fig:fig-thermex-4)a) but not the gravel bottom (Fig. \@ref(fig:fig-thermex-3)a).
 
