@@ -488,7 +488,7 @@ Substituting for $d$, we obtain
 $$\omega = 2a/[(2a/\omega)^{1/2}]^2=\omega$$
 Thus the equation is indeed satisfied.
 
-## ADDITIONAL EXERCISES
+## ADDITIONAL PROBLEMS
 
 1. In the example in the text treating oxygen consumption(see also problem 3 above), the oxygen consumption $(Q)$ depended on both the activity level $(m)$ and the dry weight $(W)$:
 $$Q=0.00187(m+1)W^{.7}$$
@@ -540,7 +540,7 @@ where $P1$ and $P2$ depend on certain body characteristics and on the maximum do
 
 Find the dose that has "maximum sensitivity," i.e. where the **rate of increase** of $Y$ is greatest. Is this "critical point" a maximum or minimum for $Y$"? What is this point called on the graph for $Y$?  
 
-## ANSWERS TO THE ADDITIONAL EXERCISES
+## ANSWERS TO THE ADDITIONAL PROBLEMS
 
 1. $\partial z/\partial x=(0.00187y^{0.7})=$constant for given $y$.  
 Exposed profile should be a straight line.  
@@ -603,116 +603,3 @@ X&=&(P1)/(2(P2))
 The value for $Y$ is then
 $$Y=\Big[\frac{P1}{2(P2)}\Big]^2\Big[\frac{P1}{2}-\frac{(P1)(P2)}{6(P2)}\Big]=\frac{(P1)^3}{12(P2)^2}$$
 This point is an inflection point on the graph $Y$ versus $X$.
-
-## USER'S GUIDE FOR PROGRAM DIFF
-
-### Identification
-
-DIFF - A program which displays properties of derivatives of mathematical functions
-
-Authors - Richard Hertzberg, Mark Bailey, Center for Quantitative Science in Forestry, Fisheries and Wildlife, University of Washington,
-Seattle. February 1979.
-
-### Purpose
-Program DIFF is the computer supplement to the instructional module "Calculus-Differentiation," by Richard Hertzberg, which reviews the basic principles and uses of differential calculus, with special emphasis on ecological and physiological applications. The computer program displays graphs of selected functions so that certain derivatives are visible. Most plots serve as checks to the user's own calculations.
-
-### Operation
-The user controls program DIFF through certain input variables. The principal one, NFC, selects the function to be displayed and also enables or disables other Inputs listed in the INPUT TABLE below. Other inputs control the parameters in a function, the portions of a function to be displayed, the number of plots, and the structure of the plots themselves.
-
-Setting NFC = 1 selects the function
-$$F(x,y)=0.00187(x+1)y^{0.7}$$
-and disables the input variables $P1$, $P2$, and NPLOTS. The user may alter the variables XSLICE and YSLICE which act as "slicing" variables that cut through the $z$ axis of the function along certain planes in order to reveal hidden profiles. The slicing effect merely sets the $z$ values of the function to ZMIN (the smallest $z$ value in the plot, which is usually displayed as a blank) whenever $x$ < XSLICE and $y$ < YSLICE.  
-Setting NFC = 2 selects the function
-$$F(x,y)=p_1x^2+p_2y^2$$
-This option enables all of the inputs listed in the INPUT TABLE. The parameters of the function, $p_l$ and $p_2$, are represented by the arrays $P1$ and $P2$ which can hold up to six different sets of values and generate up to six different plots, where the number of plots is controlled by NPLOTS. For example, if
-
- *  $P1$ = 1, 2, 3, 4, 5, 6
- *  $P2$ = 0.1, 0.2, 0.3, 0.4, 0.5, 0.6
- *  NPLOTS = 4 
-
-then DIFF would produce four plots as follows:  
-    plot 1: 1x^2^ + 0.1y^2^  
-    plot 2: 2x^2^ + 0.2y^2^  
-    plot 3: 3x^2^ + 0.3y^2^  
-    plot 4: 4x^2^ + 0.4y^2^
-
-Also, by repeating NFC = 2 with different values for XSLICE and YSLICE, the user can "search" for three-dimensional critical points by observing various function profiles.  
-Setting NFC = 3 selects the function
-$$F(x)=0.1x(4p_2^2-x^2)$$
-which can be written as 
-$$F(x)=0.1xD^2(x)$$
-in terms of the notation used in computer exercise no. 3. This option disables the input variables XSLICE, YSLICE, NPLOTS, $P1$ and the last five elements of $P2$. $P2(1)$ represents the function parameter $p_2$.
-
-Setting NFC = 4 selects the function
-$$F(y)=p_2y(1-y/500)+y$$
-This function represents the step-wise solution to the difference equation
-$$Y_{k+1}=p_2y_k(1-y_k/500)+y_k,\;\;\;\;\mbox{where }y_k=y(x_k)$$
-which is the discrete form of the logistic differential equation
-$$dy/dx=p_2y(1-y/500)$$
-as given in computer exercise no. 4. This initial value for $y (y(0))$ is determined by the function
-$$y(0)=10.0p_1+150.0$$
-This option disables the input variables XSLICE, YSLICE, NPLOTS, and the last five elements of $P1$ and $P2$. $P1(1)$ represents the parameter $p_l$ in the initial value equation, and $P2(1)$ represents the function parameter $p_2$.  
-Setting NFC = 5 selects the function
-$$F(x)=(p_1/2)x^2-(p_2/3)x^3$$
-This option disables the input variables XSLICE, YSLICE, NPLOTS, and the last five elements of the arrays $P1$ and $P2$, The function parameters $p_1$ and $p_2$ are represented by $P1(1)$ and $P2(1)$.
-
-### Program Organization
-
-The program is organized according to the following flow chart:
-
-> chart
-
-### Input
-
-All input is handled by the format free input package (Gales and Anderson, 1978) which permits a user to assign values to variables by a "name = value" convention. Not all variables need be explicitly assigned by the user, however, as unassigned variables automatically assume default values. The input consists of any number of data sets, each of which is terminated by a dollar sign ($). Each data set generates a separate printer plot.
-
-The input for DIFF is divided into three classes: (a) variables having mathematical significance: NFC, XSLICE, YSLICE, $P1$, $P2$ and NPLOTS; (b) variables which control certain program operations, such as program termination or the handling of default input: IPRINT, ECHO, NODFLT, and FINIS; and (c) variables which control the printer plots (default values are in parentheses): XMIN (0), XMAX (0), YMIN (0), YMAX (0), ZMIN (0), ZMAX (0), XRICH (0), YRICH (0), DFAULT (0), OVPRNT (.F.), AVE (.T.), INT2D (.F.), NX (60), NY (45), and ZMAP (0,1,2,3,4,5,6,7,8,9). The variables in the first two classes are explained in the following INPUT TABLE, whereas the printer plot variables are explained in the user's guide for PRNT3D (Gales, 1978). The user normally may ignore the PRNT3D variables since DIFF controls them internally. However, if he chooses to change any of them, he should do so with great care. In particular, the variables XRICH and YRICH, if made too small, will cause DIFF to generate a very large number of enrichment points, and consume far too much computer time.
-
-> Input Table
-
-**need ktable**
-Note: XMIN, XMAX, YMIN, YMAX determine the range of points to be plotted and are set internally for each function.
-
-
-The last four variables deserve special mention.
-
-1. The logical variable IPRINT controls the output of all input variables which are currently in effect (default values as well as those specified in the current input set). Setting IPRINT = TRUE (or T or .T.) displays the input variables; setting IPRINT = FALSE (or F or .F.) suppresses the display.
-
-2. The logical variable ECHO controls the echoing of the input cards. Setting ECHO = TRUE causes the **subsequent** input set to the echoed; setting ECHO = FALSE suppresses the echo for the **subsequent** input set.
-
-3. The logical variable NODFLT can be used to inhibit the automatic assignment of default values to input variables. If NODFLT is set TRUE in the **current** input set, then the current input set is assigned default values as usual, but all subsequent input sets merely accumulate more input values. In effect, the input values which exist after the i-th input set is read, become the default values for the (i+1)-th input set. The standard default values may then be restored by setting NODFLT = FALSE, but, again, the effects of this change are delayed until the next input set is read. To a limited extend, NODFLT permits a user to set up his own default values and can be very useful for executing a number of input sets which differ only in a few parameters. Consider the following example in which a user wishes to slice the same function by using several different values for XSLICE and YSLICE:
-
-/INPUT SET 1: THE FOLLOWING VALUES BECOME THE DE FACTO/  
-/DEFAULTS FOR ALL SUBSEQUENT INPUT SETS:              /   
-NODFLT = TRUE, NFC = 2, P1 = .1, .4, .5, 2.3,  
-P2 = 2.2, 2.6, 2.5, 2.8, NPLOTS = 4, XSLICE = 0, YSLICE = 0, $  
-/INPUT SET 2: SLICE THE ABOVE FUNCTION/  
-XSLICE = -1, YSLICE = 0, $  
-/INPUT SET 3: SLICE IT ANOTHER WAY/  
-XSLICE = 0, YSLICE = -1, $  
-/INPUT SET 4: SLICE IT YET ANOTHER WAY/  
-XSLICE = 1.2, ?SLICE = -1.2, $  
-/INPUT SET 5: NOW STOP/  
-FINIS = TRUE, $  
-
-4. The logical variable FINIS controls program termination. The user should add the card:  
-
-FINIS = TRUE, $
-
-as the very last input set. If, FINIS is not set, the program will terminate abnormally.
-
-### Output
-DIFF produces sets of plots, via subroutine PRNT3D, which display function values. Each plot contains a title, legend, $x$ and $y$ axis annotation, and printer plot lines or surfaces. The title displays some of the values, and ranges of values, for the variables used to generate
-the plot.
-
-The plot legend, in conjunction with the numbers along the $x$ and $y$ axes, allows users to interpret the plot numerically. The $x$ and $y$ axis numbers are of the form ± N.NNN and differ from their true values by powers of 10 which are specified by the scale factors in the legend. For example, the first line of the plot legend for RUN 3 reads.  
-
-SCALE FACTORS = X-AXIS:E+00 Y-AXIS:E-01 Z-AXIS:E+00
-
-hence the point, indicated by a "1" character near the top right of the plot, is near ($x$ = 1.246, $y$ = 3.100) = ($x$ = 1.246 $\times$ 10^0^, $y$ = 3.100 $\times$ 10^-1^) = ($x$ = 1.246, $y$ = 0.31). The remaining two lines of the legend specify the number of points mapped to each $z$-level (-9 means > 99).
-
-### Restrictions
-
-The input values are restricted to the ranges given in the INPUT TABLE. Due to the physical interpretation of the function parameters, further restrictions are indicated in the description of each computer exercise.
-
-
