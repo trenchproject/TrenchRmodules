@@ -84,7 +84,7 @@ This we'll do, upon noting that if Newton's second law holds, we may assign the 
 
 1 newton (nt) $\equiv$ 1 k m/s^2^
 
-## Gravitational Force
+## GRAVITATIONAL FORCE
 
 The story of gravitation begins with the ancients observing the motions of the planets among the stars, and eventually concluding that they went around the sun, a fact much later picked up by Copernicus. Tycho Brahe had the revolutionary idea (at least by comparison to the ancients) that one could measure the movements of the planets and establish their paths in space, which then might resolve the arguments as to whether they indeed moved around the sun. Tycho made extensive measurements, which Kepler then used to establish his three famous laws: (1) planets move in ellipses, with the sun at one focus, (2) the radius vector from sun to planet sweeps out equal areas in equal times, and (3) the period of revolution about the sun is proportional to the 3/2 power of the semimajor axis of its orbit.
 

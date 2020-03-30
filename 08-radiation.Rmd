@@ -284,7 +284,7 @@ r_E&=&1.49\times10^{11}m \\
 Convert your answer to $cal\cdot cm^{-2}min^{-1}$.  
 Answer: $E_E=1.36\times10^3 Wm^{-2}s^{-1} \approx 1.95 cal\cdot cm^{-2}min^{-1}$ 
 
-## Resolution
+## RESOLUTION
 For most problems of biological interest (e.g. the shape of the lens of the eye), only the particulate nature of light, especially its rectilinear propagation, is important. This can be thought of as a result of the large size of the elements of biological interest compared to the wavelength of light. For example, for the sun: $\lambda_m \approx 5 \times 10^{-7}m$ [problem 2a], which is much smaller than the physical dimension of any organism, or even any organ in any organism. Only in certain specialized
 biological research, for example the investigation of cell ultrastructure, does the wavelength of light become a limiting factor. As the dimensions of the cellular constituents approximate that of light, instruments capable of observing at shorter wavelengths (e.g. electron microscopes) are required.
 
@@ -400,7 +400,7 @@ Using the Rayleigh criterion and the solution to Prob. 2b, determine the resolut
 
 Answer: $d$ = separation of pits $\approx$ 6cm.
 
-## The Doppler Effect
+## THE DOPPLER EFFECT
 The discussion up to this point has implicitly assumed that the source and detector of radiation are stationary relative to one another. When the source and detector are in relative motion, an added complication, the Doppler effect, is introduced. This phenomenon has been observed for all types of radiation, though the theory is simplest for the acoustic situation. Since acoustic waves are longitudinal (compression) rather than transverse as are electromagnetic waves, the mathematical form of the effect is slightly different. Additionally, the acoustic Doppler effect has significant evolutionary implications.
 
 Empirically, the Doppler effect is manifested in the difference between the pitch (frequency) of the sound heard by a listener in motion relative to a sound source and the pitch heard when the listener and source are relatively stationary. A familiar example is the sudden drop in pitch one hears from an automobile horn as one meets and passes a car going in the opposite direction. Alternatively, one might think of the changing pitch heard by a listener standing beside a track as a train whistle approaches, passes, and recedes.

@@ -23,7 +23,7 @@ The inverse operation to differentiation is called **antidifferentiation** or, m
 
 \begin{equation}
 \frac{dN}{dt} = kN
-(\#eq:calcint-calcint-1)
+(\#eq:calcint-1)
 \end{equation}
 
 where $N$ is the population size, $t$ is time and $k$ is a proportionality constant. We could solve for $N$ as a function of time by integrating the derivative. However, we know that the exponential function is the only function which equals its derivative. 
@@ -34,11 +34,11 @@ Thus, we can modify the function to give the solution
 
 $$N = N_0 e^{kt}$$
 
-since differentiating $N_0 e^{kt}$ gives eqn. \@ref{eq:calcint-calcint-1}. 
+since differentiating $N_0 e^{kt}$ gives eqn. \@ref(eq:calcint-1). 
 
 $$\frac{dN}{dt} = \frac{d(N_0 e^{kt})}{dt} = kN_0 e^{kt} = kN $$
 
-If we write eqn. \@ref(eq:calcint-calcint-1) as
+If we write eqn. \@ref(eq:calcint-1) as
 
 \begin{equation}
 \frac{dN}{dt} = kN_0 e^{kt}
@@ -418,7 +418,7 @@ In summary, we have the averages:
 
 
 |**ration**|**average growth rate**|
-|---|---|
+|:---:|:---:|
 |restricted|29.3|
 |unrestricted|58.8|
 
@@ -976,7 +976,7 @@ The following data were taken from tide tables for Port Townsend, Washington for
 
 ```{r table2, echo=FALSE, results='asis'}
 cat('| Time  | Height (m) | 
-|-------|------------|
+|:-------:|:------------:|
 | 4:35  | 2.47       |
 | 11:49 | -0.82      |
 | 19:40 | 2.77       |')
@@ -995,7 +995,7 @@ c. For a point on the beach at the 0.0 meter tide level, how long is it exposed 
 
 **Least Squares**
 
-5. Write equation (13) using $y(x_i) = Ax_i + B$. Evaluate the two first partial derivatives and, by setting both equal to zero, obtain two linear equations in A and B.
+5. Write equation \@ref(eq:calcint-13) using $y(x_i) = Ax_i + B$. Evaluate the two first partial derivatives and, by setting both equal to zero, obtain two linear equations in A and B.
 
 6. a. For the following data, derive the "least squares" line and prove that for your choices for A and B, the sum of squares is at a true minimum: 
 $$f(x,y) \text{ is at a minimum at } x_o, y_o \text{ if, for } x=x_0, y=y_0 $$
@@ -1011,7 +1011,7 @@ y=c(39,55,57.5,60,57)
 
 b. Now determine a "best" exponential fit to the above data. First transform the desired function $y = Axe^{Bx}$ into a linear function (with respect to $x$): $h(x,y) = f(A,B) + g(A,B)x$. A neater format is $h= f + gx$. Make a table of values for $x$ and $h$. Determine the least squares line through this new data set and, in the process, calculate $f$, $g$, and thus $A$, $B$.
 
-### ANSWERS TO THE PROBLEM SET
+## ANSWERS TO THE PROBLEM SET
 **General**
 
 1. $A(T)$ represents the total change in the resource. Thus the rate of change, $P(t)$, is integrated:
@@ -1330,7 +1330,7 @@ knitr::include_graphics('figures/fig-calcint-p72.png')
 knitr::include_graphics('figures/fig-calcint-p69.png')
 ```
 
-## ADDITIONAL EXERCISES
+## ADDITIONAL PROBLEMS
 1. One way to use least-squares is to approximate one function by another. Here we approximate the curve
 $$y = 6.1(x+5.0)e^{-0.045x}$$
 by a straight line
@@ -1354,7 +1354,7 @@ b. Use your area formula (the answer to part a) to investigate the dilution of t
 
 The illuminated area changes from a circle ($R=0$) to an elongated ellipse (as $R$ increases). For a given diameter $B$, write the illuminated area $A$ as a function of the angle of inclination $R$. Check your result by choosing values for $B$ and $R$ and calculating the dilution $D$, which equals the circle's area divided by the ellipse's area. Does $D = 0.6$ mean more dilution (less energy density) than $D = 0.3$ or vice versa? The inclination angle in Minnesota changes from about 20° in summer to 65° in winter. What is the resulting change in energy density, measured by $D$?
 
-## SOLUTION TO THE ADDITIONAL EXERCISES
+## SOLUTION TO THE ADDITIONAL PROBLEMS
 1.
 First partial derivatives:
 \begin{eqnarray}
