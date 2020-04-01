@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Light and Sound. {#radiation}
 
 Light and Sound: Evolutionary Aspects. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes
@@ -17,7 +22,7 @@ There are two ways in which the process of radiation exchange is of biological i
 
 First, there is the dynamical balance of the radiation flow between the organism and its environment, and its effect on the homeostasis of the organism. This dynamical balance is best described by the modern form of radiation theory, which is based on Planck's theory of black body radiation, and which is exemplified in the generally useful results entailed in Wien's law of shift and the Stefan-Boltzmann law. Several simple biological applications of this modern radiation theory are developed in this module. Further applications are presented elsewhere in this series (Gates 1977,1973; Hatheway 1977, Stevenson 1979).
 
-Second, there is the interpretation of the energy **missing word** the organism, as a means of obtaining information about the environment. The selective advantage that results from improved information gathering has led to the evolution of many specialized sense organs. The function of these organs is best described by the classical theory of radiation, particularly as entailed in Rayleigh's criterion and the Doppler effect. The balance of biological examples discussed here are of this second type.
+Second, there is the interpretation of the energy sensing by the organism, as a means of obtaining information about the environment. The selective advantage that results from improved information gathering has led to the evolution of many specialized sense organs. The function of these organs is best described by the classical theory of radiation, particularly as entailed in Rayleigh's criterion and the Doppler effect. The balance of biological examples discussed here are of this second type.
 
 The nature of the physical processes of radiation exchange imposes strong constraints on the evolution of biological systems. This module presents some of the results of classical and modern radiation theory and shows how they elucidate these physical constraints. It is demonstrated that radiation theory is applicable to a wide range of sense organs (eyes, ears, pits); radiation types (electromagnetic, sound), wavelengths (optical, infrared), and organisms.
 
@@ -25,7 +30,7 @@ The nature of the physical processes of radiation exchange imposes strong constr
 
 ## BLACK BODY RADIATION
 
-In any discussion of radiative energy exchange, it is necessary to begin with an idealization of this process, which is described by the theory of black body radiation. This is rather awkward in the present instance since the biological implications of this abstraction from the real world are not immediately obvious. In fact, some of the most important aspects of biological systems result from their deviations from the idealizations of physics. For example, most organisms are not perfectly "black" in the physical sense of the word; that is, they do not absorb and emit radiation perfectly at all frequencies. The effect of the coloration of organisms will be to vary the degree to which the black body idealization can describe the system. However, it is the nature of science to explain in detail the simple system in the hope that the more complicated systems can be explained by small variations of the simple theory, and the expectation that the major results will be carried over to the more complicated systems. For radiative energy exchange this is precisely the ease, and thus there is sufficient justification for presenting a discussion of black body radiation which, though not "simple" in the common sense of the word, is essential for an understanding of the more complicated systems which are the substance of biology.
+In any discussion of radiative energy exchange, it is necessary to begin with an idealization of this process, which is described by the theory of black body radiation. This is rather awkward in the present instance since the biological implications of this abstraction from the real world are not immediately obvious. In fact, some of the most important aspects of biological systems result from their deviations from the idealizations of physics. For example, most organisms are not perfectly "black" in the physical sense of the word; that is, they do not absorb and emit radiation perfectly at all frequencies. The effect of the coloration of organisms will be to vary the degree to which the black body idealization can describe the system. However, it is the nature of science to explain in detail the simple system in the hope that the more complicated systems can be explained by small variations of the simple theory, and the expectation that the major results will be carried over to the more complicated systems. For radiative energy exchange this is precisely the case, and thus there is sufficient justification for presenting a discussion of black body radiation which, though not "simple" in the common sense of the word, is essential for an understanding of the more complicated systems which are the substance of biology.
 
 The theory of black body radiation had a lengthy and fascinating development during the 1800's, culminating in the work of Planck at the turn of the century. Many of the results discussed below were known at various stages during this period of repeated empirical research and hypothesis testing. However, the important results for biological applications can be derived directly from the formula of Planck, which mathematically (though not physically) culminated this field of experimental physics. The physical explanation of Planck's formula awaited the work of Einstein, and ultimately the early founders of Quantum Mechanics.
 
@@ -285,8 +290,7 @@ Convert your answer to $cal\cdot cm^{-2}min^{-1}$.
 Answer: $E_E=1.36\times10^3 Wm^{-2}s^{-1} \approx 1.95 cal\cdot cm^{-2}min^{-1}$ 
 
 ## RESOLUTION
-For most problems of biological interest (e.g. the shape of the lens of the eye), only the particulate nature of light, especially its rectilinear propagation, is important. This can be thought of as a result of the large size of the elements of biological interest compared to the wavelength of light. For example, for the sun: $\lambda_m \approx 5 \times 10^{-7}m$ [problem 2a], which is much smaller than the physical dimension of any organism, or even any organ in any organism. Only in certain specialized
-biological research, for example the investigation of cell ultrastructure, does the wavelength of light become a limiting factor. As the dimensions of the cellular constituents approximate that of light, instruments capable of observing at shorter wavelengths (e.g. electron microscopes) are required.
+For most problems of biological interest (e.g., the shape of the lens of the eye), only the particulate nature of light, especially its rectilinear propagation, is important. This can be thought of as a result of the large size of the elements of biological interest compared to the wavelength of light. For example, for the sun: $\lambda_m \approx 5 \times 10^{-7}m$ [problem 2a], which is much smaller than the physical dimension of any organism, or even any organ in any organism. Only in certain specialized  biological research, for example the investigation of cell ultrastructure, does the wavelength of light become a limiting factor. As the dimensions of the cellular constituents approximate that of light, instruments capable of observing at shorter wavelengths (e.g. electron microscopes) are required.
 
 There is at least one other area of biology where the physical dimensions of the objects of interest are small enough that the wave nature of light becomes an important consideration: the resolution of incoming radiation by sense organs. 
 
@@ -365,6 +369,7 @@ It should be noted at this point that the Rayleigh criterion is a theoretical li
 **Problem 5**
 
 The cones of the human eye happen to be maximally sensitive to the wavelength $\lambda_m$ which corresponds to the maximum of the sun's energy density spectrum. Using Rayleigh's criterion and the fact that the retina is $\approx$ 17 mm behind the first nodal point (which acts as the circular aperture in this case), compute the maximum resolution on the surface of the retina.  
+
 Answer:
 \begin{equation}
 \delta x=5.4\times10^{-6}m
@@ -462,8 +467,7 @@ Now that a quantitative formulation of the Doppler effect has been derived, it c
 
 The bats, members of the order Chiroptera within the class Mammalia, have developed a system of echolocation which has been of immense evolutionary significance. It has enabled them to exploit a resource for which there are very few competitors, small night flying insects (see, e.g., Fenton 1974). The physical processes important in echolocation have both enhanced and constrained the evolution of the Chiroptera. Here it will suffice to show a few examples of the effect of these physical processes upon bat evolution and natural history. For a detailed and personable account of the actual experimentation that led to the elucidation of the physical principles employed in echolocation, see Griffen's "Listening in the Dark" (Griffen 1953).
 
-Almost all bats appear to be able to navigate in total darkness a closely spaced grid of wires, where the spacings of the wires are
-commensurate with the dimensions of the wingspread of the bats. Furthermore, insectivorous bats can pursue and capture flying insects on the wing in total darkness.
+Almost all bats appear to be able to navigate in total darkness a closely spaced grid of wires, where the spacings of the wires are commensurate with the dimensions of the wingspread of the bats. Furthermore, insectivorous bats can pursue and capture flying insects on the wing in total darkness.
 
 The ability to carry out these activities is significant in two respects. First, unlike the birds which are able to perform similar activities only in the presence of light, bats cannot be dependent upon a highly developed sense of sight for navigation. Second, no other animal can depend upon catching flying insects in the dark and so there are few competitors for this food resource. Prior to the evolution of bats, this resource had not been exploited.
 
@@ -479,7 +483,7 @@ which works out to be:
 $$t=2m/350m\:s^{-1}=5.71\times10^{-3}s=5.71ms$$
 Shorter pulses will allow even closer objects to be avoided, although the pulse length must have a lower limit of several wavelengths in order to avoid problems in interpretation. If a reasonable number of waves, in the pulse is 100, the predicted minimum frequency would be:
 $$f=100/t=100/4\times10^3s^{-1}=25kHz$$
-In actual field measurements Griffen (op cit. p.191) has observed pulse lengths from 1-15 ms, and pulse frequencies between 30-75 kHz with about 50 kHz being most common. Therefore, bats should be several times better at avoiding obstacles than one would expect from Example 6. This is not too surprising if the system is good enough to catch insects on the wing, which the bats must approach much closer than 1 meter.
+In actual field measurements Griffin (1953 p.191) has observed pulse lengths from 1-15 ms, and pulse frequencies between 30-75 kHz with about 50 kHz being most common. Therefore, bats should be several times better at avoiding obstacles than one would expect from Example 6. This is not too surprising if the system is good enough to catch insects on the wing, which the bats must approach much closer than 1 meter.
 
 Interestingly, bats appear to be rather economical in their use of pulses, using relatively long pulses (15 ms) at long repetition intervals when they are cruising far above the ground and relatively short pulses (1 ms) at short repetition intervals only when they are pursuing insect prey.
 
@@ -498,11 +502,15 @@ f_L&=&51.74 kHz \\
 t&=&28.6 ms
 \end{eqnarray}
 
-The outgoing and incoming frequencies in this example have a difference of 1740 Hz. This difference may appear quite large when compared to the difference between Concert A (440 Hz) and the A an octave higher (830 Hz). However, in the detection of radiation phenomena, the important comparison is the ratio, not the difference of two frequencies. The bat in Problem 8 must be able to detect 1740 Hz in 50 kHz, a percentage frequency change of 3.4%. This is not an unreasonable change to detect since human musicians can quite commonly distinguish quarter tones which represent a percentage frequency change of 3%. One expects that bats which depend upon the Doppler effect should have very acute pitch change detection and a very stable emission frequency, to go along with the ability to discriminate very small time intervals. Some of these predictions have been experimentally verified (Schuller, et al. op cit.).
+The outgoing and incoming frequencies in this example have a difference of 1740 Hz. This difference may appear quite large when compared to the difference between Concert A (440 Hz) and the A an octave higher (830 Hz). However, in the detection of radiation phenomena, the important comparison is the ratio, not the difference of two frequencies. The bat in Problem 8 must be able to detect 1740 Hz in 50 kHz, a percentage frequency change of 3.4%. This is not an unreasonable change to detect since human musicians can quite commonly distinguish quarter tones which represent a percentage frequency change of 3%. One expects that bats which depend upon the Doppler effect should have very acute pitch change detection and a very stable emission frequency, to go along with the ability to discriminate very small time intervals. Some of these predictions have been experimentally verified (Schuller, et al. 1974).
 
 The thrust of the discussion presented in this section is perhaps most striking when viewed in terms of the advantages and constraints that the utilization of echolocation has conferred on the evolution of the Chiroptera. The development of echolocation has allowed the bat to utilize a previously unexploited. resource, night flying insects, but in turn has placed a premium on those bats that are able to emit high frequencies in short pulses, that cat detect faint echoes, and that can detect relatively small shifts in frequency between outgoing and incoming pulses. The selection pressure for these attributes is the force responsible for numerous remarkable physical and behavioral adaptations. Our understanding of this system is by no means complete; echolocation remains a fertile territory for experiment and theory.
 
 ## SUMMARY
-The preceding discussion has presented some of the results from classical and modern radiation theory and demonstrated how these physical principles can be applied to the analysis of biological systems. The emphasis in these applications has been upon the evolutionary significance of the physical processes. In the biological applications presented, the physical processes are involved in the following two types of explanations. In the first type of explanation; physical theory is used to isolate constant factors in the environment to which all organisms must adjust their evolution. The most striking example of this is that the wavelength
+The preceding discussion has presented some of the results from classical and modern radiation theory and demonstrated how these physical principles can be applied to the analysis of biological systems. The emphasis in these applications has been upon the evolutionary significance of the physical processes. In the biological applications presented, the physical processes are involved in the following two types of explanations. In the first type of explanation, physical theory is used to isolate constant factors in the environment to which all organisms must adjust their evolution. In a second application, physical theory is used to elucidate the constraints governing the evolution of biological systems. It is demonstrated that radiation theory is applicable to a wide range of sense organs, radiation types, wavelengths, and organisms.
 
-**missing pages**
+## LITERATURE CITED
+**PLEASE ADD**
+
+ Weeg, G.P.and Reed, G.B. 1966. Introduction to Numerical Analysis. Blaisdell Publishing Co., Waltham,Masachusets.184p.
+
