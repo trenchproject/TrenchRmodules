@@ -19,7 +19,7 @@ The simplest graph of a dynamic relationship is a straight line. The equation fo
 
 \begin{equation}
 y = mx+ b
-(\#eq:calcdif-1)
+(\#eq:calcdiff-1)
 \end{equation}
 
 where $y$ and $x$ are variables, $m$ and $b$ are constants. An example of this relation is the oxygen uptake by the lobster. The oxygen consumption $(y)$ depends on the oxygen concentration $(x)$ in the surrounding environment, so that $y$ is a function of $x$. A typical graph of this function shown in Figure \@ref(fig:fig-calcdiff-1).
@@ -31,7 +31,7 @@ plot(x, 0.004*x+0.016, type="l", ylab = "y(x)")
 
 The equation for this function is
 $$y(x)=0.004x+0.016$$
-The number 0.004 represents the slope of the line; that is, the ratio of the change in $y$ to the change in $x$. When $x$ changes by 1 unit, $y$ changes by 0.004 units. In this particular application, when the water O~2~ concentration increases by one ml/l, the lobster O~2~ consumption increases by 0.004 ml per hour-gm body weight. The slope ($m$ in Equation \@ref(eq:calcdif-calcdif-1)) then represents the rate of change of $y$ with $x$.
+The number 0.004 represents the slope of the line; that is, the ratio of the change in $y$ to the change in $x$. When $x$ changes by 1 unit, $y$ changes by 0.004 units. In this particular application, when the water O~2~ concentration increases by one ml/l, the lobster O~2~ consumption increases by 0.004 ml per hour-gm body weight. The slope ($m$ in Equation \@ref(eq:calcdiff-1)) then represents the rate of change of $y$ with $x$.
 
 When the graph is not a straight line, the function it represents is more complex than above and the rate of change cannot be expressed so easily. Note that for each unit change in $x$ in Fig. \@ref(fig:fig-calcdiff-1), $y$ changes by 0.004, regardless of the value of $x$. The rate of change is then constant. In the graph of Fig. \@ref(fig:fig-calcdiff-2), the rate of change is not constant. To see this, approximate Fig. \@ref(fig:fig-calcdiff-2) by two connected tangent lines (Fig. \@ref(fig:fig-calcdiff-3)a) and note that the slope differs with each line. As the approximation improves (Fig. \@ref(fig:fig-calcdiff-3)b), it uses more lines and thus presents more slopes. Using an infinite number of lines, we would duplicate the curve (in Fig. \@ref(fig:fig-calcdiff-2)) and have a slope that changes with each value of $x$. The slope then depends on $x$ and clearly is not constant. In fact, one definition of the slope of a curve at a point is the slope of the tangent line at that point.
 
@@ -63,7 +63,7 @@ knitr::include_graphics('figures/fig-calcdiff-4.png')
 The number "$3$" in the formula $Q = 3W^2$, as well as the "$2$" in the exponent, are empirically determined and differ with body size and species. The general formula is
 \begin{equation}
 Q=aW^b
-(\#eq:calcdif-calcdif-2)
+(\#eq:calcdiff-2)
 \end{equation}
 The derivative of this power function is
 $$\frac{dQ}{dW}=a\cdot b\cdot W^{b-1}$$
@@ -165,7 +165,7 @@ The models treated thus far involve functions of one variable. Oxygen uptake is 
 The model begins with the equation
 \begin{equation}
 \frac{dC}{dt}=aW^b
-(\#eq:calcdif-calcdif-3)
+(\#eq:calcdiff-3)
 \end{equation}
 
 where $C$ is the amount of oxygen consumed up to time $t$, and $a$, $b$ and $W$ are constants. The notation $dC/dt$ demands that we may be able to consider $C$ **only** as a function of $t$. This is not always the case. Bayne, et al., studied mussels (*Mytilus*) with regard to the effects of food and temperature on oxygen consumption. One of their data sets gives values for the coefficients $a$ and $b$ for winter vs. summer at two activity levels:
@@ -181,18 +181,18 @@ b|Winter|0.724|0.774
 | |Summer|0.67|0.702
 
 Standard activity represents the resting state. Routine refers to the post-feeding time period where some filtration (i.e. muscle activity) is occurring. From table 2, we recognize significant dependence of "$a$" on the level of activity and dependence of "$b$" on both activity and season. Let season and activity be denoted $s$ and $m$, respectively. Then, in place of "$a$" and "$b$" we write $a(m)$ and $b(s,m)$ to show the dependence on the variables $m$ and $s$. Now
-$C$, $a$ and $b$ are dependent variables and $W$, $s$, $m$ and $t$ are the independent variables. We must now write \@ref(eq:calcdif-calcdif-3) as
+$C$, $a$ and $b$ are dependent variables and $W$, $s$, $m$ and $t$ are the independent variables. We must now write \@ref(eq:calcdiff-3) as
 \begin{equation}
 \frac{\partial C}{\partial t}=a(m)W^{b(s,m)}
-(\#eq:calcdif-4)
+(\#eq:calcdiff-4)
 \end{equation}
 
-The derivative notation is different from that in \@ref(eq:calcdif-3) to indicate more than one independent variable. This derivative is called a **partial derivative** and represents the rate of change of $C$ with time while all other variables are held constant. Note that by holding all of the independent variables (except $t$) constant, we also hold $a$ and $b$ constant. So this partial derivative is obtained by differentiating the function $C$ with respect to $t$ and treating all of the remaining independent variables as constants.
+The derivative notation is different from that in \@ref(eq:calcdiff-3) to indicate more than one independent variable. This derivative is called a **partial derivative** and represents the rate of change of $C$ with time while all other variables are held constant. Note that by holding all of the independent variables (except $t$) constant, we also hold $a$ and $b$ constant. So this partial derivative is obtained by differentiating the function $C$ with respect to $t$ and treating all of the remaining independent variables as constants.
 
 As a simple example, consider the function
 \begin{equation}
 y=xt^2
-(\#eq:calcdif-5)
+(\#eq:calcdiff-5)
 \end{equation}
 Then
 $$\frac{\partial y}{\partial x}=t^2\;\;\;\mbox{(t held constant)}$$
@@ -208,7 +208,7 @@ y <- outer(x, t, surf)
 persp(x, t, y)
 ```
 
-A partial derivative is by nature merely one simple relation (of many) extracted from a complicated function. In \@ref(eq:calcdif-5), when both $x$ and $t$ vary, the graph of $y$ vs. $x$ vs. $t$ is a three-dimensional surface (figure \@ref(fig:fig-calcdiff-7)). When $t$ is held constant, the graph ($y$ vs. $x$) is a straight line (with slope $t^2$ ); when $x$ is held constant, the graph ($y$ vs. $t$) is a parabola, as shown in Figures \@ref(fig:fig-calcdiff-8) and \@ref(fig:fig-calcdiff-9). These latter two graphs are much simpler than the surface of figure \@ref(fig:fig-calcdiff-7). Note that the straight line ($y$ vs. $x$) is the far edge of figure \@ref(fig:fig-calcdiff-7)a, and the parabola ($y$ vs. $t$) is the near edge of figure \@ref(fig:fig-calcdiff-7)c.
+A partial derivative is by nature merely one simple relation (of many) extracted from a complicated function. In \@ref(eq:calcdiff-5), when both $x$ and $t$ vary, the graph of $y$ vs. $x$ vs. $t$ is a three-dimensional surface (figure \@ref(fig:fig-calcdiff-7)). When $t$ is held constant, the graph ($y$ vs. $x$) is a straight line (with slope $t^2$ ); when $x$ is held constant, the graph ($y$ vs. $t$) is a parabola, as shown in Figures \@ref(fig:fig-calcdiff-8) and \@ref(fig:fig-calcdiff-9). These latter two graphs are much simpler than the surface of figure \@ref(fig:fig-calcdiff-7). Note that the straight line ($y$ vs. $x$) is the far edge of figure \@ref(fig:fig-calcdiff-7)a, and the parabola ($y$ vs. $t$) is the near edge of figure \@ref(fig:fig-calcdiff-7)c.
 
 ```{r fig-calcdiff-8, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='$dy/dx=t^2$.'}
 knitr::include_graphics('figures/fig-calcdiff-8.png')
@@ -218,20 +218,20 @@ knitr::include_graphics('figures/fig-calcdiff-8.png')
 knitr::include_graphics('figures/fig-calcdiff-9.png')
 ```
 
-A more complicated example is the complete expression for \@ref(eq:calcdif-4) . The level of activity is based on the fraction of the maximal filtration rate. Then $m=0$ represents the "standard" state, $m=1$ gives the "active" state, and $m=0.4$ is the "routine" state . Consider oxygen consumption during summer.  
+A more complicated example is the complete expression for \@ref(eq:calcdiff-4) . The level of activity is based on the fraction of the maximal filtration rate. Then $m=0$ represents the "standard" state, $m=1$ gives the "active" state, and $m=0.4$ is the "routine" state . Consider oxygen consumption during summer.  
 Then
 $$a(m)=1.87(m+1)$$
-and \@ref(eq:calcdif-3) becomes
+and \@ref(eq:calcdiff-3) becomes
 \begin{equation}
 \frac{\partial C}{\partial t}=1.87(m+1)W^{(0.7)}
-(\#eq:calcdif-6)
+(\#eq:calcdiff-6)
 \end{equation}
-Changes in "$b$" are not significant so that an average value, 0.7, can be used. Since \@ref(eq:calcdif-6) involves four variables, and thus cannot be plotted, we revert to the notation of \@ref(eq:calcdif-2), i.e., $Q=\frac{\partial C}{\partial t}$. Then
+Changes in "$b$" are not significant so that an average value, 0.7, can be used. Since \@ref(eq:calcdiff-6) involves four variables, and thus cannot be plotted, we revert to the notation of \@ref(eq:calcdiff-2), i.e., $Q=\frac{\partial C}{\partial t}$. Then
 \begin{equation}
 Q=1.87(m+1)W^{(0.7)}
-(\#eq:calcdif-7)
+(\#eq:calcdiff-7)
 \end{equation}
-This last expression is similar in form to \@ref(eq:calcdif-5) and its graph has a similar shape. Problem 3 discusses \@ref(eq:calcdif-7) in more detail.
+This last expression is similar in form to \@ref(eq:calcdiff-5) and its graph has a similar shape. Problem 3 discusses \@ref(eq:calcdiff-7) in more detail.
 
 ### Critical Points in Three Dimensions
 
@@ -326,7 +326,7 @@ Set $P=35$ and evaluate the area, $A$, in terms of just the width, $b$. Show tha
 knitr::include_graphics('figures/fig-calcdiff-p20.png')
 ```
 
-3. In the O~2~ consumption model represented by equation \@ref(eq:calcdif-7), the variable $Q$ has units of $\mu$l/hr. Write $Q$ in ml/hr and find $\frac{\partial Q}{\partial m}$ for $W$ = 1000 mg. What are the units of $\frac{\partial Q}{\partial m}$? What might this derivative represent biologically? That is, why would a biologist be interested in this derivative?
+3. In the O~2~ consumption model represented by equation \@ref(eq:calcdiff-7), the variable $Q$ has units of $\mu$l/hr. Write $Q$ in ml/hr and find $\frac{\partial Q}{\partial m}$ for $W$ = 1000 mg. What are the units of $\frac{\partial Q}{\partial m}$? What might this derivative represent biologically? That is, why would a biologist be interested in this derivative?
 
 4. A study of shape changes in nemerteans and flatworms (Alexander, 1968) theorizes that a basement membrane encloses the body and contains fibers which run in helices around the body. From Figure b, if the length $D$ of the fiber is fixed, then $l = Dcos\theta$ and when the shape is cylindrical, the circumference and volume are $2\pi r=Dsin\theta$, $v=\pi r^2l$.
 
@@ -405,7 +405,7 @@ a&=&(\frac{35^2}{2\pi^2}-\frac{35^2}{4\pi^2})^{1/2}=\frac{35}{2\pi},\;\;\;\;\mbo
 \end{eqnarray}
 Thus the maximum area occurs when $a=b$, i.e. a circle.
 
-3. To convert \@ref(eq:calcdif-7) so $Q$ is in ml/hr, we divide by 1000:
+3. To convert \@ref(eq:calcdiff-7) so $Q$ is in ml/hr, we divide by 1000:
 $$Q=1.87\times10^{-3}(m+1)W^{0.7}$$
 \begin{eqnarray}
 \frac{\partial Q}{\partial m}&=&1.87\times10^{-3}W^{0.7} \\
@@ -491,7 +491,7 @@ Thus the equation is indeed satisfied.
 ## ADDITIONAL PROBLEMS
 
 1. In the example in the text treating oxygen consumption(see also problem 3 above), the oxygen consumption $(Q)$ depended on both the activity level $(m)$ and the dry weight $(W)$:
-$$Q=0.00187(m+1)W^{.7}$$
+$$Q=0.00187(m+1)W^{0.7}$$
 where the units of $Q$ are mlO~2~/hr. For this exercise, we use the correspondence
 $$Q \rightarrow z,\;m \rightarrow x,\;W\rightarrow y$$
 so that the equation is
@@ -510,13 +510,17 @@ where
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$S$ = strength of beam  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$W$ = width of beam  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$D$ = depth of beam
-as shown in Figure A, and where $k$ is a constant which depends on the type of tree used. Assume that the log is circular in cross-section and that the beam is cut so each corner reaches the outside of the log, as shown. Assume $k$ = 0.1. Find the width and depth of the beam which give the maximum strength. Assume the radius of the log is $r$.  
+as shown in Figure \@ref(fig:fig-calcdiff-A), and where $k$ is a constant which depends on the type of tree used. Assume that the log is circular in cross-section and that the beam is cut so each corner reaches the outside of the log, as shown. Assume $k$ = 0.1. Find the width and depth of the beam which give the maximum strength. Assume the radius of the log is $r$.  
 
-> Figure A. Rectangular beam cut from a log.
+```{r fig-calcdiff-A, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Rectangular beam cut from a log.'}
+knitr::include_graphics('figures/fig-calcdiff-A.png')
+```
 
-4. Animal populations newly introduced into a region have been observed to increase rapidly in number and soon thereafter to fall drastically (Caughley 1970a, b) as indicated in Figure B. One theory is that the population at first "senses" an infinite food supply and then reproduces rapidly to the point of overgrazing the area. The birth rate remains the same but the death rate (perhaps of young) dramatically increases until the population is low enough to match the food supply. The population then increases more slowly and seems to stabilize. Migration is also involved but is poorly understood. The second population rise to a "steady-state" suggests some adaptation or social "learning" by the population concerning their new environment.
+4. Animal populations newly introduced into a region have been observed to increase rapidly in number and soon thereafter to fall drastically (Caughley 1970a, b) as indicated in Figure \@ref(fig:fig-calcdiff-B). One theory is that the population at first "senses" an infinite food supply and then reproduces rapidly to the point of overgrazing the area. The birth rate remains the same but the death rate (perhaps of young) dramatically increases until the population is low enough to match the food supply. The population then increases more slowly and seems to stabilize. Migration is also involved but is poorly understood. The second population rise to a "steady-state" suggests some adaptation or social "learning" by the population concerning their new environment.
 
-> Figure B.
+```{r fig-calcdiff-B, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Population dynamics of introduced species.'}
+knitr::include_graphics('figures/fig-calcdiff-B.png')
+```
 
 a. Consider the logistic equation written as follows:
 $$N(t)=K(1+be^{-rt})^{-1}$$
@@ -557,9 +561,7 @@ $$\frac{\partial^2z}{\partial x^2}\frac{\partial^2z}{\partial y^2}-\Big(\frac{\p
 Pick $P1=.6$, $P2=1.0$  
 Then $4(P1)(P2)>0$, $\frac{\partial^2z}{\partial x^2}=2(P1)>0$ and the point is a relative minimum.
 
-3. From the diagram, we use the Pythagorean theorem to obtain
-
-> Figure 
+3. We use the Pythagorean theorem to obtain
 
 $$(2r)^2=W^2+D^2$$
 Thus

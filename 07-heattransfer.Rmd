@@ -484,8 +484,8 @@ L(T) = 2.50 \times 10^6 - 2.38 \times 10^3 T
 \end{equation}
 where
 <div class="nobullet">
-* $L(T)$ is the latent heat of evaporation ($J kg^{-1}$),
-* $T$ is the surface temperature at the site of evaporation ($^{\circ}C$).
+* $L(T)$ is the latent heat of evaporation (J kg^-1^),
+* $T$ is the surface temperature at the site of evaporation (°C).
 </div>
 
 As an example of the energy flux, the water loss at $T_a = 40^{\circ}C$ for *C. collaris* is 0.8 mg of $H_2 O\,g^{-1} {hr}^{-1}$ Correcting the units to kg $s^{-1}$ for a 30 g lizard yields $6.67 \times 10^{-9} kg\:s^{-1}$. Therefore, using equation \@ref(eq:heattrans-16), the energy loss for the animal is $1.6 \times 10^{-2} W$. In this example, we have not calculated $E$ explicitly, mechanistically accounting for wind speed or water vapor concentration of the environment, but animal physiologists often report evaporation as a function of air or body temperature only. These factors become more important when water loss is a larger fraction of the total energy budget or when one is concerned with the water balance of the organism (Welsh and Tracy 1977). Later in the text, a functional relationship to include these factors is given for water loss from a leaf. Generally, transpiration is a significant energy loss for plants which has led Monteith (1973) to make the distinction between "wet" and "dry" systems.
@@ -501,11 +501,11 @@ c = \frac{\Delta O}{\Delta T \, M}
 \end{equation}
 where
 <div class="nobullet">
-* $c$ is the specific heat ($J kg^{-1} {^{\circ}C^{-1}}$),
-* $\Delta Q$ is the heat flux ($J$),
-* $\Delta T$ is a 1° change temperature ($^{\circ}C$),
+* $c$ is the specific heat (J kg^-1^ °C^-1^),
+* $\Delta Q$ is the heat flux (J),
+* $\Delta T$ is a 1° change temperature (°C),
 and
-* $M$ is a 1 kilogram system ($kg$).
+* $M$ is a 1 kilogram system (kg).
 
 We cannot measure the amount of heat a body can hold, so in a sense the term specific heat is misleading, but it is commonly used. It is simply the amount of heat which must be added per unit mass of material for a $1^{\circ}C$ rise in temperature. What actually is changing is the internal energy of the system. Table 3 (after Monteith 1973) shows values of specific heat for different materials. See Stevenson (1979a) or Zemansky and Van Ness (1966) for a more formal definition.
 
@@ -515,7 +515,7 @@ C = Mc
 (\#eq:heattrans-18)
 \end{equation}
 
-For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table 3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} {^{\circ}C^{-1}}$ the peat. To calculate the energy necessary to raise each system $10^{\circ}C$, we can employ equation \@ref(eq:heattrans-18) in the form
+For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table 3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} °C^{-1}$ the peat. To calculate the energy necessary to raise each system $10°C$, we can employ equation \@ref(eq:heattrans-18) in the form
 $$\Delta Q = \Delta T \, M \, c$$
 The answer is found to 960 J for the granite and 2,200 J for the peat.
 
@@ -650,11 +650,11 @@ and
 Inspection of equation \@ref(eq:heattrans-24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures 10 and 11 illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure 12 clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
 
 We analyze this equation in R as follows.
-```{r}
+```{r fig-heattrans-10, fig.height=4, fig.fullwidth=FALSE, fig.cap= "Computed transpiration rate versus leaf temperature as a function of wind speed and internal diffusive resistance for the conditions indicated. (From Gates, D. M. 1968. P. 216.)"}
 #radiation, convection, and evaporation
 epsilon=0.96
 sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^{-2}K^{-4})
-k1=9.14 #an experimentally determined coefficient ($9.14 J m^{-2} s^{-0.5} {^{\circ}C^{-1}}$),
+k1=9.14 #an experimentally determined coefficient ($9.14 J m^{-2} s^{-0.5} °C^{-1}$),
 k2=200 # is an experimentally determined coefficient ($183 s^{0.5} m^{-1}$),
 
 L=2.26*10^6 #L, latent heat of vaporiation of water in J kg^{-1}, 2.43x10^6 at 30C and 2.5*10^6 at 0C
@@ -663,7 +663,7 @@ L=2.26*10^6 #L, latent heat of vaporiation of water in J kg^{-1}, 2.43x10^6 at 3
 #' VAPPRS
 #'
 #' Calculates saturation vapour pressure for a given air temperature.
-#' @param db Dry bulb temperature (degrees C)
+#' @param db Dry bulb temperature (°C)
 #' @return esat Saturation vapour pressure (Pa)
 #' @export
 VAPPRS <- function(db=db){
@@ -677,7 +677,7 @@ VAPPRS <- function(db=db){
 
 #Solve vapour density
 #rh: relative humidity, decimal%
-#T: temperature, C
+#T: temperature, °C
 #return Vapour density (kg m^{-3})
 vd= function(T,rh){
 rh=rh*100
@@ -697,10 +697,10 @@ T_l=uniroot(f, interval=c(-100, 100))$root
 E=(vd(T_l, rh)-rh*vd(T_a, rh))/(r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
 return(c(T_l, E))
 }
-#----
+
 #fig 10 sunny
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=900)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=2.1, D=0.05, W=0.05, Q_a=900)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=4.1, D=0.05, W=0.05, Q_a=900)
@@ -720,9 +720,13 @@ points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue4', lty="dashed")
 legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), col = c('tomato','tomato2','tomato3','tomato4'), lty=c(1), bty = "n")
 legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 
+```
+
+```{r fig-heattrans-11, fig.height=4, fig.fullwidth=FALSE, fig.cap= "Computed transpiration rate versus leaf temperature as a function of wind speed and internal diffusive resistance for the conditions indicated. (From Gates, D. M. 1968. P. 217.)"}
+
 #fig 11 cloudy
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=600)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(33,43),ylim=range(0.0,0.0004))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(33,43),ylim=range(0.0,0.0004))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=2.1, D=0.05, W=0.05, Q_a=600)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=4.1, D=0.05, W=0.05, Q_a=600)
@@ -742,9 +746,12 @@ points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue4', lty="dashed")
 legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), col = c('tomato','tomato2','tomato3','tomato4'), lty=c(1), bty = "n")
 legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 
+```
+
+```{r fig-heattrans-12, fig.height=4, fig.fullwidth=FALSE, fig.cap= "Computed transpiration rate versus leaf temperature for various leaf dimensions and internal diffusive resistances for the conditions indicated. (From Gates, D. M. 1968. P. 229.)"}
 #fig 12 vary leaf dimensions, resistances 
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=1, D=0.01, W=0.01, Q_a=900)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='darkolivegreen1', xlab="Leaf temperature (C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='darkolivegreen1', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=1, D=0.05, W=0.05, Q_a=900)
 points(fig.vr[1,], fig.vr[2,], type="l", col='darkolivegreen2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=1, D=0.1, W=0.1, Q_a=900)
@@ -863,7 +870,9 @@ Hint: The energy lost is equal to the net mass flow (the mass of water exhaled m
     
 5a. In the diagram, heat flows through two materials from the left boundary (temperature $T_1$) to the right boundary (temperature $T_2$). Assure steady state conditions.
 
-> figure
+```{r fig-heattrans-p5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=''}
+knitr::include_graphics('figures/fig-heattrans-p5.png')
+```
 
 How does the temperature drop at the boundary depend on thermal conductivity and the thickness of the material? Let $\frac{k_1}{k_2}=a$ and $\frac{L_1}{L_2}=b$; find $T_B$. Let $\frac{a}{b}$ and find $T_B$. Plot $\frac{T_B-T_2}{T_1-T_2}$. If $a = 1.2$, $b = 0.2$, $T_1 = 40 °C$ and $T_2= 10 °C$, in which material is the temperature gradient larger? Which material has the larger temperature drop? What is $T_B$?
 
@@ -980,7 +989,9 @@ Bakken, G. S., and D. M. Gates. 1974. Notes on "Heat loss from a Newtonian anima
 ## PROBLEM SOLUTIONS
 1
 
->graph
+```{r fig-heattrans-ps1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=''}
+knitr::include_graphics('figures/fig-heattrans-ps1.png')
+```
 
 1a. Metabolic heat will increase the wall temperature. The smaller the chamber, the greater this effect will be. The influence will change as the square of the distance.
 
@@ -992,18 +1003,18 @@ b. The absorptivity is 0.96. Two ways to minimize wall heating are to make the c
 **$T$**|**$\lambda$**|**$n$**|**$f$**|**$E_\lambda$**|**$E_f$**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 (K)|(m $\times$ 10^-6^)|(m^-1^ $\times$ 10^6^)|(s^-1^ $\times$ 10^14^)|(J m^-3^s^-1^)|(J m^-2^)
-280|4.0|0.250|0.750|0.10 $\times$ 107|0.05 $\times$ 10^-12^
+280|4.0|0.250|0.750|0.09 $\times$ 107|0.05 $\times$ 10^-12^
 | |5.0|0.200|0.600|0.41|0.35
-| |6.0|0.167|0.500|0.92|1.10
-| |7.0|0.143|0.429|1.45|2.37
-| |8.0|0.125|0.375|1.86|3.98
-| |9.0|0.111|0.333|2.11|5.71
-| |10.0|0.100|0.300|2.21|7.38
-| |11.0|0.091|0.273|2.20|8.87
-| |12.0|0.083|0.250|2.11|10.31
-| |13.0|0.077|0.231|1.98|11.14
-| |15.0|0.067|0.200|1.66|12.45
-| |17.0|0.659|0.176|1.35|13.00
+| |6.0|0.167|0.500|0.91|1.10
+| |7.0|0.143|0.429|1.43|2.37
+| |8.0|0.125|0.375|1.84|3.98
+| |9.0|0.111|0.333|2.09|5.71
+| |10.0|0.100|0.300|2.19|7.38
+| |11.0|0.091|0.273|2.18|8.87
+| |12.0|0.083|0.250|2.09|10.31
+| |13.0|0.077|0.231|1.96|11.14
+| |15.0|0.067|0.200|1.65|12.45
+| |17.0|0.659|0.176|1.34|13.00
 | |20.0|0.050|0.150|0.97|12.95
 | |30.0|0.033|0.100|0.34|10.17
 | |40.0|0.025|0.075|0.14|7.46
@@ -1033,13 +1044,63 @@ b. The absorptivity is 0.96. Two ways to minimize wall heating are to make the c
 | |5.00|0.2|.60|.02|1.62
 | |10.00|.10|.30| |.46
 
->figures
+```{r fig-heattrans-ps2, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=c('Figure for problem 2. Emitted radiation as a function of temperature (T = 280 K)', 'Figure for problem 2. Emitted radiation as a function of temperature (T = 6000 K)')}
+
+h = 6.63 * 10^-34
+kb = 1.38 * 10^-23
+cl = 3 * 10^8
+
+T = 280
+y = function(x){(2 * pi * h * cl^2/((x*10^-6)^5*(exp(h*cl/kb/T/(x*10^-6))-1)))/10^7}
+z = function(x){(2 * pi * h * cl^2/((x*10^-6)^5*(exp(h*cl/kb/T/(x*10^-6))-1)))*(x*10^-6)^2/cl*10^11}
+
+par(mar = c(5, 5, 3, 5))
+par(las=1)
+curve(y, from = 1, to = 200, n = 500, log = "x", col = "blue", lwd = 2, 
+      xlab = expression(lambda ~ (m ~ x ~ 10^6)), 
+      ylab = expression(E[lambda] ~ (J ~ m^{-3} ~ s^{-1} ~ x ~ 10^7)), xaxt = "n")
+curve(z, from = 1, to = 200, n = 500, log = "x", col = "red", lwd = 2, add = TRUE)
+axis(side = 4, at = seq(from = 0, to = 2, length.out = 5), labels = seq(from = 0, to = 20, length.out = 5))
+axis(side = 1, at = c(1, 10, 100), labels = c(1, 10, 100))
+par(las=0)
+axis(side = 4, at = 1.1, labels = expression(E[f] ~ (J ~ m^{-2} ~ x ~ 10^{-12})), gap.axis = 5, pos = 500, tick = FALSE)
+legend("topright", lty = 1, col = c("blue", "red"), legend = c(expression(E[lambda]), expression(E[f])))
+
+
+T = 6000
+y = function(x){(2 * pi * h * cl^2/((x*10^-6)^5*(exp(h*cl/kb/T/(x*10^-6))-1)))/10^13}
+z = function(x){(2 * pi * h * cl^2/((x*10^-6)^5*(exp(h*cl/kb/T/(x*10^-6))-1)))*(x*10^-6)^2/cl*10^8}
+
+par(las=1)
+curve(z, from = 0.1, to = 10, n = 300, log = "x", col = "red", lwd = 2,
+      xlab = expression(lambda ~ (m ~ x ~ 10^6)), 
+      ylab = expression(E[lambda] ~ (J ~ m^{-3} ~ s^{-1} ~ x ~ 10^13)), xaxt = "n")
+curve(y, from = 0.1, to = 10, n = 300, log = "x", col = "blue", lwd = 2, add = TRUE)
+axis(side = 4, at = seq(from = 0, to = 12, length.out = 7), labels = seq(from = 0, to = 12, length.out = 7))
+axis(side = 1, at = c(0.1, 1, 10), labels = c(0.1, 1, 10))
+par(las=0)
+axis(side = 4, at = 6, labels = expression(E[f] ~ (J ~ m^{-2} ~ x ~ 10^{-8})), pos = 18, tick = FALSE)
+legend("topright", lty = 1, col = c("blue", "red"), legend = c(expression(E[lambda]), expression(E[f])))
+
+```
+
+
 
 b. A frequency or wave number plot has the property that equal areas represent equal amounts of energy which is not true of a wavelength plot. The maximum energy is at $\lambda \approx 0.85 \times 10^{-6}$ which is in the near infrared of the spectrum, while Fig.\@ref(fig:fig-heattrans-4) shows $\lambda_{max}\approx 0.48\times10^{-6}m$.
 
 3a. Equation \@ref(eq:heattrans-16) is
 
-> figure
+```{r fig-heattrans-ps3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE}
+
+par(mar = c(5, 5, 3, 5))
+y = function(T){(2.50 * 10^6 - 2.38 * 10^3 * T)/10^6}
+curve(y, from = 0, to = 50, n = 2, yaxt = "n", xlab = "T (°C)", ylim = c(2.3, 2.6),
+      ylab = expression("Latent heat of evaporation " ~ (J ~ kg^{-1} ~ x ~ 10^6)), main = expression("L(T) = 2.50 x" ~ 10^6 ~ "- 2.38 x" ~ 10^3 ~ T))
+curve(2.43 + x * 0, from = 0, to = 50, add = TRUE, lty = 2)
+axis(side = 2, at = c(2.3, 2.4, 2.5, 2.6), labels = c(2.3, 2.4, 2.5, 2.6))
+text(x = 48, y = 2.45, labels = "2.43")
+
+```
 
 $580 cal\cdot g^{-1} = 2.43\times10^6Jkg^{-1}$.
 Body temperature for most homeotherms is above 36 °C. Expelled air will be below body temperature so this seems like a good estimate. If the air was really at 0 °C, the error would be:
@@ -1144,7 +1205,13 @@ $$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{v}\bigg)^{0.5}=\frac{0.60}{v^{0.5}}\times k
 $$h_c=3.98\bigg(\frac{V}{D}\bigg)^{0.5}$$
 This is approximately 2.3 times the value of $9.14 J m^2 °C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
 
->Figures
+```{r fig-heattrans-ps7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap = "Figure for problem 7"}
+par(mar = c(5, 5, 3, 5))
+V = function(D){0.302/D}
+curve(V, from = 0, to = 0.3, ylim = c(0, 10), xlab = "Diameter of leaf (m)", ylab = expression("Wind velocity V " ~ (m ~ s^-1)))
+text(x = 0.2, y = 6, labels = "Re > 20000")
+text(x = 0.05, y = 1.5, labels = "Re < 20000")
+```
 
 8.
 \begin{eqnarray}
@@ -1165,6 +1232,23 @@ $D$ (m)|5|10|20
 0.1|0.134|0.189|0.328
 0.05|0.095|0.134|0.232
 0.01|0.042|0.06|0.104
+
+
+```{r fig-heattrans-ps8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap = "Curves for which the Reynolds number squared equals the Grasnof number."}
+
+par(mar = c(5, 5, 3, 5))
+V5 = function(D){sqrt(98 * D / 273 / 2)}
+V10 = function(D){sqrt(98 * D / 273)}
+V30 = function(D){sqrt(98 * D / 273 * 3)}
+
+curve(V5, from = 0, to = 0.3, ylim = c(0, 0.5), xlab = "Diameter (m)", ylab = expression("Velocity " ~ (m ~ s^{-1})))
+curve(V10, from = 0, to = 0.3, add = TRUE)
+curve(V30, from = 0, to = 0.3, add = TRUE)
+text(x = 0.27, y = 0.17, labels = expression(T[s] ~ "- T = 5"), cex = 0.75)
+text(x = 0.20, y = 0.32, labels = expression(T[s] ~ "- T = 10"), cex = 0.75)
+text(x = 0.13, y = 0.43, labels = expression(T[s] ~ "- T = 30"), cex = 0.75)
+
+```
 
 From Figures \@ref(fig:fig-heattrans-10), \@ref(fig:fig-heattrans-11), and \@ref(fig:fig-heattrans-12) in the text it is clear that leaf temperature is usually not more than 10 °C above air temperature (although this is a function of leaf size in Fig. \@ref(fig:fig-heattrans-12). Leaf size is usually less than 0.05 m and wind speed is below 3 m s$^{-1}$. There still remains a set of conditions where free convection may be important. For additional information see Tibbals et al. (1964) and Grace (1977).
 
