@@ -147,7 +147,7 @@ If $E$ is the total energy density in all frequencies $(J m^{-3})$:
 
 \begin{equation}
 E=\int_0^\infty E(\nu)d\nu=\frac{8\pi h}{c^3}\int_0^\infty\frac{\nu^3d\nu}{e^{h\nu/kT}-1}
-(\#eq:radiation-radiation-1)
+(\#eq:radiation-1)
 \end{equation}
 
 Making a change of variable,  
@@ -414,7 +414,7 @@ The derivation presented below is for the Doppler effect as it applies to the sp
 
 Let $V_L$ and $V_S$ denote the velocities of the listener and source respectively. The positive direction for the velocities is taken to be from the position of the observer to the position of the source. 
 
-```{r fig-rad-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The source $S$, moving with velocity $V_S$ is emiting sound at a constant frequency, $f_S$. The wave fronts of this sound, which travel radially outward at velocity $C_S$, are compressed together (wavelength equals $\\lambda_F$) in front of the source and spread out (wavelength equals $\\lambda_B$) behind the source. By the time the wavefront emitted by the source at $x_0$ at time t = 0 has reached a radius of $C_ST$, the source has moved to a position $x_T$. The listner $L$ moving with velocity $V_L$ will hear the sound at a different frequency than as actually emitted by the source because it encounters wave fronts which are $\\lambda_B$ apart. An exact derivation is given in the text. [Adapted from Sears and Zemansky p. 327.]'}
+```{r fig-rad-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The source $S$, moving with velocity $V_S$ is emiting sound at a constant frequency, $f_S$. The wave fronts of this sound, which travel radially outward at velocity $C_S$, are compressed together (wavelength equals $\\lambda_F$) in front of the source and spread out (wavelength equals $\\lambda_B$) behind the source. By the time the wavefront emitted by the source at $x_0$ at time t = 0 has reached a radius of $C_ST$, the source has moved to a position $x_T$. The listner $L$ moving with velocity $V_L$ will hear the sound at a different frequency than as actually emitted by the source because it encounters wave fronts which are $\\lambda_B$ apart. An exact derivation is given in the text. [Adapted from Young 2013 p. 534.]'}
 knitr::include_graphics('figures/fig-rad-5.png')
 ```
 
@@ -465,13 +465,13 @@ Solution:
 
 Now that a quantitative formulation of the Doppler effect has been derived, it can be applied in the explanation of echolocation in bats, a sensory system which has only begun to be understood in the past several decades. 
 
-The bats, members of the order Chiroptera within the class Mammalia, have developed a system of echolocation which has been of immense evolutionary significance. It has enabled them to exploit a resource for which there are very few competitors, small night flying insects (see, e.g., Fenton 1974). The physical processes important in echolocation have both enhanced and constrained the evolution of the Chiroptera. Here it will suffice to show a few examples of the effect of these physical processes upon bat evolution and natural history. For a detailed and personable account of the actual experimentation that led to the elucidation of the physical principles employed in echolocation, see Griffen's "Listening in the Dark" (Griffen 1953).
+The bats, members of the order Chiroptera within the class Mammalia, have developed a system of echolocation which has been of immense evolutionary significance. It has enabled them to exploit a resource for which there are very few competitors, small night flying insects (see, e.g., Fenton 1974). The physical processes important in echolocation have both enhanced and constrained the evolution of the Chiroptera. Here it will suffice to show a few examples of the effect of these physical processes upon bat evolution and natural history. For a detailed and personable account of the actual experimentation that led to the elucidation of the physical principles employed in echolocation, see Griffin's "Listening in the Dark" (Griffin 1958).
 
 Almost all bats appear to be able to navigate in total darkness a closely spaced grid of wires, where the spacings of the wires are commensurate with the dimensions of the wingspread of the bats. Furthermore, insectivorous bats can pursue and capture flying insects on the wing in total darkness.
 
 The ability to carry out these activities is significant in two respects. First, unlike the birds which are able to perform similar activities only in the presence of light, bats cannot be dependent upon a highly developed sense of sight for navigation. Second, no other animal can depend upon catching flying insects in the dark and so there are few competitors for this food resource. Prior to the evolution of bats, this resource had not been exploited.
 
-The experiments of Griffen demonstrate that bats share another ability that sets them apart from most other animals. This is the ability to produce and detect sound of frequencies between 20-100 kHz, It is this attribute which is fundamental to the system of echolocation, as in the next example.
+The experiments of Griffin demonstrate that bats share another ability that sets them apart from most other animals. This is the ability to produce and detect sound of frequencies between 20-100 kHz, It is this attribute which is fundamental to the system of echolocation, as in the next example.
 
 **Example 6**
 
@@ -510,7 +510,31 @@ The thrust of the discussion presented in this section is perhaps most striking 
 The preceding discussion has presented some of the results from classical and modern radiation theory and demonstrated how these physical principles can be applied to the analysis of biological systems. The emphasis in these applications has been upon the evolutionary significance of the physical processes. In the biological applications presented, the physical processes are involved in the following two types of explanations. In the first type of explanation, physical theory is used to isolate constant factors in the environment to which all organisms must adjust their evolution. In a second application, physical theory is used to elucidate the constraints governing the evolution of biological systems. It is demonstrated that radiation theory is applicable to a wide range of sense organs, radiation types, wavelengths, and organisms.
 
 ## LITERATURE CITED
-**PLEASE ADD**
 
- Weeg, G.P.and Reed, G.B. 1966. Introduction to Numerical Analysis. Blaisdell Publishing Co., Waltham,Masachusets.184p.
+```
+Can't find Gates 1973, Gates 1978, Hathaway 1977
+```
 
+Barlow, H.B., 1952. The size of ommatidia in apposition eyes. Journal of experimental Biology, 29(4), pp.667-674.
+
+Bjorn LO. 1976. Light and Life. London: Hodder and Stoughton
+
+Elmore, W.C. and Heald, M.A., 1985. Physics of waves. Courier Corporation.
+
+Fenton, M. B. 1974. The role of echolocation in the evolution of bats. Am. Nat. 108: 386-388.
+ 
+Gates, D. M. 1977. Transpiration and leaf temperature. An instructional module: Physical processes in terrestrial and aquatic ecosystems. Ctr. Quantitative Sci., Univ. Washington, Seattle.
+
+Griffin, D.R., 1953. Acoustic orientation in the oil bird, Steatornis. Proceedings of the National Academy of Sciences of the United States of America, 39(8), p.884.
+
+Griffin D. R. 1958. Listening in the Dark. New Haven (CT): Yale University Press. Reprinted 1986, Ithaca (NY): Cornell University Press
+
+Lummer, O. and Pringsheim, E. 1901. Kritisches zur schwarzen Stahlung. Annalen der Physik. 311. 192-210. 
+
+Schuller, G., Beuter, K. and Schnitzler, H.U., 1974. Response to frequency shifted artificial echoes in the batRhinolophus ferrumequinum. Journal of comparative physiology, 89(3), pp.275-286.
+
+Stevenson, R. D, and Seattle. Center for Quantitative Science in Forestry, Fisheries Wildlife Washington Univ. 1979. The First Law of Thermodynamics for Ecosystems. Physical Processes in Terrestrial and Aquatic Ecosystems, Thermodynamics.
+
+Weeg, G.P.and Reed, G.B. 1966. Introduction to Numerical Analysis. Blaisdell Publishing Co., Waltham, Masachusets. 184p.
+
+Young, H.D. et al., 2013. Sears and Zemansky's university physics : with modern physics 13th edition, Technology update., Boston: Pearson.
