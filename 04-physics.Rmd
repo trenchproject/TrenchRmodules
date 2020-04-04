@@ -329,10 +329,10 @@ Determine the potential energy stored in a spring stretched from equilibrium a d
 
 We must now formally obtain a formula for kinetic energy, which is defined to be the amount of work we do in overcoming the inertial force of a body of mass $m$, in getting it from zero velocity to a velocity $v$. The inertial force is given by Newton's second law, which we manipulate a bit using the chain rule for derivatives and recalling that the rate of change of velocity is acceleration:
 $$F=ma=m\frac{dv}{dt}=m\frac{dv}{dx}\frac{dx}{dt}=mv\frac{dv}{dx}$$
-We may insert this into the definition of work (Equation \@ref(eq:physics-physics-8)) to get:
+We may insert this into the definition of work (Equation \@ref(eq:physics-8)) to get:
 \begin{equation}
 \mbox{Kinetic Energy}\equiv T=\int mv\frac{dv}{dx}dx=\int_0^vmvdv=\frac{1}{2}mv^2
-(\#eq:physics-physics-11)
+(\#eq:physics-11)
 \end{equation}
 We are now ready to establish the law of conservation of energy, which we do forthwith.
 
@@ -359,10 +359,10 @@ Let's see if this relationship holds in the case of a body of mass $m$ falling f
 \end{equation}
 
 If equation \@ref(eq:physics-13) is true then the time derivative of the left hand side must be zero. Taking this derivative:
-\begin{eqnarray}
-\frac{d}{dt}(\frac{1}{2}mv^2+mgh)=\frac{1}{2}m\frac{d}{dt}(v^2)+mg\frac{dh}{dt}&=&\frac{1}{\rlap{-}2}m\rlap{-}2v\frac{dv}{dt}+mg\frac{dh}{dt} \\
-&=&mv(-g)+mgv=0
-\end{eqnarray}
+\begin{align*}
+\frac{d}{dt}(\frac{1}{2}mv^2+mgh)=\frac{1}{2}m\frac{d}{dt}(v^2)+mg\frac{dh}{dt}&=\frac{1}{\rlap{-}2}m\rlap{-}2v\frac{dv}{dt}+mg\frac{dh}{dt} \\
+&=mv(-g)+mgv=0
+\end{align*}
 
 where we have chosen the positive direction for $h$ to be upward, $\frac{dh}{dt} = v$ (both $\frac{dh}{dt}$ and $v$ are negative), and the acceleration due to gravity $(\frac{dv}{dt} = -g)$ is a negative quantity since it is directed downward. Thus, the derivatives of both sides of \@ref(eq:physics-13) are zero and \@ref(eq:physics-13) is satisfied. We also interpret this to mean that the principle of conservation of energy is satisfied.
 
@@ -370,12 +370,12 @@ To show that conservation of energy holds in general is best done using the tool
 
 All that need be done is to return to the development of the formula \@ref(eq:physics-11) for the kinetic energy, which was defined as the work necessary to get a body from zero velocity to a velocity $v$. If we wish to find the work done *on* the body in getting from a velocity $v_1$ (at point 1 in space) to a velocity $v_2$ (at point 2 in space), the steps are the same as in obtaining equation \@ref(eq:physics-11) except the final integral has limits $v_1$ and $v_2$:
 
-\begin{eqnarray}
-\mbox{Work in getting from 1 to 2} \equiv W_{12}&=&\int_{v_1}^{v_2}mvdv \\
-&=&\frac{1}{2}m(v_2^2-v_1^2) \\
-&=&T_2-T_1
+\begin{align}
+\mbox{Work in getting from 1 to 2} \equiv W_{12}&=\int_{v_1}^{v_2}mvdv \notag \\
+&=\frac{1}{2}m(v_2^2-v_1^2) \notag \\
+&=T_2-T_1
 (\#eq:physics-14)
-\end{eqnarray}
+\end{align}
 
 Equivalently, if the force acting on the body is conservative (work done is independent of path from 1 to 2), then we may figure out a potential energy (relative to an arbitrary point) of the body at each point, say and the work we must do $V_1$ and $V_2$, on the body in getting it from 1 to 2 is $V_2 - V_1$. If we release the body at point 2, the force associated with the p(potential (let's say it's gravity) will do en amount of work $W_{21} = V_2 - V_1$ on the body in getting it from point 2 to point 1. We may write:
 
@@ -402,11 +402,11 @@ In passing, we point out one more assumption made in the development of the law,
 ### Gravitational and Electrostatic Potential Energy
 
 We can now establish formulas for gravitational and electrostatic potential energy. For reasons that will become apparent in the development, we usually choose $r = \infty$ to be the reference point for the potential energy; that is, we shall define $V_{\infty} = 0$. Thus if we take equation \@ref(eq:physics-15) and \@ref(eq:physics-8) in combination to define potential energy, then substitution of equation \@ref(eq:physics-2), Newton's law of universal gravitation, into the defining potential energy relations gives:
-\begin{eqnarray}
-V_r-V_{\infty}&=&-\int_r^{\infty}g\frac{Mm}{r^2}dr \\
-V_r&=&-G\frac{Mm}{r}
+\begin{align*}
+V_r-V_{\infty}&=-\int_r^{\infty}g\frac{Mm}{r^2}dr \\
+V_r&=-G\frac{Mm}{r}
 (\#eq:physics-17)
-\end{eqnarray}
+\end{align*}
 
 where  
 &nbsp;&nbsp;&nbsp;&nbsp;$M$ = mass of earth  

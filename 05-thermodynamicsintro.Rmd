@@ -81,7 +81,7 @@ cat(tabl)
 $$ ^{\circ} F = 1.8 ({^{\circ} C}) + 32.00 $$
 $$ K = {^{\circ}C}+ 273.15 $$
 
-```{r fig-thermintro-1, echo=FALSE, fig.height=5, fig.width=5, fig.cap='A pressure-temperature diagram for a substance such as water. The triple point is the point of intersection of the sublimation, fusion and vaporization curves. From Zemansky, M.W. and H.C. Van Ness. 1966. P. 200.'}
+```{r fig-thermintro-1, echo=FALSE, fig.height=5, out.width = "75%", fig.cap='A pressure-temperature diagram for a substance such as water. The triple point is the point of intersection of the sublimation, fusion and vaporization curves. From Zemansky, M.W. and H.C. Van Ness. 1966. P. 200.'}
 knitr::include_graphics('figures/fig-thermintro-1.png')
 ```
 
@@ -131,13 +131,13 @@ There are four kinds of heat transfer mechanisms relevant to this discussion: (1
 
 The process by which energy can be transmitted without the presence of an intervening medium is called **radiation**. All objects, living and nonliving, radiate energy. The amount and kind (wavelength in the electromagnetic spectrum) of energy depends on the temperature and physical characteristics of the radiating body. Figure \@ref(fig:fig-thermintro-2) shows the electromagnetic spectrum, which is characterized by either of two scales, frequency $f$ or wavelength $\lambda$, (the scales are inversely proportional). Radiation is a field phenomenon having both particulate (photons) and wave characteristics. Acoustic waves, however, require an intervening medium. The physics of radiation is described in greater detail in other modules.
 
-```{r fig-thermintro-2, echo=FALSE, fig.height=2, fig.fullwidth=FALSE, fig.cap='Electromagnetic spectrum as a function of both frequency (f) (Hertz or cycles sec) and wavelength ($\\lambda$) (meters). From Byers, H.R. 1974. General Meteorology. P. 8.'}
+```{r fig-thermintro-2, echo=FALSE, fig.height=2, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Electromagnetic spectrum as a function of both frequency (f) (Hertz or cycles sec) and wavelength ($\\lambda$) (meters). From Byers, H.R. 1974. General Meteorology. P. 8.'}
 knitr::include_graphics('figures/fig-thermintro-2.png')
 ```
 
 The last heat transfer process important in the heat term of the First Law is evaporation. **Evaporation** is the process that transports water by changing it from a liquid to a gas. For animals, water vapor may be lost during respiration, through special sweat glands, or through any part of the skin. The physiology of the species must be known to estimate this heat and mass flow. Higher green plants lose water vapor to the atmosphere through stomata in a process called transpiration. The physics of this heat transfer process will also be presented in a later module.
 
-Before considering work, the last term of eq. \@ref(eq:thermintro-thermintro-2), we will define the heat capacity. It is
+Before considering work, the last term of eq. \@ref(eq:thermintro-2), we will define the heat capacity. It is
 \begin{equation}
 C_x = (\frac{\delta Q}{dT})_x
 \end{equation}
@@ -145,7 +145,7 @@ where $x$ is some state variable such as pressure, volume or temperature for a g
 
 \begin{equation}
 C_V = (\frac{\delta Q}{dt})_V
-(\#eq:thermintro-thermintro-3)
+(\#eq:thermintro-3)
 \end{equation}
 
 and
@@ -170,11 +170,11 @@ where $P$ is the external pressure. For reversible processes the system pressure
 
 One such relationship is known as the Ideal Gas Law. Historically it can be arrived at from experimental evidence but it can also be derived using a statistical mechanics approach. It is called an equation of state because it describes the relation among the macroscopic variables of the system ($P$, $V$, $T$) at an equilibrium state. Thus these variables $P$, $V$, $T$ are called state variables.
 
-```{r fig-thermintro-3, echo=FALSE, fig.height=3, fig.fullwidth=FALSE, fig.cap='Ideal gas contained in a piston chamber. $\\Delta Q$ will be zero if the wall surrounding the system is perfectly insulated (adiabatic). $\\Delta W$ represents the change it work accomplished by moving the piston.'}
+```{r fig-thermintro-3, echo=FALSE, fig.height=3, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Ideal gas contained in a piston chamber. $\\Delta Q$ will be zero if the wall surrounding the system is perfectly insulated (adiabatic). $\\Delta W$ represents the change it work accomplished by moving the piston.'}
 knitr::include_graphics('figures/fig-thermintro-3.png')
 ```
 
-```{r fig-thermintro-4, echo=FALSE, fig.height=3, fig.fullwidth=FALSE, fig.cap='Pressure-volume diagram. A cycle is composed of going from 1 to 2, 2 to 3 and so on back to 1. When the cycle is composed of isothermal and adiabatic processes it is called a Carnot Cycle. Other cycles can involve constant pressure or constant volume steps. Note that $T_1$ is greater than $T_2$.'}
+```{r fig-thermintro-4, echo=FALSE, fig.height=3, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Pressure-volume diagram. A cycle is composed of going from 1 to 2, 2 to 3 and so on back to 1. When the cycle is composed of isothermal and adiabatic processes it is called a Carnot Cycle. Other cycles can involve constant pressure or constant volume steps. Note that $T_1$ is greater than $T_2$.'}
 knitr::include_graphics('figures/fig-thermintro-4.png')
 ```
 
@@ -293,10 +293,10 @@ where $F$ is force, $A$ is area and $dl$ is the change in length.
 4. 
 (a)
 
-\begin{eqnarray}
-E_p &=& mgh = 2 kg \cdot 9.8 m s^{-2}\cdot 50 m = 980 kg m^2 s^{-2} = 980 J \\
-E_k &=& mv^2 = 2 kg (2 m s^{-1})^2 = 8 J \\
-\end{eqnarray}
+\begin{align*}
+E_p &= mgh = 2 kg \cdot 9.8 m s^{-2}\cdot 50 m = 980 kg m^2 s^{-2} = 980 J \\
+E_k &= mv^2 = 2 kg (2 m s^{-1})^2 = 8 J \\
+\end{align*}
 
 (b) $\Delta E_p + \Delta E_k + \Delta U = 0$  
 
@@ -367,7 +367,3 @@ Peusher, L. 1974. Concepts in Bioenergetics. Prentice-Hall, Englewood Cliffs. XI
 Weigert, R.G. (ed.). 1976. Ecological Energetics. Benchmark Papers in Ecology/4. Dowden, Hutchinson & Ross, Inc., Stroudsburg, Penn.
 
 ***
-
-
-
-

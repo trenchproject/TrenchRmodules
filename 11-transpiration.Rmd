@@ -201,14 +201,14 @@ $k_1 = 9.14 J m^{-2} s^{-1/2} °C^{-1}$ and $k_2=183 s^{-1/2} m^{-1}$
 Gates elected to include W in the evaporation term only since the amount of data was not sufficient to reveal the functional relationship in both the convective and evaporative terms simultaneously. Equation \@ref(eq:transpiration-7) is more realistic than Equation \@ref(eq:transpiration-4), which, nevertheless, is a good approximation. If the wind is blowing across the leaf in the direction of the leaf width, then, the characteristic dimension $D$ is the average leaf width and $W$ is the average length. If, on the other hand, the wind is blowing along the length of the leaf, then, $D$ is the average length and $W$ is the average leaf width.
 
 ## ANALYSIS OF A MORE GENERAL MODEL
-###Calculations of Leaf Temperatures and Transpiration
+### Calculations of Leaf Temperatures and Transpiration
 
 It is straightforward to obtain values of the two dependent variables, leaf temperatures and transpiration rate, as a function of any conceivable combination of values of the independent variables and leaf parameters which appear in Equation \@ref(eq:transpiration-7). The four independent variables used are radiation absorbed, air temperature, relative humidity of the air, and wind speed; and the three leaf parameters are characteristic dimension, leaf width and internal resistance. Gates and Papian (1971) published a tabulation of leaf temperatures and transpiration rates for various sets of values of the dependent variables and leaf parameters. Similar plots are shown in a paper by Gates (1968). These plots have proved useful in understanding Equation \@ref(eq:transpiration-7), and therefore at this time we will undertake an explanation of how they are produced.
 
 Let us begin by specifying $Q_a = 800 W m^{-2}, T_a = 40°C, r.h. = 0.20, D = 0.05 m, W = 0.05 m, r_a = 0.0s m^{-1}$, and $V = 0.10 m s^{-1}$. Now all the parameter values of Equation \@ref(eq:transpiration-7) are known except leaf temperature. We solve for leaf temperature and then calculate transpiration rate using the last term of equation \@ref(eq:transpiration-7). We examine the influence of varying wind speed and leaf resistance on transpiration as follows:
 
 
-```{r fig-transpiration-2, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Leaf transpiration verses leaf temperature.'}
+```{r fig-transpiration-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration verses leaf temperature.'}
 #radiation, convection, and evaporation
 epsilon=0.96
 sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^{-2}K^{-4})
@@ -259,7 +259,7 @@ return(c(T_l, E))
 
 #Vary V
 fig2a=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.2, r_l=0, D=0.05, W=0.05, Q_a=800)
-plot(fig2a[1,], fig2a[2,], type="l", xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)")
+plot(fig2a[1,], fig2a[2,], type="l", xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration " ~ (kg / ~ m^2 ~ s)))
 
 #Vary r_l
 fig2b=sapply( seq(0,600,10), FUN=est_TlTrans, T_a=40, V=2.1, rh=0.2, D=0.05, W=0.05, Q_a=800)
@@ -281,7 +281,8 @@ Plots are generated for the following conditions:
 6) $Q_a = 300 W m^{-2}; T_a = 10°C; r.h. = 0.50$
 
 We create the plots in R:
-```{r fig-transpiration-3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+
+```{r fig-transpiration-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #Vary V and r_l
 #fig 3
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=800)
@@ -306,7 +307,7 @@ legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), col = c('tomato','tomato2','t
 legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 ```
 
-```{r fig-transpiration-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 4
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=700)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(25,45),ylim=range(0.0,0.0003))
@@ -330,7 +331,7 @@ legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), col = c('tomato','tomato2','t
 legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 ```
 
-```{r fig-transpiration-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 5
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(25,45),ylim=range(0.0,0.0002))
@@ -354,7 +355,7 @@ legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), col = c('tomato','tomato2','t
 legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 ```
 
-```{r fig-transpiration-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 6
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=10, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=300)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(5,10),ylim=range(0.0,0.00015))

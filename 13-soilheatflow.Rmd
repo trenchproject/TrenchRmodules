@@ -210,7 +210,7 @@ The argument of the sine function $(\omega t)$ is then expressed in radians if $
 The solution of Equation \@ref(eq:soil-8) which satisfies boundary conditions 9 and 10 is
 
 \begin{equation}
-T(z,t)=\bar{T}+A(z)\sin[\omega t+B(z)]
+T(z,t)=\overline{T}+A(z)\sin[\omega t+B(z)]
 (\#eq:soil-11)
 \end{equation}
 The reader is referred to Carslaw and Jaeger (1959) for the mathematical details. Now $A(z)$ and $B(z)$ represent the amplitude and phase lag of the temperature wave, respectively. From our earlier discussion of Fig. \@ref(fig:fig-soil-2), we expect $A(z)$ and $B(z)$ to be decreasing and increasing functions of depth, respectively. By substituting our solution 11 into the differential Equation \@ref(fig:fig-soil-8), we find that
@@ -402,12 +402,12 @@ knitr::include_graphics('figures/fig-soil-15.png')
 1.(a) $T(z,t)=\overline{T}+A(z)sin[\omega t+B(z)]$
 
 Now $T=\overline{T}+A(0)exp(-z/D)sin[\omega t-z/D]$, substituting expressions \@ref(eq:soil-12) and \@ref(eq:soil-13) into \@ref(eq:soil-11). Taking partial derivatives as indicated by Equation \@ref(eq:soil-8):
-\begin{eqnarray}
-\frac{\partial T}{\partial t}&=&\omega A(0)exp(-z/D)cos[\omega t-z/D] \\
-\frac{\partial T}{\partial z}&=&-\frac{A(0)}{D}exp(-z/D)sin[\omega t-z/D]-\frac{A(0)}{D}exp(-z/D)cos[\omega t-z/D] \\
-\frac{\partial^2 T}{\partial z^2}&=&\frac{A(0)}{D^2}exp(-z/D)sin[\omega t-z/D]+\frac{A(0)}{D^2}exp(-z/D)cos[\omega t-z/D] \\
-&+&\frac{A(0)}{D^2}exp(-z/D)cos[\omega t-z/D]-\frac{A(0)}{D^2} exp(-z/D)sin[\omega t-z/D] \\
-\end{eqnarray}
+\begin{align*}
+\frac{\partial T}{\partial t}&=\omega A(0)exp(-z/D)cos[\omega t-z/D] \\
+\frac{\partial T}{\partial z}&=-\frac{A(0)}{D}exp(-z/D)sin[\omega t-z/D]-\frac{A(0)}{D}exp(-z/D)cos[\omega t-z/D] \\
+\frac{\partial^2 T}{\partial z^2}&=\frac{A(0)}{D^2}exp(-z/D)sin[\omega t-z/D]+\frac{A(0)}{D^2}exp(-z/D)cos[\omega t-z/D] \\
+&+\frac{A(0)}{D^2}exp(-z/D)cos[\omega t-z/D]-\frac{A(0)}{D^2} exp(-z/D)sin[\omega t-z/D] \\
+\end{align*}
 
 Notice the first and fourth terms in the expression for $\frac{\partial^2T}{\partial z^2}$ cancel. Substituting in Equation \@ref(eq:soil-8):
 $$\omega A(0)exp(-z/D)cos[\omega t-z/D]+K(2A/D^2)exp(-z/D)cos[\omega t-z/D]$$
@@ -421,14 +421,14 @@ The second boundary condition (Equation \@ref(eq:soil-10)) represents a special 
 2.(a) 
 \begin{equation}
 T(z,t)=\overline{T}+A(0)exp(-z/0)sin[\omega t-z/D]
-(\#eq:soil-11)
+(\#eq:soil-11')
 \end{equation}
 We know from Equation \@ref(eq:soil-3) that  
-\begin{eqnarray}
-G(z,t)&=&-k\frac{\partial T}{\partial z} \\
-G(z,t)&=&-k\{-A(0)/D\:exp(-z/D)sin[\omega t-z/D]-a(0)/D\: exp(-z/D)cos[\omega t-z/D]\} \\
-&=&k A(0)/D \:exp(-z/D)\{sin[\omega t -z/D]+cos[\omega t-z/D]\} \\
-\end{eqnarray}
+\begin{align*}
+G(z,t)&=-k\frac{\partial T}{\partial z} \\
+G(z,t)&=-k\{-A(0)/D\:exp(-z/D)sin[\omega t-z/D]-a(0)/D\: exp(-z/D)cos[\omega t-z/D]\} \\
+&=k A(0)/D \:exp(-z/D)\{sin[\omega t -z/D]+cos[\omega t-z/D]\} \\
+\end{align*}
 The surface heat flux is then  
 $$G(0,t)=kA(0)/D\{sin\omega t+cos\omega t\}$$
 Using the identity $sm(x+4)=sinxcosy+cosxsiny$  
@@ -438,18 +438,18 @@ The maximum value of $G(0,t)$ occurs when $sin(\omega t+\pi/4)=1$, so
 $$G(0,t)_{max}=\frac{\sqrt{2}kA(0)}{D}$$
 
 (b)
-Comparing our expression for $G(0,t)$ with Equation \@ref(eq:soil-11) for $z = 0$, we find that temperature lags the heat flux by a phase angle of $\pi/4$ or 1/8 of a cycle. This corresponds to 3 hours and 1-1/2 months for the diurnal and annual case, respectively.
+Comparing our expression for $G(0,t)$ with Equation \@ref(eq:soil-11') for $z = 0$, we find that temperature lags the heat flux by a phase angle of $\pi/4$ or 1/8 of a cycle. This corresponds to 3 hours and 1-1/2 months for the diurnal and annual case, respectively.
 Returning to our basic definition of heat flow in Equation \@ref(eq:soil-2), we write
 $$G=-k\frac{\Delta T}{L}$$
 Comparing our result from 2(a), we note that $L$ corresponds to $D/\sqrt{2}$ if were to consider heat conduction in a slab, thickness $L$, with a temperature difference maintained between the faces of A.
 The amount of heat flowing $(Q)$ per unit area of soil during 1/2 cycle
 can be found by integrating $G(0,t)$.
-\begin{eqnarray}
-Q&=&\frac{\sqrt{2}A(0)k}{\omega D}\int_{\pi/4}^{3\pi/4}sin(\omega t+\pi/4)d(\omega t) \\
-&=&-\frac{\sqrt2A(0)k}{\omega D}s(\omega t+\pi/4)\int_{\pi/4}^{3\pi/4} \\
-&=&-\frac{\sqrt2A(0)k}{D\omega}[-1-(+1)] \\
-&=&\frac{2\sqrt2A(0)k}{D\omega} \\
-\end{eqnarray}
+\begin{align*}
+Q&=\frac{\sqrt{2}A(0)k}{\omega D}\int_{\pi/4}^{3\pi/4}sin(\omega t+\pi/4)d(\omega t) \\
+&=-\frac{\sqrt2A(0)k}{\omega D}s(\omega t+\pi/4)\int_{\pi/4}^{3\pi/4} \\
+&=-\frac{\sqrt2A(0)k}{D\omega}[-1-(+1)] \\
+&=\frac{2\sqrt2A(0)k}{D\omega} \\
+\end{align*}
 Recall that $D=(2K/\omega)^{1/2}$ and $K=k/G$;
 $$Q=\frac{2K}{\omega}\frac{\sqrt2A(0)G}{D}=\sqrt2DA(0)C$$
 
@@ -461,11 +461,11 @@ Recalling the definition of $D=(2K/\omega)^{1/2}$(Equation \@ref(eq:soil-14)), w
 $$\frac{\mbox{D annual}}{\mbox{D diurnal}}=(\frac{\omega \mbox{ diurnal}}{\omega \mbox{ annual}})^{1/2}$$
 $$\mbox{D annual}=(365)^{1/2}\mbox{ D diurnal}=(19.1)11\cong210cm$$
 (b) Using D from part (a), we have
-\begin{eqnarray}
-A(0)&=&A(z)exp(+z/D) \\
+\begin{align*}
+A(0)&=A(z)exp(+z/D) \\
 A(0)&\cong& 31cm \mbox{ using } z=15cm,\:D=11cm,\:A(z)=8°C \\
 &\cong& 31cm \mbox{ using } z=30cm, D=11cm, A(z)=2°C \\
-\end{eqnarray}
+\end{align*}
 
 (c) Solving Equation \@ref(eq:soil-14) for $K$, we get, using the results from 3(a):
 $$K=\frac{\omega}{2}D^2=\frac{\omega}{2}\frac{z_2-z_1}{[lnA(z)_1)/A(z_2)]}^2$$

@@ -163,14 +163,14 @@ In this expression $v (m s^{-1})$ is the velocity of the fluid relative to the b
 
 To obtain some feeling for the magnitude of the convective term $H$, let us assume that our wind speed is $v = 2.0 m s^{-1} = 4.5 \mbox{ miles } hr^{-1}$. Then $Re = (2.0)(0.5)/(1.5\cdot10^{-5}) = 6.67\cdot 10^4$, and we calculate $Nu = (0.024)(6.67\cdot10^4)^{0.81}= 194$. The thermal conductivity $k_a$ of air at 20°C is approximately $2.57\cdot10^{-2} W m^{-1}°C^{-1}$, and since the surface area $A_h$ of the sheep is $5\pi\cdot10^{-1}m^2$,
 
-\begin{eqnarray}
-Nu &=& H_L \cdot d / k\\
-194 &=& H_L \cdot 0.5 / (2.57 \cdot 10^{-2})\\
-H_L &=& 10\\
-H&=& H_L A_h(T_h-T_a)\\
-H&=& 10 \cdot 5\pi \cdot 10^{-1}(25-10)\\
-H&=&235 W
-\end{eqnarray}
+\begin{align*}
+Nu &= H_L \cdot d / k\\
+194 &= H_L \cdot 0.5 / (2.57 \cdot 10^{-2})\\
+H_L &= 10\\
+H&= H_L A_h(T_h-T_a)\\
+H&= 10 \cdot 5\pi \cdot 10^{-1}(25-10)\\
+H&=235 W
+\end{align*}
 assuming $T_h$ = 25°C and $T_a$ = 10°C.
 
 The temperature profile associated with convection is depicted in (Figure \@ref(fig:fig-heatbalance-3)).
@@ -250,11 +250,11 @@ In making the calculations that follow, we assume fleece thickness of 0.1 m, whi
 To consolidate our calculation, we return to our general heat balance relation (Eqn. \@ref(eq:heatbalance-1)):
 $$M+R_+=R_-+C+H+E$$
 Our objective at this point is to calculate $T_h$, the fleece-tip temperature. We now define net radiation received by the animal at the fleece tips as
-\begin{eqnarray}
-R_{Nh}=R_+-R_-&=&a_1A_1S+a_2A_2s+a_3A_s(S+s) \\
-&+&a_4A_4R_a+a_5A_5R_g-\varepsilon A_h\sigma T_h^4 
+\begin{align*}
+R_{Nh}=R_+-R_-&=a_1A_1S+a_2A_2s+a_3A_s(S+s) \\
+&+a_4A_4R_a+a_5A_5R_g-\varepsilon A_h\sigma T_h^4 
 (\#eq:heatbalance-22)
-\end{eqnarray}
+\end{align*}
 and $R_{Na}$ as the net radiation which would be received in the same environment if the fleece tips were at air temperature, so that
 $$R_{Na}=a_1A_1S+a_2A_2s+a_3A_3(S+s)+a_4A_4R_a+a_5A_5\sigma T_a^4-\varepsilon A_h\sigma T_a^4$$
 Then
@@ -271,10 +271,10 @@ R_{Nh}\stackrel{.}{=}R_{Na}=2T_a^3(T_h-T_a)A_h
 (\#eq:heatbalance-24)
 \end{equation}
 To obtain this relationship, we have assumed $\varepsilon\stackrel{.}{=}1$ and have used an approximation based on the Taylor Series expansion of $T_h^4 = g(T_h)$, say, near the point $T_h = T_a$:
-\begin{eqnarray}
-T_h^4=g(T_h)&=&g(T_a)+g^,(T_a)(T_h-T_a)+... \\
-&=&T_a^4+4T_a^3(T_h-T_a)+... 
-\end{eqnarray}
+\begin{align*}
+T_h^4=g(T_h)&=g(T_a)+g^,(T_a)(T_h-T_a)+... \\
+&=T_a^4+4T_a^3(T_h-T_a)+... 
+\end{align*}
 Since from Eqns. \@ref(eq:heatbalance-1) and
 $$M-E+R_{Nh}=H+C$$
 If we ignore heat loss through sweat (which can be relatively low in cool air temperatures), we can use Eqn. \@ref(eq:heatbalance-17) to obtain,
@@ -307,16 +307,16 @@ Formula \@ref(eq:heatbalance-27) states that the temperature at the fleece tips 
 To illustrate the calculation of $T_h$, we take $T_a=10°C$, $T_b=39°C$, $A_h=0.5\pi m^2$, $Nu=194$, $k_a=2.48\times10^{-2}Wm^{-1}°C^{-1}$,   $k_h=5.91\times10^{-2}Wm^{-1}°C^{-1}$, $k_f=2.51\times10^{-1}Wm^{-1}°C^{-1}$, $d=0.5m$, $L=1.0m$, $r_b=0.145m$, $r_s=0.15m$, and $r_h=0.25m$.
 
 Then $\alpha=1.571(9.638+2.570)=19.19W°C^{-1}$, $Z_h+Z_f=1.3748+0.05431=1.428$, so that $\beta = 0.700W°C^{-1}$. Also,
-\begin{eqnarray}
-R_{Na}&=&a_1A_1S+a_2A_2S+a_3A_3r(S+s)+1/2A_h(1.04B-\sigma T_a^4) \\
-&=&387.3+16.2+104.1-80.6 \\
-&=&427W
-\end{eqnarray}
+\begin{align*}
+R_{Na}&=a_1A_1S+a_2A_2S+a_3A_3r(S+s)+1/2A_h(1.04B-\sigma T_a^4) \\
+&=387.3+16.2+104.1-80.6 \\
+&=427W
+\end{align*}
 Then
-\begin{eqnarray}
-T_h&=&\frac{(19.18)(283)+(0.7)(312)+427}{19.88} \\
-&=&305.5K=32.5°C
-\end{eqnarray}
+\begin{align*}
+T_h&=\frac{(19.18)(283)+(0.7)(312)+427}{19.88} \\
+&=305.5K=32.5°C
+\end{align*}
 Thus, in this case, the temperature of the fleece tips is approximately 22°C higher than that of the air. We make the following observations.
 
 1. The contribution of body temperature to fleece-tip temperature is much smaller than that of the air temperature, because the weight $\alpha$ is much larger than $\beta$. In turn, $\beta$ is small because of the very large resistance to heat conduction offered by the wool.
@@ -495,12 +495,12 @@ Evidently, heat transfer through the fleece is not accurately represented by our
 
 2.
 
-\begin{eqnarray}
-k_a&=&2.37\times10^{-2}Wm^{-1}C^{-1} \\
-\nu&=&1.24\times10^{-5}m^2s^{-1} \\
-v&=&2.778ms^{-1} \\
-E&=&20.4W
-\end{eqnarray}
+\begin{align*}
+k_a&=2.37\times10^{-2}Wm^{-1}C^{-1} \\
+\nu&=1.24\times10^{-5}m^2s^{-1} \\
+v&=2.778ms^{-1} \\
+E&=20.4W
+\end{align*}
 
 |                      |  0.32  |  0.50  |
 |:--------------------:|:------:|:------:|
@@ -563,20 +563,20 @@ $$T_s=\frac{33+6.923\times10^{-3}\cdot7.342\times10^5\cdot5}{1+6.923\times10^{-3
 
 Since evaporative heat loss can be neglected for whale, $E_r = E_s = 0$. In addition, the lack of hair suggests that $r_h = r_s$, leading to $Z_h = 0$. The remaining equation for $M$ is
 
-\begin{eqnarray}
-M&=&\frac{T_b-T_s}{Z_f} = \frac{33-5.11}{0.006923}=4043W \\
-&=&3.49\times10^5kJ\:day^{-1} \mbox{ with perfect efficiency} \\
-&=&2.33\times10^6kJ\:day^{-1} \mbox{ at 15 percent conversion efficiency}
-\end{eqnarray}
+\begin{align*}
+M&=\frac{T_b-T_s}{Z_f} = \frac{33-5.11}{0.006923}=4043W \\
+&=3.49\times10^5kJ\:day^{-1} \mbox{ with perfect efficiency} \\
+&=2.33\times10^6kJ\:day^{-1} \mbox{ at 15 percent conversion efficiency}
+\end{align*}
 
 6. There are several ways one might attack this problem. One could simply assume a conduction model in which the water surrounding the animal offered no resistance to heat flow ($T_s = 5.0°C$). A Nusselt number calculation could be made using the Grashof number as in problem 9. Or finally, as is done here, one could assume that still water is equivalent to some very slow velocity (in air this is about 0.10 m s$^{-1}$).
 
-\begin{eqnarray}
-Nu&=&80.5\;\;\;\;\;\;\;\alpha=3.604\times10^3 \\
-T_s&=&\frac{33+6.923\times10^{-3}\cdot3.604\times10^3\cdot5}{1+6.923\cdot10^{-3}\cdot3.604\times10^3}=6.08 \\
-M&=&\frac{33-6.08}{0.006923}=3.888\times10^3W \\
-&=& \mbox{ 96 percent of metabolic costs while swimming at over 4 m/s}
-\end{eqnarray}
+\begin{align*}
+Nu&=80.5\;\;\;\;\;\;\;\alpha=3.604\times10^3 \\
+T_s&=\frac{33+6.923\times10^{-3}\cdot3.604\times10^3\cdot5}{1+6.923\cdot10^{-3}\cdot3.604\times10^3}=6.08 \\
+M&=\frac{33-6.08}{0.006923}=3.888\times10^3W \\
+&= \mbox{ 96 percent of metabolic costs while swimming at over 4 m/s}
+\end{align*}
 
 7.
 | | |**0.02**|**0.07**
@@ -603,18 +603,18 @@ Metabolic rate per unit area (W m^-2^)|10|350.1|194.8
 
 8.
 
-\begin{eqnarray}
-Gr&=&\frac{3.48\times10^{-3}\cdot9.81\cdot(0.5)^3}{(1.45\times10^{-5})^2}(5) \\
-&=&1.105\times10^8\;\;\;\;\;Nu=48.18 \\
-H&=&\frac{48.18\cdot0.0257\cdot\pi\cdot1.0\cdot0.5}{0.5}(5)=19.45W
-\end{eqnarray}
+\begin{align*}
+Gr&=\frac{3.48\times10^{-3}\cdot9.81\cdot(0.5)^3}{(1.45\times10^{-5})^2}(5) \\
+&=1.105\times10^8\;\;\;\;\;Nu=48.18 \\
+H&=\frac{48.18\cdot0.0257\cdot\pi\cdot1.0\cdot0.5}{0.5}(5)=19.45W
+\end{align*}
 
 9.
 
-\begin{eqnarray}
-H&=&\frac{Nuk_aA_h(T_h-T_a)}{d} \\
-X&=&\frac{k_aA_h}{d}0.48Gr^{0.25}(T_h-T_a) \\
-&=&\frac{k_aA_h}{d}0.48\Big(\frac{\beta gd^3}{v^2}\Big)^{0.25}(T_h-T_a)^{1.25} \\
-&=&k'(T_h-T_a)^{1.25} \\
-&=&k'[(\overline{T_h}-T_a)^{1.25}+1.25(\overline{T_h}-T_a)^{0.25}(T_h-T_a)]
-\end{eqnarray}
+\begin{align*}
+H&=\frac{Nuk_aA_h(T_h-T_a)}{d} \\
+X&=\frac{k_aA_h}{d}0.48Gr^{0.25}(T_h-T_a) \\
+&=\frac{k_aA_h}{d}0.48\Big(\frac{\beta gd^3}{v^2}\Big)^{0.25}(T_h-T_a)^{1.25} \\
+&=k'(T_h-T_a)^{1.25} \\
+&=k'[(\overline{T_h}-T_a)^{1.25}+1.25(\overline{T_h}-T_a)^{0.25}(T_h-T_a)]
+\end{align*}

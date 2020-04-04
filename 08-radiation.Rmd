@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Light and Sound. {#radiation}
+# Light and Sound. {#Radiation}
 
 Light and Sound: Evolutionary Aspects. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes
 
@@ -48,7 +48,7 @@ Hint: $\lambda=c/\nu$
 
 We can now plot out the energy density as a function of wavelength for different temperatures: 
 
-```{r fig-radiation-1, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='The blackbody radiation predicted from Plancks law closely aligned with that empirically observed (e.g., Lummer and Pringsheim 1901).'}
+```{r fig-radiation-1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The blackbody radiation predicted from Plancks law closely aligned with that empirically observed (e.g., Lummer and Pringsheim 1901).'}
 
 h= 6.62607*10^{-34} #Js
 c= 2.99792*10^8 #m/s
@@ -99,7 +99,7 @@ is called Wien's law of shift (1896 Wilhelm Wien). Therefore, the
 maximum of the black body curve $E(\lambda)$ at temperatures $T_1,T_2,T_3,...$ falls at $\lambda_1,\lambda_2,\lambda_3,...$ so that
 $$\lambda_1T_1=\lambda_2T_2=\lambda_3T_3=b$$
 
-```{r fig-radiation-2, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Wiens law- observed vs. predicted'}
+```{r fig-radiation-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Wiens law- observed vs. predicted'}
 #Failed attempt at figure 2
 h= 6.62607*10^{-34} #Js
 c= 2.99792*10^8 #m/s
@@ -210,19 +210,19 @@ For this example:
 $$T_0 = (273+37)K = 310K$$
 $$T_a=(273+12)K=285K$$
 which gives an energy emmitance of:
-\begin{eqnarray}
-E&=&5.67\times10^{-8}(Wm^{-2}K^{-4})[(300k)^4-(285K)^4] \\
-&=&5.67\times10^{-8}[9.235\times10^9-6.598\times10^9]Wm^{-2} \\
-&=&5.67[92.35-65.98]Wm^{-2} \\
-&=&149.5Wm^{-2} \\
-\end{eqnarray}
+\begin{align*}
+E&=5.67\times10^{-8}(Wm^{-2}K^{-4})[(300k)^4-(285K)^4] \\
+&=5.67\times10^{-8}[9.235\times10^9-6.598\times10^9]Wm^{-2} \\
+&=5.67[92.35-65.98]Wm^{-2} \\
+&=149.5Wm^{-2} \\
+\end{align*}
 The bat's total heat loss rate $H$, by this process is
 $$H=E(SA)$$
 where $SA$ = surface area, so
-\begin{eqnarray}
-H&=&149.5Wm^{-2}(100cm^2) \\
-&=&1.495W \\
-\end{eqnarray}
+\begin{align*}
+H&=149.5Wm^{-2}(100cm^2) \\
+&=1.495W \\
+\end{align*}
 Although in this example the heat loss rate was relatively small, when there are larger differences between the organism's temperature and the (radiation) temperature of the environment, the heat loss rate can be quite high. This situation pertains in the following problem.
 
 **Problem 3**
@@ -244,7 +244,7 @@ The solar constant can be calculated theoretically from the Stefan-Boltzmann law
 
 \begin{equation}
 E_s=\sigma T_s^4
-(\#eq:radiation-5)
+(\#eq:radiation-5')
 \end{equation}
 
 Thus the total power emitted by the sun can be found by integrating $E_s$ over the sun's surface. Since $T_s$ is (assumed to be) constant, this is equivalent to multiplying the constant $E_s$ by the surface area of a sphere with the sun's radius ($r_s$). The total power is given by:
@@ -269,7 +269,7 @@ E_E=\frac{4 \pi r_s^2E_s}{4\pi r_E^2}=\frac{r_s^2}{r_E^2}E_s
 \end{equation}
 
 The quantity $E_E$ which is the power available (per unit area per unit time) on a surface at the earth's distance from the sun, is the parameter of interest, the solar constant.
-Inserting Equation \@ref(eq:radiation-5) into Equation \@ref(eq:radiation-8) gives immediately:
+Inserting Equation \@ref(eq:radiation-5') into Equation \@ref(eq:radiation-8) gives immediately:
 
 \begin{equation}
 E_E=(\frac{r_s^2}{r_E^2})\sigma T_s^4
@@ -280,12 +280,12 @@ E_E=(\frac{r_s^2}{r_E^2})\sigma T_s^4
 
 Use Equation \@ref(eq:radiation-9) and the following physical parameters to calculate the solar constant:
 
-\begin{eqnarray}
-T_s&=&5700K \\
-r_s&=&7.1\times10^8m \\
-r_E&=&1.49\times10^{11}m \\
-\sigma&=&5.6693\times10^{-8}Wm^{-2}K^{-4} \\
-\end{eqnarray}
+\begin{align*}
+T_s&=5700K \\
+r_s&=7.1\times10^8m \\
+r_E&=1.49\times10^{11}m \\
+\sigma&=5.6693\times10^{-8}Wm^{-2}K^{-4} \\
+\end{align*}
 Convert your answer to $cal\cdot cm^{-2}min^{-1}$.  
 Answer: $E_E=1.36\times10^3 Wm^{-2}s^{-1} \approx 1.95 cal\cdot cm^{-2}min^{-1}$ 
 
@@ -309,7 +309,7 @@ $\alpha=$ the angle between the images of the objects.
 
 The limit to resolution given by Eq. \@ref(eq:radiation-12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
 
-```{r fig-rad-3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The Rayleigh criterion: Fresnel diffraction by circular aperture. '}
+```{r fig-rad-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The Rayleigh criterion: Fresnel diffraction by circular aperture. '}
 knitr::include_graphics('figures/fig-rad-3.png')
 ```
 
@@ -337,30 +337,30 @@ $r=1.0mm=1.0\times10^{-3}m$
 Putting these parameters into the formula for the Rayleigh criterion,</br>
 Eq. \@ref(eq:radiation-12), we get:
 
-\begin{eqnarray}
-\alpha &=&0.61\lambda/r \\
-       &=&0.61(5.08\times10^{-7}m)/(1.0\times10^{-3}m) \\
-       &=&3.1\times10^{-3}\text{radians}
-\end{eqnarray}
+\begin{align*}
+\alpha &=0.61\lambda/r \\
+       &=0.61(5.08\times10^{-7}m)/(1.0\times10^{-3}m) \\
+       &=3.1\times10^{-3}\text{radians}
+\end{align*}
 
 Since $2\pi$ radians $=360^\circ = 2.16 \times 10^4$ min, we know that 1 radian $\approx 3.43 \times 10^3$ min.
 So
-\begin{eqnarray}
-\alpha&=&(3.1\times10^3\mbox{ min/rad})(3.1\times10^{-3}rad) \\
-&\approx&1\mbox{ min of arc}
-\end{eqnarray}
+\begin{align*}
+\alpha&=(3.1\times10^3\mbox{ min/rad})(3.1\times10^{-3}rad) \\
+&\approx 1\mbox{ min of arc}
+\end{align*}
 
 At 10m this angle will correspond to an object separation of:
-\begin{eqnarray}
-\alpha&=&S_0/d \\
-\text{where } S_0&=&\text{separation}  \\
-d&=&\text{distance}
-\end{eqnarray}
+\begin{align*}
+\alpha&=S_0/d \\
+\text{where } S_0&=\text{separation}  \\
+d&=\text{distance}
+\end{align*}
 
-\begin{eqnarray}
-\mbox{or  } S_0 = \alpha d &=& (3.17\times10^{-4})(10m)=3.117\times10^{-3}  \\
-&=& 3.17mm
-\end{eqnarray}
+\begin{align*}
+\mbox{or  } S_0 = \alpha d &= (3.17\times10^{-4})(10m)=3.117\times10^{-3}  \\
+&= 3.17mm
+\end{align*}
 
 Thus, in daylight the human eye can just barely resolve two objects which are 3.17 mm apart from one another and 10m distant.
 
@@ -395,7 +395,7 @@ The actual mean measured opening for a bee is $20.9\mu$ (Barlow 1952, p. 671). A
 
 Most vertebrates are able to detect phase differences between ears, so that the interferometer is the correct model for calculating resolution. A consideration of Rayleigh's criterion shows that if all other parameters remain constant, the greater the separation of the detectors, the greater the resolving power of the system. Many organisms have optimized their ability to locate sound sources by maintaining a maximal separation between the ears. Another biological application of interferometers is illustrated in the following problem. 
 
-```{r fig-rad-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Insect eye - ommatidial diameter vs. the squareroot of eye radii. Points are 27 observations on hymenoptera (Barlow 1952).'}
+```{r fig-rad-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Insect eye - ommatidial diameter vs. the squareroot of eye radii. Points are 27 observations on hymenoptera (Barlow 1952).'}
 knitr::include_graphics('figures/fig-rad-4.png')
 ```
 
@@ -414,7 +414,7 @@ The derivation presented below is for the Doppler effect as it applies to the sp
 
 Let $V_L$ and $V_S$ denote the velocities of the listener and source respectively. The positive direction for the velocities is taken to be from the position of the observer to the position of the source. 
 
-```{r fig-rad-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The source $S$, moving with velocity $V_S$ is emiting sound at a constant frequency, $f_S$. The wave fronts of this sound, which travel radially outward at velocity $C_S$, are compressed together (wavelength equals $\\lambda_F$) in front of the source and spread out (wavelength equals $\\lambda_B$) behind the source. By the time the wavefront emitted by the source at $x_0$ at time t = 0 has reached a radius of $C_ST$, the source has moved to a position $x_T$. The listner $L$ moving with velocity $V_L$ will hear the sound at a different frequency than as actually emitted by the source because it encounters wave fronts which are $\\lambda_B$ apart. An exact derivation is given in the text. [Adapted from Young 2013 p. 534.]'}
+```{r fig-rad-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The source $S$, moving with velocity $V_S$ is emiting sound at a constant frequency, $f_S$. The wave fronts of this sound, which travel radially outward at velocity $C_S$, are compressed together (wavelength equals $\\lambda_F$) in front of the source and spread out (wavelength equals $\\lambda_B$) behind the source. By the time the wavefront emitted by the source at $x_0$ at time t = 0 has reached a radius of $C_ST$, the source has moved to a position $x_T$. The listner $L$ moving with velocity $V_L$ will hear the sound at a different frequency than as actually emitted by the source because it encounters wave fronts which are $\\lambda_B$ apart. An exact derivation is given in the text. [Adapted from Young 2013 p. 534.]'}
 knitr::include_graphics('figures/fig-rad-5.png')
 ```
 
@@ -456,12 +456,12 @@ a) What are the wavelengths of the sound in front of and behind this source movi
 b) If a listener is at rest and this source is moving away at $V_S = 50 ms^{-1}$, what is the frequency of the sound heard?  
 
 Solution:  
-\begin{eqnarray}
-\mbox{a) } \lambda_F&=&(C_S-V_S)/f_S=0.429m \\
-\lambda_B&=&(C_S+V_S)/f_S=0.571m \\
+\begin{align*}
+\mbox{a) } \lambda_F&=(C_S-V_S)/f_S=0.429m \\
+\lambda_B&=(C_S+V_S)/f_S=0.571m \\
 \\
-\mbox{b) } f_L&=&\frac{C_S}{C_S+V_S}=612Hz
-\end{eqnarray}
+\mbox{b) } f_L&=\frac{C_S}{C_S+V_S}=612Hz
+\end{align*}
 
 Now that a quantitative formulation of the Doppler effect has been derived, it can be applied in the explanation of echolocation in bats, a sensory system which has only begun to be understood in the past several decades. 
 
@@ -497,10 +497,10 @@ A bat is flying along at $5 ms^{-1}$. It emits a 50 kHz sound pulse which is ref
 
 Answer: 
 
-\begin{eqnarray}
-f_L&=&51.74 kHz \\
-t&=&28.6 ms
-\end{eqnarray}
+\begin{align*}
+f_L&=51.74 kHz \\
+t&=28.6 ms
+\end{align*}
 
 The outgoing and incoming frequencies in this example have a difference of 1740 Hz. This difference may appear quite large when compared to the difference between Concert A (440 Hz) and the A an octave higher (830 Hz). However, in the detection of radiation phenomena, the important comparison is the ratio, not the difference of two frequencies. The bat in Problem 8 must be able to detect 1740 Hz in 50 kHz, a percentage frequency change of 3.4%. This is not an unreasonable change to detect since human musicians can quite commonly distinguish quarter tones which represent a percentage frequency change of 3%. One expects that bats which depend upon the Doppler effect should have very acute pitch change detection and a very stable emission frequency, to go along with the ability to discriminate very small time intervals. Some of these predictions have been experimentally verified (Schuller, et al. 1974).
 

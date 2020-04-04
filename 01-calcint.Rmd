@@ -79,18 +79,18 @@ $$\frac{df}{dx} = g(x)$$
 
 then
 
-\begin{eqnarray}
-\int^b_a g(x)dx &=& [f(x)]^b_a \\
-&=& f(b) - f(a)
-\end{eqnarray}
+\begin{align*}
+\int^b_a g(x)dx &= [f(x)]^b_a \\
+&= f(b) - f(a)
+\end{align*}
 
 Note that the integration constant is not written since it is eliminated through subtraction. If $g(x) = 2x^2$, then $\int g(x)dx = f(x) + C = 2x^3/3 + C$ and
 
-\begin{eqnarray}
-\int^b_ag(x)dx = \int^b_a 2x^2dx &=& (2b^3 / 3 + C ) - (2a^3/3 + C) \\ 
-&=& 2b^3/3 - 2a^3/3 + C - C \\
-&=& f(b) - f(a) \\
-\end{eqnarray}
+\begin{align*}
+\int^b_ag(x)dx = \int^b_a 2x^2dx &= (2b^3 / 3 + C ) - (2a^3/3 + C) \\ 
+&= 2b^3/3 - 2a^3/3 + C - C \\
+&= f(b) - f(a) \\
+\end{align*}
 
 ### Area Under the Curve
 
@@ -134,12 +134,12 @@ $$ \frac{A}{2} = \int^a_{-a} (-bx^2/a^2 + b)dx $$
 
 i.e., the area between the x-axis and the upper curve. Thus we calculate
 
-\begin{eqnarray}
-A &=& 2 \int^a_{-a} (-bx^2/a^2 + b)dx \\
-  &=& 2[-(b/a^2)x^3/3+bx]^a_{-a} \\
-  &=& 2[(-ab/3 + ab ) - (ab/3 - ab)] \\
-  &=& 8ab/3 \\
-\end{eqnarray}
+\begin{align*}
+A &= 2 \int^a_{-a} (-bx^2/a^2 + b)dx \\
+  &= 2[-(b/a^2)x^3/3+bx]^a_{-a} \\
+  &= 2[(-ab/3 + ab ) - (ab/3 - ab)] \\
+  &= 8ab/3 \\
+\end{align*}
 
 ### Improper Integrals
 
@@ -182,11 +182,11 @@ $$ L = \int^r_0 \frac{r}{\sqrt{r^2-x^2}} dx$$
 
 where $r$ is the radius. The integrand is infinite at $x=r$ (fig. \@ref(fig:fig-calcint-6)). However, we can evaluate the integral by taking the limit of another integral:
 
-\begin{eqnarray}
-L &=& \lim_{a \rightarrow r} \int^q_0 \frac{r}{\sqrt{r^2-x^2}} dx \\
-&=& \lim_{a \rightarrow r} [r \sin^{-1} (x/r) ]^a_0 \\
-&=& \lim_{a \rightarrow r} [r \sin^{-1} (a/r) ] = r\pi/2 \\
-\end{eqnarray}
+\begin{align*}
+L &= \lim_{a \rightarrow r} \int^q_0 \frac{r}{\sqrt{r^2-x^2}} dx \\
+&= \lim_{a \rightarrow r} [r \sin^{-1} (x/r) ]^a_0 \\
+&= \lim_{a \rightarrow r} [r \sin^{-1} (a/r) ] = r\pi/2 \\
+\end{align*}
 
 ```{r fig-calcint-5, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='The quarter-circle, $y=\\sqrt{r^2 -x^2}$'}
 knitr::include_graphics('figures/fig-calcint-5.png')
@@ -217,12 +217,12 @@ becomes transformed into
 $$\int^{h(b)}_{h(a)}g(u)du$$
 where $g(u)du = f(x)dx$. Thus the integrand, $dx$, and the limits have been transformed into equivalent counterparts. We obtain $g(u)$ by finding the inverse function $h^{-1} (u)$ so that
 
-\begin{eqnarray}
-x &=& h^{-1}(u) \\
-dx &=& \frac{d[h^{-1}(u)]}{du} du \\
-g(u)du &=& [f(x)][dx] \\
-g(u) &=& [f(h^{-1}(u))][\frac{dh^{-1}(u)}{du}] \\
-\end{eqnarray}
+\begin{align*}
+x &= h^{-1}(u) \\
+dx &= \frac{d[h^{-1}(u)]}{du} du \\
+g(u)du &= [f(x)][dx] \\
+g(u) &= [f(h^{-1}(u))][\frac{dh^{-1}(u)}{du}] \\
+\end{align*}
 
 Often, $h(x)$ appears explicitly in the integrand so that $u$ is substituted directly.
 
@@ -242,12 +242,12 @@ so that
 $$\frac{du}{2} = tdt$$
 The limits remain, since $u = 0$ when $t = 0$ and $u = \infty$ when $t = \infty$. Direct substitution then gives
 
-\begin{eqnarray}
-\int^{\infty}_0 te^{-t^2}dt &=& \int^{\infty}_0e^{-t^2}(tdt) \\
-&=& \int^{\infty}_0 e^{-u} (\frac{du}{2}) = \frac{1}{2} \int^{\infty}_0 e^{-u}du \\
-&=& \frac{1}{2} [-e^{-u}]^{\infty}_0 = \frac{1}{2}[0-(-1)] \\
-&=& \frac{1}{2} \\
-\end{eqnarray}
+\begin{align*}
+\int^{\infty}_0 te^{-t^2}dt &= \int^{\infty}_0e^{-t^2}(tdt) \\
+&= \int^{\infty}_0 e^{-u} (\frac{du}{2}) = \frac{1}{2} \int^{\infty}_0 e^{-u}du \\
+&= \frac{1}{2} [-e^{-u}]^{\infty}_0 = \frac{1}{2}[0-(-1)] \\
+&= \frac{1}{2} \\
+\end{align*}
 
 Since the second term in eqn. \@ref(eq:calcint-6) is now obvious $\int^{\infty}_0 e^{-u}du = \int^{\infty}_0 e^{-t}dt=1$, we obtain the solution to eqn. \@ref(eq:calcint-5) of
 $$C(\infty) = 1/2 + 1 = 3/2$$
@@ -380,17 +380,17 @@ here $y$ = growth rate, $x$ = dissolved oxygen. A simple comparison of the effec
 knitr::include_graphics('figures/fig-calcint-7.png')
 ```
 
-\begin{eqnarray}
-\overline y = \frac{1}{27} \int^{30}_3 28dx &=& \frac{1}{27}[28x]^{30}_3 = \frac{1}{27}[(28)(30)-(28(3))] \\
-&=& \frac{1}{27}(28)(27)=28 \\
-\end{eqnarray}
+\begin{align*}
+\overline y = \frac{1}{27} \int^{30}_3 28dx &= \frac{1}{27}[28x]^{30}_3 = \frac{1}{27}[(28)(30)-(28(3))] \\
+&= \frac{1}{27}(28)(27)=28 \\
+\end{align*}
 
 For the upper curve,
-\begin{eqnarray}
-\overline y &=& \frac{1}{27} \int^{30}_3 7.3(x + 3.5)e^{-0.5x}dx \\
-&=& \frac{7.3}{27} \int^{30}_3 3.5e^{-0.5x}dx + {\frac{7.3}{27}}\int^{30}_3 xe^{-0.05x}dx \\
-&=& 0.95 \int^{30}_3 e^{-0.5x}dx + 0.27\int^{30}_3 xe^{-0.05x}dx \\
-\end{eqnarray}
+\begin{align*}
+\overline y &= \frac{1}{27} \int^{30}_3 7.3(x + 3.5)e^{-0.5x}dx \\
+&= \frac{7.3}{27} \int^{30}_3 3.5e^{-0.5x}dx + {\frac{7.3}{27}}\int^{30}_3 xe^{-0.05x}dx \\
+&= 0.95 \int^{30}_3 e^{-0.5x}dx + 0.27\int^{30}_3 xe^{-0.05x}dx \\
+\end{align*}
 
 The first integral is the same form as in previous examples.
 $$0.95 \int^{30}_3 3.5e^{-0.5x}dx = 0.95[-\frac{1}{0.05} e^{-.05x}]^{30}_3$$
@@ -406,11 +406,12 @@ Recall that integration by parts uses the formula
 $$\int udv = uv - \int vdu$$
 Since $du = dx$, and $v = \int dv = -e^{-0.05x}/0.05$, we get
 
-\begin{eqnarray}
-\int^{30}_3 xe^{-0.05x}dx &=& [{\frac{-xe^{-0.05x}}{0.05}}]^{30}_3 - \int^{30}_3 \frac{-e^{-0.05x}}{0.05}dx \\
-&=& \frac{1}{0.05} \bigg([-30e^{-1.5}+3e^{-0.15}]-[{\frac {e^{-0.05x}}{0.05}}^{30}_3]\bigg) \\
-&=& 20[-30e^{-1.5}+3e^{-0.15} + \frac{e^{-0.15}}{0.05} - \frac{e^{-1.5}}{0.05} = 173.04 \\
-\end{eqnarray}
+\begin{align*}
+\int^{30}_3 xe^{-0.05x}dx &= [{\frac{-xe^{-0.05x}}{0.05}}]^{30}_3 - \int^{30}_3 \frac{-e^{-0.05x}}{0.05}dx \\
+&= \frac{1}{0.05} \bigg([-30e^{-1.5}+3e^{-0.15}]-[{\frac {e^{-0.05x}}{0.05}}]^{30}_3\bigg) \\
+&= 20[-30e^{-1.5}+3e^{-0.15} + \frac{e^{-0.15}}{0.05} - \frac{e^{-1.5}}{0.05}] \\
+&= 173.04 \\
+\end{align*}
 
 Thus,
 $$\overline y =  12.07 + 0.27(173.04) = 58.8$$
@@ -431,20 +432,20 @@ Velocity is defined as the rate of change of position. Since the distance covere
 
 For a free-falling object, the velocity is given by $v(t) = g \cdot t$ where $g$ is the acceleration due to gravity and $t$ is time elapsed. The distance $S$ covered after $T$ seconds is given by $S = \frac{1}{2} gT^2$ which is merely the integral of velocity.
 
-\begin{eqnarray}
-S &=& \int^T_0 v(t)dt = \int^T_0 (gt)dt \\
-&=& g \int^T_0 t \, dt = g[t^2/2]^T_0 \\
-&=& \frac{1}{2}gT^2 \\
-\end{eqnarray}
+\begin{align*}
+S &= \int^T_0 v(t)dt = \int^T_0 (gt)dt \\
+&= g \int^T_0 t \, dt = g[t^2/2]^T_0 \\
+&= \frac{1}{2}gT^2 \\
+\end{align*}
 
 ### Volumes
 
 Volumes and areas of complicated regions are also evaluated using the definite integral. Previously, the area under a curve was bounded by three straight perpendicular lines. When the bottom is not the base axis, the integration is still simple. For a region shown in figure \@ref(fig:fig-calcint-8) the area is the difference between the area under curve $f$ and the area under curve $g$. Thus
 
-\begin{eqnarray}
-A &=& \int^b_a f(x)dx - \int^b_a g(x)dx \\
-&=& \int^a_b [f(x)-g(x)]dx \\
-\end{eqnarray}
+\begin{align*}
+A &= \int^b_a f(x)dx - \int^b_a g(x)dx \\
+&= \int^a_b [f(x)-g(x)]dx \\
+\end{align*}
 
 Note that $[f(x)-g(x)]$ is merely the height of the region at the point $x$, so the height times width interpretation is still applicable.
 
@@ -494,11 +495,11 @@ knitr::include_graphics('figures/fig-calcint-10c.png')
 
 In this example, let $x_0 = 0.5m$, $a = 0.28$, $b = 0.24$. The total surface area is 
 
-\begin{eqnarray}
-A &=& \int^{0.5}_{-0.5} 2 \pi(0.28-0.24x^2)dx \\
-&=& 2 \pi [0.28x - \frac{0.24}{3} x^3]^{0.5}_{-0.5} \\
-&=& 1.63 m^2 \\
-\end{eqnarray}
+\begin{align*}
+A &= \int^{0.5}_{-0.5} 2 \pi(0.28-0.24x^2)dx \\
+&= 2 \pi [0.28x - \frac{0.24}{3} x^3]^{0.5}_{-0.5} \\
+&= 1.63 m^2 \\
+\end{align*}
 
 Note that any function will work in the formula, as long as the area desired is a surface area of revolution. The only problem might be in using a function which is difficult to integrate.
 
@@ -537,10 +538,10 @@ knitr::include_graphics('figures/fig-calcint-15.png')
 
 The volume of each slab is $\pi (radius)^2(length) = \pi f(y_i)^2dy$. Thus we have volume $V$ of the solid as
 
-\begin{eqnarray}
-V &=& \lim_{dy \rightarrow 0} \sum^N_{i=1} \pi f(y_i)^2dy, \;\;\;\;\;\; N= (b-a)/dy \\
-&=& \int^b_a \pi f(y)^2 dy \\
-\end{eqnarray}
+\begin{align*}
+V &= \lim_{dy \rightarrow 0} \sum^N_{i=1} \pi f(y_i)^2dy, \;\;\;\;\;\; N= (b-a)/dy \\
+&= \int^b_a \pi f(y)^2 dy \\
+\end{align*}
 
 ### General Surface Areas
 
@@ -783,10 +784,10 @@ M = \frac{a_1(F)}{1.5}T^{2.5}+C_1
 
 Similarly, we integrate eqn. \@ref(eq:calcint-21) with respect to $F$, holding $T$ constant.
 
-\begin{eqnarray}
-M &=& \int a_2 F^{1.8} dF = (a_2 / 1.8) F^{2.8} + C_2 \\
-&=& \frac{a_2(T)}{1.8} F^{2.8} +C_2 \\
-\end{eqnarray}
+\begin{align*}
+M &= \int a_2 F^{1.8} dF = (a_2 / 1.8) F^{2.8} + C_2 \\
+&= \frac{a_2(T)}{1.8} F^{2.8} +C_2 \\
+\end{align*}
 
 Thus
 $$\frac{a_1(F)}{1.5} T^{2.5} +C_1 = \frac{a_2(T)}{1.8}F^{2.8} +C_2$$ 
@@ -1080,13 +1081,15 @@ $$= 0.0324 +0.0349 \int^{12}_0 e^{-0.60t}-0.8e^{-0.65t} dt = 0.0324 + 0.0349(0.4
 (4.17*10^6)*(0.0476)
 
 
-B_t= function(time) 5000*exp(-0.5*time) * 10000*(1-0.8*exp(-0.05*time))^3
+B_t= function(time){5000 * exp(-0.5 * time) * 10000 * 
+  (1 - 0.8 * exp(-0.05 * time))^3}
 
 #Initial biomass in g
 B_t(0)
 
 #Plot the graph of biomass over time. 
-plot(0:12, B_t(0:12)/10^3, ylab="Production (kg)", xlab= "Time (months)", type='l')
+plot(0:12, B_t(0:12)/10^3, ylab="Production (kg)", 
+     xlab= "Time (months)", type='l')
 
 ```
 
@@ -1101,22 +1104,22 @@ But $N(0)=N_0$. Thus $N(0)=N_0=e^0 e^C=e^C$
 and the solution is $N(t)= N_0e^{-kt}$.
 
 c. Substitute into the solution equation.
-\begin{eqnarray}
+\begin{align*}
 N(t_1)=N_0e^{-kt_1} \\
 0.5 N_0= N_0e^{-kt_1}  \\
 \ln(0.5)=-kt_1 \\
 t_1= -(\ln(0.5))/k \\
 = (\ln 2)/k
-\end{eqnarray}
+\end{align*}
 
-d. Let N(t) be the number of $C^{14}$ atoms in the wood. Then $N(t)/N_0 = 0.87$. The half life of 5568 gives $(\ln2)/k=5568$, $k= (\ln 2)/5568=.0001245$.
+d. Let N(t) be the number of $C^{14}$ atoms in the wood. Then $N(t)/N_0 = 0.87$. The half life of 5568 gives $(\ln2)/k=5568$, $k= (\ln 2)/5568=0.0001245$.
 The equation for N(t) then gives
-\begin{eqnarray}
+\begin{align*}
 N(t)/N_0=e^{-kt} \\
 0.87 = exp(-0.0001245t)\\
 \ln(0.87) = -0.0001245t\\
 t=1119 years
-\end{eqnarray}
+\end{align*}
 
 4.  a is the amplitude (half the total change in tidal height); b is $2\pi/p$ where p=period=$2|T_{high}-T_{low}|$; and $T_h$ is the phase shift or lag. The simple cosine function begins at $t=0$ so the lag is the time of high tide. $H_a$ is the vertical shift.
 
@@ -1144,31 +1147,32 @@ Ha= (h_h+h_l)/2
 a; p; b; time_h; Ha
 
 H=function(a,b,time, time_h, Ha) a*cos(b*(time-time_h))+Ha
-plot(1:24, H(a=a,b=b,time=1:24, time_h=time_h, Ha=Ha), type='l', xlab="Tide height (m)", ylab="Time (hours)")
+plot(1:24, H(a=a,b=b,time=1:24, time_h=time_h, Ha=Ha), type='l', 
+     xlab="Tide height (m)", ylab="Time (hours)")
 
 ```
 b. $\overline H$= average height, first interval = 7.24 hours.
-\begin{eqnarray}
-\overline H= \frac{1}{7.24} \int^{11.82}_{4.58}a \cos(bT-bT_h)+H_a dt \\
-= \frac{1}{7.24} (-a/b)(\sin(11.82b-4.58b)-sin(4.58b-4.58b)) + \frac{1}{7.24} (H_a)(11.82-4.58)\\
-=-\frac{a}{7.24b}(\sin(7.24(2\pi/2(7.24)))-0)+H_a\\
-=H_a \text{, since } \sin \pi=0.
-\end{eqnarray}
+\begin{align*}
+\overline H&= \frac{1}{7.24} \int^{11.82}_{4.58}a \cos(bT-bT_h)+H_a dt \\
+&= \frac{1}{7.24} (-a/b)(\sin(11.82b-4.58b)-sin(4.58b-4.58b)) + \frac{1}{7.24} (H_a)(11.82-4.58)\\
+&=-\frac{a}{7.24b}(\sin(7.24(2\pi/2(7.24)))-0)+H_a\\
+&=H_a \text{, since } \sin \pi=0.
+\end{align*}
 
 For the two intervals combined, we must weight the average height in each interval by the length of the time interval.
-\begin{eqnarray}
-\overline H= \frac{1}{15.09} \int^{19.67}_{4.58}H(t)dt=\frac{1}{15.09}\int^{11.82}_{4.58}H(t)dt +\frac{1}{15.09}\int^{19.67}_{11.82}H(t)dt\\
-=\frac{7.24}{15.09}\frac{1}{7.24}\int^{11.82}_{4.58}H(t)dt +\frac{7.85}{15.09}\frac{1}{7.85}\int^{19.67}_{11.82}H(t)dt\\
-=\frac{7.24}{15.09} \overline H_1 +\frac{7.85}{15.09} \overline H_2\\
-\end{eqnarray}
+\begin{align*}
+\overline H&= \frac{1}{15.09} \int^{19.67}_{4.58}H(t)dt=\frac{1}{15.09}\int^{11.82}_{4.58}H(t)dt +\frac{1}{15.09}\int^{19.67}_{11.82}H(t)dt\\
+&=\frac{7.24}{15.09}\frac{1}{7.24}\int^{11.82}_{4.58}H(t)dt +\frac{7.85}{15.09}\frac{1}{7.85}\int^{19.67}_{11.82}H(t)dt\\
+&=\frac{7.24}{15.09} \overline H_1 +\frac{7.85}{15.09} \overline H_2\\
+\end{align*}
 
 c. We need the times of day when the 0.0 tide level is reached. The easiest way is to invert the function $H(t)$ for each subinterval.
-\begin{eqnarray}
-H= a \cos(b(T-T_h))+H_a\\
-(H-H_a)/a= \cos(b(T-T_h))\\
-\cos^{-1}((H-H_a)/a)=b(T-T_h)\\
-(1/b) \cos^{-1}((H-H_a)/a)+T_h=T\\
-\end{eqnarray}
+\begin{align*}
+&H= a \cos(b(T-T_h))+H_a\\
+&(H-H_a)/a= \cos(b(T-T_h))\\
+&\cos^{-1}((H-H_a)/a)=b(T-T_h)\\
+&(1/b) \cos^{-1}((H-H_a)/a)+T_h=T\\
+\end{align*}
 Now substitute the appropriate constants and 0 for $H$.
 ```{r}
 #first interval
@@ -1203,19 +1207,19 @@ correctly tells how far the maximum ($T_h$) is from the desired time $T$, but no
 ```
 
 5.
-$$\frac{\partial E}{\partial B} =\sum^n_{i=1}2[Ax_i+B-y_i]$$
 
-\begin{eqnarray}
-E= \sum^n_{i=1}[Ax_i+B-y_i]^2\\
-\frac{\partial E}{\partial A} = \sum^n_{i=1}[Ax_i+B-y_i]x_i\\
-\end{eqnarray}
+\begin{align*}
+\frac{\partial E}{\partial B} &=\sum^n_{i=1}2[Ax_i+B-y_i] \\
+E&= \sum^n_{i=1}[Ax_i+B-y_i]^2\\
+\frac{\partial E}{\partial A} &= \sum^n_{i=1}[Ax_i+B-y_i]x_i\\
+\end{align*}
 Set equal to zero:
-\begin{eqnarray}
-\sum^n_{i=1}2[Ax_i+B-y_i]x_i=0\\
-\sum^n_{i=1}[Ax_i+B-y_i]x_i=0\\
+\begin{align}
+\sum^n_{i=1}2[Ax_i+B-y_i]x_i=0 \notag \\
+\sum^n_{i=1}[Ax_i+B-y_i]x_i=0 \notag \\
 \frac{\partial E}{\partial B} =\sum^n_{i=1}2[Ax_i+B-y_i]
 (\#eq:calcint-a)
-\end{eqnarray}
+\end{align}
 
 Equate to 0 and divide by 2:
 \begin{equation}
@@ -1226,36 +1230,36 @@ Thus we have two equations which are linear in A and B. This is more easily seen
 
 \begin{equation}
 A(\sum^n_{i=1}x_i^2)+B(\sum^n_{i=1}x_i)-(\sum^n_{i=1}x_iy_i)=0
-(\#eq:calcint-a*)
+(\#eq:calcint-a2)
 \end{equation}
 
 And (\@ref(eq:calcint-b)) becomes
 \begin{equation}
 A(\sum^n_{i=1}x_i^2)+nB-(\sum^n_{i=1}y_i)=0
-(\#eq:calcint-b*)
+(\#eq:calcint-b2)
 \end{equation}
 
 6. 
 
-a. Eq. \@ref(eq:calcint-a*) is:
+a. Eq. \@ref(eq:calcint-a2) is:
 $$A(1353.25) + B(65.90) - (3750.50) = 0$$
-Eq. \@ref(eq:calcint-b*) is:
+Eq. \@ref(eq:calcint-b2) is:
 $$A(65.90) + 5B - (268.50) = 0$$
 
 We solve for A and B.
 
-\begin{eqnarray}
-B &=& (268.50 - 65.90A)/5 \\
-A &=& (3750.50 - 65.90B)/(1353.25) \\
-&=& 2.771 - 2.615 + 0.642A = 0.156 + 0.642A \\
-\end{eqnarray}
+\begin{align*}
+B &= (268.50 - 65.90A)/5 \\
+A &= (3750.50 - 65.90B)/(1353.25) \\
+&= 2.771 - 2.615 + 0.642A = 0.156 + 0.642A \\
+\end{align*}
 
 Thus
 
-\begin{eqnarray}
-A &=& 0.156/(1 - 0.642) = 0.436 \\
-B &=& (268.50 - 65.90(0.436))/5 = 47.95 \\
-\end{eqnarray}
+\begin{align*}
+A &= 0.156/(1 - 0.642) = 0.436 \\
+B &= (268.50 - 65.90(0.436))/5 = 47.95 \\
+\end{align*}
 
 To prove that these values for $A$, $B$ do give a minimum sum of
 squares, we must show that, for $A$ = 0.44, $B$ = 47.95,
@@ -1267,16 +1271,16 @@ iii) $\partial^2f/\partial A^2 > 0$,
 where $f$ is the sum of squares
 $$f=\sum_i(y_i-Ax_i-B)^2$$
 We have
-\begin{eqnarray}
-\partial f/\partial A &=& -2\sum_i(y_i-Ax_i-B)x_i \\
-\partial f/\partial B &=& -2\sum_i(y_i-Ax_i-B) \\
-\end{eqnarray}
+\begin{align*}
+\partial f/\partial A &= -2\sum_i(y_i-Ax_i-B)x_i \\
+\partial f/\partial B &= -2\sum_i(y_i-Ax_i-B) \\
+\end{align*}
 
 Since $A$, $B$ were calculated by setting these derivatives to zero, we do not need to check (i).
-\begin{eqnarray}
-\partial^2f/\partial A^2 &=& 2\sum_ix^2_i,\;\;\partial^2f/\partial B^2 = 2n \\
-\partial^2f/\partial A\partial B &=& 2 \sum_ix_i \\
-\end{eqnarray}
+\begin{align*}
+\partial^2f/\partial A^2 &= 2\sum_ix^2_i,\;\;\partial^2f/\partial B^2 = 2n \\
+\partial^2f/\partial A\partial B &= 2 \sum_ix_i \\
+\end{align*}
 
 Substituting into (ii) gives
 $$(2\sum_ix^2_i)(2n)-4(\sum_ix_i)^2=20\sum_ix^2_i-4(\sum_ix_i)^2$$
@@ -1291,11 +1295,11 @@ $$y/x=Ae^{Bx}$$
 Now take logarithms of both sides.
 $$ln(y/x)=lnA+Bx$$
 Thus, in the form $h=f+gx$, we have
-\begin{eqnarray}
-h &=& ln(y/x) \\
-f &=& ln A \\
-g &=& B \\
-\end{eqnarray}
+\begin{align*}
+h &= ln(y/x) \\
+f &= ln A \\
+g &= B \\
+\end{align*}
 
 The transformed table is below.
 
@@ -1350,25 +1354,27 @@ a. First evaluate this integral using either of two trigonometric substitutions:
 
 b. Use your area formula (the answer to part a) to investigate the dilution of the sun's energy flux due to the angle at which the rays strike the earth's surface. The dilution is caused by a fixed amount of solar energy being spread over a larger area (as the rays become more horizontal) and thus the energy per unit area decreases as compared to the energy density of vertical rays. The situation is pictured below, giving a top and side view for two inclination angles. The sunlight passes through a circular hole in an opaque sheet and strikes the earth at an angle $R$ from the perpendicular.
 
-> figures
+```{r fig-calcint-c3, echo=FALSE, fig.height=4, out.width = "75%"}
+knitr::include_graphics('figures/fig-calcint-c3.png')
+```
 
 The illuminated area changes from a circle ($R=0$) to an elongated ellipse (as $R$ increases). For a given diameter $B$, write the illuminated area $A$ as a function of the angle of inclination $R$. Check your result by choosing values for $B$ and $R$ and calculating the dilution $D$, which equals the circle's area divided by the ellipse's area. Does $D = 0.6$ mean more dilution (less energy density) than $D = 0.3$ or vice versa? The inclination angle in Minnesota changes from about 20° in summer to 65° in winter. What is the resulting change in energy density, measured by $D$?
 
 ## SOLUTION TO THE ADDITIONAL PROBLEMS
 1.
 First partial derivatives:
-\begin{eqnarray}
-\frac{\partial E^2}{\partial A} &=& \int^{30}_3\frac{\partial}{\partial A}(6.1(x+5.0)e^{-0.045x}-Ax-B)^2dx \\
-&=& 2 \int^{30}_3(6.1(x+5.0)e^{-0.045x}-Ax-B)(-x)dx
-\end{eqnarray}
+\begin{align*}
+\frac{\partial E^2}{\partial A} &= \int^{30}_3\frac{\partial}{\partial A}(6.1(x+5.0)e^{-0.045x}-Ax-B)^2dx \\
+&= 2 \int^{30}_3(6.1(x+5.0)e^{-0.045x}-Ax-B)(-x)dx
+\end{align*}
 Equating to zero and dividing by 2 gives
 $$0 = -\int^{30}_36.1(x-2+5x)e^{-0.045x}dx +\int^{30}_3Ax^2+Bxdx$$
 Successive integration by parts (for the first integral) and direct integration (for the second integral) yield the first equation:
 $$0 = 8991.0A + 445.5B - 25984.9$$
-\begin{eqnarray}
-\frac{\partial E^2}{\partial B} &=& \int^{30}_3\frac{\partial}{\partial B}(6.1(x+5.0)e^{-0.045x}-Ax-B)^2dx \\
-&=& -2 \int^{30}_3(6.1(x+5.0)e^{-0.045x}-Ax-B)dx
-\end{eqnarray}
+\begin{align*}
+\frac{\partial E^2}{\partial B} &= \int^{30}_3\frac{\partial}{\partial B}(6.1(x+5.0)e^{-0.045x}-Ax-B)^2dx \\
+&= -2 \int^{30}_3(6.1(x+5.0)e^{-0.045x}-Ax-B)dx
+\end{align*}
 
 Equating to zero, dividing by 2 and solving yields the second equation:
 $$0 = 445.5A + 27.0B - 1568.8$$
@@ -1389,10 +1395,10 @@ $$\sqrt{a^2-x^2}dx = \sqrt{a^2 - a^2sin^2\theta}\cdot acos\theta \:d\theta$$
 The integrand is then non-negative when the positive square root is used and when $cos \theta$ is non-negative. Thus, we choose the limits of integration to be $-\frac{\pi}{2}$, $\frac{\pi}{2}$ since $sin(-\frac{\pi}{2}) = 1, sin(\frac{\pi}{2}=1)$ and $cos\theta \le0$ if $-\frac{\pi}{2} \le \theta \le \frac{\pi}{2}$.  
 The integral is then
 $$\int^{\pi/2}_{-\pi/2}\sqrt{a^2-a^2sin^2\theta}acos\theta \:d\theta = a^2\int^{\pi/2}_{-\pi/2}\sqrt{1-sin^2\theta}cos\theta\:d\theta$$
-\begin{eqnarray}
-&=& a^2\int^{\pi/2}_{-\pi/2}cos^2\theta\:d\theta=a^2[\frac{\theta}{2}+\frac{sin2\theta}{4}]^{\pi/2}_{-\pi/2} \\
-&=& a^2[\pi/4+(1/4)(0)-(-\pi/4)-(1/4)(0)] =\pi a^2/2
-\end{eqnarray}
+\begin{align*}
+&= a^2\int^{\pi/2}_{-\pi/2}cos^2\theta\:d\theta=a^2[\frac{\theta}{2}+\frac{sin2\theta}{4}]^{\pi/2}_{-\pi/2} \\
+&= a^2[\pi/4+(1/4)(0)-(-\pi/4)-(1/4)(0)] =\pi a^2/2
+\end{align*}
 Thus
 $$A=\frac{2b}{a}\int^a_{-a}\sqrt{a^2-x^2}dx = \pi ab$$
 When $a = b = 5.57$, $A = 97.47$.  
@@ -1400,7 +1406,9 @@ When $a = 5$, $b = 6.09$, $A = 95.66$.
 
 b.
 
->Figures
+```{r fig-calcint-cs3, echo=FALSE, fig.height=4, out.width = "75%"}
+knitr::include_graphics('figures/fig-calcint-cs3.png')
+```
 
 From the right-hand diagram, we have
 $$cosR = B/x$$
@@ -1408,10 +1416,10 @@ and thus
 $$x=B/cosR$$
 The minor axis is then the circle's diameter, $B$. In the answer to part "a", we replace $2a$ by $B/cos R$ and $2b$ by $B$.
 
-\begin{eqnarray}
-A &=& \pi ab = \pi(B/2cosR)(B/2) \\
-&=& \pi B^2 / (4 cosR)
-\end{eqnarray}
+\begin{align*}
+A &= \pi ab = \pi(B/2cosR)(B/2) \\
+&= \pi B^2 / (4 cosR)
+\end{align*}
 
 Since the area of the circle is $\pi B^2/4$,the dilution coefficient is
 $$D = \frac{\pi B^2/4}{\pi B^2/4cosR} = cosR$$

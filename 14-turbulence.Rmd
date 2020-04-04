@@ -393,10 +393,10 @@ Notice that $u'$ represents the RMS (root-mean-square) value of the velocity flu
 
 ## PROBLEM SOLUTIONS
 1. 
-\begin{eqnarray}
-Re&=&\frac{\bar{u}d}{v} \\
-&=&\frac{(10 m s^{-1})(3m)}{1.5\times10^{-5}m^2s^{-1}}=\frac{30}{1.5\times10^{-5}}=2\times10^6 
-\end{eqnarray}
+\begin{align*}
+Re&=\frac{\bar{u}d}{v} \\
+&=\frac{(10 m s^{-1})(3m)}{1.5\times10^{-5}m^2s^{-1}}=\frac{30}{1.5\times10^{-5}}=2\times10^6 
+\end{align*}
 For $v=0.1ms^{-1}$, $Re=2\times10^4$
 
 2. Solve the second equation for $z$:
@@ -440,9 +440,9 @@ plot(u, lnz, type="b", xlab="u (z)")
 ```
 
 5.
-\begin{eqnarray}
-Re&=&\frac{ud}{v}=\frac{3ms^{-1}\times0.042m}{151\times10^{-7}m^2s^{-1}}=8.3\times10^3 \\
-Nu&=&ARe^n=0.6Re^{0.5}=55 \\
-F_H&=&55\times\frac{26mWm^{-1}°C^{-1}}{0.042m}(30-20)°C \\
-&=&339000\frac{mW}{m^2}=339\frac{W}{m^2} 
-\end{eqnarray}
+\begin{align*}
+Re&=\frac{ud}{v}=\frac{3ms^{-1}\times0.042m}{151\times10^{-7}m^2s^{-1}}=8.3\times10^3 \\
+Nu&=ARe^n=0.6Re^{0.5}=55 \\
+F_H&=55\times\frac{26mWm^{-1}°C^{-1}}{0.042m}(30-20)°C \\
+&=339000\frac{mW}{m^2}=339\frac{W}{m^2} 
+\end{align*}

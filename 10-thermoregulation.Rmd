@@ -276,7 +276,7 @@ A second laboratory application of the $T_e$ concept is given by Bakken (1976b).
 
 \begin{equation}
 \frac{d T_b}{dt} = \frac{K_n}{C} (T_b - T_a)
-(\#eq:thermoreg-thermoreg-7)
+(\#eq:thermoreg-7)
 \end{equation}
 where
 <div class="nobullet">
@@ -287,11 +287,11 @@ where
 * $t$ is time ($s$).
 </div>
 
-Equation \@ref(eq:thermoreg-thermoreg-7) says that the change in body temperature will be zero when the animal's temperature is equal to that of the air. This is not a bad approximation if $T_a = T_e$ and if the metabolic and water loss rates of the animal are small. Bakken (1976a) has shown that a better approximation of the cooling curve is given by
+Equation \@ref(eq:thermoreg-7) says that the change in body temperature will be zero when the animal's temperature is equal to that of the air. This is not a bad approximation if $T_a = T_e$ and if the metabolic and water loss rates of the animal are small. Bakken (1976a) has shown that a better approximation of the cooling curve is given by
 
 \begin{equation}
 \frac{d T_b}{dt} = \frac{K_0}{C} (T_b - (T_e + \frac{M-E}{K_0}))
-(\#eq:thermoreg-thermoreg-8)
+(\#eq:thermoreg-8)
 \end{equation}
 When $\frac{d T_b}{dt} = 0$,
 
@@ -749,18 +749,18 @@ Difference| |444.3|440.2|
 
 10.
 
-\begin{eqnarray}
-Q_a&+&K(T_b-T_r)=Q_e+C+E_r+G(T_r-T_g) \\
-M&=&E_b+K(T_b-T_r) \\
-Q_a&+&K(T_b-T_r)=RT_r-3\sigma \varepsilon\bar{T}_r^4+h_c(T_r-T_a)+E_r+D(T_r-T_g) \\
-Q_n&+&K(T_b-T_r)=RT_r+h_c(T_r-T_a)+E_r+G(T_r-T_g) \\
+\begin{align*}
+Q_a&+K(T_b-T_r)=Q_e+C+E_r+G(T_r-T_g) \\
+M&=E_b+K(T_b-T_r) \\
+Q_a&+K(T_b-T_r)=RT_r-3\sigma \varepsilon\bar{T}_r^4+h_c(T_r-T_a)+E_r+D(T_r-T_g) \\
+Q_n&+K(T_b-T_r)=RT_r+h_c(T_r-T_a)+E_r+G(T_r-T_g) \\
 T_b&-&\bigg(\frac{M-E_b}{K}\bigg)=T_r \\
-Q_n&+&M-E_b-E_r=RT_r+h_cT_r-h_cT_a+GT_r-GT_g \\
-Q_n&+&h_cT_a+GT_g+M-E_b-E_r=[R+h_c+G]T_r \\
-T_b&=&\frac{Q_n+h_c T_a+GT_g+M-E_b-E_r}{R+h_c+G}+\frac{M-E_b}{K} \\
-&=&\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+\frac{KM-KE_b-KE_r}{K(R+h_c+G)} \frac{(R+h_c+G)(M-E_b)}{K(R+h_c+G)} \\
-T_b&=&\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+(M-E_b)\frac{K+R+h_c+G}{K(R+h_c+G)}+\frac{E_r}{R+h_c+G} \\
-\end{eqnarray}
+Q_n&+M-E_b-E_r=RT_r+h_cT_r-h_cT_a+GT_r-GT_g \\
+Q_n&+h_cT_a+GT_g+M-E_b-E_r=[R+h_c+G]T_r \\
+T_b&=\frac{Q_n+h_c T_a+GT_g+M-E_b-E_r}{R+h_c+G}+\frac{M-E_b}{K} \\
+&=\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+\frac{KM-KE_b-KE_r}{K(R+h_c+G)} \frac{(R+h_c+G)(M-E_b)}{K(R+h_c+G)} \\
+T_b&=\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+(M-E_b)\frac{K+R+h_c+G}{K(R+h_c+G)}+\frac{E_r}{R+h_c+G} \\
+\end{align*}
 
 11. a) Many ecological factors will be important in determining the success of the corn drill in any particular spring. Over-wintering density of the pest, predator densities and parasite densities may be necessary variables to include in a predictive equation. Laboratory facilities which can reproduce the climate that the animals experience in field will help define the physiological limits that the insect can tolerate. Statistical models might be employed to provide survival estimates based on microclimate variables.
 

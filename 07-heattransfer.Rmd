@@ -39,17 +39,18 @@ It is sometimes useful to take a more general outlook. In that spirit, here are 
 knitr::include_graphics('figures/fig-heattrans-1.png')
 ```
 
-```{r fig-heattrans-2, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Surface activity of *Pogonomyrmex badius* in relation to temperature of the ground surface and time of day. Active ants on the mound are indicated by crosses; inactive mounds are indicated by open circles; half-closed circles denote very slight activity. The months represented, beginning with the highest curve at 12 noon, are June, July, May, October and February. (From Colley, F.Bf. and J.B. Gentry, 1964, p. 224.)'}
+```{r fig-heattrans-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Surface activity of *Pogonomyrmex badius* in relation to temperature of the ground surface and time of day. Active ants on the mound are indicated by crosses; inactive mounds are indicated by open circles; half-closed circles denote very slight activity. The months represented, beginning with the highest curve at 12 noon, are June, July, May, October and February. (From Colley, F.Bf. and J.B. Gentry, 1964, p. 224.)'}
 knitr::include_graphics('figures/fig-heattrans-2.png')
 ```
 
 The reader should be cautioned that there are other ecological factors such as competition, predation, and coevolution, which may be greater selective influences and which may interact with selective pressures of the physical environment. Predictions from models incorporating physical processes can often be tested quantitatively which allows the investigator to compare the importance of the physical process under consideration with other ecological factors.
 
 R code throughout the tutorial demonstrates the use of the TrenchR package to estimate heat transfer. The package can be installed and loaded as follows:
-```{r}
-#install.packages("devtools")
-#library("devtools")
-#devtools::install_github(build_vignettes = TRUE,repo = "trenchproject/TrenchR")
+```{r eval = FALSE}
+install.packages("devtools")
+library("devtools")
+devtools::install_github(build_vignettes = TRUE, 
+                         repo = "trenchproject/TrenchR")
 
 library(TrenchR)
 ```
@@ -66,11 +67,11 @@ c_L = f \lambda
 (\#eq:heattrans-1)
 \end{equation}
 
-```{r fig-heattrans-3, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='The electromagnetic spectrum.'}
+```{r fig-heattrans-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The electromagnetic spectrum.'}
 knitr::include_graphics('figures/fig-heattrans-3-pngkey.png')
 ```
 
-```{r fig-heattrans-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Schematic representation of blackbody emission spectra, as a function of wavelength, for temperatures of 6000 and 270 K. (From Lowry, W.P., 1969, p. 17.)'}
+```{r fig-heattrans-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Schematic representation of blackbody emission spectra, as a function of wavelength, for temperatures of 6000 and 270 K. (From Lowry, W.P., 1969, p. 17.)'}
 knitr::include_graphics('figures/fig-heattrans-4.png')
 ```
 
@@ -266,7 +267,8 @@ where $A_s$ and $A_r$ are the areas ($m^2$) exposed to the sky (or enclosure) an
 The function is available in R as follows:
 ```{r}
 library(TrenchR)
-Qemitted_thermal_radiation(epsilon=0.96, A=1, psa_dir=0.4, psa_ref=0.6, T_b=303, T_g=293, T_a=298, enclosed=FALSE)
+Qemitted_thermal_radiation(epsilon=0.96, A=1, psa_dir=0.4, 
+     psa_ref=0.6, T_b=303, T_g=293, T_a=298, enclosed=FALSE)
 ```
 
 The calculation of absorbed radiation $Q_{abs}$, although straightforward with some assumptions, is a lengthy task because several longwave and shortwave components must be included. Gates and Stevenson (1979) have devoted an entire module to this topic to which the interested reader should refer for additional information. We briefly review the basic TrenchR functions for estimating absorbed radiation here. The solar and thermal radiation absorbed by animals, $Q_{abs} (W)$, is the sum of direct $S_{dir}$, diffuse $S_{dif}$, and reflected $S_{ref}$ solar radiation ($W/m^2$). The sum is weighted by the organism's surface area $A$ exposed to the radiation sources. Additionally, all forms of incoming radiation are multiplied by the solar absorptivity of the animal surface ($a$ proportion) to estimate absorbed radiation. The summation of incoming solar radiation is thus as follows:
@@ -276,7 +278,8 @@ where $A_{dir}$,$A_{dif}$,and $A_{ref}$ are the surface areas exposed to direct,
 
 The summation is available in R as follows
 ```{r}
-Qradiation_absorbed(a=0.9, A=1, psa_dir=0.4, psa_ref=0.4, S_dir=1000, S_dif=200, a_s=0.5)
+Qradiation_absorbed(a=0.9, A=1, psa_dir=0.4, psa_ref=0.4, 
+                    S_dir=1000, S_dif=200, a_s=0.5)
 ```
 Additional TrenchR functions are available to estimate the radiation components.
 
@@ -302,7 +305,7 @@ and
 
 The negative sign in equation \@ref(eq:heattrans-7) is to indicate that the direction of heat flow is from regions of higher temperature to lower temperature (opposite the temperature gradient). This is shown in Fig. \@ref(fig:fig-heattrans-5).
 
-```{r fig-heattrans-5, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Sketch illustrating sign convention for conduction heat flow. From Kreith, F. 1973. P. 8.'}
+```{r fig-heattrans-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Sketch illustrating sign convention for conduction heat flow. From Kreith, F. 1973. P. 8.'}
 knitr::include_graphics('figures/fig-heattrans-5.png')
 ```
 
@@ -335,8 +338,10 @@ where $K_g$ is the thermal conductivity of substrate ($W K^{-1} m^{-1}$) and $D$
 
 The functions are available in R:
 ```{r}
-Qconduction_animal(T_g= 293,T_b=303,d=10^-6,K=0.5,A=10^-3, proportion=0.2)
-Qconduction_substrate(T_g= 293,T_b=303,D=0.01,K_g=0.3,A=10^-2, proportion=0.2)
+Qconduction_animal(T_g= 293,T_b=303,d=10^-6,K=0.5,A=10^-3, 
+                   proportion=0.2)
+Qconduction_substrate(T_g= 293,T_b=303,D=0.01,K_g=0.3,A=10^-2, 
+                      proportion=0.2)
 ```
 
 Before proceeding to a discussion of convection, it is important to talk about an alternative view of conduction. It is possible to rewrite equation \@ref(eq:heattrans-8) as
@@ -430,15 +435,17 @@ Reynolds_number(u=1, D=0.001, nu=1.2)
 TrenchR offers methods to estimate the convective heat transfer coefficient entails based on either empirical measurements (`heat_transfer_coefficient()`) or approximating the animal shape as a sphere (`heat_transfer_coefficient_approximation()`), which enables simplification while also producing an reasonable approximation [Mitchell 1976].  The functions approximate forced convective heat transfer as a function of windspeed $V (m/s)$, the characteristic dimension $D (m)$, the thermal conductivity of the air $k (W m^{-1} K^{-1})$, the kinematic viscosity of the air $nu (m^2 s^{-1})$, and the taxa or a generic shape. An additional, simplified function (`heat_transfer_coefficient_simple()`) provides a reasonable approximation based on $V$ and $D$ for most environmental conditions.
 
 ```{r}
-heat_transfer_coefficient(V=0.5,D=0.05,K= 25.7 * 10^(-3),nu= 15.3 * 10^(-6), "cylinder")
-heat_transfer_coefficient_approximation(V=3,D=0.05,K= 25.7 * 10^(-3),nu= 15.3 * 10^(-6), "sphere")
+heat_transfer_coefficient(V=0.5,D=0.05,K= 25.7 * 10^(-3),
+                          nu= 15.3 * 10^(-6), "cylinder")
+heat_transfer_coefficient_approximation(V=3, D=0.05, 
+         K= 25.7 * 10^(-3), nu= 15.3 * 10^(-6), "sphere")
 heat_transfer_coefficient_simple(V=0.5,D=0.05)
 ```
 
 Tibbals et al. (1964), from earlier experimental work by Gates and Benedict (1963), were able to use the following formula to evaluate convective exchange for a leaf:
 \begin{equation}
 Q_{conv} = k_1 \bigg(\frac{V}{D}\bigg)^{0.5} (T_s - T_a)
-(\#eq:heattrans-heattrans-14)
+(\#eq:heattrans-14)
 \end{equation}
 where
 <div class="nobullet">
@@ -457,7 +464,7 @@ The theory of convective transfer is more complex than presented here. Although 
 
 ### Evaporation
 
-Evaporation is the process of water changing from a liquid to a gas. For animals, water can be lost through respiration, through special glands, or through any part of the skin. Water loss is usually a small component of the heat balance for animals but may be large for animals with moist skins. It usually increases quickly at higher temperatures. Figure \@ref(fig:fig-heattrans-6) from Dawson and Templeton (1963), shows this effect for the collared lizard, *Crotaphytus collaris*. In general, the water loss, $E$, is given by equation \@ref(eq:heattrans-heattrans-15). Again, this is in the form of a potential divided by a resistance (an Ohm's Law analogy).
+Evaporation is the process of water changing from a liquid to a gas. For animals, water can be lost through respiration, through special glands, or through any part of the skin. Water loss is usually a small component of the heat balance for animals but may be large for animals with moist skins. It usually increases quickly at higher temperatures. Figure \@ref(fig:fig-heattrans-6) from Dawson and Templeton (1963), shows this effect for the collared lizard, *Crotaphytus collaris*. In general, the water loss, $E$, is given by equation \@ref(eq:heattrans-15). Again, this is in the form of a potential divided by a resistance (an Ohm's Law analogy).
 \begin{equation}
 E = \frac{C_o - C_a}{r_e}
 (\#eq:heattrans-15)
@@ -471,7 +478,7 @@ where
 
 The TrenchR package incorporates a function based on empirically estimated relationships (`Qevaporation`) to estimate evaporation.
 
-```{r fig-heattrans-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Relation of evaporative water loss to ambient temperature in collared lizards weighing 25-35g. Data represent minimal values at various temperatures for animals studied. (From Dawson, W.R., and J.R. Templeton. 1963. P. 231.)'}
+```{r fig-heattrans-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Relation of evaporative water loss to ambient temperature in collared lizards weighing 25-35g. Data represent minimal values at various temperatures for animals studied. (From Dawson, W.R., and J.R. Templeton. 1963. P. 231.)'}
 knitr::include_graphics('figures/fig-heattrans-6.png')
 ```
 
@@ -521,7 +528,7 @@ The answer is found to 960 J for the granite and 2,200 J for the peat.
 
 > Table 3. Thermal properties of natural materials.
 
-**MATERIAL**|**DENSITY**|**SPECIFIC HEAT**|**THERMAL CONDUCTIVITY**|**THERMALCAPACITY**|**THERMAL DIFFUSIVITY**
+Material|Density|Specific heat|Thermal conductivity|Thermal capacity|Thermal diffusivity
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 | |$\rho$|$c$|$k$|$C_V=\rho c$|$k = \frac{k}{\rho c}$
 | |kg m^-3^ $\times$ 10^3^|J kg^-1^ °C^-1^ $\times$ 10^3^|Wm^-1^°C^-1^|J m^-3^ °C^-1^ $\times$ 10^6^|m^2^s^-1^ $\times$ 10^-6^
@@ -577,20 +584,20 @@ To illustrate the heat transfer principles and their biological importance, we c
 In soil, heat flow has great biological importance. Not only does the energy balance control the soil temperature, but it greatly affects the moisture content. Both factors are important for photosynthesis in green plants. Soil temperature also influences nutrient uptake as we have seen in our example at the beginning of the module. Fungi, bacteria, insects, as well as many other invertebrates and vertebrates, commonly spend part or all of their life cycles in or surrounded by the soil. Soil temperatures influence metabolic rates and may serve as a behavioral cue for daily and seasonal activity patterns.
 
 The simplest representation of heat flow in the soil is a conduction process where the heat flux $dQ$ per unit time $dt$ is equal to the conductivity $k$ times the difference in temperature $dT$ over a unit path length $dz$.
-\begin{eqnarray}
+\begin{equation}
 \frac{dQ}{dt} = -k \frac{dT}{dz}
 (\#eq:heattrans-21)
-\end{eqnarray}
+\end{equation}
 The minus sign is used to indicate that the potential gradient is in the direction of decreasing temperature.
 
 Another result can be derived by considering Fig. \@ref(fig:fig-heattrans-7). The First Law states that the change in internal energy (storage) is equal to the inflow minus the outflow. The change in internal energy will be equal to the mass ($\rho d z$) times the heat capacity ($c$), multiplied by the change in temperature with time ($\Delta T$).
 
-\begin{eqnarray}
-c \rho \Delta T \, d z &=& k \bigg(\frac{dT}{dz}\bigg)_U - k \bigg(\frac{dT}{dz}\bigg)_L \\
-\Delta T &=& \frac{k}{c\rho} \frac{1}{dz} \Bigg( \bigg(\frac{dT}{dz}\bigg)_U - \bigg(\frac{dT}{dz}\bigg)_L\Bigg) \\
-\frac{\partial T}{\partial t} &=& \frac{k}{c \rho} \frac{\partial^2 T}{\partial z^2}
+\begin{align}
+c \rho \Delta T \, d z &= k \bigg(\frac{dT}{dz}\bigg)_U - k \bigg(\frac{dT}{dz}\bigg)_L \notag \\
+\Delta T &= \frac{k}{c\rho} \frac{1}{dz} \Bigg( \bigg(\frac{dT}{dz}\bigg)_U - \bigg(\frac{dT}{dz}\bigg)_L\Bigg) \notag \\
+\frac{\partial T}{\partial t} &= \frac{k}{c \rho} \frac{\partial^2 T}{\partial z^2}
 (\#eq:heattrans-22)
-\end{eqnarray}
+\end{align}
 Equation \@ref(eq:heattrans-22) is a form of the diffusion equation and $\frac{k}{c \rho}$ is called the thermal diffusivity. This equation can be solved analytically if simple enough boundary conditions are assumed and the thermal diffusivity remains constant. In general, the diffusivity is a function of the water content of the soil and the soil temperature (here numerical methods must be used). We can, however, get a feeling for the heat transfer profile by noting the general boundary conditions. We know that at the soil surface under steady state conditions the temperature will cycle daily while at some depth $z_0$ below the surface the temperature will not change.
 
 Figures \@ref(fig:fig-heattrans-8) and \@ref(fig:fig-heattrans-9) from Lowry (1969) give different representations of how the soil might change with time and depth. Simpson (1977), Carslaw and Jaeger (1959), and Van Wijk (1966) present a more detailed discussion of soil heat flow.
@@ -649,15 +656,14 @@ and
 
 Inspection of equation \@ref(eq:heattrans-24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures 10 and 11 illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure 12 clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
 
-We analyze this equation in R as follows.
-```{r fig-heattrans-10, fig.height=4, fig.fullwidth=FALSE, fig.cap= "Computed transpiration rate versus leaf temperature as a function of wind speed and internal diffusive resistance for the conditions indicated. (From Gates, D. M. 1968. P. 216.)"}
+```{r, echo = FALSE}
 #radiation, convection, and evaporation
 epsilon=0.96
-sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^{-2}K^{-4})
-k1=9.14 #an experimentally determined coefficient ($9.14 J m^{-2} s^{-0.5} °C^{-1}$),
-k2=200 # is an experimentally determined coefficient ($183 s^{0.5} m^{-1}$),
+sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^-2 K^-4)
+k1=9.14 #an experimentally determined coefficient (9.14 J m^-2 s^-0.5 °C^-1),
+k2=200 # is an experimentally determined coefficient (183 s^0.5 m^-1),
 
-L=2.26*10^6 #L, latent heat of vaporiation of water in J kg^{-1}, 2.43x10^6 at 30C and 2.5*10^6 at 0C
+L=2.26*10^6 #L, latent heat of vaporiation of water in J kg^{-1}, 2.43 x 10^6 at 30°C and 2.5*10^6 at 0°C
 
 #calculate saturation vapor density
 #' VAPPRS
@@ -697,7 +703,9 @@ T_l=uniroot(f, interval=c(-100, 100))$root
 E=(vd(T_l, rh)-rh*vd(T_a, rh))/(r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
 return(c(T_l, E))
 }
+```
 
+```{r fig-heattrans-10, fig.height=4, fig.fullwidth=FALSE, echo = FALSE, fig.cap= "Computed transpiration rate versus leaf temperature as a function of wind speed and internal diffusive resistance for the conditions indicated. (From Gates, D. M. 1968. P. 216.)"}
 #fig 10 sunny
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=900)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
@@ -722,7 +730,7 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ```
 
-```{r fig-heattrans-11, fig.height=4, fig.fullwidth=FALSE, fig.cap= "Computed transpiration rate versus leaf temperature as a function of wind speed and internal diffusive resistance for the conditions indicated. (From Gates, D. M. 1968. P. 217.)"}
+```{r fig-heattrans-11, fig.height=4, fig.fullwidth=FALSE, echo = FALSE, fig.cap= "Computed transpiration rate versus leaf temperature as a function of wind speed and internal diffusive resistance for the conditions indicated. (From Gates, D. M. 1968. P. 217.)"}
 
 #fig 11 cloudy
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=600)
@@ -748,7 +756,7 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ```
 
-```{r fig-heattrans-12, fig.height=4, fig.fullwidth=FALSE, fig.cap= "Computed transpiration rate versus leaf temperature for various leaf dimensions and internal diffusive resistances for the conditions indicated. (From Gates, D. M. 1968. P. 229.)"}
+```{r fig-heattrans-12, fig.height=4, fig.fullwidth=FALSE, echo = FALSE, fig.cap= "Computed transpiration rate versus leaf temperature for various leaf dimensions and internal diffusive resistances for the conditions indicated. (From Gates, D. M. 1968. P. 229.)"}
 #fig 12 vary leaf dimensions, resistances 
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=1, D=0.01, W=0.01, Q_a=900)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='darkolivegreen1', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
@@ -812,7 +820,7 @@ where
 * $\frac{dT}{dx}$ is temperature gradient with the substrate ($^{\circ}C m^{-1}$).
 </div>
 
-```{r fig-heattrans-13, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Tree surface temperature in $^{\\circ}C$ on Chew\'s Ridge at 10:00, 1.:00, and 17:00 Pacific Standard Time June 21 as a function of direction from North. (From Bartlett, P. N. and D. M. Gates. 1967. P. 320.)'}
+```{r fig-heattrans-13, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Tree surface temperature in $^{\\circ}C$ on Chew\'s Ridge at 10:00, 1.:00, and 17:00 Pacific Standard Time June 21 as a function of direction from North. (From Bartlett, P. N. and D. M. Gates. 1967. P. 320.)'}
 knitr::include_graphics('figures/fig-heattrans-13.png')
 ```
 
@@ -825,11 +833,11 @@ The terms of equation \@ref(eq:heattrans-26) were either experimentally determin
 5. Intermediate heat loss if $T_s = 34.1 ^{\circ}C$ and wind speed = $0.45 m s^{-1}$. 
 Figure \@ref(fig:fig-heattrans-14) gives sample results. 
 
-```{r fig-heattrans-14, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Max and min energy gains (concave downward) and maximum, minimum, and estimated energy losses (concave upward) of a lizard on a tree trunk on Chew\'s Ridge for selected times and positions on June 21, with times when lizards could be expected to be found at the selected positions. Areas hatched represent times when the estimated energy loss falls between maximum and minimum energy gains. (From Bartlett, P. N. and D. M. Gates. 1967. P. 321.)'}
+```{r fig-heattrans-14, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Max and min energy gains (concave downward) and maximum, minimum, and estimated energy losses (concave upward) of a lizard on a tree trunk on Chew\'s Ridge for selected times and positions on June 21, with times when lizards could be expected to be found at the selected positions. Areas hatched represent times when the estimated energy loss falls between maximum and minimum energy gains. (From Bartlett, P. N. and D. M. Gates. 1967. P. 321.)'}
 knitr::include_graphics('figures/fig-heattrans-14.png')
 ```
 
-```{r fig-heattrans-15, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Estimated hourly positions on a tree trunk on Chew\'s Ridge for June 21 where (*Sceloporus occidentalis* could maintain its characteristic body temperature (arrows) and actual observed positions of lizards on June 21, 1964 (crosses). (From Bartlett, P. N. and D. M. Gates. 1967. P.321.)'}
+```{r fig-heattrans-15, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Estimated hourly positions on a tree trunk on Chew\'s Ridge for June 21 where (*Sceloporus occidentalis* could maintain its characteristic body temperature (arrows) and actual observed positions of lizards on June 21, 1964 (crosses). (From Bartlett, P. N. and D. M. Gates. 1967. P.321.)'}
 knitr::include_graphics('figures/fig-heattrans-15.png')
 ```
 
@@ -870,7 +878,7 @@ Hint: The energy lost is equal to the net mass flow (the mass of water exhaled m
     
 5a. In the diagram, heat flows through two materials from the left boundary (temperature $T_1$) to the right boundary (temperature $T_2$). Assure steady state conditions.
 
-```{r fig-heattrans-p5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=''}
+```{r fig-heattrans-p5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default"}
 knitr::include_graphics('figures/fig-heattrans-p5.png')
 ```
 
@@ -922,11 +930,10 @@ What problems are there with this approach?
 
 b. A more mechanistic viewpoint should allow one to calculate the temperature of the fruit. As an example let us consider a spherical model 1, 4 and 10 cm in diameter. What is the heat energy balance for the fruit. Which terms are small and can be ignored? What terms are you unsure about? As a first approximation, let us start with the following model:
 $$Q_a=Q_e+C$$
-where
-    $Q_a$ is absorbed radiation (Wm^-2^)   
-    $Q_e$ is reradiation (W m^-2^)   
-and   
-    $C$ is convection (W m^-2^)
+where  
+&nbsp;&nbsp;&nbsp;&nbsp;$Q_a$ is absorbed radiation (Wm^-2^)   
+&nbsp;&nbsp;&nbsp;&nbsp;$Q_e$ is reradiation (W m^-2^) and   
+&nbsp;&nbsp;&nbsp;&nbsp;$C$ is convection (W m^-2^)
 
 Under steady state conditions the temperature of the fruit core, $T_f$, will equal the temperature of the surface. Therefore, $Q_e=\varepsilon \sigma T_f^4$ and $C=h_c(T_f-T_a)$. For forced convection about a sphere without the increased turbulence of the outdoor environment (Nobel 1975; Kowalski and Mitchell 1976; Monteith (1973, page 224) give two formulae for the relationship between the Nusselt and the Reynolds number.
 
@@ -936,18 +943,17 @@ Under steady state conditions the temperature of the fruit core, $T_f$, will equ
 | 50 - 1 $\times$ 10^5^ |   0.34 Re^0.6^   |
 
 Calculate $Nu$ by both formulae for $Re$ = 50, 100 and 300. If $D$ = 1 cm, what is the minimum wind speed for which the second relationship is valid? Which formula yields a lower heat transfer coefficient? What will the effect on the energy balance of the fruit be? Find $h_c$ as a function of $D$ (0.01, 0.04 and 0.1 m) and $V$ (0.1, 1.0 and 10.0 m s$^{-1}$) if $Nu = 0.34Re^{0.6}$. Assume $v = 1.42 \times 10^{-5} m^2 s^{-1}$ for the entire problem.  
-For a sphere: $Q_a=a_s[A_1S+A_2s+A_3r+(S+s)]+A_lA_l[R_a+r_g]$
+For a sphere: $Q_a=a_s[A_1S+A_2s+A_3r+(S+s)]+A_lA_l[R_a+r_g]$  
 where   
-    $a_s$ = the absorptivity to shortwave radiation (assume .7),   
-    $A_1$ = the percent of the total surface hit by direct beam radiation weighted by the angle of incidence (equals $\pi r^2/4\pi r^2=1/4$)   
-    $S$ = direct beam solar radiation (W m$^{-2}$),   
-    $A_2 = A_s = A_l$ = the percent of the total surface hit by the corresponding radiation sources (assume 0.5),   
-    $s$ = diffuse shortwave radiation (assume = 0.1 of total shortwave radiation $R_p$, $W m^{-2}$)   
-    $r$ = reflectivity of the ground (assume 0.15),   
-    $a_l$ = absorptivity to longwave radiation (assume 1.0),   
-    $R_a$ = longwave radiation from the atmosphere (W m$^{-2}$),   
-and   
-    $R_g$ = longwave radiation from the ground (W m$^{-2}$).
+&nbsp;&nbsp;&nbsp;&nbsp;$a_s$ = the absorptivity to shortwave radiation (assume 0.7),   
+&nbsp;&nbsp;&nbsp;&nbsp;$A_1$ = the percent of the total surface hit by direct beam radiation weighted by the angle of incidence (equals $\pi r^2/4\pi r^2=1/4$)   
+&nbsp;&nbsp;&nbsp;&nbsp;$S$ = direct beam solar radiation (W m$^{-2}$),   
+&nbsp;&nbsp;&nbsp;&nbsp;$A_2 = A_s = A_l$ = the percent of the total surface hit by the corresponding radiation sources (assume 0.5),   
+&nbsp;&nbsp;&nbsp;&nbsp;$s$ = diffuse shortwave radiation (assume = 0.1 of total shortwave radiation $R_p$, $W m^{-2}$)   
+&nbsp;&nbsp;&nbsp;&nbsp;$r$ = reflectivity of the ground (assume 0.15),   
+&nbsp;&nbsp;&nbsp;&nbsp;$a_l$ = absorptivity to longwave radiation (assume 1.0),   
+&nbsp;&nbsp;&nbsp;&nbsp;$R_a$ = longwave radiation from the atmosphere (W m$^{-2}$), and   
+&nbsp;&nbsp;&nbsp;&nbsp;$R_g$ = longwave radiation from the ground (W m$^{-2}$).
 
 From Morhardt and Gates (1974, page 20, Fig. 2c), I have taken $R_p$, $R_a$ and $R_g$ for a sunny day and converted the units to W m$^{-2}$ as tabulated below:
 
@@ -989,7 +995,7 @@ Bakken, G. S., and D. M. Gates. 1974. Notes on "Heat loss from a Newtonian anima
 ## PROBLEM SOLUTIONS
 1
 
-```{r fig-heattrans-ps1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=''}
+```{r fig-heattrans-ps1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap=''}
 knitr::include_graphics('figures/fig-heattrans-ps1.png')
 ```
 
@@ -1037,14 +1043,14 @@ b. The absorptivity is 0.96. Two ways to minimize wall heating are to make the c
 | |0.80|1.25|3.75|6.01|12.81
 | |0.90|1.11|3.33|4.74|12.82
 | |1.00|1.00|3.00|3.75|12.48
-| |1.25|.80|2.40|2.11|11.00
-| |1.50|.67|2.00|1.25|9.37
-| |2.00|.50|1.50|.51|6.73
-| |3.00|.33|1.00|.13|3.77
-| |5.00|0.2|.60|.02|1.62
-| |10.00|.10|.30| |.46
+| |1.25|0.80|2.40|2.11|11.00
+| |1.50|0.67|2.00|1.25|9.37
+| |2.00|0.50|1.50|0.51|6.73
+| |3.00|0.33|1.00|0.13|3.77
+| |5.00|0.2|0.60|0.02|1.62
+| |10.00|0.10|0.30| |0.46
 
-```{r fig-heattrans-ps2, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap=c('Figure for problem 2. Emitted radiation as a function of temperature (T = 280 K)', 'Figure for problem 2. Emitted radiation as a function of temperature (T = 6000 K)')}
+```{r fig-heattrans-ps2a, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Figure for problem 2. Emitted radiation as a function of temperature (T = 280 K)'}
 
 h = 6.63 * 10^-34
 kb = 1.38 * 10^-23
@@ -1065,7 +1071,9 @@ axis(side = 1, at = c(1, 10, 100), labels = c(1, 10, 100))
 par(las=0)
 axis(side = 4, at = 1.1, labels = expression(E[f] ~ (J ~ m^{-2} ~ x ~ 10^{-12})), gap.axis = 5, pos = 500, tick = FALSE)
 legend("topright", lty = 1, col = c("blue", "red"), legend = c(expression(E[lambda]), expression(E[f])))
+```
 
+```{r fig-heattrans-ps2b, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Figure for problem 2. Emitted radiation as a function of temperature (T = 6000 K)'}
 
 T = 6000
 y = function(x){(2 * pi * h * cl^2/((x*10^-6)^5*(exp(h*cl/kb/T/(x*10^-6))-1)))/10^13}
@@ -1084,13 +1092,11 @@ legend("topright", lty = 1, col = c("blue", "red"), legend = c(expression(E[lamb
 
 ```
 
-
-
 b. A frequency or wave number plot has the property that equal areas represent equal amounts of energy which is not true of a wavelength plot. The maximum energy is at $\lambda \approx 0.85 \times 10^{-6}$ which is in the near infrared of the spectrum, while Fig.\@ref(fig:fig-heattrans-4) shows $\lambda_{max}\approx 0.48\times10^{-6}m$.
 
 3a. Equation \@ref(eq:heattrans-16) is
 
-```{r fig-heattrans-ps3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE}
+```{r fig-heattrans-ps3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default"}
 
 par(mar = c(5, 5, 3, 5))
 y = function(T){(2.50 * 10^6 - 2.38 * 10^3 * T)/10^6}
@@ -1110,10 +1116,10 @@ $$\frac{2.43-2.40}{2.43}=1.2\mbox{ percent}$$
 b. For the moose
 $$V_L=0.0567(358)^{1.02}=22.83\frac{\mbox{liters}}{\mbox{breath}}$$
 Liters of air per min are:
-\begin{eqnarray}
-R_v&=&176.3exp(0.07T_a) \\
-R_v&=&2.94exp(0.07T_a)m^3\times10^{-3}s^{-1}
-\end{eqnarray}
+\begin{align*}
+R_v&=176.3exp(0.07T_a) \\
+R_v&=2.94exp(0.07T_a)m^3\times10^{-3}s^{-1}
+\end{align*}
 Assume that the air is saturated at $T_b$ = 38°C. We need to calculate the kg of water vapor in a liter of air ($C_e$, kg m$^{-3}$) exhaled at $(T_b + T_a)/2$
 $$C_e=\frac{me(T)}{RT}$$
 where   
@@ -1123,17 +1129,17 @@ where
 and   
     $e(T)$ is saturated vapor pressure of water at temperature (T) (mbars).
 
-\begin{eqnarray}
-C_e&=&\frac{18g\:mol^{-1}e_s(T)}{8.31kg\:m^2s^{-2}mol^{-1}K^{-1}T} \\
-C_e&=&\frac{0.217e(T_a+T_b)/2}{(T_b+T_a)/2} \\
-\end{eqnarray}
+\begin{align*}
+C_e&=\frac{18g\:mol^{-1}e_s(T)}{8.31kg\:m^2s^{-2}mol^{-1}K^{-1}T} \\
+C_e&=\frac{0.217e(T_a+T_b)/2}{(T_b+T_a)/2} \\
+\end{align*}
 
 The concentration of water vapor inhaled is
 $$\bigg[\frac{0.217e(T_a)}{T_a}\bigg]r.h.$$
-\begin{eqnarray}
-LE&=&2.43J\:kg^{-1}(C_e-C_i)\cdot R_v \\
-&=&2.43r.h.\bigg[\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2}-\frac{.217e(T_a)r.h.}{T_a}\bigg]\times2.94exp(0.07T_a) \\
-\end{eqnarray}
+\begin{align*}
+LE&=2.43J\:kg^{-1}(C_e-C_i)\cdot R_v \\
+&=2.43r.h.\bigg[\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2}-\frac{.217e(T_a)r.h.}{T_a}\bigg]\times2.94exp(0.07T_a) \\
+\end{align*}
 
 
 **°C**| |**kg m^-3^**| | | | |**m^3^ $\times$ g^-1^**| |**W**
@@ -1205,7 +1211,7 @@ $$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{v}\bigg)^{0.5}=\frac{0.60}{v^{0.5}}\times k
 $$h_c=3.98\bigg(\frac{V}{D}\bigg)^{0.5}$$
 This is approximately 2.3 times the value of $9.14 J m^2 °C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
 
-```{r fig-heattrans-ps7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap = "Figure for problem 7"}
+```{r fig-heattrans-ps7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap = "Figure for problem 7"}
 par(mar = c(5, 5, 3, 5))
 V = function(D){0.302/D}
 curve(V, from = 0, to = 0.3, ylim = c(0, 10), xlab = "Diameter of leaf (m)", ylab = expression("Wind velocity V " ~ (m ~ s^-1)))
@@ -1214,12 +1220,12 @@ text(x = 0.05, y = 1.5, labels = "Re < 20000")
 ```
 
 8.
-\begin{eqnarray}
-Re^2&=&Gr \\
-\frac{D^2V^2}{v^2}&=&\frac{agD^3(T_s-T)}{v^2} \\
-V^2&=&agD(T_s-T) \\
-V&=&0.1895\sqrt{(T_s-T)D} \\
-\end{eqnarray}
+\begin{align*}
+Re^2&=Gr \\
+\frac{D^2V^2}{v^2}&=\frac{agD^3(T_s-T)}{v^2} \\
+V^2&=agD(T_s-T) \\
+V&=0.1895\sqrt{(T_s-T)D} \\
+\end{align*}
 
 
 Velocity (m s$^{-1}$) as a function of $T_s-T$ and $D$
@@ -1234,7 +1240,7 @@ $D$ (m)|5|10|20
 0.01|0.042|0.06|0.104
 
 
-```{r fig-heattrans-ps8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap = "Curves for which the Reynolds number squared equals the Grasnof number."}
+```{r fig-heattrans-ps8, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap = "Curves for which the Reynolds number squared equals the Grasnof number."}
 
 par(mar = c(5, 5, 3, 5))
 V5 = function(D){sqrt(98 * D / 273 / 2)}
@@ -1284,8 +1290,6 @@ For 7 o'clock
 
 $T_f$ values (°C)
 
-
-
 D (m) \\ V (m/s)|0.1|1.0|10.0
 :-----:|:-----:|:-----:|:-----:
 0.01|4.6|6.6|7.2
@@ -1296,13 +1300,11 @@ For 2 o'clock
 
 $T_f$ values (°C)
 
-
-
 D(m) \\ V (m/s)|0.1|1.0|10.0
 :-----:|:-----:|:-----:|:-----:
 0.01|38.7|29.1|25.4
 0.04|43.9|32.1|26.4
-U.1|47.3|34.8|27.4
+0.1|47.3|34.8|27.4
 
 The $T_f$ values given can be more accurately computed for the conditions given but the estimates of $R_p$, $R_a$, $R_g$ and $T_a$ do not warrant it. If the absorbed radiation is below that found in a blackbody cavity at air temperature $T_a$, then decreasing the convection coefficient (decrease $V$ or increase $D$) will increase the difference between $T_a$ and $T_f$ making the fruit colder. Conversely if $Q_a$ is greater than a blackbody level increasing the convection coefficient will bring the fruit closer to air temperature. The problems with this approach are several. Usually the radiation fluxes are much more complex than we have considered because of surrounding vegetation or other fruit. Clumping of fruits will also decrease the convection coefficient. The microclimate on opposite sides of a plant is often different and difficult to specify accurately in small places.
 
