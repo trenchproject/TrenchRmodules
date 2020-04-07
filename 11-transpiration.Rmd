@@ -1,12 +1,11 @@
 # Transpiration and Leaf Temperature. {#transpiration}
 
 Transpiration and Leaf Temperature: Transport Processes
+
 author: Gates, David M.
 
 ## PREFACE
-This module introduces two models of the thermal energy budget of a leaf. Typical values for environment variables and leaf parameters are discussed and simple calculations are made to demonstrate how radiation, convection, and transpiration affect leaf temperature. A graphical method of analysis is used to present a more detailed energy budget model. A problem set and an accompanying computer program permit the student to explore the consequences of the models. Algebra and some knowledge of heat transfer physics are prerequisites.
-
-The reasoning behind the simple, heat energy budget of a leaf is developed in this module into a detailed explanation of leaf transpiration. Although the mathematical model is conceptually simple, seven independent variables prevent easy exploration of the consequences of the model. The accompanying computer program provides students with a tool to concentrate their efforts on the biology of heat and water balance of a leaf rather than time-consuming numerical calculations. Algebra and some knowledge of heat transfer physics are prerequisites.
+This module introduces two models of the thermal energy budget of a leaf. The reasoning behind the simple, heat energy budget of a leaf is developed in this module into a detailed explanation of leaf transpiration. Typical values for environment variables and leaf parameters are discussed and simple calculations are made to demonstrate how radiation, convection, and transpiration affect leaf temperature. A graphical method of analysis is used to present a more detailed energy budget model. A problem set explores the consequences of the models. Algebra and some knowledge of heat transfer physics are prerequisites.
 
 ## INTRODUCTION
 
@@ -14,7 +13,7 @@ Water is essential to life as we know it on earth. Water acts as a medium for ca
 
 Temperature is extremely important to the physiological processes within a leaf including photosynthesis, respiration, growth, cell enlargement and division, protoplasmic streaming, and translocation. Most chemical and biological processes are temperature-dependent and as a general rule, they proceed slowly at relatively low temperatures, speed up in reaction with increased temperature, and at high temperatures become limited or terminated by adverse reactions such as the denaturation of proteins and the breakdown or dissociation of molecules. A typical biological response with temperature is illustrated in Figure \@ref(fig:fig-transpiration-1) for net photosynthesis. Many temperature zone plants have a maximum rate of photosynthesis at about 25 to 30°C while plants of arctic or alpine habitats have an optimum temperature of about 15°C and some plants of extremely hot regions have optima near 40 or 45°C (e.g., Lange et al. 1975, Bjorkman et al. 1972, Billings et al. 1971). When a plant of a cool habitat is functioning optimally at a particular temperature, a plant of a warm habitat will scarcely function at all at that same temperature. Many plant leaves undergo irreversible thermal damage when their temperatures exceed 45 to 48°C while some will not be damaged at 50 or even 55°C and others will be severely denatured at 42°C. Therefore, the temperature of a leaf is always of enormous significance to the viability of it. However, when one wishes to know the temperature of a plant or, in particular, the temperature of a leaf, it is important to ask why and with what accuracy. Is it necessary to know the leaf temperature to an accuracy of 0.1, 0.5, or 1°C, and why? The answer to this question will often determine the method of measurement and the precision necessary, or it will guide one with respect to the detail required in an energy budget calculation.
 
-```{r fig-transpiration-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Net photosynthesis versus leaf temperature at high and low carbon dioxide concentration. From Locomen et al. 1975.  P. 41.'}
+```{r fig-transpiration-1, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Net photosynthesis versus leaf temperature at high and low carbon dioxide concentration. From Locomen et al. 1975.  P. 41.'}
 knitr::include_graphics('figures/fig-transpiration-1.png')
 ```
 
@@ -399,7 +398,7 @@ Now it is possible to explore other dimensions of the transpiration-leaf tempera
 
 We create the plots in R:
 
-```{r fig-transpiration-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-7, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #Vary air temperature and resistance
 
 #fig 7
@@ -425,7 +424,7 @@ legend("top", c("Ta=10", "Ta=20", "Ta=30", "Ta=40"), col = c('darkorange','darko
 legend("topright", c("r_l=0", "r_l=333","r_l=667","r_l=1000"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 ```
 
-```{r fig-transpiration-8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 8
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(20,50),ylim=range(0.0,0.0001))
@@ -449,7 +448,7 @@ legend("top", c("Ta=10", "Ta=20", "Ta=30", "Ta=40"), col = c('darkorange','darko
 legend("topright", c("r_l=0", "r_l=333","r_l=667","r_l=1000"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 ```
 
-```{r fig-transpiration-9, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-9, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 9
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.5, V=2.0, D=0.05, W=0.05, Q_a=700)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(15,45),ylim=range(0.0,0.0003))
@@ -473,7 +472,7 @@ legend("top", c("Ta=10", "Ta=20", "Ta=30", "Ta=40"), col = c('darkorange','darko
 legend("topright", c("r_l=0", "r_l=333","r_l=667","r_l=1000"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
 ```
 
-```{r fig-transpiration-10, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Leaf transpiration versus leaf temperature.'}
+```{r fig-transpiration-10, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 10
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=300)
 plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(5,30),ylim=range(0.0,0.00001))

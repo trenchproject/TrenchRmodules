@@ -6,6 +6,7 @@ output:
 # Operative temperature. {#thermoregulation}
 
 Animal Thermoregulation and the Operative Environmental (Equivalent) Temperature
+
 author: Stevenson, R. D.
 
 ***
@@ -27,11 +28,11 @@ Whereas previous modules dealing with heat energy have introduced physical princ
 
 The term **thermoregulation** can be defined as the ability of an organism to modify its body temperature. Although this may seem simplistic, the point is that a living organism often has a body temperature which would be different from that of an inanimate object with the same physical properties as the organism in the same thermal environment. For endothermic organisms, this fact is well known. The constancy of internal temperature of these animals helped Claude Bernard, a century ago, form his opinion that homeostasis is the central paradigm of physiology. But it was not until Heath's (1964) paper that this point was clearly made for ectotherms. Huey (1974) studied the time and energy costs of regulating body temperature by contrasting body temperatures and spatial and temporal distributions of an iguanid lizard, *Anolis cristatellis*, in two different adjacent thermal environments--an open park and a forest. This ecological viewpoint is given a more general treatment by Huey and Slatkin (1976) in which they consider the costs and benefits of thermoregulation. Biologists have always recognized that the consequences of altering body temperature are profound. Today more emphasis is being placed on interpreting the importance of thermoregulation for circadian rhythms, circannual rhythms, foraging and digestive processes of individuals in their natural environment.
 
-One can begin to understand the costs and benefits of temperature regulation by outlining the mechanisms that allow an organism to thermoregulate. In Table 1, these are placed under three convenient headings: behavioral, physiological and morphological. This breakdown also chosen by King (1974) and West (1977) provides a starting point for discussion of alternative thermoregulation strategies. One might begin by determining the relative importance of each mechanism to heat transfer and its energetic cost to the organism. This kind of information is generally not known, but we will discuss one example later in the text which contrasts the effects of increasing body size and insulation thickness on heat loss.
+One can begin to understand the costs and benefits of temperature regulation by outlining the mechanisms that allow an organism to thermoregulate. In Table \@ref(tab:tab-thermoreg-1), these are placed under three convenient headings: behavioral, physiological and morphological. This breakdown also chosen by King (1974) and West (1977) provides a starting point for discussion of alternative thermoregulation strategies. One might begin by determining the relative importance of each mechanism to heat transfer and its energetic cost to the organism. This kind of information is generally not known, but we will discuss one example later in the text which contrasts the effects of increasing body size and insulation thickness on heat loss.
 
-What kinds of information are available from Table 1? First, the time scale on which each mechanism operates gives clues about the kind of environmental changes for which the mechanism has evolved to compensate. Second, the physical environment may dictate that certain mechanisms cannot be used. One obvious example is that of evaporative cooling in dry environments (Schmidt-Nielsen 1964). Here an organism must find other means to reduce its heat load because water is in short supply and is required for other purposes. A further complication is the interaction of several mechanisms. Consider the example of metabolic output as a function of air temperature given in most physiological texts. As the air temperature is lowered, the animal can maintain a thermal equilibrium by simply restricting blood flow to peripheral areas (vasoconstriction). This reduces the temperature in these areas (see Fig. \@ref(fig:fig-thermoreg-1a)). At the end of the thermal neutral zone when all the vessels are constricted (hot-cold dividing line in Fig. \@ref(fig:fig-thermoreg-1b)), the organism must increase its metabolic rate if its body temperature is to remain constant. In contrast, the blood vessels of an active animal must be dilated to supply the muscles with oxygen. Metabolic rate may increase by 300% or more to provide the energy for activity. Figure \@ref(fig:fig-thermoreg-2) shows resting and active metabolic rates for the rabbit *Oryctolagus cuniculus* as a function of temperature. When the rabbit is active, the metabolic rate is independent of air temperature. The challenge of physiological ecologists is to understand these mechanisms and their interactions for the animal in the natural environment.
+What kinds of information are available from Table \@ref(tab:tab-thermoreg-1)? First, the time scale on which each mechanism operates gives clues about the kind of environmental changes for which the mechanism has evolved to compensate. Second, the physical environment may dictate that certain mechanisms cannot be used. One obvious example is that of evaporative cooling in dry environments (Schmidt-Nielsen 1964). Here an organism must find other means to reduce its heat load because water is in short supply and is required for other purposes. A further complication is the interaction of several mechanisms. Consider the example of metabolic output as a function of air temperature given in most physiological texts. As the air temperature is lowered, the animal can maintain a thermal equilibrium by simply restricting blood flow to peripheral areas (vasoconstriction). This reduces the temperature in these areas (see Fig. \@ref(fig:fig-thermoreg-1a)). At the end of the thermal neutral zone when all the vessels are constricted (hot-cold dividing line in Fig. \@ref(fig:fig-thermoreg-1b)), the organism must increase its metabolic rate if its body temperature is to remain constant. In contrast, the blood vessels of an active animal must be dilated to supply the muscles with oxygen. Metabolic rate may increase by 300% or more to provide the energy for activity. Figure \@ref(fig:fig-thermoreg-2) shows resting and active metabolic rates for the rabbit *Oryctolagus cuniculus* as a function of temperature. When the rabbit is active, the metabolic rate is independent of air temperature. The challenge of physiological ecologists is to understand these mechanisms and their interactions for the animal in the natural environment.
 
-> TABLE 1. Systems or Mechanisms Influencing Thermoregulation in Animals.
+> TABLE (\#tab:tab-thermoreg-1). Systems or Mechanisms Influencing Thermoregulation in Animals.
 
 |**Behavioral**                     | **Time Scale of Adjustment** |
 |---                                |:---:|
@@ -76,21 +77,21 @@ D = Day
 S = Season   
 L = Lifetime
 
-```{r fig-thermoreg-1a, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Oxygen consumption curve for a hypothetical homeotherm. The terms hot and cold can be defined in terms of the animal\'s physiological responses to its environmental temperature. (From Ingram and Mount 1975, p.2,)'}
+```{r fig-thermoreg-1a, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Oxygen consumption curve for a hypothetical homeotherm. The terms hot and cold can be defined in terms of the animal\'s physiological responses to its environmental temperature. (From Ingram and Mount 1975, p.2,)'}
 knitr::include_graphics('figures/fig-thermoreg-1a.png')
 ```
 
-```{r fig-thermoreg-1b, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Diagrammatic isotherms in the human body exposed to cold (A) and warm (B) conditions. The core of deep body temperature (shaded) shrinks in the cold, leaving a peripheral shell of cooler tissue. (From Ingram and Mount 1975, p. 6: original data from Aschoff and Weyer 1958.)'}
+```{r fig-thermoreg-1b, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Diagrammatic isotherms in the human body exposed to cold (A) and warm (B) conditions. The core of deep body temperature (shaded) shrinks in the cold, leaving a peripheral shell of cooler tissue. (From Ingram and Mount 1975, p. 6: original data from Aschoff and Weyer 1958.)'}
 knitr::include_graphics('figures/fig-thermoreg-1b.png')
 ```
 
-```{r fig-thermoreg-2, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Mean heat production, loss and storage in three exercising (c) and four resting (r) New Zealand white rabbits at ambient temperatures of 10, 20 and 30°C$. (From Kluger et al. 1972a.)'}
+```{r fig-thermoreg-2, echo=FALSE, fig.height=4, out.width = "75%"E, fig.cap='Mean heat production, loss and storage in three exercising (c) and four resting (r) New Zealand white rabbits at ambient temperatures of 10, 20 and 30°C (From Kluger et al. 1972a.)'}
 knitr::include_graphics('figures/fig-thermoreg-2.png')
 ```
 
 ### The Physical Environment
 
-Another approach for studying thermoregulation is to examine the temporal and spatial variation of the thermal environment. This variation is a result of the patchiness and gradients of the physical factors in the heat energy equation: solar radiation, longwave radiation, wind speed, wine, direction, air temperature, substrate temperature and water vapor concentration or water temperature. Vertical temperature gradients formed in the water, soil or air may allow an organism to locate in its preferred thermal environment. The increase in wind speed above the ground surface forms another kind of gradient. Patches usually created by sun and wind shadows are the result of the landscape and vegetation. If the patches are large compared to the size of the organism, then it may be necessary for the organism to move between patches to remain in thermal comfort. Hillman (1969) describes this behavior for the lizard *Amevia leptophrys*, which makes excursions into the forest habitat to forage but returns to the shrub community where sunlight is available to increase its body temperature. If patches are small, it may be possible for the animal to "sit" in two or more different thermal environments so as to balance its thermal energy exchange. If the patches become very small relative to the organism, the environment will appear homogeneous.
+Another approach for studying thermoregulation is to examine the temporal and spatial variation of the thermal environment. This variation is a result of the patchiness and gradients of the physical factors in the heat energy equation: solar radiation, longwave radiation, wind speed, wind direction, air temperature, substrate temperature and water vapor concentration or water temperature. Vertical temperature gradients formed in the water, soil or air may allow an organism to locate in its preferred thermal environment. The increase in wind speed above the ground surface forms another kind of gradient. Patches usually created by sun and wind shadows are the result of the landscape and vegetation. If the patches are large compared to the size of the organism, then it may be necessary for the organism to move between patches to remain in thermal comfort. Hillman (1969) describes this behavior for the lizard *Amevia leptophrys*, which makes excursions into the forest habitat to forage but returns to the shrub community where sunlight is available to increase its body temperature. If patches are small, it may be possible for the animal to "sit" in two or more different thermal environments so as to balance its thermal energy exchange. If the patches become very small relative to the organism, the environment will appear homogeneous.
 
 Another characteristic of the physical environment is that under certain conditions (e.g., clear or uniformly cloudy sky), the variability of thermal patches can be characterized quantitatively. Thus one can predict how the thermal environment will change in time and space. The work of Porter et al. (1973), who studied the desert iguana *Dipsosauros dorsalis*, is the best example of this modeling approach.
 
@@ -98,11 +99,11 @@ The reader should realize that the larger the variability in the micrometerologi
 
 Consider an arctic fox in the cold winter of the northern tundra. With a deep body or core temperature of about 38°C, it will be losing heat energy to the environment. Why is it that the fox does not increase its passive insulation (fur thickness) to conserve energy? One answer is that the animal would quickly overheat if its fur were too thick when it was exercising. This would have profound implications for the fox's ability to capture prey. Bartholomew and Wilke (1956) and Brown and Lasewski (1972) provide examples relevant to this point.
 
-Remember also it is probable that an animal can be too hot in the arctic winter and it may also become too cold in the tropics. It is likely that on any given day within any habitat an organism can experience either extreme. Thus the diversity of mechanisms found in Table 1 is not so surprising. Animals have a complex integrated approach for regulating their internal environment.
+Remember also it is probable that an animal can be too hot in the arctic winter and it may also become too cold in the tropics. It is likely that on any given day within any habitat an organism can experience either extreme. Thus the diversity of mechanisms found in Table \@ref(tab:tab-thermoreg-1) is not so surprising. Animals have a complex integrated approach for regulating their internal environment.
 
 Finally note that an organism has two ways of dealing with thermal stress. It can tolerate the variability through physiological adaptations or it can avoid these climates or microclimates. The antelope ground squirrel *Citellus leucurus*, as most animals, employs both of these means. This desert mammal has evolved a large tolerance for body temperature fluctuations so that it can be active during the day under intense solar radiation. These conditions impose a net gain in heat energy and a corresponding rise in body temperature. To avoid thermal stress, the animal must retreat to its burrow where it can lose energy to the surrounding soil. Figure \@ref(fig:fig-thermoreg-3) shows the expected time course of its body temperature. When the body temperature drops, the animal has retreated to its burrow. We conclude that *C. leucurus* uses a combined strategy of tolerance and avoidance to be active on the sunlit desert surface.
 
-```{r fig-thermoreg-3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Diagrammatic representation of the daily patterns of body temperatures in a large and a small mammal subjected to heat stress under desert conditions. (From G.A. Bartholomew 1977, p. 423; original data from Schimdt-Nielsen et al., 1957, Amer. J. Physiol. 188: 103-112, and J.W. Hudson, 1962, Univ. Calif. (Berkeley and Los Angeles) Publ. Zool. 64:1-56.'}
+```{r fig-thermoreg-3, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Diagrammatic representation of the daily patterns of body temperatures in a large and a small mammal subjected to heat stress under desert conditions. (From G.A. Bartholomew 1977, p. 423; original data from Schimdt-Nielsen et al., 1957, Amer. J. Physiol. 188: 103-112, and J.W. Hudson, 1962, Univ. Calif. (Berkeley and Los Angeles) Publ. Zool. 64:1-56.'}
 knitr::include_graphics('figures/fig-thermoreg-3.png')
 ```
 
@@ -110,7 +111,7 @@ knitr::include_graphics('figures/fig-thermoreg-3.png')
 
 During the course of their studies, early natural historians noted that there were clines in homeotherm size, shape and color. Three empirical ecological rules bearing the names of Bergmann, Allen and Gloger resulted from these observations. In addition, Cowles (1946) observed that there was a decrease in lizard body size at increasing latitudes. In each case, the originator proposed a reason why these observations might be true based on the animal's thermal relation to the environment. The knowledge of energy balance and heat transfer processes explained in earlier modules (Stevenson 1977a,b, 1978a) will prove to be especially helpful in clarifying and dissecting each hypothesis.
 
-Bergmann (1847) originally observed that, as the environment became colder, mammal and bird size increased. Although Mayr (1963, p. 323) has restricted Bergmann's rule to variation within races, James' (1970) translations indicate that Bergmann intended his rule to apply to larger taxonomic groups. To explain his generalization, Bergmann proposed that increasing body size would reduce heat loss. He reasoned that, since heat loss is proportional to surface area, metabolic output should be proportional to body mass to the 0.67 power. Increasing body size would therefore decrease the metabolic output per unit body weight.
+Bergmann (1847) originally observed that, as the environment became colder, mammal and bird size increased. Although Mayr (1963, p. 323) has restricted Bergmann's rule to variation within species, James' (1970) translations indicate that Bergmann intended his rule to apply to larger taxonomic groups. To explain his generalization, Bergmann proposed that increasing body size would reduce heat loss. He reasoned that, since heat loss is proportional to surface area, metabolic output should be proportional to body mass to the 0.67 power. Increasing body size would therefore decrease the metabolic output per unit body weight.
 
 There are several objections to this line of reasoning. First, modern measurements of standard metabolic rates of homeotherms have shown that resting metabolism is not proportional to the mass to the 0.67 power, but rather the 0.75 power. (Readers should consult McMahon (1973) for a suggestion of why this might be true.) Second, in a classical paper, in which they compared tropical and arctic birds and mammals, Scholander et al. (1950a) found that in most cases standard metabolism is independent of the environment. Challenging the physiological basis of Bergmann's rule in a later paper, Scholander (1955) stated that there were three ways in which an organism could adapt to a colder climate: (1) by lowering the thermal gradient (decreasing body temperature), (2) by increasing metabolic rate or (3) by increasing body insulation. Based on earlier work (Scholander et al. 1950b,c), Scholander (1955) concluded that homeotherms increase fur and feather thickness to endure the colder climate of the arctic. This paper spurred a series of comments and rebuttals (Mayr 1956, Newman 1956, Irving 1957, Scholander 1956) which mainly serve to point out that there is a difference between the empirical observation and the reason for the "law." As McNab (1971) correctly points out, a third objection is that increasing body size would reduce the heat loss per unit surface area, but in fact the total heat loss would increase as ${M_b}^{0.75}$. Increasing body size requires absolutely more energy. McNab concluded that much of the data used to support Bergmann's rule could be interpreted as classical examples of character displacement (Brown and Wilson 1956). [See the field of metabolic ecology for recent research.]
 
@@ -122,11 +123,11 @@ Spotila and Gates (1975) provide the only study that addresses Bergmann's role a
 
 In 1877, Allen wrote that species from colder climates often have smaller appendages than do closely related species in warmer climates. He suggested that this was an adaptation to conserve heat in cold environments. Mayr (1963) states that Rensch (1933) made quantitative measurements which upheld Allen's rule. The problem is that decreasing surface area decreases the rate at which an organism can absorb energy as well as release energy. If the environment is always colder than the organism, it should assume a spherical shape and avoid the plate shape. As already noted earlier in the text, at times it may be important to increase heat loss even in the coldest environment. By reducing surface area, the organism has less ability to direct blood flow to influence its, heat balance physiologically, but an increase in the surface area to volume ratio may require more energy to keep surface tissue from freezing. The effects of natural selection on such trade-offs are not clear.
 
-```{r fig-thermoreg-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Effect of body size and insulation on the M-E requirement of homeotherms. (A) Cold conditions, clear sky at night, low insulation. (B) Cold conditions, clear sky at night, increased insulation. (C) Full sun, high air temperature, low insulation. (D) Full sun, high air temperature, increased insulation. Insulation consists of a layer of fur or feathers, the thickness of the layer defined as CD, where D is the inside diameter with no insulation and C is a constant proportion of D for all sizes of D in a given set. Data for real animals are taken from Porter and Gates (1969). (From Spotila and Gates 1975, p. 295.)'}
+```{r fig-thermoreg-4, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Effect of body size and insulation on the M-E requirement of homeotherms. (A) Cold conditions, clear sky at night, low insulation. (B) Cold conditions, clear sky at night, increased insulation. (C) Full sun, high air temperature, low insulation. (D) Full sun, high air temperature, increased insulation. Insulation consists of a layer of fur or feathers, the thickness of the layer defined as CD, where D is the inside diameter with no insulation and C is a constant proportion of D for all sizes of D in a given set. Data for real animals are taken from Porter and Gates (1969). (From Spotila and Gates 1975, p. 295.)'}
 knitr::include_graphics('figures/fig-thermoreg-4.png')
 ```
 
-There are several well-documented examples of the importance of appendages in thermoregulation. Farlow et al. (1976) investigated the sail fin of the dinosaur *Stegosaurus*. Studies of the vascular system and a model of heat transfer implicate the dorsal fin as an important heat transfer mechanism. The pinna of *Leporidae* (hares and rabbits) is a favorite topic of vertebrate physiologists (Kluger et al. 1971, Hill and Veght 1976, Schmidt-Nielsen et al. 1965,Wathen et al. 1971). These investigators have shown that the large surface area (20% of the body) of the external ear is a useful mechanism to control heat exchange. Their large surface area, which improves convective and radiation exchange, combined with the ability to pump blood through the tissue makes an effective regulation system. Wathen et al. (1971) have made wind tunnel and theoretical investigations exploring various geometries. Hesse (1928) and Griffing (1974) provide empirical evidence for Allen's rule. But there are no theoretical studies comparable to the work of Spotila and Gates (1975) to help interpret this phenomenon.
+There are several well-documented examples of the importance of appendages in thermoregulation. Farlow et al. (1976) investigated the sail fin of the dinosaur *Stegosaurus*. Studies of the vascular system and a model of heat transfer implicate the dorsal fin as an important heat transfer mechanism. The pinna of *Leporidae* (hares and rabbits) is a favorite topic of vertebrate physiologists (Kluger et al. 1971, Hill and Veght 1976, Schmidt-Nielsen et al. 1965, Wathen et al. 1971). These investigators have shown that the large surface area (20% of the body) of the external ear is a useful mechanism to control heat exchange. Their large surface area, which improves convective and radiation exchange, combined with the ability to pump blood through the tissue makes an effective regulation system. Wathen et al. (1971) have made wind tunnel and theoretical investigations exploring various geometries. Hesse (1928) and Griffing (1974) provide empirical evidence for Allen's rule. But there are no theoretical studies comparable to the work of Spotila and Gates (1975) to help interpret this phenomenon.
 
 Gloger (1833) postulated that lighter colored animals are found in more open habitats because they emitted more radiation. From modern physics, however, we know that color is not important in determining emissivity to longwave radiation. Almost all organisms have emissivities above 0.5 (Monteith 1973). Hock (1965) pointed this out and ascribed the importance of color to camouflage. In his investigation of animal color, Hamilton (1972) distinguishes three categories: communication, camouflage (from predators and from prey) and radiation exchange. He correctly states that color will be important for absorption of solar radiation. Hamilton (1972) believes that open habitat birds often have the problem of overheating in the daytime. In this environment, coloration will reflect solar radiation thus reducing the heat load. Since these habitats also tend to be cooler at night, these birds should have thicker plumage to conserve heat after dark. Hamilton presents some comparative and physiological data which supports his hypothesis. Omhart and Lasiewski (1970) and Lustick (1969) have made O~2~ consumption measurements below the thermal neutral zone showing that black-colored birds have reduced metabolic requirements compared to white birds. If the reader understands radiation transfer, this result is not so surprising. In fact, the reduction in metabolic rate can be accurately predicted as shown later in the module.
 
@@ -134,7 +135,7 @@ The heat transfer processes in the fur and feathers are just beginning to be exp
 
 In 1946, Cowles suggested that lizard size should decrease with increasing latitude because increasing size would decrease the rate at which a reptile could achieve activity temperature. This hypothesis has never been rigorously tested. Ray (1960) and Lindsay (1966) examined latitudinal trends in size changes for a variety of invertebrate species but reached no conclusions.
 
-Most models of thermoregulation have started with certain assumptions about the morphology and physiology of the organism and then attempted to ask about the control of body temperature (Huey and Slatkin 1976) or the limit of activity times (Belovsky 1977; Porter et al. 1973, Porter and Tracy 1975) and habitat (Tracy 1976). Other characteristics such as body shape and size, surface characteristics (scales, hair, feathers), preferred_body temperatures, basal metabolic rate, and the design of the circulatory system also merit our attention since they too are under selective pressures. For instance, a question of interest for many years has been the evolution of homeothermy (Cowles 1946, Ricgles 1974, Whittow 1973, Heath 1968, Bakken 1971, Bakken and Gates 1975, Heinrich 1977, McNab 1978, Stevens 1973, Dawson 1975, Bouvier 1977, Calloway 1976, Crompton et al. 1978, Hainsworth and Wolf 1978). The question of preferred body temperature obviously has implications for the biochemical system of the organism which is also being investigated (Brock 1967, Hochaka and Somero 1973, Somero and Low 1975). [See Angilletta (2009, Thermal Adaptation) for recent treatments of the issues in the preceeding  paragraphs.]
+Most models of thermoregulation have started with certain assumptions about the morphology and physiology of the organism and then attempted to ask about the control of body temperature (Huey and Slatkin 1976) or the limit of activity times (Belovsky 1977; Porter et al. 1973, Porter and Tracy 1975) and habitat (Tracy 1976). Other characteristics such as body shape and size, surface characteristics (scales, hair, feathers), preferred body temperatures, basal metabolic rate, and the design of the circulatory system also merit our attention since they too are under selective pressures. For instance, a question of interest for many years has been the evolution of homeothermy (Cowles 1946, Ricgles 1974, Whittow 1973, Heath 1968, Bakken 1971, Bakken and Gates 1975, Heinrich 1977, McNab 1978, Stevens 1973, Dawson 1975, Bouvier 1977, Calloway 1976, Crompton et al. 1978, Hainsworth and Wolf 1978). The question of preferred body temperature obviously has implications for the biochemical system of the organism which is also being investigated (Brock 1967, Hochaka and Somero 1973, Somero and Low 1975). [See Angilletta (2009, Thermal Adaptation) for recent treatments of the issues in the preceeding  paragraphs.]
 
 ### Other Ecological Considerations
 
@@ -260,15 +261,15 @@ For many years, standard metabolic output has been measured as a function of air
 
 In a recent paper Bakken (1979a), using the standard operative environmental temperature, has improved the analysis of Mahoney and King (1977) by incorporating the effects of wind speed reported by Robinson et al. (1976). Bakken found that evaporative cooling in the thermoneutral zone (at low humidities), metabolic rate and overall thermal conductance all appear to be functions of $T_e$'s. Application of laboratory data to field situations are discussed and will be of interest to anyone studying thermal energetics. Figure \@ref(fig:fig-thermoreg-7) for instance shows the importance of the bird's physiological state on oxygen consumption.
 
-```{r fig-thermoreg-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Measured and predicted metabolic rates in relation to equivalent temperature ($T_e$). Estimates of metabolic rates ($M_{std}$) are based on each $T_e$ computed from the experimental conditions of DeJong (1976) applied to data on oxygen consumption in white-crowned sparrows reported by King (1964). These predictions (blackened circles) are compared with rates ($M_{std}$) actually measured by DeJong (1976) without added short-wave radiation (triangles) and with various intensities of short-wave radiation (unblackened circles). (From Mahoney, S.A. and J.R. King 1977, p. 118.).'}
+```{r fig-thermoreg-5, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Measured and predicted metabolic rates in relation to equivalent temperature ($T_e$). Estimates of metabolic rates ($M_{std}$) are based on each $T_e$ computed from the experimental conditions of DeJong (1976) applied to data on oxygen consumption in white-crowned sparrows reported by King (1964). These predictions (blackened circles) are compared with rates ($M_{std}$) actually measured by DeJong (1976) without added short-wave radiation (triangles) and with various intensities of short-wave radiation (unblackened circles). (From Mahoney, S.A. and J.R. King 1977, p. 118.).'}
 knitr::include_graphics('figures/fig-thermoreg-5.png')
 ```
 
-```{r fig-thermoreg-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Equivalent temperature preferenda of white-crowned sparrows (mean values for four birds, each tested while alone in the preference apparatus). (From Mahoney, S.A. and J.R. King 1977, p. 199.)'}
+```{r fig-thermoreg-6, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Equivalent temperature preferenda of white-crowned sparrows (mean values for four birds, each tested while alone in the preference apparatus). (From Mahoney, S.A. and J.R. King 1977, p. 199.)'}
 knitr::include_graphics('figures/fig-thermoreg-6.png')
 ```
 
-```{r fig-thermoreg-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Metabolic rate, $M$, of white-crowned sparrows, plotted as a function of standard operative temperature, $T_{es}$, for three different experiments, The solid line is the regression to the data in King (1964), This study used free convection in a darkened chamber. These conditions impose the least physiological stress, and gives the lowest standard metabolic rate in the thermoneutral zone.The birds were summer acclimated, giving a lower critical temperature of about $23^{\\circ}C$, The solid symbols are the results of the study of Robinson et al. (1976), which used forced convection in a darkened chamber, Ran noise produces a slight (average of 11%) increase in 14 over King\'s (1.964) values. Data does not appear to extend into the thermoneutral zone. The open symbols are from DeJong\'s (1976) study, conducted using free convection in a chamber with various levels of visible radiation, The use of illuminated birds in the active part of their diurnal cycle gives the highest values of $M$. As these birds are winter-acclimated, the lower critical temperature is around $20^{\\circ}C$. Note that the use of standard operative temperature allows the comparison of purely physiological differences under equivalent thermal conditions for different combinations of wind, radiation and air temperature.'}
+```{r fig-thermoreg-7, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Metabolic rate, $M$, of white-crowned sparrows, plotted as a function of standard operative temperature, $T_{es}$, for three different experiments, The solid line is the regression to the data in King (1964), This study used free convection in a darkened chamber. These conditions impose the least physiological stress, and gives the lowest standard metabolic rate in the thermoneutral zone.The birds were summer acclimated, giving a lower critical temperature of about $23^{\\circ} C$, The solid symbols are the results of the study of Robinson et al. (1976), which used forced convection in a darkened chamber, Ran noise produces a slight (average of 11 percent) increase in 14 over King\'s (1.964) values. Data does not appear to extend into the thermoneutral zone. The open symbols are from DeJong\'s (1976) study, conducted using free convection in a chamber with various levels of visible radiation, The use of illuminated birds in the active part of their diurnal cycle gives the highest values of $M$. As these birds are winter-acclimated, the lower critical temperature is around $20^{\\circ} C$. Note that the use of standard operative temperature allows the comparison of purely physiological differences under equivalent thermal conditions for different combinations of wind, radiation and air temperature.'}
 knitr::include_graphics('figures/fig-thermoreg-7.png')
 ```
 
@@ -319,9 +320,9 @@ If wind speed and orientation are constant, the only physiological characteristi
 
 A particularly interesting application of the $T_e$ concept will be in field studies. Bakken and Gates (1975) and Bakken (1976) have reviewed the possibility of making model organisms with the same thermal properties as the animal under study. Using the models, one could map the temporal and spatial variation of the thermal environment. Once the models have been checked in laboratory situations, it will be much easier to take one temperature than to make the many microclimatological measurements necessary to compute the energy budget. Buttemer (1979) is the first to use this method. These measurements include longwave and shortwave radiation, air temperature, wind speed, wind direction and relative humidity. With this map in hand, it will be easy to see if the animal is selective in how it uses the environment. For example, one could ask: is the laboratory behavior found in the sparrows studied by Mahoney and King (1977) exhibited out of doors? The $T_e$ concept is a straightforward method for tackling this kind of problem.
 
-What would such a map look like? Data presented by Bakken and Gates (1975) in Table 2 gives some insight. The authors investigated the effect of absorptivity (points 1-3), orientation (3-5), microhabitat (3, 6-8) and size (9-13).
+What would such a map look like? Data presented by Bakken and Gates (1975) in Table \@ref(tab:tab-thermoreg-2) gives some insight. The authors investigated the effect of absorptivity (points 1-3), orientation (3-5), microhabitat (3, 6-8) and size (9-13).
 
-```{r fig-thermoreg-8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Heating and cooling rates of the Galgpagos marine iguana (*Amblyrhynchus cristatus*) in water and air. $\\Delta T$ is the difference between body and ambient temperatures ($T_a$). During heating $T_a = 40^{\\circ}C$; during cooling $T_a=20^{\\circ}C$. (From-G.A. Bartholomew and R.C. Lasiewski, 1965, Comp. Biochem. Phsio14-16173-582.)'}
+```{r fig-thermoreg-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Heating and cooling rates of the Galgpagos marine iguana (*Amblyrhynchus cristatus*) in water and air. $\\Delta T$ is the difference between body and ambient temperatures ($T_a$). During heating $T_a = 40^{\\circ}C$; during cooling $T_a=20^{\\circ}C$. (From G.A. Bartholomew and R.C. Lasiewski, 1965, Comp. Biochem. Physiol 16:573-582.)'}
 knitr::include_graphics('figures/fig-thermoreg-8.png')
 ```
 
@@ -333,8 +334,7 @@ This approach will allow one to answer the question of whether or not animals av
 
 In this module, we have reviewed some of the historical developments in the study of animal thermoregulation. Besides trying to relate the discussion to other ecological areas, especially foraging, I have endeavored to point where a quantitative knowledge of the heat transfer processes has helped to clarify the adaptive significance of animal morphology, behavior and physiology. Bakken and Gates (1975), Campbell (1977) and others (see Bakken 1979a for review) have developed the operative environmental temperature as a way to summarize how the organism "feels" the thermal environment. This concept has had useful applications in both physiology and ecology.
 
-
-> Table 2. A small shrub 0.5 m high provided broken shade for cylinder 8. All cylinders were in an area of $1 \times 2 m$. Microclimate parameters for this area were as follows: $T_{air} 26^{\circ}C$, $T_{ground} 38.5^{\circ}C$; wind at $20 cm$, $67 cm s^{-1}$; wind at $90 cm$, $310 cm s^{-1}$; solar radiation in an 0.3- to 3-$\mu$ band, $1.3 cal \;cm^{-2} min^{-1}$. August 17, 1972, 14:15 to 14:16. Douglas Lake, Cheboygan County, Michigan. (From Bakken, G.A. and D.M. Gates 1975, p. 265.)
+> Table (\#tab:tab-thermoreg-2). A small shrub 0.5 m high provided broken shade for cylinder 8. All cylinders were in an area of $1 \times 2 m$. Microclimate parameters for this area were as follows: $T_{air}=26^{\circ}C$, $T_{ground}=38.5^{\circ}C$; wind at 20 cm=$67 cm s^{-1}$; wind at 90 cm=$310 cm s^{-1}$; solar radiation in an 0.3- to 3-$\mu$ band=$1.3 cal \;cm^{-2} min^{-1}$. August 17, 1972, 14:15 to 14:16. Douglas Lake, Cheboygan County, Michigan. (From Bakken, G.A. and D.M. Gates 1975, p. 265.)
 
 **Cylinder**|**Diameter (cm)**|**Position**|**Exposure**|**Height (cm)**|**Color **|**T (°C)**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -352,7 +352,7 @@ In this module, we have reviewed some of the historical developments in the stud
 12|3.81|ESE-WNW|Sun|0.3|Gray|47.5
 13|15.5|ESE-WNW|Sun|1|Gray|47
 
-```{r fig-thermoreg-9, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Body temperature of a telemetered free-ranging *Bufo spinulosus* compared with that of a telemetered free-ranging *Liolaemus multiformis* at the same time. 22 March; 4,300 m. Temperature of soil surface was measured at a spot exposed to the sun. Comments at top of the figure referring to submergence and emergence pertain to the toad. (From Pearson, O.P. and Bradford, D.F. 1976, p. 165).'}
+```{r fig-thermoreg-9, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Body temperature of a telemetered free-ranging *Bufo spinulosus* compared with that of a telemetered free-ranging *Liolaemus multiformis* at the same time. 22 March; 4,300 m. Temperature of soil surface was measured at a spot exposed to the sun. Comments at top of the figure referring to submergence and emergence pertain to the toad. (From Pearson, O.P. and Bradford, D.F. 1976, p. 165).'}
 knitr::include_graphics('figures/fig-thermoreg-9.png')
 ```
 
@@ -374,13 +374,13 @@ Bakken, G.S. and D.M. Gates. 1975. Heat-transfer analysis of animals: some impli
 
 Bakker, R.T. 1971. Dinosaur physiology and the origin of mammals. Evolution 25:636-658. Bartholomew, G.A. 1964. Symposia of the Society for Experimental Biology No. 18, pp. 7-29. Academic Press, Inc., N.Y.
 
-Bartholomew-, G.A. and RX. Lasiewski, 1965, Heating and cooling rates, heart rate, and simulated diving in the Galapagos marine iguana. Col* ISiochtm% rhYlloL 16;573,682.
+Bartholomew, G.A. and RX. Lasiewski, 1965, Heating and cooling rates, heart rate, and simulated diving in the Galapagos marine iguana. Comp. Biochem. Physiol. 16:573-682.
 
-Bartholomew, G.A. and F. Wilke. 1956.. Body temperature in the northern fur seal, Callorhinos ursinus.
+Bartholomew, G.A. and F. Wilke. 1956. Body temperature in the northern fur seal, Callorhinos ursinus.
 
 Baudinette, R.V., J.P. Loveridge, K.J. Wilson, C.D. Mills and K. SchmidtNielson. 1976. .eat loss from fleet of herring gulls at rest and during flight. Am. J. Physiol. 230:920-924.
 
-Belovsky, G.E. 1979. Optimal activity times and habitat choice based on thermoregulation (manuscript). Submitted to Oecologia.
+Belovsky, G.E. 1979. Optimal activity times and habitat choice of moose. Oecologia 48:22–30.
 
 Bergmann, C. 1847. Uber die Verhalthisse der Warmeokonomie der Thiere zu ihrev Grosse. Gottinger Stud. pp. 1:598-708.
 
@@ -419,23 +419,25 @@ Cowles, R.B. 1946. Fur and feathers: a result of high temperatures. Science 103:
 
 Crompton, A.W., C.R. Taylor and J.A. Jagger. 1978. Evolution of homeothermy in mammals. Nature 272:333-336.
 
-Davis, L.B., Jr. and R.C. Birkebak. 1974. 'On the tree it.r of energy in layers of fur. Biophys. J. 14:249-268.
+Davis, L.B., Jr. and R.C. Birkebak. 1974. On the transfer of energy in layers of fur. Biophys. J. 14:249-268.
 
-Dawson, W.R. 1975. On the physiological significance of the preferred body temperatures of reptiles. In D.M. Gates and R.B. Schmerl (eds.),Perspectives in Biophysical Ecology, Ecological Studies, Vol. 12, pp. 443-473, Springer-Verlag, New York.
+Dawson, W.R. 1975. On the physiological significance of the preferred body temperatures of reptiles. In D.M. Gates and R.B. Schmerl (eds.), Perspectives in Biophysical Ecology, Ecological Studies, Vol. 12, pp. 443-473, Springer-Verlag, New York.
 
 Errington, P.L. 1967. Predation and Life. Iowa State University Press.
  
-Farlow, J.0., C.V. Thompson'and D.E. Rosner. 1976. Plates of the dinosaur Stegosaurus; forced convection heat loss fins? Science 192:1123-1125.
+Farlow, J.0., C.V. Thompson, and D.E. Rosner. 1976. Plates of the dinosaur Stegosaurus; forced convection heat loss fins? Science 192:1123-1125.
 
-Gagge, A.P. 1940. Standard operative temperature, a generalized temperature scale, applicable to direct and partitional calorimetry. Amer. J. Physiol. 131;93-103,
+Gagge, A.P. 1940. Standard operative temperature, a generalized temperature scale, applicable to direct and partitional calorimetry. Amer. J. Physiol. 131:93-103.
 
 Gates, D.M. and R.D. Stevenson. 1978. Radiation incident on organisms. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle.
 
 Gates, D.M. and R.B. Schmerl (eds.). 1975. Perspectives of Biophysical Ecology. Springer-Verlag, New York. 609 pp.
 
-Gibbons, J.W. and R.R. Sharitz (eds.). 1974. Thermal Ecology. U.S. Atomic Energy Commission. 670 pp. Gloger, C.L. 1833. Das Abandern der Vogel durch Einfluss des Klimas Breslav,
+Gibbons, J.W. and R.R. Sharitz (eds.). 1974. Thermal Ecology. U.S. Atomic Energy Commission. 670 pp. 
 
-Gordon, M.S. 1977. Animal physiol 4v principles and adaptations. Macmillan Pub, Co, Inc., Ne .11-k. 699 pp.
+Gloger, C.L. 1833. Das Abandern der Vogel durch Einfluss des Klimas Breslav.
+
+Gordon, M.S. 1977. Animal physiological principles and adaptations. Macmillan Pub, Co, Inc., New York. 699 pp.
 
 Griffing, J.P. 1974. Body measurements of black-tailed jackrabbits of southeastern New Mexico with implications of Allen's rule. J. Mammal. 55:674-678.
 
@@ -447,19 +449,19 @@ Hatheway, W. 1978. Heat balance of a sheep in the sun. An instructional module o
 
 Heath, J.E. 1964. Reptilian thermoregulation: evaluation of field studies. Science 146;784-785,
 
-Heath, J,E, 1968, The origins of thermoregulation. In E.T. Drake (ed.), Evolution and Environment:, pp. 259-278. Yale University Press, New Haven, Conn,
+Heath, J.E. 1968, The origins of thermoregulation. In E.T. Drake (ed.), Evolution and Environment:, pp. 259-278. Yale University Press, New Haven, Conn.
 
-Heinrich, B. 1976. Heat exchange in relation to blood flow between thorax and abdomen in bumblebees. J. Exp, Biol, 64;561585,
+Heinrich, B. 1976. Heat exchange in relation to blood flow between thorax and abdomen in bumblebees. J. Exp, Biol, 64:561-585,
 
-Heinrich, B. 1.977. Why have some animals evolved to regulate a high body temperature? Amer. Natur. 111:623440.
+Heinrich, B. 1.977. Why have some animals evolved to regulate a high body temperature? Amer. Natur. 111:623-640.
 
-Hesse, R. 1928. Die Ohrmuschein des Elefanten als Warmeregulator. Z, Wiss, Zool, 132:314-328.
+Hesse, R. 1928. Die Ohrmuschein des Elefanten als Warmeregulator. Z. Wiss. Zool, 132:314-328.
 
-Hill, R.W. and J,H, Veghte, 1976. Jackrabbit ears: surface temperature and vascular responses. Science 194:436.438.
+Hill, R.W. and J.H. Veghte, 1976. Jackrabbit ears: surface temperature and vascular responses. Science 194:436.438.
 
 Hillman, P.E. 1969. Habitat specificity in three sympatric species of Amevia (Reptilia: Teiidae). Ecology 50:476-481.
 
-Hochachka, P.W, and G, Somero. 1973. Strategies of biochemical adaptations. W,N, Saunders Co,, Philadelphia.
+Hochachka, P.W, and G, Somero. 1973. Strategies of biochemical adaptations. W.N. Saunders Co, Philadelphia.
 
 Hock, R.J. 1965. An analysis of Gloger's rule. Hualradets Skr. 48:214-226.
 
@@ -501,13 +503,13 @@ Mayr, E. 1956. Geographical character gradients and climate adaptation. Evolutio
  
 McMahon, T. 1973. Size and shape in biology. Science 179:1201-1204.
 
-McNab, B.K. 1971. On the ecological significance of Bergmann's rule. Ecology 52;845-854,
+McNab, B.K. 1971. On the ecological significance of Bergmann's rule. Ecology 52:845-854.
 
-McNab, B.K. 1978, The evolution of endothermy in the phylogeny of mammals. Amer. Natur, 112;1-21.
+McNab, B.K. 1978, The evolution of endothermy in the phylogeny of mammals. Amer. Natur. 112:1-21.
 
-Monteith, J.L. 1973.Principles of Environmental Physics. American Elsevier Publ
+Monteith, J.L. 1973. Principles of Environmental Physics. American Elsevier Publ
 
-Newman, M.T. 1956. 101 405, . Co, Inc., New York. 241 pp. Adaptation of an to cold climates. Evolution 10:
+Newman, M.T. 1956. 101 405, . Co, Inc., New York. 241 pp. Adaptation of man to cold climates. Evolution 10:101-105.
 
 Norberg, R.A. 1977. An ecological theory on foraging time and energetics and choice of optimal food-searching method. J. Anim. Ecol. 46: 511-529.
 
@@ -519,7 +521,7 @@ Pohl, H. 1976. Thermal adaptation in the whole animal. In J. Bligh, J.L. Cloudsl
 
 Porter, W.P., J.W. Mitchell, W.A. Beckman and C.B. DeWitt. 1973. Behavioral implications of mechanistic ecology--thermal and behavioral modeling of desert ectotherms and their microenvironment. Oecologia (Berl.) 13:1,54.
 
-Porter, W.P. and C.R. Tracy, 1974. Modeling the effects of temperature changes on the ecology of the Garter snake and Leopard frog. In Gibbons, J.W. and R.R. Shavitz (eds.), Thermal Ecology, pp. 594,609. U.S. Atomic Energy Commission,
+Porter, W.P. and C.R. Tracy, 1974. Modeling the effects of temperature changes on the ecology of the Garter snake and Leopard frog. In Gibbons, J.W. and R.R. Shavitz (eds.), Thermal Ecology, pp. 594,609. U.S. Atomic Energy Commission.
 
 Precht, H., J. Christophersen, H. Hensel and W. Larcher. 1973. Temperature and Life. Springer-Verlag, New York. 779 pp.
 
@@ -527,7 +529,7 @@ Pyke, G.H., H.R. Pullism,and E.L. Charnov, 1977. Optimal foraging: a selective r
 
 Ray, C. 1960. The application of Bergmann's and Allen's rules to poikilotherms, J, of Morphology 106:85-108.
 
-Ricqles, A. de. 1974, Evolution of endothermy: histological evidence. Evol. Theory 1:51,80.
+Ricqles, A. de. 1974, Evolution of endothermy: histological evidence. Evol. Theory 1:51-80.
 
 Rensch, B. 1933. Zoologisches systematik and Artbildungs problem. Verh. Deut, Zool, Ges. Koln, pp. 19-83
 
@@ -537,17 +539,17 @@ Schmidt-Nielsen, K. 1975, Animal Physiology: Adaptation and Environment. Cambrid
 
 Schmidt-Nielsen, K. 1964. Desert animals, physiological problems of heat and water. Oxford University, London. 277 pp.
 
-Schmidt-Nielsen, K., T.J. Dawson, H.J. Hammel, D. Hinds and D.C. Jackson. 1965. The jackrabbit; a study in its desert survival. Hualradets Skr. 48;125-142,
+Schmidt-Nielsen, K., T.J. Dawson, H.J. Hammel, D. Hinds and D.C. Jackson. 1965. The jackrabbit; a study in its desert survival. Hualradets Skr. 48:125-142.
 
 Schoener, T.W. 1974. The compression hypothesis and temporal resource partitioning. Proc. Nat. Acad. Sci. 71:4169-4172.
 
-Scholander, P.F. 1955. Evolution of climatic adaptation in homeotherms. Evolution 9:15-26,
+Scholander, P.F. 1955. Evolution of climatic adaptation in homeotherms. Evolution 9:15-26.
 
 Scholander, P.P. 1956. Climatic rules. Evolution 10:339-340.
 
-Scholander, P.F., R. Hock, V. Walters and L. Irving. 1950a. Adaptation to cold in arctic and tropical mammals and birds in relation to basal metabolic rate. Biol. Bull, 99:259-271.
+Scholander, P.F., R. Hock, V. Walters and L. Irving. 1950a. Adaptation to cold in arctic and tropical mammals and birds in relation to basal metabolic rate. Biol. Bull 99:259-271.
 
-Scholander, P.R., R. Hock, V. Walters, F. Johnson and L. Irving. 1950b. Heat regulation in some arctic and tropical mammals and birds. Biol. Bull. 99;237-258.
+Scholander, P.R., R. Hock, V. Walters, F. Johnson and L. Irving. 1950b. Heat regulation in some arctic and tropical mammals and birds. Biol. Bull. 99:237-258.
 
 Scholander, P.F. and W.E. Schevill, 1955. Countercurrent vascular heat exchange in the fins of whales. J. Appl. Physiol. 8:279-282.
 
@@ -557,23 +559,27 @@ Somero, G.N. and P.S. Low. 1976. Temperature: a sharing force in protein evoluti
 
 Spotila, J.R. and D.M. Gates, 1975. Body size, insulation and optimum body temperatures of homeotherms. In D.M. Gates and R.B. Schmerl (eds.), Perspectives of Biophysics Ecology, pp. 291-301.
 
-Stevens, E.D. 1973. The evolution of endothermy. J. Theor. Biol. 38:. 597-611,
+Stevens, E.D. 1973. The evolution of endothermy. J. Theor. Biol. 38:597-611.
 
-Stevenson, R.D, 1977a, The First Law of Thermodynamics for Ecosystems. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle. 28 pp.
+Stevenson, R.D, 1977a, The First Law of Thermodynamics for Ecosystems. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle. 
 
-Stevenson, R.D. 1977b. Applications of the First Law to Ecological Systems. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle. 32 pp.
+Stevenson, R.D. 1977b. Applications of the First Law to Ecological Systems. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle. 
 
 Stevenson, R.D. 1978a. Heat Transfer Processes. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle.
 
-Stevenson, R.D. 1978b. The climatic space concept: analysis of the steadystate heat energy budget of animals. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle. Stoddard, H.L. 1931. The Bobwhite Quail: Its Habits, Preservation andIncrease. Scribners, New York. 559 pp.
+Stevenson, R.D. 1978b. The climatic space concept: analysis of the steadystate heat energy budget of animals. An instructional module on physical processes in terrestrial and aquatic ecosystems. Center for Quantitative Science, University of Washington, Seattle. 
 
-Tracy, C.R. 1976. A model of the dynamic exchanges of water and energybetween a terrestrial amphibian and its environment. Ecol. Mono. 46:293-326.
+Stoddard, H.L. 1931. The Bobwhite Quail: Its Habits, Preservation and Increase. Scribners, New York. 559 pp.
 
-Walsberg, G.E., G.S. Campbell and J.R. King. 1978. Animal coat color and radiative heat gain: a re-evaluation. J. Comp. Physiol. 126:211-222. Wathen, P., J.W. Mitchell and W.P. Porter, 1971. Theoretical and experimental studies of energy exchange from jackrabbit ears and cylindrically shaped appendages, Biophysical Jour. 11:1030-1047.
+Tracy, C.R. 1976. A model of the dynamic exchanges of water and energy between a terrestrial amphibian and its environment. Ecol. Mono. 46:293-326.
+
+Walsberg, G.E., G.S. Campbell and J.R. King. 1978. Animal coat color and radiative heat gain: a re-evaluation. J. Comp. Physiol. 126:211-222. 
+
+Wathen, P., J.W. Mitchell and W.P. Porter, 1971. Theoretical and experimental studies of energy exchange from jackrabbit ears and cylindrically shaped appendages, Biophysical Jour. 11:1030-1047.
 
 Whittow, G.C. (ed.), 1970. Comparative Physiology of Thermoregulation, Vol. I, Invertebrates and Nonmammalian Vertebrates. Academic Press, New York. 333 pp.
 
-Whittow, G,C, (ed,), 1971, Comparative Physiology of Thermoregulation, VQ1. II, Nammals. Academic Press, New York. 410 pp. L.-
+Whittow, G,C, (ed,), 1971, Comparative Physiology of Thermoregulation, VQ1. II, Nammals. Academic Press, New York. 410 pp.
 
 Whittow, G.C. (ed.). 1973. Comparative Physiology of Thermoregulation, Vol. III, Special Aspects of Thermoregulation. Academic Press, New York. 278 pp.
 
@@ -585,9 +591,9 @@ Zemansky, M.W. and B.C. Van Ness. 1966, Basic Engineering Thermodynamics. McGraw
 
 ## PROBLEMS
 
-1. Pick an animal and discuss what factors in Table 1 will be most important in its thermoregulation strategy. Include in your response any factors that have been omitted from the table.
+1. Pick an animal and discuss what factors in Table \@ref(tab:tab-thermoreg-1) will be most important in its thermoregulation strategy. Include in your response any factors that have been omitted from the table.
 
-2. When an endothermic animal is resting, there can be a range of standard operative environmental temperatures within which its heat production or metabolic rate is constant. This thermal neutral zone, as it is called, is shown in Figs. 1a, 5 and 7. What mechanisms does an animal have available to maintain constant core temperature and heat production when the thermal environment is changing? Discuss the relative importance of each.
+2. When an endothermic animal is resting, there can be a range of standard operative environmental temperatures within which its heat production or metabolic rate is constant. This thermal neutral zone, as it is called, is shown in Figs. \@ref(fig:fig-thermoreg-1)a, \@ref(fig:fig-thermoreg-5) and \@ref(fig:fig-thermoreg-7). What mechanisms does an animal have available to maintain constant core temperature and heat production when the thermal environment is changing? Discuss the relative importance of each.
 
 3. a) Using the information in Fig. \@ref(fig:fig-thermoreg-2), what are the avenues of heat gain and heat loss for an exercising rabbit? 
 
@@ -595,7 +601,7 @@ b) At different temperatures, some terms are constant while others are changing.
 
 4. Appendages serve a variety of functions but all are included under Allen's rule. Contrast the foot of a seagull with its wing with regard to the importance of each for heat balance when the animal is resting and exercising. (You may choose your own organism and set of appendages.) Support your discussion with knowledge about other functions of the appendages. Any physiological or behavioral information will strengthen your conclusions.
 
-5. You are researching the prospects of entering the aquaculture business raising sockeye salmon (*Oncorhynchus nerka*). In the graph below juvenile sockeye growth is given as a function of food and temperature conditions. What is the temperature for maximum growth rate when food rations are at 6, 4.5, 3.0 and 1.5% of dry body weight per day. Fish food is relatively cheap and you could afford to provide maximum rations, but the average water temperature in the pond you plan to use is only, 7°C so that the fish are not achieving maximum growth rates. Discuss the conditions in which it would be economically advantageous for you to raise the water temperature. How high would you raise it? What might be the ecological consequences of heating the water for the rest of the aquatic community.
+5. You are researching the prospects of entering the aquaculture business raising sockeye salmon (*Oncorhynchus nerka*). In the graph below juvenile sockeye growth is given as a function of food and temperature conditions. What is the temperature for maximum growth rate when food rations are at 6, 4.5, 3.0 and 1.5% of dry body weight per day. Fish food is relatively cheap and you could afford to provide maximum rations, but the average water temperature in the pond you plan to use is only 7°C so that the fish are not achieving maximum growth rates. Discuss the conditions in which it would be economically advantageous for you to raise the water temperature. How high would you raise it? What might be the ecological consequences of heating the water for the rest of the aquatic community.
 
 6. Imagine that you are studying the foraging and activity patterns of the Ortax, a large ungulate, and a carnivorous beetle, the Diplitz. You have divided the day into ten equal time periods and measured $F_x$, $M_{fx}$, and $M_r$ for each period as shown in the table below. 
 
@@ -615,7 +621,7 @@ b) At different temperatures, some terms are constant while others are changing.
 
 Rank the time periods in order of decreasing net caloric profit, assuming the animals can choose between resting and foraging. Are there any time periods the animals should be resting instead of feeding? If both organisms are trying to gather energy stores, what pattern of feeding activity would you expect to see using this simple model? What is the most each can expect to "make" during one cycle? If the Ortax must make a net profit of 20 caloric units per day to prepare for winter when should it feed to minimize total feeding time? If it must maintain weight how should it feed? If both animals must wait one time period to digest its food after it has a full stomach of 22 units, what is its feeding schedule to maximize net profit? Remember to consider $F_x$ values to figure digestion limits. Assume the Ortax must skip two periods. How should it feed to maximize profit?
 
-7. You work as a biologist for the consulting company Envirotech. The firm's latest contract calls for an evaluation of the potential impact on the quail populations of a logging plan, Americana National Forest. Describe how you would fulfill this contract. Specifically, discuss the importance of food and cover on population densities and individual health.
+7. You work as a biologist for the consulting company Envirotech. The firm's latest contract calls for an evaluation of the potential impact on the quail populations of a logging plan in Americana National Forest. Describe how you would fulfill this contract. Specifically, discuss the importance of food and cover on population densities and individual health.
 
 8. Using the theory derived in the module and the data below, calculate $T_b$ for the three cases given. What is the environmental and the physiological contribution to $T_b$ in each case? What two finds of animals are represented?
 
@@ -626,10 +632,10 @@ Animal|(W m^-2^)|(W m^-2^)|(W m^-2^)|(W m^-2^)|(W m^-2^ °C^-1^)|(°C)|(kg)
 2|150|25|100|750|15|20|0.008
 3|45|--|40|850|200|25|0.01
 
-Assume $\varepsilon = 0.95$, $V = 0.25 m s^{-1}$, $\overline{T}_r = 25°C$,$h_c = 17.24V^{0.60}M_b^{-0.133}$.
+Assume $\varepsilon = 0.95$, $V = 0.25 m s^{-1}$, $\overline{T}_r = 25^\circ C$,$h_c = 17.24V^{0.60}M_b^{-0.133}$.
 
 
-9. Using the data in problem 8 for the two ectotherms, calculate $k_0$ for V = 0.1, 0.5, and 3.0 m s$^{-1}$. Assume that the difference between metabolism and water loss is zero. What is $T_b$ in each case now? If the heat capacity is equal to the specific heat (3430 J kg$^{-1}$ °C$^{-1}$ ) times the mass of the animal, what is the heat capacity for each? Assuming $Q_a  = 600 W m^{-2}$and $T_a = 20°C$ for the range of wind speeds above which animal will get warmer. Are your conclusions still the same if $Q_a = 380 W m^{-2}$? Integrate equation \@ref(eq:thermoreg-11) to find $T_b$ as a function of time. If the initial body temperature of both animals is 10°C at time equal to zero, which animal will get to $T_b = 25°C$ first? Use the following relationship from Mitchell (1976).  
+9. Using the data in problem 8 for the two ectotherms, calculate $k_0$ for V = 0.1, 0.5, and 3.0 m s$^{-1}$. Assume that the difference between metabolism and water loss is zero. What is $T_b$ in each case now? If the heat capacity is equal to the specific heat (3430 J kg$^{-1}$ °C$^{-1}$ ) times the mass of the animal, what is the heat capacity for each? Assuming $Q_a  = 600 W m^{-2}$and $T_a = 20^\circ C$ for the range of wind speeds above which animal will get warmer. Are your conclusions still the same if $Q_a = 380 W m^{-2}$? Integrate equation \@ref(eq:thermoreg-11) to find $T_b$ as a function of time. If the initial body temperature of both animals is 10°C at time equal to zero, which animal will get to $T_b = 25^\circ C$ first? Use the following relationship from Mitchell (1976).  
 $$\mbox{Area}=11.0\times\bigg(\frac{\mbox{body mass}}{\mbox{body density}}\bigg)^{2/3}$$
 where body density equals $1\times10^3 kg m^{-3}$ to correct the dimensions of the equations. What is the difference in time between when each will arrive at 25°C? (Hint: Solve the integrated equation for time.) Answer the preceding two questions for V=0.1 and 0.5 m s^-1^. Assume the animals are lizards and comment on Cowles' suggestion.
 
@@ -637,9 +643,10 @@ where body density equals $1\times10^3 kg m^{-3}$ to correct the dimensions of t
 
 11. Imagine you are employed as an entomologist with the U.S.D.A. working with a team of research scientists studying a pest that drills into the stalks of corn. Your assignment is to investigate the importance of the physical environment in the corn-insect interaction. Ten years of historical data suggest that during cold springs the corn is not badly infected. Also it is known that chemical treatments are most effective on the third instar. These specific questions are important to managing this pest.
 a) Will this be a high density year for the corn drill so that biological or chemical controls will be needed?
+
 b) If so, when during the season will most of the insects be in this instar? Discuss your research plan to address these questions.
 
-```{r fig-thermoreg-10, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Effect of reduced ration on the relation betwern growth rate (±2 SE) and temperature, for 7 to 12 month-old sockeye. Points for excess ration or where a prescribed ration turned out to be excessive are marked with an X. The broken line for starved fish is a provisional interpretation (From Brett,J.R. et al.1969, p. 238.).'}
+```{r fig-thermoreg-10, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Effect of reduced ration on the relation betwern growth rate (±2 SE) and temperature, for 7 to 12 month-old sockeye. Points for excess ration or where a prescribed ration turned out to be excessive are marked with an X. The broken line for starved fish is a provisional interpretation (From Brett,J.R. et al.1969, p. 238.).'}
 knitr::include_graphics('figures/fig-thermoreg-10.png')
 ```
 
@@ -647,7 +654,7 @@ knitr::include_graphics('figures/fig-thermoreg-10.png')
 ## PROBLEM SOLUTIONS
 1. As a sample answer, consider the response of the bumblebee to its thermal environment. At northern latitudes these bees are active for only a small portion of the year when food and the thermal environment are favorable. Temporal partitioning of the environment is also important on a daily time scale. During inclement weather, the workers stop foraging. The general importance of habitat selection and of body orientation are unknown. Heinrich (1976) has discussed the important role of the circulation system used to maintain thermal equilibrium during flight in the bumblebee. Certainly the hairy outer coat of these animals is important in heat exchange and at higher temperatures the animals can evaporate water.
 
-2. The animal can change its blood flow rates, circulation patterns, water loss, orientation and posture to maintain a constant body while the thermal environment is changing but its body temperature and metabolic rate are constant. The relative importance of orientation and posture is unknown. Figure \@ref(fig:fig-thermoreg-1b) of the module indicates that the compounded effect of blood flow and circulation patterns are important in the lower part of the thermal neutral zone while evaporative water loss becomes more important at higher environmental temperatures.
+2. The animal can change its blood flow rates, circulation patterns, water loss, orientation and posture to maintain a constant body temperature while the thermal environment is changing but its body temperature and metabolic rate are constant. The relative importance of orientation and posture is unknown. Figure \@ref(fig:fig-thermoreg-1b) of the module indicates that the compounded effect of blood flow and circulation patterns are important in the lower part of the thermal neutral zone while evaporative water loss becomes more important at higher environmental temperatures.
 
 3. a) Anaerobic and aerobic metabolism produce heat. (The rabbit will also absorb radiation from the environment but this is represented as R where R = radiation absorbed - radiation emitted.) The animal loses heat via evaporation, convection and radiation exchange. Conduction is assumed to be zero.
 
@@ -695,7 +702,7 @@ $\sum$| |31| |15| | |
 
 The Ortax should always feed to maximize net energy gain. The Diplitz should not forage in time periods 4-8. Their net profits are 36 and 23 respectively. To minimize feeding time and still make a net profit of 20 units, the Ortax should feed in time periods 7, 4, 5, 6, 10 and 8. Feeding should take place in periods 7, 4 and part of 5 if the animal must simply maintain weight.
 
-The Ortax should not feed during periods 3.5 and 9 for a net profit of 25 (29 - 4) when one period is required for digestion. The Diplitz should forage during periods 9 and 10 and hart of period 2 for a net profit of approximately 9 units. If two periods are required for digestion, then the Urtax will feed in periods 10, 1, 2, 5, 6 and most of period 7 for a net profit of 10.
+The Ortax should not feed during periods 3.5 and 9 for a net profit of 25 (29 - 4=25) when one period is required for digestion. The Diplitz should forage during periods 9 and 10 and part of period 2 for a net profit of approximately 9 units. If two periods are required for digestion, then the Urtax will feed in periods 10, 1, 2, 5, 6 and most of period 7 for a net profit of 10.
 
 7. Wildlife biologists including Stoddard (1931), Errington (1967) and Leopold (1977) have summarized much of the work on quail populations in different kind of environments throughout the United States. In general logging will open up the forest producing successional vegetation which can provide abundant food supplies as well as the necessary shelter. Thus one would expect densities of quail to increase for 10 to 35 years and then slowly drop off as the forest canopy developed.
 
@@ -710,8 +717,8 @@ Animal|W m^-2^ °C^-1^|W m^-2^|°C|°C|°C
 
 Animals 1 and 3 are ectotherms because M and E are small while animal 2 is an endotherm.
 
-9. From problem 8: $\overline{T}_r=25°C$
-$$R=5.71Wm^{-2}°C^{-1}$$
+9. From problem 8: $\overline{T}_r=25^\circ C$
+$$R=5.71Wm^{-2}^\circ C^{-1}$$
 $$3\sigma \varepsilon\overline{T}_r^4=1277.1Wm^{-2}$$
 $$h_c=17.24V^{0.6}M_b^{-0.13333}$$
 
