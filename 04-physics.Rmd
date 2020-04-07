@@ -454,6 +454,7 @@ With the background that we've now gathered, we are ready to begin a discussion 
 3. 5.532 $\times$ 10^-65^ nt  
 4. $\frac{\mu_0i}{2\pi R}$  
 5. $\frac{1}{2}kx^2$  
+6. We substitute the relation $\frac{GM}{R}=gR$ into $v=\sqrt\frac{2GM}{R}$ to obtain $v=\sqrt{2gR}$. Substituting, we obtain $v=\sqrt{2*9.81*6368*10^3}$ m/s. We divide by 0.00062 to convert to miles/s. Obtaining v=6.93 miles/s.
 7. 205.2 J  
 8. 39.73 m/s  
 9. 0.530 $\times$ 10^-10^ m. Hence the diameter of a hydrogen atom is 1.06 $\times$ 10^-10^ m (or approximately 1 angstrom unit in an earlier terminology).

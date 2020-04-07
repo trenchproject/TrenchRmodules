@@ -6,6 +6,7 @@ output:
 # The Climate Space Concept {#climatespace}
 
 The Climate Space Concept: Analysis of the Steady State Heat Energy Budget of Animals.
+
 author: Stevenson, R. D., R code and example by Kearney, M. R.
 
 ## PREFACE

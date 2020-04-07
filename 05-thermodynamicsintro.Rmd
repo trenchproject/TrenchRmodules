@@ -6,6 +6,7 @@ output:
 # Thermodynamics Intro {#thermodynamicsintro}
 
 The First Law of Thermodynamics for Ecosystems
+
 author: Stevenson, R. D.
 
 ## PREFACE 

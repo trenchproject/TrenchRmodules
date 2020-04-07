@@ -20,7 +20,7 @@ All living organisms interact with their environment through a continuous exchan
 
 There are two ways in which the process of radiation exchange is of biological interest. The governing principles of this physical process are different for the two distinct biological applications.
 
-First, there is the dynamical balance of the radiation flow between the organism and its environment, and its effect on the homeostasis of the organism. This dynamical balance is best described by the modern form of radiation theory, which is based on Planck's theory of black body radiation, and which is exemplified in the generally useful results entailed in Wien's law of shift and the Stefan-Boltzmann law. Several simple biological applications of this modern radiation theory are developed in this module. Further applications are presented elsewhere in this series (Gates 1977,1973; Hatheway 1977, Stevenson 1979).
+First, there is the dynamical balance of the radiation flow between the organism and its environment, and its effect on the homeostasis of the organism. This dynamical balance is best described by the modern form of radiation theory, which is based on Planck's theory of black body radiation, and which is exemplified in the generally useful results entailed in Wien's law of shift and the Stefan-Boltzmann law. Several simple biological applications of this modern radiation theory are developed in this module. Further applications are presented elsewhere in this series of modules.
 
 Second, there is the interpretation of the energy sensing by the organism, as a means of obtaining information about the environment. The selective advantage that results from improved information gathering has led to the evolution of many specialized sense organs. The function of these organs is best described by the classical theory of radiation, particularly as entailed in Rayleigh's criterion and the Doppler effect. The balance of biological examples discussed here are of this second type.
 
@@ -34,11 +34,11 @@ In any discussion of radiative energy exchange, it is necessary to begin with an
 
 The theory of black body radiation had a lengthy and fascinating development during the 1800's, culminating in the work of Planck at the turn of the century. Many of the results discussed below were known at various stages during this period of repeated empirical research and hypothesis testing. However, the important results for biological applications can be derived directly from the formula of Planck, which mathematically (though not physically) culminated this field of experimental physics. The physical explanation of Planck's formula awaited the work of Einstein, and ultimately the early founders of Quantum Mechanics.
 
-Planck's problem was to specify the energy distribution of the electromagnetic radiation within a cavity, the walls of which are atthermal equilibrium at the temperature $T$. That is, the problem is to find the energy density $E(\nu)$ ($J s m^{-3}$) of the radiation within the cavity between the frequencies $\nu$ and $\nu + d\nu$. The shape of the curve $E(\nu)$ vs. $\nu$ had been determined experimentally at various temperatures [Fig. \@ref(fig:fig-radiation-1) ]. Planck found a solution to this problem in the form: 
+Planck's problem was to specify the energy distribution of the electromagnetic radiation within a cavity, the walls of which are atthermal equilibrium at the temperature $T$. That is, the problem is to find the energy density $E(\nu)$ ($J s m^{-3}$) of the radiation within the cavity between the frequencies $\nu$ and $\nu + d\nu$. The shape of the curve $E(\nu)$ vs. $\nu$ had been determined experimentally at various temperatures (Fig. \@ref(fig:fig-radiation-1)). Planck found a solution to this problem in the form: 
 
 $$E(\nu)=\frac{8\pi h \nu^3 }{c^3}[e^{h\nu/ kT}-1]^{-1}$$ 
 
-where $\nu$ is the frequency of the radiation, $T$ is the absolute temperature of the walls of the cavity, and $h$, $k$ and $c$ are physical constants [see Appendix 1]. This energy distribution is called the black body energy distribution because it is the same as the energy distribution of radiation emitted by a perfectly black object which is at absolute temperature $T$. For measurement purposes, it is more useful to express this energy density in terms of the wavelength $\lambda$.
+where $\nu$ is the frequency of the radiation, $T$ is the absolute temperature of the walls of the cavity, and $h$, $k$ and $c$ are physical constants (see symbols table). This energy distribution is called the black body energy distribution because it is the same as the energy distribution of radiation emitted by a perfectly black object which is at absolute temperature $T$. For measurement purposes, it is more useful to express this energy density in terms of the wavelength $\lambda$.
 
 **Problem 1**
 
@@ -89,7 +89,7 @@ which implies
 $$5u^4e^u-5u^4-u^5e^u=0$$
 or finally:
 $$e^{-u}+1/5u-1=0$$
-This transcendental equation can be solved by numerical techniques (see Appendix 2) to give:
+This transcendental equation can be solved by numerical techniques to give:
 $$u=4.9651....$$
 Thus
 $$\lambda_mT=\frac{hc}{uk}=2.8978\times10^{-3}mK=b$$
@@ -129,9 +129,9 @@ The Wein law of shift is a very powerful result because it embodies a single rel
 Assuming the following objects radiate as black bodies, what is the $\lambda_m$ for:  
 
 a) the sun at $T_s=5700K$  
-b) a mammal with a surface temperature $T=37°C$  
-c) a lizard with a surface temperature $T=10°C$  
-d) the clear night sky, radiation temperature $T=-33°C$  
+b) a mammal with a surface temperature $T=37 ^\circ C$  
+c) a lizard with a surface temperature $T=10 ^\circ C$  
+d) the clear night sky, radiation temperature $T=-33 ^\circ C$  
 
 
 Answers:  
@@ -166,7 +166,7 @@ I=\int_0^\infty\frac{x^3dx}{e^x-1}
 (\#eq:radiation-3)
 \end{equation}
 
-can be obtained by numerical integration. This is a technique for approximating a definite integral by a finite sum. The value of the integral in Equation \@ref(eq:radiation-3) is found in Appendix 2 to be:
+can be obtained by numerical integration. This is a technique for approximating a definite integral by a finite sum. The value of the integral in Equation \@ref(eq:radiation-3) can be found to be:
 
 $$I=6.4983$$
 
@@ -187,7 +187,7 @@ where $E_n\equiv$ radiation emmitance and
 $$\sigma=(\frac{1}{4})ca=5.6693\times10^{-8}Wm^{-2}K^{-4}$$
 Equation \@ref(eq:radiation-5) is called the Stefan-Boltzmann law and the constant $\sigma$ is called the Stefan-Boltzmann constant. Although Equation \@ref(eq:radiation-5) is quantitatively precise, the functional relationship of the variables is more important than the exact numerical value of the constants. Of particular interest is that the radiation emittance is proportional to the fourth power of the absolute temperature.
 
-The equation is of direct biological interest when it is realized that the Stefan-Boltzmann law governs the radiative energy exchange between an organism and its environment. Although this exchange of energy is usually not considered when calculating the energy budget of an organism, it can in some circumstances be a major factor affecting the heat balance of an organism. The following example and problem constitute a brief introduction to the application of this physical law to biology. For a more detailed exploration of this relationship, see Gates (1978) and Hatheway (1977).
+The equation is of direct biological interest when it is realized that the Stefan-Boltzmann law governs the radiative energy exchange between an organism and its environment. Although this exchange of energy is usually not considered when calculating the energy budget of an organism, it can in some circumstances be a major factor affecting the heat balance of an organism. The following example and problem constitute a brief introduction to the application of this physical law to biology. For a more detailed exploration of this relationship, see modules 11 and 12.
 
 **Example 2**
 
@@ -238,13 +238,13 @@ b) A bald mountaineer is outside on a clear night. Although he is heavily bundle
 Answer: $H\approx25.3W=362 \mbox{ cal/min}$
 
 ### The solar constant
-A physical parameter which imposes a significant constraint upon the evolution of terrestrial organisms is the amount of energy generated by the sun which is intercepted at the earth's surface. Almost all of the energy which drives the biological processes on the earth comes directly or indirectly from the sun. Thus the amount of the sun's energy that the earth receives is of interest for at least two reasons: (1) This is the upper limit to the amount of energy that could be absorbed by a surface and turned into heat. (2) This is the upper limit to the amount of energy that could be converted by a photosynthetic unit into chemical energy. Since the actual amount of sunlight available at the earth's surface is dependent upon absorption by the atmosphere, and thus on such variables as latitude, the sun's altitude in the sky (see Gates 1978, section on Direct Solar Radiation), or cloudiness, the measure of the sun's energy available at the earth is determined instead for a unit area just outside the earth's atmosphere. This measure of the sun's energy (actually the rate of the available energy, i.e., power) is called the **solar constant**.
+A physical parameter which imposes a significant constraint upon the evolution of terrestrial organisms is the amount of energy generated by the sun which is intercepted at the earth's surface. Almost all of the energy which drives the biological processes on the earth comes directly or indirectly from the sun. Thus the amount of the sun's energy that the earth receives is of interest for at least two reasons: (1) This is the upper limit to the amount of energy that could be absorbed by a surface and turned into heat. (2) This is the upper limit to the amount of energy that could be converted by a photosynthetic unit into chemical energy. Since the actual amount of sunlight available at the earth's surface is dependent upon absorption by the atmosphere, and thus on such variables as latitude, the sun's altitude in the sky (see module 11, section on Direct Solar Radiation), or cloudiness, the measure of the sun's energy available at the earth is determined instead for a unit area just outside the earth's atmosphere. This measure of the sun's energy (actually the rate of the available energy, i.e., power) is called the **solar constant**.
 
 The solar constant can be calculated theoretically from the Stefan-Boltzmann law and conservation of energy. Assuming the sun to be a black body with a surface temperature $T_s$, by the Stefan-Boltzmann law, its radiation emittance (energy radiated per unit area per unit time) is given by:
 
 \begin{equation}
 E_s=\sigma T_s^4
-(\#eq:radiation-5')
+(\#eq:radiation-5prime)
 \end{equation}
 
 Thus the total power emitted by the sun can be found by integrating $E_s$ over the sun's surface. Since $T_s$ is (assumed to be) constant, this is equivalent to multiplying the constant $E_s$ by the surface area of a sphere with the sun's radius ($r_s$). The total power is given by:
@@ -269,7 +269,7 @@ E_E=\frac{4 \pi r_s^2E_s}{4\pi r_E^2}=\frac{r_s^2}{r_E^2}E_s
 \end{equation}
 
 The quantity $E_E$ which is the power available (per unit area per unit time) on a surface at the earth's distance from the sun, is the parameter of interest, the solar constant.
-Inserting Equation \@ref(eq:radiation-5') into Equation \@ref(eq:radiation-8) gives immediately:
+Inserting Equation \@ref(eq:radiation-5prime) into Equation \@ref(eq:radiation-8) gives immediately:
 
 \begin{equation}
 E_E=(\frac{r_s^2}{r_E^2})\sigma T_s^4
@@ -296,10 +296,10 @@ There is at least one other area of biology where the physical dimensions of the
 
 The term resolution is used here to denote the ability to distinguish two objects. That is, how close together must two objects be before they appear as a single object to the organism? Clearly, this depends to some extent on the organism in question; eagles resolve better than do moles. Also, the limit of resolution will be affected by the experience of the observer. Nevertheless, it is useful to have some rough comparison of the resolving ability of various systems, and for this purpose **Rayleigh's criterion** is most often employed.
 
-Rayleigh's criterion is derived from the theory of Fresnel diffraction by a circular opening (for a derivationand detailed discussion, see Elmore & Heald 1969). Qualitatively, this criterion is seen to be a measure of the relative overlap of the diffraction patterns of the images of objects on the focal plane of the observer. More specifically, it is a measure of the displacement of the central maxima of these diffraction patterns. Two images are said to be just resolved when the central maximum of one diffraction pattern falls on the first minimum of the other (see Fig.\@ref(fig:fig-rad-3)). From Figure \@ref(fig:fig-rad-3), it can be seen that the limit of resolution is some distance $\delta x$ between the two images on the focal plane, or alternatively some angle $\delta\theta$ between the central axis of the lens and the ray connecting the center point of the lens to the centers of the principal maxima on the focal plane [$p_i^\prime$,$p_2^\prime$ of Fig.\@ref(fig:fig-rad-3)]. Therefore, in comparing the resolving power of different instruments the reciprocal of these quantities should be used (i.e., $1/\delta x$ or $1/\delta\theta$), so that the "more powerful" instrument is able to distinguish objects which are unresolved by the "less powerful" instrument. For a distant object, the objective (lens) is the aperture which creates the circular diffraction. The mathematical details of Fresnel diffraction lead to the result that the position of the first minimum relative to the principal maximum will be:
+Rayleigh's criterion is derived from the theory of Fresnel diffraction by a circular opening (for a derivationand detailed discussion, see Elmore & Heald 1969). Qualitatively, this criterion is seen to be a measure of the relative overlap of the diffraction patterns of the images of objects on the focal plane of the observer. More specifically, it is a measure of the displacement of the central maxima of these diffraction patterns. Two images are said to be just resolved when the central maximum of one diffraction pattern falls on the first minimum of the other (see Fig. \@ref(fig:fig-rad-3)). From Figure \@ref(fig:fig-rad-3), it can be seen that the limit of resolution is some distance $\delta x$ between the two images on the focal plane, or alternatively some angle $\delta\theta$ between the central axis of the lens and the ray connecting the center point of the lens to the centers of the principal maxima on the focal plane [$p_i^\prime$,$p_2^\prime$ of Fig. \@ref(fig:fig-rad-3)]. Therefore, in comparing the resolving power of different instruments the reciprocal of these quantities should be used (i.e., $1/\delta x$ or $1/\delta\theta$), so that the "more powerful" instrument is able to distinguish objects which are unresolved by the "less powerful" instrument. For a distant object, the objective (lens) is the aperture which creates the circular diffraction. The mathematical details of Fresnel diffraction lead to the result that the position of the first minimum relative to the principal maximum will be:
 
 \begin{equation}
-sin\alpha=0.61\lambda/r
+\sin \alpha=0.61\lambda/r
 (\#eq:radiation-11)
 \end{equation}
 where
@@ -307,18 +307,16 @@ $\lambda =$ the wavelength of radiation which forms the image,
 $r=$ the radius of the objective,  
 $\alpha=$ the angle between the images of the objects.
 
-The limit to resolution given by Eq. \@ref(eq:radiation-12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
-
 ```{r fig-rad-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The Rayleigh criterion: Fresnel diffraction by circular aperture. '}
 knitr::include_graphics('figures/fig-rad-3.png')
 ```
 
 The limit to resolution given by Eq. \@ref(eq:radiation-12) is known as Rayleigh's criterion. Using the familiar (Taylor) expansion of the sine function one finds that:
-$$sin\alpha=\alpha-\alpha^3+\alpha^5-\alpha^7+...$$
+$$\sin\alpha=\alpha-\alpha^3+\alpha^5-\alpha^7+...$$
 or 
-$$sin\alpha=\alpha+0(\alpha^3)$$.  
+$$\sin\alpha=\alpha+0(\alpha^3).$$
 Here $0(\alpha^3)$ means terms of order (size) strictly less than $\alpha^3$. If $\alpha$ is small, then $\alpha^3$ is very small and one can make the small angle approximation
-$$sin\alpha \approx \alpha$$
+$$\sin\alpha \approx \alpha$$
 which when substituted into Eq. \@ref(eq:radiation-11) yields:
 \begin{equation}
 \alpha=0.61\lambda/r
@@ -391,7 +389,7 @@ If $\lambda$ = 400 nm, which is the center of the spectrum to which a bee is sen
 Answer:  
 $$d=2.2\times10^{-5}m=22\mu$$
 
-The actual mean measured opening for a bee is $20.9\mu$ (Barlow 1952, p. 671). A diagram comparing the observed size of the ommatidia to the value predicted by theory is presented in Fig. \@ref(fig:fig-rad-4). Rayleigh's criterion for the limit of resolution of an optical instrument can be extended to interferometers as well. Basically, an interferometer consists of two detectors with the ability to detect phase information separated by a distance $D$. When the phase information from the two detectors is compared,the resolution of the total system is the same as that of a single detector whose diameter is equal to $D$. Although a rigorous argument demonstrating this result would not be appropriate here (it is essentially the save as the derivation of Rayleigh's criterion), a qualitative argument may be useful. Basically, the (diffraction patterns illustrated in Fig. \@ref(fig:fig-rad-3) are the result of the interference between light waves of different phases, caused by passage of the light through the aperture. The eye sees the interference caused by phase differences as variations in intensity, as illustrated in Fig. \@ref(fig:fig-rad-3) b, c, d. to an interferometer the signals of the two detectors are compared to reveal phase differences and so the identical resolution criterion applies. 
+The actual mean measured opening for a bee is $20.9\mu$ (Barlow 1952, p. 671). A diagram comparing the observed size of the ommatidia to the value predicted by theory is presented in Fig. \@ref(fig:fig-rad-4). Rayleigh's criterion for the limit of resolution of an optical instrument can be extended to interferometers as well. Basically, an interferometer consists of two detectors with the ability to detect phase information separated by a distance $D$. When the phase information from the two detectors is compared, the resolution of the total system is the same as that of a single detector whose diameter is equal to $D$. Although a rigorous argument demonstrating this result would not be appropriate here (it is essentially the save as the derivation of Rayleigh's criterion), a qualitative argument may be useful. Basically, the (diffraction patterns illustrated in Fig. \@ref(fig:fig-rad-3) are the result of the interference between light waves of different phases, caused by passage of the light through the aperture. The eye sees the interference caused by phase differences as variations in intensity, as illustrated in Fig. \@ref(fig:fig-rad-3) b, c, d. to an interferometer the signals of the two detectors are compared to reveal phase differences and so the identical resolution criterion applies. 
 
 Most vertebrates are able to detect phase differences between ears, so that the interferometer is the correct model for calculating resolution. A consideration of Rayleigh's criterion shows that if all other parameters remain constant, the greater the separation of the detectors, the greater the resolving power of the system. Many organisms have optimized their ability to locate sound sources by maintaining a maximal separation between the ears. Another biological application of interferometers is illustrated in the following problem. 
 
@@ -511,11 +509,7 @@ The preceding discussion has presented some of the results from classical and mo
 
 ## LITERATURE CITED
 
-```
-Can't find Gates 1973, Gates 1978, Hathaway 1977
-```
-
-Barlow, H.B., 1952. The size of ommatidia in apposition eyes. Journal of experimental Biology, 29(4), pp.667-674.
+Barlow, H.B., 1952. The size of ommatidia in apposition eyes. Journal of experimental Biology, 29(4):667-674.
 
 Bjorn LO. 1976. Light and Life. London: Hodder and Stoughton
 
@@ -523,15 +517,15 @@ Elmore, W.C. and Heald, M.A., 1985. Physics of waves. Courier Corporation.
 
 Fenton, M. B. 1974. The role of echolocation in the evolution of bats. Am. Nat. 108: 386-388.
  
-Gates, D. M. 1977. Transpiration and leaf temperature. An instructional module: Physical processes in terrestrial and aquatic ecosystems. Ctr. Quantitative Sci., Univ. Washington, Seattle.
+Gates, D. M. 1978. Transpiration and leaf temperature. An instructional module: Physical processes in terrestrial and aquatic ecosystems. Ctr. Quantitative Sci., Univ. Washington, Seattle.
 
-Griffin, D.R., 1953. Acoustic orientation in the oil bird, Steatornis. Proceedings of the National Academy of Sciences of the United States of America, 39(8), p.884.
+Griffin, D.R., 1953. Acoustic orientation in the oil bird, Steatornis. Proceedings of the National Academy of Sciences of the United States of America, 39(8):884-893.
 
 Griffin D. R. 1958. Listening in the Dark. New Haven (CT): Yale University Press. Reprinted 1986, Ithaca (NY): Cornell University Press
 
-Lummer, O. and Pringsheim, E. 1901. Kritisches zur schwarzen Stahlung. Annalen der Physik. 311. 192-210. 
+Lummer, O. and Pringsheim, E. 1901. Kritisches zur schwarzen Stahlung. Annalen der Physik. 311:192-210. 
 
-Schuller, G., Beuter, K. and Schnitzler, H.U., 1974. Response to frequency shifted artificial echoes in the batRhinolophus ferrumequinum. Journal of comparative physiology, 89(3), pp.275-286.
+Schuller, G., Beuter, K. and Schnitzler, H.U., 1974. Response to frequency shifted artificial echoes in the bat Rhinolophus ferrumequinum. Journal of comparative physiology, 89(3):275-286.
 
 Stevenson, R. D, and Seattle. Center for Quantitative Science in Forestry, Fisheries Wildlife Washington Univ. 1979. The First Law of Thermodynamics for Ecosystems. Physical Processes in Terrestrial and Aquatic Ecosystems, Thermodynamics.
 
