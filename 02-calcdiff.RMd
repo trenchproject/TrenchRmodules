@@ -327,7 +327,7 @@ knitr::include_graphics('figures/fig-calcdiff-p20.png')
 
 3. In the O~2~ consumption model represented by equation \@ref(eq:calcdiff-7), the variable $Q$ has units of $\mu$l/hr. Write $Q$ in ml/hr and find $\frac{\partial Q}{\partial m}$ for $W$ = 1000 mg. What are the units of $\frac{\partial Q}{\partial m}$? What might this derivative represent biologically? That is, why would a biologist be interested in this derivative?
 
-4. A study of shape changes in nemerteans and flatworms (Alexander, 1968) theorizes that a basement membrane encloses the body and contains fibers which run in helices around the body. From Figure b, if the length $D$ of the fiber is fixed, then $l = Dcos\theta$ and when the shape is cylindrical, the circumference and volume are $2\pi r=Dsin\theta$, $v=\pi r^2l$.
+4. A study of shape changes in nemerteans and flatworms (Alexander, 1968) theorizes that a basement membrane encloses the body and contains fibers which run in helices around the body. From Figure b, if the length $D$ of the fiber is fixed, then $l = D\cos\theta$ and when the shape is cylindrical, the circumference and volume are $2\pi r=D\sin\theta$, $v=\pi r^2l$.
 
 ```{r fig-calcdiff-p21, echo=FALSE, fig.height=4, out.width = "75%", fig.cap=''}
 knitr::include_graphics('figures/fig-calcdiff-p21.png')
@@ -338,7 +338,7 @@ knitr::include_graphics('figures/fig-calcdiff-p21.png')
 &nbsp;&nbsp;b. Find $\theta$ which gives a maximum for $v$. Prove it is a relative maximum and not a relative minimum. Note that laboratory dissections show that in the relaxed worm the fibers run at about 55° to the axis of the body. Why would the relaxed worm have the maximum volume?
 
 5. Studies of insect flight (Alexander, 1968) use the theory of "forced vibrations" to explain the muscle action responding to nervous stimuli. If the "forcing function" is assumed to be
-$$Fsin(2\pi nt),\;\;\;\;t=\mbox{time},\;\;\;\;F=\mbox{constant},$$
+$$F\sin(2\pi nt),\;\;\;\;t=\mbox{time},\;\;\;\;F=\mbox{constant},$$
 then the steady amplitude $A$ (magnitude of the vibrations) is given by
 $$A=F[(s-4\pi^4n^2m)^2+(2\pi nK)^2]^{-1/2}$$
 where
@@ -365,10 +365,10 @@ where we define
 When $C$ and $\lambda$ are uniform in depth and constant in time, we have the simple diffusion equation:
 $$\frac{\partial T}{\partial t}=a\frac{\partial^2 T}{\partial z^2}$$
 where $a = \lambda/C$ is called the thermal diffusivity of the soil. The temperature As at the surface gives boundary conditions for the model. For sinusoidal variation of surface temperature, we can write the boundary conditions as
-$$T(t,0)=T_a+\theta_0cos\omega t$$
+$$T(t,0)=T_a+\theta_0\cos\omega t$$
 $$T(t,\infty)=T_a=\mbox{constant}$$
 Show that the solution to this model is given by the following function:
-$$T(t,z)=T_a+\theta_0e^{-z/d}cos(\omega t-z/d)$$
+$$T(t,z)=T_a+\theta_0e^{-z/d}\cos(\omega t-z/d)$$
 with
 $$d=(2a/\omega)^{1/2}$$
 Be sure to verify that this function satisfies the diffusion equation **and** the boundary conditions.
@@ -415,20 +415,20 @@ The units are then ml O~2~ per hour per unit of activity.
 4.a. First solve for $r(\theta)$:
 
 \begin{align*}
-&r=\frac{D}{2\pi}sin\theta \\
-&v=(\frac{D}{2\pi}sin\theta)^2(Dcos\theta) \\
-&v(\theta)=\frac{D^3}{4\pi}sin^2\theta cos\theta \\
-&v(0) = 0\;\;\mbox{since}\;\;sin(0)=0 \\
-&v(90^{\circ})= 0\;\;\mbox{since}\;\;cos(90^{\circ})=0
+&r=\frac{D}{2\pi}\sin\theta \\
+&v=(\frac{D}{2\pi}\sin\theta)^2(D\cos\theta) \\
+&v(\theta)=\frac{D^3}{4\pi}\sin^2\theta \cos\theta \\
+&v(0) = 0\;\;\mbox{since}\;\;\sin(0)=0 \\
+&v(90^{\circ})= 0\;\;\mbox{since}\;\;\cos(90^{\circ})=0
 \end{align*}
 
 &nbsp;&nbsp;b.
 
 \begin{align*}
-&\frac{dv}{d\theta}=\frac{D^3}{4\pi}\{2sin\theta cos^2\theta-sin^3\theta\} \\
-&0=2sin\theta cos^2\theta-sin^3\theta\;\;\;\;\mbox{Assume }\;\theta > 0 \\
-&0=2cos^2\theta - sin^2\theta \\
-&sin^2\theta=2cos^2\theta \\
+&\frac{dv}{d\theta}=\frac{D^3}{4\pi}\{2\sin\theta \cos^2\theta-\sin^3\theta\} \\
+&0=2\sin\theta \cos^2\theta-\sin^3\theta\;\;\;\;\mbox{Assume }\;\theta > 0 \\
+&0=2\cos^2\theta - \sin^2\theta \\
+&\sin^2\theta=2\cos^2\theta \\
 &tan\theta=\sqrt{2} \\
 &\theta = 54.74^{\circ}
 \end{align*}
@@ -463,25 +463,25 @@ then $(1,1)$ is indeed a relative minimum.
 
 7. First show the boundary conditions to be satisfied:
 \begin{align*}
-T(t,0)&=T_a+\theta_0e^{-0/d}cos(\omega t-0/d) \\
-&=T_a+\theta_0cos\omega t \\
-T(t,\infty)&=T_a+\theta_0e^{-\infty/d}cos(\omega t-\infty/d) \\
+T(t,0)&=T_a+\theta_0e^{-0/d}\cos(\omega t-0/d) \\
+&=T_a+\theta_0\cos\omega t \\
+T(t,\infty)&=T_a+\theta_0e^{-\infty/d}\cos(\omega t-\infty/d) \\
 &=T_a+0 \\
 &=T_a
 \end{align*}
 Now show that the diffusion equation is satisfied:
 
 \begin{align*}
-\frac{\partial T}{\partial t}&=-\theta_0e^{-z/d}\omega sin(\omega t-z/d) \\
-\frac{\partial T}{\partial z}&=-\frac{1}{d}\theta_0e^{-z/d}cos(\omega t-z/d)-\theta_0e^{-z/d}(-\frac{1}{d})sin(\omega t-z/d) \\
-&=\frac{\theta_0e^{-z/d}}{d}[sin(\omega t-z/d)-cos(\omega t-z/d)] \\
-\frac{\partial^2 T}{\partial z^2}&=(-\frac{1}{d})\frac{\theta_0}{d}e^{-z/d}[sin(\omega t-z/d)-cos(\omega t-z/d)] \\
-&-(\frac{1}{d})\frac{\theta_0}{d}e^{-z/d}[cos(\omega t-z/d)+sin(\omega t-z/d)] \\
-&=-\frac{2\theta_0}{d^2}e^{-z/d}sin(\omega t-z/d)
+\frac{\partial T}{\partial t}&=-\theta_0e^{-z/d}\omega \sin(\omega t-z/d) \\
+\frac{\partial T}{\partial z}&=-\frac{1}{d}\theta_0e^{-z/d}\cos(\omega t-z/d)-\theta_0e^{-z/d}(-\frac{1}{d})\sin(\omega t-z/d) \\
+&=\frac{\theta_0e^{-z/d}}{d}[\sin(\omega t-z/d)-\cos(\omega t-z/d)] \\
+\frac{\partial^2 T}{\partial z^2}&=(-\frac{1}{d})\frac{\theta_0}{d}e^{-z/d}[\sin(\omega t-z/d)-\cos(\omega t-z/d)] \\
+&-(\frac{1}{d})\frac{\theta_0}{d}e^{-z/d}[\cos(\omega t-z/d)+\sin(\omega t-z/d)] \\
+&=-\frac{2\theta_0}{d^2}e^{-z/d}\sin(\omega t-z/d)
 \end{align*}
 Substituting into the diffusion equation:
-$$-\theta_0e^{-z/d}\omega sin(\omega t-z/d)=-a\frac{2\theta_0}{d^2}e^{-z/d}sin({\omega t-z/d})$$
-The equation is certainly true when $sin(\omega t-z/d)=0$. Now assume that $sin(\omega t-z/d)\not=0$ and divide both sides by $-\theta_0e^{-z/d}sin(\omega t-z/d$:
+$$-\theta_0e^{-z/d}\omega \sin(\omega t-z/d)=-a\frac{2\theta_0}{d^2}e^{-z/d}\sin({\omega t-z/d})$$
+The equation is certainly true when $\sin(\omega t-z/d)=0$. Now assume that $\sin(\omega t-z/d)\not=0$ and divide both sides by $-\theta_0e^{-z/d}\sin(\omega t-z/d$:
 $$\omega = 2a/d^2$$
 Substituting for $d$, we obtain
 $$\omega = 2a/[(2a/\omega)^{1/2}]^2=\omega$$
