@@ -962,7 +962,7 @@ c. What is the average biomass for the first 12 months? What was the  initial bi
 
 3. Assume that a radioactive element disintegrates so that the number ($N$) of atoms present at a given time ($t$) decreases at a rate proportional to $N$ itself. Let $k$ be the constant of proportionality and $N_0$ be the number of atoms present at $t = 0$ (thus $N(0) = N_0$). 
 a. With the derivative representing the rate of change of $N$, use the above defined parameters and variables to write an equation for the rate of decrease in the number of radioactive atoms with passing time. 
-b. Solve this differential equation for $N(t)$ so that the solution satisfies the initial condition, $N(0) = N_0$. (Hint: first separate variables. Do not forge the integration constant!) 
+b. Solve this differential equation for $N(t)$ so that the solution satisfies the initial condition, $N(0) = N_0$. (Hint: first separate variables. Do not forget the integration constant!) 
 c. Determine the "half-life" : the time ($t_1$) such that $N(t_1) = 0.5 N_0$. At $t =t_1$, half of the original number of radioactive atoms have disintegrated (decayed). 
 d. We now make certain assumptions which will allow us to estimate the age of a piece of wood by radiocarbon dating: 
 i) living organic material contains the carbon isotopes $C^{12}$ and in a fixed proportion independent of time, 

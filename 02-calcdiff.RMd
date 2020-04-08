@@ -217,7 +217,7 @@ knitr::include_graphics('figures/fig-calcdiff-8.png')
 knitr::include_graphics('figures/fig-calcdiff-9.png')
 ```
 
-A more complicated example is the complete expression for \@ref(eq:calcdiff-4) . The level of activity is based on the fraction of the maximal filtration rate. Then $m=0$ represents the "standard" state, $m=1$ gives the "active" state, and $m=0.4$ is the "routine" state . Consider oxygen consumption during summer.  
+A more complicated example is the complete expression for equation \@ref(eq:calcdiff-4) . The level of activity is based on the fraction of the maximal filtration rate. Then $m=0$ represents the "standard" state, $m=1$ gives the "active" state, and $m=0.4$ is the "routine" state . Consider oxygen consumption during summer.  
 Then
 $$a(m)=1.87(m+1)$$
 and \@ref(eq:calcdiff-3) becomes
@@ -419,7 +419,7 @@ The units are then ml O~2~ per hour per unit of activity.
 &v=(\frac{D}{2\pi}sin\theta)^2(Dcos\theta) \\
 &v(\theta)=\frac{D^3}{4\pi}sin^2\theta cos\theta \\
 &v(0) = 0\;\;\mbox{since}\;\;sin(0)=0 \\
-&v(90°)= 0\;\;\mbox{since}\;\;cos(90°)=0
+&v(90^{\circ})= 0\;\;\mbox{since}\;\;cos(90^{\circ})=0
 \end{align*}
 
 &nbsp;&nbsp;b.
@@ -430,7 +430,7 @@ The units are then ml O~2~ per hour per unit of activity.
 &0=2cos^2\theta - sin^2\theta \\
 &sin^2\theta=2cos^2\theta \\
 &tan\theta=\sqrt{2} \\
-&\theta = 54.74°
+&\theta = 54.74^{\circ}
 \end{align*}
 
 5. Maximize $A$ by minimizing the denominator:

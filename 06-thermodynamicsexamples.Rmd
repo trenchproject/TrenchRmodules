@@ -2,6 +2,7 @@
 
 ***
 Applications of the First Law to Ecological Systems
+
 author: Stevenson, R. D.
 
 ## PREFACE
@@ -210,7 +211,7 @@ where
 * and $C$ = convection ($W m^{-2}$).
 </div>
 
-Of the three habitats considered the model predicts increasing thermal stress in the following order: mixed grassland depression, mixed grassland surface, and lava surface. Field observations have confirmed these predictions. Riechert and Tracy also found that the spiders did not randomly  orient the direction toward which their funnels faced. In fact the general tendency was to face northerly which would eliminate direct solar radiation.  Fig. \@ref(fig:fig-thermex-5) shows a plot of orientations and gives the mean direction. The tendency is strongest in \@ref(fig:fig-thermex-5)c which shows all webs from unprotected sites.
+Of the three habitats considered the model predicts increasing thermal stress in the following order: mixed grassland depression, mixed grassland surface, and lava surface. Field observations have confirmed these predictions. Riechert and Tracy also found that the spiders did not randomly  orient the direction toward which their funnels faced. In fact the general tendency was to face northerly which would eliminate direct solar radiation.  Fig. \@ref(fig:fig-thermex-5) shows a plot of orientations and gives the mean direction. The tendency is strongest in Fig. \@ref(fig:fig-thermex-5)c which shows all webs from unprotected sites.
 
 To find out whether or not the energy budget influences the activity time of the spiders Riechert and Tracy measured spider activity. The barred region of Fig. \@ref(fig:fig-thermex-6) indicates when more than 50 percent of the spiders were active. This corresponds to a time of day when the body temperature of  the spiders would be between 21 and 35 °C. This study emphasizes the importance of the thermal environment for *A. aperta*.
 
@@ -268,7 +269,7 @@ b) Assume a horse drinks 10 gallons of water at 20°C and urinates it at 38°C d
 
 7. In the module titled "The First Law of Thermodynamics for Ecosystems" I used a problem to introduce the idea that potential ($E_p$) and kinetic ($E_k$) energies could be included in the First Law. Imagine you are studying the locomotion mechanics and energetics of the rhea, a bipedal bird. Write down an energy conservation equation to identify the three components of the mechanical work (the rhea can be thought of as a point mass analogous to a pendulum). How would you compute these components? Discuss their relative importance. How might you measure the efficiency of locomotion? Of the initial chemical energy used which could be measured by oxygen consumption, how much represents work done by the organism? Where does the other energy go?
 
-8. In the last section of the module we on the interaction of regulation of body temperature and the acquisition of food energy. Describe the steps necessary to convert energy in the environment to usable chemical energy for the body. During each step of the process what is the importance of the thermal environment for a poikilotherm and a homeotherm?
+8. In the last section of the module we commented on the interaction of regulation of body temperature and the acquisition of food energy. Describe the steps necessary to convert energy in the environment to usable chemical energy for the body. During each step of the process what is the importance of the thermal environment for a poikilotherm and a homeotherm?
 
 ## PROBLEM SOLUTIONS
 
@@ -339,6 +340,8 @@ c. anemone: while out of water- wind, sun, rock, air temperature, humidity
 
 d. pine branch: wind, sun, other branches in stand, humidity
 
+Energy balances
+
 a.$Q_a + M - Q_e - G = 0$  
 
 b.$Q_a - Q_e - LE - C - G = 0$  
@@ -360,6 +363,8 @@ c. moss on a rock: sun, wind, ground
 d. 1. penguins huddled: ground, snow, sky, sun, air, wind
 
   2. penguins swimming: water temperature, water velocity
+
+Energy balances
 
 a. $Q_a + M - Q_e - LE - C = 0$
 
@@ -386,7 +391,7 @@ To understand the thermal balance of the stream one must be able to measure the 
 
 7. The energy conservation equation is $\Delta E = E_p + E_{kv}+ E_{kf}$, where $\Delta E$ is the change in internal energy, $E_p$ is the potential energy and $E_{kv}$ and $E_{kf}$ are the kinetic energies. The kinetic components can be measured by knowing the velocity in the proper direction. So
 $$E_{kx}=1/2  mv_x^2$$
-Potential energy is $E_p = m gh$ where $m$ is mass, $g$ is the acceleration due to gravity and $h$ is the height above the datum. $E_{kv}$ is very small since $V_x$ is small relative to the other components. Efficiency can be defined in a number of ways. Since the organism is interested in moving forward one appropriate definition is the work done in forward motion divided by the difference between the metabolic rate while exercising and while resting.
+Potential energy is $E_p = m gh$ where $m$ is mass, $g$ is the acceleration due to gravity and $h$ is the height above the datum. $E_{kv}$ is very small since $v_x$ is small relative to the other components. Efficiency can be defined in a number of ways. Since the organism is interested in moving forward one appropriate definition is the work done in forward motion divided by the difference between the metabolic rate while exercising and while resting.
 
 One might also wish to consider the work need to accelerate and decelerate limbs as well as the work recovered from storage in limbs. Cavagna, Heglund and Taylor (1977) have measured these variables for a variety of animals including the rhea. The chemical energy needed for locomotion goes into work done on the environment and heat production in the organism. The heat production is a result of internal work and the irreversibility of energy transformations. Work done on the environment is represented by moving air and frictional losses at the ground surface.
 

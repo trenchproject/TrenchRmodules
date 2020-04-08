@@ -6,10 +6,11 @@ output:
 # The Climate Space Concept {#climatespace}
 
 The Climate Space Concept: Analysis of the Steady State Heat Energy Budget of Animals.
+
 author: Stevenson, R. D., R code and example by Kearney, M. R.
 
 ## PREFACE
-Several modules in the thermodynamic series considered the application of the First Law to biological systems and the heat transfer processes that govern the energy balance of organisms. This module discusses a model for which the animal's temperature is not changing with time. The concept 'climate space', is used as a means for quantifying the limits of an animal's thermal environment. These limits are discussed in detail and methods for calculating these limits are described. A problem set is used to check the assumptions of the climate space model as well as to extend it. A background in heat transfer processes is recommended.
+Several modules in the thermodynamic series considered the application of the First Law to biological systems and the heat transfer processes that govern the energy balance of organisms. This module discusses a model for which the animal's temperature is not changing with time. The concept 'climate space' is used as a means for quantifying the limits of an animal's thermal environment. These limits are discussed in detail and methods for calculating these limits are described. A problem set is used to check the assumptions of the climate space model as well as to extend it. A background in heat transfer processes is recommended.
 
 ## INTRODUCTION
 
@@ -41,7 +42,7 @@ Tracy (1976) has, however, shown that when investigating the thermal and mass ba
 
 ### Absorbed radiation
 
-The most complex of the factors Porter and Gates (1969) considered is the absorbed radiation because it is composed of several shortwave and longwave components. Gates (1978) has written extensively about how to compute absorbed radiation, and we will present a short review here. In general, $Q_a$ is the product of surface absorptivity, the surface area exposed to a particular source of radiation, and the intensity of that source. This can be written:
+The most complex of the factors Porter and Gates (1969) considered is the absorbed radiation because it is composed of several shortwave and longwave components. In general, $Q_a$ is the product of surface absorptivity, the surface area exposed to a particular source of radiation, and the intensity of that source. This can be written:
 \begin{equation}
 Q_a = \bar{a}_1 A_1 S + \bar{a}_2 A_2 s + \bar{a}_3 A_3 r (S + s) + \bar{a}_4 A_4 R_g + \bar{a}_5 A_5 R_a
 (\#eq:climatespace-2)
@@ -56,7 +57,7 @@ where
 * $r$ is the reflectivity of the ground. 
 </div>
 
-Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (1978) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
+Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (197, module 8) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
 \begin{equation}
 Q_a = \frac{1}{\pi} \bar{a} S + 0.5 [\bar{a}s + \bar{a}r(s+S) + R_g + R_a]
 (\#eq:climatespace-3)
@@ -86,17 +87,19 @@ and the other symbols are as in Equation \@ref(eq:climatespace-2). Gates has ass
 
 Finally, we consider the condition when an organism is exposed to full sunlight with an absorptivity to shortwave radiation of 0.8. In this case, the radiation as a function of air temperature is given by the line to the right of the blackbody line. This line is "fuzzy" to remind us that this relationship is less well-defined than the other curves. The assumptions and calculations necessary to plot this line are discussed in Appendix I. If we now consider the difference between a blackbody and a full sunlight habitat, both at $20^{\circ}C$ air temperature, we see that the latter would receive $300 W m^{-2}$ more radiation.
 
-The importance of Figure \@ref(fig:fig-climatespace-1) is that we have established a region bounded by the clear sky, plus ground radiation line and the 0.8 absorptivity line that limits the combinations of $Q_a$ and $T_a$ found in the natural environment. This region can be divided into areas: one between the clear sky at night and blackbody line which governs the range of all nighttime conditions ($S$ and $s$ of Equation \@ref(eq:climatespace-2) are zero), and a second area enclosed by the blackbody and the 0.8 absorptivity lines which gives the range of most daytime conditions. The average radiation intensity can be less than blackbody levels during the day when clouds prevent the surface from receiving shortwave radiation. To see this we need to compute the absorbed radiation in the open, $Q_{a0}$ , and compare it to that absorbed in a blackbody cavity, $Q_{ac}$. If solar radiation is zero ($S = s = 0$) then Equation \@ref(eq:climatespace-3) reduces to $Q_{a0} = \frac{(R_a + R_g)}{2}$. We assume that the surface temperature is equal to the air temperature and the temperature at the base of the clouds is less than air temperature so $R_a < R_g$ and $Q_{a0} < Q_{ac}$ . In this case, the higher the clouds the cooler the radiating surface of their bases. This radiation, however, will always be greater than the radiation from a clear sky at night.
+The importance of Figure \@ref(fig:fig-climatespace-1) is that we have established a region bounded by the clear sky, plus ground radiation line and the 0.8 absorptivity line that limits the combinations of $Q_a$ and $T_a$ found in the natural environment. This region can be divided into areas: one between the clear sky at night and blackbody line which governs the range of all nighttime conditions ($S$ and $s$ of Equation \@ref(eq:climatespace-2) are zero), and a second area enclosed by the blackbody and the 0.8 absorptivity lines which gives the range of most daytime conditions. The average radiation intensity can be less than blackbody levels during the day when clouds prevent the surface from receiving shortwave radiation. To see this we need to compute the absorbed radiation in the open, $Q_{a0}$, and compare it to that absorbed in a blackbody cavity, $Q_{ac}$. If solar radiation is zero ($S = s = 0$) then Equation \@ref(eq:climatespace-3) reduces to $Q_{a0} = \frac{(R_a + R_g)}{2}$. We assume that the surface temperature is equal to the air temperature and the temperature at the base of the clouds is less than air temperature so $R_a < R_g$ and $Q_{a0} < Q_{ac}$. In this case, the higher the clouds the cooler the radiating surface of their bases. This radiation, however, will always be greater than the radiation from a clear sky at night.
 
-```{r fig-climatespace-1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Relationship between the total amount of radiation flux incident on an object as a function of the air temperature. At night the object receives thermal radiation from the ground and atmosphere. In the daytime the object receives direct, reflected and scattered sunlight, in addition to the thermal radiation from the ground and atmosphere. The absorptivity to sunlight is 0.8. The right-hand boundary line is fuzzy to remind us that it is an average value. From Porter, W. P. and D. M. Gates. 1969. p. 234.'}
+```{r fig-climatespace-1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Relationship between the total amount of radiation flux incident on an object as a function of the air temperature. At night the object receives thermal radiation from the ground and atmosphere. In the daytime the object receives direct, reflected and scattered sunlight, in addition to the thermal radiation from the ground and atmosphere. The absorptivity to sunlight is 0.8. The right-hand boundary line is fuzzy to remind us that it is an average value. From Porter, W. P. and D. M. Gates. 1969. p. 234.'}
 knitr::include_graphics('figures/fig-climatespace-1.png')
 ```
+
 
 ```{r fig-climatespace-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "70%", fig.align = "default", fig.cap='Daily variation in the radiant environment in different microhabitats under different general weather conditions. The upper portion of the figure describes daily fluctuations of air temperature ($T_a$) and temperature of the surface of the substrate ($T_g$). From Morhardt, S. S. and D. M. Gates. 1974. P. 20.'}
 knitr::include_graphics('figures/fig-climatespace-2.png')
 ```
 
 ```{r fig-climatespace-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Climate diagram for the habitat. Data on these diagrams indicate the total amount of radiation that is absorbed by a geometrical model of a ground squirrel under conditons of air temperature and radiationshown in Figure 9.2. The model is oriented in two ways with respect to direct solar radiation to show how absorbed radiation differs at the same air temperature and thesame time of day with differences in orientation toward the sun. The amount of radiation absorbed is greatest ($Q_{abs-maximum}$) when the long axis of the model is normal to the direction of the sun and least ($Q_{abs-minimum}$) when the hemispherical end of the model is toward the sun. All other orientations would be intermediate between these extremes. Data points are taken directly from Figure 9.2 at hourly or half-hourly intervals and are identified at selected points by showing the hour of the day in solar time adjacent to the points.  The line for sunlight 74% absorbed represents the maximum amount of radiation that could be absorbed by the model in direct sunlight at any air temperature. The blackbody curve-indicates the intensity of radiation from a blackbody at any air temperature, and the curve labeled \"night time average of clear sky plus ground\" indicates the minimum energy likely to be absorbed by the model when exposed to a night. sky radiating at a temperature which is cooler than the air. From Morhardt, S. S. and D. M. Gates. 1974. P. 25.'}
+
 knitr::include_graphics('figures/fig-climatespace-3.png')
 ```
 
@@ -108,11 +111,11 @@ We expect two kinds of limits under steady state assumptions: one area where the
 
 If we superimpose Figure \@ref(fig:fig-climatespace-4) on Figure \@ref(fig:fig-climatespace-1), the intersection or shaded region of Figure \@ref(fig:fig-climatespace-5) is the **climate space** of the organism. It should be clear to the reader that the northwest and southeast boundaries are the results of environmental constraints while the northeast and southwest limits are the result of the organism's need for homeostasis. The physiological limits can be calculated explicitly using the First Law of Thermodynamics. This is the task of the next section.
 
-```{r fig-climatespace-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='In Region I the animal is too cold. In Region II the animal can maintain thermal equilibrium. In Region III the animal will become overheated. Arrow 1 indicates the change in environmental conditions that takes place early in the morning. The added warmth of the sun makes the environment more \'comfortable\'. Arrow 2 refers to the change in $Q_a$ and $T_a$ in the mid-afternoon on a clear summer day.'}
+```{r fig-climatespace-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='In Region I the animal is too cold. In Region II the animal can maintain thermal equilibrium. In Region III the animal will become overheated. Arrow 1 indicates the change in environmental conditions that takes place early in the morning. The added warmth of the sun makes the environment more \'comfortable\'. Arrow 2 refers to the change in $Q_a$ and $T_a$ in the mid-afternoon on a clear summer day.'}
 knitr::include_graphics('figures/fig-climatespace-4.png')
 ```
 
-```{r fig-climatespace-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='If we superimpose Figure 1 on Figure 4 the result is the crossin the diagram called the climate space of the organism. The northwest ($E_1$) hatched region and southeast ($E_2$) boundaries are due to the physical environment. The shouthwest ($P_1$) and northeast ($P_2$) boundaries are due to the physiological the organism.'}
+```{r fig-climatespace-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='If we superimpose Figure 1 on Figure 4 the result is the crossin the diagram called the climate space of the organism. The northwest ($E_1$) hatched region and southeast ($E_2$) boundaries are due to the physical environment. The shouthwest ($P_1$) and northeast ($P_2$) boundaries are due to the physiology of the organism.'}
 knitr::include_graphics('figures/fig-climatespace-5.png')
 ```
 
@@ -136,11 +139,11 @@ where, again, $T_{air}$ is in Kelvin. If we assume that ground temperature is eq
 
 The third and most involved computation is the radiation environment outdoors in full sun, which combines the longwave radiation plus the direct and diffuse solar radiation from above, $_hS$ and $_hD$, and the reflected radiation from the ground $_hG$. The longwave radiation component we obtain as above. To get a rough approximation of the direct solar radiation we first take the solar constant $\overline S_o$, which is the average radiation flux hitting a horizontal plane on the outer edge of the earth's atmosphere over a year, and multiply it by a correction factor accounting for the distance between the earth and sun at the time of year of interest $(\overline d / d)^2$ where $\overline d$ is the average distance between the earth and the sun and $d$ is the actual distance. This gives us the extra-terrestrial radiation $S_o$. Then we need to account for the attenuation due to the depth of atmosphere the beams of sunlight are travelling through before hitting the ground, which depends in part on the angle of the sun $z$ (in radians). For example, at sunrise the rays are passing through more atmosphere than at midday. To compute this we need the optical air mass $m  = sec(z) = 1/cos(z)$ and the transmittance of the atmosphere $\tau$ (around 0.6), which can then be used in equation 6.36 from Gates (1980)
 
-$$_hS = S_o \tau ^ m cos(z)$$
+$$_hS = S_o \tau ^ m \cos(z)$$
 
 We can then obtain an estimate of the diffuse radiation, i.e. the sunlight scattered by the atmosphere, using equation 6.36 of Gates (1980) 
 
-$$_hD = S_o (0.271 - 0.294 \tau ^ m) cos(z)$$
+$$_hD = S_o (0.271 - 0.294 \tau ^ m) \cos(z)$$
 
 Finally, if we know the solar absorptivity of the ground $\alpha_g$ we can multiply the amount of direct and diffuse solar radiation hitting the ground by $1-\alpha_g$, i.e. by the solar reflectance of the ground, to get the solar radiation reflected up at the object from the ground
 
@@ -868,7 +871,7 @@ To write down the heat energy budget of a lizard we need only sum up the heat tr
 
 \begin{equation}
 Q_a = \varepsilon \sigma ( T_s + 273)^4 + h_c (T_s - T_a )
-(\#eq:5)
+(\#eq:climatespace-5)
 \end{equation}
 
 where
@@ -885,7 +888,7 @@ Originally Porter and Gates (1969) suggested that the convection coefficient sho
 
 \begin{equation}
 h_c = k_c V^{0.33} D^{-0.67}
-(\#eq:6)
+(\#eq:climatespace-6)
 \end{equation}
 
 where
@@ -895,11 +898,11 @@ where
 * $D$ = diameter of the animal or cylinder ($m$).
 </div>
 
-Recently Mitchell (1976) found a spherical shape is the best overall model for convective transfer in the terrestrial environment. He used weight divided by density, which is equal to the volume, all to the one-third power as the characteristic dimension instead of the diameter. (Using laboratory measurements it is often possible to get better estimates of he for a particular geometry.) Generally one would calculate the Reynolds and Nusselt numbers to find the heat transfer coefficient (Kreith 1973). This procedure is outlined in the module on heat transfer processes (Stevenson 1978). With a number of assumptions which introduce only small errors, it is possible to write Mitchell's result in the same form as that of Porter and Gates (see Appendix II). We have
+Recently Mitchell (1976) found a spherical shape is the best overall model for convective transfer in the terrestrial environment. He used weight divided by density, which is equal to the volume, all to the one-third power as the characteristic dimension instead of the diameter. (Using laboratory measurements it is often possible to get better estimates of $h_c$ for a particular geometry.) Generally one would calculate the Reynolds and Nusselt numbers to find the heat transfer coefficient (Kreith 1973). This procedure is outlined in the module on heat transfer processes (Stevenson 1978). With a number of assumptions which introduce only small errors, it is possible to write Mitchell's result in the same form as that of Porter and Gates (see Appendix II). We have
 
 \begin{equation}
 h_c = k_s V^{0.60} {M_b}^{-0.133}
-(\#eq:7)
+(\#eq:climatespace-7)
 \end{equation}
 
 where
@@ -912,7 +915,7 @@ and $h_c$ and $V$ are as in Equation 6. We further assume that the body temperat
 
 \begin{equation}
 Q_a = \varepsilon \sigma (T_b + 273)^4 + k_s V^{0.60} {M_b}^{-0.133} (T_b-T_a)
-(\#eq:8)
+(\#eq:climatespace-8)
 \end{equation}
 
 We can implement this analysis in R: 
@@ -961,7 +964,8 @@ points(Q_a_plot, T_a_plot, type="l")
 
 ```
 
-To construct the climate space of the lizard, we need to make assumptions about the variables of Equation \@ref(eq:8). If $V$, $M_b$ and $T_b$ are specified as constants, there is a linear relationship between $Q_a$ and $T_a$. We illustrate this in Figure \@ref(fig:fig-climatespace-6) by plotting the upper line for $V = 1.0 m s^{-1}$, $M_b = 0.027 kg$, and $T_b = 39°C$, and the bottom line with only $T_b$ changed to $3°C$. The shaded region in Figure \@ref(fig:fig-climatespace-6) is the climate space of the reptile if the wind speed is the average value for the microclimate that the lizard inhabits, and if the body temperatures given are the upper and lower bounds that the animal can tolerate.
+To construct the climate space of the lizard, we need to make assumptions about the variables of Equation \@ref(eq:climatespace-8). If $V$, $M_b$ and $T_b$ are specified as constants, there is a linear relationship between $Q_a$ and $T_a$. We illustrate this in Figure \@ref(fig:fig-climatespace-6) by plotting the upper line for $V = 1.0 m s^{-1}$, $M_b = 0.027 kg$, and $T_b = 39°C$, and the bottom line with only $T_b$ changed to $3°C$. The shaded region in Figure \@ref(fig:fig-climatespace-6) is the climate space of the reptile if the wind speed is the average value for the microclimate that the lizard inhabits, and if the body temperatures given are the upper and lower bounds that the animal can tolerate.
+
 
 Examination of the climate space diagram allows interpretation of several of the parameters of the heat energy balance model. The boundary points of the space indicate the extreme values that the lizard is likely to encounter and still survive. The lower left-hand point of the diagram tells us that if the reptile is exposed to a clear sky at night, its body temperature will remain high enough to survive as long as the air temperature is above $7°C$. The opposite corner shows that $27°C$ is the extreme air temperature that the lizard could endure if it were exposed to strong sunlight.
 
@@ -969,13 +973,13 @@ The effect of changing color is also illustrated in Figure \@ref(fig:fig-climate
 
 Increased wind speed increases the relative importance of the convective term and couples the body temperature of the animal more closely to the air temperature. Figure \@ref(fig:fig-climatespace-7) shows the influence of wind speed on the energy balance. As the wind speed increases from $0.1 m s^{-1}$ to $10.0 m s^{-1}$ the physiological line becomes more horizontal.
 
-We can visualize the effect of size by picking body masses of 0.001, 0.10, 10.0 and 100.0 kg to insert in Equation \@ref(eq:8) and plotting the lines in Figure \@ref(fig:fig-climatespace-8). As size or weight increases, the boundary layer thickens, decreasing the rate of convective exchange (a smaller component of the heat balance). This is readily seen algebraically by re-examining the convection term. We conclude that increasing size has the same effect as decreasing wind speed. It is also clear from Figure \@ref(fig:fig-climatespace-8) that most lizards (less than 1.0 kg) are closely tied to the air temperature.
+We can visualize the effect of size by picking body masses of 0.001, 0.10, 10.0 and 100.0 kg to insert in Equation \@ref(eq:climatespace-8) and plotting the lines in Figure \@ref(fig:fig-climatespace-8). As size or weight increases, the boundary layer thickens, decreasing the rate of convective exchange (a smaller component of the heat balance). This is readily seen algebraically by re-examining the convection term. We conclude that increasing size has the same effect as decreasing wind speed. It is also clear from Figure \@ref(fig:fig-climatespace-8) that most lizards (less than 1.0 kg) are closely tied to the air temperature.
 
 ```{r fig-climatespace-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The hatched area is the climate space of a lizard with absorptivity to sunlight of 0.8. If the animal decreases its absorptivity to 0.6 it can increase the air temperature it can withstand from 30 to 32.5 °C. The darkened areas refer to problem 4.'}
 knitr::include_graphics('figures/fig-climatespace-6.png')
 ```
 
-There are several observations which suggest that the thermoregulation behaviors we might predict from considering this model indeed occur. Porter and Gates (1969) observed that the small lizard (*Uta stansburiana*) (0.004 kg approximately) which is tightly coupled to the air temperature climbs rocks early in the morning. They hypothesized that this behavior was taken to avoid the cold layer of air at the ground surface. Alternatively we might ask what options are available if the lizard does not want to become too hot. From Equation \@ref(eq:8) we see that there are at least two strategies. The animal can reduce the absorbed radiation $Q_a$ by going to a shaded environment or it can increase its convective heat loss by climbing bushes where the wind speed is greater and $T_a$ is lower. Descriptions of the daily activity patterns of the desert iguana (*Dipsosaurus dorsalis*) from field observations, show that both these options are used. The lizard emerges from its burrow in the morning. As $T_a$ and $Q_a$ increase, the animals move into the shade, then higher into the shrubs, and finally retreat Porter et al. (1973) found good agreement between the predicted behavior from their heat transfer model and the morning activity pattern of this species.
+There are several observations which suggest that the thermoregulation behaviors we might predict from considering this model indeed occur. Porter and Gates (1969) observed that the small lizard (*Uta stansburiana*) (0.004 kg approximately) which is tightly coupled to the air temperature climbs rocks early in the morning. They hypothesized that this behavior was taken to avoid the cold layer of air at the ground surface. Alternatively we might ask what options are available if the lizard does not want to become too hot. From Equation \@ref(eq:climatespace-8) we see that there are at least two strategies. The animal can reduce the absorbed radiation $Q_a$ by going to a shaded environment or it can increase its convective heat loss by climbing bushes where the wind speed is greater and $T_a$ is lower. Descriptions of the daily activity patterns of the desert iguana (*Dipsosaurus dorsalis*) from field observations, show that both these options are used. The lizard emerges from its burrow in the morning. As $T_a$ and $Q_a$ increase, the animals move into the shade, then higher into the shrubs, and finally retreat Porter et al. (1973) found good agreement between the predicted behavior from their heat transfer model and the morning activity pattern of this species.
 
 ```{r fig-climatespace-7, echo=FALSE, fig.cap='To investigate the effect of windspeed on the thermal balance', fig.show = "hold", out.width = "100%", fig.align = "default", fig.height=4}
 knitr::include_graphics('figures/fig-climatespace-7.png')
@@ -992,7 +996,7 @@ Our second and final example is the climate space diagram of the cardinal (*Rich
 The energy balance must now be written
 \begin{equation}
 M + Q_a = \varepsilon \sigma (T_r + 273)^4 + h_c (T_r - T_a) + E_{ex}
-(\#eq:9)
+(\#eq:climatespace-9)
 \end{equation}
 
 where
@@ -1010,48 +1014,51 @@ Since there are internal sources and sinks of energy production ($M$ and $E_{ex}
 Therefore, 
 \begin{equation}
 M - E_{ex} = \frac{k_b}{d_b} (T_b - T_s)
-(\#eq:10)
+(\#eq:climatespace-10)
 \end{equation}
 
 where $k_b$ is the thermal conductivity of fat ($0.205 W m^{-1} {^{\circ}C^{-1}}$). By similar reasoning across the second potential we have
 
 \begin{equation}
 M - E_{ex} - E_{sw}= \frac{k_f}{d_f} (T_s - T_r)
-(\#eq:11)
+(\#eq:climatespace-11)
 \end{equation}
 
 where $d_f$ is the thickness of the fur or feathers in meters and $k_f$ is the thermal conductivity of air ($0.025 W m^{-1} {^{\circ}C^{-1}}$). The quantity of particular interest is the difference between the body temperature and the surface temperature $T_b - T_r$. We see that $T_b - T_r$ can be written as 
 
 \begin{equation}
 T_b - T_r = (T_b - T_s) + (T_s - T_r)
-(\#eq:12)
+(\#eq:climatespace-12)
 \end{equation}
 
-Rearranging our heat flow equations (\@ref(eq:10) and \@ref(eq:11)) and substituting into Equation \@ref(eq:12) for $T_b - T_s$ and $T_s - T_r$ we have 
+Rearranging our heat flow equations (\@ref(eq:climatespace-10) and \@ref(eq:climatespace-11)) and substituting into Equation \@ref(eq:climatespace-12) for $T_b - T_s$ and $T_s - T_r$ we have 
 
 \begin{equation}
 T_b - T_r = \frac{d_b}{k_b} (M - E_{ex}) + \frac{d_f}{k_f} (M - E_{ex} - E_{sw}).
-(\#eq:13)
+(\#eq:climatespace-13)
 \end{equation}
 
-In the case of the cardinal $E_{sw}$ is assumed to be zero so Equation \@ref(eq:13) reduces to
+In the case of the cardinal $E_{sw}$ is assumed to be zero so Equation \@ref(eq:climatespace-13) reduces to
 
 \begin{equation}
 T_b + T_r = (M - E_{ex}) (\frac{d_b}{k_b} + \frac{d_f}{k_f})
-(\#eq:14)
+(\#eq:climatespace-14)
 \end{equation}
 
-Equation \@ref(eq:14) can be used to calculate the surface temperature $T_r$ if the other variables are specified. Once $T_r$ is known, Equation \@ref(eq:9) can be used to construct the climate space. Values for the parameters of Equations \@ref(eq:9) and \@ref(eq:14) are taken from Porter and Gates (1969) and reproduced in Table 1. These are used to construct the climate space of the cardinal in Figure \@ref(fig:fig-climatespace-10). The numerals correspond to those in the table. Given these conditions the cardinal needs increased metabolic output and thicker insulation to withstand cold conditions. Such low levels of radiation and air temperature will occur just before sunrise during the winter. One would expect the bird to minimize its heat loss by seeking a sheltered microhabitat to avoid radiating to the atmosphere and to reduce the wind speed. Porter and Gates (1969, p. 237) add, "By tucking its bill under its wing, the cardinal will also reduce surface area and water loss." It is also interesting to examine the range of conditions for which the animal can remain in steady state if its metabolic output is at a minimum and $T_b$ is constant. The set of lines numbered II and III illustrate these conditions. Line IV is the upper limit ofstress that the cardinal can endure.
+Equation \@ref(eq:climatespace-14) can be used to calculate the surface temperature $T_r$ if the other variables are specified. Once $T_r$ is known, Equation \@ref(eq:climatespace-9) can be used to construct the climate space. Values for the parameters of Equations \@ref(eq:climatespace-9) and \@ref(eq:climatespace-14) are taken from Porter and Gates (1969) and reproduced in Table \@ref(tab:climatespace-1). These are used to construct the climate space of the cardinal in Figure \@ref(fig:fig-climatespace-10). The numerals correspond to those in the table. Given these conditions the cardinal needs increased metabolic output and thicker insulation to withstand cold conditions. Such low levels of radiation and air temperature will occur just before sunrise during the winter. One would expect the bird to minimize its heat loss by seeking a sheltered microhabitat to avoid radiating to the atmosphere and to reduce the wind speed. Porter and Gates (1969, p. 237) add, "By tucking its bill under its wing, the cardinal will also reduce surface area and water loss." It is also interesting to examine the range of conditions for which the animal can remain in steady state if its metabolic output is at a minimum and $T_b$ is constant. The set of lines numbered II and III illustrate these conditions. Line IV is the upper limit ofstress that the cardinal can endure.
+
 
 ```{r fig-climatespace-9, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Concentric cylinder model of animal for heat transfer analysis. M=metabolism,$E_{ex}$=respiratory moisture loss, $E_{sw}$=moisture loss by sweating, $T_b$=body temperature, $T_s$=skin temperature, $T_r$= radiant surface temperature, $k_b$ = conductivity of fat, $k_f$ = conductivity of fur or feathers, $d_b$=thickness of fat, and $d_f$= thickness of fur or feathers. From Porter, W.P.and D.M. Gates. 1969. P. 230.'}
+
 knitr::include_graphics('figures/fig-climatespace-9.png')
 ```
 
 ```{r fig-climatespace-10, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Climate diagram for a cardinal showing relations between air temperature, radiation absorbed, and wind speed for constant body and radiant surface temperatures at actual values of metabolic and water loss rates. From Porter, W. P. and D. M. Gates. 1969. p. 237.'}
+
 knitr::include_graphics('figures/fig-climatespace-10.png')
 ```
 
-> Table I. Values for the climate space of the cardinal.
+> Table (\#tab:climatespace-1). Values for the climate space of the cardinal.
 
 |    |$M$   |$E_{ex}$ |$d_f$ |$d_b$  |$T_b$  |$T_r$  |
 |---:|---:  |---:     |---:  |---:   |---:   |---:   |
@@ -1148,7 +1155,7 @@ Zervanos, S. M., and N. F. Hadley. 1973. Adaptational biology and energy relatio
 
 ## PROBLEMS
 
-1. Table A provides metabolic rate, water loss, and fur and fat thicknesses for several species of animals. Using this information and Equations \@ref(eq:10) and \@ref(eq:11), calculate the maximum and minimum temperature differentials across the fat ($T_b - T_s$) and fur layers ($T_s - T_r$). Plot these four values placing ($T_s - T_r$) values on the abscissa. Shade the rectangle formed. Include lines of constant total differential ($T_b - T_r$). 
+1. Table A provides metabolic rate, water loss, and fur and fat thicknesses for several species of animals. Using this information and Equations \@ref(eq:climatespace-10) and \@ref(eq:climatespace-11), calculate the maximum and minimum temperature differentials across the fat ($T_b - T_s$) and fur layers ($T_s - T_r$). Plot these four values placing ($T_s - T_r$) values on the abscissa. Shade the rectangle formed. Include lines of constant total differential ($T_b - T_r$). 
 
 Rank the homeotherms from the highest to lowest difference between body temperature and surface temperature. Under what environmental conditions would an animal like to make this difference large? When would the animal like to make this difference small? What other mammals do you know of besides the pig that have thick fat layers? Why might this be? How does fat compare with fur or feathers as an insulation material? What is the relative efficiency of each? Is it clear now that the assumption that $T_b$ ~ $T_r$ for the lizard is not critical?
 
@@ -1213,7 +1220,7 @@ $M$, $E_{ex}$, $E_{sw}$ in W m^-2^, $d_b$ and $d_f$ in m $\times$ 10^-3^
 | Shrew    |     0.018     |      0.010      |
 
 
-6. W. P. Porter (personal communication) has pointed out that Equations \@ref(eq:10) and \@ref(eq:11) apply to heat flow in a slab not a cylinder as shown in Figure \@ref(fig:fig-climatespace-9). Derive the equation for heat flow through a cylinder (see Kreith 1973 or Ilatheway 1977) and through a plate of the same average area under steady state conditions. When will the two formulae give approximately the same result?
+6. W. P. Porter (personal communication) has pointed out that Equations \@ref(eq:climatespace-10) and \@ref(eq:climatespace-11) apply to heat flow in a slab not a cylinder as shown in Figure \@ref(fig:fig-climatespace-9). Derive the equation for heat flow through a cylinder (see Kreith 1973 or Ilatheway 1977) and through a plate of the same average area under steady state conditions. When will the two formulae give approximately the same result?
 
 Compare this with the values used in Porter and Gates (1969) tabled below. Why does this work?
 
@@ -1240,11 +1247,11 @@ knitr::include_graphics('figures/fig-climatespace-14.png')
 
 ## PROBLEM SOLUTIONS
 
-Equation \@ref(eq:10) is 
+Equation \@ref(eq:climatespace-10) is 
 $$M-E_{ex}=\frac{k_b}{d_b}(T_b-T_s)$$
-Equation \@ref(eq:11) is
+Equation \@ref(eq:climatespace-11) is
 $$M-E_{ex}-E_{sw}=\frac{k_f}{d_f}(T_s-T_r)$$
-$k_b = 0.205Wm^{-1}°C^{-1}$ and $k_f = 0.025Wm^{-1}°C^{-1}$. From this information maximum and minimum values of ($T_b - T_s$) and ($T_s - T_r$) can be calculated. These are tabulated below. The results are plotted on the two figures (Porter and Gates 1969, Figures 5 and 6, p. 231).
+$k_b = 0.205Wm^{-1}^\circ C^{-1}$ and $k_f = 0.025Wm^{-1}^\circ C^{-1}$. From this information maximum and minimum values of ($T_b - T_s$) and ($T_s - T_r$) can be calculated. These are tabulated below. The results are plotted on the two figures (Porter and Gates 1969, Figures 5 and 6, p. 231).
 
 |              | ($T_s-T_r$) |         | ($T_b-T_s$) |         |
 |--------------|:-----------:|:-------:|:-----------:|:-------:|
@@ -1277,7 +1284,7 @@ From the text we have
 $$\frac{k_b}{k_f}=\frac{0.205}{0.025}=8.2$$
 The conductivity of fat is 8.2 times greater than that of air. Therefore, to receive the same resistance to heat flow, an animal would have to have 8.2 times the thickness of fat. The lizard can only maintain a maximum 0.5 °C difference between its skin and body temperature.
 
-2. The first step is to calculate $T_r$ using Equation \@ref(eq:13). This yields:
+2. The first step is to calculate $T_r$ using Equation \@ref(eq:climatespace-13). This yields:
 
 $$T_r°C$$
 
@@ -1480,8 +1487,8 @@ $\begin{aligned}
 &\left. \begin{array}{l}
 M=0.2470-0.0064T_E, \;M(cal\;cm^2\;min^{-1}) \\
 M=172-4.47T_E, \;M(W\;m^{-2})
-\end{array} \right\} 5 < T_E < 27 °C \\
-&\;M=51\;W\;m^{-2} \;\;\;\;27 < T_E < 35 °C \\
+\end{array} \right\} 5 < T_E < 27 ^\circ C \\
+&\;M=51\;W\;m^{-2} \;\;\;\;27 < T_E < 35 ^\circ C \\
 &\;E=0.00808e^{0.03771T_E},\;E(cal\;cm^{-2}\;min^{-1}) \\
 &\;E=5.64e^{0.03771T_E},\;E(W\;m^{-2}) \\
 \end{aligned}$
@@ -1499,11 +1506,12 @@ h_c &= 5.36,\;\;21.36,\;\;56.1 \\
 V &= 0.01,\;\;1.0,\;\;5.0\;\;ms^{-1}
 \end{align*}
 
-The resulting climate space diagram is given on page 48.
+The resulting climate space diagram is given below.
 
 If the animal were simply resting outside, to reduce its metabolism to the lowest levels. it should be active from 1100 to 1500 hours. The reason to go above ground, however, is for activity. Therefore, if metabolic rate increases 1.5 times, preferred activity times should shift to 800-1000 or 1500-1600 hours. It is hard to say much about water loss when the animal is active. According to the figure, if $M$ increases to $82 W m^{-2}$ then $E$ drops. But if respiration rate increases with activity then $E$ may also increase. Morhardt and Gates considered a wide variety of above-ground habitats. A shaded environment gave much lower radiation loads during the day. If the animal orients its body parallel to the sun, this lowers $Q_a$ also. A great deal more could have been said about the thermoregulation strategies if the thermal environment of the burrows were monitored and if microhabitat usage and body temperature as a function of time of day had been recorded. One would predict that shaded environments including the burrow would be used more in the middle of the day. To test this, one would have to make hourly observations on microhabitat usage.
 
-```{r fig-climatespace-p7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",}
+
+```{r fig-climatespace-p7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default"}
 knitr::include_graphics('figures/fig-climatespace-p7.png')
 ```
 

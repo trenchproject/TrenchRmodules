@@ -6,12 +6,11 @@ output:
 # Heat Transfer. {#heattransfer}
 
 Heat Transfer Processes for the Thermal Energy Balance of Organisms.
+
 author: Stevenson, R. D.
 
 ## PREFACE
-This module describes heat transfer processes involved in the exchange of heat between an organism and its environment. Emphasis is placed on conduction, convection, and evaporation, three of the physical processes that affect the physiological, behavioral, and ecological activities of all organisms. Radiation transfer is described in a separate module. Four examples taken from the ecological literature are used to emphasize the biological effects of temperature and energy budgets. Three systems are used to illustrate heat transfer principles and their biological importance. These include heat flow in soil, a leaf, and a lizard. Ecological examples are used throughout the text and problem set. Calculus and first-year physics are prerequisites for the module.
-
-The way in which an organism exchanges heat with its environment explains several characteristics of its behavior and its preferred habitat. This module presents a thorough introduction to heat transfer processes and assumes the reader has a background in calculus and first-year physics. Emphasis is placed on conduction, convection and evaporation. Radiation transfer is described in its own module. Ecological examples are used throughout the text and the problem set.
+This module describes heat transfer processes involved in the exchange of heat between an organism and its environment. Emphasis is placed on conduction, convection, and evaporation, three of the physical processes that affect the physiological, behavioral, and ecological activities of all organisms. Radiation transfer is described in a separate module. Four examples taken from the ecological literature are used to emphasize the biological effects of temperature and energy budgets. Three systems are used to illustrate heat transfer principles and their biological importance. These include heat flow in soil, a leaf, and a lizard. Ecological examples are used throughout the text and problem set. The way in which an organism exchanges heat with its environment explains several characteristics of its behavior and its preferred habitat. This module presents a thorough introduction to heat transfer processes and assumes the reader has a background in calculus and first-year physics. 
 
 ## INTRODUCTION
 
@@ -27,7 +26,7 @@ Our third example concerns temperature adaptations in amphibians. Snyder and Wea
 <!-- Update TTB literature-->
 
 It is sometimes useful to take a more general outlook. In that spirit, here are six ecological questions which could be more easily interpreted and answered with a sound knowledge of heat transfer physics:
- 
+
 1. Does the climate limit the geographical distribution of an organism?
 2. What selective advantage is there to being a particular color, shape, or size?
 3. What microhabitats are available throughout the day to maintain a thermal balance?
@@ -35,7 +34,7 @@ It is sometimes useful to take a more general outlook. In that spirit, here are 
 5. What selective advantage is there to be a poikilotherm; or homeotherm?
 6. How does the thermal balance affect photosynthetic and transpiration rate of a plant?
 
-```{r fig-heattrans-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The relation of increase in range of temperature tolerance and increase in environmental temperature variation (see text for methods of determining these values). The continuous line is a line of equality relating increase in temperature tolerance and environmental temperature variation. The dashed line has been fitted to the data with the method of least squares. The numbers indicate the species included. These are: 1) *Bufo alvarius*, 2) *B. debilis*, 3) *B. marinus*, 4) *B. marmorcus*, 5) *B. mazatlanensis*, 6) *Hyla regina*, 7) *H. smithi*, 8) *Leptodactylus melanolus*, 9)*Pternohyla fodiens*, 10) *Scaphiopus hammondi*, 11) *Smilisca baudini*. (From Snyder, G.K. and W.W. Weathers, 1975, p. 98).'}
+```{r fig-heattrans-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The relation of increase in range of temperature tolerance and increase in environmental temperature variation (see text for methods of determining these values). The continuous line is a line of equality relating increase in temperature tolerance and environmental temperature variation. The dashed line has been fitted to the data with the method of least squares. The numbers indicate the species included. These are: 1) Bufo alvarius, 2) *B. debilis*, 3) *B. marinus*, 4) *B. marmorcus*, 5) *B. mazatlanensis*, 6) *Hyla regina*, 7) *H. smithi*, 8) *Leptodactylus melanolus*, 9)*Pternohyla fodiens*, 10) *Scaphiopus hammondi*, 11) *Smilisca baudini*. (From Snyder, G.K. and W.W. Weathers, 1975, p. 98).'}
 knitr::include_graphics('figures/fig-heattrans-1.png')
 ```
 
@@ -113,7 +112,7 @@ and
 * $T$ = temperature ($K$).
 </div>
 
-Third, the Stefan-Boltzmann Law provides the even more remarkable result that the total energy emitted, $Q_{emit}$, by a radiating body (the area under the curve (Fig. \@ref(fig:fig-heattrans-4))) is proportional to the fourth power of the surface temperature $T_s$.
+Third, the Stefan-Boltzmann Law provides the even more remarkable result that the total energy emitted, $Q_{emit}$, by a radiating body (the area under the curve, Fig. \@ref(fig:fig-heattrans-4)) is proportional to the fourth power of the surface temperature $T_s$.
 \begin{equation}
 Q_{emit} = \varepsilon \sigma (273 + T_s)^4
 (\#eq:heattrans-4)
@@ -128,9 +127,9 @@ and
 </div>
 Roseman (1978) gives a more complete discussion of these laws.
 
-Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table 1 gives the emissivities of some plants and animals.
+Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table \@ref(tab:table-heattrans-1) gives the emissivities of some plants and animals.
 
-> Table 1. Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
+> Table (\#tab:table-heattrans-1). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
 
 Leaves
 
@@ -160,7 +159,7 @@ Animals
 
 
 
-  > Table 2. Reflectivities of Biological Materials for Solar Radiation (from Monteith, J.L., 1973, pp. 66-67.)
+  > Table (\#tab:table-heattrans-2). Reflectivities of Biological Materials for Solar Radiation (from Monteith, J.L., 1973, pp. 66-67.)
   
   LEAVES
   Reflection coefficients r (%) for Solar Radiation
@@ -248,21 +247,21 @@ where
 * $r(\lambda)$ = reflectivity at wavelength $\lambda$,
 * $t(\lambda)$ = transitivity at wavelength $\lambda$,
 </div>
-and each term is between zero and one (see Siegel and Howell 1972 for a more complete discussion). Table 2 gives some values for $r$ averaged over the entire spectrum for different ecological systems. Values of $a$, $r$, $t$ are also given by Porter (1967) for animals and Monteith (1973) for plants and animals.
+and each term is between zero and one (see Siegel and Howell 1972 for a more complete discussion). Table \@ref(tab:table-heattrans-2) gives some values for $r$ averaged over the entire spectrum for different ecological systems. Values of $a$, $r$, $t$ are also given by Porter (1967) for animals and Monteith (1973) for plants and animals.
 
-As an example of radiation flux, let us calculate the radiant energy emitted by the cactus, *Opuntia rufida*. To do this, we must specify the emissivity $\varepsilon$ and the surface temperature $T_s$. In Table 1, $\varepsilon = 0.977$ for *O. rufida* and, if we take $T_s = 10 ^{\circ}C$, then:
+As an example of radiation flux, let us calculate the radiant energy emitted by the cactus, *Opuntia rufida*. To do this, we must specify the emissivity $\varepsilon$ and the surface temperature $T_s$. In Table \@ref(tab:table-heattrans-1), $\varepsilon = 0.977$ for *O. rufida* and, if we take $T_s = 10 ^{\circ}C$, then:
 \begin{equation}
 Q_{emit} = 0.977 \times 5.67 \times 10^{-8} (10 + 273)^4 = 355.5 W m^{-2}
 (\#eq:heattrans-6)
 \end{equation}
 If we wish to know the total heat loss per second ($1 watt = 1 J s^{-1}$) for the plant, we must multiply our answer by the surface area of the cactus.
 
-The TrenchR functions for thermal radiation account for surface area and calculate net radiation based on the difference between the organism's surface and the environment. The rate of emission of thermal radiation from the surface of an animal, $Q_{emit} (W)$, is determined by the difference between the surface temperature of the animal $T_b (K)$ and the temperatures of the air $T_a (K)$ and ground $T_g (K)$.  $T_a$ is additionally used to estimate sky temperature $T_{sky} (K)$, the effective radiant temperature of the sky as $T_{sky}=1.22(T_a-273.15)-20.4+273.15$ [Gates 1980]. The following expressions can be used to estimate $Q_{emit} (W)$ for animals in enclosed and open environments, respectively:
+The TrenchR functions for thermal radiation account for surface area and calculate net radiation based on the difference between the organism's surface and the environment. The rate of emission of thermal radiation from the surface of an animal, $Q_{emit} (W)$, is determined by the difference between the surface temperature of the animal $T_b (K)$ and the temperatures of the air $T_a (K)$ and ground $T_g (K)$.  $T_a$ is additionally used to estimate sky temperature $T_{sky} (K)$, the effective radiant temperature of the sky as $T_{sky}=1.22(T_a-273.15)-20.4+273.15$ (Gates 1980). The following expressions can be used to estimate $Q_{emit} (W)$ for animals in enclosed and open environments, respectively:
 $$
 enclosed: Q_{emit}= A_r \epsilon \sigma (T_b^4 - T_a^4)\\
 open: Q_{emit}= \epsilon \sigma (A_s (T_b^4 - T_{sky}^4)+A_r (T_b^4 - T_g^4)),
 $$
-where $A_s$ and $A_r$ are the areas ($m^2$) exposed to the sky (or enclosure) and the ground, respectively; $\epsilon$ is the longwave infrared emissivity of skin (proportion, 0.95 to 1 for most animals [Gates 1980]); and $\sigma$ is the Stefan-Boltzmann constant. 
+where $A_s$ and $A_r$ are the areas ($m^2$) exposed to the sky (or enclosure) and the ground, respectively; $\epsilon$ is the longwave infrared emissivity of skin (proportion, 0.95 to 1 for most animals, Gates 1980); and $\sigma$ is the Stefan-Boltzmann constant. 
 
 The function is available in R as follows:
 ```{r}
@@ -271,7 +270,7 @@ Qemitted_thermal_radiation(epsilon=0.96, A=1, psa_dir=0.4,
      psa_ref=0.6, T_b=303, T_g=293, T_a=298, enclosed=FALSE)
 ```
 
-The calculation of absorbed radiation $Q_{abs}$, although straightforward with some assumptions, is a lengthy task because several longwave and shortwave components must be included. Gates and Stevenson (1979) have devoted an entire module to this topic to which the interested reader should refer for additional information. We briefly review the basic TrenchR functions for estimating absorbed radiation here. The solar and thermal radiation absorbed by animals, $Q_{abs} (W)$, is the sum of direct $S_{dir}$, diffuse $S_{dif}$, and reflected $S_{ref}$ solar radiation ($W/m^2$). The sum is weighted by the organism's surface area $A$ exposed to the radiation sources. Additionally, all forms of incoming radiation are multiplied by the solar absorptivity of the animal surface ($a$ proportion) to estimate absorbed radiation. The summation of incoming solar radiation is thus as follows:
+The calculation of absorbed radiation $Q_{abs}$, although straightforward with some assumptions, is a lengthy task because several longwave and shortwave components must be included. We briefly review the basic TrenchR functions for estimating absorbed radiation here. The solar and thermal radiation absorbed by animals, $Q_{abs} (W)$, is the sum of direct $S_{dir}$, diffuse $S_{dif}$, and reflected $S_{ref}$ solar radiation ($W/m^2$). The sum is weighted by the organism's surface area $A$ exposed to the radiation sources. Additionally, all forms of incoming radiation are multiplied by the solar absorptivity of the animal surface ($a$ proportion) to estimate absorbed radiation. The summation of incoming solar radiation is thus as follows:
 
 $$Q_{abs}= aA_{dir}S_{dir} + aA_{dif}S_{dif} + aA_{ref}S_{ref},$$
 where $A_{dir}$,$A_{dif}$,and $A_{ref}$ are the surface areas exposed to direct, diffuse, and reflected solar radiation, respectively.
@@ -311,7 +310,7 @@ knitr::include_graphics('figures/fig-heattrans-5.png')
 
 The thermal conductivity depends on the molecular structure of the material. Some cooking pots have copper-coated bottoms because this metal transfers heat better than other materials. Home insulation materials reduce the flow of heat because they trap air which has a low thermal conductivity. The hollow centers of the hair shafts of some mammals reduces the conduction of heat along the fiber. The thermal conductivity can be calculated by measuring the heat flow when the temperature slope (Fig. \@ref(fig:fig-heattrans-5)) is one.
 
-As an example of conduction, we will examine the heat flow between the alligator, *Alligator mississippiensis*, and substratum. We assume that the skin is she same temperature as the ground and that the animal is in good thermal contact with the surface (there are no air pockets reducing heat flow). The conduction exchange can now be calculated as follows: The thermal conductivity of fat is 0.20 $W m^{-1} {^{\circ}C^{-1}}$ while the soil-rock range of conductivity is between 0.556 and 3.25 $W m^{-1} {^{\circ}C^{-1}}$. Since the fat layer of 0.7 cm has a lower conductivity, it controls the rate of heat flow. Here we also assume that 0.5 $m^2$ of the alligator at $T_b = 22^{\circ}C$ are in contact with the ground at $T_g = 30 ^{\circ}C$. In steady state, the conductive heat flux is then a linear function of the potential, as given in equation \@ref(eq:heattrans-7).
+As an example of conduction, we will examine the heat flow between the alligator, *Alligator mississippiensis*, and substratum. We assume that the skin is she same temperature as the ground and that the animal is in good thermal contact with the surface (there are no air pockets reducing heat flow). The conduction exchange can now be calculated as follows. The thermal conductivity of fat is 0.20 $W m^{-1} {^{\circ}C^{-1}}$ while the soil-rock range of conductivity is between 0.556 and 3.25 $W m^{-1} {^{\circ}C^{-1}}$. Since the fat layer of 0.7 cm has a lower conductivity, it controls the rate of heat flow. Here we also assume that 0.5 $m^2$ of the alligator at $T_b = 22^{\circ}C$ are in contact with the ground at $T_g = 30 ^{\circ}C$. In steady state, the conductive heat flux is then a linear function of the potential, as given in equation \@ref(eq:heattrans-7).
 
 \begin{equation}
 Q_{cond} = \frac{k A_c}{x} (T_b - T_g) = \frac{0.198 \times 0.5}{0.007} (22-30) = -114 W
@@ -522,11 +521,11 @@ C = Mc
 (\#eq:heattrans-18)
 \end{equation}
 
-For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table 3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} °C^{-1}$ the peat. To calculate the energy necessary to raise each system $10°C$, we can employ equation \@ref(eq:heattrans-18) in the form
+For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table \@ref(tab:table-heattrans-3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} °C^{-1}$ the peat. To calculate the energy necessary to raise each system $10°C$, we can employ equation \@ref(eq:heattrans-18) in the form
 $$\Delta Q = \Delta T \, M \, c$$
 The answer is found to 960 J for the granite and 2,200 J for the peat.
 
-> Table 3. Thermal properties of natural materials.
+> Table (\#tab:table-heattrans-3). Thermal properties of natural materials.
 
 Material|Density|Specific heat|Thermal conductivity|Thermal capacity|Thermal diffusivity
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -654,7 +653,7 @@ and
 * $r_l$ is the internal diffusion resistance of the leaf ($s m^{-1}$).
 </div>
 
-Inspection of equation \@ref(eq:heattrans-24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures 10 and 11 illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure 12 clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
+Inspection of equation \@ref(eq:heattrans-24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures \@ref(fig:fig-heattrans-10) and \@ref(fig:fig-heattrans-11) illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure \@ref(fig:fig-heattrans-12) clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
 
 ```{r, echo = FALSE}
 #radiation, convection, and evaporation
@@ -828,7 +827,7 @@ The terms of equation \@ref(eq:heattrans-26) were either experimentally determin
 
 1. A maximum heat gain: If the lizard's surface temperature $T_s$ equaled 29.3 °C and the lizard was in close contact with the tree.
 2. A minimum heat gain: If $T_s = 39.9 ^{\circ}C$ and the lizard was not in contact with the tree. 
-3. Maximum heat loss of $T_s = 38.9 ^{\circ}C$, wind speed = $2.23 m s^{-1} (5 mph)$ and the animal was oriented at $90^{\circ}$ to the direction of the wind. 
+3. Maximum heat loss of $T_s = 38.9 ^{\circ}C$, wind speed = $2.23 m s^{-1}$ (5 mph) and the animal was oriented at $90^{\circ}$ to the direction of the wind. 
 4. Minimum heat loss if $T_s = 29.3 ^{\circ}C$, and wind speed was $0.1 m s^{-1}$. 
 5. Intermediate heat loss if $T_s = 34.1 ^{\circ}C$ and wind speed = $0.45 m s^{-1}$. 
 Figure \@ref(fig:fig-heattrans-14) gives sample results. 
@@ -841,7 +840,7 @@ knitr::include_graphics('figures/fig-heattrans-14.png')
 knitr::include_graphics('figures/fig-heattrans-15.png')
 ```
 
-Finally, they calculated the energy losses and gains every hour at $45^{\circ}$ increments around the tree. Using the criterion that the energy losses must fall between the energy gains (Fig. \@ref(fig:fig-heattrans-14), they could predict the position of the lizard on the tree trunk as a function of time of day. The predicted and observed positions of the lizards are compared in Fig. \@ref(fig:fig-heattrans-15). TrenchR includes a `Tb_lizard()` function to model the energy balance of a lizard.
+Finally, they calculated the energy losses and gains every hour at $45^{\circ}$ increments around the tree. Using the criterion that the energy losses must fall between the energy gains (Fig. \@ref(fig:fig-heattrans-14)), they could predict the position of the lizard on the tree trunk as a function of time of day. The predicted and observed positions of the lizards are compared in Fig. \@ref(fig:fig-heattrans-15). TrenchR includes a `Tb_lizard()` function to model the energy balance of a lizard.
 
 This module has attempted to develop the aspects of heat transfer that are important to biology. Emphasis has been placed on the physical processes, radiation, evaporation, conduction and convection, that influence the physiological, behavioral and ecological activities of all organisms. The discussion in conjunction with the modules on the First Law of Thermodynamics presents the basic physical laws that are needed to describe the heat energy balance of ecological systems.
 
@@ -870,11 +869,11 @@ Hint: The energy lost is equal to the net mass flow (the mass of water exhaled m
 
 4. The rate of heat transfer by conduction depends on the potential (temperature difference), the area of contact and the conductivity of the material. Estimate the heat transfer between an animal and the ground for all combinations.
 
-    Surface temperature = 20 °C
-    Ground temperatures = 2, 14, 27 °C
-    Area of contact = 0.054 m$^2$
-    Thermal conductivities = 0.02, 0.08, 0.17 W m$^{-1}$ °C$^{-1}$
-    Thickness of the material layer limiting heat flow = 0.005 m
+- Surface temperature = 20 °C
+- Ground temperatures = 2, 14, 27 °C
+- Area of contact = 0.054 m$^2$
+- Thermal conductivities = 0.02, 0.08, 0.17 W m$^{-1}$ °C$^{-1}$
+- Thickness of the material layer limiting heat flow = 0.005 m
     
 5a. In the diagram, heat flows through two materials from the left boundary (temperature $T_1$) to the right boundary (temperature $T_2$). Assure steady state conditions.
 
@@ -900,7 +899,7 @@ $$Nu=aRe^b$$
 |  4,000-40,000  |  0.174 | 0.618 |
 | 40,000-400,000 | 0.0239 | 0.805 |
 
-Assume that wind velocity is $2 m s^{-1}$ and $0.1 m s^{-1}$, the diameter is 0.46 m and 0.002 m. Compute he for the four combinations of diameter and wind velocity. Take $v = 1.42 \times 10^{-5} m^2 s^{-1}$ and $k = 2.50 \times 10^{-2} W m^{-1} K^{-1}$ at an air temperature of 10 °C.
+Assume that wind velocity is $2 m s^{-1}$ and $0.1 m s^{-1}$, the diameter is 0.46 m and 0.002 m. Compute $h_c$ for the four combinations of diameter and wind velocity. Take $v = 1.42 \times 10^{-5} m^2 s^{-1}$ and $k = 2.50 \times 10^{-2} W m^{-1} K^{-1}$ at an air temperature of 10 °C.
 
 7a. Calculate the heat transfer coefficient for a flat plate using $Nu = 0.60 Re^{0.5}$ (Monteith 1973, page 224; Kreith 1973, page 341). Let air temperature be 20 °C, so $v = 1.51 \times 10^{-5} m^2 s^{-1}$ and $k = 2.53 \times 10^{-2} W m^{-1} K^{-1}$. How does this compare with the convection coefficient for the leaf? This is accurate for laminar flow $Re < 2 \times 10^4$.
 
@@ -913,13 +912,13 @@ b. Show the region $Re < 2 \times 10^4$ on a graph of wind velocity $V$ versus t
     $T_s$ = surface temperature (°C),   
     $T$ = fluid temperature (°C),   
     $v$ = kinematic viscosity ($m^2 s^{-1}$).   
-Plot $\frac{Gr}{Re^2}$ on a graph of $V$ versus $D$. Let $T_s - T$ equal 10, 20 and 30. Below the line $Gr = Re^2$, free convection loss cannot be ignored. Is free convection important for leaves in the natural environment?
+Plot $\frac{Gr}{Re^2}$ on a graph of $V$ versus $D$. Let $T_s - T$ equal 10, 20 and 30 $^\circ$C. Below the line $Gr = Re^2$, free convection loss cannot be ignored. Is free convection important for leaves in the natural environment?
 
-9a. The energy balance for fruits is important in both cultivated and wild plants because it affects when and at what rate the crop ripens. Grapes for instance must be picked at just the right time to insure the best sugar content for winemaking. McIntosh apples.need cold nights and warm days to be of the best quality. When weather conditions are unfavorable, fruit can become overripe or rotten before it is harvested. Wild plant fruits are an energy investment by the plant to attract seed dispersers. This is especially true of birds and bats in the tropics. The color of the fruit is often an important signal to a potential disperser while the size and spacing of the fruits will influence the animal's harvesting rates. These same characteristics are important to the fruit's thermal balance.
+9a. The energy balance for fruits is important in both cultivated and wild plants because it affects when and at what rate the crop ripens. Grapes for instance must be picked at just the right time to insure the best sugar content for winemaking. McIntosh apples need cold nights and warm days to be of the best quality. When weather conditions are unfavorable, fruit can become overripe or rotten before it is harvested. Wild plant fruits are an energy investment by the plant to attract seed dispersers. This is especially true of birds and bats in the tropics. The color of the fruit is often an important signal to a potential disperser while the size and spacing of the fruits will influence the animal's harvesting rates. These same characteristics are important to the fruit's thermal balance.
 
 An empirical approach based on the "heat unit" or "growing degree day" concept has been developed to predict the harvest times. When the fruits have been exposed to x degree days the theory says they will he ready to pick. Degree days are computed as follows:
-$$DD=\sum\bigg[\frac{T_{amax}-T_{amin}}2-T_t\bigg]$$
-where $DD$ is degree days, $T_{amax}$ is the maximum air temperature during the day, $T_{amin}$ is the minimum air temperature for the day and $T_t$ is a threshold temperature specific for each species and which can be thought of as the temperature below which development is stopped. (The summation is over only positive values of the term). From the data below calculate the ripening degree days if $T_t$ is 16 °C.
+$$DD=\sum\bigg[\frac{T_{a,max}-T_{a,min}}2-T_t\bigg]$$
+where $DD$ is degree days, $T_{a,max}$ is the maximum air temperature during the day, $T_{a,min}$ is the minimum air temperature for the day and $T_t$ is a threshold temperature specific for each species and which can be thought of as the temperature below which development is stopped. (The summation is over only positive values of the term). From the data below calculate the ripening degree days if $T_t$ is 16 °C.
 
 |    Day    |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 |
 |:---------:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -943,6 +942,7 @@ Under steady state conditions the temperature of the fruit core, $T_f$, will equ
 | 50 - 1 $\times$ 10^5^ |   0.34 Re^0.6^   |
 
 Calculate $Nu$ by both formulae for $Re$ = 50, 100 and 300. If $D$ = 1 cm, what is the minimum wind speed for which the second relationship is valid? Which formula yields a lower heat transfer coefficient? What will the effect on the energy balance of the fruit be? Find $h_c$ as a function of $D$ (0.01, 0.04 and 0.1 m) and $V$ (0.1, 1.0 and 10.0 m s$^{-1}$) if $Nu = 0.34Re^{0.6}$. Assume $v = 1.42 \times 10^{-5} m^2 s^{-1}$ for the entire problem.  
+
 For a sphere: $Q_a=a_s[A_1S+A_2s+A_3r+(S+s)]+A_lA_l[R_a+r_g]$  
 where   
 &nbsp;&nbsp;&nbsp;&nbsp;$a_s$ = the absorptivity to shortwave radiation (assume 0.7),   
@@ -977,20 +977,6 @@ Calculate $Q_a$ values for each hour of the day. What part of this is shortwave 
 
 Assuming that the wind speed is 1.0 m/s and that the diameter of the fruit is 0.04 m and using the convection coefficient you have derived, calculate the fruit's equilibrium temperature for each hour of the day.
 Using $Q_a$ and $T_a$ values for 7 and 12 o'clock calculate the equilibrium fruit temperature for all combinations of $V$ = 0.1, 1.0 and 10.0 m/s and $D$ = 0.01, 0.04, 0.10 m. Size and wind speed affect the fruit temperature in opposite ways at the two times. Why is this? What are the problems with this approach?
-
-10. Discuss the following group of papers concerning heat transfer in biology:
-
-Strunk, T. H. 1971. Heat loss from a Newtonian animal. J. Theoret. Biol. 33:35-61.
-
-Kleiber, M. 1972. A new Newton's Law of cooling? Science 178:1283-1285.
-
-Tracy, C. R. 1972. Newton's Law: its applicability for expressing heat losses from homeotherms. BioScience 22:656-659.
-
-Technical Comments: Perspectives of linear heat transfer: T. H. Strunk, C. R. Tracy, M. Kleiber. Science 181:184-186.
-
-Linearized heat transfer relations in biology. G. S. Bakken and D. M. Gates; T. H. Strunk; M. Keiber. Science 183:976-978.
-
-Bakken, G. S., and D. M. Gates. 1974. Notes on "Heat loss from a Newtonian animal," J. Theoret. 'Biol. 45:283-292.
 
 ## PROBLEM SOLUTIONS
 1
@@ -1138,7 +1124,7 @@ The concentration of water vapor inhaled is
 $$\bigg[\frac{0.217e(T_a)}{T_a}\bigg]r.h.$$
 \begin{align*}
 LE&=2.43J\:kg^{-1}(C_e-C_i)\cdot R_v \\
-&=2.43r.h.\bigg[\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2}-\frac{.217e(T_a)r.h.}{T_a}\bigg]\times2.94exp(0.07T_a) \\
+&=2.43r.h.\bigg[\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2}-\frac{.217e(T_a)r.h.}{T_a}\bigg]\times2.94\exp(0.07T_a) \\
 \end{align*}
 
 
@@ -1176,7 +1162,7 @@ $$T_B=T_1\bigg(\frac{L_2ak_2}{L_2ak_2+bL_2k_2}\bigg)+T_2\bigg(\frac{bL_2k_2}{L_2
 $$T_B=\frac{L_2k_2}{L_2k_2}\bigg(\big(\frac{T_1a}{a+b}\big)+\big(\frac{T_2b}{a+b}\big)\bigg)=\frac{1}{a+b}(T_1a+T_2b)$$
 Now let $\frac{a}{b}=x$
 $$T_B=\frac{1}{x+1}(T_1x+T_2)$$
-Since $a > 1$, $k_1>k_2$ so material 1 has the steeper temperature gradient. Because $x=\frac{a}{b}=\frac{1.2}{0.2}=6.0$, the total temperature drop is greater in material 2. $T_B=35.7°C$.
+Since $a > 1$, $k_1>k_2$ so material 1 has the steeper temperature gradient. Because $x=\frac{a}{b}=\frac{1.2}{0.2}=6.0$, the total temperature drop is greater in material 2. $T_B=35.7 ^\circ C$.
 
 
 b. A more realistic description of the heat transfer would allow for a slight temperature drop in the soil. Then, in part a, $T_1=T_g$ and $T_2=T_b$.
@@ -1209,7 +1195,7 @@ $h_c$: $h_c = \frac{Nuk}{D}$
 $Nu=0.60Re^{0.5}$, $h_c=\frac{Nuk}{D}$
 $$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{v}\bigg)^{0.5}=\frac{0.60}{v^{0.5}}\times k\bigg(\frac{V}{D}\bigg)^{0.5}$$
 $$h_c=3.98\bigg(\frac{V}{D}\bigg)^{0.5}$$
-This is approximately 2.3 times the value of $9.14 J m^2 °C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
+This is approximately 2.3 times the value of $9.14 J m^2 ^\circ C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
 
 ```{r fig-heattrans-ps7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap = "Figure for problem 7"}
 par(mar = c(5, 5, 3, 5))
@@ -1310,9 +1296,6 @@ The $T_f$ values given can be more accurately computed for the conditions given 
 
 The fruits grow and change color during the season. Smart and Sinclair (1976) have investigated some of these problems as well as the temperature differences within one fruit and non-steady state conditions.
 
-10. No solution provided.
-
-
 ## LITERATURE CITED
 
 Bartholomew, G. A. 1977. Body temperature and energy metabolism. Pages 364-448 in M. S. Gordon, ed. Animal physiology: Principles and adaptation. Macmillan Publ. Co., New York.
@@ -1346,6 +1329,8 @@ Erkine, D. J., and J. R. Spotila. 1977. Heat-energy-budget analysis and heat tra
 Gates, D. M. 1968. Transpiration and leaf temperature. Annu. Rev. Plant Physiol. 19:211-238.
 
 Gates, D. M. 1977. Transpiration and leaf temperature. An instructional module: Physical processes in terrestrial and aquatic ecosystems. Ctr. Quantitative Sci., Univ. Washington, Seattle.
+
+Gates, D. M. 1980. Biophysical Ecology. Springer-Verlag, New York.
 
 Gates, D. M. and R. D. Stevenson. 1979. Radiation incident on an organism. An instructional module: Physical processes in terrestrial and aquatic ecosystems. Ctr. Quantitative Sci., Univ. Washington, Seattle
 

@@ -208,7 +208,7 @@ $$[1m]=[100cm]=L$$
 $$[3kg]=[3000g] =M$$
 and the homogeneity principle is again violated; we must reject the equation (and others like it) as having no physical significance. Common sense, of course, would lead us to such distinctions in the first place.
 
-Thy assignment of dimensions to the elements of integrals, differential equations, difference equations, and integro-differential equations is just as straightforward (but perhaps not so obvious) as that of simple algebraic structures. For expositional purposes, let the symbol "$X$" in the following examples be the dimension of the quantity $x$:  
+The assignment of dimensions to the elements of integrals, differential equations, difference equations, and integro-differential equations is just as straightforward (but perhaps not so obvious) as that of simple algebraic structures. For expositional purposes, let the symbol "$X$" in the following examples be the dimension of the quantity $x$:  
 Differentials:  
 \begin{align*}
 &[dx]=X \\
@@ -544,14 +544,14 @@ $$[q_x]=[k]\Big[\frac{\partial\theta}{\partial x}\Big]$$
 $\frac{H}{L^2T}=[k]\frac{\Theta}{L}$  
 $[k]=\frac{H}{L\Theta T}$ (the quantity of heat transferred per unit thickness of substance per unit temperature difference per unit time).
 
-(b) $cal\cdot cm^{-1}\cdot °C^{-1}\cdot sec^{-1}$  
-(c) $J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}$  
+(b) $cal\cdot cm^{-1}\cdot ^{\circ}C^{-1}\cdot sec^{-1}$  
+(c) $J\cdot m^{-1}\cdot ^{\circ}K^{-1}\cdot sec^{-1}$  
 (d) Since heat is energy, then $[k]=\frac{ML^2T^{-2}}{L\Theta T}=ML\Theta^{-1}T^{-3}$  
-(e) $g\cdot cm\cdot °K^{-1}\cdot sec^{-3}$  
+(e) $g\cdot cm\cdot ^{\circ}K^{-1}\cdot sec^{-3}$  
 (f) $[k]=\frac{FL}{L\Theta T}=F\Theta^{-1}T^{-1}$  
-(g) $nt\cdot °K^{-1}\cdot sec^{-1}$  
-(h) $W\cdot m^{-1}\cdot °K^{-1}$  
-(i) Units are $cal\cdot cm^{-1}\cdot °C^{-1}\cdot sec^{-1}$, $J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}$  
+(g) $nt\cdot ^{\circ}K^{-1}\cdot sec^{-1}$  
+(h) $W\cdot m^{-1}\cdot ^{\circ}K^{-1}$  
+(i) Units are $cal\cdot cm^{-1}\cdot ^{\circ}C^{-1}\cdot sec^{-1}$, $J\cdot m^{-1}\cdot ^{\circ}K^{-1}\cdot sec^{-1}$  
 Conversion chains are  
 &nbsp;&nbsp;&nbsp;$H$: calorie $\rightarrow$ joule  
 &nbsp;&nbsp;&nbsp;$L$: centimeter $\rightarrow$ meter  
@@ -559,8 +559,9 @@ Conversion chains are
 The identities are  
 &nbsp;&nbsp;&nbsp;1 cal = 4.1840 J  
 &nbsp;&nbsp;&nbsp;1 m = 100 cm  
-&nbsp;&nbsp;&nbsp;1°C temp. diff. = 1°K temp. diff.  
+&nbsp;&nbsp;&nbsp;1$^{\circ}C$ temp. diff. = 1$^{\circ}$K temp. diff.  
 Make the obvious statement
+
 \begin{align*}
 \frac{cal}{cm\cdot °C\cdot sec}&=\frac{cal}{cm\cdot °C\cdot sec} \\
 &=\frac{\rlap{-----}cal}{cm\cdot °C\cdot sec}\Big(\frac{4.1840 J}{\rlap{-----}cal}\Big) \\
@@ -568,7 +569,7 @@ Make the obvious statement
 1\frac{cal}{cm\cdot °C\cdot sec}&=418.40\frac{J}{m\cdot °K\cdot sec}
 \end{align*}
 
-(j) Units are $J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}$, $g\cdot cm\cdot °K^{-1} \cdot sec^{-3}$.  
+(j) Units are $J\cdot m^{-1}\cdot ^{\circ}K^{-1}\cdot sec^{-1}$, $g\cdot cm\cdot ^{\circ}K^{-1} \cdot sec^{-3}$.  
 Conversion chains are  
 &nbsp;&nbsp;&nbsp;$H$: joule $\rightarrow$ erg $\rightarrow$ g$\cdot$cm^2^$\cdot$sec^-2^  
 &nbsp;&nbsp;&nbsp;$L$: meter $\rightarrow$ centimeter  
@@ -576,11 +577,13 @@ Identities are
 &nbsp;&nbsp;&nbsp;1 J = 10^7^ erg  
 &nbsp;&nbsp;&nbsp;1 erg = 1 g$\cdot$cm^2^$\cdot$sec^-2^  
 &nbsp;&nbsp;&nbsp;1 m = 100 cm  
+
 \begin{align*}
 \frac{J}{m\cdot °K\cdot sec}&=\frac{J}{m\cdot °K \cdot sec} \\
 &=\frac{J}{\rlap{---}m\cdot °K\cdot sec}\Big(\frac{10^7 \rlap{-----}erg}{J}\Big)\Big(\frac{g\cdot cm^2 sec^{-2}}{\rlap{-----}erg}\Big)\Big(\frac{\rlap{---}m}{100cm}\Big) \\
 1\;J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}&=10^5g\cdot cm\cdot °K^{-1}\cdot sec^{-3}
 \end{align*}
+
 
 7.
 
