@@ -6,6 +6,7 @@ output:
 # Heat balance of a sheep. {#heatbalance}
 
 Heat Balance of a Sheep in the Sun. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes.
+
 author: Hatheway, W. H. (Note: module was edited to fill in missing pages)
 
 ***
@@ -25,11 +26,11 @@ For this reason, it is exceedingly important to identify the factors which deter
 
 Accordingly, it is the objective of this module to provide the reader with some of the intellectual equipment they will need to calculate the heat balance of an organism. Our approach will be to develop a mathematical model that represents the energy balance of an animal, to discuss briefly the theory of some of the components of the model (e.g., heat conduction, convection, and absorption and emission of radiation), and to apply these theories by working out the details of the energy budget of a familiar animal. Since the principles are perfectly general, the techniques developed here may be used for any organism, plant or animal, or the reader may even wish to apply them to such practical problems as determining the effect of additional insulation on his yearly household fuel bill or the practicality of attempting to capture solar energy in Seattle, Chicago, or New York!
 
-An animal can exchange heat with its environment by absorption or emission of radiation, by evaporation of water from its surface, and by conductive or convective exchanges of heat with its surroundings. Moreover, heat moves from the animal's body through its layers of insulation (fat and fleece) by the process of conduction. We will confine our attention to the equilibrium or "steady state" case, in which rates of heat loss and gain are equal. A solution to the more complicated situation, in which the rate at which the organism gains or loses heat in response to changing environmental conditions, is available in the computer model of Vera et al. (1975). 
+An animal can exchange heat with its environment by absorption or emission of radiation, by evaporation of water from its surface, and by conductive or convective exchanges of heat with its surroundings. Moreover, heat moves from the animal's body through its layers of insulation (fat and fleece) by the process of conduction. We will confine our attention to the equilibrium or "steady state" case, in which rates of heat loss and gain are equal. A solution to the more complicated situation, in which the rate at which the organism gains or loses heat changes in response to changing environmental conditions, is available in the computer model of Vera et al. (1975). 
 
 If we assume that the animal is in thermal equilibrium with its environment, our analysis boils down to an identification of all sources of energy loss and gain. Our assumption of thermal equilibrium, which greatly simplifies the analysis, is not entirely unrealistic. Thermal equilibrium implies that the total energy gained by the animal equals total energy lost. If an animal is to maintain its body temperature within a relatively narrow range, it cannot afford to gain or lose substantial amounts of heat. If it finds itself out of thermal equilibrium, it must make suitable adjustments. These may include moving into the shade or increasing its rate of energy loss by panting or sweating if heat gains are excessive or increasing rate of metabolism in case heat losses are very great. Having made these adjustments successfully, the animal returns to its "average" state of equilibrium. Any prolonged, substantial departure from this state constitutes a crisis which, of course, may terminate in the animal's death.
 
-To fix our ideas, we choose an unshorn domestic sheep as our study organism. The sheep is convenient because it is a familiar animal which has been thoroughly studied by a number of veterinary scientists (e.g., Blaxter, 1962; Brockway, McDonald and Pullar, 1965; Joyce, Blaxter and Park, 1966). In addition, the energy balance of the sheep has been studied by Priestley (1957), Monteith (1973), Porter and Gates (1969), and Vera et al. (1975). Experimental work by Walsberg et al. (1978) and the theoretical studies of Kowalski (1973) have shown that under certain environmental conditions it becomes important to take into consideration the penetration of radiation and wind into the wool. These complications are not included in the present model, which must therefore be considered only a first approximation to a more correct approach. In the present module, we adopt the general method of analysis put forward by Porter and Gates, but in may details we follow Priestley and, in some cases, Monteith.
+To fix our ideas, we choose an unshorn domestic sheep as our study organism. The sheep is convenient because it is a familiar animal which has been thoroughly studied by a number of veterinary scientists (e.g., Blaxter, 1962; Brockway, McDonald and Pullar, 1965; Joyce, Blaxter and Park, 1966). In addition, the energy balance of the sheep has been studied by Priestley (1957), Monteith (1973), Porter and Gates (1969), and Vera et al. (1975). Experimental work by Walsberg et al. (1978) and theoretical studies have shown that under certain environmental conditions it becomes important to take into consideration the penetration of radiation and wind into the wool. These complications are not included in the present model, which must therefore be considered only a first approximation to a more correct approach. In the present module, we adopt the general method of analysis put forward by Porter and Gates, but in may details we follow Priestley and, in some cases, Monteith.
 
 ## ENERGY BALANCE
 
@@ -52,7 +53,7 @@ h_L=k \frac{V^{1/3}}{r^{2/3}}
 \end{equation}
 where $V$ is the wind speed in cm/s, $r$ is the radius of the layer in cm, and $k$ is a constant describing thermal conductivity. The thermal conductivities of the fat ($k_f$), fleece ($k_h$), and air ($k_a$) additionally determine rates of heat exchange. (See further analysis below.)
 
-```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Sheep idealized as a cylinder. In the diagram, $T_a$, $T_b~, $T_s$, $T_h$ and $T_f$ are the temperatures of the air, body, skin, hair tips and fat; $r_b$, $r_s$, and $r_h$ the corresponding radii of the cylinders; and $K_a$, $K_b$ and $K_f~ the thermal conductivities of air, fleece and fat.'}
+```{r fig-heatbalance-1, echo=FALSE, fig.height=5, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Sheep idealized as a cylinder. In the diagram, $T_a$, $T_b$, $T_s$, $T_h$ and $T_f$ are the temperatures of the air, body, skin, hair tips and fat; $r_b$, $r_s$, and $r_h$ are the corresponding radii of the cylinders; and $K_a$, $K_b$ and $K_f$ are the thermal conductivities of air, fleece and fat.'}
 knitr::include_graphics('figures/fig-heatbalance-1.png')
 ```
 
@@ -150,7 +151,7 @@ where $H_L$ is a convective heat transfer coefficient ($W m^{-2}K^{-1}$). $H_L$ 
 
 Since Nu is a function of boundary layer thickness, it clearly depends on the Reynolds number, which, it will be recalled, may be written
 $$Re =\frac{vd}{\nu} $$
-In this expression $v (m s^{-1})$ is the velocity of the fluid relative to the body and $\nu$ is the kinematic viscosity of the fluid, about $1.5 \times 10^{-5} m^2 s^{-1}$ for air at 20°C. Tables for Nu are provided in various texts on heat transfer. For gases, the empirical formula $Nu = a Re^n$ may be used (Goldstein, 1938). The coefficient $a$ and the exponent $n$ vary considerably with the Reynolds number. Monteith (1973) provides the following table for cylinders whose axes are at right angles to the wind:
+In this expression $v$ $(m s^{-1})$ is the velocity of the fluid relative to the body and $\nu$ is the kinematic viscosity of the fluid, about $1.5 \times 10^{-5} m^2 s^{-1}$ for air at 20°C. Tables for Nu are provided in various texts on heat transfer. For gases, the empirical formula $Nu = a Re^n$ may be used (Goldstein, 1938). The coefficient $a$ and the exponent $n$ vary considerably with the Reynolds number. Monteith (1973) provides the following table for cylinders whose axes are at right angles to the wind:
 
 
 | Re                        |        Nu        |
@@ -173,7 +174,7 @@ H&=235 W
 \end{align*}
 assuming $T_h$ = 25°C and $T_a$ = 10°C.
 
-The temperature profile associated with convection is depicted in (Figure \@ref(fig:fig-heatbalance-3)).
+The temperature profile associated with convection is depicted in Figure \@ref(fig:fig-heatbalance-3).
 
 ```{r fig-heatbalance-3, echo=FALSE, fig.height=5, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Temperature profile across fleece and air. Delta represents boundary layer thickness, $T_h$=fleece-tip temperature, $T_a$ = air temperature.'}
 knitr::include_graphics('figures/fig-heatbalance-3.png')
@@ -214,12 +215,12 @@ The sheep exposes an area $A_2=\pi dL/2 \;m^2$ of its upper surface (half the ar
 The sheep's lower surface absorbs direct and scattered solar radiation that has been reflected from the grassy surface on which it stands (Fig. 3). If the grass reflectivity is 0.25 (Monteith, 1973), and if one-third of the solid angle is occupied by the sheep's shadow, the radiation received will be approximately $(0.25)(2/3)(0.74)(\pi\cdot0.5\cdot1.0/2)(1047.7+27.9)=104W$.
 
 ### Long-Wave Radiation
-The sheep is also heated by thermal radiation emitted from sky ($R_a$) and ground ($R_g$). As Priestley (1957) pointed out, development of a correct model for long-wave radiation absorbed by the sheep is a difficult problem. The major complication arises from sky radiation, which is imperfectly understood. Both Priestley (1957) and Bartlett and Gates (1967) rely on an empirical formula due to Brunt (1939) to calculate sky thermal radiation. Brunt's formula is $R_a = 1.04 B$ where $B = (0.44 + 0.08\sqrt e)\sigma T_a^4$. In this expression, $e$ is the vapor pressure of the atmosphere (millibars), $\sigma$ is Stefan's constant ($5.67\times 10^{-8} W m^{-2} K^{-4}$) and $T_a$ is the air temperature (K). Then the sky component of the long-wave radiation absorbed by the sheep is $a_4A_4R_a = 1.04 BA_4$, in which $A_4 = \pi dL/2$. To calculate $B$, we take $e = 10 mb$, and $T_a = 10°C = 283 K$. Then $B = (0.69)(5.67\times10^{-8})(283^4) = 251 W m^{-2}$ and the component due to atmospheric long-wave radiation is $205 W$.
+The sheep is also heated by thermal radiation emitted from sky ($R_a$) and ground ($R_g$). As Priestley (1957) pointed out, development of a correct model for long-wave radiation absorbed by the sheep is a difficult problem. The major complication arises from sky radiation, which is imperfectly understood. Both Priestley (1957) and Bartlett and Gates (1967) rely on an empirical formula due to Brunt (1939) to calculate sky thermal radiation. Brunt's formula is $R_a = 1.04 B$ where $B = (0.44 + 0.08\sqrt e)\sigma T_a^4$. In this expression, $e$ is the vapor pressure of the atmosphere (millibars), $\sigma$ is Stefan's constant ($5.67\times 10^{-8} W m^{-2} K^{-4}$) and $T_a$ is the air temperature (K). Then the sky component of the long-wave radiation absorbed by the sheep is $a_4A_4R_a = 1.04 BA_4$, in which $A_4 = \pi dL/2$. To calculate $B$, we take $e = 10 mb$, and $T_a = 10^\circ C = 283 K$. Then $B = (0.69)(5.67\times10^{-8})(283^4) = 251 W m^{-2}$ and the component due to atmospheric long-wave radiation is $205 W$.
 
 
 Long-wave radiation from the ground absorbed by the sheep is given by $a_5A_5R_g = A_5\sigma T_g^4$ , where $T_g$ is the ground temperature (K). Here $A_5$ is again one-half the surface area of the cylinder. For our calculation, we will follow Priestley (1957) and make the convenient assumption that $T_g = T_h$, the average temperature of the tips of the sheep's hair. Since the energy **loss** from the upper and lower parts of the sheep's body due to emitted long-wave radiation is $(\pi dL)(\sigma T_h^4)$, the **net energy gain** due to long-wave radiation is
 $$1.04BA_4+A_5\sigma T_g^4-2A_5\sigma T_h^4=(\pi dL/2)(1.04B-\sigma T_h^4)$$
-Although we have not yet shown how $T_h$ is to be calculated, if we assume again that $T_h=10°C=283K$, then we calculate the net gain as
+Although we have not yet shown how $T_h$ is to be calculated, if we assume again that $T_h=10^\circ C=283K$, then we calculate the net gain as
 $$(\pi\cdot0.5\cdot1.0/2)(1.04\cdot251-5.67\times10^{-8}\cdot283^4)=-81W$$
 
 Since net gain is negative, we conclude that the animal suffers a net long-wave radiative loss of $81 W$ at its surface.
@@ -231,7 +232,7 @@ animals, including sheep, based on published data for animal oxygen consumption.
 It probably comes as no surprise to the reader to learn that metabolic rates of domestic animals such as sheep have been thoroughly studied by veterinary scientists. Brockway, McDonald, and Pullar (1965) describe a fascinating series of experiments in which total, sensible, and evaporative heat losses in sheep were carefully measured by direct calorimetry. For an animal maintained at 15°C with a fleece depth of 0.1 m, total heat loss by all routes was 132 kJ kg^-1^ day^-1^. Total evaporative heat loss was 52.3 kJ kg^-1^ day^-1^, of which 41.9 kJ was due to respiratory evaporation. Sweating heat loss was approximately 12.6 to 20.9 kJ kg^-1^day^-1^ regardless of temperature. The authors suggest that, since sheep have little or no physiological control over sensible heat loss, variation in respiratory evaporation heat loss is the chief means by which sheep adjust to their environment. When the weather is hot, they are obliged to pant!
 
 ## AN ENERGY BALANCE CALCULATION
-In making the calculations that follow, we assume fleece thickness of 0.1 m, which is the depth of wool usually attained by Cheviot sheep (Brockway et al., 1965). Then skin diameter for our "standard sheep" is 0.3 m. The layer of subcutaneous fat is about 0.01 m thick (Porter and Gates, 1969). We take thermal conductivity of sheep's wool as $5.91\times10^{-2}W m^{-2}°C^{-1}$ (Blaxter, Graham, and Weinman, 1959) and that of fat as $20.51\times10^{-2} W m^{-2}°C^{-1}$(Porter and Gates, 1969). Body temperature of the sheep is taken as 39°C (Priestley, 1957). We assume a body weight of 70 kg.
+In making the calculations that follow, we assume fleece thickness of 0.1 m, which is the depth of wool usually attained by Cheviot sheep (Brockway et al., 1965). Then skin diameter for our "standard sheep" is 0.3 m. The layer of subcutaneous fat is about 0.01 m thick (Porter and Gates, 1969). We take thermal conductivity of sheep's wool as $5.91\times10^{-2}W m^{-2}^\circ C^{-1}$ (Blaxter, Graham, and Weinman, 1959) and that of fat as $20.51\times10^{-2} W m^{-2}^\circ C^{-1}$ (Porter and Gates, 1969). Body temperature of the sheep is taken as 39°C (Priestley, 1957). We assume a body weight of 70 kg.
 
 To consolidate our calculation, we return to our general heat balance relation (Eqn. \@ref(eq:heatbalance-1)):
 $$M+R_+=R_-+C+H+E$$
@@ -290,9 +291,9 @@ and
 \end{equation}
 Formula \@ref(eq:heatbalance-27) states that the temperature at the fleece tips $T_h$ is a weighted average of air and body temperatures $T_a$ and $T_b$, increased by a contribution from all sources of radiation. The weights $\alpha$ and $\beta$ have the units of "conductances," that is, of conductivities multiplied by the areas across which heat flows. The conductance $\alpha$ has components associated with convection and radiation, $\beta$ with conduction in fleece and fat.
 
-To illustrate the calculation of $T_h$, we take $T_a=10°C$, $T_b=39°C$, $A_h=0.5\pi m^2$, $Nu=194$, $k_a=2.48\times10^{-2}Wm^{-1}°C^{-1}$,   $k_h=5.91\times10^{-2}Wm^{-1}°C^{-1}$, $k_f=2.51\times10^{-1}Wm^{-1}°C^{-1}$, $d=0.5m$, $L=1.0m$, $r_b=0.145m$, $r_s=0.15m$, and $r_h=0.25m$.
+To illustrate the calculation of $T_h$, we take $T_a=10^\circ C$, $T_b=39^\circ C$, $A_h=0.5\pi m^2$, $Nu=194$, $k_a=2.48\times10^{-2}Wm^{-1}^\circ C^{-1}$,   $k_h=5.91\times10^{-2}Wm^{-1}^\circ C^{-1}$, $k_f=2.51\times10^{-1}Wm^{-1}^\circ C^{-1}$, $d=0.5m$, $L=1.0m$, $r_b=0.145m$, $r_s=0.15m$, and $r_h=0.25m$.
 
-Then $\alpha=1.571(9.638+2.570)=19.19W°C^{-1}$, $Z_h+Z_f=1.3748+0.05431=1.428$, so that $\beta = 0.700W°C^{-1}$. Also,
+Then $\alpha=1.571(9.638+2.570)=19.19W^\circ C^{-1}$, $Z_h+Z_f=1.3748+0.05431=1.428$, so that $\beta = 0.700W^\circ C^{-1}$. Also,
 \begin{align*}
 R_{Na}&=a_1A_1S+a_2A_2S+a_3A_3r(S+s)+1/2A_h(1.04B-\sigma T_a^4) \\
 &=387.3+16.2+104.1-80.6 \\
@@ -301,7 +302,7 @@ R_{Na}&=a_1A_1S+a_2A_2S+a_3A_3r(S+s)+1/2A_h(1.04B-\sigma T_a^4) \\
 Then
 \begin{align*}
 T_h&=\frac{(19.18)(283)+(0.7)(312)+427}{19.88} \\
-&=305.5K=32.5°C
+&=305.5K=32.5^\circ C
 \end{align*}
 Thus, in this case, the temperature of the fleece tips is approximately 22°C higher than that of the air. We make the following observations.
 
@@ -331,12 +332,6 @@ Thus, in this case, net incoming radiation at the fleece tips is approximately e
 These examples illustrate only some of the types of problems we can solve with this technique. We have shown that, if the sheep's environment is given in terms of temperature, wind speed, and incoming radiation, it is possible to determine the range of rates of body metabolism and evaporative losses due to respiration and sweating that will allow the animal to maintain thermal equilibrium. Porter and Gates (1969) have worked out the converse problem for a number of animals: given a range of metabolic rates that the animal can maintain as well as its physical characteristics (size, thickness of fur, etc.), the range of environmental conditions within which it can survive can be calculated.
 
 ## REFERENCES
-
-```
-Notes:  
-Can't find Kowalski 1973
-```
-
 Barlett PN, Gates DM. 1967. The Energy Budget of a Lizard on a Tree Trunk. Ecology. 48(2):315–322.
 
 Blaxter KL. 1962. The energy metabolism of ruminants. Springfield, Ill.: Thomas.
@@ -393,17 +388,16 @@ Assume $T_b = 39$°C, $v=1$km/hr = 0.2778ms^-1^, $A_h = \pi d L$m^2^, $L=1$m, $r
 
 <!-- 3. Use the values in problem 2 but now assume $T_h$ = 20°C and $T_a$ = 0°C. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to offset convective heat loss if consuming 5.30g of grass per day is required to offset 1W?  -->
 
-3. Use the values in problem 2 but now assume that the evaporative heat loss is 990 kcal per day. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to compensate for the metabolic heat lossif consuming 5.30g of grass per day is required to offset 1W? 
-
+3. Use the values in problem 2 but now assume that the evaporative heat loss is 990 kcal per day. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to compensate for the metabolic heat loss if consuming 5.30g of grass per day is required to offset 1W? 
 
 4. Consider a 70 kg sheep on a sunny day with $T_a$ of 30°C experiencing direct solar radiation of 800W right from above and diffuse sky radiation of 150W with one-third of the solid angle occupied by the sheep’s shadow. Suppose your sheep is standing in a pasture in which reflectivity of the grass is 25 percent. Assume cutaneous evaporative heat loss equals 4 kcal kg^-1^ day^-1^, but respiratory heat loss can vary. It is known that sheep can breathe as few as 20 times or as many as 250 times per minute, and the corresponding respiratory heat loss varies from 3.0 to 18.0 kcal kg^-1^ day^-1^. Calculate the rate of heat loss when the sheep is shorn ($r_h = 0.32$) and unshorn ($r_h = 0.50$). Assume that total metabolic heat produced is 1900 kcal day^-1^. What does the comparison of these heat fluxes suggest about whether evaporative water loss will be sufficient for the sheep to avoid overheating in the sun? $\varepsilon = 0.1396$, $a = 0.74$ and heat received by long-wave radiation can be ignored. You may use the corresponding $\alpha$ and $\beta$ values from problem 1.
 
-5. Now assume that instead of a sheep your study animal is a blue whale, which you can idealize as a cylinder 25 m long and 5 m in diameter, including a layer of blubber 50 cm thick. Its body temperature is maintained at 33°C. If the whale swims at a rate of 15 km hr$^{-1}$ through 5°C water, how much food (in kcal day$^{-1}$) must it consume to maintain thermal equilibrium? Take the Nusselt number $Nu$ as $0.332 (Re_x)^{1/2} \stackrel{.}{=} 1.6 \times 10^4$ (since $V = 15 km \:hr^{-1}$, $x \stackrel{.}{=} 10 m$, $v = 1.7 \times 10^{-5} m^2 sec^{-1}$), $k_w=0.57Wm^{-1}°C^{-1}$ and $k_f = 0.2052 Wm^{-1}°C^{-1}$.
+5. Now assume that instead of a sheep your study animal is a blue whale, which you can idealize as a cylinder 25 m long and 5 m in diameter, including a layer of blubber 50 cm thick. Its body temperature is maintained at 33°C. If the whale swims at a rate of 15 km hr$^{-1}$ through 5°C water, how much food (in kcal day$^{-1}$) must it consume to maintain thermal equilibrium? Take the Nusselt number $Nu$ as $0.332 (Re_x)^{1/2} \stackrel{.}{=} 1.6 \times 10^4$ (since $V = 15 km \:hr^{-1}$, $x \stackrel{.}{=} 10 m$, $v = 1.7 \times 10^{-5} m^2 sec^{-1}$), $k_w=0.57Wm^{-1}^\circ C^{-1}$ and $k_f = 0.2052 Wm^{-1}^\circ C^{-1}$.
 
 6. Calculate heat loss in the blue whale when its velocity relative to the water is zero. The thermal conductivity of water is approximately
-$5.7 \times 10^{-3} J cm^{-1} s^{-1} °C^{-1}$.
+$5.7 \times 10^{-3} J cm^{-1} s^{-1} ^\circ C^{-1}$.
 
-7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39°C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
+7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39^\circ C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
 
 8. When heat transfer depends on air movements caused by differences in fluid density (i.e., buoyancy effects), the Nusselt number can be shown to depend on another dimensionless parameter, the Grashof number,
 $$Gr=\frac{\beta gd^3}{v^2}(T_h-T_a)$$
@@ -446,7 +440,7 @@ $R_{Na}$ (W) values as a function of air temperature (°C) and diameter (m)
 | 20 | -59.09 | -66.48 |  -92.33 |
 | 30 | -67.58 | -76.03 | -105.60 |
 
-Using $\alpha$, $\beta$, $T_a$, $R_{Na}$ and $T_b = 39°C$, $T_h$ can be calculated from $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ \@ref(eq:heatbalance-27).
+Using $\alpha$, $\beta$, $T_a$, $R_{Na}$ and $T_b = 39^\circ C$, $T_h$ can be calculated from $T_h=\frac{\alpha T_a+\beta T_b}{\alpha+\beta}+\frac{R_{Na}} {\alpha+\beta}$ \@ref(eq:heatbalance-27).
 
 $T_h$ (°C) values as a function of air temperature (°C) and diameter (m)
 
@@ -542,10 +536,10 @@ Let $\alpha =\frac{Nuk_wA_s}{d}$. Solving for $T_s$,
 
 $$T_s=\frac{T_b+Z_f\alpha T_w}{1+Z_f\alpha}$$
 
-Using $k_f=0.2052Wm^{-1}°C^{-1}$, $r_s=2.5m$, $r_b=2.0m$, $A=5\cdot\pi\cdot25=392.7m^2$, $Z_f=\frac{1}{2\pi k_fL}ln\frac{r_s}{r_b}=6.923\times10^{-3}°CW^{-1}$, and $k_w=0.57Wm^{-1}°C^{-1}$,
-$$\alpha =\frac{1.64\times10^4\cdot0.57\cdot392.7}{5}=7.342\times10^5W°C^{-1}$$
+Using $k_f=0.2052Wm^{-1}^\circ C^{-1}$, $r_s=2.5m$, $r_b=2.0m$, $A=5\cdot\pi\cdot25=392.7m^2$, $Z_f=\frac{1}{2\pi k_fL}ln\frac{r_s}{r_b}=6.923\times10^{-3}^\circ CW^{-1}$, and $k_w=0.57Wm^{-1}^\circ C^{-1}$,
+$$\alpha =\frac{1.64\times10^4\cdot0.57\cdot392.7}{5}=7.342\times10^5W^\circ C^{-1}$$
 
-$$T_s=\frac{33+6.923\times10^{-3}\cdot7.342\times10^5\cdot5}{1+6.923\times10^{-3}\cdot7.342\times10^5}=5.01°C$$
+$$T_s=\frac{33+6.923\times10^{-3}\cdot7.342\times10^5\cdot5}{1+6.923\times10^{-3}\cdot7.342\times10^5}=5.01^\circ C$$
 
 Since evaporative heat loss can be neglected for whale, $E_r = E_s = 0$. In addition, the lack of hair suggests that $r_h = r_s$, leading to $Z_h = 0$. The remaining equation for $M$ is
 
@@ -555,7 +549,7 @@ M&=\frac{T_b-T_s}{Z_f} = \frac{33-5.11}{0.006923}=4043W \\
 &=2.33\times10^6kJ\:day^{-1} \mbox{ at 15 percent conversion efficiency}
 \end{align*}
 
-6. There are several ways one might attack this problem. One could simply assume a conduction model in which the water surrounding the animal offered no resistance to heat flow ($T_s = 5.0°C$). A Nusselt number calculation could be made using the Grashof number as in problem 9. Or finally, as is done here, one could assume that still water is equivalent to some very slow velocity (in air this is about 0.10 m s$^{-1}$).
+6. There are several ways one might attack this problem. One could simply assume a conduction model in which the water surrounding the animal offered no resistance to heat flow ($T_s = 5.0^\circ C$). A Nusselt number calculation could be made using the Grashof number as in problem 9. Or finally, as is done here, one could assume that still water is equivalent to some very slow velocity (in air this is about 0.10 m s$^{-1}$).
 
 \begin{align*}
 Nu&=80.5\;\;\;\;\;\;\;\alpha=3.604\times10^3 \\
@@ -564,7 +558,7 @@ M&=\frac{33-6.08}{0.006923}=3.888\times10^3W \\
 &= \mbox{ 96 percent of metabolic costs while swimming at over 4 m/s}
 \end{align*}
 
-7.
+7. See following table.
 
 | | |**0.02**|**0.07**
 :-----:|:-----:|:-----:|:-----:

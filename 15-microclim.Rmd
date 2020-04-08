@@ -421,7 +421,6 @@ Kearney, M. R., A. P. Isaac, and W. P. Porter. 2014. microclim: Global estimates
 New, M., D. Lister, M. Hulme, and I. Makin. 2002. A high-resolution data set of surface climate over global land areas. Climate Research 21:1-25.
 
 ## PROBLEMS
-### Microclimate for North America
 
 1. You have also been supplied with the same set of microclimate data for North America. Take a look at it by simply altering the variable 'path', which we defined right at the beginning, to wherever you decompressed the North American data set archive 'microclim\_NAm.zip'. Note you'll have to choose a new location to extract hourly data from, i.e. change the variable 'lon.lat'.
 

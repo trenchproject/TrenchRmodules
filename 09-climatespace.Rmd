@@ -57,7 +57,7 @@ where
 * $r$ is the reflectivity of the ground. 
 </div>
 
-Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (197, module 8) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
+Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (1978, module 8) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
 \begin{equation}
 Q_a = \frac{1}{\pi} \bar{a} S + 0.5 [\bar{a}s + \bar{a}r(s+S) + R_g + R_a]
 (\#eq:climatespace-3)
