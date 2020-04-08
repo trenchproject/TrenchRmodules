@@ -326,7 +326,7 @@ points(lats,el(lats,-30,5), type="l", lty="dashed")
 
 Because the change in temperature with elevation is affected by turbulence and heating of the surface as well as the lapse rate, the change in temperature as a function of elevation averages about 6°C/km. Using this fact, isotherms for elevation and latitudinal changes are replotted in Fig. \@ref(fig:fig-thermex-2) for the northern hemisphere. The effect of the mean annual range in temperature will be to increase the seasonality of the community. According to Fig. \@ref(fig:fig-thermex-2) then a community at 2,500 m and 20° latitude would have the same mean annual temperature as a community at sea level and 60°C latitude (0°C) but at 65° latitude the temperature variation would be 3.5 times larger. See Carter and Mather (1966) for a review of climate classifications.
 
-```{r fig-thermex-9, echo=FALSE, fig.height=4, ig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Isotherms in degrees Celsius for elevation vs. latitude. The mean annual temperature at any elevation is calculated assuming a dry adiabatic lapse rate. Mean annual temperature at growund level are taken from Miller and Thompson 1970.'}
+```{r fig-thermex-9, echo=FALSE, fig.height=4, ig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Isotherms in degrees Celsius for elevation vs. latitude. The mean annual temperature at any elevation is calculated assuming a dry adiabatic lapse rate. Mean annual temperature at growund level are taken from Miller and Thompson 1970.'}
 knitr::include_graphics('figures/fig-thermex-9.png')
 ```
 

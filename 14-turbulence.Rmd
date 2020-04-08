@@ -39,7 +39,7 @@ Anyone who has observed the plume from a smokestack and noticed the irregularity
 
 Consider the problem of predicting the motion of atmospheric contaminants such as pollen, fungal spores, or pollutants with such variable winds. If the time period of interest is short, the analysis can indeed become difficult.
 
-```{r fig-turb-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Bidirectional vane record of elevation for three one-minute perioes on July 19, 1962 at Douglas Point, Canada.'}
+```{r fig-turb-1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Bidirectional vane record of elevation for three one-minute perioes on July 19, 1962 at Douglas Point, Canada.'}
 knitr::include_graphics('figures/fig-turb-1.png')
 ```
 
@@ -101,7 +101,7 @@ Notice that the dimensions of a length divided by velocity is a time. It is assu
 
 The considerations discussed in the example of the heating of the air in the room can be extended to the situation in the atmosphere. It should be made clear that the eddy sizes in the atmosphere, or in the room, are limited in size by the flow boundaries. This only sets the upper limit, albeit the most efficient for transport, as illustrated below. Actually, a whole range of smaller eddy sizes exists, until they become so small that molecular forces become significant. The turbulent structure in the atmosphere in simplest terms can be envisioned as a whole series of eddies, such as in our room example, being carried along by the mean wind, $\overline U(z)$ (Fig. \@ref(fig:fig-turb-4)).
 
-```{r fig-turb-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='A range of eddies exists, with mean diameter k proportional to height z.'}
+```{r fig-turb-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='A range of eddies exists, with mean diameter k proportional to height z.'}
 knitr::include_graphics('figures/fig-turb-4.png')
 ```
 
@@ -125,11 +125,11 @@ In the description of turbulence, it was noted that it is an ubiquitous property
 
 As discussed by Vennard and Street (1975) and Cowan (1979a), there are two flow regimes of interest in physical and biological processes: laminar and turbulent. Laminar flow is smooth, orderly and predictable, in contrast to turbulent flow. For a given flow geometry, one can predict by the value of the Reynolds number ($Re$) whether the flow is laminar, turbulent, or in a state of transition. The Reynolds number is a combined measure of fluid velocity, viscosity, density and a characteristic dimension. In essence, laminar flow becomes turbulent when small perturbations or instabilities in the flow are provided with a sufficient input of energy to grow and destroy the orderly nature of the laminar flow. In any given situation, one can think of an increase in the Reynolds number as a velocity increase, since the other parameters presumably would not change. A large Reynolds number corresponds to a large velocity and thus a large energy input. Therefore beyond some critical point, a large Reynolds number indicates that the flow instabilities will be able to grow and cause the flow to become fully turbulent. The flow geometry, including the roughness of any surfaces in contact with the flow, can have a dramatic effect on the values of the Reynolds number which define the transition zone between laminar and turbulent flow.
 
-### Viscosity and Laminar Shear FLows
+### Viscosity and Laminar Shear Flows
 
 As has been indicated, a source of energy is required to cause turbulent flow. Indeed, turbulence requires a continuous energy input, otherwise it rapidly decays due to frictional losses as a result of the viscosity of the fluid. Two sources of energy input exist to maintain turbulence in common flows. The first source is shear in the mean flow, where friction between the surface and the fluid causes energy from the mean flow to be diverted into the creation of turbulent velocity fluctuations. The second source derives from the heating of the fluid at the surface, which causes the fluid to rise generating turbulence. These mechanisms are known respectively as mechanical and thermal (convective, buoyance driven) turbulence. To gain some insight into these turbulence maintenance mechanisms, a fundamental understanding of viscosity and shear flows is essential, starting with laminar flow and progressing from there into the more complex turbulent flow case.
 
-```{r fig-turb-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Laminar shear stress (T) between two regions, where velocity (v) depends on distance (y) from the bottom, after Vennard and Street (1975).'}
+```{r fig-turb-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Laminar shear stress (T) between two regions, where velocity (v) depends on distance (y) from the bottom, after Vennard and Street (1975).'}
 knitr::include_graphics('figures/fig-turb-5.png')
 ```
 
@@ -143,7 +143,7 @@ Although most flows in nature are turbulent, there are notable exceptions. For e
 
 As has been described earlier (see also Tennekes and Lumley 1972 or Cowan 1977), turbulent flow is a random and irregular variation of velocity which can be thought of as being superimposed upon a steady mean flow velocity. The concept of an eddy was used to visualize that part of the flow responsible for this variation. It seems apparent that the preceding analysis of laminar shear based on only molecular interactions is not suitable for a similar treatment of turbulent flow. We will find, however, that for partial applications at least, many similarities are evident.
 
-```{r fig-turb-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Turbulent shear stress, after Vennard and Street (1975).'}
+```{r fig-turb-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Turbulent shear stress, after Vennard and Street (1975).'}
 knitr::include_graphics('figures/fig-turb-6.png')
 ```
 
@@ -169,7 +169,7 @@ Most semi-empirical theories are based upon a set of equations derived from the 
 $$u = \bar u + u'$$
 The overbar refers to the time average in the case of steady flow (see Cowan 1979a or Vennard and Street 1975), and the prime refers to the fluctuation around the mean (Fig. \@ref(fig:fig-turb-7)).
 
-```{r fig-turb-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Velocity components--fluctuations around the mean.'}
+```{r fig-turb-7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Velocity components--fluctuations around the mean.'}
 knitr::include_graphics('figures/fig-turb-7.png')
 ```
 
@@ -200,7 +200,7 @@ In fact, it turns out that equation \@ref(eq:turbulence-5) does not represent th
 
 An averaged product of fluctuating variables such as equation \@ref(eq:turbulence-5) is called a correlation. If the variables in such a product have the same (opposite) sign for most of the time as do $a$ and $b$ in Fig. \@ref(fig:fig-turb-8), then the product is greater than (less than) zero. Notice that the variable $c$, on the other hand, is uncorrelated with either $a$ or $b$, hence the products $\overline{ac}$ or $\overline{be}$ probably equal zero. In terms of $u'$ and $w'$, this means that if the vertical wind fluctuations are positive (upward) when the horizontal wind fluctuations are negative, and vice versa, then $u'$ and $w'$ are negatively correlated, hence the minus sign in equation \@ref(eq:turbulence-5). Such an interpretation also agrees with the turbulent velocity profile in Fig. \@ref(fig:fig-turb-6) and the subsequent discussion. Momentum is constantly being transported downward (or momentum deficit is being transported upward). The end result is that the surface absorbs momentum from the flow, and consequently experiences a frictional force acting in the direction of the flow. As required by Newton's Third Law, this force is opposed by frictional drag exerted on the air by the surface.
 
-```{r fig-turb-8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Variables and b are corelated (adapted from Tenekes and Lumley 1972).'}
+```{r fig-turb-8, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Variables and b are corelated (adapted from Tenekes and Lumley 1972).'}
 knitr::include_graphics('figures/fig-turb-8.png')
 ```
 
@@ -292,11 +292,11 @@ A convenient tabulation of various dimensionless numbers is in Campbell (1977, p
 $$ Nu \frac{k}{d} = h = \frac{\rho c_p}{r}$$
 where $\rho$ is fluid density and $c_p$ is specific heat.
 
-```{r fig-turb-10, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='A plot ofthe Nusselt number versus the Reynolds number compares convective heat transfer from a man (- -) and a sheep (...). The data are fairly close to theoretical calculations made for a cylinder (-). From Monteith 1972, p. 111.'}
+```{r fig-turb-10, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='A plot ofthe Nusselt number versus the Reynolds number compares convective heat transfer from a man (- -) and a sheep ($\\cdots$). The data are fairly close to theoretical calculations made for a cylinder (—). From Monteith 1972, p. 111.'}
 knitr::include_graphics('figures/fig-turb-10.png')
 ```
 
-```{r tab-turb-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Nusselt numbers for air: forced convection From Monteith 1973, p. 224.'}
+```{r tab-turb-1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Nusselt numbers for air: forced convection From Monteith 1973, p. 224.'}
 knitr::include_graphics('figures/tab-turb-1.png')
 ```
 
@@ -364,7 +364,7 @@ Wiebe, P. 1976. The biology of cold core rings. Oceanus 19:69-76.
 
 1. What is the Reynolds number for an elephant in a 0.1 and a 10.0 m s^-1^ wind? (Make your own estimate for $d$.)
 
-2. Given the set of equations below, solve for the unknowns x, y, z.
+2. Given the set of equations below, solve for the unknowns $x$, $y$, $z$.
 $$x + 2y + 3z = 10$$
 $$4x - z = 2$$
 

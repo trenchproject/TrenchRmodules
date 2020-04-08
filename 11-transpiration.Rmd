@@ -1,4 +1,4 @@
-# Transpiration and Leaf Temperature. {#transpiration}
+# Transpiration and Leaf Temperature {#transpiration}
 
 Transpiration and Leaf Temperature: Transport Processes
 
@@ -13,7 +13,9 @@ Water is essential to life as we know it on earth. Water acts as a medium for ca
 
 Temperature is extremely important to the physiological processes within a leaf including photosynthesis, respiration, growth, cell enlargement and division, protoplasmic streaming, and translocation. Most chemical and biological processes are temperature-dependent and as a general rule, they proceed slowly at relatively low temperatures, speed up in reaction with increased temperature, and at high temperatures become limited or terminated by adverse reactions such as the denaturation of proteins and the breakdown or dissociation of molecules. A typical biological response with temperature is illustrated in Figure \@ref(fig:fig-transpiration-1) for net photosynthesis. Many temperature zone plants have a maximum rate of photosynthesis at about 25 to 30°C while plants of arctic or alpine habitats have an optimum temperature of about 15°C and some plants of extremely hot regions have optima near 40 or 45°C (e.g., Lange et al. 1975, Bjorkman et al. 1972, Billings et al. 1971). When a plant of a cool habitat is functioning optimally at a particular temperature, a plant of a warm habitat will scarcely function at all at that same temperature. Many plant leaves undergo irreversible thermal damage when their temperatures exceed 45 to 48°C while some will not be damaged at 50 or even 55°C and others will be severely denatured at 42°C. Therefore, the temperature of a leaf is always of enormous significance to the viability of it. However, when one wishes to know the temperature of a plant or, in particular, the temperature of a leaf, it is important to ask why and with what accuracy. Is it necessary to know the leaf temperature to an accuracy of 0.1, 0.5, or 1°C, and why? The answer to this question will often determine the method of measurement and the precision necessary, or it will guide one with respect to the detail required in an energy budget calculation.
 
-```{r fig-transpiration-1, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Net photosynthesis versus leaf temperature at high and low carbon dioxide concentration. From Locomen et al. 1975.  P. 41.'}
+
+```{r fig-transpiration-1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Net photosynthesis versus leaf temperature at high and low carbon dioxide concentration. From Locomen et al. 1975.  P. 41.'}
+
 knitr::include_graphics('figures/fig-transpiration-1.png')
 ```
 
@@ -88,8 +90,8 @@ E = \frac{_s d_l (T_l) - [r.h.]_s d_a (T_a)}{r_l + r_a}
 where $r_a$ is given by Equation \@ref(eq:transpiration-2). Here, if $_s d_l (T_l)$ and $_s d_a (T_a)$ are given in kg m^-3^ and $r_l$, and $r_a$ in s m^-1^, then $E$ is in kg m^-2^s^-1^. 
 
 ## COMPLETE ENERGY BUDGET
-
 By substituting Equation \@ref(eq:transpiration-3) into Equation \@ref(eq:transpiration-1), and including the expression given by Equation \@ref(eq:transpiration-2) in Equation \@ref(eq:transpiration-3), one gets for the full expression of the leaf energy budget the following: 
+
 \begin{equation} 
 Q_a = \varepsilon \sigma [T_l + 273]^4 + k_1 \bigg( \frac{V}{D}\bigg)^{1/2} [T_l - T_a] + L(T_l) \frac{_s d_l (T_l) - [r.h.]_s d_a (T_a)}{r_l + k_2 \big( \frac{D}{V}\big)^{1/2}}
 (\#eq:transpiration-4)
@@ -120,8 +122,8 @@ Let $\varepsilon = 0.96$.
 ```{r}
 #radiation only
 epsilon=0.96
-sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^{-2}K^{-4})
-#Q_a is total amount of radiation absorbed in W m^{-2}
+sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^-2K^-4)
+#Q_a is total amount of radiation absorbed in W m^-2
 
 f <- function(T_l, Q_a=800) epsilon *sigma*(T_l + 273)^4 - Q_a
 uniroot(f, interval=c(-100, 100))$root
@@ -141,22 +143,26 @@ Q_a = \varepsilon \sigma [T_l + 273]^4 + k_1 \bigg( \frac{V}{D} \bigg)^{1/2} [T_
 (\#eq:transpiration-6)
 \end{equation} 
 
-If the air temperature is $30^{\circ}C$, one can determine the exact numerical relationship between $Q_a$ and $T_l$ for any given ratio $V/D$. For example, we will determine values of $T_l$ for $Qa$ = 800, 600, and 400 W m^-2^ for $V/D$ = 1.0, 10.0, and 100 below. These values are listed in Table I.
+If the air temperature is $30°C$, one can determine the exact numerical relationship between $Q_a$ and $T_l$ for any given ratio $V/D$. For example, we will determine values of $T_l$ for $Qa$ = 800, 600, and 400 W m^-2^ for $V/D$ = 1.0, 10.0, and 100 below. These values are listed in Table I.
 
 ```{r}
 #radiation and convection
 epsilon=0.96
-sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^{-2}K^{-4})
-k1=9.14 #an experimentally determined coefficient ($9.14 J m^{-2} s^{-0.5} {^{\circ}C^{-1}}$),
+sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^-2K^-4)
+k1=9.14 #an experimentally determined coefficient 
+        #(J m^-2 s^-0.5 °C^-1)
 
-#Q_a is total amount of radiation absorbed in W m^{-2}
+#Q_a is total amount of radiation absorbed in W m^-2
 #estimate root with radiation and convection
 rc_root= function(VDratio1, Q_a1){
-  f <- function(T_l, VDratio=VDratio1, Q_a=Q_a1, T_a=30) epsilon *sigma*(T_l + 273)^4 + k1*(VDratio)^0.5*(T_l-T_a) - Q_a
+  f <- function(T_l, VDratio=VDratio1, Q_a=Q_a1, T_a=30) epsilon *
+    sigma * (T_l + 273)^4 + k1 * (VDratio)^0.5 * (T_l - T_a) - Q_a
 uniroot(f, interval=c(-100, 100))$root
   }
 
-rc_mat= rbind( sapply( c(1,10,100), FUN=rc_root, Q_a1=800), sapply( c(1,10,100), FUN=rc_root, Q_a1=600), sapply( c(1,10,100), FUN=rc_root, Q_a1=400) )
+rc_mat= rbind( sapply( c(1,10,100), FUN=rc_root, Q_a1=800), 
+               sapply( c(1,10,100), FUN=rc_root, Q_a1=600), 
+               sapply( c(1,10,100), FUN=rc_root, Q_a1=400) )
 colnames(rc_mat)=c('V/D=1', 'V/D=10', 'V/D=100') 
 rc_mat
 
@@ -257,8 +263,9 @@ return(c(T_l, E))
 #----
 
 #Vary V
+par(mar = c(5, 5, 3, 5))
 fig2a=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.2, r_l=0, D=0.05, W=0.05, Q_a=800)
-plot(fig2a[1,], fig2a[2,], type="l", xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration " ~ (kg / ~ m^2 ~ s)))
+plot(fig2a[1,], fig2a[2,], type="l", xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"))
 
 #Vary r_l
 fig2b=sapply( seq(0,600,10), FUN=est_TlTrans, T_a=40, V=2.1, rh=0.2, D=0.05, W=0.05, Q_a=800)
@@ -284,8 +291,9 @@ We create the plots in R:
 ```{r fig-transpiration-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #Vary V and r_l
 #fig 3
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=800)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,55),ylim=range(0.0,0.0004))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(35,55),ylim=range(0.0,0.0004))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=2.1, D=0.05, W=0.05, Q_a=800)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=4.1, D=0.05, W=0.05, Q_a=800)
@@ -308,8 +316,9 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ```{r fig-transpiration-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 4
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=700)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(25,45),ylim=range(0.0,0.0003))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(25,45),ylim=range(0.0,0.0003))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.2, V=2.1, D=0.05, W=0.05, Q_a=700)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.2, V=4.1, D=0.05, W=0.05, Q_a=700)
@@ -332,8 +341,9 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ```{r fig-transpiration-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 5
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(25,45),ylim=range(0.0,0.0002))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(25,45),ylim=range(0.0,0.0002))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.8, V=2.1, D=0.05, W=0.05, Q_a=700)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=30, rh=0.8, V=4.1, D=0.05, W=0.05, Q_a=700)
@@ -356,8 +366,9 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ```{r fig-transpiration-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 6
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=10, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=300)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(5,10),ylim=range(0.0,0.00015))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(5,10),ylim=range(0.0,0.00015))
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=10, rh=0.5, V=2.1, D=0.05, W=0.05, Q_a=300)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
 fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=10, rh=0.5, V=4.1, D=0.05, W=0.05, Q_a=300)
@@ -402,8 +413,9 @@ We create the plots in R:
 #Vary air temperature and resistance
 
 #fig 7
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=700)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(25,55),ylim=range(0.0,0.0007))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(25,55),ylim=range(0.0,0.0007))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=333, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=700)
 points(fig.vr[1,], fig.vr[2,], type="l", col='darkorange2')
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=667, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=700)
@@ -426,8 +438,9 @@ legend("topright", c("r_l=0", "r_l=333","r_l=667","r_l=1000"), col = c('skyblue'
 
 ```{r fig-transpiration-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 8
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(20,50),ylim=range(0.0,0.0001))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(20,50),ylim=range(0.0,0.0001))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=333, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
 points(fig.vr[1,], fig.vr[2,], type="l", col='darkorange2')
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=667, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
@@ -450,8 +463,9 @@ legend("topright", c("r_l=0", "r_l=333","r_l=667","r_l=1000"), col = c('skyblue'
 
 ```{r fig-transpiration-9, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 9
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.5, V=2.0, D=0.05, W=0.05, Q_a=700)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(15,45),ylim=range(0.0,0.0003))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(15,45),ylim=range(0.0,0.0003))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=333, rh=0.5, V=2.0, D=0.05, W=0.05, Q_a=700)
 points(fig.vr[1,], fig.vr[2,], type="l", col='darkorange2')
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=667, rh=0.5, V=2.0, D=0.05, W=0.05, Q_a=700)
@@ -474,8 +488,9 @@ legend("topright", c("r_l=0", "r_l=333","r_l=667","r_l=1000"), col = c('skyblue'
 
 ```{r fig-transpiration-10, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Leaf transpiration versus leaf temperature.'}
 #fig 10
+par(mar = c(5, 5, 3, 5))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=0, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=300)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(5,30),ylim=range(0.0,0.00001))
+plot(fig.vr[1,], fig.vr[2,], type="l", col='darkorange', xlab="Leaf temperature (°C)", ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), xlim=range(5,30),ylim=range(0.0,0.00001))
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=333, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=300)
 points(fig.vr[1,], fig.vr[2,], type="l", col='darkorange2')
 fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=667, rh=0.5, V=0.1, D=0.05, W=0.05, Q_a=300)
@@ -560,26 +575,45 @@ Tenhunen, J.D., J.A. Weber, C.S. Yocum, and D.M. Gates. 1976. Development of a p
 1.Transpiration increases with windspeed for lines 1 and 2, i.e., $r_l$ = 168 s m^-1^ but decreases with wind speed for lines 3 or 4. 
 
 ```{r}
-fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=0.1, D=0.001, W=0.02, Q_a=800)
-plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(35,45),ylim=range(0.0,0.001))
-fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=2.1, D=0.001, W=0.02, Q_a=800)
+par(mar = c(5, 5, 3, 5))
+fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               V=0.1, D=0.001, W=0.02, Q_a=800)
+plot(fig.vr[1,], fig.vr[2,], type="l", col='tomato', 
+     xlab="Leaf temperature (°C)", 
+     ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"), 
+     xlim=range(35,45), ylim=range(0.0,0.001))
+fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               V=2.1, D=0.001, W=0.02, Q_a=800)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato2')
-fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=4.1, D=0.001, W=0.02, Q_a=800)
+fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               V=4.1, D=0.001, W=0.02, Q_a=800)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato3')
-fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, V=6.1, D=0.001, W=0.02, Q_a=800)
+fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               V=6.1, D=0.001, W=0.02, Q_a=800)
 points(fig.vr[1,], fig.vr[2,], type="l", col='tomato4')
 
-fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, r_l=0, D=0.001, W=0.02, Q_a=800)
-points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue', lty="dashed")
-fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, r_l=200, D=0.001, W=0.02, Q_a=800)
-points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue2', lty="dashed")
-fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, r_l=400, D=0.001, W=0.02, Q_a=800)
-points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue3', lty="dashed")
-fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, r_l=600, D=0.001, W=0.02, Q_a=800)
-points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue4', lty="dashed")
+fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               r_l=0, D=0.001, W=0.02, Q_a=800)
+points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue', 
+       lty="dashed")
+fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               r_l=200, D=0.001, W=0.02, Q_a=800)
+points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue2', 
+       lty="dashed")
+fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               r_l=400, D=0.001, W=0.02, Q_a=800)
+points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue3', 
+       lty="dashed")
+fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.5, 
+               r_l=600, D=0.001, W=0.02, Q_a=800)
+points(fig.vr[1,], fig.vr[2,], type="l", col='skyblue4', 
+       lty="dashed")
 
-legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), col = c('tomato','tomato2','tomato3','tomato4'), lty=c(1), bty = "n")
-legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue','skyblue2','skyblue3','skyblue4'), lty='dashed', bty = "n")
+legend("top", c("V=0.1", "V=2.1","V=4.1","V=6.1"), lty=c(1), 
+       bty = "n", col = c('tomato','tomato2','tomato3','tomato4'))
+legend("topright", c("r_l=0", "r_l=200", "r_l=400", "r_l=600"), 
+       col = c('skyblue','skyblue2','skyblue3','skyblue4'), 
+       lty='dashed', bty = "n")
 
 ```
 
@@ -587,8 +621,12 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 0.015m wide,and are essentially unlimited in length.
 
 ```{r}
-fig.vr=sapply( seq(0.01,0.1,0.005), FUN=est_TlTrans, T_a=35, rh=0.2, V=0.1, W=1, Q_a=800, r_l=2000) #1045.6
-plot(fig.vr[1,], fig.vr[2,], type="p", xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)")
+par(mar = c(5, 5, 3, 5))
+fig.vr=sapply( seq(0.01,0.1,0.005), FUN=est_TlTrans, T_a=35, 
+               rh=0.2, V=0.1, W=1, Q_a=800, r_l=2000) #1045.6
+plot(fig.vr[1,], fig.vr[2,], type="p", 
+     xlab="Leaf temperature (°C)", 
+     ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"))
 
 ```
 
@@ -597,9 +635,14 @@ plot(fig.vr[1,], fig.vr[2,], type="p", xlab="Leaf temperature (°C)", ylab= "Lea
 ```{r}
 #a)
 #fig 3
-fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=0.1, D=0.05, W=0.05, Q_a=800)
-plot(fig.vr[1,], fig.vr[2,], type="l", xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)")
-fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.2, r_l=200, D=0.05, W=0.05, Q_a=800)
+par(mar = c(5, 5, 3, 5))
+fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, 
+               V=0.1, D=0.05, W=0.05, Q_a=800)
+plot(fig.vr[1,], fig.vr[2,], type="l", 
+     xlab="Leaf temperature (°C)", 
+     ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"))
+fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.2, 
+               r_l=200, D=0.05, W=0.05, Q_a=800)
 points(fig.vr[1,], fig.vr[2,], type="l", lty="dashed")
 
 #Calculate components
@@ -610,13 +653,18 @@ epsilon *sigma*(T_l + 273)^4
 #convection
 k1*(V/D)^0.5*(T_l-T_a)
 #latent heat transfer
-L*(vd(T_l, rh)-rh*vd(T_a, rh))/(r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
+L*(vd(T_l, rh)-rh*vd(T_a, rh)) / 
+  (r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
 
 #b)
 #fig 3
-fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, V=2.1, D=0.05, W=0.05, Q_a=800)
-plot(fig.vr[1,], fig.vr[2,], type="l", xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)")
-fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.2, r_l=0, D=0.05, W=0.05, Q_a=800)
+fig.vr=sapply( seq(0,600,100), FUN=est_TlTrans, T_a=40, rh=0.2, 
+               V=2.1, D=0.05, W=0.05, Q_a=800)
+plot(fig.vr[1,], fig.vr[2,], type="l", 
+     xlab="Leaf temperature (°C)", 
+     ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"))
+fig.vr=sapply( seq(0.1,6.1,0.2), FUN=est_TlTrans, T_a=40, rh=0.2, 
+               r_l=0, D=0.05, W=0.05, Q_a=800)
 points(fig.vr[1,], fig.vr[2,], type="l", lty="dashed")
 
 #Calculate components
@@ -627,13 +675,18 @@ epsilon *sigma*(T_l + 273)^4
 #convection
 k1*(V/D)^0.5*(T_l-T_a)
 #latent heat transfer
-L*(vd(T_l, rh)-rh*vd(T_a, rh))/(r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
+L*(vd(T_l, rh)-rh*vd(T_a, rh)) /
+  (r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
 
 #c)
 #fig 8
-fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=500, rh=0.8, V=0.1, D=0.05, W=0.05, Q_a=700)
-plot(fig.vr[1,], fig.vr[2,], type="l", xlab="Leaf temperature (°C)", ylab= "Leaf transpiration (kg/m^2s)", xlim=range(20,50),ylim=range(0.0,0.0001))
-fig.vr=sapply( seq(0,1000,100), FUN=est_TlTrans, T_a=10, rh=0.8,V=0.1, D=0.05, W=0.05, Q_a=700)
+fig.vr=sapply( seq(10,40,10), FUN=est_TlTrans, r_l=500, rh=0.8, 
+               V=0.1, D=0.05, W=0.05, Q_a=700)
+plot(fig.vr[1,], fig.vr[2,], type="l", xlim=range(20,50),
+     ylim=range(0.0,0.0001), xlab="Leaf temperature (°C)", 
+     ylab= expression("Leaf transpiration (kg / " * m^2 * "s)"))
+fig.vr=sapply(seq(0,1000,100), FUN=est_TlTrans, T_a=10, rh=0.8, 
+               V=0.1, D=0.05, W=0.05, Q_a=700)
 points(fig.vr[1,], fig.vr[2,], type="l", lty="dashed")
 
 #Calculate components
@@ -644,7 +697,8 @@ epsilon *sigma*(T_l + 273)^4
 #convection
 k1*(V/D)^0.5*(T_l-T_a)
 #latent heat transfer
-L*(vd(T_l, rh)-rh*vd(T_a, rh))/(r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
+L*(vd(T_l, rh)-rh*vd(T_a, rh)) / 
+  (r_l + k2*(D^{0.3}*W^{0.20})/ V^{0.50})
       
 ```
 

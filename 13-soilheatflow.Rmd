@@ -15,7 +15,7 @@ as a function of time. As will be pointed out later, soil temperature variation 
 knitr::include_graphics('figures/fig-soil-1.png')
 ```
 
-```{r fig-soil-2, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Diurnal course of temperature at three depths in a sandy loam beneath a bare uncultivated surface; Grifith, New South Wales, 17-19 January, 1939 (from Monteith 1973).'}
+```{r fig-soil-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Diurnal course of temperature at three depths in a sandy loam beneath a bare uncultivated surface; Grifith, New South Wales, 17-19 January, 1939 (from Monteith 1973).'}
 knitr::include_graphics('figures/fig-soil-2.png')
 ```
 
@@ -34,7 +34,7 @@ These observations allow us to form a rather convincing hypothesis concerning th
 
 In a very qualitative sense, we have described what appear to be the pertinent quantities involved in determining the soil temperature distribution, based simply on reason and observations (with just a little prior knowledge to guide the way). It remains now to formalize the relationship between heat flow and temperature, to develop the equations describing these processes (with emphasis on the simplifying assumptions involved), and finally to investigate the utility of this more formalized approach.
 
-```{r fig-soil-3, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Short-wave solar radiation, air temperatures and soil temperatures for a clay soil with grass cover at Wageningen, the Netherlands, on a bright day, August 17, 1947. The extreme values of the temperatures are indicated by arrows (from Van Wijk 1966).'}
+```{r fig-soil-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Short-wave solar radiation, air temperatures and soil temperatures for a clay soil with grass cover at Wageningen, the Netherlands, on a bright day, August 17, 1947. The extreme values of the temperatures are indicated by arrows (from Van Wijk 1966).'}
 knitr::include_graphics('figures/fig-soil-3.png')
 ```
 
@@ -60,7 +60,7 @@ Q\varpropto\Delta T
 \end{equation}
 The amount of heat transmitted through the soil block per unit time ($t$) is termed the heat flux ($Q/t$). The heat flux per unit area ($A$) is termed the heat flux density ($Q/At$). The heat, or heat flux density (also termed $G$), has also been observed to be proportional to $\Delta T$, while being inversely proportional to the length of the path ($L$).
 
-```{r fig-soil-4, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='One dimensional heat conduction (from Rose 1966).'}
+```{r fig-soil-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='One dimensional heat conduction (from Rose 1966).'}
 knitr::include_graphics('figures/fig-soil-4.png')
 ```
 
@@ -79,7 +79,7 @@ G=-k\frac{dT}{dz}
 
 It is important to notice the introduction of the minus sign. In words, this simply means that the direction of heat flow is opposite to the direction in which the temperature increases. To illustrate this, consider Fig. \@ref(fig:fig-soil-5), where we assume that soil temperature varies linearly with depth in the soil. Observe the opposite sense of temperature change and heat flux density. Alternatively, one may deduce the sign from consideration of the **temperature gradient** $(\frac{dT}{dz})$, or slope, of the $T$ versus depth ($z$) curve. As the depth increases, the temperature decreases. Hence the temperature gradient $dT/dz$ is negative. For downward heat flux to be positive, which is the usual convention, we must add the minus sign to obtain Equation \@ref(eq:soil-3). (See Table A in the Appendix for a list of symbols, units, and dimensions).
 
-```{r fig-soil-5, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Illustration of the source of the minus sign found in Fourier\'s law of heat conduction (Equation 3)'}
+```{r fig-soil-5, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Illustration of the source of the minus sign found in Fourier\'s law of heat conduction (Equation 3)'}
 knitr::include_graphics('figures/fig-soil-5.png')
 ```
 
@@ -87,11 +87,11 @@ Equation \@ref(eq:soil-3) clearly indicates the importance of the thermal conduc
 
 There are many ways in which $k$ for soil might be estimated. Taylor and Ashcroft (1972) give a brief review of the subject. They consider two general methods of measurement, based on steady state heat flow (temperature not a function of time) and transient heat flow (temperature changes with time). Steady state methods suffer from the fact that heat flow in soils is possible not only by conduction, but also by liquid and vapor flow of water in moist soils. Consequently, applying a constant temperature difference across a sample soil section causes the hotter face to dry out and the cooler face to become wetter, calling the results obtained into question. Therefore, unless heat transfer due to liquid water is negligible (i.e., unless the soil is dry), transient methods are recommended. These methods, which will be discussed in the section on the heat conduction equation, minimize the effects of water movement due to thermal gradients.
 
-```{r fig-soil-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Dependence of the thermal conductivity k on the volume fraction of water $X_W$ for four different soil types (from Sellers 1965)'}
+```{r fig-soil-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Dependence of the thermal conductivity k on the volume fraction of water $X_W$ for four different soil types (from Sellers 1965)'}
 knitr::include_graphics('figures/fig-soil-6.png')
 ```
 
-```{r fig-soil-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Variation of volumetric heat capacity (C) with water content in a typical soil (after Rose 1966)'}
+```{r fig-soil-7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Variation of volumetric heat capacity (C) with water content in a typical soil (after Rose 1966)'}
 knitr::include_graphics('figures/fig-soil-7.png')
 ```
 
@@ -181,7 +181,7 @@ Measurement of $K$ and $k$ are essentially the same, since they differ only by t
 knitr::include_graphics('figures/fig-soil-8.png')
 ```
 
-```{r fig-soil-9, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Record of the annual temperature wave at depths of 1m (X) and 2.5m (°) with fitted sine curves (from Rose 1966)'}
+```{r fig-soil-9, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Record of the annual temperature wave at depths of 1m (X) and 2.5m (°) with fitted sine curves (from Rose 1966)'}
 knitr::include_graphics('figures/fig-soil-9.png')
 ```
 
@@ -240,16 +240,16 @@ Since the temperature is a function of both $z$ and $t$, it is useful in looking
 ```{r fig-soil-10, fig.cap='Variation of temperature with depth for a sand soil. A value of $k=0.042calcm^{-1}sec^{-1}°C^{-1}$ and $C=0.5cal cm^{-3}°C^{-1}$ has been assumed resulting in a damping depth D=15.2cm'}
 # Variation of temperature acroos time with depth
 
-w= 2*pi/86400 #s^{-1}, angular frequency
-k= 0.0042 #thermal conductivity of soil, cal cm^{-1} s^{-1}\circC^{-1}
-C= 0.5 #volumetric heat capacity, cal cm^{-3} \circC^{-1}
+w= 2*pi/86400 #s^-1, angular frequency
+k= 0.0042 #thermal conductivity of soil, cal cm^-1 s^-1 °C^-1
+C= 0.5 #volumetric heat capacity, cal cm^-3 °C^-1
 
 #Estimate aggregate parameters
 K= k/C #thermal diffusivity
 D= (2*K/w)^0.5 #damping depth, cm
   
-Tbar= 20 #C
-A0= 8 #C
+Tbar= 20 #°C
+A0= 8 #°C
 
 #z in depth in cm
 #sec in time in seconds
@@ -262,13 +262,16 @@ Tbar + A*sin(w*sec+B)
 sec=(0:23)*60*60 #hr
 
 #plot across depths
-plot(sec/(60*60),Tsoil(0,sec), type="l", lty="dashed", xlim=c(0,24), xlab= "Time (hr)", ylab="Temperature (°C)")
+plot(sec/(60*60),Tsoil(0,sec), type="l", lty="dashed", 
+     xlim=c(0,24), xlab= "Time (hr)", ylab="Temperature (°C)")
 points(sec/(60*60),Tsoil(5,sec), type="l", col="skyblue")
 points(sec/(60*60),Tsoil(10,sec), type="l", col="skyblue2")
 points(sec/(60*60),Tsoil(20,sec), type="l", col="skyblue3")
 points(sec/(60*60),Tsoil(40,sec), type="l", col="skyblue4")
 abline(h=20)
-legend("topright", c("z=0cm", "z=5cm","z=10cm","z=20cm", "z=40cm"), col = c('black','skyblue','skyblue2','skyblue3','skyblue4'), lty=c('dashed', rep('solid',4)), bty = "n")
+legend("topright", c("z=0cm","z=5cm","z=10cm","z=20cm","z=40cm"), 
+       col=c('black','skyblue','skyblue2','skyblue3','skyblue4'), 
+       lty=c('dashed', rep('solid',4)), bty = "n")
 
 ```
 
@@ -280,8 +283,8 @@ A plot of $T$ versus $z$ for various times of day using the same values of $\ove
 # Soil temperature profiles
 w= 2*pi/86400 #s^{-1}, angular frequency
 D= 12.2 #damping depth, cm
-Tbar= 20 #C
-A0= 8 #C
+Tbar= 20 #°C
+A0= 8 #°C
 
 Tsoil= function(z,sec) {
 A= A0*exp(-z/D)
@@ -296,13 +299,18 @@ z= 0:40 #depths, cm
 sec=(0:23)*60*60 #hr
 
 #plot across depths
-plot(Tsoil(z,2*60*60),z, type="l", col="skyblue", xlim=c(10,30), ylim=c(40,0), xlab= "Temperature (°C)", ylab="Soil depth measured from surface (cm)")
+plot(Tsoil(z,2*60*60),z, type="l", col="skyblue", xlim=c(10,30), 
+     ylim=c(40,0), xlab= "Temperature (°C)", 
+     ylab="Soil depth measured from surface (cm)")
 points(Tsoil(z,6*60*60),z, type="l", col="skyblue1")
 points(Tsoil(z,10*60*60),z, type="l", col="skyblue2")
 points(Tsoil(z,14*60*60),z, type="l", col="skyblue3")
 points(Tsoil(z,18*60*60),z, type="l", col="skyblue4")
 points(Tsoil(z,22*60*60),z, type="l", col="darkblue")
-legend("bottomright", c("hr=0200","hr=0600","hr=1000","hr=1400","hr=1800","hr=2200"), col = c('skyblue','skyblue1','skyblue2','skyblue3','skyblue4','darkblue'), lty="solid", bty = "n")
+legend("bottomright", c("hr=0200","hr=0600","hr=1000","hr=1400", 
+                        "hr=1800","hr=2200"), 
+       col = c('skyblue', 'skyblue1','skyblue2','skyblue3',
+               'skyblue4', 'darkblue'), lty="solid", bty = "n")
 ```
 
 ### Comparison of Theory with Experiment
@@ -310,17 +318,17 @@ In the process of formulating a closed form solution for soil heat flow which de
 
 First of all, however, an examination of our upper boundary condition reveals an obvious difficulty in that it applies well only under clear sky conditions. Variable weather conditions as well as vegetation cover can lead to substantial deviations from a sinusoidal surface temperature variation (Fig. \@ref(fig:fig-soil-13)). The more general case of a periodic surface temperature variation that is not a simple time function can be handled by a technique called Fourier analysis. In addition, it is possible to deal with small systematic nonperiodic variations superimposed upon a larger periodic variation. Treatment of these refinements is available in Van Wijk and DeVries (1966).
 
-```{r fig-soil-12, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Diurnal change of soil temperature measured below a bare soil surface and below potatoes (from Monteith 1973).'}
+```{r fig-soil-12, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Diurnal change of soil temperature measured below a bare soil surface and below potatoes (from Monteith 1973).'}
 knitr::include_graphics('figures/fig-soil-12.png')
 ```
 
-```{r fig-soil-13, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Soil temperature variations at 10 cm depth in a clay soil under a short grass cover at Wageningen, the Netherlands. The upper curve shows large deviations from a periodic function owing to variable weather conditions, while the lower curve corresponding to a sequence of bright days has a periodic character. The average daily temperatures are indicated by the dotted lines which have been drawn such that they divide the surfaces bounded by the temperature curves for each day equally (from Van Wyjk 1966).'}
+```{r fig-soil-13, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Soil temperature variations at 10 cm depth in a clay soil under a short grass cover at Wageningen, the Netherlands. The upper curve shows large deviations from a periodic function owing to variable weather conditions, while the lower curve corresponding to a sequence of bright days has a periodic character. The average daily temperatures are indicated by the dotted lines which have been drawn such that they divide the surfaces bounded by the temperature curves for each day equally (from Van Wyjk 1966).'}
 knitr::include_graphics('figures/fig-soil-13.png')
 ```
 
 Variation of thermal properties (characterized by diffusivity) with position, temperature and time are generally secondary to the above effects concerning the upper boundary condition. Temperature effects are slight and usually ignored. Variation with depth can be dealt with by use of a multilevel model (Van Wijk and Derksen 1966), while time variation can be treated by considering diffusivity as a function of time when solving Equation \@ref(eq:soil-8) (Van Wijk and DeVries 1966). Both these latter effects are caused in most part by the changes in moisture content of the soil, which is generally a function of both depth and time (Fig. \@ref(fig:fig-soil-14)). DeVries (1975) discusses the problem of combined heat and moisture transfer. We have discussed these effects in relation to conductivity (Fig. \@ref(fig:fig-soil-6)) and diffusivity. Of course, variation of diffusivity with depth occurs also as a result of layered soils and/or differences in soil density (and thus volumetric heat capacity) caused by compaction or tillage.
 
-```{r fig-soil-14, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Soil water profiles at various times after water was added at the soil surface (from Taylor and Ashcroft 1972).'}
+```{r fig-soil-14, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Soil water profiles at various times after water was added at the soil surface (from Taylor and Ashcroft 1972).'}
 knitr::include_graphics('figures/fig-soil-14.png')
 ```
 
@@ -394,7 +402,7 @@ Van Wijk, W.R., and D.A. DeVries. 1966. Periodic temperature variation in a homo
 
 4. Based on the following figure, comment on possible explanations for the shape of the curves. Hint: Compare Figures \@ref(fig:fig-soil-6) and \@ref(fig:fig-soil-7).
 
-```{r fig-soil-15, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='For problem 4'}
+```{r fig-soil-15, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='For problem 4'}
 knitr::include_graphics('figures/fig-soil-15.png')
 ```
 
@@ -485,25 +493,3 @@ The soil was probably dry, since the soil in question is a sandy loam. This is s
 4. The initial rapid increase in $K$ is due to the rapid increase of $K$ at lower water contents. This is because the water displaces air in the dry soil, and the water conductivity is approximately two orders of magnitude greater than that for air.
 
 At higher water contents, heat capacity keeps increasing at a constant rate with addition of water, but the rate of increase of $k$ is continually decreasing. Hence a point is reached when the quotient $k/G$ peaks and decreases with further addition.
-
-
-Table A
-
-**Symbol  **|**Quantity   **|**Units    **|**Dimensions    **
-:-----:|-----|-----|:-----:
-$T$|temperature    |degrees Celsius (°C)|$\Theta$
-|  |mass    |kilogram (kg)|M     
-$z$ or $L$|length    |meter (m)       |L     
-$t$|time|second (sec)    |T     
-$Q$|heat energy   |joules (J)    |H(or  ML^2^T^-2^)
-|  |heat flux   |watts (w) (or J sec^-1^)|HT^-1^
-$G$|heat flux density  |W m^-2^|HT^-1^L^-2^   
-$k$|thermal conductivity   |W m^-1^ °C^-1^|HL^-1^$\Theta$^-1^T^-1^
-$c$|specific heat   |J °C^-1^ kg^-1^ |H$\Theta$^-1^M^-1^   
-$C$|volumetric  heat capacity |J °C^-1^ m^-3^|H$\Theta$^-1^L^-3^
-$\rho$|density    |kg m^-3^|ML^-3^
-$K$|thermal diffusivity   |m^2^ sec^-1^|L^2^T^-1^
-$X_m$|volume fraction  - minerals|dimensionless       |--
-$X_w$|   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- water|dimensionless       |--
-$X_a$|   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- air|dimensionless       |--
-$X_o$|   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- organics|dimensionless       |--

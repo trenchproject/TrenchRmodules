@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Operative temperature. {#thermoregulation}
+# Operative temperature {#thermoregulation}
 
 Animal Thermoregulation and the Operative Environmental (Equivalent) Temperature
 
@@ -32,7 +32,10 @@ One can begin to understand the costs and benefits of temperature regulation by 
 
 What kinds of information are available from Table \@ref(tab:tab-thermoreg-1)? First, the time scale on which each mechanism operates gives clues about the kind of environmental changes for which the mechanism has evolved to compensate. Second, the physical environment may dictate that certain mechanisms cannot be used. One obvious example is that of evaporative cooling in dry environments (Schmidt-Nielsen 1964). Here an organism must find other means to reduce its heat load because water is in short supply and is required for other purposes. A further complication is the interaction of several mechanisms. Consider the example of metabolic output as a function of air temperature given in most physiological texts. As the air temperature is lowered, the animal can maintain a thermal equilibrium by simply restricting blood flow to peripheral areas (vasoconstriction). This reduces the temperature in these areas (see Fig. \@ref(fig:fig-thermoreg-1a)). At the end of the thermal neutral zone when all the vessels are constricted (hot-cold dividing line in Fig. \@ref(fig:fig-thermoreg-1b)), the organism must increase its metabolic rate if its body temperature is to remain constant. In contrast, the blood vessels of an active animal must be dilated to supply the muscles with oxygen. Metabolic rate may increase by 300% or more to provide the energy for activity. Figure \@ref(fig:fig-thermoreg-2) shows resting and active metabolic rates for the rabbit *Oryctolagus cuniculus* as a function of temperature. When the rabbit is active, the metabolic rate is independent of air temperature. The challenge of physiological ecologists is to understand these mechanisms and their interactions for the animal in the natural environment.
 
+
+
 > TABLE (\#tab:tab-thermoreg-1). Systems or Mechanisms Influencing Thermoregulation in Animals.
+
 
 |**Behavioral**                     | **Time Scale of Adjustment** |
 |---                                |:---:|
@@ -85,7 +88,9 @@ knitr::include_graphics('figures/fig-thermoreg-1a.png')
 knitr::include_graphics('figures/fig-thermoreg-1b.png')
 ```
 
-```{r fig-thermoreg-2, echo=FALSE, fig.height=4, out.width = "75%"E, fig.cap='Mean heat production, loss and storage in three exercising (c) and four resting (r) New Zealand white rabbits at ambient temperatures of 10, 20 and 30°C (From Kluger et al. 1972a.)'}
+
+```{r fig-thermoreg-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Mean heat production, loss and storage in three exercising (c) and four resting (r) New Zealand white rabbits at ambient temperatures of 10, 20 and 30°C. (From Kluger et al. 1972a.)'}
+
 knitr::include_graphics('figures/fig-thermoreg-2.png')
 ```
 
@@ -103,7 +108,9 @@ Remember also it is probable that an animal can be too hot in the arctic winter 
 
 Finally note that an organism has two ways of dealing with thermal stress. It can tolerate the variability through physiological adaptations or it can avoid these climates or microclimates. The antelope ground squirrel *Citellus leucurus*, as most animals, employs both of these means. This desert mammal has evolved a large tolerance for body temperature fluctuations so that it can be active during the day under intense solar radiation. These conditions impose a net gain in heat energy and a corresponding rise in body temperature. To avoid thermal stress, the animal must retreat to its burrow where it can lose energy to the surrounding soil. Figure \@ref(fig:fig-thermoreg-3) shows the expected time course of its body temperature. When the body temperature drops, the animal has retreated to its burrow. We conclude that *C. leucurus* uses a combined strategy of tolerance and avoidance to be active on the sunlit desert surface.
 
-```{r fig-thermoreg-3, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Diagrammatic representation of the daily patterns of body temperatures in a large and a small mammal subjected to heat stress under desert conditions. (From G.A. Bartholomew 1977, p. 423; original data from Schimdt-Nielsen et al., 1957, Amer. J. Physiol. 188: 103-112, and J.W. Hudson, 1962, Univ. Calif. (Berkeley and Los Angeles) Publ. Zool. 64:1-56.'}
+
+```{r fig-thermoreg-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Diagrammatic representation of the daily patterns of body temperatures in a large and a small mammal subjected to heat stress under desert conditions. (From G.A. Bartholomew 1977, p. 423; original data from Schimdt-Nielsen et al., 1957, Amer. J. Physiol. 188: 103-112, and J.W. Hudson, 1962, Univ. Calif. (Berkeley and Los Angeles) Publ. Zool. 64:1-56.'}
+
 knitr::include_graphics('figures/fig-thermoreg-3.png')
 ```
 
@@ -123,7 +130,9 @@ Spotila and Gates (1975) provide the only study that addresses Bergmann's role a
 
 In 1877, Allen wrote that species from colder climates often have smaller appendages than do closely related species in warmer climates. He suggested that this was an adaptation to conserve heat in cold environments. Mayr (1963) states that Rensch (1933) made quantitative measurements which upheld Allen's rule. The problem is that decreasing surface area decreases the rate at which an organism can absorb energy as well as release energy. If the environment is always colder than the organism, it should assume a spherical shape and avoid the plate shape. As already noted earlier in the text, at times it may be important to increase heat loss even in the coldest environment. By reducing surface area, the organism has less ability to direct blood flow to influence its, heat balance physiologically, but an increase in the surface area to volume ratio may require more energy to keep surface tissue from freezing. The effects of natural selection on such trade-offs are not clear.
 
-```{r fig-thermoreg-4, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Effect of body size and insulation on the M-E requirement of homeotherms. (A) Cold conditions, clear sky at night, low insulation. (B) Cold conditions, clear sky at night, increased insulation. (C) Full sun, high air temperature, low insulation. (D) Full sun, high air temperature, increased insulation. Insulation consists of a layer of fur or feathers, the thickness of the layer defined as CD, where D is the inside diameter with no insulation and C is a constant proportion of D for all sizes of D in a given set. Data for real animals are taken from Porter and Gates (1969). (From Spotila and Gates 1975, p. 295.)'}
+
+```{r fig-thermoreg-4, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Effect of body size and insulation on the M-E requirement of homeotherms. (A) Cold conditions, clear sky at night, low insulation. (B) Cold conditions, clear sky at night, increased insulation. (C) Full sun, high air temperature, low insulation. (D) Full sun, high air temperature, increased insulation. Insulation consists of a layer of fur or feathers, the thickness of the layer defined as CD, where D is the inside diameter with no insulation and C is a constant proportion of D for all sizes of D in a given set. Data for real animals are taken from Porter and Gates (1969). (From Spotila and Gates 1975, p. 295.)'}
+
 knitr::include_graphics('figures/fig-thermoreg-4.png')
 ```
 
@@ -234,7 +243,9 @@ TrenchR offers several strategies for estimating operative environmental tempera
 ```{r}
 library(TrenchR)
 
-Tb_Gates(A=1, D=0.001, psa_dir=0.6, psa_ref=0.4, psa_air=0.6, psa_g=0.2, T_g=303, T_a=310, Qabs=800, epsilon=0.95, H_L=10, ef=1.3, K=0.5)
+Tb_Gates(A=1, D=0.001, psa_dir=0.6, psa_ref=0.4, psa_air=0.6, 
+         psa_g=0.2, T_g=303, T_a=310, Qabs=800, epsilon=0.95, 
+         H_L=10, ef=1.3, K=0.5)
 
 ```
 
@@ -251,7 +262,8 @@ where 1.4 is a factor to account for increased convection in natural environment
 
 The function to calculate $T_e$ (called $T_b$ for simplicity) is available in R follows (including the above calculations of $Q_{emit}$, $g_r$, and $g_{Ha}$):
 ```{r}
-Tb_CampbellNorman(T_a=303, S=823, epsilon=0.96, c_p=29.3, D=0.17, V=1)
+Tb_CampbellNorman(T_a=303, S=823, epsilon=0.96, c_p=29.3, D=0.17, 
+                  V=1)
 ```
 In addition to these general models, TrenchR offers specialized operative temperature models that have been developed for a variety of organisms.
 
@@ -269,7 +281,8 @@ knitr::include_graphics('figures/fig-thermoreg-5.png')
 knitr::include_graphics('figures/fig-thermoreg-6.png')
 ```
 
-```{r fig-thermoreg-7, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Metabolic rate, $M$, of white-crowned sparrows, plotted as a function of standard operative temperature, $T_{es}$, for three different experiments, The solid line is the regression to the data in King (1964), This study used free convection in a darkened chamber. These conditions impose the least physiological stress, and gives the lowest standard metabolic rate in the thermoneutral zone.The birds were summer acclimated, giving a lower critical temperature of about $23^{\\circ} C$, The solid symbols are the results of the study of Robinson et al. (1976), which used forced convection in a darkened chamber, Ran noise produces a slight (average of 11 percent) increase in 14 over King\'s (1.964) values. Data does not appear to extend into the thermoneutral zone. The open symbols are from DeJong\'s (1976) study, conducted using free convection in a chamber with various levels of visible radiation, The use of illuminated birds in the active part of their diurnal cycle gives the highest values of $M$. As these birds are winter-acclimated, the lower critical temperature is around $20^{\\circ} C$. Note that the use of standard operative temperature allows the comparison of purely physiological differences under equivalent thermal conditions for different combinations of wind, radiation and air temperature.'}
+```{r fig-thermoreg-7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Metabolic rate, $M$, of white-crowned sparrows, plotted as a function of standard operative temperature, $T_{es}$, for three different experiments, The solid line is the regression to the data in King (1964), This study used free convection in a darkened chamber. These conditions impose the least physiological stress, and gives the lowest standard metabolic rate in the thermoneutral zone.The birds were summer acclimated, giving a lower critical temperature of about $23^{\\circ}C$, The solid symbols are the results of the study of Robinson et al. (1976), which used forced convection in a darkened chamber, Ran noise produces a slight (average of 11%) increase in 14 over King\'s (1.964) values. Data does not appear to extend into the thermoneutral zone. The open symbols are from DeJong\'s (1976) study, conducted using free convection in a chamber with various levels of visible radiation, The use of illuminated birds in the active part of their diurnal cycle gives the highest values of $M$. As these birds are winter-acclimated, the lower critical temperature is around $20^{\\circ}C$. Note that the use of standard operative temperature allows the comparison of purely physiological differences under equivalent thermal conditions for different combinations of wind, radiation and air temperature.'}
+
 knitr::include_graphics('figures/fig-thermoreg-7.png')
 ```
 
@@ -322,7 +335,8 @@ A particularly interesting application of the $T_e$ concept will be in field stu
 
 What would such a map look like? Data presented by Bakken and Gates (1975) in Table \@ref(tab:tab-thermoreg-2) gives some insight. The authors investigated the effect of absorptivity (points 1-3), orientation (3-5), microhabitat (3, 6-8) and size (9-13).
 
-```{r fig-thermoreg-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Heating and cooling rates of the Galgpagos marine iguana (*Amblyrhynchus cristatus*) in water and air. $\\Delta T$ is the difference between body and ambient temperatures ($T_a$). During heating $T_a = 40^{\\circ}C$; during cooling $T_a=20^{\\circ}C$. (From G.A. Bartholomew and R.C. Lasiewski, 1965, Comp. Biochem. Physiol 16:573-582.)'}
+```{r fig-thermoreg-8, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Heating and cooling rates of the Galgpagos marine iguana (*Amblyrhynchus cristatus*) in water and air. $\\Delta T$ is the difference between body and ambient temperatures ($T_a$). During heating $T_a = 40^{\\circ}C$; during cooling $T_a=20^{\\circ}C$. (From-G.A. Bartholomew and R.C. Lasiewski, 1965, Comp. Biochem. Phsio14-16173-582.)'}
+
 knitr::include_graphics('figures/fig-thermoreg-8.png')
 ```
 
@@ -336,7 +350,7 @@ In this module, we have reviewed some of the historical developments in the stud
 
 > Table (\#tab:tab-thermoreg-2). A small shrub 0.5 m high provided broken shade for cylinder 8. All cylinders were in an area of $1 \times 2 m$. Microclimate parameters for this area were as follows: $T_{air}=26^{\circ}C$, $T_{ground}=38.5^{\circ}C$; wind at 20 cm=$67 cm s^{-1}$; wind at 90 cm=$310 cm s^{-1}$; solar radiation in an 0.3- to 3-$\mu$ band=$1.3 cal \;cm^{-2} min^{-1}$. August 17, 1972, 14:15 to 14:16. Douglas Lake, Cheboygan County, Michigan. (From Bakken, G.A. and D.M. Gates 1975, p. 265.)
 
-**Cylinder**|**Diameter (cm)**|**Position**|**Exposure**|**Height (cm)**|**Color **|**T (°C)**
+Cylinder|Diameter (cm)|Position|Exposure|Height (cm)|Color |T (°C)
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 1|1.6|ESE-WNW|Sun|0.3|White|37.5
 2|1.6|ESE-WNW|Sun|0.3|Black|50
@@ -352,7 +366,8 @@ In this module, we have reviewed some of the historical developments in the stud
 12|3.81|ESE-WNW|Sun|0.3|Gray|47.5
 13|15.5|ESE-WNW|Sun|1|Gray|47
 
-```{r fig-thermoreg-9, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Body temperature of a telemetered free-ranging *Bufo spinulosus* compared with that of a telemetered free-ranging *Liolaemus multiformis* at the same time. 22 March; 4,300 m. Temperature of soil surface was measured at a spot exposed to the sun. Comments at top of the figure referring to submergence and emergence pertain to the toad. (From Pearson, O.P. and Bradford, D.F. 1976, p. 165).'}
+```{r fig-thermoreg-9, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Body temperature of a telemetered free-ranging *Bufo spinulosus* compared with that of a telemetered free-ranging *Liolaemus multiformis* at the same time. 22 March; 4,300 m. Temperature of soil surface was measured at a spot exposed to the sun. Comments at top of the figure referring to submergence and emergence pertain to the toad. (From Pearson, O.P. and Bradford, D.F. 1976, p. 165).'}
+
 knitr::include_graphics('figures/fig-thermoreg-9.png')
 ```
 
@@ -595,7 +610,8 @@ Zemansky, M.W. and B.C. Van Ness. 1966, Basic Engineering Thermodynamics. McGraw
 
 2. When an endothermic animal is resting, there can be a range of standard operative environmental temperatures within which its heat production or metabolic rate is constant. This thermal neutral zone, as it is called, is shown in Figs. \@ref(fig:fig-thermoreg-1)a, \@ref(fig:fig-thermoreg-5) and \@ref(fig:fig-thermoreg-7). What mechanisms does an animal have available to maintain constant core temperature and heat production when the thermal environment is changing? Discuss the relative importance of each.
 
-3. a) Using the information in Fig. \@ref(fig:fig-thermoreg-2), what are the avenues of heat gain and heat loss for an exercising rabbit? 
+3.  
+a) Using the information in Fig. \@ref(fig:fig-thermoreg-2), what are the avenues of heat gain and heat loss for an exercising rabbit? 
 
 b) At different temperatures, some terms are constant while others are changing. Why? Identify the factors which may have caused the end of the exercise period. Is there a temperature at which one of these factors is likely to be more important?
 
@@ -670,7 +686,7 @@ To answer the question specifically posed, gulls have been shown to use their fe
 
 ORTAX
 
-**Time Period**|**$F_x$**|**$F_x-M_{fx}$**|**Ranking**|**$M_{rx}$**|**Ranking**|**$F_x-M_{fx}-M_{rx}$**|**Ranking**
+Time Period|$F_x$|$F_x-M_{fx}$|Ranking|$M_{rx}$|Ranking|$F_x-M_{fx}-M_{rx}$|Ranking
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 1|6|3|6.5|1|2.5|4|8
 2|6|2|8.5|2|6.5|4|8
@@ -686,7 +702,7 @@ $\sum$| |36| |18| | |
 
 DIPLITZ
 
-**Time Period**|**$F_x$**|**$F_x-M_{fx}$**|**Ranking**|**$M_{rx}$**|**Ranking**|**$F_x-M_{fx}-M_{rx}$**|**Ranking**
+Time Period|$F_x$|$F_x-M_{fx}$|Ranking|$M_{rx}$|Ranking|$F_x-M_{fx}-M_{rx}$|Ranking
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 1|20|10|2|1|3|11|2
 2|25|15|1|2|8|17|1
@@ -730,7 +746,7 @@ Animal|W m^-2^ °C^-1^|kg|J °C^-1^|m^2^|J °C^-1^ m^-2^
 
 Body temperature will equal the operative environmental temperature.
 
-| | |**V (m s^-1^)**| | 
+| | | | **V (m s^-1^)** | 
 :-----:|:-----:|:-----:|:-----:|:-----:
 Parameter|Animal|0.1|0.5|3
 $h_c$ (W m^-2^ °C^-1^)|1|6.17|16.21|47.51
@@ -761,7 +777,7 @@ Q_a&+K(T_b-T_r)=Q_e+C+E_r+G(T_r-T_g) \\
 M&=E_b+K(T_b-T_r) \\
 Q_a&+K(T_b-T_r)=RT_r-3\sigma \varepsilon\bar{T}_r^4+h_c(T_r-T_a)+E_r+D(T_r-T_g) \\
 Q_n&+K(T_b-T_r)=RT_r+h_c(T_r-T_a)+E_r+G(T_r-T_g) \\
-T_b&-&\bigg(\frac{M-E_b}{K}\bigg)=T_r \\
+T_b&-\bigg(\frac{M-E_b}{K}\bigg)=T_r \\
 Q_n&+M-E_b-E_r=RT_r+h_cT_r-h_cT_a+GT_r-GT_g \\
 Q_n&+h_cT_a+GT_g+M-E_b-E_r=[R+h_c+G]T_r \\
 T_b&=\frac{Q_n+h_c T_a+GT_g+M-E_b-E_r}{R+h_c+G}+\frac{M-E_b}{K} \\

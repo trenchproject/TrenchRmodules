@@ -93,15 +93,17 @@ The importance of Figure \@ref(fig:fig-climatespace-1) is that we have establish
 knitr::include_graphics('figures/fig-climatespace-1.png')
 ```
 
-Morhardt and Gates (1974) have considered the temporal variation of $Q_a$ and $T_a$ more carefully. They measured $T_g$, $T_a$, $R_p$ ($= S + s$ on a horizontal surface), $R_g$ and $R_a$ hourly for a summer's day in the Colorado mountains shown as in Figure \@ref(fig:fig-climatespace-2).  These values were used to calculate $Q_a$ for the Belding ground squirrel (*Citellus beldingi beldingi*) from an equation similar to Equation \@ref(eq:climatespace-3). In Figure \@ref(fig:fig-climatespace-3), pairs of $Q_a$ and $T_a$ are plotted as a function of time. Morhardt and Gates made similar calculations for several different microhabitats. Although there were no startling conclusions about how the animal was being influenced by thermal environment, we will consider their study further in the exercises. The next,step in constructing the climate space diagram is to see how the animal is influenced by radiation, air temperature, and wind speed.
 
-```{r fig-climatespace-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Daily variation in the radiant environment in different microhabitats under different general weather conditions. The upper portion of the figure describes daily fluctuations of air temperature ($T_a$) and temperature of the surface of the substrate ($T_g$). From Morhardt, S. S. and D. M. Gates. 1974. P. 20.'}
+```{r fig-climatespace-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "70%", fig.align = "default", fig.cap='Daily variation in the radiant environment in different microhabitats under different general weather conditions. The upper portion of the figure describes daily fluctuations of air temperature ($T_a$) and temperature of the surface of the substrate ($T_g$). From Morhardt, S. S. and D. M. Gates. 1974. P. 20.'}
 knitr::include_graphics('figures/fig-climatespace-2.png')
 ```
 
-```{r fig-climatespace-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Climate diagram for the habitat. Data on these diagrams indicate the total amount of radiation that is absorbed by a geometrical model of a ground squirrel under conditons of air temperature and radiation shown in Figure 9.2. The model is oriented in two ways with respect to direct solar radiation to show how absorbed radiation differs at the same air temperature and thesame time of day with differences in orientation toward the sun. The amount of radiation absorbed is greatest ($Q_{abs,maximum}$) when the long axis of the model is normal to the direction of the sun and least ($Q_{abs,minimum}$) when the hemispherical end of the model is toward the sun. All other orientations would be intermediate between these extremes. Data points are taken directly from Figure 9.2 at hourly or half-hourly intervals and are identified at selected points by showing the hour of the day in solar time adjacent to the points.  The line for sunlight 74 percent absorbed represents the maximum amount of radiation that could be absorbed by the model in direct sunlight at any air temperature. The blackbody curve-indicates the intensity of radiation from a blackbody at any air temperature, and the curve labeled "night time average of clear sky plus ground" indicates the minimum energy likely to be absorbed by the model when exposed to a night. sky radiating at a temperature which is cooler than the air. From Morhardt, S. S. and D. M. Gates. 1974. P. 25.'}
+```{r fig-climatespace-3, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Climate diagram for the habitat. Data on these diagrams indicate the total amount of radiation that is absorbed by a geometrical model of a ground squirrel under conditons of air temperature and radiationshown in Figure 9.2. The model is oriented in two ways with respect to direct solar radiation to show how absorbed radiation differs at the same air temperature and thesame time of day with differences in orientation toward the sun. The amount of radiation absorbed is greatest ($Q_{abs-maximum}$) when the long axis of the model is normal to the direction of the sun and least ($Q_{abs-minimum}$) when the hemispherical end of the model is toward the sun. All other orientations would be intermediate between these extremes. Data points are taken directly from Figure 9.2 at hourly or half-hourly intervals and are identified at selected points by showing the hour of the day in solar time adjacent to the points.  The line for sunlight 74% absorbed represents the maximum amount of radiation that could be absorbed by the model in direct sunlight at any air temperature. The blackbody curve-indicates the intensity of radiation from a blackbody at any air temperature, and the curve labeled \"night time average of clear sky plus ground\" indicates the minimum energy likely to be absorbed by the model when exposed to a night. sky radiating at a temperature which is cooler than the air. From Morhardt, S. S. and D. M. Gates. 1974. P. 25.'}
+
 knitr::include_graphics('figures/fig-climatespace-3.png')
 ```
+
+Morhardt and Gates (1974) have considered the temporal variation of $Q_a$ and $T_a$ more carefully. They measured $T_g$, $T_a$, $R_p$ ($= S + s$ on a horizontal surface), $R_g$ and $R_a$ hourly for a summer's day in the Colorado mountains shown as in Figure \@ref(fig:fig-climatespace-2).  These values were used to calculate $Q_a$ for the Belding ground squirrel (*Citellus beldingi beldingi*) from an equation similar to Equation \@ref(eq:climatespace-3). In Figure \@ref(fig:fig-climatespace-3), pairs of $Q_a$ and $T_a$ are plotted as a function of time. Morhardt and Gates made similar calculations for several different microhabitats. Although there were no startling conclusions about how the animal was being influenced by thermal environment, we will consider their study further in the exercises. The next,step in constructing the climate space diagram is to see how the animal is influenced by radiation, air temperature, and wind speed.
 
 ## PHYSIOLOGICAL CONTRAINTS OF THE ORGANISM
 
@@ -249,7 +251,8 @@ Now we can plot the results, first plotting the blackbody relationship as a dott
 ```{r, fig.width=7, fig.height=6}
 plot(Q_blackbody, T_air, ylim = c(-40,50), xlim = c(0,1300), 
      type = 'l', col = 'black', lwd = 2, lty = 2, 
-     xlab = expression("radiation," ~ W/ ~ m^2), ylab = 'air temperature, °C', 
+     xlab = expression("radiation," ~ W/ ~ m^2), 
+     ylab = 'air temperature, °C', 
      main = "Porter and Gates Figure 12")
 ```
 
@@ -283,7 +286,8 @@ points(Q_day, T_air, type = 'l',col = 'red',lwd = 2)
 alphas <- seq(0.2, 0.8, 0.2)
 for(i in 1:length(alphas)){
   alpha_s <- alphas[i]
-  climspace <- Qbound(Tair = T_air, Tsub = T_air, Zenith = Zenith, tau = tau, alpha_s = alpha_s, alpha_g = alpha_g)
+  climspace <- Qbound(Tair = T_air, Tsub = T_air, Zenith = Zenith, 
+                  tau = tau, alpha_s = alpha_s, alpha_g = alpha_g)
   Q_day <- climspace$Q_day
   points(Q_day, T_air, type = 'l', col = 'orange', lwd = 2)
 }
@@ -469,8 +473,8 @@ Here is some code to find the corners of the climate space and to tidy up the pl
 climate_space <- as.data.frame(cbind(T_air, Q_abs_lower, 
                                 Q_abs_upper, Q_night, Q_day))
 
-# now get the differences between the radiation levels for the 
-# night and day radiation bounding curves and the 3 and 45 °C lines
+#now get the differences between the radiation levels for the 
+#night and day radiation bounding curves and the 3 and 45 °C lines
 climate_space$min_lower <- 
   climate_space$Q_abs_lower-climate_space$Q_night
 climate_space$max_lower <- 
@@ -770,23 +774,24 @@ text(day_hot$Q_abs+50,day_hot$T_air, round(day_hot$T_air,1))
 
 Notice how strikingly similar the climate space is for the Zebra Finch and the Desert Iguana (re-plotted below), despite their extremely different body temperature limits. What are the key differences between them in the environments they can tolerate, and what is it about the physiology of these two species that makes them have such similar climate spaces? Does the similarity extend to environments of higher wind speed?
 
+
 In a subsequent module you will learn now to work with gridded microclimate data and map biophysical calculations of climate spaces onto geographic spaces.
 
 ```{r, fig.width = 7, fig.height = 6, echo=FALSE}
 pars <- subset(climate_space_pars, Name=="Desert Iguana")
-pars[,4:6] <- pars[,4:6] * (4.185 / 60 * 10000) # convert heat flows from cal/min/cm2 to J/s/m2 = W/m2
-pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)# convert thermal conductivities from cal/(min cm C) to J/(s m C) = W/(m C)
+pars[,4:6] <- pars[,4:6] * (4.185 / 60 * 10000) # convert heat flows from cal/min/cm^2 to J/s/m^2 = W/m^2
+pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)# convert thermal conductivities from cal/(min cm °C) to J/(s m °C) = W/(m °C)
 pars[,c(7:8,11,16)] <- pars[,c(7:8,11,16)] / 100 # convert cm to m
 
 # choose data for the first row of the 'pars' table, which are the vales for when T_b is 3 °C
 a_max <- pars$abs_max[1] # get the maximum solar absorptivity value, choosing row 1
 D <- pars$D[1] # diameter, m
-T_b_lower <- pars$T_b[1] # body temperature, deg C
-M <- pars$M[1] # metabolic rate, W/m2
-E_ex <- pars$E_ex[1] # evaporative heat loss from respiration, W/m2
-E_sw <- pars$E_sw[1] # evaporative heat loss from sweating, W/m2
-k_b <- pars$k_b[1] # thermal conductivity of the skin, W/(m C)
-K_b <- k_b/pars$d_b[1] # thermal conductance of the skin, W/(m2 C) 
+T_b_lower <- pars$T_b[1] # body temperature, °C
+M <- pars$M[1] # metabolic rate, W/m^2
+E_ex <- pars$E_ex[1] # evaporative heat loss from respiration, W/m^2
+E_sw <- pars$E_sw[1] # evaporative heat loss from sweating, W/m^2
+k_b <- pars$k_b[1] # thermal conductivity of the skin, W/(m °C)
+K_b <- k_b/pars$d_b[1] # thermal conductance of the skin, W/(m^2 °C) 
 epsilon <- 1 # emissivity, -
 
 # call the Qbound function to get available radiation/air temp combinations
@@ -800,12 +805,12 @@ T_air <- seq(-60,60,0.1) # air temperature range to consider, °C
 Q_abs_lower <- Qabs_ecto(D = D, T_b = T_b_lower, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 
 D <- pars$D[5] # diameter, m
-T_b_upper <- pars$T_b[5] # body temperature, deg C
-M <- pars$M[5] # metabolic rate, W/m2
-E_ex <- pars$E_ex[5] # evaporative heat loss from respiration, W/m2
-E_sw <- pars$E_sw[5] # evaporative heat loss from sweating, W/m2
-k_b <- pars$k_b[5] # thermal conductivity of the skin, W/(m C)
-K_b <- k_b/pars$d_b[5] # thermal conductance of the skin, W/(m2 C) 
+T_b_upper <- pars$T_b[5] # body temperature, °C
+M <- pars$M[5] # metabolic rate, W/m^2
+E_ex <- pars$E_ex[5] # evaporative heat loss from respiration, W/m^2
+E_sw <- pars$E_sw[5] # evaporative heat loss from sweating, W/m^2
+k_b <- pars$k_b[5] # thermal conductivity of the skin, W/(m °C)
+K_b <- k_b/pars$d_b[5] # thermal conductance of the skin, W/(m^2 °C) 
 epsilon <- 1 # emissivity, -
 
 Q_abs_upper <- Qabs_ecto(D = D, T_b = T_b_upper, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
@@ -813,7 +818,7 @@ Q_abs_upper <- Qabs_ecto(D = D, T_b = T_b_upper, M = M, E_ex = E_ex, E_sw = E_sw
 # first make a table that has air temperature, corresponding radiation absorbed for a body temperature of 3 and 45 degrees, and the clear night and sunny day conditions
 climate_space <- as.data.frame(cbind(T_air, Q_abs_lower, Q_abs_upper, Q_night, Q_day))
 
-# now get the differences between the radiation levels for the night and day radiation bounding curves and the 3 and 45 degree lines
+# now get the differences between the radiation levels for the night and day radiation bounding curves and the 3 and 45 °C lines
 climate_space$min_lower <- climate_space$Q_abs_lower-climate_space$Q_night
 climate_space$max_lower <- climate_space$Q_abs_lower-climate_space$Q_day
 climate_space$min_upper <- climate_space$Q_abs_upper-climate_space$Q_night
@@ -846,7 +851,7 @@ limits_night <- subset(night,Q_night > as.numeric(night_cold[1]) & Q_night < as.
 limits_day <- subset(day,Q_day > as.numeric(day_cold[1]) & Q_day < as.numeric(day_hot[1]))
 
 # plot the final subsetted data
-plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab='radiation, W/m2', ylab='air temperature, deg C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," °C, wind ", V, " m/s"))
+plot(Q_blackbody,T_air,ylim=c(-40,50),xlim=c(0,1300),type='l',col='black',lwd=2, lty = 2, xlab=expression("radiation," ~ W/ ~ m^2), ylab='air temperature, °C', main = paste0("Desert Iguana, T_b ",T_b_lower,"-",T_b_upper," °C, wind ", V, " m/s"))
 points(limits_night[,1], limits_night[,2],type='l',col='blue',lwd=2)
 points(limits_day[,1], limits_day[,2],type='l',col='red',lwd=2)
 points(limits_lower$Q_abs, limits_lower$T_air, type = 'l', lwd = 2)
@@ -873,7 +878,7 @@ where
 <div class="nobullet">
 * $Q_a$ = longwave and shortwave radiation absorbed by the organism ($W m^{-2}$),
 * $\varepsilon$ = emissivity (0.96),
-* $\sigma$ =  Stefan-Boltzmann constant 5.67x10^-8^ ($W m^{-2} K^{-4}$),
+* $\sigma$ =  Stefan-Boltzmann constant 5.67 $\times$ 10^-8^ ($W m^{-2} K^{-4}$),
 * $T_s$ = surface temperature of the lizard ($^{\circ}C$),
 * $T_a$ = air temperature ($^{\circ}C$),
 * $h_c$ = convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$),
@@ -916,11 +921,12 @@ Q_a = \varepsilon \sigma (T_b + 273)^4 + k_s V^{0.60} {M_b}^{-0.133} (T_b-T_a)
 We can implement this analysis in R: 
 ```{r}
 E= 0.96 #emissivity
-sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^{-2}K^{-4})
-k_s= 17.24 #W m^{-2} {^{\circ}C} (m s^{-1})^{-0.60} (kg)^{0.133}
+sigma= 5.67 * 10^{-8} #Stefan-Boltzmann's constant (W m^-2K^-4)
+k_s= 17.24 #W m^-2 °C (m s^-1)^-0.60 (kg)^0.133
 
 #PLOT ENVIRONMENTAL CONSTRAINTS
-Q_a = function(T_a) (a_L*sigma*(T_g + 273)^4 + 1.22*a_L*sigma*(T_a + 273)^4 - 171)/2
+Q_a = function(T_a) (a_L*sigma*(T_g + 273)^4 + 
+                       1.22*a_L*sigma*(T_a + 273)^4 - 171)/2
 
 T_a_plot= -40:40
 T_g= T_a_plot
@@ -928,7 +934,9 @@ T_g= T_a_plot
 #left line: night
 a_L=1 #mean absorptivity to longwave radiation
 Q_a_plot= Q_a(T_a_plot)
-plot(Q_a_plot, T_a_plot, type="l", xlim=range(0,1000), xlab="Absorbed Radiation Q_a (Wm^-2)", ylab= "Air temperature T_a (C)")
+plot(Q_a_plot, T_a_plot, type="l", xlim=range(0,1000), 
+     xlab=expression("Absorbed Radiation" ~ Q_a ~ (W ~ m^{-2})), 
+     ylab= expression("Air temperature" ~ T_a ~ "(°C)"))
 
 #right line: full sun ##see Appendix I##
 a_L=0.8 #mean absorptivity to longwave radiation
@@ -936,11 +944,12 @@ Q_a_plot= Q_a(T_a_plot)
 points(Q_a_plot, T_a_plot, type="l")
 
 #PLOT ORGANISMAL CONSTRAINTS
-V= 1.0 #windspeed (m s^{-1})
+V= 1.0 #windspeed (m s^-1)
 M_b= 0.027 # body mass (kg)
 T_b= 39 # (C)
 
-Q_a= function(T_a) E*sigma*(T_b + 273)^4 + k_s*V^{0.60}*M_b^{-0.133 }*(T_b-T_a)
+Q_a= function(T_a) E*sigma*(T_b + 273)^4 + 
+  k_s*V^{0.60}*M_b^{-0.133}*(T_b-T_a)
 
 T_a_plot= -40:40
 Q_a_plot= Q_a(T_a_plot)
@@ -955,27 +964,28 @@ points(Q_a_plot, T_a_plot, type="l")
 
 ```
 
-To construct the climate space of the lizard, we need to make assumptions about the variables of Equation \@ref(eq:climatespace-8). If $V$, $M_b$ and $T_b$ are specified as constants, there is a linear relationship between $Q_a$ and $T_a$. We illustrate this in Figure \@ref(fig:fig-climatespace-6) by plotting the upper line for $V = 1.0 m s^{-1}$, $M_b = 0.027 kg$, and $T_b = 39^\circ{C}$, and the bottom line with only $T_b$ changed to $3^\circ{C}$. The shaded region in Figure \@ref(fig:fig-climatespace-6) is the climate space of the reptile if the wind speed is the average value for the microclimate that the lizard inhabits, and if the body temperatures given are the upper and lower bounds that the animal can tolerate.
+To construct the climate space of the lizard, we need to make assumptions about the variables of Equation \@ref(eq:climatespace-8). If $V$, $M_b$ and $T_b$ are specified as constants, there is a linear relationship between $Q_a$ and $T_a$. We illustrate this in Figure \@ref(fig:fig-climatespace-6) by plotting the upper line for $V = 1.0 m s^{-1}$, $M_b = 0.027 kg$, and $T_b = 39°C$, and the bottom line with only $T_b$ changed to $3°C$. The shaded region in Figure \@ref(fig:fig-climatespace-6) is the climate space of the reptile if the wind speed is the average value for the microclimate that the lizard inhabits, and if the body temperatures given are the upper and lower bounds that the animal can tolerate.
 
-Examination of the climate space diagram allows interpretation of several of the parameters of the heat energy balance model. The boundary points of the space indicate the extreme values that the lizard is likely to encounter and still survive. The lower left-hand point of the diagram tells us that if the reptile is exposed to a clear sky at night, its body temperature will remain high enough to survive as long as the air temperature is above $7^\circ{C}$. The opposite corner shows that $27^\circ{C}$ is the extreme air temperature that the lizard could endure if it were exposed to strong sunlight.
 
-The effect of changing color is also illustrated in Figure \@ref(fig:fig-climatespace-6). In desert environments lizards often lighten their color which lowers their mean absorptivity. For example, lowering the mean absorptivity from 0.8 to 0.6 in Figure \@ref(fig:fig-climatespace-6) allows the lizard to increase the air temperature that it can survive from about $30^\circ{C}$ to $32^\circ{C}$. Norris (1967) has extensively studied the effect of color change on the thermal adaptations of desert lizards.
+Examination of the climate space diagram allows interpretation of several of the parameters of the heat energy balance model. The boundary points of the space indicate the extreme values that the lizard is likely to encounter and still survive. The lower left-hand point of the diagram tells us that if the reptile is exposed to a clear sky at night, its body temperature will remain high enough to survive as long as the air temperature is above $7°C$. The opposite corner shows that $27°C$ is the extreme air temperature that the lizard could endure if it were exposed to strong sunlight.
+
+The effect of changing color is also illustrated in Figure \@ref(fig:fig-climatespace-6). In desert environments lizards often lighten their color which lowers their mean absorptivity. For example, lowering the mean absorptivity from 0.8 to 0.6 in Figure \@ref(fig:fig-climatespace-6) allows the lizard to increase the air temperature that it can survive from about $30°C$ to $32°C$. Norris (1967) has extensively studied the effect of color change on the thermal adaptations of desert lizards.
 
 Increased wind speed increases the relative importance of the convective term and couples the body temperature of the animal more closely to the air temperature. Figure \@ref(fig:fig-climatespace-7) shows the influence of wind speed on the energy balance. As the wind speed increases from $0.1 m s^{-1}$ to $10.0 m s^{-1}$ the physiological line becomes more horizontal.
 
 We can visualize the effect of size by picking body masses of 0.001, 0.10, 10.0 and 100.0 kg to insert in Equation \@ref(eq:climatespace-8) and plotting the lines in Figure \@ref(fig:fig-climatespace-8). As size or weight increases, the boundary layer thickens, decreasing the rate of convective exchange (a smaller component of the heat balance). This is readily seen algebraically by re-examining the convection term. We conclude that increasing size has the same effect as decreasing wind speed. It is also clear from Figure \@ref(fig:fig-climatespace-8) that most lizards (less than 1.0 kg) are closely tied to the air temperature.
 
-```{r fig-climatespace-6, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='The hatched area is the climate space of a lizard with absorptivity to sunlight of 0.8. If the animal decreases its absorptivity to 0.6 it can increase the air temperature it can withstand from 30 to 32.5 °C. The darkened areas refer to problem 4.'}
+```{r fig-climatespace-6, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='The hatched area is the climate space of a lizard with absorptivity to sunlight of 0.8. If the animal decreases its absorptivity to 0.6 it can increase the air temperature it can withstand from 30 to 32.5 °C. The darkened areas refer to problem 4.'}
 knitr::include_graphics('figures/fig-climatespace-6.png')
 ```
 
 There are several observations which suggest that the thermoregulation behaviors we might predict from considering this model indeed occur. Porter and Gates (1969) observed that the small lizard (*Uta stansburiana*) (0.004 kg approximately) which is tightly coupled to the air temperature climbs rocks early in the morning. They hypothesized that this behavior was taken to avoid the cold layer of air at the ground surface. Alternatively we might ask what options are available if the lizard does not want to become too hot. From Equation \@ref(eq:climatespace-8) we see that there are at least two strategies. The animal can reduce the absorbed radiation $Q_a$ by going to a shaded environment or it can increase its convective heat loss by climbing bushes where the wind speed is greater and $T_a$ is lower. Descriptions of the daily activity patterns of the desert iguana (*Dipsosaurus dorsalis*) from field observations, show that both these options are used. The lizard emerges from its burrow in the morning. As $T_a$ and $Q_a$ increase, the animals move into the shade, then higher into the shrubs, and finally retreat Porter et al. (1973) found good agreement between the predicted behavior from their heat transfer model and the morning activity pattern of this species.
 
-```{r fig-climatespace-7, echo=FALSE, fig.cap='To investigate the effect of windspeed on the thermal balance', fig.fullwidth=FALSE, fig.height=4}
+```{r fig-climatespace-7, echo=FALSE, fig.cap='To investigate the effect of windspeed on the thermal balance', fig.show = "hold", out.width = "100%", fig.align = "default", fig.height=4}
 knitr::include_graphics('figures/fig-climatespace-7.png')
 ```
 
-```{r fig-climatespace-8, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='To illustrate the effect of size, values of weight, Mb, from 0.001 to 100 kg were substituted into equation 8 and plotted here.'}
+```{r fig-climatespace-8, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='To illustrate the effect of size, values of weight, Mb, from 0.001 to 100 kg were substituted into equation 8 and plotted here.'}
 knitr::include_graphics('figures/fig-climatespace-8.png')
 ```
 
@@ -1037,11 +1047,14 @@ T_b + T_r = (M - E_{ex}) (\frac{d_b}{k_b} + \frac{d_f}{k_f})
 
 Equation \@ref(eq:climatespace-14) can be used to calculate the surface temperature $T_r$ if the other variables are specified. Once $T_r$ is known, Equation \@ref(eq:climatespace-9) can be used to construct the climate space. Values for the parameters of Equations \@ref(eq:climatespace-9) and \@ref(eq:climatespace-14) are taken from Porter and Gates (1969) and reproduced in Table \@ref(tab:climatespace-1). These are used to construct the climate space of the cardinal in Figure \@ref(fig:fig-climatespace-10). The numerals correspond to those in the table. Given these conditions the cardinal needs increased metabolic output and thicker insulation to withstand cold conditions. Such low levels of radiation and air temperature will occur just before sunrise during the winter. One would expect the bird to minimize its heat loss by seeking a sheltered microhabitat to avoid radiating to the atmosphere and to reduce the wind speed. Porter and Gates (1969, p. 237) add, "By tucking its bill under its wing, the cardinal will also reduce surface area and water loss." It is also interesting to examine the range of conditions for which the animal can remain in steady state if its metabolic output is at a minimum and $T_b$ is constant. The set of lines numbered II and III illustrate these conditions. Line IV is the upper limit ofstress that the cardinal can endure.
 
-```{r fig-climatespace-9, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Concentric cylinder model of animal for heat transfer analysis. M=metabolism,$E_{ex}$=respiratory moisture loss, $E_{sw}$=moisture loss by sweating, $T_b$=body temperature, $T_s$=skin temperature, $T_r$= radiant surface temperature, $k_b$ = conductivity of fat, $k_f$ = conductivity of fur or feathers, $d_b$=thickness of fat, and $d_f$= thickness of fur or feathers. From Porter, W.P.and D.M. Gates. 1969. P. 230.'}
+
+```{r fig-climatespace-9, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Concentric cylinder model of animal for heat transfer analysis. M=metabolism,$E_{ex}$=respiratory moisture loss, $E_{sw}$=moisture loss by sweating, $T_b$=body temperature, $T_s$=skin temperature, $T_r$= radiant surface temperature, $k_b$ = conductivity of fat, $k_f$ = conductivity of fur or feathers, $d_b$=thickness of fat, and $d_f$= thickness of fur or feathers. From Porter, W.P.and D.M. Gates. 1969. P. 230.'}
+
 knitr::include_graphics('figures/fig-climatespace-9.png')
 ```
 
-```{r fig-climatespace-10, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Climate diagram for a cardinal showing relations between air temperature, radiation absorbed, and wind speed for constant body and radiant surface temperatures at actual values of metabolic and water loss rates. From Porter, W. P. and D. M. Gates. 1969. p. 237.'}
+```{r fig-climatespace-10, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Climate diagram for a cardinal showing relations between air temperature, radiation absorbed, and wind speed for constant body and radiant surface temperatures at actual values of metabolic and water loss rates. From Porter, W. P. and D. M. Gates. 1969. p. 237.'}
+
 knitr::include_graphics('figures/fig-climatespace-10.png')
 ```
 
@@ -1071,11 +1084,11 @@ where
 
 The equivalent conductivity is due to a weighing of the resistance to convection and radiation transfer. Figures \@ref(fig:fig-climatespace-11) and \@ref(fig:fig-climatespace-12) taken from Monteith illustrate his method. Notice that there is a substantial metabolic contribution to the energy balance when the locust is flying and that when the insect is resting the environmental temperature is equal to the skin temperature $T_s$ which will also equal the body temperature. Furthermore, if the environmental conditions (air temperature, wind speed, and net radiation) are given, then a range of physiological parameters (metabolism, fat thickness, fur thickness, water loss) can be found that will allow the animal to remain in thermal equilibrium. If the physiological values are known the converse problem can be solved (Monteith 1973, p. 165). The climate space concept has the advantage that it has put an outer bound on the physical environment. It may also be easier to interpret because absorbed radiation is kept separate from reradiation. Monteith's method, however, allows one to visualize the relative magnitude of each resistance element between the animal and the environment. For an example of this method see Cena and Clark (1974).
 
-```{r fig-climatespace-11, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Main features of temperature/heat-flux diagram for dry systems. $T_s$ is skin temperature, $T_o$ coat surface temperature, $T_e$ effective environment temperature, and $T_a$ air temperature. From Monteith, J. L. 1973. P. 165.'}
+```{r fig-climatespace-11, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Main features of temperature/heat-flux diagram for dry systems. $T_s$ is skin temperature, $T_o$ coat surface temperature, $T_e$ effective environment temperature, and $T_a$ air temperature. From Monteith, J. L. 1973. P. 165.'}
 knitr::include_graphics('figures/fig-climatespace-11.png')
 ```
 
-```{r fig-climatespace-12, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Temperature/heat flux diagram for locust basking (lower section of graph) and flying (upper section). From Monteith, J. L. 1973. P. 166.'}
+```{r fig-climatespace-12, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Temperature/heat flux diagram for locust basking (lower section of graph) and flying (upper section). From Monteith, J. L. 1973. P. 166.'}
 knitr::include_graphics('figures/fig-climatespace-12.png')
 ```
 
@@ -1146,7 +1159,16 @@ Zervanos, S. M., and N. F. Hadley. 1973. Adaptational biology and energy relatio
 
 Rank the homeotherms from the highest to lowest difference between body temperature and surface temperature. Under what environmental conditions would an animal like to make this difference large? When would the animal like to make this difference small? What other mammals do you know of besides the pig that have thick fat layers? Why might this be? How does fat compare with fur or feathers as an insulation material? What is the relative efficiency of each? Is it clear now that the assumption that $T_b$ ~ $T_r$ for the lizard is not critical?
 
-Table A
+<!-- {r echo=FALSE, results='asis', out.width="50%",} -->
+
+<!-- tab_climatespace_p1 <- read.csv("tab-climatespace-p1.csv", fileEncoding="UTF-8-BOM", header = F) -->
+<!-- colnames(tab_climatespace_p1) <- c("", "M", "", "E_ex", "", "E_sw", "", "d_b", "", "d_f", "") -->
+<!-- knitr::kable(tab_climatespace_p1, caption = "test" ) %>% -->
+<!--   column_spec(1, width = "1in") %>% -->
+<!--   column_spec(2, width = "0.5in") -->
+
+
+>Table A
 
 | |M| |**$E_{ex}$**| |**$E_{sw}$**| |**$d_b$**| |**$d_f$**| 
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -1165,7 +1187,7 @@ $M$, $E_{ex}$, $E_{sw}$ in W m^-2^, $d_b$ and $d_f$ in m $\times$ 10^-3^
 
 2. Construct the climate space of the pig, jack rabbit, and locust using the data presented below:
 
-Table B
+>Table B
 
 |                                  |     | $M$ | $E_{sw}$ | $E_{ex}$ | $d_f$ | $d_b$ | $T_b$ |
 |----------------------------------|:---:|:---:|:------:|:------:|:-----:|:-----:|:-----:|
@@ -1215,11 +1237,11 @@ Compare this with the values used in Porter and Gates (1969) tabled below. Why d
 
 7. Morhardt and Gates (1973) measured both the metabolic rate and the evaporative water loss as a function of effective ambient temperature These graphs are included below (Figures \@ref(fig:fig-climatespace-13) and \@ref(fig:fig-climatespace-14)). We know that both these physiological parameters should also depend on the radiation levels and wind speeds. Consider the metabolic chambers to be equivalent to a blackbody environment and then plot-lines of constant metabolic rate and evaporative rates on the climate space diagram (let $M_b$ = 0.2 kg, $V$ = ms^-1^). Now repeat this process on the climate space of Figure \@ref(fig:fig-climatespace-3). What are times of environmental stress? What might be the preferred activity period of the animal? Remember that the metabolic curve is for a resting and fasting animal. How does that change your answer? Consult the original paper and investigate what other thermal microhabitats were available. Is it critical that we do not have any information about the animal in its burrow?
 
-```{r fig-climatespace-13, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Metabolic rates of all squirrels used in this study as a function of effective ambient temperature. Open circles represent metabolic rates of resting squirrels at effective ambient temperatures below the thermal neutral zone. Closed circles represent metabolic rates of resting squirrels at effective ambient temperatures above the lower critical temperature of 28°C. Open squares represent meta bolic rates of exceptionally active squirrels, or those whose body temperature was falling below normal levels. The solid line is a least squres regression line fitted to the open circles, and the broken lines delineate the 95 percent confidence interval of the least squares line. The equation of the line and the correlation coefficient (r) are shown.'}
+```{r fig-climatespace-13, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Metabolic rates of all squirrels used in this study as a function of effective ambient temperature. Open circles represent metabolic rates of resting squirrels at effective ambient temperatures below the thermal neutral zone. Closed circles represent metabolic rates of resting squirrels at effective ambient temperatures above the lower critical temperature of 28°C. Open squares represent meta bolic rates of exceptionally active squirrels, or those whose body temperature was falling below normal levels. The solid line is a least squres regression line fitted to the open circles, and the broken lines delineate the 95 percent confidence interval of the least squares line. The equation of the line and the correlation coefficient (r) are shown.'}
 knitr::include_graphics('figures/fig-climatespace-13.png')
 ```
 
-```{r fig-climatespace-14, echo=FALSE, fig.height=4, out.width = "50%", fig.cap='Evaporative water loss as a function of effective temperature (corrected to 4 mg 820/liter air). The data collected at different relative humidities have been corrected to a constant relative humidity (vapor density = 4 mg 820/liter air) A logistic curve is fitted to the data, and the correlation coefficient (r) is shown.'}
+```{r fig-climatespace-14, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Evaporative water loss as a function of effective temperature (corrected to 4 mg 820/liter air). The data collected at different relative humidities have been corrected to a constant relative humidity (vapor density = 4 mg 820/liter air) A logistic curve is fitted to the data, and the correlation coefficient (r) is shown.'}
 knitr::include_graphics('figures/fig-climatespace-14.png')
 ```
 
@@ -1488,7 +1510,8 @@ The resulting climate space diagram is given below.
 
 If the animal were simply resting outside, to reduce its metabolism to the lowest levels. it should be active from 1100 to 1500 hours. The reason to go above ground, however, is for activity. Therefore, if metabolic rate increases 1.5 times, preferred activity times should shift to 800-1000 or 1500-1600 hours. It is hard to say much about water loss when the animal is active. According to the figure, if $M$ increases to $82 W m^{-2}$ then $E$ drops. But if respiration rate increases with activity then $E$ may also increase. Morhardt and Gates considered a wide variety of above-ground habitats. A shaded environment gave much lower radiation loads during the day. If the animal orients its body parallel to the sun, this lowers $Q_a$ also. A great deal more could have been said about the thermoregulation strategies if the thermal environment of the burrows were monitored and if microhabitat usage and body temperature as a function of time of day had been recorded. One would predict that shaded environments including the burrow would be used more in the middle of the day. To test this, one would have to make hourly observations on microhabitat usage.
 
-```{r fig-climatespace-p7, echo=FALSE, fig.height=4, out.width = "75%"}
+
+```{r fig-climatespace-p7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default"}
 knitr::include_graphics('figures/fig-climatespace-p7.png')
 ```
 
