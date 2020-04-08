@@ -79,7 +79,7 @@ Although there are complexities concerning air flow about a leaf which cause $k_
 
 The rate at which water vapor will diffuse out of a leaf will depend directly on the difference in water vapor density inside and outside the leaf, just as the rate at which water will flow downhill depends on the difference in height between the top and bottom of the hill.
 
-For the moment, it is assumed that the air in the intercellular air spaces inside the leaf is at saturation at the temperature of the leaf and has a saturation density $_s d_l (T_l)$. The air outside the leaf and beyond the boundary layer has a water vapor density equal to $[r.h.] \times _sd_a (T_a)$, where  $r.h$. is the relative humidity and $_sd_a (T_a)$ is the saturation water vapor density of the air as a function of the air temperature. The relative humidity is, by definition, the ratio of the actual water vapor:density of the air to the saturation density. Usually, it is given in percent, but as used here, it is a decimal fraction. The rate of water loss from a leaf per unit area per unit time is equal to the gradient for water vapor density divided by the resistance to water vapor movement and is given by 
+For the moment, it is assumed that the air in the intercellular air spaces inside the leaf is at saturation at the temperature of the leaf and has a saturation density $_s d_l (T_l)$. The air outside the leaf and beyond the boundary layer has a water vapor density equal to $[r.h.] \times _sd_a (T_a)$, where  $r.h$. is the relative humidity and $_sd_a (T_a)$ is the saturation water vapor density of the air as a function of the air temperature. The relative humidity is, by definition, the ratio of the actual water vapor density of the air to the saturation density. Usually, it is given in percent, but as used here, it is a decimal fraction. The rate of water loss from a leaf per unit area per unit time is equal to the gradient for water vapor density divided by the resistance to water vapor movement and is given by 
 \begin{equation} 
 E = \frac{_s d_l (T_l) - [r.h.]_s d_a (T_a)}{r_l + r_a}
 (\#eq:transpiration-3)
@@ -89,7 +89,7 @@ where $r_a$ is given by Equation \@ref(eq:transpiration-2). Here, if $_s d_l (T_
 
 ## COMPLETE ENERGY BUDGET
 
-By substituting Equation (\@ref(eq:transpiration-3)) into Equation (\@ref(eq:transpiration-1)), and including the expression given by Equation (\@ref(eq:transpiration-2)) in Equation (\@ref(eq:transpiration-3)), one gets for the full expression of the leaf energy budget the following: 
+By substituting Equation \@ref(eq:transpiration-3) into Equation \@ref(eq:transpiration-1), and including the expression given by Equation \@ref(eq:transpiration-2) in Equation \@ref(eq:transpiration-3), one gets for the full expression of the leaf energy budget the following: 
 \begin{equation} 
 Q_a = \varepsilon \sigma [T_l + 273]^4 + k_1 \bigg( \frac{V}{D}\bigg)^{1/2} [T_l - T_a] + L(T_l) \frac{_s d_l (T_l) - [r.h.]_s d_a (T_a)}{r_l + k_2 \big( \frac{D}{V}\big)^{1/2}}
 (\#eq:transpiration-4)
