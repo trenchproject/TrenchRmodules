@@ -360,7 +360,7 @@ Let's see if this relationship holds in the case of a body of mass $m$ falling f
 
 If equation \@ref(eq:physics-13) is true then the time derivative of the left hand side must be zero. Taking this derivative:
 \begin{align*}
-\frac{d}{dt}(\frac{1}{2}mv^2+mgh)=\frac{1}{2}m\frac{d}{dt}(v^2)+mg\frac{dh}{dt}&=\frac{1}{\rlap{-}2}m\rlap{-}2v\frac{dv}{dt}+mg\frac{dh}{dt} \\
+\frac{d}{dt}(\frac{1}{2}mv^2+mgh)=\frac{1}{2}m\frac{d}{dt}(v^2)+mg\frac{dh}{dt}&=\frac{1}{\rlap{---}2}m\rlap{---}2v\frac{dv}{dt}+mg\frac{dh}{dt} \\
 &=mv(-g)+mgv=0
 \end{align*}
 

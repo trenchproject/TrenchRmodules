@@ -210,64 +210,69 @@ and the homogeneity principle is again violated; we must reject the equation (an
 
 Thy assignment of dimensions to the elements of integrals, differential equations, difference equations, and integro-differential equations is just as straightforward (but perhaps not so obvious) as that of simple algebraic structures. For expositional purposes, let the symbol "$X$" in the following examples be the dimension of the quantity $x$:  
 Differentials:  
-$\begin{aligned}
+\begin{align*}
 &[dx]=X \\
 &[d^2x] = X \\
 &[dx^2] = X^2 \\
-\end{aligned}$
+\end{align*}
 
 Differential operators:  
-$\begin{aligned}
+\begin{align*}
 &\Big[\frac{d}{dx}\Big]=X^{-1} \\
 &\Big[\frac{dM}{dx}\Big]=[M]X^{-1} \\
 &[\dot{x}]=\Big[\frac{dx}{dt}\Big]=XT^{-1} \\
 &\Big[\frac{d^n}{dx^n}\Big]=X^{-n}\; \mbox{ (n a positive integer)} \\
 &\Big[\frac{d^nM}{dx^n}\Big]=[M]X^{-n} \\
+\end{align*}
+
+\begin{align*}
 &[\ddot{x}]=\Big[\frac{d^2x}{dt^2}\Big]=XT^{-2} \\
 &\Big[\frac{\partial}{\partial x}\Big]=X^{-1} \\
 &\Big[\frac{\partial M}{\partial x}\Big]=[M]X^{-1} \\
 &\Big[\frac{\partial^n}{\partial x^n}\Big]=X^{-n} \\
 &\Big[\frac{\partial^n M}{\partial x^n}\Big]=[M]X^{-n} \\
-\end{aligned}$
+\end{align*}
 
 Laplacian:  
-$\begin{aligned}
+\begin{align*}
 &[\nabla\phi]=\bigg[\frac{\partial^2\phi}{\partial x^2}+\frac{\partial^2\phi}{\partial y^2}+\frac{\partial^2\phi}{\partial z^2}\bigg]=[\phi]L^{-2}\;\;\mbox{each term}
-\end{aligned}$
+\end{align*}
 
 Difference operators:  
-$\begin{aligned}
+\begin{align*}
 &[\Delta x]=X \\
 &[\Delta^2x]=X \\
 &[\Delta^n x]=X \\
-\end{aligned}$
+\end{align*}
 
 Indexed differences:  
-$\begin{aligned}
+\begin{align*}
 &[x_{i+1}-x_i]=X
-\end{aligned}$
+\end{align*}
 
 Indefinite integrals:  
-$\begin{aligned}
+\begin{align*}
 &\bigg[\int f(x)dx\bigg]-[f(x)]X \\
 &\bigg[\int\!\!\!\int f(x,y)dxdy\bigg]=[f(x,y)][dy][dx]=[f(x,y)][y]X \\
-\end{aligned}$
+\end{align*}
 
 Definite integrals:  
-$\begin{aligned}
+\begin{align*}
 &\bigg[\int_xf(t)dt\bigg]=[f(x)]X \\
 &\bigg[\int\!\!\!\int_Rf(x,y)dxdy\bigg]=\bigg[\int_{y_1}dy\int_{x_1}[f(x,y)dx\bigg]=[f(x_1,y_1)][dy_1][dx_1]
-\end{aligned}$
+\end{align*}
 
 Let us use the following integro-differential equation to illustrate the homogeneity of analytical equations that have physical meaning. The equation arises from the principle of momentum conservation as applied to the two-dimensional steady flow of a viscous fluid at a boundary. The quantities $u$, $U$ are velocities, while $x$, $y$ are the two-dimensional space variables of displacement, and $v$ is the kinematic viscosity of the fluid:
 $$u\frac{\partial u}{\partial x}-\frac{\partial u}{\partial y}\bigg[\frac{\partial}{\partial y}\int_0^yudy\bigg]=U\frac{dU}{dx}+x\frac{\partial^2u}{\partial y^2}$$
 The terms of the equation separately reduce to fundamental dimensions as follows. Note that the dimensional set {$L,V$} accommodates this equation equally as well as the set {$L,T$}.
-$\begin{aligned}
+
+\begin{align*}
 &\Big[u\frac{\partial u}{\partial x}\Big]=V\frac{V}{L}=LT^{-1}LT^{-1}L^{-1}=LT^{-2} \\
-&\Big[\frac{\partial u}{\partial y}\Big(\frac{\partial}{\partial x}\int_0^yudy\Big)\Big]=\Big[\frac{\partial u}{\partial y}\Big]\Big[\frac{\partial}{\partial x}\Big]\Big[u(y)\Big]\Big[dy\Big] = \frac{V}{L}\frac{1}{L}VL=LT^{-1}L^{-1}LT^{-1}L=LT^{-2} \\
+&\Big[\frac{\partial u}{\partial y}\Big(\frac{\partial}{\partial x}\int_0^yudy\Big)\Big]=\Big[\frac{\partial u}{\partial y}\Big]\Big[\frac{\partial}{\partial x}\Big]\Big[u(y)\Big]\Big[dy\Big] \\
+&= \frac{V}{L}\frac{1}{L}VL=LT^{-1}L^{-1}LT^{-1}L=LT^{-2} \\
 &\Big[U\frac{dU}{dx}\Big]=LT^{-1}LT^{-1}L^{-1}=LT^{-2} \\
 &\bigg[v\frac{\partial^2u}{\partial y^2}\bigg] = L^2T^{-1}\frac{LT^{-1}}{L^2} LT^{-2} \\
-\end{aligned}$
+\end{align*}
 
 Hence, our equation is dimensionally homogeneous; its dimensions are those of acceleration. We can also write the dimensions of any term as
 $$LT^{-2}=\frac{MLT^{-2}}{M}=\frac{F}{M}$$
@@ -298,7 +303,7 @@ In either case, the factor is dimensionless and equal to unity. *Any conversion 
 For the sake of illustration, let us transform 4.2 pounds scale magnitude of mass to the equivalent magnitude in units of the kilogram. We start by making the obvious statement
 $$4.2lb=4.2lb$$
 and then operate on the RHS with the appropriate conversion factor. Since we want "lb" to cancel on the RHS (leaving "kg"), we choose the factor that has "lb" in the denominator:
-$$4.2lb=4.2\rlap{-}lb\bigg(\frac{0.454kg}{1\rlap{-} lb}\bigg)$$
+$$4.2lb=4.2\rlap{---}lb\bigg(\frac{0.454kg}{1\rlap{---} lb}\bigg)$$
 Perform the necessary multiplication and get
 $$4.2lb=1.907kg$$
 We follow much the same procedure for conversions that require a combination of conversion factors. Suppose we desire to have the scale velocity of 30 miles per hour in units of the centimeter and the second. Accordingly, we are concerned here with essentially two chains of conversions, one for dimension L and one for dimension T. 
@@ -324,11 +329,11 @@ For dimension T:
 To proceed with the conversion we make the obvious statement
 $$\frac{30mi}{1hr}=\frac{30mi}{1hr}$$
 and convert the units for each dimension. Starting with L (as a matter of choice; we could start with T just as legitimately), we follow the chain mile $\rightarrow$ foot $\rightarrow$ ..., and employ the conversion factor that cancels the unit "mi":
-$$\frac{30mi}{1hr}=\frac{30 \rlap{--}mi}{1hr}\Big(\frac{5280ft}{1\rlap{--}mi}\Big)$$
+$$\frac{30mi}{1hr}=\frac{30 \rlap{-----}mi}{1hr}\Big(\frac{5280ft}{1\rlap{-----}mi}\Big)$$
 We continue the process and arrive at the unit "cm":
-$$\frac{30mi}{1hr}=\frac{30 \rlap{--}mi} {1hr}\Big(\frac{5280\rlap{-}ft} {1\rlap{--}mi}\Big)\Big(\frac {12\rlap{-}in}{1\rlap{-}ft}\Big)\Big(\frac{2.54cm}{1\rlap{-}in}\Big)$$
+$$\frac{30mi}{1hr}=\frac{30 \rlap{-----}mi} {1hr}\Big(\frac{5280\rlap{----}ft} {1\rlap{-----}mi}\Big)\Big(\frac {12\rlap{---}in}{1\rlap{----}ft}\Big)\Big(\frac{2.54cm}{1\rlap{---}in}\Big)$$
 Now we complete the process for units of T. Again we follow the, appropriate conversion chain (hour $\rightarrow$ minute $\rightarrow$ ...). Since "hr" appears in a denominator, we choose the hr $\rightarrow$ min conversion that will cancel "hr", and so on:
-$$\frac{30mi}{1hr}=\frac{30}{1\rlap{-}hr}\Big(\frac{5280}{1}\Big)\Big(\frac{12}{1}\Big)\Big(\frac{2.54}{1}\Big)\Big(\frac{1\rlap{-}hr}{60\rlap{--}min}\Big)\Big(\frac{1\rlap{--}min}{60sec}\Big)$$
+$$\frac{30mi}{1hr}=\frac{30}{1\rlap{----}hr}\Big(\frac{5280}{1}\Big)\Big(\frac{12}{1}\Big)\Big(\frac{2.54}{1}\Big)\Big(\frac{1\rlap{----}hr}{60\rlap{------}min}\Big)\Big(\frac{1\rlap{------}min}{60sec}\Big)$$
 And finally, we perform the necessary multiplication and get the desired conversion
 $$30mi/hr=1340cm/sec$$
 The rational operations of algebra extend with great convenience to the operations (and conversions) on scale units. 
@@ -338,11 +343,11 @@ Convert the area magnitude of 1 square inch to units of square centimeters:
 The identity between the inch and the centimeter is
 $$1in=2.54cm$$
 and by squaring both sides of the identity we get
-\begin{eqnarray}
-(1in)^2&=&(2.54cm)^2 \\
-&=&(2.54)^2cm^2 \\
-1in^2&=&6.4516cm^2 \\
-\end{eqnarray}
+\begin{align*}
+(1in)^2&=(2.54cm)^2 \\
+&=(2.54)^2cm^2 \\
+1in^2&=6.4516cm^2 \\
+\end{align*}
 
 Example. Convert 20 in^2^ to units of cm^2^:  
 Make the obvious statement
@@ -350,7 +355,7 @@ $$20in^2=20in^2$$
 From the previous example we can write the conversion factor
 $$\frac{6.4516cm^2}{1in^2}=1$$
 and thus
-$$20in^2=\frac{20\rlap{-}in^2}{1}\Big(\frac{6.4516cm^2}{1\rlap{-}in^2}\Big)$$
+$$20in^2=\frac{20\rlap{---}in^2}{1}\Big(\frac{6.4516cm^2}{1\rlap{---}in^2}\Big)$$
 $$20in^2=129.032cm^2$$
 
 Example. The density of CCl~4~ at 0°C is 1.600 grams per cubic centimeter. Convert this intensive property to units of the ounce and the cubic inch:  
@@ -374,7 +379,7 @@ Identities and conversion factors are
 Make the obvious statement
 $$\frac{1.600g}{1cm^3}=\frac{1.600g}{1cm^3}$$
 Apply the chain of conversion factors, choosing those that cancel in succession:
-$$\frac{1.600g}{1cm^3}=\frac{1.600\rlap{-}g}{1\rlap{--}cm^3}\Big(\frac{1\rlap{-}lb}{453.6\rlap{-}g}\Big)\Big(\frac{16oz}{1\rlap{-}lb}\Big)\Big(\frac{16.387\rlap{--}cm^3}{1in^3}\Big)$$
+$$\frac{1.600g}{1cm^3}=\frac{1.600\rlap{--}g}{1\rlap{-----}cm^3}\Big(\frac{1\rlap{---}lb}{453.6\rlap{--}g}\Big)\Big(\frac{16oz}{1\rlap{---}lb}\Big)\Big(\frac{16.387\rlap{-----}cm^3}{1in^3}\Big)$$
 $$1.600g\cdot cm^{-3}=0.9248oz\cdot in^{-3}$$
 which is the desired conversion.
 
@@ -423,24 +428,24 @@ where $\vec{q}$ is the vector of heat current density (quantity of heat per unit
 PROBLEM SET 1  
 
 1(a) $VT^{-1}$  
-&nbsp;&nbsp;(b) $MVT^{-1}$  
-&nbsp;&nbsp;(c) $MV^2$  
+&nbsp;(b) $MVT^{-1}$  
+&nbsp;(c) $MV^2$  
 2(a) $LT^{-2}$ (by substituting $LT^{-1}$ for $V$).  
-&nbsp;&nbsp;(b) $MLT^{-2}$  
-&nbsp;&nbsp;(c) $ML^2T^{-2}$  
+&nbsp;(b) $MLT^{-2}$  
+&nbsp;(c) $ML^2T^{-2}$  
 3(a) $FL$  
-&nbsp;&nbsp;(b) $FL$  
-&nbsp;&nbsp;(c) $FLT^{-1}$  
+&nbsp;(b) $FL$  
+&nbsp;(c) $FLT^{-1}$  
 4(b) $ML^2T^{-2}$  
-&nbsp;&nbsp;(c) $ML^2T^{-3}$  
+&nbsp;(c) $ML^2T^{-3}$  
 5. 2(a) 1 m$\cdot$sec^-2^  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) 1 kg$\cdot$m$\cdot$sec^-2^  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) 1 kg$\cdot$m^2^$\cdot$sec^-2^  
-&nbsp;&nbsp;&nbsp;&nbsp;3(a) 1 nt$\cdot$m, or 1 joule  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) 1 nt$\cdot$m, or 1 joule  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) 1 nt$\cdot$m$\cdot$sec^-1^, or 1 joule$\cdot$sec^-1^, or 1 watt  
-&nbsp;&nbsp;&nbsp;&nbsp;4(b) 1 kg$\cdot$m^2^$\cdot$sec^-2^, or 1 nt$\cdot$m, or 1 joule  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) 1 kg$\cdot$m^2^$\cdot$sec^-3^, or 1 nt$\cdot$m$\cdot$sec^-1^, or 1 joule$\cdot$sec^-1^, or 1 watt
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) 1 kg$\cdot$m$\cdot$sec^-2^  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) 1 kg$\cdot$m^2^$\cdot$sec^-2^  
+&nbsp;&nbsp;&nbsp;3(a) 1 nt$\cdot$m, or 1 joule  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) 1 nt$\cdot$m, or 1 joule  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) 1 nt$\cdot$m$\cdot$sec^-1^, or 1 joule$\cdot$sec^-1^, or 1 watt  
+&nbsp;&nbsp;&nbsp;4(b) 1 kg$\cdot$m^2^$\cdot$sec^-2^, or 1 nt$\cdot$m, or 1 joule  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) 1 kg$\cdot$m^2^$\cdot$sec^-3^, or 1 nt$\cdot$m$\cdot$sec^-1^, or 1 joule$\cdot$sec^-1^, or 1 watt
 
 PROBLEM SET 2
 
@@ -466,13 +471,13 @@ a pure number since the units (cm^2^/cm^2^) cancel.
 
 4.
 
-\begin{eqnarray}
-K.E. &=& \frac{1}{2}mv^2 \\
-&=&\frac{1}{2}(2.0\times10^{-22}g)(4.0\times10^4cm\cdot sec^{-1})^2 \\
-&=&(1.0\times10^{-22}g)(16.0\times10^8cm^2\cdot sec^{-2}) \\
-&=&1.0\times16.0\times10^{-22}\times10^8g\cdot cm^2\cdot sec^{-2} \\
-&=&1.6\times 10^{-13}erg
-\end{eqnarray}
+\begin{align*}
+K.E. &= \frac{1}{2}mv^2 \\
+&=\frac{1}{2}(2.0\times10^{-22}g)(4.0\times10^4cm\cdot sec^{-1})^2 \\
+&=(1.0\times10^{-22}g)(16.0\times10^8cm^2\cdot sec^{-2}) \\
+&=1.0\times16.0\times10^{-22}\times10^8g\cdot cm^2\cdot sec^{-2} \\
+&=1.6\times 10^{-13}erg
+\end{align*}
 
 5. 1 micron = 10^-6^m [but 1 m = 10^2^ cm]  
 = 10^-6^(10^2^ cm)  
@@ -490,7 +495,7 @@ K.E. &=& \frac{1}{2}mv^2 \\
 (h) $1.099\times10^{-6}mol$  
 (i) $10^2are=100are$ [1 are = 100 m^2^, hence 1 hectare = 10000 m^2^]  
 (j) $10 (dekacm)^2=10(10^2cm^2)=10^3cm^2=1000cm^2$, or, in meters  
-&nbsp;&nbsp;&nbsp;&nbsp;$10(dekacm)^2= 10(10\times10^{-2}m)^2 =10(10^{-1}m)^2=10(10^{-2}m^2) =10^{-1}m^2=0.1m^2$
+$10(dekacm)^2= 10(10\times10^{-2}m)^2 =10(10^{-1}m)^2=10(10^{-2}m^2) =10^{-1}m^2=0.1m^2$
 
 7.
 (a) 7.35 gigaliters  
@@ -556,12 +561,12 @@ The identities are
 &nbsp;&nbsp;&nbsp;1 m = 100 cm  
 &nbsp;&nbsp;&nbsp;1°C temp. diff. = 1°K temp. diff.  
 Make the obvious statement
-\begin{eqnarray}
-\frac{cal}{cm\cdot °C\cdot sec}&=&\frac{cal}{cm\cdot °C\cdot sec} \\
-&=&\frac{\rlap{--}cal}{cm\cdot °C\cdot sec}\Big(\frac{4.1840 J}{\rlap{--}cal}\Big) \\
-&=&\frac{1}{\rlap{--}cm\cdot °C\cdot sec}\Big(\frac{4.1840J}{1}\Big)\Big(\frac{100\rlap{--}cm}{m}\Big) \\
-1\frac{cal}{cm\cdot °C\cdot sec}&=&418.40\frac{J}{m\cdot °K\cdot sec}
-\end{eqnarray}
+\begin{align*}
+\frac{cal}{cm\cdot °C\cdot sec}&=\frac{cal}{cm\cdot °C\cdot sec} \\
+&=\frac{\rlap{-----}cal}{cm\cdot °C\cdot sec}\Big(\frac{4.1840 J}{\rlap{-----}cal}\Big) \\
+&=\frac{1}{\rlap{-----}cm\cdot °C\cdot sec}\Big(\frac{4.1840J}{1}\Big)\Big(\frac{100\rlap{-----}cm}{m}\Big) \\
+1\frac{cal}{cm\cdot °C\cdot sec}&=418.40\frac{J}{m\cdot °K\cdot sec}
+\end{align*}
 
 (j) Units are $J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}$, $g\cdot cm\cdot °K^{-1} \cdot sec^{-3}$.  
 Conversion chains are  
@@ -571,23 +576,23 @@ Identities are
 &nbsp;&nbsp;&nbsp;1 J = 10^7^ erg  
 &nbsp;&nbsp;&nbsp;1 erg = 1 g$\cdot$cm^2^$\cdot$sec^-2^  
 &nbsp;&nbsp;&nbsp;1 m = 100 cm  
-\begin{eqnarray}
-\frac{J}{m\cdot °K\cdot sec}&=&\frac{J}{m\cdot °K \cdot sec} \\
-&=&\frac{J}{\rlap{-}m\dot °K\cdot sec}\Big(\frac{10^7 \rlap{--}erg}{J}\Big)\Big(\frac{g\cdot cm^2 sec^{-2}}{\rlap{--}erg}\Big)\Big(\frac{\rlap{m}}{100cm}\Big) \\
-1\;J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}&=&10^5g\cdot cm\cdot °K^{-1}\cdot sec^{-3}
-\end{eqnarray}
+\begin{align*}
+\frac{J}{m\cdot °K\cdot sec}&=\frac{J}{m\cdot °K \cdot sec} \\
+&=\frac{J}{\rlap{---}m\cdot °K\cdot sec}\Big(\frac{10^7 \rlap{-----}erg}{J}\Big)\Big(\frac{g\cdot cm^2 sec^{-2}}{\rlap{-----}erg}\Big)\Big(\frac{\rlap{---}m}{100cm}\Big) \\
+1\;J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}&=10^5g\cdot cm\cdot °K^{-1}\cdot sec^{-3}
+\end{align*}
 
 7.
 
-\begin{eqnarray}
-1 ft&=&\frac{1}{3}yd \\
-&=&\frac{1}{3}(0.9144 m) \\
-&=&\frac{1}{3}(0.9144)(100cm) \\
-r&=&1.5ft=1.5\Big(\frac{1}{3}(0.9144)(100cm)\Big) \\
-vol&=&\frac{4}{3}\pi r^3 \\
-&=& \frac{4\pi}{3}\Big((1.5)\frac{1}{3}(0.9144)(100cm)\Big)^3 \\
-&=&400320cm^3
-\end{eqnarray}
+\begin{align*}
+1 ft&=\frac{1}{3}yd \\
+&=\frac{1}{3}(0.9144 m) \\
+&=\frac{1}{3}(0.9144)(100cm) \\
+r&=1.5ft=1.5\Big(\frac{1}{3}(0.9144)(100cm)\Big) \\
+vol&=\frac{4}{3}\pi r^3 \\
+&= \frac{4\pi}{3}\Big((1.5)\frac{1}{3}(0.9144)(100cm)\Big)^3 \\
+&=400320cm^3
+\end{align*}
 
 8. Identities are $1L=10^3cm^3$, $1mL=10^{-3}L$.  
 The dimensional concept of cubical density is
@@ -595,11 +600,11 @@ $$\mbox{density}=\frac{\mbox{mass}}{\mbox{volume}}$$
 and for the problem
 $$0.79g\cdot cm^{-3} = \frac{\mbox{mass (of 30 m alc.)}}{30 mL}$$
 Therefore,
-\begin{eqnarray}
-\mbox{mass (of 30 mL of alc)}&=&(0.79g\cdot cm^{-3})\cdot(30mL) \\
-&=&\Big(\frac{0.79g}{\rlap{--}cm^3}\Big)\frac{30\rlap{--}mL}{1}\Big(\frac{10^{-3}L}{\rlap{--}mL}\Big)\Big(\frac{10^3\rlap{--}cm^3}{\rlap{-}L}\Big) \\
-&=& 23.7g
-\end{eqnarray}
+\begin{align*}
+\mbox{mass (of 30 mL of alc)}&=(0.79g\cdot cm^{-3})\cdot(30mL) \\
+&=\Big(\frac{0.79g}{\rlap{-----}cm^3}\Big)\frac{30\rlap{-----}mL}{1}\Big(\frac{10^{-3}L}{\rlap{-----}mL}\Big)\Big(\frac{10^3\rlap{-----}cm^3}{\rlap{---}L}\Big) \\
+&= 23.7g
+\end{align*}
 
 9. Pressure is force per unit area.  
 The area ($L^2$) is 15 cm $\times$ 2.8 mm.  
@@ -611,23 +616,24 @@ If we employ the cgs system of units, the conversion identities are
  *  1 lb = 0.4536 kg  
  *  1 kg=10^3^ g
  
-\begin{eqnarray}
-p&=&F\cdot A^{-1} \\
-&=&\Big(\frac{150lb}{1}\cdot\frac{980\rlap{--}cm}{sec^2}\Big)\Big(\frac{1}{15\rlap{--}cm}\Big) \\
-&=&\frac{150\rlap{-}lb}{1}\Big(\frac{0.4536\rlap{-}kg}{\rlap{-}lb}\Big)\Big(\frac{10^3g}{\rlap{-}kg}\Big)\frac{980}{sec^2}\Big(\frac{1}{15}\Big)\frac{1}{2.8\rlap{--}mm}\Big(\frac{\rlap{--}mm}{10^{-3}\rlap{-}m}\Big)\Big(\frac{\rlap{-}m}{10^2cm}\Big) \\
-&=&15,876,000 g\cdot cm^{-1}\cdot sec^{-2}
-\end{eqnarray}
+\begin{align*}
+p&=F\cdot A^{-1} \\
+&=\Big(\frac{150lb}{1}\cdot\frac{980cm}{sec^2}\Big)\Big(\frac{1}{15\rlap{-----}cm}\Big) \\
+&=\frac{150\rlap{---}lb}{1}\Big(\frac{0.4536\rlap{---}kg}{\rlap{---}lb}\Big)\Big(\frac{10^3g}{\rlap{---}kg}\Big)\frac{980}{sec^2}\Big(\frac{1}{15}\Big)\frac{1}{2.8\rlap{-----}mm}\Big(\frac{\rlap{-----}mm}{10^{-3}\rlap{---}m}\Big)\Big(\frac{\rlap{---}m}{10^2cm}\Big) \\
+&=15,876,000 g\cdot cm^{-1}\cdot sec^{-2}
+\end{align*}
+
 
 In keeping with the concept of pressure as force per unit area, we can also write the pressure unit $g\cdot cm^{-l}\cdot sec^{-2}$ as
 $$\frac{g}{cm\cdot sec^2}\cdot\frac{cm}{cm}=\frac{g\cdot cm\cdot sec^{-2}}{cm^2}=\frac{dyne}{cm^2}$$
 Hence the pressure on the ice can also be written
 $$p=15,876,000 \;dyn\cdot cm^{-2}$$
 On the other hand, the mass concentration (mass per unit area) is simply  
-\begin{eqnarray}
-\frac{\mbox{mass}}{\mbox{area}}&=&\frac{150lb}{15cm\times 2.8mm} \\
-&=&230.4\;lb/in^2 \\
-&=&16200\;g/cm^2
-\end{eqnarray}
+\begin{align*}
+\frac{\mbox{mass}}{\mbox{area}}&=\frac{150lb}{15cm\times 2.8mm} \\
+&=230.4\;lb/in^2 \\
+&=16200\;g/cm^2
+\end{align*}
 
 10. For pressure in cgs units, the needed conversion identities are
 
@@ -639,12 +645,12 @@ On the other hand, the mass concentration (mass per unit area) is simply
  *  1 lb = 0.4536 kg
  *  1 kg = 10^3^ g
 
-\begin{eqnarray}
-A&=&\pi r^2 = \pi(40\mu m)^2 = \pi\cdot 1600\mu m^2 \\
-p&=&F\cdot A^{-1} = (2oz)(980cm\cdot sec^{-2})\Big(\frac{1}{\pi\cdot 1600\mu m^2}\Big) \\
-&=&\frac{2\rlap{-}oz}{1}\Big(\frac{\rlap{-}lb}{16\rlap{-}oz}\Big)\Big(\frac{0.4536\rlap{-}kg}{\rlap{lb}}\Big)\Big(\frac{10^3g}{\rlap{-}kg}\Big)\Big(\frac{980cm}{sec^2}\Big)\frac{1}{\pi\cdot 1600\rlap{--}\mu m^2}\Big(\frac{\rlap{--}\mu m^2}{10^{-12}\rlap{-}m^2}\Big)\Big(\frac{\rlap{-}m^2}{10^4cm^2}\Big) \\
-&=&1.105\times 10^9\;dyn\cdot cm^{-2}
-\end{eqnarray}
+\begin{align*}
+A&=\pi r^2 = \pi(40\mu m)^2 = \pi\cdot 1600\mu m^2 \\
+p&=F\cdot A^{-1} = (2oz)(980cm\cdot sec^{-2})\Big(\frac{1}{\pi\cdot 1600\mu m^2}\Big) \\
+&=\frac{2\rlap{---}oz}{1}\Big(\frac{\rlap{---}lb}{16\rlap{---}oz}\Big)\Big(\frac{0.4536\rlap{---}kg}{\rlap{---}lb}\Big)\Big(\frac{10^3g}{\rlap{---}kg}\Big)\Big(\frac{980cm}{sec^2}\Big)\frac{1}{\pi\cdot 1600\rlap{---}\mu m^2}\Big(\frac{\rlap{----}\mu m^2}{10^{-12}\rlap{---}m^2}\Big)\Big(\frac{\rlap{---}m^2}{10^4cm^2}\Big) \\
+&=1.105\times 10^9\;dyn\cdot cm^{-2}
+\end{align*}
 
 
 ## REFERENCES
