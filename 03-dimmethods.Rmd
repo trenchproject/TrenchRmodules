@@ -56,14 +56,14 @@ The following definitions for mechanical quantities have been abstracted from pu
 *Second*. Unit of time mks system. Symbol sec, dimension T. By international agreement (1960) defined to be 1/31,556,925.9747 of the tropical year 1900. (A "tropical year" is the interval of time between two successive passages of the sun through the vernal equinox.) A more recent international conference adopted provisionally a new definition of the second as the time corresponding to 9,192,631,770 oscillations of the cesium atom in the so-called atomic clock.
 
 ### TEMPERATURE SCALES
-In 1968 the International Committee on Weights and Measures officially adopted the "International Practical Temperature Scale", which is based on the concept of temperature (variable symbol 0, dimension 0) as being that of thermodynamic temperature. The unit magnitude of the International Scale is the degree Kelvin (symbol °K). The degree Kelvin is the fraction 1/273.16 of the triple point of water. The Celsius temperature scale is defined in terms of the Kelvin scale as
-$$\theta_c=\frac{1°C}{1°K}\Big(\theta_k-\theta_0\Big)$$
-where $\theta_c$ is the temperature magnitude on the Celsius scale, $\theta_k$ the temperature magnitude on the Kelvin scale, and $\theta_0$ = 273.15°K (the ice point of water). The scale unit of the Celsius temperature is the degree Celsius (symbol °C), equal in magnitude to the degree Kelvin. Reference point relationships between Kelvin, Celsius, and Fahrenheit scales are:  
+In 1968 the International Committee on Weights and Measures officially adopted the "International Practical Temperature Scale", which is based on the concept of temperature (variable symbol 0, dimension 0) as being that of thermodynamic temperature. The unit magnitude of the International Scale is the degree Kelvin (symbol K). The degree Kelvin is the fraction 1/273.16 of the triple point of water. The Celsius temperature scale is defined in terms of the Kelvin scale as
+$$\theta_c=\frac{1^{\circ}C}{1K}\Big(\theta_k-\theta_0\Big)$$
+where $\theta_c$ is the temperature magnitude on the Celsius scale, $\theta_k$ the temperature magnitude on the Kelvin scale, and $\theta_0$ = 273.15K (the ice point of water). The scale unit of the Celsius temperature is the degree Celsius (symbol $^{\circ}$C), equal in magnitude to the degree Kelvin. Reference point relationships between Kelvin, Celsius, and Fahrenheit scales are:  
 
- *  0°K = -273.15 °C = -459.67°F ("absolute" zero),  
- *  273.15°K = 0°C = 32°F (the ice point),  
- *  273.16°K = 0.01°C = 32.018°F (equilibrium between solid, liquid, and vapor phases of water; the triple point),  
- *  373.15°K = 100°C = 212°F (the boiling point of water).
+ *  0K = -273.15 $^{\circ}$C = -459.67$^{\circ}$F ("absolute" zero),  
+ *  273.15K = 0$^{\circ}$C = 32$^{\circ}$F (the ice point),  
+ *  273.16K = 0.01$^{\circ}$C = 32.018$^{\circ}$F (equilibrium between solid, liquid, and vapor phases of water; the triple point),  
+ *  373.15K = 100$^{\circ}$C = 212$^{\circ}$F (the boiling point of water).
 
 The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear and appear as straight lines when graphed.
 
@@ -86,18 +86,18 @@ The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear 
 *Micron*. See micrometer.
 
 ### ANGULAR UNITS  
-*Degree*. Unit of angular measure. Symbol deg or ° (superscript), dimensionless, Defined as the angle subtended at the center by a circular arc 1/360 the circumference.
+*Degree*. Unit of angular measure. Symbol deg or $^{\circ}$ (superscript), dimensionless, Defined as the angle subtended at the center by a circular arc 1/360 the circumference.
 
 *Radian*. Unit of angular measure. Symbol radian, dimensionless. Defined as the angle subtended at the center by a circular arc equal in length to the radius of the circle. 1 radian = 360/2$\pi$ degrees angular measure.
 
 ### DERIVED UNITS  
-*Atmosphere*. Unit of pressure. Symbol atm, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Defined to be the pressure exerted by dry atmosphere, 0°C, at mean sea level. Equivalent to $1.013250 \times 10^6 dyn\cdot cm^{-2}$ in cgs units.
+*Atmosphere*. Unit of pressure. Symbol atm, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Defined to be the pressure exerted by dry atmosphere, 0$^{\circ}$C, at mean sea level. Equivalent to $1.013250 \times 10^6 dyn\cdot cm^{-2}$ in cgs units.
 
 *Bar*. Unit of pressure. Symbol bar, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Equal to $10^5 nt\cdot m^{-2}$ in mks units.
 
-*British Thermal Unit (Mean)*. Unit of energy or quantity of heat. Symbol Btu, mechanical dimension ML$^2$T$^{-2}$, thermal dimension H. Originally defined to be the quantity of heat energy required to raise the temperature of 1 lb mass of water 1°F (averaged from 32°F to 212°F). Equivalent to 252.16038 gram calories.
+*British Thermal Unit (Mean)*. Unit of energy or quantity of heat. Symbol Btu, mechanical dimension ML$^2$T$^{-2}$, thermal dimension H. Originally defined to be the quantity of heat energy required to raise the temperature of 1 lb mass of water 1$^{\circ}$F (averaged from 32$^{\circ}$F to 212$^{\circ}$F). Equivalent to 252.16038 gram calories.
 
-*Calorie (Mean)*. Unit of energy or quantity of heat. Symbol cal, mechanical dimension ML$^2$T$^{-2}$, thermal dimension H. Originally defined to be the quantity of heat energy required to raise the temperature of 1 g mass of water 1°C (averaged from 0°C to 100°C). Equivalent to 4.1840 joules.
+*Calorie (Mean)*. Unit of energy or quantity of heat. Symbol cal, mechanical dimension ML$^2$T$^{-2}$, thermal dimension H. Originally defined to be the quantity of heat energy required to raise the temperature of 1 g mass of water 1$^{\circ}$C (averaged from 0$^{\circ}$C to 100$^{\circ}$C). Equivalent to 4.1840 joules.
 
 *Dyne*. Unit of force cgs system. Symbol dyn, dimension F or MLT$^{-2}$, unit g$\cdot$cm$\cdot$sec$^{-2}$. Force required to give 1 g mass an acceleration of 1 cm$\cdot$sec$^{-2}$.
 
@@ -107,7 +107,7 @@ The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear 
 
 *Joule*. Unit of work or energy mks system. Symbol J, dimension FL or ML$^2$T$^{-2}$, unit ntm or kg$\cdot$m$^2\cdot$sec$^{-2}$. The work done by a force of 1 newton acting through a distance of 1 meter.
 
-*Liter*. Unit of volume (liquids and gases). Symbol 1, dimension L$^3$. Originally defined to be the volume of 1 kg airfree $H_2O$ at 4°C (the maximum density temperature of water). Redefined by international agreement (1964) to be 1/1000 cubic meter (10$^{-3}$m$^3$) exactly.
+*Liter*. Unit of volume (liquids and gases). Symbol 1, dimension L$^3$. Originally defined to be the volume of 1 kg airfree $H_2O$ at 4$^{\circ}$C (the maximum density temperature of water). Redefined by international agreement (1964) to be 1/1000 cubic meter (10$^{-3}$m$^3$) exactly.
 
 *Newton*. Unit of force mks system. Symbol N (alternate symbol nt), dimension F or MLT$^{-2}$. Force required to give 1 kg mass an acceleration of 1 m$\cdot$sec$^{-2}$.
 
@@ -117,7 +117,7 @@ The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear 
 
 *Stokes*. Unit of kinematic viscosity cgs system. Symbol St, dimension L$^2$T$^{-1}$, unit cm$^2\cdot$sec$^{-1}$. Kinematic viscosity in units of Stokes is defined to be the ratio of the dynamic viscosity (in poise) of a fluid to its cgs density (g$\cdot$cm$^{-3}$).
 
-*Torr*. Unit of pressure. Symbol torr, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. The pressure exerted by a column of mercury 1 mm in height, 0°C. Equivalent to 13.3322 dyn$\cdot$cm$^{-2}$ in cgs units.
+*Torr*. Unit of pressure. Symbol torr, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. The pressure exerted by a column of mercury 1 mm in height, 0$^{\circ}$C. Equivalent to 13.3322 dyn$\cdot$cm$^{-2}$ in cgs units.
 
 *Watt*. Unit of power or rate of work mks system. Symbol W, dimension FLT$^{-1}$ or ML$^2$T$^{-3}$, unit J$\cdot$sec$^{-1}$ or nt$\cdot$m$\cdot$sec$^{-1}$ or kg$\cdot$m$^2\cdot$sec$^{-3}$. Work done or energy expended at the rate of l J$\cdot$sec$^{-1}$.
 
@@ -358,7 +358,7 @@ and thus
 $$20in^2=\frac{20\rlap{---}in^2}{1}\Big(\frac{6.4516cm^2}{1\rlap{---}in^2}\Big)$$
 $$20in^2=129.032cm^2$$
 
-Example. The density of CCl~4~ at 0°C is 1.600 grams per cubic centimeter. Convert this intensive property to units of the ounce and the cubic inch:  
+Example. The density of CCl~4~ at 0$^{\circ}$C is 1.600 grams per cubic centimeter. Convert this intensive property to units of the ounce and the cubic inch:  
 The units to be converted have dimensions M and L^3^. The chains of conversions are  
 
 M: gram $\rightarrow$ pound $\rightarrow$ ounce,  
@@ -417,7 +417,7 @@ where $\vec{q}$ is the vector of heat current density (quantity of heat per unit
 
 7. Determine the volume in cubic centimeters of a sphere of radius 1.5 ft.
 
-8. The density of grain alcohol at 20°C is 0.79 g$\cdot$cm^-3^. Determine the mass of 30 ml of alcohol.
+8. The density of grain alcohol at 20$^{\circ}$C is 0.79 g$\cdot$cm^-3^. Determine the mass of 30 ml of alcohol.
 
 9. The blade of an ice skate makes contact with the ice over a length of about 15 cm and a width of 2.8 mm. Calculate the pressure on the ice produced by an ice-skater of 150 lbs mass. [The acceleration of gravity at the earth's surface is about 980 cm$\cdot$sec^-2^.]
 
@@ -458,8 +458,8 @@ $$(31556925.9747 sec)\frac{1\mbox{ solar day}}{86400 sec}=1\mbox{ trop.yr}$$
 Note: The *sidereal* year is the time required for the sun to go once around the ecliptic and resume its (apparent) original position among the stars. The sidereal year is 365.2564 mean solar days. The tropical and sidereal years would be of equal durations were it not for precession of the equinoxes, an effect owed primarily to the moon.
 
 2.
-(a) $\theta_k=\frac{5°K}{9°F}\theta_f+255.37°K$  
-(b) $\theta_c=\frac{5°C}{9°F}\theta_f-17.78°C$
+(a) $\theta_k=\frac{5K}{9^{\circ}F}\theta_f+255.37K$  
+(b) $\theta_c=\frac{5^{\circ}C}{9^{\circ}F}\theta_f-17.78^{\circ}C$
 
 3. By letting $n$ be the number of molecules and a the area of each molecule, we want $n\cdot a$ to be 1 square cm of area:
 $$n\cdot a=1cm^2$$
@@ -533,7 +533,7 @@ $$\mu\frac{\partial^2\omega}{\partial z^2}=[\mu]\frac{[\omega]}{[z^2]}= ML^{-1}T
 5.
 (a) The concept of specific heat of a substance under conditions of constant pressure ($C_p$) permits of volumetric change, while the concept of specific heat of a substance under conditions of constant volume ($C_v$) permits of pressure change. In either case,
 $$[C_p]=[C_v]=\frac{H}{M\Theta}$$
-(b) cal$\cdot$g^-1^$\cdot$°K^-1^. (calories per gram per degree Kelvin).
+(b) cal$\cdot$g^-1^$\cdot$K^-1^. (calories per gram per degree Kelvin).
 
 6.
 (a)
@@ -545,13 +545,13 @@ $\frac{H}{L^2T}=[k]\frac{\Theta}{L}$
 $[k]=\frac{H}{L\Theta T}$ (the quantity of heat transferred per unit thickness of substance per unit temperature difference per unit time).
 
 (b) $cal\cdot cm^{-1}\cdot ^{\circ}C^{-1}\cdot sec^{-1}$  
-(c) $J\cdot m^{-1}\cdot ^{\circ}K^{-1}\cdot sec^{-1}$  
+(c) $J\cdot m^{-1}\cdot K^{-1}\cdot sec^{-1}$  
 (d) Since heat is energy, then $[k]=\frac{ML^2T^{-2}}{L\Theta T}=ML\Theta^{-1}T^{-3}$  
-(e) $g\cdot cm\cdot ^{\circ}K^{-1}\cdot sec^{-3}$  
+(e) $g\cdot cm\cdot K^{-1}\cdot sec^{-3}$  
 (f) $[k]=\frac{FL}{L\Theta T}=F\Theta^{-1}T^{-1}$  
-(g) $nt\cdot ^{\circ}K^{-1}\cdot sec^{-1}$  
-(h) $W\cdot m^{-1}\cdot ^{\circ}K^{-1}$  
-(i) Units are $cal\cdot cm^{-1}\cdot ^{\circ}C^{-1}\cdot sec^{-1}$, $J\cdot m^{-1}\cdot ^{\circ}K^{-1}\cdot sec^{-1}$  
+(g) $nt\cdot K^{-1}\cdot sec^{-1}$  
+(h) $W\cdot m^{-1}\cdot K^{-1}$  
+(i) Units are $cal\cdot cm^{-1}\cdot ^{\circ}C^{-1}\cdot sec^{-1}$, $J\cdot m^{-1}\cdot K^{-1}\cdot sec^{-1}$  
 Conversion chains are  
 &nbsp;&nbsp;&nbsp;$H$: calorie $\rightarrow$ joule  
 &nbsp;&nbsp;&nbsp;$L$: centimeter $\rightarrow$ meter  
@@ -559,17 +559,17 @@ Conversion chains are
 The identities are  
 &nbsp;&nbsp;&nbsp;1 cal = 4.1840 J  
 &nbsp;&nbsp;&nbsp;1 m = 100 cm  
-&nbsp;&nbsp;&nbsp;1$^{\circ}C$ temp. diff. = 1$^{\circ}$K temp. diff.  
+&nbsp;&nbsp;&nbsp;1$^{\circ}C$ temp. diff. = 1K temp. diff.  
 Make the obvious statement
 
 \begin{align*}
-\frac{cal}{cm\cdot °C\cdot sec}&=\frac{cal}{cm\cdot °C\cdot sec} \\
-&=\frac{\rlap{-----}cal}{cm\cdot °C\cdot sec}\Big(\frac{4.1840 J}{\rlap{-----}cal}\Big) \\
-&=\frac{1}{\rlap{-----}cm\cdot °C\cdot sec}\Big(\frac{4.1840J}{1}\Big)\Big(\frac{100\rlap{-----}cm}{m}\Big) \\
-1\frac{cal}{cm\cdot °C\cdot sec}&=418.40\frac{J}{m\cdot °K\cdot sec}
+\frac{cal}{cm\cdot ^{\circ}C\cdot sec}&=\frac{cal}{cm\cdot ^{\circ}C\cdot sec} \\
+&=\frac{\rlap{-----}cal}{cm\cdot ^{\circ}C\cdot sec}\Big(\frac{4.1840 J}{\rlap{-----}cal}\Big) \\
+&=\frac{1}{\rlap{-----}cm\cdot ^{\circ}C\cdot sec}\Big(\frac{4.1840J}{1}\Big)\Big(\frac{100\rlap{-----}cm}{m}\Big) \\
+1\frac{cal}{cm\cdot ^{\circ}C\cdot sec}&=418.40\frac{J}{m\cdot K\cdot sec}
 \end{align*}
 
-(j) Units are $J\cdot m^{-1}\cdot ^{\circ}K^{-1}\cdot sec^{-1}$, $g\cdot cm\cdot ^{\circ}K^{-1} \cdot sec^{-3}$.  
+(j) Units are $J\cdot m^{-1}\cdot K^{-1}\cdot sec^{-1}$, $g\cdot cm\cdot K^{-1} \cdot sec^{-3}$.  
 Conversion chains are  
 &nbsp;&nbsp;&nbsp;$H$: joule $\rightarrow$ erg $\rightarrow$ g$\cdot$cm^2^$\cdot$sec^-2^  
 &nbsp;&nbsp;&nbsp;$L$: meter $\rightarrow$ centimeter  
@@ -579,9 +579,9 @@ Identities are
 &nbsp;&nbsp;&nbsp;1 m = 100 cm  
 
 \begin{align*}
-\frac{J}{m\cdot °K\cdot sec}&=\frac{J}{m\cdot °K \cdot sec} \\
-&=\frac{J}{\rlap{---}m\cdot °K\cdot sec}\Big(\frac{10^7 \rlap{-----}erg}{J}\Big)\Big(\frac{g\cdot cm^2 sec^{-2}}{\rlap{-----}erg}\Big)\Big(\frac{\rlap{---}m}{100cm}\Big) \\
-1\;J\cdot m^{-1}\cdot °K^{-1}\cdot sec^{-1}&=10^5g\cdot cm\cdot °K^{-1}\cdot sec^{-3}
+\frac{J}{m\cdot K\cdot sec}&=\frac{J}{m\cdot K \cdot sec} \\
+&=\frac{J}{\rlap{---}m\cdot K\cdot sec}\Big(\frac{10^7 \rlap{-----}erg}{J}\Big)\Big(\frac{g\cdot cm^2 sec^{-2}}{\rlap{-----}erg}\Big)\Big(\frac{\rlap{---}m}{100cm}\Big) \\
+1\;J\cdot m^{-1}\cdot K^{-1}\cdot sec^{-1}&=10^5g\cdot cm\cdot K^{-1}\cdot sec^{-3}
 \end{align*}
 
 
