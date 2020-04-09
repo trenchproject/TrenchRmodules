@@ -1195,7 +1195,7 @@ $h_c$: $h_c = \frac{Nuk}{D}$
 $Nu=0.60Re^{0.5}$, $h_c=\frac{Nuk}{D}$
 $$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{v}\bigg)^{0.5}=\frac{0.60}{v^{0.5}}\times k\bigg(\frac{V}{D}\bigg)^{0.5}$$
 $$h_c=3.98\bigg(\frac{V}{D}\bigg)^{0.5}$$
-This is approximately 2.3 times the value of $9.14 J m^2 ^\circ C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
+This is approximately 2.3 times the value of $9.14 J m^2 \:^{\circ} C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
 
 ```{r fig-heattrans-ps7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap = "Figure for problem 7"}
 par(mar = c(5, 5, 3, 5))
