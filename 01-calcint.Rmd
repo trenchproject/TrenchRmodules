@@ -1412,18 +1412,18 @@ knitr::include_graphics('figures/fig-calcint-cs3.png')
 ```
 
 From the right-hand diagram, we have
-$$\cosR = B/x$$
+$$\cos R = B/x$$
 and thus
-$$x=B/\cosR$$
+$$x=B/\cos R$$
 The minor axis is then the circle's diameter, $B$. In the answer to part "a", we replace $2a$ by $B/\cos R$ and $2b$ by $B$.
 
 \begin{align*}
-A &= \pi ab = \pi(B/2\cosR)(B/2) \\
-&= \pi B^2 / (4 \cosR)
+A &= \pi ab = \pi(B/2\cos R)(B/2) \\
+&= \pi B^2 / (4 \cos R)
 \end{align*}
 
 Since the area of the circle is $\pi B^2/4$,the dilution coefficient is
-$$D = \frac{\pi B^2/4}{\pi B^2/4\cosR} = \cosR$$
+$$D = \frac{\pi B^2/4}{\pi B^2/4\cos R} = \cos R$$
 Thus $D=0.6$ means less dilution than $D=0.3$, and $D=1.0$ means no dilution at all. For Minnesota, the coefficients are  
 $D=0.94$ for $R=20°$  
 $D=0.42$ for $R=65°$

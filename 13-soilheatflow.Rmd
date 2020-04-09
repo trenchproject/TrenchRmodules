@@ -237,7 +237,7 @@ Several aspects of this solution (Equations \@ref(eq:soil-11) through \@ref(eq:s
 
 ### Properties of the Harmonic Solution
 Since the temperature is a function of both $z$ and $t$, it is useful in looking at graphical representations to present two sets of curves. As is immediately apparent from Equation \@ref(eq:soil-11), a plot of $T$ versus $t$ for various depths produces a family of sinusoids:
-```{r fig-soil-10, fig.cap='Variation of temperature with depth for a sand soil. A value of $k=0.042calcm^{-1}sec^{-1}^\circ C^{-1}$ and $C=0.5cal cm^{-3}^\circ C^{-1}$ has been assumed resulting in a damping depth D=15.2cm'}
+```{r fig-soil-10, fig.cap='Variation of temperature with depth for a sand soil. A value of $k=0.042calcm^{-1}sec^{-1\\circ} C^{-1}$ and $C=0.5cal cm^{-3\\circ} C^{-1}$ has been assumed resulting in a damping depth D=15.2cm'}
 # Variation of temperature acroos time with depth
 
 w= 2*pi/86400 #s^-1, angular frequency
@@ -439,8 +439,8 @@ G(z,t)&=-k\{-A(0)/D\:exp(-z/D)\sin[\omega t-z/D]-a(0)/D\: \exp(-z/D)cos[\omega t
 \end{align*}
 The surface heat flux is then  
 $$G(0,t)=kA(0)/D\{\sin\omega t+cos\omega t\}$$
-Using the identity $sm(x+4)=\sinx\cosy+\cosx\siny$  
-setting $y=\pi/4$; $\sin(x+\pi/4)=\frac{1}{\sqrt2}(\sinx+\cosx)$, and substituting in the expression for $G(0,t)$, we have
+Using the identity $sm(x+4)=\sin x\cos y+\cos x\sin y$  
+setting $y=\pi/4$; $\sin(x+\pi/4)=\frac{1}{\sqrt2}(\sin x+\cos x)$, and substituting in the expression for $G(0,t)$, we have
 $$G(0,t)=\sqrt{2}A(0)/D\: \sin(\omega t+\pi/4)$$
 The maximum value of $G(0,t)$ occurs when $\sin(\omega t+\pi/4)=1$, so
 $$G(0,t)_{max}=\frac{\sqrt{2}kA(0)}{D}$$
