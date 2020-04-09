@@ -232,7 +232,7 @@ animals, including sheep, based on published data for animal oxygen consumption.
 It probably comes as no surprise to the reader to learn that metabolic rates of domestic animals such as sheep have been thoroughly studied by veterinary scientists. Brockway, McDonald, and Pullar (1965) describe a fascinating series of experiments in which total, sensible, and evaporative heat losses in sheep were carefully measured by direct calorimetry. For an animal maintained at 15°C with a fleece depth of 0.1 m, total heat loss by all routes was 132 kJ kg^-1^ day^-1^. Total evaporative heat loss was 52.3 kJ kg^-1^ day^-1^, of which 41.9 kJ was due to respiratory evaporation. Sweating heat loss was approximately 12.6 to 20.9 kJ kg^-1^day^-1^ regardless of temperature. The authors suggest that, since sheep have little or no physiological control over sensible heat loss, variation in respiratory evaporation heat loss is the chief means by which sheep adjust to their environment. When the weather is hot, they are obliged to pant!
 
 ## AN ENERGY BALANCE CALCULATION
-In making the calculations that follow, we assume fleece thickness of 0.1 m, which is the depth of wool usually attained by Cheviot sheep (Brockway et al., 1965). Then skin diameter for our "standard sheep" is 0.3 m. The layer of subcutaneous fat is about 0.01 m thick (Porter and Gates, 1969). We take thermal conductivity of sheep's wool as $5.91\times10^{-2}W m^{-2}^\circ C^{-1}$ (Blaxter, Graham, and Weinman, 1959) and that of fat as $20.51\times10^{-2} W m^{-2}^\circ C^{-1}$ (Porter and Gates, 1969). Body temperature of the sheep is taken as 39°C (Priestley, 1957). We assume a body weight of 70 kg.
+In making the calculations that follow, we assume fleece thickness of 0.1 m, which is the depth of wool usually attained by Cheviot sheep (Brockway et al., 1965). Then skin diameter for our "standard sheep" is 0.3 m. The layer of subcutaneous fat is about 0.01 m thick (Porter and Gates, 1969). We take thermal conductivity of sheep's wool as $5.91\times10^{-2}W m^{-2\circ} C^{-1}$ (Blaxter, Graham, and Weinman, 1959) and that of fat as $20.51\times10^{-2} W m^{-2\circ} C^{-1}$ (Porter and Gates, 1969). Body temperature of the sheep is taken as 39°C (Priestley, 1957). We assume a body weight of 70 kg.
 
 To consolidate our calculation, we return to our general heat balance relation (Eqn. \@ref(eq:heatbalance-1)):
 $$M+R_+=R_-+C+H+E$$
@@ -291,7 +291,7 @@ and
 \end{equation}
 Formula \@ref(eq:heatbalance-27) states that the temperature at the fleece tips $T_h$ is a weighted average of air and body temperatures $T_a$ and $T_b$, increased by a contribution from all sources of radiation. The weights $\alpha$ and $\beta$ have the units of "conductances," that is, of conductivities multiplied by the areas across which heat flows. The conductance $\alpha$ has components associated with convection and radiation, $\beta$ with conduction in fleece and fat.
 
-To illustrate the calculation of $T_h$, we take $T_a=10^\circ C$, $T_b=39^\circ C$, $A_h=0.5\pi m^2$, $Nu=194$, $k_a=2.48\times10^{-2}Wm^{-1}^\circ C^{-1}$,   $k_h=5.91\times10^{-2}Wm^{-1}^\circ C^{-1}$, $k_f=2.51\times10^{-1}Wm^{-1}^\circ C^{-1}$, $d=0.5m$, $L=1.0m$, $r_b=0.145m$, $r_s=0.15m$, and $r_h=0.25m$.
+To illustrate the calculation of $T_h$, we take $T_a=10^\circ C$, $T_b=39^\circ C$, $A_h=0.5\pi m^2$, $Nu=194$, $k_a=2.48\times10^{-2}Wm^{-1\circ} C^{-1}$,   $k_h=5.91\times10^{-2}Wm^{-1\circ} C^{-1}$, $k_f=2.51\times10^{-1}Wm^{-1\circ} C^{-1}$, $d=0.5m$, $L=1.0m$, $r_b=0.145m$, $r_s=0.15m$, and $r_h=0.25m$.
 
 Then $\alpha=1.571(9.638+2.570)=19.19W^\circ C^{-1}$, $Z_h+Z_f=1.3748+0.05431=1.428$, so that $\beta = 0.700W^\circ C^{-1}$. Also,
 \begin{align*}
@@ -384,7 +384,7 @@ Assume $T_b = 39$°C, $v=1$km/hr = 0.2778ms^-1^, $A_h = \pi d L$m^2^, $L=1$m, $r
 | $k_a \:(W m^{-1}°C^{-1}\times10^{-2})$ | 2.50 | 2.57 | 2.64 |
 
 
-2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39 °C given that $T_a$ = -10 °C for sheep with diameters of 0.32m and 0.5m? The sheep is in an enclosed area so we can neglect the energy gain through direct, sky, and reflected radiations. Assume, $k_a= 2.37\times10^{-2}Wm^{-1}°C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$ and evaporative heat losses $E = 20.4W$.
+2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39 °C given that $T_a$ = -10 °C for sheep with diameters of 0.32m and 0.5m? The sheep is in an enclosed area so we can neglect the energy gain through direct, sky, and reflected radiations. Assume, $k_a= 2.37\times10^{-2}Wm^{-1\circ}C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$ and evaporative heat losses $E = 20.4W$.
 
 <!-- 3. Use the values in problem 2 but now assume $T_h$ = 20°C and $T_a$ = 0°C. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to offset convective heat loss if consuming 5.30g of grass per day is required to offset 1W?  -->
 
@@ -392,10 +392,10 @@ Assume $T_b = 39$°C, $v=1$km/hr = 0.2778ms^-1^, $A_h = \pi d L$m^2^, $L=1$m, $r
 
 4. Consider a 70 kg sheep on a sunny day with $T_a$ of 30°C experiencing direct solar radiation of 800W right from above and diffuse sky radiation of 150W with one-third of the solid angle occupied by the sheep’s shadow. Suppose your sheep is standing in a pasture in which reflectivity of the grass is 25 percent. Assume cutaneous evaporative heat loss equals 4 kcal kg^-1^ day^-1^, but respiratory heat loss can vary. It is known that sheep can breathe as few as 20 times or as many as 250 times per minute, and the corresponding respiratory heat loss varies from 3.0 to 18.0 kcal kg^-1^ day^-1^. Calculate the rate of heat loss when the sheep is shorn ($r_h = 0.32$) and unshorn ($r_h = 0.50$). Assume that total metabolic heat produced is 1900 kcal day^-1^. What does the comparison of these heat fluxes suggest about whether evaporative water loss will be sufficient for the sheep to avoid overheating in the sun? $\varepsilon = 0.1396$, $a = 0.74$ and heat received by long-wave radiation can be ignored. You may use the corresponding $\alpha$ and $\beta$ values from problem 1.
 
-5. Now assume that instead of a sheep your study animal is a blue whale, which you can idealize as a cylinder 25 m long and 5 m in diameter, including a layer of blubber 50 cm thick. Its body temperature is maintained at 33°C. If the whale swims at a rate of 15 km hr$^{-1}$ through 5°C water, how much food (in kcal day$^{-1}$) must it consume to maintain thermal equilibrium? Take the Nusselt number $Nu$ as $0.332 (Re_x)^{1/2} \stackrel{.}{=} 1.6 \times 10^4$ (since $V = 15 km \:hr^{-1}$, $x \stackrel{.}{=} 10 m$, $v = 1.7 \times 10^{-5} m^2 sec^{-1}$), $k_w=0.57Wm^{-1}^\circ C^{-1}$ and $k_f = 0.2052 Wm^{-1}^\circ C^{-1}$.
+5. Now assume that instead of a sheep your study animal is a blue whale, which you can idealize as a cylinder 25 m long and 5 m in diameter, including a layer of blubber 50 cm thick. Its body temperature is maintained at 33°C. If the whale swims at a rate of 15 km hr$^{-1}$ through 5°C water, how much food (in kcal day$^{-1}$) must it consume to maintain thermal equilibrium? Take the Nusselt number $Nu$ as $0.332 (Re_x)^{1/2} \stackrel{.}{=} 1.6 \times 10^4$ (since $V = 15 km \:hr^{-1}$, $x \stackrel{.}{=} 10 m$, $v = 1.7 \times 10^{-5} m^2 sec^{-1}$), $k_w=0.57Wm^{-1\circ} C^{-1}$ and $k_f = 0.2052 Wm^{-1\circ} C^{-1}$.
 
 6. Calculate heat loss in the blue whale when its velocity relative to the water is zero. The thermal conductivity of water is approximately
-$5.7 \times 10^{-3} J cm^{-1} s^{-1} ^\circ C^{-1}$.
+$5.7 \times 10^{-3} J cm^{-1} s^{-1\circ} C^{-1}$.
 
 7. Calculate $T_h$ for a rat whose length is 18 cm, total diameter is 7 cm with a fat thickness of 0.3 cm and a hair thickness of 0.5 cm. Take $\varepsilon = 1.0$ and $T_b = 39^\circ C$. Assume the same environmental conditions as in problem 1, but make calculations for $T_a$ = 10 and 30°C only. If evaporative heat loss is 40 W m$^{-2}$, what is the metabolic heat production? Repeat your calculations for a shrew whose body length is 5 cm, hair thickness of 0.20 cm and total body diameter of 2 cm. What percentage is evaporative water loss of the total heat loss? Of the sheep, the rat and the shrew, who has the largest per-unit-surface-area heat production?
 
@@ -536,7 +536,7 @@ Let $\alpha =\frac{Nuk_wA_s}{d}$. Solving for $T_s$,
 
 $$T_s=\frac{T_b+Z_f\alpha T_w}{1+Z_f\alpha}$$
 
-Using $k_f=0.2052Wm^{-1}^\circ C^{-1}$, $r_s=2.5m$, $r_b=2.0m$, $A=5\cdot\pi\cdot25=392.7m^2$, $Z_f=\frac{1}{2\pi k_fL}ln\frac{r_s}{r_b}=6.923\times10^{-3}^\circ CW^{-1}$, and $k_w=0.57Wm^{-1}^\circ C^{-1}$,
+Using $k_f=0.2052Wm^{-1\circ} C^{-1}$, $r_s=2.5m$, $r_b=2.0m$, $A=5\cdot\pi\cdot25=392.7m^2$, $Z_f=\frac{1}{2\pi k_fL}ln\frac{r_s}{r_b}=6.923\times10^{-3\circ} CW^{-1}$, and $k_w=0.57Wm^{-1\circ} C^{-1}$,
 $$\alpha =\frac{1.64\times10^4\cdot0.57\cdot392.7}{5}=7.342\times10^5W^\circ C^{-1}$$
 
 $$T_s=\frac{33+6.923\times10^{-3}\cdot7.342\times10^5\cdot5}{1+6.923\times10^{-3}\cdot7.342\times10^5}=5.01^\circ C$$
