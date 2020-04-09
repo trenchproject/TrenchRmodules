@@ -57,7 +57,7 @@ where
 * $r$ is the reflectivity of the ground. 
 </div>
 
-Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (1978, module 8) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
+Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (197, module 8) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
 \begin{equation}
 Q_a = \frac{1}{\pi} \bar{a} S + 0.5 [\bar{a}s + \bar{a}r(s+S) + R_g + R_a]
 (\#eq:climatespace-3)
@@ -137,7 +137,7 @@ $$Q_{sky} = 1.22 \sigma T_{air}^4 - 171$$
 
 where, again, $T_{air}$ is in Kelvin. If we assume that ground temperature is equal to air temperature, as Porter and Gates (1969) did, we simply take the average of the sky and blackbody radiation values and that then becomes the night sky radiation for a given air temperature. Note, however, that the clear sky night sky radiation in Porter and Gates (1969) is not what you would predict from the Swinbank formulation and appears to be erroneous - it seems like they subtracted 20 °C from the air temperature when computing the radiation emitted by the ground. 
 
-The third and most involved computation is the radiation environment outdoors in full sun, which combines the longwave radiation plus the direct and diffuse solar radiation from above, $_hS$ and $_hD$, and the reflected radiation from the ground $_hG$. The longwave radiation component we obtain as above. To get a rough approximation of the direct solar radiation we first take the solar constant $\overline S_o$, which is the average radiation flux hitting a horizontal plane on the outer edge of the earth's atmosphere over a year, and multiply it by a correction factor accounting for the distance between the earth and sun at the time of year of interest $(\overline d / d)^2$ where $\overline d$ is the average distance between the earth and the sun and $d$ is the actual distance. This gives us the extra-terrestrial radiation $S_o$. Then we need to account for the attenuation due to the depth of atmosphere the beams of sunlight are travelling through before hitting the ground, which depends in part on the angle of the sun $z$ (in radians). For example, at sunrise the rays are passing through more atmosphere than at midday. To compute this we need the optical air mass $m  = sec(z) = 1/cos(z)$ and the transmittance of the atmosphere $\tau$ (around 0.6), which can then be used in equation 6.36 from Gates (1980)
+The third and most involved computation is the radiation environment outdoors in full sun, which combines the longwave radiation plus the direct and diffuse solar radiation from above, $_hS$ and $_hD$, and the reflected radiation from the ground $_hG$. The longwave radiation component we obtain as above. To get a rough approximation of the direct solar radiation we first take the solar constant $\overline S_o$, which is the average radiation flux hitting a horizontal plane on the outer edge of the earth's atmosphere over a year, and multiply it by a correction factor accounting for the distance between the earth and sun at the time of year of interest $(\overline d / d)^2$ where $\overline d$ is the average distance between the earth and the sun and $d$ is the actual distance. This gives us the extra-terrestrial radiation $S_o$. Then we need to account for the attenuation due to the depth of atmosphere the beams of sunlight are travelling through before hitting the ground, which depends in part on the angle of the sun $z$ (in radians). For example, at sunrise the rays are passing through more atmosphere than at midday. To compute this we need the optical air mass $m  = sec(z) = 1/\cos(z)$ and the transmittance of the atmosphere $\tau$ (around 0.6), which can then be used in equation 6.36 from Gates (1980)
 
 $$_hS = S_o \tau ^ m \cos(z)$$
 
@@ -1251,6 +1251,7 @@ Equation \@ref(eq:climatespace-10) is
 $$M-E_{ex}=\frac{k_b}{d_b}(T_b-T_s)$$
 Equation \@ref(eq:climatespace-11) is
 $$M-E_{ex}-E_{sw}=\frac{k_f}{d_f}(T_s-T_r)$$
+
 $k_b = 0.205Wm^{-1} {}^\circ C^{-1}$ and $k_f = 0.025Wm^{-1} {}^\circ C^{-1}$. From this information maximum and minimum values of ($T_b - T_s$) and ($T_s - T_r$) can be calculated. These are tabulated below. The results are plotted on the two figures (Porter and Gates 1969, Figures 5 and 6, p. 231).
 
 |              | ($T_s-T_r$) |         | ($T_b-T_s$) |         |

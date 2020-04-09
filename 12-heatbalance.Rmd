@@ -384,7 +384,7 @@ Assume $T_b = 39$°C, $v=1$km/hr = 0.2778ms^-1^, $A_h = \pi d L$m^2^, $L=1$m, $r
 | $k_a \:(W m^{-1}°C^{-1}\times10^{-2})$ | 2.50 | 2.57 | 2.64 |
 
 
-2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39 °C given that $T_a$ = -10 °C for sheep with diameters of 0.32m and 0.5m? The sheep is in an enclosed area so we can neglect the energy gain through direct, sky, and reflected radiations. Assume, $k_a= 2.37\times10^{-2}Wm^{-1}°C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$ and evaporative heat losses $E = 20.4W$.
+2. What is the total heat of metabolic origin that passes outward through the fleece tips required to maintain a $T_b$ of 39 °C given that $T_a$ = -10 °C for sheep with diameters of 0.32m and 0.5m? The sheep is in an enclosed area so we can neglect the energy gain through direct, sky, and reflected radiations. Assume, $k_a= 2.37\times10^{-2}Wm^{-1\circ}C^{-1}$, $\nu=1.24\times10^{-5}m^2s^{-1}$ and evaporative heat losses $E = 20.4W$.
 
 <!-- 3. Use the values in problem 2 but now assume $T_h$ = 20°C and $T_a$ = 0°C. How much grass are sheep with diameters of 0.32m and 0.5m required to eat to offset convective heat loss if consuming 5.30g of grass per day is required to offset 1W?  -->
 

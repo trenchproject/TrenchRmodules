@@ -262,14 +262,14 @@ where $x = x_1$ at the start of our travail, and $x = x_2$ at the finish. Note t
 
 If the path of motion is not straight, we must give the most general definition of work, which takes the form of a line integral (see Fig. \@ref(fig:fig-physics-8)):
 \begin{equation}
-W_{AB}=\int_A^BFcos\theta ds
+W_{AB}=\int_A^BF\cos\theta ds
 (\#eq:physics-9)
 \end{equation}
 
 where $ds$ = incremental distance in direction of the path of travel  
 &nbsp;&nbsp;&nbsp;&nbsp;$\theta$ = angle between F and direction of path.
 
-Note that $F cos \theta$ is the component of force in the actual direction of motion. Also note that the work done is computed from the force we must apply to the object, not from the force that is opposing our motion. (Otherwise it would have the opposite sign.)
+Note that $F \cos \theta$ is the component of force in the actual direction of motion. Also note that the work done is computed from the force we must apply to the object, not from the force that is opposing our motion. (Otherwise it would have the opposite sign.)
 
 ```{r fig-physics-8, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Relations between F, $\\theta$, and $d_s$ used in computing work in moving an object from A to B.'}
 knitr::include_graphics('figures/fig-physics-8.png')
