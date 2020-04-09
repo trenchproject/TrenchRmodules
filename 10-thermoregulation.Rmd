@@ -281,7 +281,7 @@ knitr::include_graphics('figures/fig-thermoreg-5.png')
 knitr::include_graphics('figures/fig-thermoreg-6.png')
 ```
 
-```{r fig-thermoreg-7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Metabolic rate, $M$, of white-crowned sparrows, plotted as a function of standard operative temperature, $T_{es}$, for three different experiments, The solid line is the regression to the data in King (1964), This study used free convection in a darkened chamber. These conditions impose the least physiological stress, and gives the lowest standard metabolic rate in the thermoneutral zone.The birds were summer acclimated, giving a lower critical temperature of about $23^{\\circ}C$, The solid symbols are the results of the study of Robinson et al. (1976), which used forced convection in a darkened chamber, Ran noise produces a slight (average of 11%) increase in 14 over King\'s (1.964) values. Data does not appear to extend into the thermoneutral zone. The open symbols are from DeJong\'s (1976) study, conducted using free convection in a chamber with various levels of visible radiation, The use of illuminated birds in the active part of their diurnal cycle gives the highest values of $M$. As these birds are winter-acclimated, the lower critical temperature is around $20^{\\circ}C$. Note that the use of standard operative temperature allows the comparison of purely physiological differences under equivalent thermal conditions for different combinations of wind, radiation and air temperature.'}
+```{r fig-thermoreg-7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Metabolic rate, $M$, of white-crowned sparrows, plotted as a function of standard operative temperature, $T_{es}$, for three different experiments, The solid line is the regression to the data in King (1964), This study used free convection in a darkened chamber. These conditions impose the least physiological stress, and gives the lowest standard metabolic rate in the thermoneutral zone.The birds were summer acclimated, giving a lower critical temperature of about $23^{\\circ}C$, The solid symbols are the results of the study of Robinson et al. (1976), which used forced convection in a darkened chamber, Ran noise produces a slight (average of 11 percent) increase in 14 over King\'s (1.964) values. Data does not appear to extend into the thermoneutral zone. The open symbols are from DeJong\'s (1976) study, conducted using free convection in a chamber with various levels of visible radiation, The use of illuminated birds in the active part of their diurnal cycle gives the highest values of $M$. As these birds are winter-acclimated, the lower critical temperature is around $20^{\\circ}C$. Note that the use of standard operative temperature allows the comparison of purely physiological differences under equivalent thermal conditions for different combinations of wind, radiation and air temperature.'}
 
 knitr::include_graphics('figures/fig-thermoreg-7.png')
 ```
@@ -734,7 +734,7 @@ Animal|W m^-2^ °C^-1^|W m^-2^|°C|°C|°C
 Animals 1 and 3 are ectotherms because M and E are small while animal 2 is an endotherm.
 
 9. From problem 8: $\overline{T}_r=25^\circ C$
-$$R=5.71Wm^{-2}^\circ C^{-1}$$
+$$R=5.71Wm^{-2}{}^\circ C^{-1}$$
 $$3\sigma \varepsilon\overline{T}_r^4=1277.1Wm^{-2}$$
 $$h_c=17.24V^{0.6}M_b^{-0.13333}$$
 

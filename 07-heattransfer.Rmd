@@ -1,7 +1,7 @@
 ---
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 # Heat Transfer. {#heattransfer}
 
@@ -129,7 +129,7 @@ Roseman (1978) gives a more complete discussion of these laws.
 
 Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table \@ref(tab:table-heattrans-1) gives the emissivities of some plants and animals.
 
-> Table (\#tab:table-heattrans-1). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
+Table: (\#tab:table-heattrans-1b). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
 
 Leaves
 
@@ -159,7 +159,7 @@ Animals
 
 
 
-  > Table (\#tab:table-heattrans-2). Reflectivities of Biological Materials for Solar Radiation (from Monteith, J.L., 1973, pp. 66-67.)
+Table: (\#tab:table-heattrans-2). Reflectivities of Biological Materials for Solar Radiation (from Monteith, J.L., 1973, pp. 66-67.)</caption>
   
   LEAVES
   Reflection coefficients r (%) for Solar Radiation
@@ -513,7 +513,7 @@ where
 and
 * $M$ is a 1 kilogram system (kg).
 
-We cannot measure the amount of heat a body can hold, so in a sense the term specific heat is misleading, but it is commonly used. It is simply the amount of heat which must be added per unit mass of material for a $1^{\circ}C$ rise in temperature. What actually is changing is the internal energy of the system. Table 3 (after Monteith 1973) shows values of specific heat for different materials. See Stevenson (1979a) or Zemansky and Van Ness (1966) for a more formal definition.
+We cannot measure the amount of heat a body can hold, so in a sense the term specific heat is misleading, but it is commonly used. It is simply the amount of heat which must be added per unit mass of material for a $1^{\circ}C$ rise in temperature. What actually is changing is the internal energy of the system. Table \@ref(tab:table-heattrans-3) (after Monteith 1973) shows values of specific heat for different materials. See Stevenson (1979a) or Zemansky and Van Ness (1966) for a more formal definition.
 
 The heat capacity of the system can then be obtained by multiplying the mass of the system by specific heat:
 \begin{equation}
@@ -525,7 +525,7 @@ For instance, if we consider $0.12 kg$ of granite and the same weight of peat so
 $$\Delta Q = \Delta T \, M \, c$$
 The answer is found to 960 J for the granite and 2,200 J for the peat.
 
-> Table (\#tab:table-heattrans-3). Thermal properties of natural materials.
+<caption> (\#tab:table-heattrans-3). Thermal properties of natural materials.</caption>
 
 Material|Density|Specific heat|Thermal conductivity|Thermal capacity|Thermal diffusivity
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -1195,7 +1195,7 @@ $h_c$: $h_c = \frac{Nuk}{D}$
 $Nu=0.60Re^{0.5}$, $h_c=\frac{Nuk}{D}$
 $$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{v}\bigg)^{0.5}=\frac{0.60}{v^{0.5}}\times k\bigg(\frac{V}{D}\bigg)^{0.5}$$
 $$h_c=3.98\bigg(\frac{V}{D}\bigg)^{0.5}$$
-This is approximately 2.3 times the value of $9.14 J m^2 ^\circ C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
+This is approximately 2.3 times the value of $9.14 J m^2 {}^\circ C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
 
 ```{r fig-heattrans-ps7, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap = "Figure for problem 7"}
 par(mar = c(5, 5, 3, 5))
