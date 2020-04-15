@@ -296,15 +296,15 @@ where $F$ is force, $A$ is area and $dl$ is the change in length.
 
 \begin{align*}
 E_p &= mgh = 2 kg \cdot 9.8 m s^{-2}\cdot 50 m = 980 kg m^2 s^{-2} = 980 J \\
-E_k &= mv^2 = 2 kg (2 m s^{-1})^2 = 8 J \\
+E_k &= \frac{1}{2}mv^2 = \frac{1}{2} \cdot 2 kg (2 m s^{-1})^2 = 4 J \\
 \end{align*}
 
 (b) $\Delta E_p + \Delta E_k + \Delta U = 0$  
 
-(c) All the potential energy is now kinetic energy which now totals 988 J.  
+(c) All the potential energy is now kinetic energy which now totals 984 J.  
 
 (d) Turbulent mixing occurs when the water hits. The temperature rise is
-$$\frac{988}{2 kg\cdot 4184Jkg^{-1}°C^{-1}}=0.12°C$$
+$$\frac{984}{2 kg\cdot 4184Jkg^{-1}°C^{-1}}=0.12°C$$
 5
 
 |                      | $\Delta U$ |           $W$           |      $Q$     |

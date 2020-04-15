@@ -34,7 +34,7 @@ What kinds of information are available from Table \@ref(tab:tab-thermoreg-1)? F
 
 
 
-> TABLE (\#tab:tab-thermoreg-1). Systems or Mechanisms Influencing Thermoregulation in Animals.
+> TABLE 1(\#tab:tab-thermoreg-1). Systems or Mechanisms Influencing Thermoregulation in Animals.
 
 
 |**Behavioral**                     | **Time Scale of Adjustment** |
@@ -93,6 +93,8 @@ knitr::include_graphics('figures/fig-thermoreg-1b.png')
 
 knitr::include_graphics('figures/fig-thermoreg-2.png')
 ```
+
+\newpage
 
 ### The Physical Environment
 
@@ -619,6 +621,10 @@ b) At different temperatures, some terms are constant while others are changing.
 
 5. You are researching the prospects of entering the aquaculture business raising sockeye salmon (*Oncorhynchus nerka*). In the graph below juvenile sockeye growth is given as a function of food and temperature conditions. What is the temperature for maximum growth rate when food rations are at 6, 4.5, 3.0 and 1.5% of dry body weight per day. Fish food is relatively cheap and you could afford to provide maximum rations, but the average water temperature in the pond you plan to use is only 7°C so that the fish are not achieving maximum growth rates. Discuss the conditions in which it would be economically advantageous for you to raise the water temperature. How high would you raise it? What might be the ecological consequences of heating the water for the rest of the aquatic community.
 
+```{r fig-thermoreg-10, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Effect of reduced ration on the relation betwern growth rate (±2 SE) and temperature, for 7 to 12 month-old sockeye. Points for excess ration or where a prescribed ration turned out to be excessive are marked with an X. The broken line for starved fish is a provisional interpretation (From Brett,J.R. et al.1969, p. 2381.).'}
+knitr::include_graphics('figures/fig-thermoreg-10.png')
+```
+
 6. Imagine that you are studying the foraging and activity patterns of the Ortax, a large ungulate, and a carnivorous beetle, the Diplitz. You have divided the day into ten equal time periods and measured $F_x$, $M_{fx}$, and $M_r$ for each period as shown in the table below. 
 
 **Time Period**|**Ortax**| | |**Diplitz**| | 
@@ -639,7 +645,7 @@ Rank the time periods in order of decreasing net caloric profit, assuming the an
 
 7. You work as a biologist for the consulting company Envirotech. The firm's latest contract calls for an evaluation of the potential impact on the quail populations of a logging plan in Americana National Forest. Describe how you would fulfill this contract. Specifically, discuss the importance of food and cover on population densities and individual health.
 
-8. Using the theory derived in the module and the data below, calculate $T_b$ for the three cases given. What is the environmental and the physiological contribution to $T_b$ in each case? What two finds of animals are represented?
+8. Using the theory derived in the module and the data below, calculate $T_b$ for the three cases given. What is the environmental and the physiological contribution to $T_b$ in each case? What two kinds of animals are represented?
 
  ||**$M$**|**$E_r$**|**$E_b$**|**$Q_a$**|**$K$**|**$T_a$**|**$M_b$**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -662,10 +668,6 @@ a) Will this be a high density year for the corn drill so that biological or che
 
 b) If so, when during the season will most of the insects be in this instar? Discuss your research plan to address these questions.
 
-```{r fig-thermoreg-10, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Effect of reduced ration on the relation betwern growth rate (±2 SE) and temperature, for 7 to 12 month-old sockeye. Points for excess ration or where a prescribed ration turned out to be excessive are marked with an X. The broken line for starved fish is a provisional interpretation (From Brett,J.R. et al.1969, p. 238.).'}
-knitr::include_graphics('figures/fig-thermoreg-10.png')
-```
-
 
 ## PROBLEM SOLUTIONS
 1. As a sample answer, consider the response of the bumblebee to its thermal environment. At northern latitudes these bees are active for only a small portion of the year when food and the thermal environment are favorable. Temporal partitioning of the environment is also important on a daily time scale. During inclement weather, the workers stop foraging. The general importance of habitat selection and of body orientation are unknown. Heinrich (1976) has discussed the important role of the circulation system used to maintain thermal equilibrium during flight in the bumblebee. Certainly the hairy outer coat of these animals is important in heat exchange and at higher temperatures the animals can evaporate water.
@@ -674,13 +676,13 @@ knitr::include_graphics('figures/fig-thermoreg-10.png')
 
 3. a) Anaerobic and aerobic metabolism produce heat. (The rabbit will also absorb radiation from the environment but this is represented as R where R = radiation absorbed - radiation emitted.) The animal loses heat via evaporation, convection and radiation exchange. Conduction is assumed to be zero.
 
-b) The heat production terms are constant as a function of temperature because these terms are associated with the energy needed for movement. Evaporative water loss is approximately the same for the temperature range loss which in turn is a function of O~2~ consumption. O~2~ consumption is constant; therefore we expect respiratory losses are constant. The sum of dry heat loss (convection and reradiation) and storage are relatively constant, buy as heat loss terms increase at colder ambient temperatures, the storage term decreases. When air temperature drops more heat can be lost to the environment because the difference between the surface temperature and the ambient temperature is larger. The exercise period may have ended because of lactic acid build-up due to anaerobic metabolism or because of an increase in body temperature. The first factor is independent of temperature while overheating is more likely at higher temperatures.
+b) The heat production terms are constant as a function of temperature because these terms are associated with the energy needed for movement. Evaporative water loss is approximately the same for the temperature range loss which in turn is a function of O~2~ consumption. O~2~ consumption is constant; therefore we expect respiratory losses are constant. The sum of dry heat loss (convection and reradiation) and storage are relatively constant, but as heat loss terms increase at colder ambient temperatures, the storage term decreases. When air temperature drops more heat can be lost to the environment because the difference between the surface temperature and the ambient temperature is larger. The exercise period may have ended because of lactic acid build-up due to anaerobic metabolism or because of an increase in body temperature. The first factor is independent of temperature while overheating is more likely at higher temperatures.
 
 4. Appendages fall into at least three categories. A rabbit's ear can be used to increase heat loss by increasing blood flow to this appendage if the environmental temperature is below core temperature. In contrast, many limbs are used during movement and then the overriding concern becomes supplying blood to the muscles. Under these conditions, the appendage cannot be used to regulate heat balance. This is not to say that the appendage cannot show thermoregulatory adaptations. For example, consider the well-known counter current system of blood vessels and arteries in dolphin flippers which reduce heat loss. A third group of appendages requires careful regulation (head, scrotum, mammary groups). The heat may have steep temperature gradients from the nose to the brain but brain temperature is carefully regulated. Likewise, to maintain viable sperm the temperature of any male reproductive organ is carefully controlled.
 
 To answer the question specifically posed, gulls have been shown to use their feet as heat radiators during flight (Baudinette et al. 1976). In cold arctic climates when the bird is placed on ice, blood flow is increased to foot to keep it from freezing (Scholander and Schevill 1955). When resting the wings will add insulation to the body. During flight extension of the wings greatly increases surface area, but because there is little muscle mass in the wings. The ability of the bird to use its wings for temperature regulation is unknown.
 
-5. The temperatures for maximum growth with food rations at 1.5, 3.0, 4.5 and 6.0% of dry body weight are 5, 9, 11.5 and 13.5°C, respectively. The conditions necessary to increase water temperature from a economic standpoint can be stated in a verbal model as profit equals fish price minus food costs minus heating costs. Because food production, maximum food ration and heating costs will all increase as water temperature increases, it is difficult to say how high water temperature should be increased for maximum profit--certainly not above a water temperature of 13.5 °C. The ecological consequences for heating the water are difficult to predict, although mush has been written. It is important to remember that both the chemical and physical properties of the water will change.
+5. The temperatures for maximum growth with food rations at 1.5, 3.0, 4.5 and 6.0% of dry body weight are 5, 9, 11.5 and 13.5°C, respectively. The conditions necessary to increase water temperature from a economic standpoint can be stated in a verbal model as profit equals fish price minus food costs minus heating costs. Because food production, maximum food ration and heating costs will all increase as water temperature increases, it is difficult to say how high water temperature should be increased for maximum profit--certainly not above a water temperature of 13.5 °C. The ecological consequences for heating the water are difficult to predict, although much has been written. It is important to remember that both the chemical and physical properties of the water will change.
 
 6.
 
@@ -718,7 +720,7 @@ $\sum$| |31| |15| | |
 
 The Ortax should always feed to maximize net energy gain. The Diplitz should not forage in time periods 4-8. Their net profits are 36 and 23 respectively. To minimize feeding time and still make a net profit of 20 units, the Ortax should feed in time periods 7, 4, 5, 6, 10 and 8. Feeding should take place in periods 7, 4 and part of 5 if the animal must simply maintain weight.
 
-The Ortax should not feed during periods 3.5 and 9 for a net profit of 25 (29 - 4=25) when one period is required for digestion. The Diplitz should forage during periods 9 and 10 and part of period 2 for a net profit of approximately 9 units. If two periods are required for digestion, then the Urtax will feed in periods 10, 1, 2, 5, 6 and most of period 7 for a net profit of 10.
+The Ortax should not feed during periods 3.5 and 9 for a net profit of 25 (29 - 4=25) when one period is required for digestion. The Diplitz should forage during periods 9 and 10 and part of period 2 for a net profit of approximately 9 units. If two periods are required for digestion, then the Ortax will feed in periods 10, 1, 2, 5, 6 and most of period 7 for a net profit of 10.
 
 7. Wildlife biologists including Stoddard (1931), Errington (1967) and Leopold (1977) have summarized much of the work on quail populations in different kind of environments throughout the United States. In general logging will open up the forest producing successional vegetation which can provide abundant food supplies as well as the necessary shelter. Thus one would expect densities of quail to increase for 10 to 35 years and then slowly drop off as the forest canopy developed.
 
@@ -727,9 +729,9 @@ The Ortax should not feed during periods 3.5 and 9 for a net profit of 25 (29 - 
 | |**$h_c$**|**$Q_n$**|**$T_e$**|**Physiological Contribution**|**$T_b$**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 Animal|W m^-2^ °C^-1^|W m^-2^|°C|°C|°C
-1|10.65|1827.1|26.11|0.67|27.78
-2|14.28|2027.1|37.67|4.58|42.45
-3|13.86|2127.1|46.7|0.28|46.98
+1|10.69|1826.9|26.11|0.67|26.78
+2|14.28|2026.9|37.67|4.58|42.45
+3|13.86|2126.9|46.7|0.28|46.98
 
 Animals 1 and 3 are ectotherms because M and E are small while animal 2 is an endotherm.
 

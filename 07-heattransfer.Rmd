@@ -129,7 +129,7 @@ Roseman (1978) gives a more complete discussion of these laws.
 
 Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table \@ref(tab:table-heattrans-1) gives the emissivities of some plants and animals.
 
-Table: (\#tab:table-heattrans-1b). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
+Table: (\#tab:table-heattrans-1). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
 
 Leaves
 
@@ -850,7 +850,7 @@ This module has attempted to develop the aspects of heat transfer that are impor
 1b. If the emissivity of an environmental chamber with plastic walls is 0.6 for longwave radiation what is its absorptivity to longwave radiation? Imagine that the air is much cooler than the animal's surface. The radiation leaving the animal, incident on the walls, could heat the walls above the air temperature and increase the radiation incidence on the animal. Name two ways to avoid this problem. A chamber with metal walls will have a small emissivity (~0.15) to longwave radiation. What will be its reflectivity? What will happen to the radiation leaving the animal in this case? How can this effect be minimized?
 
 2a. It is also possible to represent Planck's Law as a function of frequency $f$ rather than wavelength $\lambda$:
-$$E_f=\frac{2\pi h}{C_L^2}f^3\bigg[exp(\frac{hf}{K_bT})-1\bigg]^{-1}$$
+$$E_f=\frac{2\pi h}{C_L^2}f^3\bigg[\exp(\frac{hf}{K_bT})-1\bigg]^{-1}$$
 Equation \@ref(eq:heattrans-1) of the text gives the relationship between $\lambda$ and $f$. Show how $E_f$ and $E_{\lambda}$ are related. What is the difference in dimensions between $E_f$ and $E_{\lambda}$? The concept of wave number is often introduced to plot $E_f$ and $E_{\lambda}$ of the same graph. Wave number $n = \lambda^{-1}$. How are $f$ and $n$ related? Plot $E_{\lambda}$ and $E_f$ for T = 280 K as a function of $\lambda$. Repeat for T = 6,000 K but show both the $\lambda$ and $n$ scales. How does the relationship of bandwidth/wave number and bandwidth/wavelength change over the spectrum?
 
 2b. Planck also found that the energy in a photon, $e$, is proportional to its frequency ($e = hf$). What does this imply for a $E_{\lambda}$ versus $E_f$ representation? At what wavelength does the sun radiate the most energy? Assume its surface temperature is 6,000 K. How does this value compare with that in Fig. \@ref(fig:fig-heattrans-4)?
@@ -862,7 +862,7 @@ $$V=0.0567M^{1.02}$$
 $V$ is lung volume (liters) and $M$ is body mass (kg).
 
 If respiration rate (breaths min$^{-1}$) is a function of air temperature (for a moose (Belovsky 1978)),
-$$Br=7.72exp(0.07T_a)$$
+$$Br=7.72\exp(0.07T_a)$$
 calculate the respiration loss in watts as a function of air temperature ($T_a$ = -20 to 40 °C). Assume $M$ = 358 kg, that the exhaled air is at air temperature, the relative humidity is 50 percent and $L$ is constant at $2.43 \times 10^6 J kg^{-1}$. Repeat the calculation for the exhaled air at $\frac{T_a+T_b}{2}$.
 
 Hint: The energy lost is equal to the net mass flow (the mass of water exhaled minus the mass of water inhaled per unit time multiplied by the latent heat of water). Convert the volume exchange to a mass exchange using the fact that concentration (mass/volume) of water is the product of the molecular weight, the vapor pressure of water at that temperature and the relative humidity divided by the product of the gas constant and the absolute temperature of the sample.

@@ -82,7 +82,7 @@ We then might be inclined to "define" force in such a way that Newton's second l
 
 This we'll do, upon noting that if Newton's second law holds, we may assign the units to force of the right-hand side of the expression, kg m/s^2^, and since this is a clumsy unit, we shall call it the "newton":
 
-1 newton (nt) $\equiv$ 1 k m/s^2^
+1 newton (nt) $\equiv$ 1 kg m/s^2^
 
 ## GRAVITATIONAL FORCE
 
@@ -152,7 +152,7 @@ We have described the law of interaction between charges at rest. To complete ou
 
 The Biot-Savart law (sometimes called Ampere's law) describes the magnetic field set up at a distance $r$ from moving charges (current) in a wire (see Fig. \@ref(fig:fig-physics-4)):
 \begin{equation}
-dB=\frac{\mu_o\;i\;dl\;sin\theta}{4\pi r^4}
+dB=\frac{\mu_o\;i\;dl\;\sin\theta}{4\pi r^4}
 (\#eq:physics-4)
 \end{equation}
 where  
@@ -172,11 +172,12 @@ knitr::include_graphics('figures/fig-physics-4.png')
 If the thumb of your right hand is pointed in the direction of the current, the magnetic field circles about the wire in the direction of the fingers of your right hand.
 
 PROBLEM 4:  
-Compute the total magnetic field at the point in Fig.\@ref(fig:fig-physics-4) by summing (integrating) the contribution from all elements $dl$, in a very long wire carrying current $i$. (Assume the point is a perpendicular distance $R$ from the wire.)  
+Compute the total magnetic field at the point in Fig.\@ref(fig:fig-physics-4) by summing (integrating) the contribution from all elements $dl$, in a very long wire carrying current $i$. (Assume the point is a perpendicular distance $R$ from the wire.)
+
 The force on a charge $(q)$ moving through a magnetic field $(B)$ is given by:
 
 \begin{equation}
-F=qvBsin\Psi
+F=qvB\sin\Psi
 (\#eq:physics-5)
 \end{equation}
 
@@ -289,7 +290,7 @@ What if, instead of climbing a vertical ladder, we had carried the water up a pl
 knitr::include_graphics('figures/fig-physics-9.png')
 ```
 
-The vertical force we apply to the water is $mg$, while the component of force acting in the direction of motion is $mg sin\phi$. The distance the water moves under this constant force is $\frac{h}{sin\phi}$. Consequently the work is:
+The vertical force we apply to the water is $mg$, while the component of force acting in the direction of motion is $mg \sin\phi$. The distance the water moves under this constant force is $\frac{h}{\sin\phi}$. Consequently the work is:
 $$W=mg\sin\phi\frac{h}{\sin\phi}=mgh$$
 The same as before! This is no accident. In fact, it is not difficult to see that the amount of work done on an object in raising it a height $h$, *by any path*, will always be $mgh$. (Imagine an arbitrary path from the ground to height $h$ to be approximated by an interconnected collection of infinitesimally short straight line segments, the $i^{th}$ one of which is tilted at an angle ($\phi_i$ and rising an amount $\Delta h_i$ over its length. The total work is thus $\sum mg\Delta h_i = mgh$.) When a force law has the property that the work done on an object in moving it from position A to position B is the same no matter which path we take in getting from A to B, we call, the force *conservative*. A corollary of this is that under a conservative force, a round trip from A to B and back to A again results in no net work being done. For if there were net work done in the round trip ABA, then all paths from A to B would not result in the same amount of work (since ABAB and AB are both legitimate paths from A to B, with the former clearly requiring more or less work when the round trip is thrown in).
 
@@ -442,7 +443,7 @@ PROBLEM 8:
 At what speed will the cockle hit the ground?
 
 PROBLEM 9:  
-The lowest energy state for the electron in the hydrogen atom has been measured to be -217.3 $\times$ 10^-20^ joules. What is the radius of the hydrogen atom under this condition? (HINT: The centrifugal force" of a mass moving in a circular orbit is $\frac{mv^2}{r}$. When this is equated to the electrostatic force holding the electron in orbit, a simple expression for the kinetic energy of the electron is obtained. Add this to the potential energy to get the total energy, which is -217.3 $\times$ 10^-20^ joules. Solve for $r$.)
+The lowest energy state for the electron in the hydrogen atom has been measured to be -217.3 $\times$ 10^-20^ joules. What is the radius of the hydrogen atom under this condition? (HINT: The centrifugal force of a mass moving in a circular orbit is $\frac{mv^2}{r}$. When this is equated to the electrostatic force holding the electron in orbit, a simple expression for the kinetic energy of the electron is obtained. Add this to the potential energy to get the total energy, which is -217.3 $\times$ 10^-20^ joules. Solve for $r$.)
 
 With the background that we've now gathered, we are ready to begin a discussion of the application of the principles we've developed to the study of thermodynamics, which we will find to result in a most elegant set of tools for the handling of some otherwise vexing, but nonetheless important, biological problems.
 
@@ -454,9 +455,11 @@ With the background that we've now gathered, we are ready to begin a discussion 
 3. 5.532 $\times$ 10^-65^ nt  
 4. $\frac{\mu_0i}{2\pi R}$  
 5. $\frac{1}{2}kx^2$  
-6. We substitute the relation $\frac{GM}{R}=gR$ into $v=\sqrt\frac{2GM}{R}$ to obtain $v=\sqrt{2gR}$. Substituting, we obtain $v=\sqrt{2*9.81*6368*10^3}$ m/s. We divide by 0.00062 to convert to miles/s. Obtaining v=6.93 miles/s.
-7. 205.2 J  
-8. 39.73 m/s  
+6. Using the relations $F = ma$ and $F = G\frac{mM}{R^2}$, we get $a=\frac{GM}{R^2}$ where we define $a = g$.
+We substitute the relation $\frac{GM}{R}=gR$ into $v=\sqrt\frac{2GM}{R}$ to obtain $v=\sqrt{2gR}$. Substituting, we obtain $v=\sqrt{2*9.81*6368*10^3}$ m/s. We divide by 0.00062 to convert to miles/s. Obtaining v=6.93 miles/s.
+7. 220.7 J  
+8. $\frac{1}{2}gt^2 = 10$ so it took $\sqrt{\frac{20}{g}}$ seconds to reach the ground. By that much time the vertical speed reaches $v = g\cdot t^2 = 14$ m/s. Since the initial horizontal speed was 3 m/s and it is unchanged, the speed at the ground is $\sqrt{14^2 + 3^2} = 14.3$ m/s.
+
 9. 0.530 $\times$ 10^-10^ m. Hence the diameter of a hydrogen atom is 1.06 $\times$ 10^-10^ m (or approximately 1 angstrom unit in an earlier terminology).
 
 

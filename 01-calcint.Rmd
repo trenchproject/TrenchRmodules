@@ -339,7 +339,7 @@ Then eqn. \@ref(eq:calcint-10) is
 $$\int \frac{dN}{N} + \int \frac{dN}{K-N} = \int rdt$$
 which integrates to
 
-$$ln N - ln (K-N) = rt + C$$
+$$\ln N - \ln (K-N) = rt + C$$
 
 ***
 
@@ -765,7 +765,7 @@ A mathematical model has been devised which shows the effect of duration ($T$) a
 where $a_1$ is a function of $F$ and $a_2$ is a function of $T$. Another model was derived by curve fitting, using Table A and is quite different. For a given $M$,
 
 \begin{equation}
-ln(T)=b_1 - b_2 \ln F
+\ln(T)=b_1 - b_2 \ln F
 (\#eq:calcint-22)
 \end{equation}
 
@@ -1063,7 +1063,7 @@ B_t(12)
 c. Average biomass (g) for the first 12 months, $\overline B(12)$ uses the definite integral.
 $$\overline B(12)= (1/12) \int^{12}_0 B(t)dt $$
 Substitution for $B(T)$ gives
-$$\overline B(12)= (1/12) \int^{12}_0 5.0*10^7 e^{-0.5t} (1-0.8e^{-0.05t})^3 dt $$
+$$\overline B(12)= (1/12) \int^{12}_0 5.0\times10^7 e^{-0.5t} (1-0.8e^{-0.05t})^3 dt $$
 $$\overline B(12)= 4.17 \times 10^6 \int^{12}_0 e^{-0.5t}(1-0.8e^{-0.05t})^3 dt$$
 Integrate by parts where $u=(1-0.8e^{-0.05t})^3$ and $dv= e^{-0.5t} dt$
 $$\int^{12}_0 e^{-0.5t}(1-0.8e^{-0.05t})^3 dt$$
@@ -1117,7 +1117,7 @@ d. Let N(t) be the number of $C^{14}$ atoms in the wood. Then $N(t)/N_0 = 0.87$.
 The equation for N(t) then gives
 \begin{align*}
 N(t)/N_0=e^{-kt} \\
-0.87 = exp(-0.0001245t)\\
+0.87 = \exp(-0.0001245t)\\
 \ln(0.87) = -0.0001245t\\
 t=1119 years
 \end{align*}
@@ -1227,14 +1227,14 @@ Equate to 0 and divide by 2:
 \sum^n_{i=1}[Ax_i+B-y_i]=0
 (\#eq:calcint-b)
 \end{equation}
-Thus we have two equations which are linear in A and B. This is more easily seen if we rework them. From (\@ref(eq:calcint-a))
+Thus we have two equations which are linear in A and B. This is more easily seen if we rework them. From \@ref(eq:calcint-a)
 
 \begin{equation}
 A(\sum^n_{i=1}x_i^2)+B(\sum^n_{i=1}x_i)-(\sum^n_{i=1}x_iy_i)=0
 (\#eq:calcint-a2)
 \end{equation}
 
-And (\@ref(eq:calcint-b)) becomes
+And \@ref(eq:calcint-b) becomes
 \begin{equation}
 A(\sum^n_{i=1}x_i^2)+nB-(\sum^n_{i=1}y_i)=0
 (\#eq:calcint-b2)
@@ -1294,11 +1294,11 @@ $$y = Axe^{Bx}$$
 Divide by $x$ to isolate the exponential function.
 $$y/x=Ae^{Bx}$$
 Now take logarithms of both sides.
-$$ln(y/x)=lnA+Bx$$
+$$\ln(y/x)=\lnA+Bx$$
 Thus, in the form $h=f+gx$, we have
 \begin{align*}
-h &= ln(y/x) \\
-f &= ln A \\
+h &= \ln(y/x) \\
+f &= \ln A \\
 g &= B \\
 \end{align*}
 
@@ -1320,19 +1320,19 @@ and thus
 
 $$y = 14.041x e^{-0.071x}$$
 
-c. The following graph (fig. 4A) compares the least squares line and exponential curve of parts (a) and (b) with the data and the exponential curve in the text (eqn. \@ref(eq:calcint-12)). The fit of eqn. (\@ref(eq:calcint-12)) seems superior to that of the curve from (b).
+c. The following graph \@ref(fig:fig-calcint-p6) compares the least squares line and exponential curve of parts (a) and (b) with the data and the exponential curve in the text eqn. \@ref(eq:calcint-12). The fit of eqn. \@ref(eq:calcint-12) seems superior to that of the curve from (b).
 However, the fit of
 
 $$h = 2.642 - 0.071x$$
 
-to the transformed data is quite good, as shown by fig. 5A. Thus we conclude that a good least squares fit to transformed data does not necessarily imply a good curve fit to the original data.
+to the transformed data is quite good, as shown by figure \@ref(fig:fig-calcint-p6-2). Thus we conclude that a good least squares fit to transformed data does not necessarily imply a good curve fit to the original data.
 
-```{r fig-calcint-p72, echo=FALSE, fig.height=4, out.width = "75%"}
-knitr::include_graphics('figures/fig-calcint-p72.png')
+```{r fig-calcint-p6, echo=FALSE, fig.height=4, out.width = "75%", fig.cap = "Comparison of fitted growth functions."}
+knitr::include_graphics('figures/fig-calcint-p6.png')
 ```
 
-```{r fig-calcint-p69, echo=FALSE, fig.height=4, out.width = "75%"}
-knitr::include_graphics('figures/fig-calcint-p69.png')
+```{r fig-calcint-p6-2, echo=FALSE, fig.height=4, out.width = "75%", fig.cap = "Least squares line of transformed data."}
+knitr::include_graphics('figures/fig-calcint-p6-2.png')
 ```
 
 ## ADDITIONAL PROBLEMS
