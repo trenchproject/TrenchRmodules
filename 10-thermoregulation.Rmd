@@ -657,7 +657,7 @@ Animal|(W m^-2^)|(W m^-2^)|(W m^-2^)|(W m^-2^)|(W m^-2^ °C^-1^)|(°C)|(kg)
 Assume $\varepsilon = 0.95$, $V = 0.25 m s^{-1}$, $\overline{T}_r = 25^\circ C$,$h_c = 17.24V^{0.60}M_b^{-0.133}$.
 
 
-9. Using the data in problem 8 for the two ectotherms, calculate $k_0$ for V = 0.1, 0.5, and 3.0 m s$^{-1}$. Assume that the difference between metabolism and water loss is zero. What is $T_b$ in each case now? If the heat capacity is equal to the specific heat (3430 J kg$^{-1}$ °C$^{-1}$ ) times the mass of the animal, what is the heat capacity for each? Assuming $Q_a  = 600 W m^{-2}$and $T_a = 20^\circ C$ for the range of wind speeds above which animal will get warmer. Are your conclusions still the same if $Q_a = 380 W m^{-2}$? Integrate equation \@ref(eq:thermoreg-11) to find $T_b$ as a function of time. If the initial body temperature of both animals is 10°C at time equal to zero, which animal will get to $T_b = 25^\circ C$ first? Use the following relationship from Mitchell (1976).  
+9. Using the data in problem 8 for the two ectotherms, calculate $K_0$ for V = 0.1, 0.5, and 3.0 m s$^{-1}$. Assume that the difference between metabolism and water loss is zero. What is $T_b$ in each case now? If the heat capacity is equal to the specific heat (3430 J kg$^{-1}$ °C$^{-1}$ ) times the mass of the animal, what is the heat capacity for each? Assuming $Q_a  = 600 W m^{-2}$and $T_a = 20^\circ C$ for the range of wind speeds above which animal will get warmer. Are your conclusions still the same if $Q_a = 380 W m^{-2}$? Integrate equation \@ref(eq:thermoreg-11) to find $T_b$ as a function of time. If the initial body temperature of both animals is 10°C at time equal to zero, which animal will get to $T_b = 25^\circ C$ first? Use the following relationship from Mitchell (1976).  
 $$\mbox{Area}=11.0\times\bigg(\frac{\mbox{body mass}}{\mbox{body density}}\bigg)^{2/3}$$
 where body density equals $1\times10^3 kg m^{-3}$ to correct the dimensions of the equations. What is the difference in time between when each will arrive at 25°C? (Hint: Solve the integrated equation for time.) Answer the preceding two questions for V=0.1 and 0.5 m s^-1^. Assume the animals are lizards and comment on Cowles' suggestion.
 
@@ -724,24 +724,29 @@ The Ortax should not feed during periods 3.5 and 9 for a net profit of 25 (29 - 
 
 7. Wildlife biologists including Stoddard (1931), Errington (1967) and Leopold (1977) have summarized much of the work on quail populations in different kind of environments throughout the United States. In general logging will open up the forest producing successional vegetation which can provide abundant food supplies as well as the necessary shelter. Thus one would expect densities of quail to increase for 10 to 35 years and then slowly drop off as the forest canopy developed.
 
-8. $R=5.71Wm^{-2}k^{-1}$
+8. $R=4\sigma\varepsilon \overline{T_r}^3=5.71Wm^{-2}k^{-1}$
+$$Q_n = Q_a + 3\sigma\varepsilon T_r^4$$
+$$T_e = \frac{h_cT_a+Q_n}{h_c+R}$$
+And
+$$T_b = T_e + \frac{M-E}{K_0}$$
+where $K_0 = \frac{K(h_c+R)}{K+h_c+R}$.
 
 | |**$h_c$**|**$Q_n$**|**$T_e$**|**Physiological Contribution**|**$T_b$**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 Animal|W m^-2^ °C^-1^|W m^-2^|°C|°C|°C
-1|10.69|1826.9|26.11|0.67|26.78
-2|14.28|2026.9|37.67|4.58|42.45
-3|13.86|2126.9|46.7|0.28|46.98
+1|10.69|1826.9|26.07|0.67|26.74
+2|14.28|2026.9|37.66|4.58|42.24
+3|13.86|2126.9|46.69|0.28|46.97
 
 Animals 1 and 3 are ectotherms because M and E are small while animal 2 is an endotherm.
 
 9. From problem 8: $\overline{T}_r=25^\circ C$
 
 $$R=5.71Wm^{-2}{}^\circ C^{-1}$$
-$$3\sigma \varepsilon\overline{T}_r^4=1277.1Wm^{-2}$$
+$$3\sigma \varepsilon\overline{T}_r^4=1276.9Wm^{-2}$$
 $$h_c=17.24V^{0.6}M_b^{-0.13333}$$
 
-| |**$K_0$**|**$M_b$**|**$C$**|**$A$**|**$C/A$**
+| |**$K$**|**$M_b$**|**$C$**|**$A$**|**$C/A$**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 Animal|W m^-2^ °C^-1^|kg|J °C^-1^|m^2^|J °C^-1^ m^-2^
 1|180|0.07|240.1|0.01868|12853
@@ -755,17 +760,17 @@ Parameter|Animal|0.1|0.5|3
 $h_c$ (W m^-2^ °C^-1^)|1|6.17|16.21|47.51
 | |3|8|21.02|61.59
  | | | | 
-$K_0$ (m^2^ °C W^-1^)|1|11.147|19.543|41.068
-| |3|12.832|23.579|50.352
+$K_0$ (W m^-2^ °C^-1^)|1|11.147|19.544|41.076
+| |3|12.832|23.577|50.352
  | | | | 
-$T_b$ (°C) for $Q_a$ = 600 W m^-2^|1|37.1|29.27|23.83
-| |3|34.82|27.6|23.02
+$T_b$ (°C) for $Q_a$ = 600 W m^-2^|1|37.08|29.26|23.81
+| |3|34.81|27.60|23.02
  | | | | 
-$T_b$ (°C) for $Q_a$ = 380 W m^-2^|1|18.58|--|--
-| |3|18.77|--|--
+$T_b$ (°C) for $Q_a$ = 380 W m^-2^|1|18.57|--|--
+| |3|18.76|--|--
  | | | | 
-$\frac{C}{K_0A}$ (s)|1|1153.043|653.68|312.97
-| |3|523.53|284.91|133.42
+$\frac{C}{K_0A}$ (s)|1|1152.8|657.5|312.9
+| |3|523.5|284.9|133.4
  | | | | 
 Time to reach 25°C (s)|1|929.73|985.05| 
 | |3|485.43|544.85| 
@@ -784,7 +789,7 @@ T_b&-\bigg(\frac{M-E_b}{K}\bigg)=T_r \\
 Q_n&+M-E_b-E_r=RT_r+h_cT_r-h_cT_a+GT_r-GT_g \\
 Q_n&+h_cT_a+GT_g+M-E_b-E_r=[R+h_c+G]T_r \\
 T_b&=\frac{Q_n+h_c T_a+GT_g+M-E_b-E_r}{R+h_c+G}+\frac{M-E_b}{K} \\
-&=\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+\frac{KM-KE_b-KE_r}{K(R+h_c+G)} \frac{(R+h_c+G)(M-E_b)}{K(R+h_c+G)} \\
+&=\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+\frac{KM-KE_b-KE_r}{K(R+h_c+G)}+\frac{(R+h_c+G)(M-E_b)}{K(R+h_c+G)} \\
 T_b&=\frac{Q_n+h_c T_a+GT_g}{R+h_c+G}+(M-E_b)\frac{K+R+h_c+G}{K(R+h_c+G)}+\frac{E_r}{R+h_c+G} \\
 \end{align*}
 
