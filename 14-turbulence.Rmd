@@ -363,7 +363,7 @@ Wiebe, P. 1976. The biology of cold core rings. Oceanus 19:69-76.
 
 ## PROBLEMS
 
-1. What is the Reynolds number for an elephant in a 0.1 and a 10.0 m s^-1^ wind? (Make your own estimate for $d$.)
+1. What is the Reynolds number for an elephant in a 0.1 and a 10.0 m s^-1^ wind? Assume $\nu = 1.5\times10^{-5}$. (Make your own estimate for $d$.)
 
 2. Given the set of equations below, solve for the unknowns $x$, $y$, $z$.
 $$x + 2y + 3z = 10$$
@@ -380,16 +380,16 @@ $$4x - z = 2$$
 
 Notice that $u'$ represents the RMS (root-mean-square) value of the velocity fluctuations about the mean $\overline{u}$. As such, it can be interpreted as the rotational velocity, on the average, of the eddies.
 
-4. Solve (10) in the text for $\overline{u}$ as a function of $z$. Use as limits of integration $z=0$ and $z=z$. What are the corresponding limits for velocity? (Hint: remember the "no slip" condition.) What problem arises at the lower limit ($z=0$)? To remedy this, assume that $u=0$ at $z=z_0$ , where $z_0$ is a small distance above the surface. Assuming that $k=0.4$, $z_0=1 cm$ and $u_*=0.2 m s^{-1}$, plot $u$ (horizontal axis) versus $\ln z$. What is the potential significance of a plot such as this?
+4. Solve \@ref(eq:turbulence-10) in the text for $\overline{u}$ as a function of $z$. Use as limits of integration $z=0$ and $z=z$. What are the corresponding limits for velocity? (Hint: remember the "no slip" condition.) What problem arises at the lower limit ($z=0$)? To remedy this, assume that $u=0$ at $z=z_0$ , where $z_0$ is a small distance above the surface. Assuming that $k=0.4$, $z_0=1 cm$ and $u_*=0.2 m s^{-1}$, plot $u$ (horizontal axis) versus $\ln z$. What is the potential significance of a plot such as this?
 
 5. Given the following conditions, solve for the heat transfer from a leaf using \@ref(eq:turbulence-14), \@ref(eq:turbulence-15) and Fig. \@ref(fig:fig-turb-tab1). 
-    $Re=\frac{\overline{u}d}{v}$
-    $v=151\times10^{-7}m^2s^{-1}$(kinematic viscosity of air)
-    $d$ = characteristic length = 0.042m
-    $\overline{u}$ = average velocity = 3 m s$^{-1}$
-    $k$ = thermal conductivity of air = 26 mW m$^{-1}$ °C$^{-1}$
-    Leaf temperature = 30°C
-    Air temperature = 20°C
+    $Re=\frac{\overline{u}d}{v}$  
+    $v=151\times10^{-7}m^2s^{-1}$(kinematic viscosity of air)  
+    $d$ = characteristic length = 0.042m  
+    $\overline{u}$ = average velocity = 3 ms$^{-1}$  
+    $k$ = thermal conductivity of air = 26 mW m$^{-1}$°C$^{-1}$  
+    Leaf temperature = 30°C  
+    Air temperature = 20°C  
 
 
 ## PROBLEM SOLUTIONS
@@ -421,10 +421,10 @@ Two things are of importance to note. First of all, since $Re$ is proportional t
 
 4. Equation \@ref(eq:turbulence-10) is $u_*=kz\frac{d\bar u }{dz}$  
 rearranging terms $\frac{k}{u_*}d\bar u =\frac{dz}{z}$  
-integrating $\frac{k}{u_+} \int_0^{\bar u} d \bar u=\int_0^z\frac{dz}{z}$
-$$\frac{k\bar u}{u_*}=lnz-ln0$$
+integrating $\frac{k}{u_*} \int_0^{\bar u} d \bar u=\int_0^z\frac{dz}{z}$
+$$\frac{k\bar u}{u_*}=\ln z-\ln0$$
 But, $\ln 0$ is infinite, so we introduce a small constant called the **surface roughness** ($z_0$), and integrate from $z=z_0$ to $z=z$. Thus, we are saying that the velocity is zero a small distance ($z_0$) above the surface
-$$\frac{k}{u_*}=\ln z-\ln z_0=\ln\left(\frac{z}{z_0}\right)$$
+$$\frac{k\bar u }{u_*}=\ln z-\ln z_0=\ln\left(\frac{z}{z_0}\right)$$
 
 |             $z$              |  $\ln z$  |  $\overline u(z)= 1/2 \ln(z/0.01)$  |
 |:-------------------------:|:------:|:------:|

@@ -326,7 +326,7 @@ points(lats,el(lats,-30,5), type="l", lty="dashed")
 
 Because the change in temperature with elevation is affected by turbulence and heating of the surface as well as the lapse rate, the change in temperature as a function of elevation averages about 6°C/km. Using this fact, isotherms for elevation and latitudinal changes are replotted in Fig. \@ref(fig:fig-thermex-2) for the northern hemisphere. The effect of the mean annual range in temperature will be to increase the seasonality of the community. According to Fig. \@ref(fig:fig-thermex-2) then a community at 2,500 m and 20° latitude would have the same mean annual temperature as a community at sea level and 60°C latitude (0°C) but at 65° latitude the temperature variation would be 3.5 times larger. See Carter and Mather (1966) for a review of climate classifications.
 
-```{r fig-thermex-9, echo=FALSE, fig.height=4, ig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Isotherms in degrees Celsius for elevation vs. latitude. The mean annual temperature at any elevation is calculated assuming a dry adiabatic lapse rate. Mean annual temperature at growund level are taken from Miller and Thompson 1970.'}
+```{r fig-thermex-9, echo=FALSE, fig.height=4, ig.show = "hold", out.width = "75%", fig.align = "default", fig.cap='Figure for problen 2. Isotherms in degrees Celsius for elevation vs. latitude. The mean annual temperature at any elevation is calculated assuming a dry adiabatic lapse rate. Mean annual temperature at growund level are taken from Miller and Thompson 1970.'}
 knitr::include_graphics('figures/fig-thermex-9.png')
 ```
 
@@ -377,10 +377,10 @@ d. 1. $Q_a + M - Q_e - G - C=0$
     2. $M - G - C = 0$
 
 5.    
-a. The mass exchange is $2.22 \times 10^{-6} kg s^{-1}$. Multiplied by a temperature difference of 30°C and a specific heat of $1010 J kg^{-1}C^{-1}$ for air at 20°C (average value) yields a net loss of $0.067 W$. This is approximately 2.5% of the metabolic rate of a bird of this mass.
+a. The mass exchange is $2.22 \times 10^{-6} kg s^{-1}$. Multiplied by a temperature difference of 30°C and a specific heat of $1010 J kg^{-1^\circ}C^{-1}$ for air at 20°C (average value) yields a net loss of $0.067 W$. This is approximately 2.5% of the metabolic rate of a bird of this mass.
 
 b. Heat loss = mass flux $\times$ specific heat $\times$ temperature difference
-$$10\frac{\mbox{gallons}}{\mbox{day}}\times\frac{8.34lb.}{\mbox{gal}}\times\frac{1kg}{2.205lb.}\times\frac{1\mbox{day}}{86400s}\times18°C\times4180Jkg^{-1}°C=32.9W$$
+$$10\frac{\mbox{gallons}}{\mbox{day}}\times\frac{8.34lb.}{\mbox{gal}}\times\frac{1kg}{2.205lb.}\times\frac{1\mbox{day}}{86400s}\times18^\circ C\times4180Jkg^{-1\circ}C=32.9W$$
 This is about 8% of the basal metabolic rate.
 
 6. Siltation is potentially the worst problem because it can completely eliminate the spawning habitat and thus eliminate reproduction. If topography and soil conditions are such that erosion is not a problem a particular section of stream can continue to produce fish if flow level patterns are not altered too drastically. If these problems are not critical the manager must monitor water temperature. All three problems may be linked.

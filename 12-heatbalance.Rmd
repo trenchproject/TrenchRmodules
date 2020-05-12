@@ -401,7 +401,7 @@ $5.7 \times 10^{-3} J cm^{-1} s^{-1} {}^\circ C^{-1}$.
 
 8. When heat transfer depends on air movements caused by differences in fluid density (i.e., buoyancy effects), the Nusselt number can be shown to depend on another dimensionless parameter, the Grashof number,
 $$Gr=\frac{\beta gd^3}{v^2}(T_h-T_a)$$
-where $\beta$ is the coefficient of thermal expansion of the fluid, $g$ is the acceleration due to gravity, and $d$ is a characteristic length. For air at 20°C moving at right angles to the axis of a cylinder and $10^4<Gr<10^9$, $Nu = 0.48 Gr^{0.25}$ (Monteith, 1973). For the sheep, calculate rate of heat loss due to free convection, if $T_h$ = 25 °C and $T_a$ = 20 °C. (Take $\beta = 3.48 \times 10^{-3} °C^{-1}$, $g = 981 cm \cdot sec^{-2}$, $v = 0.145 cm^2\cdot sec^{-1}$.)
+where $\beta$ is the coefficient of thermal expansion of the fluid, $g$ is the acceleration due to gravity, and $d$ is a characteristic length. For air at 20°C moving at right angles to the axis of a cylinder and $10^4<Gr<10^9$, $Nu = 0.48 Gr^{0.25}$ (Monteith, 1973). For the sheep, calculate rate of heat loss due to free convection, if $T_h$ = 25 °C and $T_a$ = 20 °C. (Take $\beta = 3.48 \times 10^{-3} °C^{-1}$, $g = 9.81 m \cdot sec^{-2}$, $v = 1.45\times10^{-5} m^2\cdot sec^{-1}$, $d = 0.5 m$.)
 
 9. Suppose you did not know $T_h$ and wished to solve for it before proceeding further with your analysis. (Recall that we linearized terms involving $T_h^4$ by writing $T_h^4\stackrel{.}{=}T_a^4+4T_a^3(T_h-T_a)$, supposing that $T_h$ is sufficiently close to $T_a$, which is taken as known.) How would you linearize the term containing $Nu = 0.48Gr^{0.25}$?
 
@@ -562,32 +562,33 @@ M&=\frac{33-6.08}{0.006923}=3.888\times10^3W \\
 
 | | |**0.02**|**0.07**
 :-----:|:-----:|:-----:|:-----:
-$A_n$|(m^2^)|0.003142|.039584
-Nusselt number|10°C|10.25|18.47
+$A_n$|(m^2^)|0.003142|0.039584
+Nusselt number|10°C|10.25|18.77
 | |30°C|9.69|17.47
 $Z_f$| | |0.4544
-$Z_n$| |12.018|2.3063
-$\beta$ (W°C-1)| |0.08321|0.36222
-$\alpha$ (W°C-1)|10°|$\frac{0.04833}{0.13154}$|$\frac{0.36285}{0.72507}$
-| |30°|$\frac{0.05009}{0.13330}$|$\frac{0.38567}{0.74789}$
-$R_{Na}$|10|-0.13812|-1.7404
-| |30|-0.2096|-2.6409
-$T_h$ (°C)|10|27.29|22.09
-| |30|34.05|30.82
-Sensible heat loss (W)|10|0.9744|6.126
-| |30|0.4122|2.963
+$Z_h$| |12.018|2.3063
+$\beta$ (W°C^-1^)| |0.08321|0.36222
+$\alpha$ (W°C^-1^)|10°C|$\frac{0.04833}{0.13154}$|$\frac{0.36285}{0.72507}$
+| |30°C|$\frac{0.05009}{0.13330}$|$\frac{0.38567}{0.74789}$
+$R_{Na}$|10°C|-0.13812|-1.7404
+| |30°C|-0.2096|-2.6409
+$T_h$ (°C)|10°C|27.29|22.09
+| |30°C|34.05|30.82
+Sensible heat loss (W)|10°C|0.9744|6.126
+| |30°C|0.4122|2.963
 Evaporative water loss (W)| |0.1257|1.583
-%  Evaporative water loss  |10|11.4|20.5
-| |30|23.4|34.8
-Metabolic rate per unit area (W m^-2^)|10|350.1|194.8
-| |30|171.2|114.9
+%  Evaporative water loss  |10°C|11.4|20.5
+| |30°C|23.4|34.8
+Metabolic rate per unit area (W m^-2^)|10°C|350.1|194.8
+| |30°C|171.2|114.9
 
 8.
 
 \begin{align*}
 Gr&=\frac{3.48\times10^{-3}\cdot9.81\cdot(0.5)^3}{(1.45\times10^{-5})^2}(5) \\
-&=1.105\times10^8\;\;\;\;\;Nu=48.18 \\
-H&=\frac{48.18\cdot0.0257\cdot\pi\cdot1.0\cdot0.5}{0.5}(5)=19.45W
+&=1.105\times10^8\;\;\;\;\;Nu=49.21 \\
+H&= \frac{Nu\:k_a}{d}A_h(T_h-T_a)\\
+&\frac{48.18\cdot0.0257\cdot\pi\cdot1.0\cdot0.5}{0.5}(5)=19.87W
 \end{align*}
 
 9.

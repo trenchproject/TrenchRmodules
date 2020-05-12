@@ -333,14 +333,14 @@ knitr::include_graphics('figures/fig-calcdiff-p20.png')
 knitr::include_graphics('figures/fig-calcdiff-p21.png')
 ```
 
-&nbsp;&nbsp;a. Express $v$ as a function of $\theta$ (with $D$ a parameter) and show $v=0$ when $\theta=0$ or $\theta=\pi/2$ radians. What do these two cases mean physically?
+&nbsp;&nbsp;a. Express $v$ as a function of $\theta$ (with $D$ a parameter) and show $v=0$ when $\theta=0$ or $\theta=\pi/2$ radians.
 
 &nbsp;&nbsp;b. Find $\theta$ which gives a maximum for $v$. Prove it is a relative maximum and not a relative minimum. Note that laboratory dissections show that in the relaxed worm the fibers run at about 55° to the axis of the body. Why would the relaxed worm have the maximum volume?
 
 5. Studies of insect flight (Alexander, 1968) use the theory of "forced vibrations" to explain the muscle action responding to nervous stimuli. If the "forcing function" is assumed to be
 $$F\sin(2\pi nt),\;\;\;\;t=\mbox{time},\;\;\;\;F=\mbox{constant},$$
 then the steady amplitude $A$ (magnitude of the vibrations) is given by
-$$A=F[(s-4\pi^4n^2m)^2+(2\pi nK)^2]^{-1/2}$$
+$$A=F[(s-4\pi^2n^2m)^2+(2\pi nK)^2]^{-1/2}$$
 where
 &nbsp;&nbsp;&nbsp;&nbsp;$K$ = viscous damping coefficient  
 &nbsp;&nbsp;&nbsp;&nbsp;$m$ = wing mass  
@@ -364,7 +364,7 @@ where we define
 &nbsp;&nbsp;&nbsp;&nbsp;$\lambda$ = thermal conductivity  
 When $C$ and $\lambda$ are uniform in depth and constant in time, we have the simple diffusion equation:
 $$\frac{\partial T}{\partial t}=a\frac{\partial^2 T}{\partial z^2}$$
-where $a = \lambda/C$ is called the thermal diffusivity of the soil. The temperature As at the surface gives boundary conditions for the model. For sinusoidal variation of surface temperature, we can write the boundary conditions as
+where $a = \lambda/C$ is called the thermal diffusivity of the soil. The temperature at the surface gives boundary conditions for the model. For sinusoidal variation of surface temperature, we can write the boundary conditions as
 $$T(t,0)=T_a+\theta_0\cos\omega t$$
 $$T(t,\infty)=T_a=\mbox{constant}$$
 Show that the solution to this model is given by the following function:
@@ -437,7 +437,8 @@ The units are then ml O~2~ per hour per unit of activity.
 $$0=\frac{d}{dn}[(s-4\pi^2n^2m)^2+(2\pi nK)^2]=2(s-4\pi^2n^2m)(-8\pi^2mn)+8\pi^2K^2n$$
 $$0=-2(ms-4\pi^2m^2n^2)+K^2$$
 $$2ms-K^2=8\pi^2m^2n^2$$
-$$n=\frac{2ms-K^2}{8\pi^2m^2}$$
+$$n=\sqrt{\frac{2ms-K^2}{8\pi^2m^2}}$$
+
 6. First calculate the required partial derivatives:
 $$\frac{\partial z}{\partial x}=3x^2-3y,\;\;\;\;\frac{\partial z}{\partial y}=3y^2-3x$$
 $$\frac{\partial^2 z}{\partial x^2}=6x,\;\;\;\;\frac{\partial^2 z}{\partial x\partial y}=-3,\;\;\;\;\frac{\partial^2z}{\partial y^2}=6y$$

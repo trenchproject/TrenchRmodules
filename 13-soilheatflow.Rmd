@@ -420,8 +420,8 @@ Now $T=\overline{T}+A(0)\exp(-z/D)\sin[\omega t-z/D]$, substituting expressions 
 \end{align*}
 
 Notice the first and fourth terms in the expression for $\frac{\partial^2T}{\partial z^2}$ cancel. Substituting in Equation \@ref(eq:soil-8):
-$$\omega A(0)\exp(-z/D)\cos[\omega t-z/D]+K(2A/D^2)\exp(-z/D)\cos[\omega t-z/D]$$
-or $\omega A(0)=K\frac{2A}{D^2}$
+$$\omega A(0)\exp(-z/D)\cos[\omega t-z/D]=K(2A(0)/D^2)\exp(-z/D)\cos[\omega t-z/D]$$
+or $\omega A(0)=K(2A(0)/D^2)$
 Canceling the $A(0)$'s, and rearranging the terms, we get $D=(2K/\omega)^{1/2}$, the identity of Equation \@ref(eq:soil-14).
 
 (b) The first boundary condition, $T(\infty,t) = \overline{T}$ (Equation \@ref(eq:soil-9)) is a constant, so it trivially satisfies Equation \@ref(eq:soil-8) (0 = 0).
@@ -436,14 +436,14 @@ T(z,t)=\overline{T}+A(0)\exp(-z/0)\sin[\omega t-z/D]
 We know from Equation \@ref(eq:soil-3) that  
 \begin{align*}
 G(z,t)&=-k\frac{\partial T}{\partial z} \\
-G(z,t)&=-k\{-A(0)/D\:exp(-z/D)\sin[\omega t-z/D]-a(0)/D\: \exp(-z/D)cos[\omega t-z/D]\} \\
-&=k A(0)/D \: \exp(-z/D)\{\sin[\omega t -z/D]+cos[\omega t-z/D]\} \\
+G(z,t)&=-k\{-A(0)/D\:\exp(-z/D)\sin[\omega t-z/D]-A(0)/D\: \exp(-z/D)\cos[\omega t-z/D]\} \\
+&=k A(0)/D \: \exp(-z/D)\{\sin[\omega t -z/D]+\cos[\omega t-z/D]\} \\
 \end{align*}
 The surface heat flux is then  
 $$G(0,t)=kA(0)/D\{\sin\omega t+cos\omega t\}$$
-Using the identity $sm(x+4)=\sin x\cos y+\cos x\sin y$  
+Using the identity $\sin(x+y)=\sin x\cos y+\cos x\sin y$  
 setting $y=\pi/4$; $\sin(x+\pi/4)=\frac{1}{\sqrt2}(\sin x+\cos x)$, and substituting in the expression for $G(0,t)$, we have
-$$G(0,t)=\sqrt{2}A(0)/D\: \sin(\omega t+\pi/4)$$
+$$G(0,t)=\sqrt{2}kA(0)/D\: \sin(\omega t+\pi/4)$$
 The maximum value of $G(0,t)$ occurs when $\sin(\omega t+\pi/4)=1$, so
 $$G(0,t)_{max}=\frac{\sqrt{2}kA(0)}{D}$$
 
@@ -455,26 +455,26 @@ Comparing our result from 2(a), we note that $L$ corresponds to $D/\sqrt{2}$ if 
 The amount of heat flowing $(Q)$ per unit area of soil during 1/2 cycle
 can be found by integrating $G(0,t)$.
 \begin{align*}
-Q&=\frac{\sqrt{2}A(0)k}{\omega D}\int_{\pi/4}^{3\pi/4}\sin(\omega t+\pi/4)d(\omega t) \\
-&=-\frac{\sqrt2A(0)k}{\omega D}s(\omega t+\pi/4)\int_{\pi/4}^{3\pi/4} \\
+Q&=\frac{\sqrt{2}A(0)k}{\omega D}\int_{-\pi/4}^{3\pi/4}\sin(\omega t+\pi/4)d(\omega t) \\
+&=-\frac{\sqrt2A(0)k}{\omega D}\cos(\omega t+\pi/4)\int_{-\pi/4}^{3\pi/4} \\
 &=-\frac{\sqrt2A(0)k}{D\omega}[-1-(+1)] \\
 &=\frac{2\sqrt2A(0)k}{D\omega} \\
 \end{align*}
 Recall that $D=(2K/\omega)^{1/2}$ and $K=k/G$;
-$$Q=\frac{2K}{\omega}\frac{\sqrt2A(0)G}{D}=\sqrt2DA(0)C$$
+$$Q=\frac{2K}{\omega}\frac{\sqrt2A(0)G}{D}=\sqrt2DA(0)G$$
 
 3.(a) Forming a ratio using Equation \@ref(eq:soil-12) at two depths, we find that
-$$D=\frac{z_2-z_1}{ln[A(z_1)/A(z_2)]}$$
+$$D=\frac{z_2-z_1}{\ln[A(z_1)/A(z_2)]}$$
 Using the 30 and 15 cm curves, we estimate amplitudes of 2 and 8°C, respectively. So
-$$D=\frac{30-15}{ln(8/\varepsilon)}\cong 11cm$$
+$$D=\frac{30-15}{\ln(8/\varepsilon)}\cong 11cm$$
 Recalling the definition of $D=(2K/\omega)^{1/2}$(Equation \@ref(eq:soil-14)), we can write the ratio
 $$\frac{\mbox{D annual}}{\mbox{D diurnal}}=\left( \frac{\omega \mbox{ diurnal}}{\omega \mbox{ annual}} \right)^{1/2}$$
 $$\mbox{D annual}=(365)^{1/2}\mbox{ D diurnal}=(19.1)11\cong210cm$$
 (b) Using D from part (a), we have
 \begin{align*}
 A(0)&=A(z)exp(+z/D) \\
-A(0)&\cong& 31cm \mbox{ using } z=15cm,\:D=11cm,\:A(z)=8°C \\
-&\cong& 31cm \mbox{ using } z=30cm, D=11cm, A(z)=2°C \\
+A(0)&\cong 31cm \mbox{ using } z=15cm,\:D=11cm,\:A(z)=8°C \\
+&\cong 31cm \mbox{ using } z=30cm, D=11cm, A(z)=2°C \\
 \end{align*}
 
 (c) Solving Equation \@ref(eq:soil-14) for $K$, we get, using the results from 3(a):

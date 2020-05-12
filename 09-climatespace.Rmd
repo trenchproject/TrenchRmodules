@@ -1155,7 +1155,7 @@ Zervanos, S. M., and N. F. Hadley. 1973. Adaptational biology and energy relatio
 
 ## PROBLEMS
 
-1. Table A provides metabolic rate, water loss, and fur and fat thicknesses for several species of animals. Using this information and Equations \@ref(eq:climatespace-10) and \@ref(eq:climatespace-11), calculate the maximum and minimum temperature differentials across the fat ($T_b - T_s$) and fur layers ($T_s - T_r$). Plot these four values placing ($T_s - T_r$) values on the abscissa. Shade the rectangle formed. Include lines of constant total differential ($T_b - T_r$). 
+1. Table A provides metabolic rate, water loss, and fur and fat thicknesses for several species of animals. Using this information and Equations \@ref(eq:climatespace-10) and \@ref(eq:climatespace-11), calculate the maximum and minimum temperature differentials across the fat ($T_b - T_s$) and fur layers ($T_s - T_r$). 
 
 Rank the homeotherms from the highest to lowest difference between body temperature and surface temperature. Under what environmental conditions would an animal like to make this difference large? When would the animal like to make this difference small? What other mammals do you know of besides the pig that have thick fat layers? Why might this be? How does fat compare with fur or feathers as an insulation material? What is the relative efficiency of each? Is it clear now that the assumption that $T_b$ ~ $T_r$ for the lizard is not critical?
 
@@ -1210,7 +1210,7 @@ $M$, $E_{ex}$, $E_{sw}$ in W m^-2^, $d_b$ and $d_f$ in m $\times$ 10^-3^
 
 4. Spotila et al. (1973) suggests that the area labeled A in the climate space of Figure \@ref(fig:fig-climatespace-6) need not be included. Why might this be true? Are there any other areas like this? How does your answer compare with the information in Figure \@ref(fig:fig-climatespace-3)? 
 
-5. A comparison of the climate space diagrams in this module with those found in the Porter and Gates paper shows that the slopes of the lines are usually different under the same set of environmental and physiological conditions. This is because a different convection coefficient is used. Below is a table of weights and diameters for the same animals. Compute the convection coefficient in two ways: 1) using the formula that Porter and Gates (1969) provided; 2) using Mitchell's (1976) relationship, assume $V$ = 1.0 ms^-1^. Now make the comparison in a more systematic fashion; Let $V$ = 0.1, 0.5, 1.0, 3.0, and 10 ms^-1^ and $M_b$ = 0.00001, 0.0001, 0.1, 10 and 1000 kg. Use the relationship between length and weight given in Appendix II to find a diameter corresponding to the weight values given. Compare the values by forming the ratio of Mitchell's $h_c$ divided by that of Porter and Gates.
+5. A comparison of the climate space diagrams in this module with those found in the Porter and Gates paper shows that the slopes of the lines are usually different under the same set of environmental and physiological conditions. This is because a different convection coefficient is used. Below is a table of weights and diameters for the same animals. Compute the convection coefficient in two ways: 1) using the formula that Porter and Gates (1969) provided; 2) using Mitchell's (1976) relationship, assume $V$ = 1.0 ms^-1^. Now make the comparison in a more systematic fashion; Let $V$ = 0.1, 0.5, 1.0, 3.0, and 10 ms^-1^ and $M_b$ = 0.00001, 0.001, 0.1, 1, 10 and 160 kg. Use the relationship between length and weight given in Appendix II to find a diameter corresponding to the weight values given. Compare the values by forming the ratio of Mitchell's $h_c$ divided by that of Porter and Gates.
 
 | Animal   | Diameter (m) | Body Mass (kg) |
 |----------|:------------:|:--------------:|
@@ -1245,10 +1245,14 @@ knitr::include_graphics('figures/fig-climatespace-13.png')
 knitr::include_graphics('figures/fig-climatespace-14.png')
 ```
 
+
+\newpage
+
 ## PROBLEM SOLUTIONS
 
 Equation \@ref(eq:climatespace-10) is 
 $$M-E_{ex}=\frac{k_b}{d_b}(T_b-T_s)$$
+
 Equation \@ref(eq:climatespace-11) is
 $$M-E_{ex}-E_{sw}=\frac{k_f}{d_f}(T_s-T_r)$$
 
@@ -1257,23 +1261,23 @@ $k_b = 0.205Wm^{-1} {}^\circ C^{-1}$ and $k_f = 0.025Wm^{-1} {}^\circ C^{-1}$. F
 |              | ($T_s-T_r$) |         | ($T_b-T_s$) |         |
 |--------------|:-----------:|:-------:|:-----------:|:-------:|
 |              |   Maximum   | Minimum |   Maximum   | Minimum |
-| Shrew        |     41.3    |    6    |     1.7     |   0.6   |
+| Shrew        |     47.5    |   7.0   |     1.9     |   0.6   |
 | Cow, summer  |     18.8    |   7.4   |     6.8     |   6.5   |
-| Cow, winter  |    101.0    |   39.8  |     6.8     |   6.5   |
-| Pig          |     14.7    |   1.0   |     21.0    |   0.1   |
+| Cow, winter  |    101.5    |   40.0  |     6.8     |   6.5   |
+| Pig          |     14.6    |    0    |     21.0    |   0.1   |
 | Zebra finch  |     26.6    |    0    |     0.9     |    0    |
 | Locust       |      --     |    --   |     2.9     |    0    |
 | Cardinal     |     61.7    |    0    |     1.0     |    0    |
 | Jack rabbit  |     40.8    |    0    |     0.7     |    0    |
-| Fence lizard |      --     |    --   |     0.5     |    0    |
+| Fence lizard |      --     |    --   |     0.3     |    --   |
 
 |             |      Ranking      | Total $\Delta T$ |         |      Ranking      |
 |-------------|:-----------------:|:----------------:|:-------:|:-----------------:|
 |             | Maximum $T_b-T_r$ |      Maximum     | Minimum | Minimum $T_b-T_r$ |
-| Shrew       |         3         |        435       |   7.5   |         5         |
-| Cow, summer |         6         |       25.6       |   13.9  |         6         |
-| Cow, winter |         1         |       107.8      |   46.3  |         7         |
-| Pig         |         5         |       35.7       |   1.1   |         4         |
+| Shrew       |         3         |       49.4       |   7.6   |         5         |
+| Cow, summer |         6         |       25.6       |   14.0  |         6         |
+| Cow, winter |         1         |       108.3      |   46.5  |         7         |
+| Pig         |         5         |       35.6       |   1.1   |         4         |
 | Zebra finch |         7         |       27.5       |    0    |                   |
 | Cardinal    |         2         |       62.7       |    0    |                   |
 | Jack rabbit |         4         |       41.5       |    0    |                   |
@@ -1354,7 +1358,7 @@ If $T_r > T_g$, $G$ is positive and the animal will receive more energy. This wi
 Combinations of low air temperature and high radiation do not occur naturally. The coldest air temperatures will occur at night. By similar reasoning the area labeled B in Figure \@ref(fig:fig-climatespace-6) suggests that the highest air temperatures will occur under low radiation levels. Again, this will not be true.
 Figure \@ref(fig:fig-climatespace-3) of the text shows that this is the case. Other data presented in the Morhardt and Gates paper confirm these observations. The reason is simply that the sun heats the air.
 
-5. The two formulae needed to calculate the convection coefficients are 6 and 7.
+5. The two formulae needed to calculate the convection coefficients are \@ref(eq:climatespace-6) and \@ref(eq:climatespace-7).
 $$h_{c1}=0.927V^{0.33}D^{-0.67}\;\;\;\;\;\;\;\mbox{ Porter and Gates}$$
 $$h_{c2}=17.24V^{0.60}M_b^{-0.133}\;\;\;\;\;\;\;\mbox{ Mitchell}$$
 
@@ -1421,7 +1425,7 @@ For a slab under steady state conditions we can separate variables and integrate
 knitr::include_graphics('figures/fig-climatespace-p6a.png')
 ```
 
-$$dT=\frac{q_s}{kA}dx$$
+$$dT=-\frac{q_s}{kA}dx$$
 $$\int^{T_0}_{T_i}dt=-\frac{q_s}{kA}\int^x_0dx$$
 $$T_0-T_i=-\frac{q_s}{kA}x$$
 \begin{equation}
@@ -1441,17 +1445,17 @@ A &= 2\pi rL \notag \\
 q_c &= -k 2\pi rL \frac{dT}{dr} \notag \\
 dT &= -\frac{q_c}{2\pi Lk}\frac{dr}{r} \notag \\
 \int^{T_0}_{T_i}dT &= -\frac{q_c}{2\pi Lk}\int^{r_0}_{r_i}\frac{dr}{r} \notag \\
-T_0 - T_i &= \frac{-q}{2\pi Lk}ln(\frac{r_0}{r_i}) \notag \\
-q_c &= \frac{2\pi Lk}{ln(\frac{r_0}{r_1})}(T_i-T_0)
+T_0 - T_i &= \frac{-q}{2\pi Lk}\ln(\frac{r_0}{r_i}) \notag \\
+q_c &= \frac{2\pi Lk}{\ln(\frac{r_0}{r_1})}(T_i-T_0)
 (\#eq:climatespace-C)
 \end{align}
 
 Now if we assume the area of the slab is equal to $L\times2\pi\frac{r_i+r_0}{2}$ and the thickness to be $r_0-r_i$ we can set the two equations \@ref(eq:climatespace-B) and \@ref(eq:climatespace-C) equal.
 
-$$\frac{kL2\pi\frac{r_i+r_0}{2}(T_i-T_0)}{r_0-r_i}\stackrel{?}{=}\frac{2\pi Lk(T_i-T_0)}{ln(\frac{r_0}{r_i})}$$
+$$\frac{kL2\pi\frac{r_i+r_0}{2}(T_i-T_0)}{r_0-r_i}\stackrel{?}{=}\frac{2\pi Lk(T_i-T_0)}{\ln(\frac{r_0}{r_i})}$$
 
 Cancelling terms, we have
-$$ln(\frac{r_0}{r_i})\stackrel{?}{=}\frac{2(r_0-r_i)}{r_i+r_0}$$
+$$\ln(\frac{r_0}{r_i})\stackrel{?}{=}\frac{2(r_0-r_i)}{r_i+r_0}$$
 Therefore $q_s$ will equal $q_c$ if the above relationship is true. Using the data given in the problem we can compute the relative radii.
 
 |               | Outside Radius  (cm) | Radius to Skin (cm) | Radius to Fat Layer (cm) |
@@ -1468,19 +1472,19 @@ Therefore $q_s$ will equal $q_c$ if the above relationship is true. Using the da
 Checking these values we find that for the sheep when $r_0=25.8$ and $r_i=12.5$ then
 $$\frac{2(r_0-r_i)}{r_0+r_i}=0.668$$
 and 
-$$ln(\frac{r_0}{r_i})=0.724$$
+$$\ln(\frac{r_0}{r_i})=0.724$$
 This is the worst case for the data which is less than a 10% difference.
 You can check the error by plotting
 $$\frac{ln(\frac{r_0}{r_i})-\frac{2(r_0-r_i)}{r_0+r_i}}{\frac{2(r_0-r_i)}{r_0+r_i}} \;\;\mbox{vs.} \;\;\frac{r_0}{r_i}$$
 The intuitive reason this works is that there is not much change in area for the different pairs of radii we have examined. It is, however, possible to show that
 
 \begin{equation}
-ln(x)=2[\frac{x-1}{x+1}+\frac{1}{3}(\frac{x-1}{x+1})^3+\frac{1}{5}(\frac{x-1}{x+1})^5+...]
+\ln(x)=2[\frac{x-1}{x+1}+\frac{1}{3}(\frac{x-1}{x+1})^3+\frac{1}{5}(\frac{x-1}{x+1})^5+...]
 (\#eq:climatespace-D)
 \end{equation}
 
-This is done by adding the series expansion for $-ln(1-y)$ and $ln(1+y)$ and then letting $y=\frac{x-1}{x+1}$. The result will give equation\@ref(eq:climatespace-D). Using only the first term of expansion in equation \@ref(eq:climatespace-D) with $x=\frac{r_0}{r_i}$ we get
-$$ln(\frac{r_0}{r_i}) \frac{2(r_0-r_i)}{r_0+r_i}$$
+This is done by adding the series expansion for $-\ln(1-y)$ and $\ln(1+y)$ and then letting $y=\frac{x-1}{x+1}$. The result will give equation\@ref(eq:climatespace-D). Using only the first term of expansion in equation \@ref(eq:climatespace-D) with $x=\frac{r_0}{r_i}$ we get
+$$\ln(\frac{r_0}{r_i}) = \frac{2(r_0-r_i)}{r_0+r_i}$$
 
 7. On the figures the authors give equations to relate metabolic rate and evaporative water loss. These are 
 

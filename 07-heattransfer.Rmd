@@ -78,7 +78,7 @@ All objects, living and nonliving, radiate thermal energy. The amount and kind (
 
 Three physical laws are associated with figure \@ref(fig:fig-heattrans-4). Planck's Law gives the energy emitted, $E_\lambda$, as a function of the wavelength, $\lambda$, if the temperature of the radiating body is known:
 \begin{equation}
-E_\lambda = c_1 \lambda^{-5} [exp(c_2 / \lambda T)] -1 ]^{-1}
+E_\lambda = c_1 \lambda^{-5} [\exp(c_2 / \lambda T)] -1 ]^{-1}
 (\#eq:heattrans-2)
 \end{equation}
 where
@@ -129,7 +129,7 @@ Roseman (1978) gives a more complete discussion of these laws.
 
 Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table \@ref(tab:table-heattrans-1) gives the emissivities of some plants and animals.
 
-Table: (\#tab:table-heattrans-1b). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
+Table: (\#tab:table-heattrans-1). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
 
 Leaves
 
@@ -331,8 +331,8 @@ The TrenchR package includes similar functions for modelling convection based on
 $$Q_{cond}= A\cdot proportion\cdot k(T_g-T_b)/d, $$
 where $k$ is thermal conductivity ($W K^{-1} m^{-1} {^{\circ}C^{-1}}$), $T_g$ is ground (surface) temperature (K), $T_b$ is body temperature (K), and $d$ is the mean thickness of the animal skin (surface, $m$). This formulation assumes the organism has a well mixed interior rather than an interior temperature gradient.
 
-When substrate thermal conductivity is the rate limiting step, $Qcond$ can be estimated as follows:
-$$Qcond= A\cdot proportion \cdot(2K_g/D)(T_b-T_g),$$
+When substrate thermal conductivity is the rate limiting step, $Q_{cond}$ can be estimated as follows:
+$$Q_{cond}= A\cdot proportion \cdot(2K_g/D)(T_b-T_g),$$
 where $K_g$ is the thermal conductivity of substrate ($W K^{-1} m^{-1}$) and $D$ is the characteristic dimension of the animal ($m$).
 
 The functions are available in R:
@@ -380,7 +380,7 @@ and
 Usually, $A_c$, $T_s$ and $T$ can be evaluated. The heat transfer coefficient, on the other hand, is often a difficult parameter to estimate in the natural environment because of turbulence (Kowalski and Mitchell 1976, and Noble 1975).
 
 TrenchR offers the following function for modelling convection. The function accounts for the proportion of the surface area in contact with the substrate, $proportion$, and an enhancement factor multiplier, $e_f$, that can be incorporated to account for increases in heat exchange resulting from air turbulence in field conditions. Conduction can be estimated as follows:
-$$Q_{conv}= ef\cdot h_c(A\cdot proportion)(Ta-Tb).$$
+$$Q_{conv}= ef\cdot h_c(A\cdot proportion)(T_a-T_b).$$
 
 The function is available in R:
 ```{r}
@@ -601,7 +601,7 @@ Equation \@ref(eq:heattrans-22) is a form of the diffusion equation and $\frac{k
 
 Figures \@ref(fig:fig-heattrans-8) and \@ref(fig:fig-heattrans-9) from Lowry (1969) give different representations of how the soil might change with time and depth. Simpson (1977), Carslaw and Jaeger (1959), and Van Wijk (1966) present a more detailed discussion of soil heat flow.
 
-```{r fig-heattrans-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Schematic view of a unit of soil, showing heat inflow from above and heat outflow below, leading to derivation of Eq. 22. (From Lowry, W.P. 1969. P. 51)'}
+```{r fig-heattrans-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Schematic view of a unit of soil, showing heat inflow from above and heat outflow below, leading to derivation of Eq. \@ref(eq:heattrans-22). (From Lowry, W.P. 1969. P. 51)'}
 knitr::include_graphics('figures/fig-heattrans-7.png')
 ```
 
@@ -850,19 +850,19 @@ This module has attempted to develop the aspects of heat transfer that are impor
 1b. If the emissivity of an environmental chamber with plastic walls is 0.6 for longwave radiation what is its absorptivity to longwave radiation? Imagine that the air is much cooler than the animal's surface. The radiation leaving the animal, incident on the walls, could heat the walls above the air temperature and increase the radiation incidence on the animal. Name two ways to avoid this problem. A chamber with metal walls will have a small emissivity (~0.15) to longwave radiation. What will be its reflectivity? What will happen to the radiation leaving the animal in this case? How can this effect be minimized?
 
 2a. It is also possible to represent Planck's Law as a function of frequency $f$ rather than wavelength $\lambda$:
-$$E_f=\frac{2\pi h}{C_L^2}f^3\bigg[exp(\frac{hf}{K_bT})-1\bigg]^{-1}$$
+$$E_f=\frac{2\pi h}{C_L^2}f^3\bigg[\exp(\frac{hf}{K_bT})-1\bigg]^{-1}$$
 Equation \@ref(eq:heattrans-1) of the text gives the relationship between $\lambda$ and $f$. Show how $E_f$ and $E_{\lambda}$ are related. What is the difference in dimensions between $E_f$ and $E_{\lambda}$? The concept of wave number is often introduced to plot $E_f$ and $E_{\lambda}$ of the same graph. Wave number $n = \lambda^{-1}$. How are $f$ and $n$ related? Plot $E_{\lambda}$ and $E_f$ for T = 280 K as a function of $\lambda$. Repeat for T = 6,000 K but show both the $\lambda$ and $n$ scales. How does the relationship of bandwidth/wave number and bandwidth/wavelength change over the spectrum?
 
 2b. Planck also found that the energy in a photon, $e$, is proportional to its frequency ($e = hf$). What does this imply for a $E_{\lambda}$ versus $E_f$ representation? At what wavelength does the sun radiate the most energy? Assume its surface temperature is 6,000 K. How does this value compare with that in Fig. \@ref(fig:fig-heattrans-4)?
 
-3a. Using equation \@ref(eq:heattrans-8), plot the heat of vaporization as a function of temperature. Schmidt-Nielsen (1975, page 313) says that $580 cal \cdot g^{-1}$ is a commonly used value in physiology. Is this a good approximation? Evaluate the error over the range 0 to 40 °C.
+3a. Using equation \@ref(eq:heattrans-16), plot the heat of vaporization as a function of temperature. Schmidt-Nielsen (1975, page 313) says that $580 cal \cdot g^{-1}$ is a commonly used value in physiology. Is this a good approximation? Evaluate the error over the range 0 to 40 °C.
 
 b. Schmidt-Nielsen (1975, page 37) gives the lung volume for mammals as a function of weight as
 $$V=0.0567M^{1.02}$$
 $V$ is lung volume (liters) and $M$ is body mass (kg).
 
 If respiration rate (breaths min$^{-1}$) is a function of air temperature (for a moose (Belovsky 1978)),
-$$Br=7.72exp(0.07T_a)$$
+$$Br=7.72\exp(0.07T_a)$$
 calculate the respiration loss in watts as a function of air temperature ($T_a$ = -20 to 40 °C). Assume $M$ = 358 kg, that the exhaled air is at air temperature, the relative humidity is 50 percent and $L$ is constant at $2.43 \times 10^6 J kg^{-1}$. Repeat the calculation for the exhaled air at $\frac{T_a+T_b}{2}$.
 
 Hint: The energy lost is equal to the net mass flow (the mass of water exhaled minus the mass of water inhaled per unit time multiplied by the latent heat of water). Convert the volume exchange to a mass exchange using the fact that concentration (mass/volume) of water is the product of the molecular weight, the vapor pressure of water at that temperature and the relative humidity divided by the product of the gas constant and the absolute temperature of the sample.
@@ -881,7 +881,7 @@ Hint: The energy lost is equal to the net mass flow (the mass of water exhaled m
 knitr::include_graphics('figures/fig-heattrans-p5.png')
 ```
 
-How does the temperature drop at the boundary depend on thermal conductivity and the thickness of the material? Let $\frac{k_1}{k_2}=a$ and $\frac{L_1}{L_2}=b$; find $T_B$. Let $\frac{a}{b}$ and find $T_B$. Plot $\frac{T_B-T_2}{T_1-T_2}$. If $a = 1.2$, $b = 0.2$, $T_1 = 40 °C$ and $T_2= 10 °C$, in which material is the temperature gradient larger? Which material has the larger temperature drop? What is $T_B$?
+How does the temperature drop at the boundary depend on thermal conductivity and the thickness of the material? Let $\frac{k_1}{k_2}=a$ and $\frac{L_1}{L_2}=b$; find $T_B$. Let $\frac{a}{b} = x$ and find $T_B$. If $a = 1.2$, $b = 0.2$, $T_1 = 40 °C$ and $T_2= 10 °C$, in which material is the temperature gradient larger? Which material has the larger temperature drop? What is $T_B$?
 
 b. In the conduction section of the text the heat flow between an alligator and the substrate was calculated. It was assumed that the heat flow into the rock was not important. Discuss this assumption with regard to part "a" of this problem.
 
@@ -899,25 +899,26 @@ $$Nu=aRe^b$$
 |  4,000-40,000  |  0.174 | 0.618 |
 | 40,000-400,000 | 0.0239 | 0.805 |
 
-Assume that wind velocity is $2 m s^{-1}$ and $0.1 m s^{-1}$, the diameter is 0.46 m and 0.002 m. Compute $h_c$ for the four combinations of diameter and wind velocity. Take $v = 1.42 \times 10^{-5} m^2 s^{-1}$ and $k = 2.50 \times 10^{-2} W m^{-1} K^{-1}$ at an air temperature of 10 °C.
+Assume that wind velocity is $2 m s^{-1}$ and $0.1 m s^{-1}$, the diameter is 0.46 m and 0.002 m. Compute $h_c$ for the four combinations of diameter and wind velocity. Take $\nu = 1.42 \times 10^{-5} m^2 s^{-1}$ and $k = 2.50 \times 10^{-2} W m^{-1} K^{-1}$ at an air temperature of 10 °C.
 
-7a. Calculate the heat transfer coefficient for a flat plate using $Nu = 0.60 Re^{0.5}$ (Monteith 1973, page 224; Kreith 1973, page 341). Let air temperature be 20 °C, so $v = 1.51 \times 10^{-5} m^2 s^{-1}$ and $k = 2.53 \times 10^{-2} W m^{-1} K^{-1}$. How does this compare with the convection coefficient for the leaf? This is accurate for laminar flow $Re < 2 \times 10^4$.
+7a. Calculate the heat transfer coefficient for a flat plate using $Nu = 0.60 Re^{0.5}$ (Monteith 1973, page 224; Kreith 1973, page 341). Let air temperature be 20 °C, so $\nu = 1.51 \times 10^{-5} m^2 s^{-1}$ and $k = 2.53 \times 10^{-2} W m^{-1} K^{-1}$. How does this compare with the convection coefficient for the leaf? This is accurate for laminar flow $Re < 2 \times 10^4$.
 
 b. Show the region $Re < 2 \times 10^4$ on a graph of wind velocity $V$ versus the characteristic length $D$. When $Re < 2 \times 10^4$, Monteith suggests $0.032 Re^{0.8}$. How likely is this to occur naturally? Would a leaf be rigid in these wind speeds?
 
 8. In the text, we discussed the physical process of free convection. To determine the importance of free convection, one must compute the ratio of the Grashof number to the square of the Reynolds number. If the ratio is approximately 1, then free convection cannot be ignored. The Grashof number is   
-    $Gr=\frac{agD^3(T_s-T)}{v^2}$   
+    $Gr=\frac{agD^3(T_s-T)}{\nu^2}$   
     $g$ = gravitational acceleration ($9.8 m s^{-2}$)   
     $a$ = coefficient of thermal expansion for fluid (a = 1/273 for air),   
     $T_s$ = surface temperature (°C),   
     $T$ = fluid temperature (°C),   
-    $v$ = kinematic viscosity ($m^2 s^{-1}$).   
+    $\nu$ = kinematic viscosity ($m^2 s^{-1}$).  
+
 Plot $\frac{Gr}{Re^2}$ on a graph of $V$ versus $D$. Let $T_s - T$ equal 10, 20 and 30 $^\circ$C. Below the line $Gr = Re^2$, free convection loss cannot be ignored. Is free convection important for leaves in the natural environment?
 
 9a. The energy balance for fruits is important in both cultivated and wild plants because it affects when and at what rate the crop ripens. Grapes for instance must be picked at just the right time to insure the best sugar content for winemaking. McIntosh apples need cold nights and warm days to be of the best quality. When weather conditions are unfavorable, fruit can become overripe or rotten before it is harvested. Wild plant fruits are an energy investment by the plant to attract seed dispersers. This is especially true of birds and bats in the tropics. The color of the fruit is often an important signal to a potential disperser while the size and spacing of the fruits will influence the animal's harvesting rates. These same characteristics are important to the fruit's thermal balance.
 
 An empirical approach based on the "heat unit" or "growing degree day" concept has been developed to predict the harvest times. When the fruits have been exposed to x degree days the theory says they will he ready to pick. Degree days are computed as follows:
-$$DD=\sum\bigg[\frac{T_{a,max}-T_{a,min}}2-T_t\bigg]$$
+$$DD=\sum\bigg[\frac{T_{a,max}+T_{a,min}}2-T_t\bigg]$$
 where $DD$ is degree days, $T_{a,max}$ is the maximum air temperature during the day, $T_{a,min}$ is the minimum air temperature for the day and $T_t$ is a threshold temperature specific for each species and which can be thought of as the temperature below which development is stopped. (The summation is over only positive values of the term). From the data below calculate the ripening degree days if $T_t$ is 16 °C.
 
 |    Day    |  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 |
@@ -938,10 +939,10 @@ Under steady state conditions the temperature of the fruit core, $T_f$, will equ
 
 |      Range of Re      |        Nu        |
 |:---------------------:|:----------------:|
-|         0-300         | 2 + 0.54 Re^0.5^ |
+|         0 - 300         | 2 + 0.54 Re^0.5^ |
 | 50 - 1 $\times$ 10^5^ |   0.34 Re^0.6^   |
 
-Calculate $Nu$ by both formulae for $Re$ = 50, 100 and 300. If $D$ = 1 cm, what is the minimum wind speed for which the second relationship is valid? Which formula yields a lower heat transfer coefficient? What will the effect on the energy balance of the fruit be? Find $h_c$ as a function of $D$ (0.01, 0.04 and 0.1 m) and $V$ (0.1, 1.0 and 10.0 m s$^{-1}$) if $Nu = 0.34Re^{0.6}$. Assume $v = 1.42 \times 10^{-5} m^2 s^{-1}$ for the entire problem.  
+Calculate $Nu$ by both formulae for $Re$ = 50, 100 and 300. If $D$ = 1 cm, what is the minimum wind speed for which the second relationship is valid? Which formula yields a lower heat transfer coefficient? What will the effect on the energy balance of the fruit be? Find $h_c$ as a function of $D$ (0.01, 0.04 and 0.1 m) and $V$ (0.1, 1.0 and 10.0 m s$^{-1}$) if $Nu = 0.34Re^{0.6}$. Assume $\nu = 1.42 \times 10^{-5} m^2 s^{-1}$ for the entire problem.  
 
 For a sphere: $Q_a=a_s[A_1S+A_2s+A_3r+(S+s)]+A_lA_l[R_a+r_g]$  
 where   
@@ -1104,8 +1105,8 @@ b. For the moose
 $$V_L=0.0567(358)^{1.02}=22.83\frac{\mbox{liters}}{\mbox{breath}}$$
 Liters of air per min are:
 \begin{align*}
-R_v&=176.3exp(0.07T_a) \\
-R_v&=2.94exp(0.07T_a)m^3\times10^{-3}s^{-1}
+R_v&=176.3\exp(0.07T_a) \\
+R_v&=2.94\exp(0.07T_a)m^3\times10^{-3}s^{-1}
 \end{align*}
 Assume that the air is saturated at $T_b$ = 38°C. We need to calculate the kg of water vapor in a liter of air ($C_e$, kg m$^{-3}$) exhaled at $(T_b + T_a)/2$
 $$C_e=\frac{me(T)}{RT}$$
@@ -1118,14 +1119,14 @@ and
 
 \begin{align*}
 C_e&=\frac{18g\:mol^{-1}e_s(T)}{8.31kg\:m^2s^{-2}mol^{-1}K^{-1}T} \\
-C_e&=\frac{0.217e(T_a+T_b)/2}{(T_b+T_a)/2} \\
+C_e&=\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2} \\
 \end{align*}
 
 The concentration of water vapor inhaled is
-$$\bigg[\frac{0.217e(T_a)}{T_a}\bigg]r.h.$$
+$$C_i = \bigg[\frac{0.217e(T_a)}{T_a}\bigg]r.h.$$
 \begin{align*}
 LE&=2.43J\:kg^{-1}(C_e-C_i)\cdot R_v \\
-&=2.43r.h.\bigg[\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2}-\frac{.217e(T_a)r.h.}{T_a}\bigg]\times2.94\exp(0.07T_a) \\
+&=2.43r.h.\bigg[\frac{0.217e[(T_a+T_b)/2]}{(T_b+T_a)/2}-\frac{0.217e(T_a)r.h.}{T_a}\bigg]\times2.94\exp(0.07T_a) \\
 \end{align*}
 
 
@@ -1142,7 +1143,7 @@ $T_a$|$\frac{T_a+T_b}{2}$|$C_e$|$C_e'$|$C_i$|$(C_e-C_i)$|$(C_e-C_i)'$|$R_v$|$LE$
 
 
 4. The conduction transfer during steady state can be calculated according to the following formula:
-$$G=\frac{kA_c(T_b-T_g)}{\Delta x}$$
+$$Q_{cond}=\frac{kA_c(T_b-T_g)}{\Delta x}$$
 
 | $T_g$ (°C) \\ $k$ (W m^-1^ °C^-1^) |  0.02  |  0.08  |   0.17  |
 |:------------------------------:|:-----:|:-----:|:------:|
@@ -1194,7 +1195,7 @@ $h_c$: $h_c = \frac{Nuk}{D}$
 
 7.
 $Nu=0.60Re^{0.5}$, $h_c=\frac{Nuk}{D}$
-$$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{v}\bigg)^{0.5}=\frac{0.60}{v^{0.5}}\times k\bigg(\frac{V}{D}\bigg)^{0.5}$$
+$$h_c=\frac{k}{D}0.60\bigg(\frac{VD}{\nu}\bigg)^{0.5}=\frac{0.60}{\nu^{0.5}}\times k\bigg(\frac{V}{D}\bigg)^{0.5}$$
 $$h_c=3.98\bigg(\frac{V}{D}\bigg)^{0.5}$$
 
 This is approximately 2.3 times the value of $9.14 J m^2 {}^\circ C^{-1} s^{-1/2}$ that Gates uses. Most wind speeds in natural environments are less than $3ms^{-1}$ and most leaves are less than 0.1 m along their largest dimension, thus, Re < 20,000. Leaves usually will not flutter at wind speeds less than $3 m s^{-1}$. (See figure for Problem 7 on following page.) See Grace (1977) for additional information.
@@ -1210,23 +1211,10 @@ text(x = 0.05, y = 1.5, labels = "Re < 20000")
 8.
 \begin{align*}
 Re^2&=Gr \\
-\frac{D^2V^2}{v^2}&=\frac{agD^3(T_s-T)}{v^2} \\
+\frac{D^2V^2}{\nu^2}&=\frac{agD^3(T_s-T)}{\nu^2} \\
 V^2&=agD(T_s-T) \\
 V&=0.1895\sqrt{(T_s-T)D} \\
 \end{align*}
-
-
-Velocity (m s$^{-1}$) as a function of $T_s-T$ and $D$
-
-| |**$T_s-T$ (°C)**| | 
-:-----:|:-----:|:-----:|:-----:
-$D$ (m)|5|10|20
-0.3|0.232|0.328|0.568
-0.2|0.189|0.268|0.464
-0.1|0.134|0.189|0.328
-0.05|0.095|0.134|0.232
-0.01|0.042|0.06|0.104
-
 
 ```{r fig-heattrans-ps8, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap = "Curves for which the Reynolds number squared equals the Grasnof number."}
 
@@ -1244,20 +1232,29 @@ text(x = 0.13, y = 0.43, labels = expression(T[s] ~ "- T = 30"), cex = 0.75)
 
 ```
 
+Velocity (m s$^{-1}$) as a function of $T_s-T$ and $D$
+
+| |**$T_s-T$ (°C)**| | 
+:-----:|:-----:|:-----:|:-----:
+$D$ (m)|5|10|20
+0.3|0.232|0.328|0.568
+0.2|0.189|0.268|0.464
+0.1|0.134|0.189|0.328
+0.05|0.095|0.134|0.232
+0.01|0.042|0.06|0.104
+
 From Figures \@ref(fig:fig-heattrans-10), \@ref(fig:fig-heattrans-11), and \@ref(fig:fig-heattrans-12) in the text it is clear that leaf temperature is usually not more than 10 °C above air temperature (although this is a function of leaf size in Fig. \@ref(fig:fig-heattrans-12). Leaf size is usually less than 0.05 m and wind speed is below 3 m s$^{-1}$. There still remains a set of conditions where free convection may be important. For additional information see Tibbals et al. (1964) and Grace (1977).
 
 9a. The degree days DD = 30. This approach assumes: 1) that the high and low air temperatures will represent the average thermal conditions that the fruit experiences; 2) that development is a linear function of the high and low average; and 3) that there is no problem with the fruit overheating. There are undoubtedly other problems also.
 
-b. For $Re=50$ and $D=0.01m$, $1.42\times10^{-5}$
-$Re=\frac{DV}{v}$. So $V=\frac{Rev}{D}=\frac{50\times1.42\times10^{-5}}{0.01}=0.710m/s$
+b. For $Re=50$, $D=0.01m$, $\nu = 1.42\times10^{-5}$ and $Re=\frac{DV}{\nu}$.  
+So $V=\frac{\nu Re}{D}=\frac{1.42\times10^{-5}\times50}{0.01}=0.710m/s$
 
-A comparison of the Nusselt numbers at the same Reynolds number (in the range 50-300) shows that the Nusselt number computed by the first formula is larger. Since the,heat transfer coefficient is proportional to the Nusselt number, the choice of the second formula will give a lower convection coefficient. Choosing the second formula will make the fruit's temperature depart from air temperature to a greater extent than the first formula.
-$Re=\frac{DV}{v}$ so $Nu=0.34(\frac{DV}{v})^{0.6}$ and $h_c=\frac{0.34(\frac{DV}{v})^{0.6}}{D}$
+A comparison of the Nusselt numbers at the same Reynolds number (in the range 50-300) shows that the Nusselt number computed by the first formula is larger. Since the heat transfer coefficient is proportional to the Nusselt number, the choice of the second formula will give a lower convection coefficient. Choosing the second formula will make the fruit's temperature depart from air temperature to a greater extent than the first formula.
+$Re=\frac{DV}{\nu}$ so $Nu=0.34(\frac{DV}{\nu})^{0.6}$ and $h_c=\frac{0.34(\frac{DV}{\nu})^{0.6}}{D}$
 Therefore, if
 $$k=0.025Wm^{-1}K^{-1},\:h_c=6.8V^{0.6}D^{-0.4}$$
 $h_c$ for a sphere
-
-
 
 
 D (m) \\ V (m/s)|0.1|1.0|10.0
@@ -1270,7 +1267,7 @@ $Q_a$ values are in the table below. Because $a_s$, $A_l$, $A_2$, $A_3$, $r$ and
 
 **Time (hours)**|**7**|**8**|**9**|**10**|**11**|**12**|**13**|**14**|**15**|**16**|**17**|**18**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
-$O_a$ (Wm^-2^)|288|431|505|576|626|667|642|604|536|459|305|290
+$Q_a$ (Wm^-2^)|288|431|505|576|626|667|642|604|536|459|305|290
 $T_a$ (°C)|7.5|10|12|15|19|24|27|25|22|16|12.5|10
 $T_f$ (°C)|6|12.9|17|21.9|26.8|32.1|33.7|30.9|26.2|18.8|10.5|8.1
 
@@ -1284,7 +1281,7 @@ D (m) \\ V (m/s)|0.1|1.0|10.0
 0.04|3.3|6.0|7.1
 0.1|2.4|5.4|6.9
 
-For 2 o'clock
+For 12 o'clock
 
 $T_f$ values (°C)
 
