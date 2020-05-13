@@ -293,7 +293,7 @@ This dependence of $Nu$ on $Re$ indicates that $Nu$ is not "purely empirical." C
 knitr::include_graphics('figures/tab-turb-1.png')
 ```
 
-A convenient tabulation of various dimensionless numbers is in Campbell (1977, p.65). Monteith (1973, pp.224-225) tabulates $Nu$ for forced and free convection, various geometries, and ranges of $Re$ (or $Gr$). Part of this table is reproduced in Fig. \@ref(fig:fig-turb-tab1). Using the information there, in conjunction with equation \@ref(eq:turbulence-14), one can obtain estimates of heat flux for various body geometries, wind speeds, and body size. The quantity $Nu \frac{k}{d}$ is related to similar terms used by various authors such as the heat transfer coefficient ($h$) and the exchange resistance ($r$) by the expression
+A convenient tabulation of various dimensionless numbers is in Campbell (1977, p.65). Monteith (1973, pp.224-225) tabulates $Nu$ for forced and free convection, various geometries, and ranges of $Re$ (or $Gr$). Part of this table is reproduced in Fig. 14.1. Using the information there, in conjunction with equation \@ref(eq:turbulence-14), one can obtain estimates of heat flux for various body geometries, wind speeds, and body size. The quantity $Nu \frac{k}{d}$ is related to similar terms used by various authors such as the heat transfer coefficient ($h$) and the exchange resistance ($r$) by the expression
 $$ Nu \frac{k}{d} = h = \frac{\rho c_p}{r}$$
 where $\rho$ is fluid density and $c_p$ is specific heat.
 

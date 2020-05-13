@@ -59,7 +59,7 @@ Secondly we discovered that the work $W$ done by the system on the surroundings 
 W = P dV
 (\#eq:thermex-4)
 \end{equation}
-By substituting \@ref(eq:thermex-3) and \@ref(eq:thermex-4) into \@ref(eq:thermex-2) we express the First Law as
+By substituting equations \@ref(eq:thermex-3) and \@ref(eq:thermex-4) into equation \@ref(eq:thermex-2) we express the First Law as
 \begin{equation}
 C_V dT = -P dV
 (\#eq:thermex-5)
@@ -69,7 +69,7 @@ Furthermore, we know that the state variables are related by the Ideal Gas Law $
 V dP +P dV = R dT
 (\#eq:thermex-6)
 \end{equation}
-Since our goal is to express the temperature change as a function of height or elevation we will eliminate $P dV$ from equation \@ref(eq:thermex-5) by substituting in \@ref(eq:thermex-6) which yields 
+Since our goal is to express the temperature change as a function of height or elevation we will eliminate $P dV$ from equation \@ref(eq:thermex-5) by substituting into equation \@ref(eq:thermex-6) which yields 
 \begin{equation}
 C_V dT = -R dT + V dP
 (\#eq:thermex-7)
@@ -99,7 +99,7 @@ V dP = -g m dh
 (\#eq:thermex-10)
 \end{equation}
 
-Substituting \@ref(eq:thermex-10) into \@ref(eq:thermex-7) and rearranging we have $(c_V + R) dT = -g m d$ the desired result; a formula that tells us how temperature changes with height. (Also recall that for an ideal diatomic gas that the heat capacity at constant volume $C_V = 2.5 R.$)
+Substituting equation \@ref(eq:thermex-10) into \@ref(eq:thermex-7) and rearranging we have $(c_V + R) dT = -g m d$ the desired result; a formula that tells us how temperature changes with height. (Also recall that for an ideal diatomic gas that the heat capacity at constant volume $C_V = 2.5 R.$)
 $$ \frac{dT}{dh} = \frac{-g\,m}{C_V + R} = \frac{-9.8ms^{-2} \cdot  0.029 kg mole^{-1}}{8.314 J {^{\circ}C}^{-1} (2.5+1) J {^{\circ}C}^{-1} mole^{-1}} = 0.0098 \frac{^{\circ}C}{m} = -9.8 \frac{^{\circ}C}{km}$$
 
 Thus the air temperature will be $10 ^{\circ}C$ lower for each kilometer increase in altitude. This is called the adiabatic lapse rate (no external source of heat). In many locations the rising air contains moisture, which condenses as the air rises thus adding the heat of condensation to the dry adiabatic lapse rate. Therefore the "moist adiabatic" lapse rate of about $6 \frac{^{\circ}C}{km}$ is less than the dry adiabatic lapse rate. Interestingly enough the reverse effect, air moving down a mountain, also occurs. These winds are known as foehn winds in the Alps and the Chinook winds in the Rocky Mountains. As the winds come down the leeward side of the mountain the atmospheric pressure increases causing as much as a 15-20 $^{\circ}C$ rise in temperature.
@@ -130,7 +130,7 @@ where
 * and $C$ = convection ($W m^{-2}$).
 </div>
 
-Equation \@ref(eq:thermex-12) is a general heat flow equation. In most cases except for water vapor flux $LE$, mass exchange can be neglected. Similarly, the system's internal sources of heat energy, photosynthesis and metabolism, are also very small components of the heat energy budget and can usually be ignored. We note, however, there are important exceptions of which the largest group includes endothermic vertebrates, birds and mammals. The other terms $Q_a$, $Q_e$, $LE$, $C$, $G$ of \@ref(eq:thermex-12) represent the basic heat transfer processes that were described in the first module entitled "The First Law of Thermodynamics for Ecosystems."
+Equation \@ref(eq:thermex-12) is a general heat flow equation. In most cases except for water vapor flux $LE$, mass exchange can be neglected. Similarly, the system's internal sources of heat energy, photosynthesis and metabolism, are also very small components of the heat energy budget and can usually be ignored. We note, however, there are important exceptions of which the largest group includes endothermic vertebrates, birds and mammals. The other terms $Q_a$, $Q_e$, $LE$, $C$, $G$ of equation \@ref(eq:thermex-12) represent the basic heat transfer processes that were described in the first module entitled "The First Law of Thermodynamics for Ecosystems."
 
 The first example we wish to consider is the heat energy budget of the earth. Since the average temperature of both the earth and the atmosphere is not changing with time we assume $\Delta U = 0$. Therefore the sum of the heat fluxes is zero, thus
 \begin{equation}
@@ -275,9 +275,9 @@ b) Assume a horse drinks 10 gallons of water at 20°C and urinates it at 38°C d
 
 1. At the earth's surface incoming = outgoing or 105 + 24 + 17 + 6 = 101 + 18 + 23 + 10. For the earth's atmosphere incoming = outgoing or 101 + 23 + 10 + 19 = 105 + 48.
 
-2. From the adiabatic lapse rate calculation, we know that the mean annual temperature will decrease 10°C/km. We might expect then that similar communities will be found on the same isotherm (convergence), if other factors such as water availability are similar (Fig \@ref(fig:fig-thermex-1)). Tropical mountain vegetation therefore may look like temperate forests and temperate alpine meadows will resemble tundra communities. (See Bliss (1956) for comparison of last two communities.) Table 1 shows the mean and mean annual range in temperature for the northern and southern hemisphere (Miller and Thompson 1970)
+2. From the adiabatic lapse rate calculation, we know that the mean annual temperature will decrease 10°C/km. We might expect then that similar communities will be found on the same isotherm (convergence), if other factors such as water availability are similar (Fig \@ref(fig:fig-thermex-1)). Tropical mountain vegetation therefore may look like temperate forests and temperate alpine meadows will resemble tundra communities. (See Bliss (1956) for comparison of last two communities.) Table 6.1 shows the mean and mean annual range in temperature for the northern and southern hemisphere (Miller and Thompson 1970)
 
-> Table 1. Mean annual temperature and temperature range, and their variation with latitude.
+> Table 6.1. Mean annual temperature and temperature range, and their variation with latitude.
 
 | |**Mean temperature (°F)**| | | |**Mean annual range (°F)**| | | 
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:

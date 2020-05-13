@@ -67,10 +67,9 @@ Q=aW^b
 \end{equation}
 The derivative of this power function is
 $$\frac{dQ}{dW}=a\cdot b\cdot W^{b-1}$$
-Table 1 gives the more common functions and their derivatives. For a more complete table, see any calculus text, or any math handbook (see Bibliography).
+Table 2.1 gives the more common functions and their derivatives. For a more complete table, see any calculus text, or any math handbook (see Bibliography).
 
-
-> Table 1. Derivatives of Elementary Functions
+> Table 2.1. Derivatives of Elementary Functions
 
 |  $y(x)$ |   $dy/dx$  |
 |:-------:|:----------:|
@@ -169,7 +168,7 @@ The model begins with the equation
 
 where $C$ is the amount of oxygen consumed up to time $t$, and $a$, $b$ and $W$ are constants. The notation $dC/dt$ demands that we may be able to consider $C$ **only** as a function of $t$. This is not always the case. Bayne, et al., studied mussels (*Mytilus*) with regard to the effects of food and temperature on oxygen consumption. One of their data sets gives values for the coefficients $a$ and $b$ for winter vs. summer at two activity levels:
 
->Table 2. Oxygen consumption for Mytilus edulis
+>Table 2.2. Oxygen consumption for Mytilus edulis
 
 | | |**Activity**| 
 :-----:|:-----:|:-----:|:-----:
@@ -179,7 +178,7 @@ a|Winter|1.76|2.66
 b|Winter|0.724|0.774
 | |Summer|0.67|0.702
 
-Standard activity represents the resting state. Routine refers to the post-feeding time period where some filtration (i.e. muscle activity) is occurring. From table 2, we recognize significant dependence of "$a$" on the level of activity and dependence of "$b$" on both activity and season. Let season and activity be denoted $s$ and $m$, respectively. Then, in place of "$a$" and "$b$" we write $a(m)$ and $b(s,m)$ to show the dependence on the variables $m$ and $s$. Now
+Standard activity represents the resting state. Routine refers to the post-feeding time period where some filtration (i.e. muscle activity) is occurring. From table 2.2, we recognize significant dependence of "$a$" on the level of activity and dependence of "$b$" on both activity and season. Let season and activity be denoted $s$ and $m$, respectively. Then, in place of "$a$" and "$b$" we write $a(m)$ and $b(s,m)$ to show the dependence on the variables $m$ and $s$. Now
 $C$, $a$ and $b$ are dependent variables and $W$, $s$, $m$ and $t$ are the independent variables. We must now write \@ref(eq:calcdiff-3) as
 \begin{equation}
 \frac{\partial C}{\partial t}=a(m)W^{b(s,m)}

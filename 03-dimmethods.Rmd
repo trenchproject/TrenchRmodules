@@ -661,4 +661,4 @@ Gray, D.E. (1972) Handbook of the American Journal of Physics, 3rd ed. McGraw-Hi
 
 National Bureau of Standards (1968) The English and metric systems of measurement, NBS Special Publ. 304A.
 
-National Bureau of Standards (1964) NBS r-1,,n International System, Tech. News Bull. 48.
+National Bureau of Standards (1964) NBS International System, Tech. News Bull. 48.

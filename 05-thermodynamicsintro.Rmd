@@ -66,7 +66,7 @@ Considering the definition of temperature is instructive when applying thermodyn
 
 The three most common temperature scales are Fahrenheit ($^{\circ}F$), Celsius ($^{\circ}C$), and Kelvin ($K$). These are based on a single fixed point, the unique triple point of water which by international agreement was set at $273.16 K$. In Figure \@ref(fig:fig-thermintro-1), pressure $P$ is plotted against temperature $T$ for some substance such as water. Solid, liquid, and vapor regions occur at different combinations of temperature and pressure; however, there is a single point at which the three phases occur simultaneously. This fact allows the definition of temperature scales with reference to a unique physical value.
 
-> Table 1 summarized some of the common temperatures expressed in the different scales. Formulae are given to convert a measurement in one scale to that of another.
+> Table 5.1 summarized some of the common temperatures expressed in the different scales. Formulae are given to convert a measurement in one scale to that of another.
 
 ```{r tab1-2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 tabl <- "  
@@ -113,7 +113,7 @@ dU = \delta Q - \delta W
 (\#eq:thermintro-2)
 \end{equation}
 
-This formulation is important for describing infinitesimal changes and reversible processes. Thermodynamics texts often use $d$ and $\delta$ symbols to make the distinction between exact and inexact differentials, respectively. To clarify this consider the following example. If we were to call the internal energy of an ideal gas system $U_A$ at state A, then as we will discuss in more detail later, the state variables of the system are $P$ for pressure, $V$ for volume, and $T$ for temperature which together specify $U_A$. Now if the system changes to a new state B, where $U_B = f (P_B,V_B, T_B)$, we know that this change in state is described by \@ref(eq:thermintro-2). However, work and heat cannot be uniquely expressed in terms of the system variables $P$, $V$ and $T$. Thus, although we know the magnitude of the difference for the change of state, $dU$, we cannot resolve it into components of heat and work. The total change in $W$ and $Q$ depends upon the particular "path" through which the system goes from $U_A$ to $U_B$ (see Figure \@ref(fig:fig-thermintro-4) for a simplified representation which is described in detail later), i.e., the path of integration of $\delta W$ and $\delta Q$ between $U_A$ and $U_B$. The inexact differential, $\delta$, is used to remind the reader of this fact.
+This formulation is important for describing infinitesimal changes and reversible processes. Thermodynamics texts often use $d$ and $\delta$ symbols to make the distinction between exact and inexact differentials, respectively. To clarify this consider the following example. If we were to call the internal energy of an ideal gas system $U_A$ at state A, then as we will discuss in more detail later, the state variables of the system are $P$ for pressure, $V$ for volume, and $T$ for temperature which together specify $U_A$. Now if the system changes to a new state B, where $U_B = f (P_B,V_B, T_B)$, we know that this change in state is described by equation \@ref(eq:thermintro-2). However, work and heat cannot be uniquely expressed in terms of the system variables $P$, $V$ and $T$. Thus, although we know the magnitude of the difference for the change of state, $dU$, we cannot resolve it into components of heat and work. The total change in $W$ and $Q$ depends upon the particular "path" through which the system goes from $U_A$ to $U_B$ (see Figure \@ref(fig:fig-thermintro-4) for a simplified representation which is described in detail later), i.e., the path of integration of $\delta W$ and $\delta Q$ between $U_A$ and $U_B$. The inexact differential, $\delta$, is used to remind the reader of this fact.
 
  
 One will find other sign conventions for the First Law. Here, we defined $dU$ to be positive when the energy flows into the system. Therefore the heat $Q$ flows into the system adds to its internal energy while the work $W$ done by the system subtracts from the internal energy. It is important to realize that once a convention has been agreed upon one must be consistent to account properly for the changes in the internal energy of the system.
@@ -225,7 +225,7 @@ iii. To calculate the work done in a reversible process one must only know the i
 iv. Sometimes the First Law is written as $\Delta U = Q + W$. In this sign convention work is done by the system on the surroundings.
 
 2. Calculations  
-(a)Change to Fahrenheit and Kelvin readings: 46°C, 30°C, 15°C, 0°C, -10°C, -23°C.<br>
+(a) Change to Fahrenheit and Kelvin readings: 46°C, 30°C, 15°C, 0°C, -10°C, -23°C.<br>
 
 (b) Convert to Celsius scale: 50 K, 300 K, 350 K, 72°F.
 

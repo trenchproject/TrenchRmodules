@@ -38,7 +38,7 @@ It is sometimes useful to take a more general outlook. In that spirit, here are 
 knitr::include_graphics('figures/fig-heattrans-1.png')
 ```
 
-```{r fig-heattrans-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Surface activity of *Pogonomyrmex badius* in relation to temperature of the ground surface and time of day. Active ants on the mound are indicated by crosses; inactive mounds are indicated by open circles; half-closed circles denote very slight activity. The months represented, beginning with the highest curve at 12 noon, are June, July, May, October and February. (From Colley, F.Bf. and J.B. Gentry, 1964, p. 224.)'}
+```{r fig-heattrans-2, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Surface activity of *Pogonomyrmex badius* in relation to temperature of the ground surface and time of day. Active ants on the mound are indicated by crosses; inactive mounds are indicated by open circles; half-closed circles denote very slight activity. The months represented, beginning with the highest curve at 12 noon, are June, July, May, October and February. (From Colley, F.B. and J.B. Gentry, 1964, p. 224.)'}
 knitr::include_graphics('figures/fig-heattrans-2.png')
 ```
 
@@ -127,9 +127,9 @@ and
 </div>
 Roseman (1978) gives a more complete discussion of these laws.
 
-Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table \@ref(tab:table-heattrans-1) gives the emissivities of some plants and animals.
+Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table 7.1 gives the emissivities of some plants and animals.
 
-Table: (\#tab:table-heattrans-1). Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
+> Table 7.1. Long Wave Emissivities (percent, from Monteith, J.L., 1973, p. 68.)
 
 Leaves
 
@@ -159,7 +159,7 @@ Animals
 
 
 
-Table: (\#tab:table-heattrans-2). Reflectivities of Biological Materials for Solar Radiation (from Monteith, J.L., 1973, pp. 66-67.)</caption>
+> Table 7.2. Reflectivities of Biological Materials for Solar Radiation (from Monteith, J.L., 1973, pp. 66-67.)
   
   LEAVES
   Reflection coefficients r (%) for Solar Radiation
@@ -247,9 +247,9 @@ where
 * $r(\lambda)$ = reflectivity at wavelength $\lambda$,
 * $t(\lambda)$ = transitivity at wavelength $\lambda$,
 </div>
-and each term is between zero and one (see Siegel and Howell 1972 for a more complete discussion). Table \@ref(tab:table-heattrans-2) gives some values for $r$ averaged over the entire spectrum for different ecological systems. Values of $a$, $r$, $t$ are also given by Porter (1967) for animals and Monteith (1973) for plants and animals.
+and each term is between zero and one (see Siegel and Howell 1972 for a more complete discussion). Table 7.2 gives some values for $r$ averaged over the entire spectrum for different ecological systems. Values of $a$, $r$, $t$ are also given by Porter (1967) for animals and Monteith (1973) for plants and animals.
 
-As an example of radiation flux, let us calculate the radiant energy emitted by the cactus, *Opuntia rufida*. To do this, we must specify the emissivity $\varepsilon$ and the surface temperature $T_s$. In Table \@ref(tab:table-heattrans-1), $\varepsilon = 0.977$ for *O. rufida* and, if we take $T_s = 10 ^{\circ}C$, then:
+As an example of radiation flux, let us calculate the radiant energy emitted by the cactus, *Opuntia rufida*. To do this, we must specify the emissivity $\varepsilon$ and the surface temperature $T_s$. In Table 7.1, $\varepsilon = 0.977$ for *O. rufida* and, if we take $T_s = 10 ^{\circ}C$, then:
 \begin{equation}
 Q_{emit} = 0.977 \times 5.67 \times 10^{-8} (10 + 273)^4 = 355.5 W m^{-2}
 (\#eq:heattrans-6)
@@ -513,7 +513,7 @@ where
 and
 * $M$ is a 1 kilogram system (kg).
 
-We cannot measure the amount of heat a body can hold, so in a sense the term specific heat is misleading, but it is commonly used. It is simply the amount of heat which must be added per unit mass of material for a $1^{\circ}C$ rise in temperature. What actually is changing is the internal energy of the system. Table \@ref(tab:table-heattrans-3) (after Monteith 1973) shows values of specific heat for different materials. See Stevenson (1979a) or Zemansky and Van Ness (1966) for a more formal definition.
+We cannot measure the amount of heat a body can hold, so in a sense the term specific heat is misleading, but it is commonly used. It is simply the amount of heat which must be added per unit mass of material for a $1^{\circ}C$ rise in temperature. What actually is changing is the internal energy of the system. Table 7.3 (after Monteith 1973) shows values of specific heat for different materials. See Stevenson (1979a) or Zemansky and Van Ness (1966) for a more formal definition.
 
 The heat capacity of the system can then be obtained by multiplying the mass of the system by specific heat:
 \begin{equation}
@@ -521,11 +521,11 @@ C = Mc
 (\#eq:heattrans-18)
 \end{equation}
 
-For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table \@ref(tab:table-heattrans-3), the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} °C^{-1}$ the peat. To calculate the energy necessary to raise each system $10°C$, we can employ equation \@ref(eq:heattrans-18) in the form
+For instance, if we consider $0.12 kg$ of granite and the same weight of peat soil as two systems (see Table 7.3, the heat capacity of each is the specific heat c times the mass $M$ or $96 J kg^{-1} {^{\circ}C^{-1}}$ for granite and $226J kg^{-1} °C^{-1}$ the peat. To calculate the energy necessary to raise each system $10°C$, we can employ equation \@ref(eq:heattrans-18) in the form
 $$\Delta Q = \Delta T \, M \, c$$
 The answer is found to 960 J for the granite and 2,200 J for the peat.
 
-<caption> (\#tab:table-heattrans-3). Thermal properties of natural materials.</caption>
+>Table 7.3. Thermal properties of natural materials.
 
 Material|Density|Specific heat|Thermal conductivity|Thermal capacity|Thermal diffusivity
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:
@@ -551,7 +551,7 @@ Plant leaf| | | | |
 Wood|0.6|1.3|0.15|0.78|0.19
 
 
-An equally valid way of considering the heat capacity of a system is to define the thermal capacity. It is the heat added per degree change per unit volume and thus is equal to the specific heat times the density of the material of the system (see Table 3).
+An equally valid way of considering the heat capacity of a system is to define the thermal capacity. It is the heat added per degree change per unit volume and thus is equal to the specific heat times the density of the material of the system (see Table 7.3).
 \begin{equation}
 c_v = \frac{\Delta Q}{\Delta T \, V}
 (\#eq:heattrans-19)
