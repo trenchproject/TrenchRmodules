@@ -601,7 +601,7 @@ Equation \@ref(eq:heattrans-22) is a form of the diffusion equation and $\frac{k
 
 Figures \@ref(fig:fig-heattrans-8) and \@ref(fig:fig-heattrans-9) from Lowry (1969) give different representations of how the soil might change with time and depth. Simpson (1977), Carslaw and Jaeger (1959), and Van Wijk (1966) present a more detailed discussion of soil heat flow.
 
-```{r fig-heattrans-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Schematic view of a unit of soil, showing heat inflow from above and heat outflow below, leading to derivation of Eq. \@ref(eq:heattrans-22). (From Lowry, W.P. 1969. P. 51)'}
+```{r fig-heattrans-7, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Schematic view of a unit of soil, showing heat inflow from above and heat outflow below, leading to derivation of Eq. 7.22. (From Lowry, W.P. 1969. P. 51)'}
 knitr::include_graphics('figures/fig-heattrans-7.png')
 ```
 

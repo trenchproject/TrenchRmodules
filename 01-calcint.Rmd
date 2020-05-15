@@ -1294,7 +1294,7 @@ $$y = Axe^{Bx}$$
 Divide by $x$ to isolate the exponential function.
 $$y/x=Ae^{Bx}$$
 Now take logarithms of both sides.
-$$\ln(y/x)=\lnA+Bx$$
+$$\ln(y/x)=\ln A+Bx$$
 Thus, in the form $h=f+gx$, we have
 \begin{align*}
 h &= \ln(y/x) \\
