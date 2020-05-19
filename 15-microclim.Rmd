@@ -62,10 +62,12 @@ Let's take a look at some of the data. We will again use the 'raster' package of
 
 ```{r, warning=FALSE, message=FALSE}
 library(raster)
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' # put your path here for microclim data folder
+# put your path here for microclim data folder
+path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' 
 
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-solar<-brick(paste0(path,"solar_radiation_Wm2/SOLR_",month,".nc")) # read the file into memory
+# read the file into memory
+solar<-brick(paste0(path,"solar_radiation_Wm2/SOLR_",month,".nc")) 
 ```
 
 The paste command combined our microclimate data path, the name of the folder holding the data, and then the month we wanted, thus specifying the file "microclim\_aust/solar\_radiation\_Wm2/SOLR_1.nc". We use the `brick` function of the 'raster' package to load this multi-layer file. There are 24 layers, one for each hour of the day. Let's plot the first one - in the plot command we can specify this using double square brackets.
@@ -89,11 +91,13 @@ Now let's extract and plot 24 hours of data from a particular location. We'll us
 ```{r, fig.width=7, fig.height=6, echo = 2:8}
 plot(solar[[12]],main="solar radiation, 12:00 January W/m2")
 lon.lat = cbind(138,-32) # define the longitude and latitude
-points(lon.lat, cex=1.5, pch=16, col='black') # note that cex specifies the size of 
-solar.hr = extract(solar, lon.lat) # extract data for all layers in 'solar' at location 'lon.lat'
+points(lon.lat, cex=1.5, pch=16, col='black') # note that cex specifies the point size 
+# extract data for all layers in 'solar' at location 'lon.lat'
+solar.hr = extract(solar, lon.lat) 
 solar.hr = t(solar.hr) # transpose the values, in preparation for the plot command
 hrs = seq(0,23) # create a sequence of hours
-plot(solar.hr ~ hrs, type = 'l', ylab = "solar radiation W/m2", xlab = "hr of day") # plot solar radiation as a function of hour, as a line graph (using type = 'l')
+# plot solar radiation as a function of hour, as a line graph (using type = 'l')
+plot(solar.hr ~ hrs, type = 'l', ylab = "solar radiation W/m2", xlab = "hr of day") 
 ```
 
 ## Zenith Angle
@@ -104,9 +108,11 @@ The code chunk below reads in and plots the zenith angles for midday for summer 
 
 ```{r, fig.width=7, fig.height=4}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-ZEN_jan<-brick(paste0(path,"zenith_angle/ZEN_",month,".nc")) # read the file into memory
+# read the file into memory
+ZEN_jan<-brick(paste0(path,"zenith_angle/ZEN_",month,".nc")) 
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-ZEN_jul<-brick(paste0(path,"zenith_angle/ZEN_",month,".nc")) # read the file into memory
+# read the file into memory
+ZEN_jul<-brick(paste0(path,"zenith_angle/ZEN_",month,".nc")) 
 par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
 plot(ZEN_jan[[13]],main = "zenith angle, deg, 12:00 January", zlim = c(0,70))
 plot(ZEN_jul[[13]],main = "zenith angle, deg, 12:00 July", zlim = c(0,70))
@@ -117,11 +123,19 @@ Note how the sun is almost directly overhead at a band at a latitude 23.5 degree
 If we look at the zenith angles through the day at our Flinders Ranges site in the two months, we get the following:
 
 ```{r, fig.width=7, fig.height=6}
-ZEN_jan.hr = t(extract(ZEN_jan, lon.lat)) # extract data for all layers in 'ZEN_jan' at location 'lon.lat'
-ZEN_jul.hr = t(extract(ZEN_jul, lon.lat)) # extract data for all layers in 'ZEN_jul' at location 'lon.lat'
+# extract data for all layers in 'ZEN_jan' at location 'lon.lat'
+ZEN_jan.hr = t(extract(ZEN_jan, lon.lat)) 
+# extract data for all layers in 'ZEN_jul' at location 'lon.lat'
+ZEN_jul.hr = t(extract(ZEN_jul, lon.lat)) 
+
 par(mfrow = c(1,1)) # revert to 1 panel
-plot(ZEN_jan.hr ~ hrs, type = 'l', ylim=c(0,90), ylab = "solar zenith angle, degrees", xlab = "hr of day", col = 'red') # plot zenith angle in January as a function of hour, as a line graph (using type = 'l'), in red
-points(ZEN_jul.hr ~ hrs, type = 'l', col = 'blue') # plot zenith angle in July as a function of hour, as a line graph (using type = 'l'), with January in red and June in blue.
+# plot zenith angle in January as a function of hour, as a line graph (using type = 'l'), 
+# in red
+plot(ZEN_jan.hr ~ hrs, type = 'l', ylim=c(0,90), ylab = "solar zenith angle, degrees", 
+     xlab = "hr of day", col = 'red') 
+# plot zenith angle in July as a function of hour, as a line graph (using type = 'l'), 
+# with January in red and June in blue.
+points(ZEN_jul.hr ~ hrs, type = 'l', col = 'blue') 
 legend(0, 60, c("January", "July"), col = c("red", "blue"), lty=c(1), bty = "n")
 ```
 
@@ -133,11 +147,13 @@ The code chunk below reads in and plots the wind speed in January and July at mi
 
 ```{r, fig.width=7, fig.height=6}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-V10m_jan<-brick(paste0(path,"wind_speed_ms_10m/V10m_",month,".nc")) # read the file into memory
-V1cm_jan<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_",month,".nc")) # read the file into memory
+# read the files into memory
+V10m_jan<-brick(paste0(path,"wind_speed_ms_10m/V10m_",month,".nc")) 
+V1cm_jan<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_",month,".nc")) 
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-V10m_jul<-brick(paste0(path,"wind_speed_ms_10m/V10m_",month,".nc")) # read the file into memory
-V1cm_jul<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_",month,".nc")) # read the file into memory
+V10m_jul<-brick(paste0(path,"wind_speed_ms_10m/V10m_",month,".nc")) 
+V1cm_jul<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_",month,".nc")) 
+
 par(mfrow = c(2,2)) # set to plot 2 rows of 2 panels
 plot(V10m_jan[[13]],main = "wind speed 10m, 12:00 January, m/s", zlim = c(0,8))
 plot(V1cm_jan[[13]],main = "wind speed 1cm, 12:00 January, m/s", zlim = c(0,2))
@@ -148,16 +164,27 @@ plot(V1cm_jul[[13]],main = "wind speed 1cm, 12:00 July, m/s", zlim = c(0,2))
 You can see that the coastal areas often have higher wind speeds, especially on the west coast in January. Note also the very big drop in wind speed as you go from 10m to 1cm (check the scale bars). The next code chunk plots the hourly wind speed at the Flinders Ranges site at each height in each month. Here, the magnitude of the difference between the heights is even clearer. Note also that there is no diurnal variation in wind speed in this data set because the New et al. (2002) data set does not have min/max wind speed but rather just the average daily wind speed.
 
 ```{r, fig.width=7, fig.height=4}
-V10m_jan.hr = t(extract(V10m_jan, lon.lat)) # extract data for all layers in 'V10m_jan' at location 'lon.lat'
-V1cm_jan.hr = t(extract(V1cm_jan, lon.lat)) # extract data for all layers in 'V10m_jan' at location 'lon.lat'
-V10m_jul.hr = t(extract(V10m_jul, lon.lat)) # extract data for all layers in 'V1cm_jan' at location 'lon.lat'
-V1cm_jul.hr = t(extract(V1cm_jul, lon.lat)) # extract data for all layers in 'V1cm_jan' at location 'lon.lat'
+# extract data for all layers in 'V10m_jan' at location 'lon.lat'
+V10m_jan.hr = t(extract(V10m_jan, lon.lat)) 
+# extract data for all layers in 'V10m_jan' at location 'lon.lat'
+V1cm_jan.hr = t(extract(V1cm_jan, lon.lat)) 
+# extract data for all layers in 'V1cm_jan' at location 'lon.lat'
+V10m_jul.hr = t(extract(V10m_jul, lon.lat)) 
+# extract data for all layers in 'V1cm_jan' at location 'lon.lat'
+V1cm_jul.hr = t(extract(V1cm_jul, lon.lat)) 
+
+# plot wind speed at 10m in January as a function of hour, as a line graph (using type = 'l'), in red
 par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
-plot(V10m_jan.hr ~ hrs, type = 'l', main = "January", ylab = "wind speed, m/s", xlab = "hr of day", col = 'red', ylim = c(0,5)) # plot wind speed at 10m in January as a function of hour, as a line graph (using type = 'l'), in red
-points(V1cm_jan.hr ~ hrs, type = 'l', col = 'blue') # plot wind speed at 1cm in January as a function of hour, as a line graph (using type = 'l'), with 10m in red and 1cm in blue.
- 
-plot(V10m_jul.hr ~ hrs, type = 'l', main = "July", ylab = "wind speed, m/s", xlab = "hr of day", col = 'red', ylim = c(0,5)) # plot wind speed at 10m in January as a function of hour, as a line graph (using type = 'l'), in red
-points(V1cm_jul.hr ~ hrs, type = 'l', col = 'blue') # plot wind speed at 1cm in July as a function of hour, as a line graph (using type = 'l'), with 10m in red and 1cm in blue.
+plot(V10m_jan.hr ~ hrs, type = 'l', main = "January", ylab = "wind speed, m/s", xlab = "hr of day", col = 'red', ylim = c(0,5)) 
+# plot wind speed at 1cm in January as a function of hour, as a line graph (using type = 'l'), 
+# with 10m in red and 1cm in blue.
+points(V1cm_jan.hr ~ hrs, type = 'l', col = 'blue') 
+
+# plot wind speed at 10m in January as a function of hour, as a line graph (using type = 'l'), in red
+plot(V10m_jul.hr ~ hrs, type = 'l', main = "July", ylab = "wind speed, m/s", xlab = "hr of day", col = 'red', ylim = c(0,5)) 
+# plot wind speed at 1cm in July as a function of hour, as a line graph (using type = 'l'), 
+# with 10m in red and 1cm in blue.
+points(V1cm_jul.hr ~ hrs, type = 'l', col = 'blue') 
  
 legend(0, 5, c("10m", "1cm"), col = c("red", "blue"), lty=c(1), bty = "n")
 ```
@@ -172,9 +199,13 @@ The next code chunk plots the air temperature at 120 cm for the two months at mi
 
 ```{r, fig.width=7, fig.height=4}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-Tair120cm_jan<-brick(paste0(path,"air_temperature_degC_120cm/TA120cm_",month,".nc")) # read the file into memory
+# read the file into memory
+Tair120cm_jan<-brick(paste0(path,"air_temperature_degC_120cm/TA120cm_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-Tair120cm_jul<-brick(paste0(path,"air_temperature_degC_120cm/TA120cm_",month,".nc")) # read the file into memory
+# read the file into memory
+Tair120cm_jul<-brick(paste0(path,"air_temperature_degC_120cm/TA120cm_",month,".nc")) 
+
 par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
 plot(Tair120cm_jan[[13]],main = "Tair 120cm, 12:00 January, deg C", zlim = c(0,40))
 plot(Tair120cm_jul[[13]],main = "Tair 120cm, 12:00 July, deg C", zlim = c(0,40))
@@ -186,15 +217,26 @@ Now we will plot the values at a 1cm height in 0% shade and in 100% shade.
 
 ```{r, fig.width=7, fig.height=6}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-shade <- 0 # choose which month you want, 0 or 100%
-Tair1cm_0shade_jan<-brick(paste0(path,"air_temperature_degC_1cm/soil/",shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) # read the file into memory
-shade <- 100 # choose which month you want, 0 or 100%
-Tair1cm_100shade_jan<-brick(paste0(path,"air_temperature_degC_1cm/soil/",shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) # read the file into memory 
+shade <- 0 # choose which shade level you want, 0 or 100%
+# read the file into memory
+Tair1cm_0shade_jan<-brick(paste0(path,"air_temperature_degC_1cm/soil/",
+                                 shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) 
+
+shade <- 100 # choose which shade level you want, 0 or 100%
+# read the file into memory 
+Tair1cm_100shade_jan<-brick(paste0(path,"air_temperature_degC_1cm/soil/",
+                                   shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-shade <- 0 # choose which month you want, 0 or 100%
-Tair1cm_0shade_jul<-brick(paste0(path,"air_temperature_degC_1cm/soil/",shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) # read the file into memory
+shade <- 0 # choose which shade level you want, 0 or 100%
+# read the file into memory
+Tair1cm_0shade_jul<-brick(paste0(path,"air_temperature_degC_1cm/soil/",
+                                 shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) 
+
 shade <- 100 # choose which month you want, 0 or 100%
-Tair1cm_100shade_jul<-brick(paste0(path,"air_temperature_degC_1cm/soil/",shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) # read the file into memory 
+# read the file into memory 
+Tair1cm_100shade_jul<-brick(paste0(path,"air_temperature_degC_1cm/soil/",
+                                   shade,"_shade/TA1cm_soil_",shade,"_",month,".nc")) 
  
 par(mfrow = c(2,2)) # set to plot 2 rows of 2 panels
 plot(Tair1cm_100shade_jan[[13]], main = "Tair 1cm 100% shade, 12:00 January, deg C", zlim = c(0,60))
@@ -208,22 +250,44 @@ The values in 100% shade are almost identical to the 120cm values we plotted in 
 Next is some code to extract and plot the hourly values at the Flinders Ranges site for each month and height/shade level.
 
 ```{r, fig.width=7, fig.height=4}
-Tair120cm_jan.hr = t(extract(Tair120cm_jan, lon.lat)) # extract data for all layers in 'Tair120cm_jan' at location 'lon.lat'
-Tair120cm_jul.hr = t(extract(Tair120cm_jul, lon.lat)) # extract data for all layers in 'Tair120cm_jul' at location 'lon.lat'
-Tair1cm_0shade_jan.hr = t(extract(Tair1cm_0shade_jan, lon.lat)) # extract data for all layers in 'Tair1cm_0shade_jan' at location 'lon.lat'
-Tair1cm_0shade_jul.hr = t(extract(Tair1cm_0shade_jul, lon.lat)) # extract data for all layers in 'Tair1cm_0shade_jul' at location 'lon.lat'
-Tair1cm_100shade_jan.hr = t(extract(Tair1cm_100shade_jan, lon.lat)) # extract data for all layers in 'Tair1cm_100shade_jan' at location 'lon.lat'
-Tair1cm_100shade_jul.hr = t(extract(Tair1cm_100shade_jul, lon.lat)) # extract data for all layers in 'Tair1cm_100shade_jul' at location 'lon.lat'
+# extract data for all layers in 'Tair120cm_jan' at location 'lon.lat'
+Tair120cm_jan.hr = t(extract(Tair120cm_jan, lon.lat)) 
+# extract data for all layers in 'Tair120cm_jul' at location 'lon.lat'
+Tair120cm_jul.hr = t(extract(Tair120cm_jul, lon.lat)) 
+# extract data for all layers in 'Tair1cm_0shade_jan' at location 'lon.lat'
+Tair1cm_0shade_jan.hr = t(extract(Tair1cm_0shade_jan, lon.lat)) 
+# extract data for all layers in 'Tair1cm_0shade_jul' at location 'lon.lat'
+Tair1cm_0shade_jul.hr = t(extract(Tair1cm_0shade_jul, lon.lat)) 
+# extract data for all layers in 'Tair1cm_100shade_jan' at location 'lon.lat'
+Tair1cm_100shade_jan.hr = t(extract(Tair1cm_100shade_jan, lon.lat))
+# extract data for all layers in 'Tair1cm_100shade_jul' at location 'lon.lat'
+Tair1cm_100shade_jul.hr = t(extract(Tair1cm_100shade_jul, lon.lat)) 
+
+# plot air temperature at 120cm in January as a function of hour, 
+# as a line graph (using type = 'l'), in black
 par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
-plot(Tair120cm_jan.hr ~ hrs, type = 'l', main = "January", ylab = "air temperature, deg C", xlab = "hr of day", col = 'black', ylim = c(0,45)) # plot air temperature at 120cm in January as a function of hour, as a line graph (using type = 'l'), in black
-points(Tair1cm_0shade_jan.hr ~ hrs, type = 'l', col = 'red') # plot air temperature at 1cm in 0% shade in January as a function of hour, as a line graph (using type = 'l'), in red.
-points(Tair1cm_100shade_jan.hr ~ hrs, type = 'l', col = 'blue') # plot air temperature at 1cm in 100% shade January as a function of hour, as a line graph (using type = 'l'), in blue.
+plot(Tair120cm_jan.hr ~ hrs, type = 'l', main = "January", 
+     ylab = "air temperature, deg C", xlab = "hr of day", col = 'black', ylim = c(0,45)) 
+# plot air temperature at 1cm in 0% shade in January as a function of hour, 
+# as a line graph (using type = 'l'), in red.
+points(Tair1cm_0shade_jan.hr ~ hrs, type = 'l', col = 'red') 
+# plot air temperature at 1cm in 100% shade January as a function of hour, 
+# as a line graph (using type = 'l'), in blue.
+points(Tair1cm_100shade_jan.hr ~ hrs, type = 'l', col = 'blue')
 
-plot(Tair120cm_jul.hr ~ hrs, type = 'l', main = "July", ylab = "air temperature, deg C", xlab = "hr of day", col = 'black', ylim = c(0,45)) # plot air temperature at 120cm in July as a function of hour, as a line graph (using type = 'l'), in black
-points(Tair1cm_0shade_jul.hr ~ hrs, type = 'l', col = 'red') # plot air temperature at 1cm in 0% shade in July as a function of hour, as a line graph (using type = 'l'), in red.
-points(Tair1cm_100shade_jul.hr ~ hrs, type = 'l', col = 'blue') # plot air temperature at 1cm in 100% shade July as a function of hour, as a line graph (using type = 'l'), in blue.
+# plot air temperature at 120cm in July as a function of hour, 
+# as a line graph (using type = 'l'), in black
+plot(Tair120cm_jul.hr ~ hrs, type = 'l', main = "July", 
+     ylab = "air temperature, deg C", xlab = "hr of day", col = 'black', ylim = c(0,45)) 
+# plot air temperature at 1cm in 0% shade in July as a function of hour, 
+# as a line graph (using type = 'l'), in red.
+points(Tair1cm_0shade_jul.hr ~ hrs, type = 'l', col = 'red') 
+# plot air temperature at 1cm in 100% shade July as a function of hour, 
+# as a line graph (using type = 'l'), in blue.
+points(Tair1cm_100shade_jul.hr ~ hrs, type = 'l', col = 'blue') 
 
-legend(0, 45, c("120cm", "1cm, 100% shade", "1cm, 0% shade"), col = c("black", "blue", "red"), lty=c(1, 1, 1), bty = "n")
+legend(0, 45, c("120cm", "1cm, 100% shade", "1cm, 0% shade"), 
+       col = c("black", "blue", "red"), lty=c(1, 1, 1), bty = "n")
 ```
 
 ## Sky Temperature
@@ -235,14 +299,18 @@ The code below shows the values for each month and shade level at midnight. Note
 ```{r, fig.width=7, fig.height=6}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-Tsky_0shade_jan<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",shade,"_",month,".nc")) # read the file into memory
+Tsky_0shade_jan<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",
+                              shade,"_",month,".nc")) # read the file into memory
 shade <- 100 # choose which month you want, 0 or 100%
-Tsky_100shade_jan<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",shade,"_",month,".nc")) # read the file into memory
+Tsky_100shade_jan<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",
+                                shade,"_",month,".nc")) # read the file into memory
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-Tsky_0shade_jul<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",shade,"_",month,".nc")) # read the file into memory
+Tsky_0shade_jul<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",
+                              shade,"_",month,".nc")) # read the file into memory
 shade <- 100 # choose which month you want, 0 or 100%
-Tsky_100shade_jul<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",shade,"_",month,".nc")) # read the file into memory
+Tsky_100shade_jul<-brick(paste0(path,"sky_temperature_degC/",shade,"_shade/TSKY_",
+                                shade,"_",month,".nc")) # read the file into memory
 
 par(mfrow = c(2,2)) # set to plot 2 rows of 2 panels
 plot(Tsky_0shade_jan[[1]],main = "Tsky 0% shade, 0:00 January, deg C", zlim = c(-20,20))
@@ -254,16 +322,31 @@ plot(Tsky_100shade_jul[[1]],main = "Tsky 100% shade, 0:00 July, deg C", zlim = c
 Here is the 24 hr pattern of sky temperature for the Flinders Ranges site each season for each shade level.
 
 ```{r, fig.width=7, fig.height=4}
-Tsky_0shade_jan.hr = t(extract(Tsky_0shade_jan, lon.lat)) # extract data for all layers in 'Tsky_0shade_jan' at location 'lon.lat'
-Tsky_0shade_jul.hr = t(extract(Tsky_0shade_jul, lon.lat)) # extract data for all layers in 'Tsky_0shade_jul' at location 'lon.lat'
-Tsky_100shade_jan.hr = t(extract(Tsky_100shade_jan, lon.lat)) # extract data for all layers in 'Tsky_100shade_jan' at location 'lon.lat'
-Tsky_100shade_jul.hr = t(extract(Tsky_100shade_jul, lon.lat)) # extract data for all layers in 'Tsky_100shade_jul' at location 'lon.lat'
-par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
-plot(Tsky_0shade_jan.hr ~ hrs, type = 'l', main = "Sky Temperature, January", ylab = "air temperature, deg C", xlab = "hr of day", col = 'blue', ylim = c(-20,30)) # plot sky temperature in 0% shade in January as a function of hour, as a line graph (using type = 'l'), in blue.
-points(Tsky_100shade_jan.hr ~ hrs, type = 'l', col = 'red') # plot sky temperature in 100% shade January as a function of hour, as a line graph (using type = 'l'), in red.
+# extract data for all layers in 'Tsky_0shade_jan' at location 'lon.lat'
+Tsky_0shade_jan.hr = t(extract(Tsky_0shade_jan, lon.lat)) 
+# extract data for all layers in 'Tsky_0shade_jul' at location 'lon.lat'
+Tsky_0shade_jul.hr = t(extract(Tsky_0shade_jul, lon.lat)) 
+# extract data for all layers in 'Tsky_100shade_jan' at location 'lon.lat'
+Tsky_100shade_jan.hr = t(extract(Tsky_100shade_jan, lon.lat)) 
+# extract data for all layers in 'Tsky_100shade_jul' at location 'lon.lat'
+Tsky_100shade_jul.hr = t(extract(Tsky_100shade_jul, lon.lat)) 
 
-plot(Tsky_0shade_jul.hr ~ hrs, type = 'l', main = "Sky Temperature, July", ylab = "air temperature, deg C", xlab = "hr of day", col = 'blue', ylim = c(-20,30)) # plot sky temperature in 0% shade in July as a function of hour, as a line graph (using type = 'l'), in blue.
-points(Tsky_100shade_jul.hr ~ hrs, type = 'l', col = 'red') # plot sky temperature in 100% shade July as a function of hour, as a line graph (using type = 'l'), in red.
+par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
+# plot sky temperature in 0% shade in January as a function of hour, 
+# as a line graph (using type = 'l'), in blue.
+plot(Tsky_0shade_jan.hr ~ hrs, type = 'l', main = "Sky Temperature, January", 
+     ylab = "air temperature, deg C", xlab = "hr of day", col = 'blue', ylim = c(-20,30)) 
+# plot sky temperature in 100% shade January as a function of hour, 
+# as a line graph (using type = 'l'), in red.
+points(Tsky_100shade_jan.hr ~ hrs, type = 'l', col = 'red') 
+
+# plot sky temperature in 0% shade in July as a function of hour, 
+# as a line graph (using type = 'l'), in blue.
+plot(Tsky_0shade_jul.hr ~ hrs, type = 'l', main = "Sky Temperature, July", 
+     ylab = "air temperature, deg C", xlab = "hr of day", col = 'blue', ylim = c(-20,30)) 
+# plot sky temperature in 100% shade July as a function of hour, as a line graph (using type = 'l'), 
+# in red.
+points(Tsky_100shade_jul.hr ~ hrs, type = 'l', col = 'red') 
  
 legend(0, 30, c("0% shade","100% shade"), col = c("red", "blue"), lty=c(1), bty = "n")
 ```
@@ -276,9 +359,13 @@ Here is what the data look like at midday for each month at 120cm. You can see t
 
 ```{r, fig.width=7, fig.height=4}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-RH120cm_jan<-brick(paste0(path,"relative_humidity_pct_120cm/RH120cm_",month,".nc")) # read the file into memory
+# read the file into memory
+RH120cm_jan<-brick(paste0(path,"relative_humidity_pct_120cm/RH120cm_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-RH120cm_jul<-brick(paste0(path,"relative_humidity_pct_120cm/RH120cm_",month,".nc")) # read the file into memory
+# read the file into memory
+RH120cm_jul<-brick(paste0(path,"relative_humidity_pct_120cm/RH120cm_",month,".nc")) 
+
 par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
 plot(RH120cm_jan[[13]],main = "RH 120cm, 12:00 January, %", zlim = c(0,70))
 plot(RH120cm_jul[[13]],main = "RH 120cm, 12:00 July, %", zlim = c(0,70))
@@ -289,13 +376,24 @@ In comparison, here is the data for 1cm in 0% shade (100% shade at 1cm will be s
 ```{r, fig.width=7, fig.height=4}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-RH1cm_0shade_jan<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+RH1cm_0shade_jan<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",
+                               shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-RH1cm_0shade_jul<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+RH1cm_0shade_jul<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",
+                               shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) 
+
 shade <- 100 # choose which month you want, 0 or 100%
-RH1cm_100shade_jan<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+RH1cm_100shade_jan<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",
+                                 shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
-RH1cm_100shade_jul<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+RH1cm_100shade_jul<-brick(paste0(path,"relative_humidity_pct_1cm/soil/",
+                                 shade,"_shade/RH1cm_soil_",shade,"_",month,".nc")) 
 
 par(mfrow = c(1,2)) # set to plot 2 rows of 2 panels
 plot(RH1cm_0shade_jan[[13]],main = "RH 1cm 0% shade, 12:00 Jan, %", zlim = c(0,70))
@@ -305,22 +403,49 @@ plot(RH1cm_0shade_jul[[13]],main = "RH 1cm 0% shade, 12:00 Jul, %", zlim = c(0,7
 Here is the 24hr profile for relative humidity at the Flinders Ranges site.
 
 ```{r, fig.width=7, fig.height=4}
-RH120cm_jan.hr = t(extract(RH120cm_jan, lon.lat)) # extract data for all layers in 'RH120cm_jan' at location 'lon.lat'
-RH120cm_jul.hr = t(extract(RH120cm_jul, lon.lat)) # extract data for all layers in 'RH120cm_jul' at location 'lon.lat'
-RH1cm_0shade_jan.hr = t(extract(RH1cm_0shade_jan, lon.lat)) # extract data for all layers in 'RH1cm_0shade_jan' at location 'lon.lat'
-RH1cm_0shade_jul.hr = t(extract(RH1cm_0shade_jul, lon.lat)) # extract data for all layers in 'RH1cm_0shade_jul' at location 'lon.lat'
-RH1cm_100shade_jan.hr = t(extract(RH1cm_100shade_jan, lon.lat)) # extract data for all layers in 'RH1cm_100shade_jan' at location 'lon.lat'
-RH1cm_100shade_jul.hr = t(extract(RH1cm_100shade_jul, lon.lat)) # extract data for all layers in 'RH1cm_100shade_jul' at location 'lon.lat'
+# extract data for all layers in 'RH120cm_jan' at location 'lon.lat'
+RH120cm_jan.hr = t(extract(RH120cm_jan, lon.lat)) 
+
+# extract data for all layers in 'RH120cm_jul' at location 'lon.lat'
+RH120cm_jul.hr = t(extract(RH120cm_jul, lon.lat)) 
+
+# extract data for all layers in 'RH1cm_0shade_jan' at location 'lon.lat'
+RH1cm_0shade_jan.hr = t(extract(RH1cm_0shade_jan, lon.lat)) 
+
+# extract data for all layers in 'RH1cm_0shade_jul' at location 'lon.lat'
+RH1cm_0shade_jul.hr = t(extract(RH1cm_0shade_jul, lon.lat)) 
+
+# extract data for all layers in 'RH1cm_100shade_jan' at location 'lon.lat'
+RH1cm_100shade_jan.hr = t(extract(RH1cm_100shade_jan, lon.lat)) 
+
+# extract data for all layers in 'RH1cm_100shade_jul' at location 'lon.lat'
+RH1cm_100shade_jul.hr = t(extract(RH1cm_100shade_jul, lon.lat)) 
+
 par(mfrow = c(1,2)) # set to plot 1 row of 2 panels
-plot(RH120cm_jan.hr ~ hrs, type = 'l', main = "January", ylab = "relative humidity, %", xlab = "hr of day", col = 'black', ylim = c(0,100)) # plot relative humidity at 120cm in January as a function of hour, as a line graph (using type = 'l'), in black
-points(RH1cm_0shade_jan.hr ~ hrs, type = 'l', col = 'red') # plot relative humidity at 1cm in 0% shade in January as a function of hour, as a line graph (using type = 'l'), in red.
-points(RH1cm_100shade_jan.hr ~ hrs, type = 'l', col = 'blue') # plot relative humidity at 1cm in 100% shade January as a function of hour, as a line graph (using type = 'l'), in blue.
+# plot relative humidity at 120cm in January as a function of hour, 
+# as a line graph (using type = 'l'), in black
+plot(RH120cm_jan.hr ~ hrs, type = 'l', main = "January", ylab = "relative humidity, %", 
+     xlab = "hr of day", col = 'black', ylim = c(0,100)) 
+# plot relative humidity at 1cm in 0% shade in January as a function of hour, 
+# as a line graph (using type = 'l'), in red.
+points(RH1cm_0shade_jan.hr ~ hrs, type = 'l', col = 'red') 
+# plot relative humidity at 1cm in 100% shade January as a function of hour, 
+# as a line graph (using type = 'l'), in blue.
+points(RH1cm_100shade_jan.hr ~ hrs, type = 'l', col = 'blue') 
 
-plot(RH120cm_jul.hr ~ hrs, type = 'l', main = "July", ylab = "relative humidity, %", xlab = "hr of day", col = 'black', ylim = c(0,100)) # plot relative humidity at 120cm in July as a function of hour, as a line graph (using type = 'l'), in black
-points(RH1cm_0shade_jul.hr ~ hrs, type = 'l', col = 'red') # plot relative humidity at 1cm in 0% shade in July as a function of hour, as a line graph (using type = 'l'), in red.
-points(RH1cm_100shade_jul.hr ~ hrs, type = 'l', col = 'blue') # plot relative humidity at 1cm in 100% shade July as a function of hour, as a line graph (using type = 'l'), in blue.
+# plot relative humidity at 120cm in July as a function of hour, 
+# as a line graph (using type = 'l'), in black
+plot(RH120cm_jul.hr ~ hrs, type = 'l', main = "July", ylab = "relative humidity, %", 
+     xlab = "hr of day", col = 'black', ylim = c(0,100)) 
+# plot relative humidity at 1cm in 0% shade in July as a function of hour, 
+# as a line graph (using type = 'l'), in red.
+points(RH1cm_0shade_jul.hr ~ hrs, type = 'l', col = 'red') 
+# plot relative humidity at 1cm in 100% shade July as a function of hour, 
+# as a line graph (using type = 'l'), in blue.
+points(RH1cm_100shade_jul.hr ~ hrs, type = 'l', col = 'blue') 
 
-legend(-2, 40, c("120cm", "1cm, 100% shade", "1cm, 0% shade"), col = c("black", "blue", "red"), lty=c(1, 1, 1), bty = "n")
+legend(-2, 40, c("120cm", "1cm, 100% shade", "1cm, 0% shade"), col = c("black", "blue", "red"), 
+       lty=c(1, 1, 1), bty = "n")
 ```
 
 ## Soil Temperature
@@ -332,14 +457,26 @@ There are 9 different depths at which soil temperature has been predicted by the
 ```{r, fig.width=7, fig.height=6}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-D0cm_0shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+D0cm_0shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                              shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) 
+
 shade <- 100 # choose which month you want, 0 or 100%
-D0cm_100shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) # read the file into memory 
+# read the file into memory
+D0cm_100shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                                shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-D0cm_0shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+D0cm_0shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                              shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) 
+
 shade <- 100 # choose which month you want, 0 or 100%
-D0cm_100shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D0cm_soil_",shade,"_",month,".nc")) # read the file into memory 
+# read the file into memory
+D0cm_100shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                                shade,"_shade/D0cm_soil_",shade,"_",month,".nc"))  
+
 par(mfrow = c(2,2)) # set to plot 2 rows of 2 panels
 plot(D0cm_100shade_jan[[13]],main = "Tsoil 0cm 100% shade, 12:00 Jan, deg C", zlim = c(0,80))
 plot(D0cm_100shade_jul[[13]],main = "Tsoil 0cm 100% shade, 12:00 Jul, deg C", zlim = c(0,80))
@@ -352,14 +489,25 @@ Note that there is a range of almost 80$^\circ$C in predicted soil surface tempe
 ```{r, fig.width=7, fig.height=6}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-D5cm_0shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+D5cm_0shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                              shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) 
+
 shade <- 100 # choose which month you want, 0 or 100%
-D5cm_100shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+D5cm_100shade_jan<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                                shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) 
+
 month<-7 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-D5cm_0shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+D5cm_0shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                              shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) 
+
 shade <- 100 # choose which month you want, 0 or 100%
-D5cm_100shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) # read the file into memory
+# read the file into memory
+D5cm_100shade_jul<-brick(paste0(path,"substrate_temperature_degC/soil/",
+                                shade,"_shade/D5cm_soil_",shade,"_",month,".nc")) 
 
 par(mfrow = c(2,2)) # set to plot 2 rows of 2 panels
 plot(D5cm_100shade_jan[[13]],main = "Tsoil 5cm 100% shade, 12:00 Jan, deg C", zlim = c(0,80))
@@ -375,27 +523,37 @@ The next code chunk extracts the hourly temperature profile for January in 0% at
 ```{r, fig.width=7, fig.height=6}
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 shade <- 0 # choose which month you want, 0 or 100%
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D0cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D0cm_soil_",shade,"_",month,".nc",sep=""))
 D0cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D3cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D3cm_soil_",shade,"_",month,".nc",sep=""))
 D2.5cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D5cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D5cm_soil_",shade,"_",month,".nc",sep=""))
 D5cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D10cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D10cm_soil_",shade,"_",month,".nc",sep=""))
 D10cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D15cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D15cm_soil_",shade,"_",month,".nc",sep=""))
 D15cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D20cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D20cm_soil_",shade,"_",month,".nc",sep=""))
 D20cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D30cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D30cm_soil_",shade,"_",month,".nc",sep=""))
 D30cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D50cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D50cm_soil_",shade,"_",month,".nc",sep=""))
 D50cm <- t(extract(data,lon.lat))
-data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,"_shade/D100cm_soil_",shade,"_",month,".nc",sep=""))
+data<-brick(paste(path,"substrate_temperature_degC/soil/",shade,
+                  "_shade/D100cm_soil_",shade,"_",month,".nc",sep=""))
 D100cm <- t(extract(data,lon.lat))
 
 par(mfrow=c(1,1))
-plot(D0cm ~ hrs,xlab = "Time of Day (hr)", ylab = "Tsoil, deg C", type = "l",ylim=c(0,70), main = "Soil Temperature, January")
+plot(D0cm ~ hrs,xlab = "Time of Day (hr)", ylab = "Tsoil, deg C", 
+     type = "l", ylim=c(0,70), main = "Soil Temperature, January")
 points(D2.5cm ~ hrs,xlab = "Time of Day (hr)", col=2, type = 'l')
 points(D5cm ~ hrs,xlab = "Time of Day (hr)", col=3, type = 'l')
 points(D10cm ~ hrs,xlab = "Time of Day (hr)", col=4, type = 'l')
@@ -407,7 +565,8 @@ points(D100cm ~ hrs,xlab = "Time of Day (hr)",lty=2, col=9, type = 'l')
 
 DEP <- c(0, 2.5, 5, 10, 15, 20, 30, 50, 100)
 leg.txt<-paste(DEP,"cm", sep = "")
-legend(1,70,lty=c(1,1,1,1,1,1,1,1,2),leg.txt,col=c(1,2,3,4,5,6,7,8,9),cex=1,box.lty=0)
+legend(1,70,lty=c(1,1,1,1,1,1,1,1,2),leg.txt,col=c(1,2,3,4,5,6,7,8,9),
+       cex=1,box.lty=0)
 ```
 
 Note how the amplitude and timing of the maximum and minimum values shift with depth. The thermal profile with depth and time in the soil depends in part on the driving environmental conditions above the ground (air temperature, wind speed, radiation) but also on the thermal characteristics of the soil. This includes the moisture content, and the calculations include an estimate of soil moisture from the [NOAA CPC Soil Moisture data set](http://140.172.38.100/psd/thredds/catalog/Datasets/cpcsoil/catalog.html). The microclimate model used this soil moisture information to adjust the thermal properties of the soil at each location and month.

@@ -29,25 +29,36 @@ We have these for January and July, which will give us the seasonal extremes. Le
 ```{r, warning=FALSE, message=FALSE}
 library(raster)
 
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' # put your path here for microclim data folder for Australia
+# put your path here for microclim data folder for Australia
+path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' 
 
-solar_jan_Aust<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc")) # read the January solar radiation file into memory
-solar_jul_Aust<-brick(paste0(path,"solar_radiation_Wm2/SOLR_7.nc")) # read the July solar radiation file into memory
-Tair_jan_Aust<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_1.nc")) # read the January 1cm air temperature in 0% shade file into memory
-Tair_jul_Aust<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_7.nc")) # read the July 1cm air temperature in 0% shade file into memory
-Tsky_jan_Aust<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_1.nc")) # read the January sky temperature in 0% shade file into memory
-Tsky_jul_Aust<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_7.nc")) # read the January sky air temperature in 0% shade file into memory
-D0cm_jan_Aust<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_1.nc")) # read the January surface temperature in 0% shade file into memory
-D0cm_jul_Aust<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_7.nc")) # read the July surface temperature in 0% shade file into memory
+# read the January solar radiation file into memory
+solar_jan_Aust<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc")) 
+# read the July solar radiation file into memory
+solar_jul_Aust<-brick(paste0(path,"solar_radiation_Wm2/SOLR_7.nc")) 
+# read the January 1cm air temperature in 0% shade file into memory
+Tair_jan_Aust<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_1.nc")) 
+# read the July 1cm air temperature in 0% shade file into memory
+Tair_jul_Aust<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_7.nc")) 
+# read the January sky temperature in 0% shade file into memory
+Tsky_jan_Aust<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_1.nc")) 
+# read the January sky air temperature in 0% shade file into memory
+Tsky_jul_Aust<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_7.nc")) 
+# read the January surface temperature in 0% shade file into memory
+D0cm_jan_Aust<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_1.nc")) 
+# read the July surface temperature in 0% shade file into memory
+D0cm_jul_Aust<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_7.nc")) 
 ```
 
 Now, let's modify the `Qbound` function to make it work with the grids, giving it the name `Qbound_micro`. Have a close look at how this differs from `Qbound`. Note that since we now have total solar radiation (direct plus diffuse) as an input, we need to repartition it into direct and diffuse using the parameter 'pctdiff' (with the value used in the original calculations for microclim, which was 15%). Air temperature is no longer an input - why? What has replaced it? Note also that we also have only one output, 'Q_rad', because we are making these calculations for each hour of the day so it could be for day or night.
 
 ```{r}
-# Computes climate space following the equations of Porter and Gates (1969), using the microclim layers as input
+# Computes climate space following the equations of Porter and Gates (1969), 
+# using the microclim layers as input
 
 # inputs
-# hg, A grid of estimated solar radiation (direct and diffuse, i.e. 'global') flux on horizontal ground, W/m2
+# hg, A grid of estimated solar radiation (direct and diffuse, i.e. 'global') flux 
+#   on horizontal ground, W/m2
 # Tsub, A grid of values (for each air temperature), of substrate temperatures, degrees C
 # alpha_s, Solar absorptivity of object, decimal percent
 # alpha_g, Solar absorptivity of the ground, decimal percent
@@ -64,7 +75,8 @@ Qbound_micro <-
     hd <- hg * (1 - pctdiff) # direct solar on horizontal ground
     hS <- hg * pctdiff # diffuse (scattered) solar on horizontal ground
     r <- 1 - alpha_g # ground solar reflectance
-    Q_rad <- (alpha_s * hS * (2 / pi) + alpha_s * hd + alpha_s * r * hg + Q_sky + Q_ground) / 2 # eq. 13 of Porter and Gates 1969
+    Q_rad <- (alpha_s * hS * (2 / pi) + alpha_s * hd + alpha_s * r * hg 
+              + Q_sky + Q_ground) / 2 # eq. 13 of Porter and Gates 1969
   }
 ```
 
@@ -97,12 +109,17 @@ It should be clear that by projecting this data from geographic space to environ
 ```{r, fig.width = 7, fig.height = 6}
 par(mfrow = c(1,1)) # revert to 1 panel
 i = 5 # layer number to plot (layer 5 is 4am, because layer 1 is midnight)
-RadTair <- cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
-plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch=16, col = 'blue', xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space, January")
+# extract the radiation and air temperatures from the rasters and bind them together into a table
+RadTair <- cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]])) 
+plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch=16, col = 'blue', 
+     xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', 
+     main = "available climate space, January")
 
 i = 13 # layer number to plot (layer 5 is 4am, because layer 1 is midnight)
 RadTair=cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]]))
-points(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch=16, col = 'red', xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space, January")
+points(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch=16, col = 'red', 
+       xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', 
+       main = "available climate space, January")
 ```
 
 Next we will modify this code to create a loop to go through each hour, adding points to the map, for both January and July. Note that, although loops are a basic aspect of programming, they are slow in R and there are often alternatives to using them (e.g. [https://www.datacamp.com/community/tutorials/tutorial-on-loops-in-r#gs.B6zaV0g](see here)). 
@@ -115,23 +132,27 @@ Tsub = D0cm_jul_Aust # define the ground temperature input
 Tsky = Tsky_jul_Aust # define the sky temperature input
 
 # compute the total radiation load
-Q_rad_jul_Aust <- Qbound_micro(hg = hg, Tsub = Tsub, Tsky = Tsky, alpha_s = alpha_s, alpha_g = alpha_g)
+Q_rad_jul_Aust <- Qbound_micro(hg = hg, Tsub = Tsub, Tsky = Tsky, 
+                               alpha_s = alpha_s, alpha_g = alpha_g)
 
 # now loop through each hour and plot the results for each month
 for(i in 1:24) { # start of the loop, from i = 1 to 24
 
   # first do January, in red
-  RadTair <- cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]])) 
 
   if(i == 1){ # check if it is the first step, and make the first plot
-    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space")
+    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', 
+         xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space")
   }else{
     # it's not the first step, so use 'points' to add data to the plot
     points(RadTair[,1],RadTair[,2], col = 'red', pch = 16)
   } # end of the check for first plot
 
   # next do July, in blue
-  RadTair <- cbind(values(Q_rad_jul_Aust[[i]]),values(Tair_jul_Aust[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jul_Aust[[i]]),values(Tair_jul_Aust[[i]])) 
 
   # add the July values to the graph
   points(RadTair[,1],RadTair[,2], col = 'blue', pch = 16)
@@ -147,21 +168,26 @@ In the next figure you can see how this compares with the Figure 12 of Porter an
 for(i in 1:24) { # start of the loop, from i = 1 to 24
 
   # first do January
-  RadTair <- cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and 
+  # bind them together into a table
+  RadTair <- cbind(values(Q_rad_jan_Aust[[i]]),values(Tair_jan_Aust[[i]])) 
 
   if(i == 1){ # check if it is the first step, and make the first plot
-    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space, Australia")
+    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', 
+         xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', 
+         main = "available climate space, Australia")
   }else{
     # it's not the first step, so use 'points' to add data to the plot
     points(RadTair[,1],RadTair[,2], col = 'grey', pch = 16)
   }
 
   # next do July
-  RadTair <- cbind(values(Q_rad_jul_Aust[[i]]),values(Tair_jul_Aust[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters
+  # and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jul_Aust[[i]]),values(Tair_jul_Aust[[i]])) 
 
   # add the July values to the graph
   points(RadTair[,1],RadTair[,2], col = 'grey', pch = 16)
-
 }
 
 Qbound <-
@@ -169,11 +195,14 @@ Qbound <-
     sigma <- 5.670373e-8 # W/m2/k4 Stephan-Boltzman constant
     Q_blackbody <- (1 * sigma * (Tair + 273.15) ^ 4) # black body radiation
     Q_ground <- (1 * sigma * (Tsub + 273.15) ^ 4) # ground radiation
-    Q_sky <- (1.22 * sigma * (Tair + 273.15) ^ 4 - 171) # sky thermal radiation, from Swinbank equation, eq. 7.1 of Gates 1980
+    Q_sky <- (1.22 * sigma * (Tair + 273.15) ^ 4 - 171) # sky thermal radiation, 
+    # from Swinbank equation, eq. 7.1 of Gates 1980
     Q_night <- (Q_sky + Q_ground) / 2 # average radiation from sky and ground
     z <- Zenith * (pi / 180) # convert degres to radians
-    So_bar <- 1360 # solar constant, W/m2 (value from Gates p. 160) - average solar radiation reaching a horizontal plan on the outer edge of the earth's atmosphere
-    So <- So_bar * d_bar_d2 # extra-terrestrial radiaton, W/m2 (Gates p. 160) - instantaneous solar radiation reaching a horizontal plan on the outer edge of the earth's atmosphere
+    So_bar <- 1360 # solar constant, W/m2 (value from Gates p. 160) - 
+    # average solar radiation reaching a horizontal plan on the outer edge of the earth's atmosphere
+    So <- So_bar * d_bar_d2 # extra-terrestrial radiaton, W/m2 (Gates p. 160) - 
+    # instantaneous solar radiation reaching a horizontal plan on the outer edge of the earth's atmosphere
     m <- 1 / cos(z) # or sec z, air mass (dimensionless)
     hS <- So * tau ^ m * cos(z) # direct radiation on horizontal ground eq. 6.36/7.13
     hd <- So * (0.271 - 0.294 * tau ^ m) * cos(z) # diffuse radiation on horizontal ground, eq. 6.36/7.13 of Gates 1980
@@ -205,16 +234,25 @@ points(Q_day, T_air, type = 'l',col = 'red',lwd = 2)
 It should be an easy task to recalculate all of this for North America. Have a try, appending '\_NAm' to all the variables that previously had '\_Aust', and see if you can produce the following figure. Note how much colder it gets in North America compared with Australia.
 
 ```{r, echo = FALSE, fig.width = 7, fig.height = 6}
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_NAm/' # put your path here for microclim data folder for North America
+# put your path here for microclim data folder for North America
+path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_NAm/' 
 
-solar_jan_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc")) # read the January solar radiation file into memory
-solar_jul_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_7.nc")) # read the July solar radiation file into memory
-Tair_jan_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_1.nc")) # read the January 1cm air temperature in 0% shade file into memory
-Tair_jul_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_7.nc")) # read the July 1cm air temperature in 0% shade file into memory
-Tsky_jan_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_1.nc")) # read the January sky temperature in 0% shade file into memory
-Tsky_jul_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_7.nc")) # read the January sky air temperature in 0% shade file into memory
-D0cm_jan_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_1.nc")) # read the January surface temperature in 0% shade file into memory
-D0cm_jul_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_7.nc")) # read the July surface temperature in 0% shade file into memory
+# read the January solar radiation file into memory
+solar_jan_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc"))
+# read the July solar radiation file into memory
+solar_jul_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_7.nc")) 
+# read the January 1cm air temperature in 0% shade file into memory
+Tair_jan_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_1.nc")) 
+# read the July 1cm air temperature in 0% shade file into memory
+Tair_jul_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_7.nc")) 
+# read the January sky temperature in 0% shade file into memory
+Tsky_jan_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_1.nc")) 
+# read the January sky air temperature in 0% shade file into memory
+Tsky_jul_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_7.nc")) 
+# read the January surface temperature in 0% shade file into memory
+D0cm_jan_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_1.nc")) 
+# read the July surface temperature in 0% shade file into memory
+D0cm_jul_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_7.nc")) 
 
 # getting bounding radiation conditions across Australia for January
 hg = solar_jan_NAm # define the solar radiation input
@@ -238,17 +276,20 @@ Q_rad_jul_NAm <- Qbound_micro(hg = hg, Tsub = Tsub, Tsky = Tsky, alpha_s = alpha
 for(i in 1:24) { # start of the loop, from i = 1 to 24
 
   # first do January
-  RadTair <- cbind(values(Q_rad_jan_NAm[[i]]),values(Tair_jan_NAm[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jan_NAm[[i]]),values(Tair_jan_NAm[[i]])) 
 
   if(i == 1){ # check if it is the first step, and make the first plot
-    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space, North America")
+    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', 
+         xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "available climate space, North America")
   }else{
     # it's not the first step, so use 'points' to add data to the plot
     points(RadTair[,1],RadTair[,2], col = 'grey', pch = 16)
   }
 
   # next do July
-  RadTair <- cbind(values(Q_rad_jul_NAm[[i]]),values(Tair_jul_NAm[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jul_NAm[[i]]),values(Tair_jul_NAm[[i]])) 
 
   # add the July values to the graph
   points(RadTair[,1],RadTair[,2], col = 'grey', pch = 16)
@@ -280,21 +321,24 @@ In module \@ref(climate space) we computed the climate space of the Desert Iguan
 for(i in 1:24) { # start of the loop, from i = 1 to 24
 
   # first do January
-  RadTair <- cbind(values(Q_rad_jan_NAm[[i]]),values(Tair_jan_NAm[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jan_NAm[[i]]),values(Tair_jan_NAm[[i]])) 
 
   if(i == 1){ # check if it is the first step, and make the first plot
-    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', main = "Desert Iguana climate space, North America")
+    plot(RadTair[,1],RadTair[,2],ylim = c(-40,60), xlim = c(0,1300), pch = 16, col = 'red', 
+         xlab = 'radiation, W/m2', ylab = 'air temperature, deg C', 
+         main = "Desert Iguana climate space, North America")
   }else{
     # it's not the first step, so use 'points' to add data to the plot
     points(RadTair[,1],RadTair[,2], col = 'grey', pch = 16)
   }
 
   # next do July
-  RadTair <- cbind(values(Q_rad_jul_NAm[[i]]),values(Tair_jul_NAm[[i]])) # extract the radiation and air temperatures from the rasters and bind them together into a table
+  # extract the radiation and air temperatures from the rasters and bind them together into a table
+  RadTair <- cbind(values(Q_rad_jul_NAm[[i]]),values(Tair_jul_NAm[[i]])) 
 
   # add the July values to the graph
   points(RadTair[,1],RadTair[,2], col = 'grey', pch = 16)
-
 }
 
 T_air <- seq(-60,60,0.1) # air temperature range to consider, degrees C
@@ -315,7 +359,8 @@ points(Q_day, T_air, type = 'l',col = 'red',lwd = 2)
 climate_space_pars <- as.data.frame(read.csv("data/climate_space_pars.csv"))
 pars <- subset(climate_space_pars, Name=="Desert Iguana")
 pars[,4:6] <- pars[,4:6] * (4.185 / 60 * 10000) # convert heat flows from cal/min/cm2 to J/s/m2 = W/m2
-pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)# convert thermal conductivities from cal/(min cm C) to J/(s m C) = W/(m C)
+# convert thermal conductivities from cal/(min cm C) to J/(s m C) = W/(m C)
+pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)
 pars[,c(7:8,11,16)] <- pars[,c(7:8,11,16)] / 100 # convert cm to m
 
 # redefine function to compute absorved radiation required give a specific core temperature, air temperature and wind speed
@@ -349,26 +394,28 @@ E_ex <- pars$E_ex[5] # evaporative heat loss from respiration, W/m2
 E_sw <- pars$E_sw[5] # evaporative heat loss from sweating, W/m2
 k_b <- pars$k_b[5] # thermal conductivity of the skin, W/(m C)
 K_b  <- k_b/pars$d_b[5] # thermal conductance of the skin, W/(m2 C)
-epsilon <- 1 # emissivity, -
+epsilon <- 1 # emissivity
 
 Q_abs_upper <- Qabs_ecto(D = D, T_b = T_b_upper, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 
-
 climate_space <- as.data.frame(cbind(T_air, Q_abs_lower, Q_abs_upper, Q_night, Q_day))
 
-# now get the differences between the radiation levels for the night and day radiation bounding curves and the 3 and 45 degree lines
+# now get the differences between the radiation levels for the night and day radiation bounding 
+# curves and the 3 and 45 degree lines
 climate_space$min_lower <- climate_space$Q_abs_lower-climate_space$Q_night
 climate_space$max_lower <- climate_space$Q_abs_lower-climate_space$Q_day
 climate_space$min_upper <- climate_space$Q_abs_upper-climate_space$Q_night
 climate_space$max_upper <- climate_space$Q_abs_upper-climate_space$Q_day
 
-# find the row positions in the climate_space table where the square of the differences is minimised for the night and day bounding curves for each threshold
+# find the row positions in the climate_space table where the square of the differences 
+# is minimized for the night and day bounding curves for each threshold
 mx_lower <- which.min(climate_space$min_lower^2)
 mn_lower <- which.min(climate_space$max_lower^2)
 mx_upper <- which.min(climate_space$min_upper^2)
 mn_upper <- which.min(climate_space$max_upper^2)
 
-# use these row position limits to extract only the radiation/air temperature combinations within the clear night and sunny day bounds
+# use these row position limits to extract only the radiation/air temperature combinations 
+# within the clear night and sunny day bounds
 limits_lower <- cbind(Q_abs_lower[mn_lower:mx_lower],T_air[mn_lower:mx_lower])
 limits_lower <- as.data.frame(limits_lower)
 colnames(limits_lower) <- c("Q_abs", "T_air")
@@ -376,7 +423,8 @@ limits_upper <- cbind(Q_abs_upper[mn_upper:mx_upper],T_air[mn_upper:mx_upper])
 limits_upper <- as.data.frame(limits_upper)
 colnames(limits_upper) <- c("Q_abs", "T_air")
 
-# get the corners of the climate space diagram - i.e. the limiting combinations of radiation and air temperature for night and day at each thermal limit
+# get the corners of the climate space diagram - i.e. the limiting combinations of radiation and 
+# air temperature for night and day at each thermal limit
 night_cold <- limits_lower[nrow(limits_lower),] # cold clear sky limit (in the open)
 day_cold <- limits_lower[1,] # cold clear sky limit (in the sun)
 day_hot <- limits_upper[1,] # hot clear sky day limit (in the open)
@@ -405,7 +453,8 @@ To do this we can use the heat budget equation we developed in module \@ref(clim
 First, we need to define our heat budget equation as in module \@ref(climate space) - remember we had one for ectotherms and one for endotherms? We need the ectotherm one of course, which has been copied and pasted here from module \@ref(climate space).
 
 ```{r}
-# function to compute absorbed radiation required given a specific core temperature, air temperature and wind speed
+# function to compute absorbed radiation required given a specific core temperature, air temperature,
+# and wind speed
 
 # organism inputs
 # D, organism diameter, m
@@ -436,17 +485,29 @@ Qabs_ecto <-
 Next, we need the environmental variables for North America, including the wind speed.
 
 ```{r}
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_NAm/' # put your path here for microclim data folder for Australia
-wind_jan_NAm<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_1.nc")) # read the January wind speed file for North America into memory
-wind_jul_NAm<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_7.nc")) # read the July wind speed  file for North America into memory
-solar_jan_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc")) # read the January solar radiation file into memory
-solar_jul_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_7.nc")) # read the July solar radiation file into memory
-Tair_jan_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_1.nc")) # read the January 1cm air temperature in 0% shade file into memory
-Tair_jul_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_7.nc")) # read the July 1cm air temperature in 0% shade file into memory
-Tsky_jan_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_1.nc")) # read the January sky temperature in 0% shade file into memory
-Tsky_jul_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_7.nc")) # read the January sky air temperature in 0% shade file into memory
-D0cm_jan_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_1.nc")) # read the January surface temperature in 0% shade file into memory
-D0cm_jul_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_7.nc")) # read the July surface temperature in 0% shade file into memory
+# put your path here for microclim data folder for Australia
+path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_NAm/' 
+
+# read the January wind speed file for North America into memory
+wind_jan_NAm<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_1.nc"))
+# read the July wind speed  file for North America into memory
+wind_jul_NAm<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_7.nc")) 
+# read the January solar radiation file into memory
+solar_jan_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc")) 
+# read the July solar radiation file into memory
+solar_jul_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_7.nc")) 
+# read the January 1cm air temperature in 0% shade file into memory
+Tair_jan_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_1.nc")) 
+# read the July 1cm air temperature in 0% shade file into memory
+Tair_jul_NAm<-brick(paste0(path,"air_temperature_degC_1cm/soil/0_shade/TA1cm_soil_0_7.nc")) 
+# read the January sky temperature in 0% shade file into memory
+Tsky_jan_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_1.nc")) 
+# read the January sky air temperature in 0% shade file into memory
+Tsky_jul_NAm<-brick(paste0(path,"sky_temperature_degC/0_shade/TSKY_0_7.nc")) 
+# read the January surface temperature in 0% shade file into memory
+D0cm_jan_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_1.nc")) 
+# read the July surface temperature in 0% shade file into memory
+D0cm_jul_NAm<-brick(paste0(path,"substrate_temperature_degC/soil/0_shade/D0cm_soil_0_7.nc")) 
 ```
 
 We have the environmental variables; now we need the organism's parameters. As in module \@ref(climate space), we read in the climate space parameters 'csv' file, subset it for the Desert Iguana data, and convert to SI units where necessary.
@@ -454,8 +515,10 @@ We have the environmental variables; now we need the organism's parameters. As i
 ```{r}
 climate_space_pars <- as.data.frame(read.csv("data/climate_space_pars.csv"))
 pars <- subset(climate_space_pars, Name=="Desert Iguana")
-pars[,4:6] <- pars[,4:6] * (4.185 / 60 * 10000) # convert heat flows from cal/min/cm2 to J/s/m2 = W/m2
-pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)# convert thermal conductivities from cal/(min cm C) to J/(s m C) = W/(m C)
+# convert heat flows from cal/min/cm2 to J/s/m2 = W/m2
+pars[,4:6] <- pars[,4:6] * (4.185 / 60 * 10000) 
+# convert thermal conductivities from cal/(min cm C) to J/(s m C) = W/(m C)
+pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)
 pars[,c(7:8,11,16)] <- pars[,c(7:8,11,16)] / 100 # convert cm to m
 ```
 
@@ -485,7 +548,8 @@ T_air<-Tair_jan_NAm # air temperature range to consider, degrees C
 Finally, we can run the `Qabs_ecto` function.
 
 ```{r}
-# compute the total radiation load for each air temperature and wind speed combination that would give a Tb of 3 degrees, the lower survivable limit
+# compute the total radiation load for each air temperature and wind speed combination that would 
+# give a Tb of 3 degrees, the lower survivable limit
 Q_abs_lower <- Qabs_ecto(D = D, T_b = T_b_lower, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 ```
 
@@ -575,10 +639,12 @@ K_b  <- k_b/pars$d_b[5] # thermal conductance of the skin, W/(m2 C)
 V <- wind_jul_NAm # wind speed, m/s
 T_air<-Tair_jul_NAm # air temperature range to consider, degrees C
 
-# compute the total radiation load for each air temperature and wind speed combination that would give a Tb of 45 degrees, the upper survivable limit
+# compute the total radiation load for each air temperature and wind speed combination that would 
+# give a Tb of 45 degrees, the upper survivable limit
 Q_abs_upper <- Qabs_ecto(D = D, T_b = T_b_upper, M = M, E_ex = E_ex, E_sw = E_sw, K_b = K_b, epsilon = epsilon, T_air = T_air, V = V)
 
-enbal_hot <- Q_rad_jul_NAm - Q_abs_upper # subtract available radiation from required for 45C degrees Tb
+# subtract available radiation from required for 45C degrees Tb
+enbal_hot <- Q_rad_jul_NAm - Q_abs_upper 
 ```
 
 Now we can plot the results for the heat energy budget at the upper thermal limit. Now, where the 'enbal_hot' layer is positive, it means the radiation load on the lizard at that site in the open would exceed that which would result in a body temperature of 45 at the particular wind speed and air temperature at that location.
@@ -595,10 +661,16 @@ To summarise our calculations so far, let's make our results binary with values 
 
 ```{r}
 enbal_hot_binary <- enbal_hot
-values(enbal_hot_binary) <- ifelse(values(enbal_hot) > 0, 0, 1) # replace values greater than zero, i.e. where there is too much radiation available to match the level needed to produce a 45 degree C body temperature for each wind speed and air temperature combination across North America, otherwise give value 1
+# replace values greater than zero, i.e. where there is too much radiation available to match 
+# the level  needed to produce a 45 degree C body temperature for each wind speed and air 
+# temperature combination across North America, otherwise give value 1
+values(enbal_hot_binary) <- ifelse(values(enbal_hot) > 0, 0, 1) 
 
 enbal_cold_binary <- enbal_cold
-values(enbal_cold_binary) <- ifelse(values(enbal_cold) > 0, 0, 1) # replace values greater than zero, i.e. where there isn't enough radiation available to match the level needed to produce a 3 degree C body temperature for each wind speed and air temperature combination across North America, otherwise give value 1
+# replace values greater than zero, i.e. where there isn't enough radiation available to match 
+# the level needed to produce a 3 degree C body temperature for each wind speed and air 
+# temperature combination across North America, otherwise give value 1
+values(enbal_cold_binary) <- ifelse(values(enbal_cold) > 0, 0, 1) 
 
 enbal = enbal_hot_binary * enbal_cold_binary
 ```
