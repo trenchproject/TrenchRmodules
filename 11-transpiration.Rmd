@@ -41,10 +41,10 @@ The transpiration rate is determined by the water vapor pressure or density diff
 
 The steady state energy budget for a leaf is 
 where
-<div class="nobullet">
-* Thermal energy gained = Thermal energy lost
-* Absorbed radiation = Reradiation + Convection + Evaporation
-</div>
+<ul class="list-unstyled">
+<li> Thermal energy gained = Thermal energy lost </li>
+<li> Absorbed radiation = Reradiation + Convection + Evaporation </li>
+</ul> 
 
 \begin{equation} 
 Q_a = \varepsilon \sigma T_l + 273^4 + k_1 + \bigg(\frac{V}{D}\bigg)^{\frac{1}{2}} [ T_l - T_a ] + L (T_l) E
@@ -52,18 +52,18 @@ Q_a = \varepsilon \sigma T_l + 273^4 + k_1 + \bigg(\frac{V}{D}\bigg)^{\frac{1}{2
 \end{equation} 
   
 where
-<div class="nobullet">
-* $Q_a$ = total amount of radiation absorbed in $W m^{-2}$,
-* $\varepsilon$ = emissivity of leaf surface to longwave radiation,
-* $\sigma$ = (Stefan-Boltzmann constant) $5.67 \times 10^{-8} W m^{-2} K^{-4}$,
-* $T_l$ = leaf temperature in $^{\circ}C$,
-* $k_1$ = $9.14 J m^{-2} s^{-1/2}-11 ^{\circ}C^{-1}$,
-* $v$ = wind speed in $m s^{-1}$,
-* $D$ = leaf width in $m$,
-* $T_a$ = air temperature in $^{\circ}C$,
-* $L(T_l)$ = latent heat of vaporization of water in $Jkg^{-1}$ as a function of leaf temperature and is equal to $2.43 \times 10^6$ at $30^{\circ}C$ and $2.50 \times 10$ at $0^{\circ}C$,
-* $E$ is transpiration rate in $kg m^{-2} \times s^{-1}$
-</div>
+<ul class="list-unstyled">
+<li> $Q_a$ = total amount of radiation absorbed in $W m^{-2}$, </li>
+<li> $\varepsilon$ = emissivity of leaf surface to longwave radiation, </li>
+<li> $\sigma$ = (Stefan-Boltzmann constant) $5.67 \times 10^{-8} W m^{-2} K^{-4}$, </li>
+<li> $T_l$ = leaf temperature in $^{\circ}C$, </li>
+<li> $k_1$ = $9.14 J m^{-2} s^{-1/2}-11 ^{\circ}C^{-1}$, </li>
+<li> $v$ = wind speed in $m s^{-1}$, </li>
+<li> $D$ = leaf width in $m$, </li>
+<li> $T_a$ = air temperature in $^{\circ}C$, </li>
+<li> $L(T_l)$ = latent heat of vaporization of water in $Jkg^{-1}$ as a function of leaf temperature and is equal to $2.43 \times 10^6$ at $30^{\circ}C$ and $2.50 \times 10$ at $0^{\circ}C$, </li>
+<li> $E$ is transpiration rate in $kg m^{-2} \times s^{-1}$ </li>
+</ul>
 
 For any given value of $E$, a specific value of $T_l$ will balance Equation \@ref(eq:transpiration-1), provided all other quantities are known. However, $E$ depends on a unique set of environmental variables. It is seen in the next paragraphs that $E$ is a function of $T_l$. Therefore, it is possible to determine $E$ and $T_l$ simultaneously. If the air temperature is warmer than the leaf temperature, heat is gained by convection rather than lost and this term becomes negative on the right-hand side of the energy budget equation.
 

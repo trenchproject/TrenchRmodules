@@ -82,22 +82,19 @@ E_\lambda = c_1 \lambda^{-5} [\exp(c_2 / \lambda T)] -1 ]^{-1}
 (\#eq:heattrans-2)
 \end{equation}
 where
-<div class="nobullet">
-* $E_\lambda$ is the amount of energy emitted in the band $\lambda$ to $\lambda$ + $d \lambda$ ($J m^{-1}$),
-* $T$ is the blackbody temperature ($K$),
-* $\lambda$ is the wavelength ($m$),
-* $c_1$ is $2 \pi h {c_L}^2$,
-* $c_2$ is $hc_L / K_b$,
-</div>
+<ul class="list-unstyled">
+<li> $E_\lambda$ is the amount of energy emitted in the band $\lambda$ to $\lambda$ + $d \lambda$ ($J m^{-1}$), </li>
+<li> $T$ is the blackbody temperature ($K$), </li>
+<li> $\lambda$ is the wavelength ($m$), </li>
+<li> $c_1$ is $2 \pi h {c_L}^2$, </li>
+<li> $c_2$ is $hc_L / K_b$, </li>
+</ul>  
 where
-<div class="nobullet">
-* $h$ is Planck's constant = $6.63 \times 10^{-34} (J s)$,
-* $K_b$ is Boltzmann's constant = $1.38 \times 10^{-23} (J K^{-1})$,
-</div>
-and
-<div class="nobullet">
-* $c_L$ is the speed of light = $3.00 \times 10^8 (m s^{-1})$.
-</div>
+<ul class="list-unstyled">
+<li> $h$ is Planck's constant = $6.63 \times 10^{-34} (J s)$, </li>
+<li> $K_b$ is Boltzmann's constant = $1.38 \times 10^{-23} (J K^{-1})$, and </li>
+<li> $c_L$ is the speed of light = $3.00 \times 10^8 (m s^{-1})$. </li>
+</ul>  
 
 It is obvious that no one has actually measured the surface temperature of the sun. In this instance, the sun's temperature was deduced from its electromagnetic spectrum. Second, from Planck's Law, it can be demonstrated (Robinson 1966 or Roseman 1978) that the wavelength at the maximum radiated energy is only a function of the temperature of the radiating body.
 
@@ -106,11 +103,10 @@ It is obvious that no one has actually measured the surface temperature of the s
 (\#eq:heattrans-3)
 \end{equation}
 where
-<div class="nobullet">
-* $\lambda_{max}$ = wavelength of maximum radiation ($m$),
-and 
-* $T$ = temperature ($K$).
-</div>
+<ul class="list-unstyled">
+<li> $\lambda_{max}$ = wavelength of maximum radiation ($m$), and </li> 
+<li> $T$ = temperature ($K$). </li>
+</ul>  
 
 Third, the Stefan-Boltzmann Law provides the even more remarkable result that the total energy emitted, $Q_{emit}$, by a radiating body (the area under the curve, Fig. \@ref(fig:fig-heattrans-4)) is proportional to the fourth power of the surface temperature $T_s$.
 \begin{equation}
@@ -118,13 +114,12 @@ Q_{emit} = \varepsilon \sigma (273 + T_s)^4
 (\#eq:heattrans-4)
 \end{equation}
 where
-<div class="nobullet">
-* $Q_{emit}$ is the radiant energy emitted from the surface ($W m^{-2}$).
-* $\varepsilon$ is the emissivity (range zero to one),
-* $\sigma$ is the Stephan-Boltzmann constant ($5.67 \times 10^{-8} W m^{-2} K^{-4}, 8.17 \times 10^{-11} cal \, min^{-l} cm^{-2} K^{-4})$,
-and 
-* $T_s$ is the surface temperature ($^{\circ}C$)
-</div>
+<ul class="list-unstyled">
+<li> $Q_{emit}$ is the radiant energy emitted from the surface ($W m^{-2}$). </li>
+<li> $\varepsilon$ is the emissivity (range zero to one), </li>
+<li> $\sigma$ is the Stephan-Boltzmann constant ($5.67 \times 10^{-8} W m^{-2} K^{-4}, 8.17 \times 10^{-11} cal \, min^{-l} cm^{-2} K^{-4})$, and </li>
+<li> $T_s$ is the surface temperature ($^{\circ}C$) </li>
+</ul>  
 Roseman (1978) gives a more complete discussion of these laws.
 
 Kirchoff studied the emissivity and absorptivity of materials. He showed that the energy absorbed at any specific wavelength $\lambda$ at constant temperature is equal to the energy emitted at $\lambda$. That is, if the absorptivity of a surface $a(\lambda)$ represents the fraction of incident radiation absorbed at $\lambda$ and $\varepsilon (\lambda)$ is the emissivity, the radiation emitted at $\lambda$ divided by the radiation emitted from a blackbody, then $a(\lambda) = \varepsilon (\lambda)$ for each wavelength. If $\varepsilon = 1$ for all wavelengths, then the object is said to be a blackbody. Although no system is a perfect blackbody, many are approximately so. In the infrared region, 3 to 100 $\mu m$, most objects such as vegetation, soil and water behave like blackbodies ($\varepsilon = 1$). Table 7.1 gives the emissivities of some plants and animals.
@@ -242,11 +237,11 @@ a(\lambda) + r(\lambda) + t(\lambda) = 1
 \end{equation}
 
 where
-<div class="nobullet">
-* $a(\lambda)$ = absorptivity at wavelength $\lambda$,
-* $r(\lambda)$ = reflectivity at wavelength $\lambda$,
-* $t(\lambda)$ = transitivity at wavelength $\lambda$,
-</div>
+<ul class="list-unstyled">
+<li> $a(\lambda)$ = absorptivity at wavelength $\lambda$, </li>
+<li> $r(\lambda)$ = reflectivity at wavelength $\lambda$, </li>
+<li> $t(\lambda)$ = transitivity at wavelength $\lambda$, </li>
+</ul>  
 and each term is between zero and one (see Siegel and Howell 1972 for a more complete discussion). Table 7.2 gives some values for $r$ averaged over the entire spectrum for different ecological systems. Values of $a$, $r$, $t$ are also given by Porter (1967) for animals and Monteith (1973) for plants and animals.
 
 As an example of radiation flux, let us calculate the radiant energy emitted by the cactus, *Opuntia rufida*. To do this, we must specify the emissivity $\varepsilon$ and the surface temperature $T_s$. In Table 7.1, $\varepsilon = 0.977$ for *O. rufida* and, if we take $T_s = 10 ^{\circ}C$, then:
@@ -294,13 +289,12 @@ Q_{cond} = -k A_c \frac{dT}{dx}
 \end{equation}
 
 where
-<div class="nobullet">
-* $Q_{cond}$ is conduction ($W$),
-* $k$ is thermal conductivity ($W m^{-1} {^{\circ}C^{-1}}$),
-* $A_c$ is the area through which the heat is flowing ($m^2$),
-and
-* $\frac{dT}{dx}$ is the thermal gradient ($^{\circ}C m^{-1}$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_{cond}$ is conduction ($W$), </li>
+<li> $k$ is thermal conductivity ($W m^{-1} {^{\circ}C^{-1}}$), </li>
+<li> $A_c$ is the area through which the heat is flowing ($m^2$), and </li>
+<li> $\frac{dT}{dx}$ is the thermal gradient ($^{\circ}C m^{-1}$). </li>
+</ul>  
 
 The negative sign in equation \@ref(eq:heattrans-7) is to indicate that the direction of heat flow is from regions of higher temperature to lower temperature (opposite the temperature gradient). This is shown in Fig. \@ref(fig:fig-heattrans-5).
 
@@ -318,14 +312,13 @@ Q_{cond} = \frac{k A_c}{x} (T_b - T_g) = \frac{0.198 \times 0.5}{0.007} (22-30) 
 \end{equation}
 
 where
-<div class="nobullet">
-* $Q_{cond}$ is conduction ($W$, negative since energy is flowing from the ground to the animal),
-* $T_b$ is body temperature of the alligator ($^{\circ}C$),
-* $k$ is the thermal conductivity of fat ($W m^{-1} {^{\circ}C^{-1}}$),
-* $T_g$ is ground temperature ($^{\circ}C$),
-and
-* $\Delta x$ is thickness of layer ($m$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_{cond}$ is conduction ($W$, negative since energy is flowing from the ground to the animal), </li>
+<li> $T_b$ is body temperature of the alligator ($^{\circ}C$), </li>
+<li> $k$ is the thermal conductivity of fat ($W m^{-1} {^{\circ}C^{-1}}$), </li>
+<li> $T_g$ is ground temperature ($^{\circ}C$), and </li>
+<li> $\Delta x$ is thickness of layer ($m$). </li>
+</ul>  
 
 The TrenchR package includes similar functions for modelling convection based on whether the thermal conductivity of the animal or the substrate is the limited step. When animal conductance is the rate limiting step, $Q_{cond}$ can be estimated as follows:
 $$Q_{cond}= A\cdot proportion\cdot k(T_g-T_b)/d, $$
@@ -368,14 +361,13 @@ Q_{conv} = h_c A_c (T_s - T)
 \end{equation}
 
 where
-<div class="nobullet">
-* $Q_{conv}$ is the convective heat flux ($W$),
-* $h_c$ is the convective heat transfer coefficient. ($W m^{-2} {^{\circ}C^{-1}}$),
-* $A_c$ is the area at object in contact with the fluid ($m^2$),
-* $T_s$ is the surface temperature of the object ($^{\circ}C$),
-and
-* $T$ is the fluid temperature ($^{\circ}C$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_{conv}$ is the convective heat flux ($W$), </li>
+<li> $h_c$ is the convective heat transfer coefficient. ($W m^{-2} {^{\circ}C^{-1}}$), </li>
+<li> $A_c$ is the area at object in contact with the fluid ($m^2$), </li>
+<li> $T_s$ is the surface temperature of the object ($^{\circ}C$), and </li>
+<li> $T$ is the fluid temperature ($^{\circ}C$). </li>
+</ul> 
 
 Usually, $A_c$, $T_s$ and $T$ can be evaluated. The heat transfer coefficient, on the other hand, is often a difficult parameter to estimate in the natural environment because of turbulence (Kowalski and Mitchell 1976, and Noble 1975).
 
@@ -394,13 +386,12 @@ h_c = \frac{Nu \, k}{D}
 (\#eq:heattrans-11)
 \end{equation}
 where
-<div class="nobullet">
-* $h_c$ is the heat transfer coefficient ($W m^{-2} {^{\circ}C^{-1}}$),
-* $Nu$ is the Nusselt number,
-* $k$ is the thermal conductivity of the fluid ($W m^{-1} {^{\circ}C}$),
-and
-* $D$ is the characteristic dimension of the system ($m$).
-</div>
+<ul class="list-unstyled">
+<li> $h_c$ is the heat transfer coefficient ($W m^{-2} {^{\circ}C^{-1}}$), </li>
+<li> $Nu$ is the Nusselt number, </li>
+<li> $k$ is the thermal conductivity of the fluid ($W m^{-1} {^{\circ}C}$), and </li>
+<li> $D$ is the characteristic dimension of the system ($m$). </li>
+</ul> 
 The heat transfer coefficient, $h_c$, is a value which has been averaged over the entire surface area of the system. The characteristic dimension $D$ must be defined for each different geometric shape one wishes to consider. Commonly, one might use the diameter of a sphere or the widest point of a leaf in the direction of the wind. The Nusselt number is a non-dimensional number used to scale laboratory results to other wind velocity and fluid properties. Kreith (1973, page 317) gives two physical interpretations for the Nusselt number. It may be thought of 'as the ratio of the temperature gradient in the fluid immediately in contact with the surface to a reference temperature gradient $(T_s - T)/D$' or the 'ratio $D/x$ where $x$ is the fluid thickness of a hypothetical layer which, if completely stagnant, offers the same thermal resistance to the flow of heat as the actual boundary layer.'
 
 In practice, another non-dimensional number, the Reynolds number, $Re$, which is the ratio of inertial ($\rho v^2$) to viscous forces ($\mu V/D$), is introduced to account for the scaling effects of fluid velocity, geometry, and fluid properties (see Kreith 1973 or Cowan 1977 for a discussion of $Re$).
@@ -410,13 +401,13 @@ Re = \frac{\rho vD}{\mu}
 (\#eq:heattrans-12)
 \end{equation}
 where
-<div class="nobullet">
-* $\rho$ is the fluid density ($kg\,m^{-3}$),
-* $V$ is the fluid velocity ($m s^{-1}$),
-* $D$ is the characteristic dimension ($m$),
-and
-* $\mu$ is the fluid viscosity ($kg m^{-1} s^{-1}$).
-</div>
+<ul class="list-unstyled">
+<li> $\rho$ is the fluid density ($kg\,m^{-3}$), </li>
+<li> $V$ is the fluid velocity ($m s^{-1}$), </li>
+<li> $D$ is the characteristic dimension ($m$), and </li>
+<li> $\mu$ is the fluid viscosity ($kg m^{-1} s^{-1}$). </li>
+</ul> 
+
 For a particular geometry, a functional relationship between the Nusselt number and the Reynolds number can then be calculated from laboratory measurements ($h_c$ versus $V$). Usually, the result is expressed as:
 
 \begin{equation}
@@ -447,15 +438,14 @@ Q_{conv} = k_1 \bigg(\frac{V}{D}\bigg)^{0.5} (T_s - T_a)
 (\#eq:heattrans-14)
 \end{equation}
 where
-<div class="nobullet">
-* $Q_{conv}$ is the convective heat flux ($W m^{-2}$, positive for heat flow frog the leaf to the air),
-* $k_1$ is 9.14 ($J m^{-2} {^{\circ}C^{-1}} s^{-1/2}$),
-* $V$ is wind velocity ($m s^{-1}$),
-* $D$ is the characteristic dimension (widest point) of the leaf in the direction of the wind ($m$),
-* $T_s$ is the surface temperature of the leaf ($^{\circ}C$),
-and
-* $T_a$ is the air temperature ($^{\circ}C$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_{conv}$ is the convective heat flux ($W m^{-2}$, positive for heat flow frog the leaf to the air), </li>
+<li> $k_1$ is 9.14 ($J m^{-2} {^{\circ}C^{-1}} s^{-1/2}$), </li>
+<li> $V$ is wind velocity ($m s^{-1}$), </li>
+<li> $D$ is the characteristic dimension (widest point) of the leaf in the direction of the wind ($m$), </li>
+<li> $T_s$ is the surface temperature of the leaf ($^{\circ}C$), and </li>
+<li> $T_a$ is the air temperature ($^{\circ}C$). </li>
+</ul> 
 
 After using this convection term $Q_{conv}$ in the energy budget equation, Tibbals et al. (1964, page 538) concluded for similar energy environments "that . . . that the broad deciduous type leaf would be considerably warmer than the conifers . . ." and " . . . that the demand on transpiration is probably greatest per unit surface area for the broad-leaf plant than the conifers." (Also see Gates 1977.)
 
@@ -469,11 +459,11 @@ E = \frac{C_o - C_a}{r_e}
 (\#eq:heattrans-15)
 \end{equation}
 where
-<div class="nobullet">
-* $E$ is water loss ($kg\,s^{-1}$),
-* $C_o - C_a$ is the water vapor concentration difference between the surface ($o$) and the free atmosphere ($a$) ($kg\,m^{-1}$),
-* $r_e$ is the resistance to water vapor loss ($s\,m^{-1}$).
-</div>
+<ul class="list-unstyled">
+<li> $E$ is water loss ($kg\,s^{-1}$), </li>
+<li> $C_o - C_a$ is the water vapor concentration difference between the surface  ($o$) and the free atmosphere ($a$) ($kg\,m^{-1}$), </li>
+<li> $r_e$ is the resistance to water vapor loss ($s\,m^{-1}$). </li>
+</ul> 
 
 The TrenchR package incorporates a function based on empirically estimated relationships (`Qevaporation`) to estimate evaporation.
 
@@ -489,10 +479,10 @@ L(T) = 2.50 \times 10^6 - 2.38 \times 10^3 T
 (\#eq:heattrans-16)
 \end{equation}
 where
-<div class="nobullet">
-* $L(T)$ is the latent heat of evaporation (J kg^-1^),
-* $T$ is the surface temperature at the site of evaporation (°C).
-</div>
+<ul class="list-unstyled">
+<li> $L(T)$ is the latent heat of evaporation (J kg^-1^), </li>
+<li> $T$ is the surface temperature at the site of evaporation (°C). </li>
+</ul> 
 
 As an example of the energy flux, the water loss at $T_a = 40^{\circ}C$ for *C. collaris* is 0.8 mg of $H_2 O\,g^{-1} {hr}^{-1}$ Correcting the units to kg $s^{-1}$ for a 30 g lizard yields $6.67 \times 10^{-9} kg\:s^{-1}$. Therefore, using equation \@ref(eq:heattrans-16), the energy loss for the animal is $1.6 \times 10^{-2} W$. In this example, we have not calculated $E$ explicitly, mechanistically accounting for wind speed or water vapor concentration of the environment, but animal physiologists often report evaporation as a function of air or body temperature only. These factors become more important when water loss is a larger fraction of the total energy budget or when one is concerned with the water balance of the organism (Welsh and Tracy 1977). Later in the text, a functional relationship to include these factors is given for water loss from a leaf. Generally, transpiration is a significant energy loss for plants which has led Monteith (1973) to make the distinction between "wet" and "dry" systems.
 
@@ -506,12 +496,12 @@ c = \frac{\Delta O}{\Delta T \, M}
 (\#eq:heattrans-17)
 \end{equation}
 where
-<div class="nobullet">
-* $c$ is the specific heat (J kg^-1^ °C^-1^),
-* $\Delta Q$ is the heat flux (J),
-* $\Delta T$ is a 1° change temperature (°C),
-and
-* $M$ is a 1 kilogram system (kg).
+<ul class="list-unstyled">
+<li> $c$ is the specific heat (J kg^-1^ °C^-1^), </li>
+<li> $\Delta Q$ is the heat flux (J), </li>
+<li> $\Delta T$ is a 1° change temperature (°C), and </li>
+<li> $M$ is a 1 kilogram system (kg). </li>
+</ul>
 
 We cannot measure the amount of heat a body can hold, so in a sense the term specific heat is misleading, but it is commonly used. It is simply the amount of heat which must be added per unit mass of material for a $1^{\circ}C$ rise in temperature. What actually is changing is the internal energy of the system. Table 7.3 (after Monteith 1973) shows values of specific heat for different materials. See Stevenson (1979a) or Zemansky and Van Ness (1966) for a more formal definition.
 
@@ -557,13 +547,12 @@ c_v = \frac{\Delta Q}{\Delta T \, V}
 (\#eq:heattrans-19)
 \end{equation}
 where
-<div class="nobullet">
-* $c_v$ is thermal capacity ($J  m^{-3}$),
-* $\Delta Q$ is the heat change in the system ($J$),
-* $\Delta T$ is change in temperature ($^{\circ}C$),
-and
-* $V$ is unit volume ($m^3$).
-</div>
+<ul class="list-unstyled">
+<li> $c_v$ is thermal capacity ($J  m^{-3}$), </li>
+<li> $\Delta Q$ is the heat change in the system ($J$), </li>
+<li> $\Delta T$ is change in temperature ($^{\circ}C$), and </li>
+<li> $V$ is unit volume ($m^3$). </li>
+</ul> 
 
 Thermal conductivity along with the notions of conductance and thermal resistance have already been discussed and defined in the section on conduction. The last parameter we wish to define is the thermal diffusivity $K$ which is the ratio of the thermal conductivity $K$ divided by density $\rho$ times the specific heat.
 
@@ -622,13 +611,12 @@ Q_a = Q_e + C + LE
 (\#eq:heattrans-23)
 \end{equation}
 where
-<div class="nobullet">
-* $Q_a$ is the radiant energy absorbed by the leaf ($W m^{-2}$),
-* $Q_e$ is the energy emitted by the leaf ($W m^{-2}$),
-* $C$ is the convective flux ($W m^{-2}$),
-and
-* $LE$ is the evaporative flux ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_a$ is the radiant energy absorbed by the leaf ($W m^{-2}$), </li>
+<li> $Q_e$ is the energy emitted by the leaf ($W m^{-2}$), </li>
+<li> $C$ is the convective flux ($W m^{-2}$), and </li>
+<li> $LE$ is the evaporative flux ($W m^{-2}$). </li>
+</ul> 
 
 With empirical measurements and some assumptions (see Gates 1977), equation \@ref(eq:heattrans-23) is expanded as: 
 \begin{equation}
@@ -636,22 +624,21 @@ Q_a = \varepsilon \sigma (T_l + 273)^4 + k_1 \bigg(\frac{V}{D}\bigg)^{0.5} (T_l 
 (\#eq:heattrans-24)
 \end{equation}
 where
-<div class="nobullet">
-* $\sigma$ is the Stefan-Boltzmanm constant ($5.67 \times 10^{-8} W m^{-2} K^{-4}$)
-* $\varepsilon$ is the emissivity of the leaf
-* $T_l$ is the leaf temperature ($^{\circ}C$),
-* $V$ is the wind speed ($m s^{-l}$),
-* $k_1$ is an experimentally determined coefficient ($9.14 J m^{-2} s^{-0.5} {^{\circ}C^{-1}}$),
-* $k_2$ is an experimentally determined coefficient ($183 s^{0.5} m^{-1}$),
-* $T_a$ is the air temperature ($^{\circ}C$),
-* $D$ is the leaf dimension in the direction of the wind ($m$),
-* $r.h.$ is the relative humidity,
-* $W$ is the leaf dimension transverse to the wind (m),
-* $_s d_l (T_l)$ is the concentration of water vapor saturation at leaf temperature $T_l (kg \, m^{-1})$,
-* $_s d_a (T_a)$ is the concentration of water vapor in free air saturated at air temperature $T_a (kg \, m^{-1})$,
-and
-* $r_l$ is the internal diffusion resistance of the leaf ($s m^{-1}$).
-</div>
+<ul class="list-unstyled">
+<li> $\sigma$ is the Stefan-Boltzmanm constant ($5.67 \times 10^{-8} W m^{-2} K^{-4}$) </li>
+<li> $\varepsilon$ is the emissivity of the leaf </li>
+<li> $T_l$ is the leaf temperature ($^{\circ}C$), </li>
+<li> $V$ is the wind speed ($m s^{-l}$), </li>
+<li> $k_1$ is an experimentally determined coefficient ($9.14 J m^{-2} s^{-0.5} {^{\circ}C^{-1}}$), </li>
+<li> $k_2$ is an experimentally determined coefficient ($183 s^{0.5} m^{-1}$), </li>
+<li> $T_a$ is the air temperature ($^{\circ}C$), </li>
+<li> $D$ is the leaf dimension in the direction of the wind ($m$), </li>
+<li> $r.h.$ is the relative humidity, </li>
+<li> $W$ is the leaf dimension transverse to the wind (m), </li>
+<li> $_s d_l (T_l)$ is the concentration of water vapor saturation at leaf temperature $T_l (kg \, m^{-1})$, </li>
+<li> $_s d_a (T_a)$ is the concentration of water vapor in free air saturated at air temperature $T_a (kg \, m^{-1})$, and </li>
+<li> $r_l$ is the internal diffusion resistance of the leaf ($s m^{-1}$). </li>
+</ul> 
 
 Inspection of equation \@ref(eq:heattrans-24) shows that the energy balance of the leaf is very dependent on leaf temperature which in turn affects convection and transpiration. To analyze this multivariate problem, Gates graphed three variables while holding the rest constant. Figures \@ref(fig:fig-heattrans-10) and \@ref(fig:fig-heattrans-11) illustrate thermodynamic conditions that would be common in tropical habitats at midday sunny ($Q_a = 900 W m^{-2}$) and cloudy ($Q_a = 600 W m^{-2}$) radiation levels. Note the differences in transpiration rates and leaf temperatures as a function of leaf resistance. Gates (1968) also considered the effects of leaf size. Figure \@ref(fig:fig-heattrans-12) clearly shows that small leaves, by reducing leaf temperature and transpiration, would be advantageous in desert regions.
 
@@ -789,15 +776,14 @@ Q_a + M - Q_e - LE - C - G = 0
 (\#eq:heattrans-25)
 \end{equation}
 where
-<div class="nobullet">
-* $Q_a$ is energy absorbed ($W m^{-2}$),
-* $M$ is metabolism ($W m^{-2}$),
-* $Q_e$ is radiation emitted ($W m^{-2}$),
-* $LE$ is evaporation ($W m^{-2}$),
-* $C$ is convection ($W m^{-2}$),
-and
-* $G$ is conduction ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_a$ is energy absorbed ($W m^{-2}$), </li>
+<li> $M$ is metabolism ($W m^{-2}$), </li>
+<li> $Q_e$ is radiation emitted ($W m^{-2}$), </li>
+<li> $LE$ is evaporation ($W m^{-2}$), </li>
+<li> $C$ is convection ($W m^{-2}$), and </li>
+<li> $G$ is conduction ($W m^{-2}$). </li>
+</ul>  
 
 Equation \@ref(eq:heattrans-25) may be rewritten:
 
@@ -807,17 +793,17 @@ Q_a + M - \varepsilon \sigma A_e (273 + T_s)^4 - LE - h_c A_c (T_s - T_a) - k A_
 \end{equation}
 
 where
-<div class="nobullet">
-* $\varepsilon$ is emissivity to longwave radiation,
-* $\sigma$ is Stefan-Boltzmann constant ($5.67 \times 10^{-8} W m^{-2} K^{-4}$),
-* $A_e$ is the percent of the total surface area of the animal not in contact with substratum, 
-* $T_s$ is surface temperature of the lizard ($^{\circ}C$),
-* $h_c$ is convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$),
-* $T_a$ is air temperature ($^{\circ}C$),
-* $k$ is thermal conductivity of substratum ($W m^{-1} {^{\circ}C^{-1}}$),
-* $A_c$ is the percent area of the animal total surface area in contact with the substratum,
-* $\frac{dT}{dx}$ is temperature gradient with the substrate ($^{\circ}C m^{-1}$).
-</div>
+<ul class="list-unstyled">
+<li> $\varepsilon$ is emissivity to longwave radiation, </li>
+<li> $\sigma$ is Stefan-Boltzmann constant ($5.67 \times 10^{-8} W m^{-2} K^{-4}$), </li>
+<li> $A_e$ is the percent of the total surface area of the animal not in contact with substratum, </li>
+<li> $T_s$ is surface temperature of the lizard ($^{\circ}C$), </li>
+<li> $h_c$ is convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$), </li>
+<li> $T_a$ is air temperature ($^{\circ}C$), </li>
+<li> $k$ is thermal conductivity of substratum ($W m^{-1} {^{\circ}C^{-1}}$), </li>
+<li> $A_c$ is the percent area of the animal total surface area in contact with the substratum, </li>
+<li> $\frac{dT}{dx}$ is temperature gradient with the substrate ($^{\circ}C m^{-1}$). </li>
+</ul>  
 
 ```{r fig-heattrans-13, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap='Tree surface temperature in $^{\\circ}C$ on Chew\'s Ridge at 10:00, 1.:00, and 17:00 Pacific Standard Time June 21 as a function of direction from North. (From Bartlett, P. N. and D. M. Gates. 1967. P. 320.)'}
 knitr::include_graphics('figures/fig-heattrans-13.png')

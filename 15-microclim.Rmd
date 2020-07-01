@@ -63,7 +63,7 @@ Let's take a look at some of the data. We will again use the 'raster' package of
 ```{r, warning=FALSE, message=FALSE}
 library(raster)
 # put your path here for microclim data folder
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' 
+path<- 'microclim_Aust/' 
 
 month<-1 # choose which month you want, 1 or 7 (i.e. Jan or Jun)
 # read the file into memory

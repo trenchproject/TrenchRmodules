@@ -20,15 +20,15 @@ In earlier modules of the thermodynamics series, we considered the application o
 (\#eq:climatespace-1)
 \end{equation}
 where ^[In some of the biological literature the units of Equation \@ref(eq:climatespace-1) are cal cm^-2^ min^-1^, but we have adopted the mks system here.]
-<div class="nobullet">
-* $\Delta U$ = change in internal energy ($W m^{-2}$),
-* $M$ = metabolism ($W m^{-2}$ ),
-* $Q_a$ = radiation absorbed ($W m^{-2}$), 
-* $Q_e$ = radiation emitted ($W m^{-2}$), 
-* $LE$= water vapor losses ($W m^{-2}$), 
-* $C$ = convection flux ($W m^{-2}$), 
-* $G$ = conduction flux ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $\Delta U$ = change in internal energy ($W m^{-2}$), </li>
+<li> $M$ = metabolism ($W m^{-2}$ ), </li>
+<li> $Q_a$ = radiation absorbed ($W m^{-2}$), </li>
+<li> $Q_e$ = radiation emitted ($W m^{-2}$), </li>
+<li> $LE$= water vapor losses ($W m^{-2}$), </li>
+<li> $C$ = convection flux ($W m^{-2}$), </li>
+<li> $G$ = conduction flux ($W m^{-2}$). </li>
+</ul>
 
 Equation \@ref(eq:climatespace-1) is a complicated expression with many independent variables. Because biologists are interested in how animals modify their heat balance and why any particular behavior or physical characteristic of an animal influences this balance, they must find ways of analyzing the heat energy balance equation.
 
@@ -49,13 +49,13 @@ Q_a = \bar{a}_1 A_1 S + \bar{a}_2 A_2 s + \bar{a}_3 A_3 r (S + s) + \bar{a}_4 A_
 \end{equation}
 
 where
-<div class="nobullet">
-* $S$ is the radiation from direct sunlight ($W m^{-2}$),
-* $s$ is the radiation from scattered sunlight ($W m^{-2}$),
-* $R_g$ is infrared thermal radiation from the ground ($W m^{-2}$),
-* $R_a$ is infrared thermal radiation from the atmosphere ($W m^{-2}$),
-* $r$ is the reflectivity of the ground. 
-</div>
+<ul class="list-unstyled">
+<li> $S$ is the radiation from direct sunlight ($W m^{-2}$), </li>
+<li> $s$ is the radiation from scattered sunlight ($W m^{-2}$), </li>
+<li> $R_g$ is infrared thermal radiation from the ground ($W m^{-2}$), </li>
+<li> $R_a$ is infrared thermal radiation from the atmosphere ($W m^{-2}$), </li>
+<li> $r$ is the reflectivity of the ground. </li>
+</ul>
 
 Since we wish to consider the average flux per unit surface area, the $A_i$'s are the proportions of the total surface area exposed to each kind of radiation. The $a_i$s are the mean absorptivities to each kind of radiation. Roseman (197, module 8) discusses absorption, reflection and transmission. In their original paper, Porter and Gates assumed that their animal was a cylinder. Equation \@ref(eq:climatespace-2) can then be rewritten as:
 \begin{equation}
@@ -76,12 +76,12 @@ Q_a = \frac{\bar{a}_L (R_g + R_a)}{2} = \frac{\bar{a}_L \sigma [T_g + 273]^4 + 1
 \end{equation}
 
 where
-<div class="nobullet">
-* $\bar{a}_L$ =  mean absorptivity to longwave radiation,
-* $\sigma$ = Stefan-Boltzmann's constant 5.67x10^-8^ ($W m^{-2} K^{-4}$),
-* $T_g$ = ground temperature ($^{\circ}C$),
-* $T_a$ = air temperature ($^{\circ}C$),
-</div>
+<ul class="list-unstyled">
+<li> $\bar{a}_L$ =  mean absorptivity to longwave radiation, </li>
+<li> $\sigma$ = Stefan-Boltzmann's constant 5.67x10^-8^ ($W m^{-2} K^{-4}$), </li>
+<li> $T_g$ = ground temperature ($^{\circ}C$), </li>
+<li> $T_a$ = air temperature ($^{\circ}C$), </li>
+</ul>
 
 and the other symbols are as in Equation \@ref(eq:climatespace-2). Gates has assumed that the $A_i$s are one-half in each case (Siegel and Howell 1972 show how this can be derived). As before, we will let $\bar{a}_L = 1.0$. It is also convenient to approximate the ground temperature with the air temperature. In the early evening $T_g > T_a$, but several hours before sunrise the reverse is true. Equation \@ref(eq:climatespace-4) with the aforementioned assumptions is the leftmost line plotted in Figure \@ref(fig:fig-climatespace-1). This means that if an animal were out foraging under a clear sky at night at an air temperature  of $20^{\circ}C$, it would receive $50 W m^{-2}$ less than if it were resting in a burrow.
 
@@ -875,14 +875,14 @@ Q_a = \varepsilon \sigma ( T_s + 273)^4 + h_c (T_s - T_a )
 \end{equation}
 
 where
-<div class="nobullet">
-* $Q_a$ = longwave and shortwave radiation absorbed by the organism ($W m^{-2}$),
-* $\varepsilon$ = emissivity (0.96),
-* $\sigma$ =  Stefan-Boltzmann constant 5.67 $\times$ 10^-8^ ($W m^{-2} K^{-4}$),
-* $T_s$ = surface temperature of the lizard ($^{\circ}C$),
-* $T_a$ = air temperature ($^{\circ}C$),
-* $h_c$ = convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$),
-</div>
+<ul class="list-unstyled">
+<li> $Q_a$ = longwave and shortwave radiation absorbed by the organism ($W m^{-2}$), </li>
+<li> $\varepsilon$ = emissivity (0.96), </li>
+<li> $\sigma$ =  Stefan-Boltzmann constant 5.67 $\times$ 10^-8^ ($W m^{-2} K^{-4}$), </li>
+<li> $T_s$ = surface temperature of the lizard ($^{\circ}C$), </li>
+<li> $T_a$ = air temperature ($^{\circ}C$), </li>
+<li> $h_c$ = convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$), </li>
+</ul>
 
 Originally Porter and Gates (1969) suggested that the convection coefficient should take the form
 
@@ -892,11 +892,11 @@ h_c = k_c V^{0.33} D^{-0.67}
 \end{equation}
 
 where
-<div class="nobullet">
-* $k_c$ = a constant 0.9274 $W m^{-2} {^{\circ}C^{-1}} (m)^{0.67} (m/s)^{-0.33}$
-* $V$ = wind speed ($m s^{-1}$)
-* $D$ = diameter of the animal or cylinder ($m$).
-</div>
+<ul class="list-unstyled">
+<li> $k_c$ = a constant 0.9274 $W m^{-2} {^{\circ}C^{-1}} (m)^{0.67} (m/s)^{-0.33}$ </li>
+<li> $V$ = wind speed ($m s^{-1}$) </li>
+<li> $D$ = diameter of the animal or cylinder ($m$). </li>
+</ul>
 
 Recently Mitchell (1976) found a spherical shape is the best overall model for convective transfer in the terrestrial environment. He used weight divided by density, which is equal to the volume, all to the one-third power as the characteristic dimension instead of the diameter. (Using laboratory measurements it is often possible to get better estimates of $h_c$ for a particular geometry.) Generally one would calculate the Reynolds and Nusselt numbers to find the heat transfer coefficient (Kreith 1973). This procedure is outlined in the module on heat transfer processes (Stevenson 1978). With a number of assumptions which introduce only small errors, it is possible to write Mitchell's result in the same form as that of Porter and Gates (see Appendix II). We have
 
@@ -906,10 +906,10 @@ h_c = k_s V^{0.60} {M_b}^{-0.133}
 \end{equation}
 
 where
-<div class="nobullet">
-* $k_s$ = constant 17.24 $W m^{-2} {^{\circ}C} (m s^{-1})^{-0.60} (kg)^{0.133}$
-* $M_b$ = body mass ($kg$)
-</div>
+<ul class="list-unstyled">
+<li> $k_s$ = constant 17.24 $W m^{-2} {^{\circ}C} (m s^{-1})^{-0.60} (kg)^{0.133}$ </li>
+<li> $M_b$ = body mass ($kg$) </li>
+</ul>
 
 and $h_c$ and $V$ are as in Equation 6. We further assume that the body temperature $T_b$ is approximately equal to the surface temperature $T_s$. (The error in this assumption will be checked in Problem 1.) The heat energy balance can now be written
 
@@ -1000,15 +1000,15 @@ M + Q_a = \varepsilon \sigma (T_r + 273)^4 + h_c (T_r - T_a) + E_{ex}
 \end{equation}
 
 where
-<div class="nobullet">
-* $M$ = metabolic rate ($W m^{-2}$),
-* $Q_a$ = absorbed radiation ($W m^{-2}$),
-* $\varepsilon$ = emissivity
-* $\sigma$ = Stefan-Boltzmann constant ($W m^{-2} K^{-4}$)
-* $T_a$ = air temperature
-* $h_c$ = convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$)
-* and $E_{ex}$ = energy flux due to respiration ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $M$ = metabolic rate ($W m^{-2}$), </li>
+<li> $Q_a$ = absorbed radiation ($W m^{-2}$), </li>
+<li> $\varepsilon$ = emissivity </li>
+<li> $\sigma$ = Stefan-Boltzmann constant ($W m^{-2} K^{-4}$) </li>
+<li> $T_a$ = air temperature </li>
+<li> $h_c$ = convection coefficient ($W m^{-2} {^{\circ}C^{-1}}$) </li>
+<li> and $E_{ex}$ = energy flux due to respiration ($W m^{-2}$). </li>
+</ul>
 
 Since there are internal sources and sinks of energy production ($M$ and $E_{ex}$) introduced into the equation we must consider heat transfer within the animal. Figure \@ref(fig:fig-climatespace-9) from Porter and Gates (1969) shows a schematic view of an idealized animal in the shape of a cylinder. The isothermal core is at body temperature $T_b$, the skin surface is at temperature $T_s$, and the outer surface of the feathers (or fur) is at $T_r$. Water loss through the skin, $E_{sw}$ (sweating), is included for generality. For the First Law of Thermodynamics and our steady state assumption we know that the energy crossing each boundary is the same. Beginning with the two inside circles the energy flow across the region of thickness $d_b$ is equal to the potential (temperature difference) times the resistance (but see problem 6).
 Therefore, 
@@ -1074,13 +1074,13 @@ $M$ and $E_{ex}$ in $W m^{-2}$, $d_f$ and $d_b$ in $m \times 10^{-3}$, $T_b$ and
 In Chapter 10 of his book, Monteith (1973) presents a graphical representation of the energy balance equation which has some similarities to the climate space diagram. Instead of using absorbed radiation, he defines a quantity $R_{ni}$ (also see Hatheway 1978) which is equal to $Q_a - (T_a + 273)^4$ to use on the abscissa. Next he derives an expression to represent the heat flow of the organism as though it were simply conducting heat to the environment
 $$(M - E) = \frac{C_a P}{r_{hr}} (T_o - T_e)$$
 where
-<div class="nobullet">
-* $M$ = metabolism ($W m^{-2}$)
-* $E$ = water loss ($W m^{-2}$)
-* $T_o$ = surface temperature ($^\circ C$)
-* $T_e$ = effective temperature of the environment ($^{\circ}C$)
-* $\frac{C_a P}{r_{hr}}$ = equivalent conductivity ($W m^{-2} {^{\circ}C^{-1}}$)
-</div>
+<ul class="list-unstyled">
+<li> $M$ = metabolism ($W m^{-2}$) </li>
+<li> $E$ = water loss ($W m^{-2}$) </li>
+<li> $T_o$ = surface temperature ($^\circ C$) </li>
+<li> $T_e$ = effective temperature of the environment ($^{\circ}C$) </li>
+<li> $\frac{C_a P}{r_{hr}}$ = equivalent conductivity ($W m^{-2} {^{\circ}C^{-1}}$) </li>
+</ul>
 
 The equivalent conductivity is due to a weighing of the resistance to convection and radiation transfer. Figures \@ref(fig:fig-climatespace-11) and \@ref(fig:fig-climatespace-12) taken from Monteith illustrate his method. Notice that there is a substantial metabolic contribution to the energy balance when the locust is flying and that when the insect is resting the environmental temperature is equal to the skin temperature $T_s$ which will also equal the body temperature. Furthermore, if the environmental conditions (air temperature, wind speed, and net radiation) are given, then a range of physiological parameters (metabolism, fat thickness, fur thickness, water loss) can be found that will allow the animal to remain in thermal equilibrium. If the physiological values are known the converse problem can be solved (Monteith 1973, p. 165). The climate space concept has the advantage that it has put an outer bound on the physical environment. It may also be easier to interpret because absorbed radiation is kept separate from reradiation. Monteith's method, however, allows one to visualize the relative magnitude of each resistance element between the animal and the environment. For an example of this method see Cena and Clark (1974).
 

@@ -22,11 +22,12 @@ The purpose of this module is to illustrate several ways in which the First Law 
 \end{equation}
 
 where 
-<div class="nobullet">
-* $\Delta U$ is the change in internal energy of the system, 
-* $Q$ is the heat added to the system, 
-* and $W$ is the work done by the system to the surroundings. 
-</div>
+<ul class="list-unstyled">
+<li> $\Delta U$ is the change in internal energy of the system, </li>
+<li> $Q$ is the heat added to the system, </li>
+<li> and $W$ is the work done by the system to the surroundings. </li>
+</ui>
+
 The reader may find it helpful to consult the Appendix on Units, Symbols, and Dimensions and/or the module on that subject. In the examples we will make different kinds of assumptions about the terms of equation \@ref(eq:thermex-1) to illustrate different applications. First, we will consider an adiabatic process in which no heat is added to the system, so $Q = 0$. A second type of application, with $W = 0$, is often used to describe the heat energy balance of organisms. Much of the energy balance literature has also been devoted to steady state analysis for which $\Delta U = 0$. Finally,  we will extend the formulation of the First Law to nonclassical thermodynamics in which mass flows are also considered.
 
 ***
@@ -87,11 +88,11 @@ w = g \frac{m}{V}
 (\#eq:thermex-9)
 \end{equation}
 where
-<div class="nobullet">
-* $g$ is the acceleration of gravity, 
-* $m$ is molecular mass of air, 
-* and $V$ is the volume of one mole.
-</div>
+<ul class="list-unstyled">
+<li> $g$ is the acceleration of gravity, </li>
+<li> $m$ is molecular mass of air, </li>
+<li> and $V$ is the volume of one mole. </li>
+</ui>
 
 Combining equations \@ref(eq:thermex-8) and \@ref(eq:thermex-9) and rearranging we have
 \begin{equation}
@@ -118,17 +119,17 @@ Any change in the internal energy of the system as measured by a change in tempe
 (\#eq:thermex-12)
 \end{equation}
 where
-<div class="nobullet">
-* $\Delta U$ = change in internal energy ($W m^2$, watts per square meter),
-* $Q_a$ = radiation absorbed by the system surface($W m^{-2}$),
-* $P$ = photosynthesis ($W m^{-2}$),
-* $M$ = basal metabolism($W m^{-2}$),
-* $Q_e$ = radiation emitted by the system surface ($W m^{-2}$),
-* $L$ = latent heat of evaporation ($J kg^{-1}$),
-* $E$ = evaporation flux density ($kg m^2 s^{-1}$),
-* $G$ = conduction ($W m^{-2}$),
-* and $C$ = convection ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $\Delta U$ = change in internal energy ($W m^2$, watts per square meter), </li>
+<li> $Q_a$ = radiation absorbed by the system surface($W m^{-2}$), </li>
+<li> $P$ = photosynthesis ($W m^{-2}$), </li>
+<li> $M$ = basal metabolism($W m^{-2}$), </li>
+<li> $Q_e$ = radiation emitted by the system surface ($W m^{-2}$), </li>
+<li> $L$ = latent heat of evaporation ($J kg^{-1}$), </li>
+<li> $E$ = evaporation flux density ($kg m^2 s^{-1}$), </li>
+<li> $G$ = conduction ($W m^{-2}$), </li>
+<li> and $C$ = convection ($W m^{-2}$). </li>
+</ul>
 
 Equation \@ref(eq:thermex-12) is a general heat flow equation. In most cases except for water vapor flux $LE$, mass exchange can be neglected. Similarly, the system's internal sources of heat energy, photosynthesis and metabolism, are also very small components of the heat energy budget and can usually be ignored. We note, however, there are important exceptions of which the largest group includes endothermic vertebrates, birds and mammals. The other terms $Q_a$, $Q_e$, $LE$, $C$, $G$ of equation \@ref(eq:thermex-12) represent the basic heat transfer processes that were described in the first module entitled "The First Law of Thermodynamics for Ecosystems."
 
@@ -138,12 +139,12 @@ The first example we wish to consider is the heat energy budget of the earth. Si
 (\#eq:thermex-13)
 \end{equation}
 where
-<div class="nobullet">
-* $Q_a$ = radiation absorbed from the sun (left half of Fig. \@ref(fig:fig-thermex-2)),
-* $Q_e$ = energy emitted by the atmosphere and earth,
-* $LE$ = heat loss by evaporation or latent heat,
-* and $C$ = convection or sensible heat.
-</div>
+<ul class="list-unstyled">
+<li> $Q_a$ = radiation absorbed from the sun (left half of Fig. \@ref(fig:fig-thermex-2)),
+<li> $Q_e$ = energy emitted by the atmosphere and earth,
+<li> $LE$ = heat loss by evaporation or latent heat,
+<li> and $C$ = convection or sensible heat.
+</ul>
 
 Now consider figure \@ref(fig:fig-thermex-1) where the numbers represent the percentage of the total energy from the sun. If we define the earth and atmosphere as the system and space as the surroundings, the sum of the heat fluxes should be zero across the system's boundary. Checking the numbers, we receive 100 percent and lose 25, 9, 48 and 18 percent which adds to a net flux of zero. Likewise we can take the earth as the system. Also notice what happens to the direct solar radiation as it enters the atmosphere. Only 47 percent reaches the ground level. The atmosphere acts as a trap. It absorbs the short wave radiation and reradiates longwave radiation. Furthermore, about 23 percent of the available heat energy from the sun is used in evapotranspiration. This process reduces air temperature in wet climates and redistributes moisture.
 
@@ -157,13 +158,13 @@ Our next example is that of a small stream taken from Brown (1969). Fish and gam
 (\#eq:thermex-14)
 \end{equation}
 where
-<div class="nobullet">
-* $\Delta U$ = net change in internal energy of the stream ($W m^{-2}$),
-* $Q_{NR}$= net thermal radiation flux ($Q_a - Q_e$)($W m^{-2}$),
-* $LE$ = evaporative flux ($W m^{-2}$),
-* $G$ = conductive flux ($W m^{-2}$),
-* and $C$ = convective flux ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $\Delta U$ = net change in internal energy of the stream ($W m^{-2}$),
+<li> $Q_{NR}$= net thermal radiation flux ($Q_a - Q_e$)($W m^{-2}$),
+<li> $LE$ = evaporative flux ($W m^{-2}$),
+<li> $G$ = conductive flux ($W m^{-2}$),
+<li> and $C$ = convective flux ($W m^{-2}$).
+</ul>
 
 Brown measured the heat fluxes of three different systems: 1) a forested section, 2) a nonforested gravel bottom section, and 3) a nonforested rockbottom section. Changes in water temperature were computed hourly using the fact that $\Delta T = \Delta U$ divided by heat capacity where the heat capacity is equal to the surface area of the water divided by the flow rate times the specific heat of water. In Part a of Figs. \@ref(fig:fig-thermex-2) through \@ref(fig:fig-thermex-4) Brown used the energy fluxes to calculate $\Delta U$. From these values $\Delta T$ is calculated and added to the water temperature at the beginning of the stream section to get the predicted water temperatures shown in part b of each figure.
 
@@ -193,23 +194,23 @@ To illustrate how the First Law can be applied to plant systems we will examine 
 (\#eq:thermex-15)
 \end{equation}
 where
-<div class="nobullet">
-* $Q_a$ = radiant energy absorbed by the leaves ($W m^{-2}$),
-* $Q_e$ = radiation emitted by the leaves ($W m^{-2}$),
-* $C$ = convection flux ($W m^{-2}$),
-* and $LE$ = evaporative flux ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> $Q_a$ = radiant energy absorbed by the leaves ($W m^{-2}$), </li>
+<li> $Q_e$ = radiation emitted by the leaves ($W m^{-2}$), </li>
+<li> $C$ = convection flux ($W m^{-2}$), </li>
+<li> and $LE$ = evaporative flux ($W m^{-2}$). </li>
+</ul>
 
 A positive sign indicates energy is being added to the system. Equation \@ref(eq:thermex-15) describes completely the heat balance of a leaf. This is very important since the heat energy balance determines leaf temperature which affects the photosynthetic activity and shape of the leaf. A more complete analysis of the leaf system and the biological implications will be given in another module (Gates). In this module, it is most important to realize that we can write down the heat energy budget of the leaf and that there are four basic components to the heat balance: $Q_a$, $Q_e$, $C$, and $LE$. 
 
 To further illustrate the generality and wide application of the First Law, let us examine an animal as the system. Riechert and Tracy (1975)  considered the thermal characteristic of the funnel web-building spider, *Agelenopsis aperta*. They hypothesized that reproductive success would be influenced by the microhabitat of the spider because this animal reproduces during the warmest season which is probably physiologically costly. More specifically, if *A. aperta* could spend more time on the web catching food, more young could be produced. The energy balance equation for the spider was assumed to be
 $$Q_a - Q_e - C = 0$$
 where
-<div class="nobullet">
-* where $Q_a$ = radiant absorbed ($W m^{-2}$),
-* $Q_e$ = radiation emitted ($W m^{-2}$),
-* and $C$ = convection ($W m^{-2}$).
-</div>
+<ul class="list-unstyled">
+<li> where $Q_a$ = radiant absorbed ($W m^{-2}$), </li>
+<li> $Q_e$ = radiation emitted ($W m^{-2}$), </li>
+<li> and $C$ = convection ($W m^{-2}$). </li>
+</ul>
 
 Of the three habitats considered the model predicts increasing thermal stress in the following order: mixed grassland depression, mixed grassland surface, and lava surface. Field observations have confirmed these predictions. Riechert and Tracy also found that the spiders did not randomly  orient the direction toward which their funnels faced. In fact the general tendency was to face northerly which would eliminate direct solar radiation.  Fig. \@ref(fig:fig-thermex-5) shows a plot of orientations and gives the mean direction. The tendency is strongest in Fig. \@ref(fig:fig-thermex-5)c which shows all webs from unprotected sites.
 
@@ -466,7 +467,7 @@ Weis-Fogh, T. 1972. Energetics of hoving flight in humming birds and in Drosophi
 Went, F. W. 1957. The Experimental Control of Plant Growth. Chronica Botanica Co. Waltham, Mass. XVII + 343 pp. 
 
 Wilke, D. R. 1975. Thermodynamic errors by international commission. Nature 257:87-88.
-</div>
+
 
 ***
 

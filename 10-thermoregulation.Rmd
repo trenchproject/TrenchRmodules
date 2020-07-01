@@ -160,10 +160,11 @@ e_x > {-W}_x
 (\#eq:thermoreg-1)
 \end{equation}
 where
-<div class="nobullet">
-* $e_x$ is the  net energy gained while feeding in a period of type $x$
-* $W_x$ is the energy lost while waiting through a period of type $x$
-</div>
+<ul class="list-unstyled">
+<li>$e_x$ is the  net energy gained while feeding in a period of type $x$ </li>
+<li>$W_x$ is the energy lost while waiting through a period of type $x$ </li>
+</ul>
+
 He summarizes:
 
 `These considerations imply that temporal specialization should vary with food abundance in exactly the opposite manner to food or habitat specialization. In situations of very high food abundance, only the best item kind is taken and only the best patch type is foraged in. Hence specialization on food type and habitat is at its maximum. But under situations of greatest food abundance, there should be no time during which feeding results in a greater loss of energy than waiting. Hence temporal specialization is at its minimum. With decreasing food abundance, item kinds and habitat types are added, but it is possible that food availability becomes so low during certain periods of time that it is less expensive to wait those periods out. Hence food and habitat type broaden while diet activity periods shrink as abundance decreases. `
@@ -173,11 +174,11 @@ He summarizes:
 It is instructive to separate the net energy gained during a period $x$ into the food ingested and the metabolic costs of foraging in that environment. Often the foraging environment is thermodynamically different from the resting place. Feeding also means a concomitant increase in metabolic rate. Bearing these facts in mind, equation \@ref(eq:thermoreg-1) can be expanded into the following form:
 $$F_x - M_{fx} > M_{rx}$$
 where
-<div class="nobullet">
-* $F_x$ is energy captured ($W$),
-* $M_{fx}$ is metabolism foraging ($W$),
-* and $M_{rx}$ is metabolism while resting ($W$).
-</div>
+<ul class="list-unstyled">
+<li>$F_x$ is energy captured ($W$), </li>
+<li>$M_{fx}$ is metabolism foraging ($W$), </li>
+<li>and $M_{rx}$ is metabolism while resting ($W$). </li>
+</ul>
 
 If the costs of the two environments are much different or the probability of finding food is low, it may be that an organism should skip foraging periods more often. Consideration of the daily and seasonal foraging patterns of organisms suggests the question: "Why do animals spend so much of their time waiting or resting?" Katz (1974) developed a long-term foraging optimization scheme to investigate some of these issues. Brett (1971) provides some intriguing data on the interaction of food levels and temperature.
 
@@ -295,13 +296,13 @@ A second laboratory application of the $T_e$ concept is given by Bakken (1976b).
 (\#eq:thermoreg-7)
 \end{equation}
 where
-<div class="nobullet">
-* $T_b$ is body temperature ($^{\circ}C$) 
-* $T_a$ is air temperature ($^{\circ}C$)
-* $K_n$ is thermal conductance of body tissue ($J s^{-1}$)
-* $C$ is the heat capacity of the animal ($J$)
-* $t$ is time ($s$).
-</div>
+<ul class="list-unstyled">
+<li>$T_b$ is body temperature ($^{\circ}C$) </li> 
+<li>$T_a$ is air temperature ($^{\circ}C$) </li>
+<li>$K_n$ is thermal conductance of body tissue ($J s^{-1}$) </li>
+<li>$C$ is the heat capacity of the animal ($J$) </li>
+<li>$t$ is time ($s$). </li>
+</ul>
 
 Equation \@ref(eq:thermoreg-7) says that the change in body temperature will be zero when the animal's temperature is equal to that of the air. This is not a bad approximation if $T_a = T_e$ and if the metabolic and water loss rates of the animal are small. Bakken (1976a) has shown that a better approximation of the cooling curve is given by
 

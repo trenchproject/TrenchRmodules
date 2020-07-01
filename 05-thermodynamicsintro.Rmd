@@ -3,6 +3,7 @@ output:
   html_document: default
   pdf_document: default
 ---
+
 # Thermodynamics Intro {#thermodynamicsintro}
 
 The First Law of Thermodynamics for Ecosystems
@@ -101,11 +102,12 @@ The First Law of Thermodynamics applies the principle of energy conservation to 
 (\#eq:thermintro-1)
 \end{equation}
 where 
-<div class="nobullet">
-* $\Delta U$ is the change in internal energy, 
-* $Q$ is the heat added to the system, 
-* and $W$ is the work done by the system to the surroundings.
-</div>
+
+<ul class="list-unstyled">
+<li> $\Delta U$ is the change in internal energy, </li>
+<li> $Q$ is the heat added to the system, </li>
+<li> and $W$ is the work done by the system to the surroundings. </li>
+</ul>
 
 Equation \@ref(eq:thermintro-1) can also be written in differential form as
 \begin{equation}

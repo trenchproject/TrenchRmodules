@@ -30,7 +30,7 @@ We have these for January and July, which will give us the seasonal extremes. Le
 library(raster)
 
 # put your path here for microclim data folder for Australia
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_Aust/' 
+path<- 'microclim_Aust/' 
 
 # read the January solar radiation file into memory
 solar_jan_Aust<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc")) 
@@ -235,7 +235,7 @@ It should be an easy task to recalculate all of this for North America. Have a t
 
 ```{r, echo = FALSE, fig.width = 7, fig.height = 6}
 # put your path here for microclim data folder for North America
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_NAm/' 
+path<- 'microclim_NAm/' 
 
 # read the January solar radiation file into memory
 solar_jan_NAm<-brick(paste0(path,"solar_radiation_Wm2/SOLR_1.nc"))
@@ -486,7 +486,7 @@ Next, we need the environmental variables for North America, including the wind 
 
 ```{r}
 # put your path here for microclim data folder for Australia
-path<- '/Volumes/GoogleDrive/Shared drives/TrEnCh/TrEnChTutorials/data/microclim_NAm/' 
+path<- 'microclim_NAm/' 
 
 # read the January wind speed file for North America into memory
 wind_jan_NAm<-brick(paste0(path,"wind_speed_ms_1cm/V1cm_1.nc"))
