@@ -1,53 +1,42 @@
-# Dimensional Methods. {#dimmethods}
+---
+pagetitle: Dimensional Methods
+---
+
+# Dimensional Methods {#dimmethods}
 
 author: Fletcher, R. I.
 
-## PREFACE
-This module is concerned with the conventional techniques such as concepts of measurement, fundamental and derived units, checking equations for dimensional consistency, and the metric system. Attention is directed almost exclusively to the dimensional necessities of scientific statements, and only incidentally to their scientific sufficiencies. The International System of Units, SI, is discussed and a problem set is used to provide practice with the metric system. The concept of dimensional homogeneity,i.e., that all terms of an equation must consist of like dimensions raised to like powers, is analyzed, and a related problem set is provided. Concepts presented in the module require knowledge of basic algebra.
+## Preface {#dimmethods-preface}
+This module is concerned with the conventional techniques such as concepts of measurement, fundamental and derived units, checking equations for dimensional consistency, and the metric system. Attention is directed almost exclusively to the dimensional necessities of scientific statements, and only incidentally to their scientific sufficiencies. The International System of Units, SI, is discussed and a problem set is used to provide practice with the metric system. The concept of dimensional homogeneity, i.e. that all terms of an equation must consist of like dimensions raised to like powers, is analyzed, and a related problem set is provided. Concepts presented in the module require knowledge of basic algebra.
 
-## INTRODUCTION. 
+## Introduction {#dimmethods-intro}
+
 The common objective in scientific research, whatever our particular field of interest, is to discover those exact relationships that exist among the measurable quantities of nature. And typically, when our perceptions of those relationships are confirmed by experiment to have sufficient generality, we look upon our perceptions as natural laws. Although we often accept apparent truths about the natural universe that are difficult to quantify (Darwin's thesis of evolution, for example), the absolutely necessary condition for "exactness" in a scientific law is that its formulation consist of measurable quantities whose definitions depend, in turn, entirely upon a set of dimensions. In this formal sense, such classical sciences as physics and chemistry--as well as much of modern biology--are said to be exact, but obviously, some topics of natural science (such as Darwin's thesis of evolution) are characteristically inexact.
 
-Dimensional formalities do not, of course, insure scientific infallibility, and we sometimes originate dimensionally perfect formulae that turn out to be irrelevant, inaccurate, or erroneous, but dimensional completeness fulfills the necessary condition for exactness in a scientific statement and we cannot proceed to the more practical concerns of scientific sufficiency until we satisfy in our formulae the formalistic requirements of dimensional exactitude--otherwise our formulae are meaningless. We shall, in fact, be concerned here almost exclusively with the dimensional necessities of scientific statements and only incidentally with their sufficiencies. Unlike the self-consistent arguments of purely mathematical demonstrations, scientific sufficiency rests instead with empirical evidence. Although dimensional methods provide us with the means for determining the obligatory (the formally necessary) relationships among the quantities of a scientific formula, we should clearly understand that experimentation, observation, and insight really determine just which quantities go into the formula in the first place. 
+Dimensional formalities do not, of course, insure scientific infallibility. In fact, dimensionally perfect formulae sometimes turn out to be irrelevant, inaccurate, or erroneous. However, dimensional completeness fulfills the necessary condition of scientific exactness, and we cannot proceed to the more practical concerns of scientific sufficiency until we satisfy dimensional exactitude in our formulae. A scientifically sufficient formulae that is not scientifically exact is meaningless. We shall be concerned here almost exclusively with the dimensional completeness of scientific statements and only incidentally with sufficiencies. Although dimensional methods provide us with the means for determining the formally necessary relationships among the quantities of a scientific formula, we should clearly understand that experimentation, observation, empirical evidence, and insight really determine just which quantities go into the formula in the first place. 
 
-So as to distinguish between differing *magnitudes* of a particular dimension, we must have access to a *scale* (or *unit*) of comparison. In saying "the height of that tree is nine meters" we imply that we have chosen *length* as the dimension of definition and the *meter* as the corresponding scale unit of comparison. In making the observation let us also note that "length" might have defined our concept of tallness but not necessarily our whole notion of the tree itself. This is not a trivial acknowledgement; it points up the fact that scientific definitions describe *attributes* of natural entities or occurrences, not their ontological meanings or their elemental reasons for existence. While we might employ the universal law of gravitation, let us say, to quantify the attribute of attraction between bodies of mass, the law of gravitation consists wholly of dimensional relationships and tells us nothing of the "essence" of gravity, nor why every corporeal body in the universe should have a gravitational field in the first place. Although we may share an intense curiosity about such questions, their resolutions are usually reserved to inquiries external to science proper. Should perplexity exist over the *scientific* description of some natural quantity, its origin should be sought not in some mysterious, hidden characteristic of the natural quantity, but rather in the ambiguity of the quantity's dimensional definition.
+So as to distinguish between differing *magnitudes* of a particular dimension, we must have access to a *scale* (or *unit*) of comparison. In saying "the height of that tree is nine meters" we imply that we have chosen *length* as the dimension of definition and the *meter* as the corresponding scale unit of comparison. In making the observation let us also note that "length" might have defined our concept of tallness but not necessarily our whole notion of the tree itself. This is not a trivial acknowledgment; it points up the fact that scientific definitions describe *attributes* of natural entities or occurrences, not their ontological meanings or their elemental reasons for existence. While we might employ the universal law of gravitation to quantify the attribute of attraction between bodies of mass, the law of gravitation consists wholly of dimensional relationships and tells us nothing of the "essence" of gravity, nor why every corporeal body in the universe should have a gravitational field in the first place. Although we may share an intense curiosity about such questions, their answers are usually reserved to inquiries external to science proper. Should perplexity exist over the *scientific* description of some natural quantity, its origin should be sought in the quantity's dimensional definition.
 
 In view of these definitional objectives, we must accord to every kind of natural quantity its defining dimension, but these defining dimensions need not be wholly independent of one another. Since we desire that differing natural quantities be related through natural laws, then for simplicity and clarity of definition we should keep the number of *independent* dimensions to a minimum. This minimum set of independent dimensions we shall call *fundamental*, and all other dimensions derived from the fundamental set we shall call *derived*. Similarly, the magnitudes (the scale units) corresponding to the fundamental dimensions are viewed as fundamental magnitudes, and those corresponding to the derived dimensions as derived magnitudes. An obvious example of a derived quantity would be that of velocity--the velocity, say, of an aircraft whose pilot reads derived units of velocity magnitude directly from the scale of his airspeed indicator. Irrespective of the particular scale system on the airspeed indicator, we perceive the velocity *dimension* to be derived, in general, from the more fundamental set of dimensions, length and time, and with corresponding symbols $V$, $L$ ,$T$ we can write that general dimensional relationship as
 
-$$[V] \equiv [LT^{-1}]$$
+$$[V] \equiv [\frac{L}{T}]$$
 
 read as "the dimension $V$ is defined as the ratio of dimensions $L$ and $T$." The particular scale measurement of, say, 500 kilometers per hour would correspond to 500 derived units of velocity magnitudes derived from the kilometer and the hour. We would write the scale relationship for this particular example as
 
-$$v = 500 km\cdot hr^{-1}$$
+$$v = 500 \frac{km}{hr}$$
 
-with an obvious correspondence between fundamental unit magnitudes "km" and "hr" and the fundamental dimensions $L$ and $T$. The unit symbol "km$\cdot$hr^-1^" is as much a part of the value of quantity $v$ as is the numerical value "500". The conventions (the symbolic styles) employed in this example suggest the convenient fact that we can manipulate dimensional and scale symbols as algebraic entities.
+with an obvious correspondence between fundamental unit magnitudes "km" and "hr" and the fundamental dimensions $L$ and $T$. The unit symbol "$\frac{km}{hr}$" is as much a part of the value of quantity $v$ as is the numerical value "500". The conventions (the symbolic styles) employed in this example suggest the convenient fact that we can manipulate dimensional and scale symbols as algebraic entities.
 
 There is a certain arbitrariness of choice in the number and nature of the "fundamental" dimensions, whether we are thinking of our needs in choosing dimensions for actual measurement purposes or for the more formalistic requirements of theoretical models (and there is also considerable latitude in the selection of the scale units we might regard as fundamental; those suited for one problem may not be suited for another). Because of the strong historical precedent of Newtonian mechanics, the three natural concepts of space, time, and mass are often regarded as being fundamental in the absolute sense, but, in fact, more than three fundamental dimensions are sometimes desirable, and we shall see that differing sets of fundamental dimensions can be selected, none of which need be regarded as absolutely fundamental.
 
-### PROBLEM SET 1.
-1. Employ the dimensional set $M$ (mass), $V$ (velocity), $T$ (time), and do the following exercise. The attached solutions may be consulted if necessary.  
-    (a) The linear acceleration of a particle can be envisioned as the increase or decrease in the velocity of the particle, measured over a short time period. Write the dimensions of linear acceleration.  
-    (b) The magnitude of force on a body wholly free to move can be calculated as the product of the body's mass and its linear acceleration. Write the dimensions of mechanical force.  
-    (c) The instantaneous kinetic energy of a moving body is proportional to the mass of the body and to the square of its linear speed. Write the dimensional formula for kinetic energy.
+## SI Units {#dimmethods-si}
 
-2. Employ the dimensional set $M$ (mass), $L$ (length), $T$ (time), and do (a), (b), (c) of Exercise 1.
-
-3. Employ the dimensional set $F$ (force), $L$ (length), $T$ (time), and do the following exercise.  
-    (a) Problem (c) of Exercise 1.  
-    (b) The work done in moving the body of Problem 1(c) is equivalent to the product of the force acting on the body and the distance the body moves while the force is being applied. Write the dimensional formula for mechanical work.  
-    (c) Power is defined as the time rate of energy expenditure (or, equivalently, as the rate at which work is done). Write the dimensional formula for the power of the agency that imparts the motion to the body of Problem 3(b).
-    
-4. Employ the dimensional set $M$, $L$, $T$ and do (b), (c) of Exercise 3.
-
-5. In the mks system of measurement, the meter (m) is the unit standard of length, the kilogram (kg) the unit standard of mass, and the second (sec) the unit standard of time. The derived unit of force in the mks system is called the "newton" (nt), the derived unit of energy is called the "joule", and the derived unit of power is called the "watt". Employ the mks system of measurement and write the unit magnitudes of the corresponding quantities described in Exercises 2, 3, 4.
-
-## SI UNITS. 
 In the making of scientific syntheses, our mutual needs for clear thinking and precision of meaning--as well as the need for clarity in communications between us have an obvious dependence on the exactness of our reference standards and the precision we choose to employ in the characterizing of those natural quantities that ultimately enter our formulations as symbols. Our usages here shall conform, with little revision, to the conventions and standards known as the International System of Units (abbreviated SI for *Systeme International*), supplemented where necessary by the practices of the National Bureau of Standards (NBS). In the SI system, the fundamental metric units associated with dimensions $M$, $L$, $T$ are the kilogram, the meter, and the second (customarily called the "mks system"). A variety of auxiliary metric units are employed in practice (such as the kilometer, the angstrom, the gamma, and so on), but the auxiliary or supplementary set of metric units most commonly associated with dimensions $M$, $L$, $T$ are the gram, the centimeter, and the second (customarily called the "cgs system").
 
 The following definitions for mechanical quantities have been abstracted from publications of NBS (1964,1968) and Cray (1972). For comprehensive tabulations of the quantities appropriate to optics, acoustics, and electricity, see the *Handbook of the American Institute of Physics*, the *Handbook of Chemistry and Physics* (Chemical Rubber Co.), or the
 *Handbook of the National Bureau of Standards*, which is edited and published annually.
 
-### FUNDAMENTAL MECHANICAL UNITS
+### Fundamental Mechanical Units {#dimmethods-fundamentalunits}
 
 *Meter*. Unit of length mks system. Symbol m, dimension L. By international agreement (1960) defined to be 1,650,763.73 wavelengths of the orange-red line of krypton 86, which replaces the length standard based on the platinum-iridium meter bar in Paris.
 
@@ -55,7 +44,7 @@ The following definitions for mechanical quantities have been abstracted from pu
 
 *Second*. Unit of time mks system. Symbol sec, dimension T. By international agreement (1960) defined to be 1/31,556,925.9747 of the tropical year 1900. (A "tropical year" is the interval of time between two successive passages of the sun through the vernal equinox.) A more recent international conference adopted provisionally a new definition of the second as the time corresponding to 9,192,631,770 oscillations of the cesium atom in the so-called atomic clock.
 
-### TEMPERATURE SCALES
+### Temperature Scales {#dimmethods-temperature}
 In 1968 the International Committee on Weights and Measures officially adopted the "International Practical Temperature Scale", which is based on the concept of temperature (variable symbol 0, dimension 0) as being that of thermodynamic temperature. The unit magnitude of the International Scale is the degree Kelvin (symbol K). The degree Kelvin is the fraction 1/273.16 of the triple point of water. The Celsius temperature scale is defined in terms of the Kelvin scale as
 $$\theta_c=\frac{1^{\circ}C}{1K}\Big(\theta_k-\theta_0\Big)$$
 where $\theta_c$ is the temperature magnitude on the Celsius scale, $\theta_k$ the temperature magnitude on the Kelvin scale, and $\theta_0$ = 273.15K (the ice point of water). The scale unit of the Celsius temperature is the degree Celsius (symbol $^{\circ}$C), equal in magnitude to the degree Kelvin. Reference point relationships between Kelvin, Celsius, and Fahrenheit scales are:  
@@ -68,7 +57,7 @@ where $\theta_c$ is the temperature magnitude on the Celsius scale, $\theta_k$ t
 The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear and appear as straight lines when graphed.
 
 
-### SUPPLEMENTARY MECHANICAL UNITS (cgs and English systems)
+### Supplementary Mechanical Units {#dimmethods-suppunits}
 *Centimeter*. Unit of length cgs system. Symbol cm, dimension L. Defined to be 1/100 meter.
 
 *Gram*. Unit of mass cgs system. Symbol g, dimension M. Defined to be 1/1000 kilogram.
@@ -85,12 +74,12 @@ The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear 
 
 *Micron*. See micrometer.
 
-### ANGULAR UNITS  
+### Angular Units  {#dimmethods-angularunits}
 *Degree*. Unit of angular measure. Symbol deg or $^{\circ}$ (superscript), dimensionless, Defined as the angle subtended at the center by a circular arc 1/360 the circumference.
 
 *Radian*. Unit of angular measure. Symbol radian, dimensionless. Defined as the angle subtended at the center by a circular arc equal in length to the radius of the circle. 1 radian = 360/2$\pi$ degrees angular measure.
 
-### DERIVED UNITS  
+### Derived Units  {#dimmethods-derived}
 *Atmosphere*. Unit of pressure. Symbol atm, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Defined to be the pressure exerted by dry atmosphere, 0$^{\circ}$C, at mean sea level. Equivalent to $1.013250 \times 10^6 dyn\cdot cm^{-2}$ in cgs units.
 
 *Bar*. Unit of pressure. Symbol bar, dimension FL$^{-2}$ or ML$^{-1}$T$^{-2}$. Equal to $10^5 nt\cdot m^{-2}$ in mks units.
@@ -125,7 +114,7 @@ The relationships between the Kelvin, Celsius, and Fahrenheit scales are linear 
 An appendix summarizing the SI units and dimensions is attached.
 
 
-### AUXILIARY PREFIXES OF THE METRIC SYSTEM TO INDICATE DECIMAL MULTIPLES AND SUBMULTIPLES
+### Auxiliary Prefixs of the Metric System {#dimmethods-auxprefixes}
 
 | Multiples and sub-multiples  | Prefix |
 |:---------------------------:|:------:|
@@ -144,51 +133,15 @@ An appendix summarizing the SI units and dimensions is attached.
 |            10^9^            |  giga  |
 |            10^12^           |  tera  |
 
-
-### PROBLEM SET 2
-
-1. Determine the number of 24-hour days in the tropical year 1900.
-
-2. Write algebraic formulae for the relationships between  
-    (a) Kelvin and Fahrenheit temperature,  
-    (b) Celsius and Fahrenheit temperature.
-3. A molecule of water occupies a square cross-sectional area of about 10 $\mathring{A}^2$. How many water molecules are needed to cover a square centimeter of surface?
-
-4. Determine the kinetic energy in ergs of a molecule having a mass of $2.0\times10^{-22}$g and a velocity of $4.0\times10^4$cm$\cdot$sec^-1^.
-
-5. A red blood cell has a diameter of 7.5 microns; express its diameter in units of centimeter length.
-
-6. Write as ordinary magnitudes of the units indicated:  
-    (a) 3.5 milliliters of benzine
-    (b) 3.5 deciliters of seawater
-    (c) 1 kiloyear of Roman Empire
-    (d) 0.04 megawatts of electrical power
-    (e) 2 nanograms of a butterfly's breakfast
-    (f) 0.002 nanograms of proton mass
-    (g) 200.5 picograms of hydronium ion
-    (h) 1.099 micromoles of H~2~SO~4~
-    (i) 1 hectare of rice paddy
-    (j) 10 square dekacentimeters of contiguous quadrat
-
-7. Express the following quantities with appropriate metric prefixes:  
-    (a) 7.35 $\times$ 10^9^ liters
-    (b) 7.35 $\times$ 10^-9^ liters
-    (c) 1,000,000 watts
-    (d) 0.20 $\times$ 10^-5^ moles
-    (e) 8,575,000 microcuries
-    (f) 2.10 $\times$ 10^3^ calories per gram
-    (g) 10^-3^ photons/cm^2^
-
-
-## DIMENSIONAL HOMOGENEITY
+## Dimentional Homogeneity {#dimmethods-homogeneity}
 
 Should we reduce to its fundamental dimensions each of the quantities occurring in a valid physical equation, all *terms* of the equation must then consist of like fundamental dimensions raised to like powers. The equation must be *dimensionally homogeneous*. This is a truism for definitional equations, and for those equations of empirical basis it expresses a condition of physical necessity. The principle of dimensional homogeneity, or its equivalent, is the basic axiom for the operational rules in the general method of *dimensional analysis*.
 
-### THE DIMENSIONAL CONSTRAINTS ON DEFINITIONAL AND EMPIRICAL EQUATIONS
+### The Dimentional Constraints on Definitional and Empirical Equations {#dimmethods-constraints}
 
 The principle of homogeneity applies to equations of purely dimensional content, and it applies to equations that contain scale magnitudes and quantities of measurement. It excludes any equation that might be mathematically complete but physically meaningless. For example, the equation
 
-$$x + y =x + y$$
+$$x + y = z$$
 
 where $x + y$ sums to a quantity $z$, is mathematically correct for numbers. But let $x$ and $y$ have dimensional content. Let $x$, say, be the displacement of a uniformly accelerated body starting from rest, and let $y$ be its velocity over time. Accordingly,
 $$y=at\;\mbox{, }\;x=\frac{1}{2}at^2$$
@@ -278,7 +231,7 @@ Hence, our equation is dimensionally homogeneous; its dimensions are those of ac
 $$LT^{-2}=\frac{MLT^{-2}}{M}=\frac{F}{M}$$
 which are the dimensions of force per unit mass (of fluid).
 
-### INTENSIVE AND EXTENSIVE PROPERTIES
+### Intensive and Extensive Properties {#dimmethods-properties}
 Properties that depend on the total quantity of matter (or total effect) being measured are called **extensive** properties. If we take twice as much matter of a given substance, for example, it will contain twice as much volume and twice as much mass, implying that mass and volume are to be regarded as extensive properties of a substance. Properties independent of the quantity of matter or total effect being measured are called **intensive** properties. The density of a substance and its temperature are examples of the intensive properties of the substance. The density of water, say, is the same--under similar conditions--whether we measure one cupful or one cubic kilometer. Intensive properties are properties of the substances themselves, and, like the density of water, can be used in the identification of a substance, since, generally speaking, unlike substances differ in their intensive properties. The name of an intensive property will often bear the prefix "specific". Examples are specific volume (the volume occupied by a unit mass of a substance) and specific luminous intensity (the luminous intensity per unit area of source).
 
 Physical equations often contain a mixture of intensive and extensive quantities, but the principle of dimensional homogeneity still holds. When multiplied by density $\rho$, for example, our last sample equation becomes
@@ -289,7 +242,7 @@ which, of course, is typical of all the terms. We can also write the term dimens
 $$ML^{-2}T^{-2}=MLL^{-3}T^{-2}=\frac{MLT^{-2}}{L^3}=\frac{F}{L^3}$$
 which are the dimensions of force per unit volume (of fluid).
 
-### CONVERSION FACTORS
+### Conversion Factors {#dimmethods-conversion}
 Very often the magnitude of a quantity must be transformed from one set of scale units to a different set of scale units (pounds to grams, miles per hour to meters per second, and so on). Such a transformation is commonly called a conversion of units, and conversions between two units can be made whenever the two units have the same dimensions (pounds and grams both have dimension $M$, miles per hour and meters per second both have dimensions $LT^{-1}$, and so on), and whenever we know the equation (the identity) that relates the two units. To convert, say, the magnitude of the mass of some object from units of pounds to units of kilograms, we make use of the identity
 $$1 lb=0.45359237kg$$
 or the identity
@@ -383,7 +336,62 @@ $$\frac{1.600g}{1cm^3}=\frac{1.600\rlap{--}g}{1\rlap{-----}cm^3}\Big(\frac{1\rla
 $$1.600g\cdot cm^{-3}=0.9248oz\cdot in^{-3}$$
 which is the desired conversion.
 
-### PROBLEM SET 3
+## Problem Set {#dimmethods-problems}
+
+PROBLEM SET 1
+
+1. Employ the dimensional set $M$ (mass), $V$ (velocity), $T$ (time), and do the following exercise. The attached solutions may be consulted if necessary.  
+    (a) The linear acceleration of a particle can be envisioned as the increase or decrease in the velocity of the particle, measured over a short time period. Write the dimensions of linear acceleration.  
+    (b) The magnitude of force on a body wholly free to move can be calculated as the product of the body's mass and its linear acceleration. Write the dimensions of mechanical force.  
+    (c) The instantaneous kinetic energy of a moving body is proportional to the mass of the body and to the square of its linear speed. Write the dimensional formula for kinetic energy.
+
+2. Employ the dimensional set $M$ (mass), $L$ (length), $T$ (time), and do (a), (b), (c) of Exercise 1.
+
+3. Employ the dimensional set $F$ (force), $L$ (length), $T$ (time), and do the following exercise.  
+    (a) Problem (c) of Exercise 1.  
+    (b) The work done in moving the body of Problem 1(c) is equivalent to the product of the force acting on the body and the distance the body moves while the force is being applied. Write the dimensional formula for mechanical work.  
+    (c) Power is defined as the time rate of energy expenditure (or, equivalently, as the rate at which work is done). Write the dimensional formula for the power of the agency that imparts the motion to the body of Problem 3(b).
+    
+4. Employ the dimensional set $M$, $L$, $T$ and do (b), (c) of Exercise 3.
+
+5. In the mks system of measurement, the meter (m) is the unit standard of length, the kilogram (kg) the unit standard of mass, and the second (sec) the unit standard of time. The derived unit of force in the mks system is called the "newton" (nt), the derived unit of energy is called the "joule", and the derived unit of power is called the "watt". Employ the mks system of measurement and write the unit magnitudes of the corresponding quantities described in Exercises 2, 3, 4.
+
+PROBLEM SET 2
+
+1. Determine the number of 24-hour days in the tropical year 1900.
+
+2. Write algebraic formulae for the relationships between  
+    (a) Kelvin and Fahrenheit temperature,  
+    (b) Celsius and Fahrenheit temperature.
+3. A molecule of water occupies a square cross-sectional area of about 10 $\mathring{A}^2$. How many water molecules are needed to cover a square centimeter of surface?
+
+4. Determine the kinetic energy in ergs of a molecule having a mass of $2.0\times10^{-22}$g and a velocity of $4.0\times10^4$cm$\cdot$sec^-1^.
+
+5. A red blood cell has a diameter of 7.5 microns; express its diameter in units of centimeter length.
+
+6. Write as ordinary magnitudes of the units indicated:  
+    (a) 3.5 milliliters of benzine
+    (b) 3.5 deciliters of seawater
+    (c) 1 kiloyear of Roman Empire
+    (d) 0.04 megawatts of electrical power
+    (e) 2 nanograms of a butterfly's breakfast
+    (f) 0.002 nanograms of proton mass
+    (g) 200.5 picograms of hydronium ion
+    (h) 1.099 micromoles of H~2~SO~4~
+    (i) 1 hectare of rice paddy
+    (j) 10 square dekacentimeters of contiguous quadrat
+
+7. Express the following quantities with appropriate metric prefixes:  
+    (a) 7.35 $\times$ 10^9^ liters
+    (b) 7.35 $\times$ 10^-9^ liters
+    (c) 1,000,000 watts
+    (d) 0.20 $\times$ 10^-5^ moles
+    (e) 8,575,000 microcuries
+    (f) 2.10 $\times$ 10^3^ calories per gram
+    (g) 10^-3^ photons/cm^2^
+    
+PROBLEM SET 3
+
 1. Determine the dimensions of the following:  
     (a)$\int_{x_1}^{x_2}mv(x)dv$, where $m$ is the mass of a body and $v$ its velocity along a path from $x_1$ to $x_2$.  
     (b)$\frac{\partial}{\partial x}\int mvdv$  
@@ -423,7 +431,7 @@ where $\vec{q}$ is the vector of heat current density (quantity of heat per unit
 
 10. A phonograph needle makes contact with a record surface over a circular area of diameter 80 $\mu$m. Calculate the pressure on the record when the needle arm weighs 2 ounces.
 
-## ANSWERS AND SOLUTIONS
+## Answers and Solutions {#dimmethods-answers}
 
 PROBLEM SET 1  
 
@@ -656,7 +664,7 @@ p&=F\cdot A^{-1} = (2oz)(980cm\cdot sec^{-2})\Big(\frac{1}{\pi\cdot 1600\mu m^2}
 \end{align*}
 
 
-## REFERENCES
+## References {#dimmethods-references}
 Gray, D.E. (1972) Handbook of the American Journal of Physics, 3rd ed. McGraw-Hill, N.Y.
 
 National Bureau of Standards (1968) The English and metric systems of measurement, NBS Special Publ. 304A.

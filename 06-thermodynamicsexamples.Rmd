@@ -1,3 +1,7 @@
+---
+pagetitle: Thermodynamics Applications
+---
+
 # Thermodynamic Applications {#thermodynamicsexamples}
 
 ***
@@ -5,14 +9,15 @@ Applications of the First Law to Ecological Systems
 
 author: Stevenson, R. D.
 
-## PREFACE
+## Preface {#thermodynamicsexamples-preface}
+
 This module explores applications of concepts presented in another module called 'The First Law of Thermodynamics for Ecosystems.' It focuses on three important ideas: (1) The classical definitions and Laws of Thermodynamics can apply to all biological systems; (2) The First Law of Thermodynamics is a conservation of energy law that allows a researcher to describe mathematically the heat fluxes of any system of interest; and (3) The heat and mass energy balance of organisms have important ecological consequences that are particularly relevant to understanding responses to climate change. A problem set provides examples of the relative importance of work, heat energy exchange, and mass flow.
 
 Students should find this module useful for obtaining an understanding of how thermodynamics can be used in environmental sciences. The focus of this exposition is on the concepts developed in the module "First Law of Thermodynamics for Ecosystems" (Stevenson 1979), although a brief introduction to mass flow and the First Law is given. The problem set presents a variety of examples to further the student's knowledge of relative importance of work and heat and mass flow. An extensive bibliography is included.
 
 ***
 
-## INTRODUCTION
+## Introduction {#thermodynamicsexamples-intro}
 
 The purpose of this module is to illustrate several ways in which the First Law of Thermodynamics can be applied to biological systems. Recall that the First Law can be written 
 
@@ -32,13 +37,13 @@ The reader may find it helpful to consult the Appendix on Units, Symbols, and Di
 
 ***
 
-## APPLICATIONS OF THE FIRST LAW OF THERMODYNAMICS
+## Applications of the First Law {#thermodynamicsexamples-applications}
 
 When thinking of the ecological implications of work for an organism one might imagine an animal moving or a plant transporting fluid. In these cases chemical energy is used to do mechanical work. In accord with the Second Law of Thermodynamics, these are not 100 percent efficient processes and heat is thus liberated.
 
 Heat is usually a negligible component of the energy balance of plants. Interesting exceptions to this general statement are several species of the Araceae family including skunk cabbage, *Lysichitum americanum*; the water lily, *Victoria*; and arum lilies, *Arum italicum* (Fisher 1960, Meeuse 1975).
 
-### Work
+### Work {#thermodynamicsexamples-work}
 
 In contrast, we know from our own experience that during physical exercise we can generate a large amount of heat because of our increased metabolic rate (necessary to do the mechanical work associated with the exercise). While jogging in place or skipping rope there may be no increase of potential energy (such as when climbing a hill) but work is performed by accelerating and decelerating the legs and arms. How the mechanical work is related to increased metabolic rate is currently a topic of interest for comparative physiologists studying locomotion (Bartholomew 1977, Taylor et al. 1970). For our purposes, the metabolic rate can be measured directly and included in the heat energy balance of organisms. To illustrate the case in which $Q = 0$ and work is non-zero, we present a meteorological example that is of interest to the ecologist.
 
@@ -105,7 +110,7 @@ $$ \frac{dT}{dh} = \frac{-g\,m}{C_V + R} = \frac{-9.8ms^{-2} \cdot  0.029 kg mol
 
 Thus the air temperature will be $10 ^{\circ}C$ lower for each kilometer increase in altitude. This is called the adiabatic lapse rate (no external source of heat). In many locations the rising air contains moisture, which condenses as the air rises thus adding the heat of condensation to the dry adiabatic lapse rate. Therefore the "moist adiabatic" lapse rate of about $6 \frac{^{\circ}C}{km}$ is less than the dry adiabatic lapse rate. Interestingly enough the reverse effect, air moving down a mountain, also occurs. These winds are known as foehn winds in the Alps and the Chinook winds in the Rocky Mountains. As the winds come down the leeward side of the mountain the atmospheric pressure increases causing as much as a 15-20 $^{\circ}C$ rise in temperature.
 
-### Examples of Heat Energy Exchange
+### Examples of Heat Energy Exchange {#thermodynamicsexamples-exchange}
 
 The next set of examples is used to illustrate the First Law for systems in which it can be assumed that the work term is zero. Therefore
 \begin{equation}
@@ -133,7 +138,7 @@ where
 
 Equation \@ref(eq:thermex-12) is a general heat flow equation. In most cases except for water vapor flux $LE$, mass exchange can be neglected. Similarly, the system's internal sources of heat energy, photosynthesis and metabolism, are also very small components of the heat energy budget and can usually be ignored. We note, however, there are important exceptions of which the largest group includes endothermic vertebrates, birds and mammals. The other terms $Q_a$, $Q_e$, $LE$, $C$, $G$ of equation \@ref(eq:thermex-12) represent the basic heat transfer processes that were described in the first module entitled "The First Law of Thermodynamics for Ecosystems."
 
-The first example we wish to consider is the heat energy budget of the earth. Since the average temperature of both the earth and the atmosphere is not changing with time we assume $\Delta U = 0$. Therefore the sum of the heat fluxes is zero, thus
+The first example we wish to consider is the heat energy budget of the earth. For the simplicity of the following example, we will for the moment put asie anthropogenic global warming, and assume the average temperature of both the earth and the atmosphere are not changing with time. Thus, we assume $\Delta U = 0$. Therefore the sum of the heat fluxes is zero and
 \begin{equation}
 0 = Q_a - Q_e -LE -C 
 (\#eq:thermex-13)
@@ -220,7 +225,7 @@ To find out whether or not the energy budget influences the activity time of the
 knitr::include_graphics('figures/fig-thermex-5.png')
 ```
 
-### The First Law Generalized to Include Mass Flow 
+### The First Law Generalized to Include Mass Flow  {#thermodynamicsexamples-firstlaw}
 
 The final example we wish to consider is Lindeman's (1942) work on the energy flow in Cedar Bog Lake. This is a classic paper describing the energy flow through an ecosystem. What we wish to point out is that a more general form of the First Law of Thermodynamics also encompasses the theory behind Lindeman's research.
 
@@ -250,7 +255,7 @@ There are three important ideas in this module for the reader to remember: First
 
 ***
 
-## PROBLEMS
+## Problem Set {#thermodynamicsexamples-problems}
 
 1. Using the data in Figure \@ref(fig:fig-thermex-1), show that the First Law holds for the earth's surface and the earth's atmosphere.
 
@@ -272,7 +277,7 @@ b) Assume a horse drinks 10 gallons of water at 20°C and urinates it at 38°C d
 
 8. In the last section of the module we commented on the interaction of regulation of body temperature and the acquisition of food energy. Describe the steps necessary to convert energy in the environment to usable chemical energy for the body. During each step of the process what is the importance of the thermal environment for a poikilotherm and a homeotherm?
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#thermodynamicsexamples-answers}
 
 1. At the earth's surface incoming = outgoing or 105 + 24 + 17 + 6 = 101 + 18 + 23 + 10. For the earth's atmosphere incoming = outgoing or 101 + 23 + 10 + 19 = 105 + 48.
 
@@ -420,7 +425,7 @@ Figure \@ref(fig:fig-thermex-10b) shows the response to the processing of food. 
 
 No one to my knowledge has written about the relation of the work done to the environment by the animal during locomotion and the heat production, and thus thermal balance during this exercise, but some data exists for birds and insects during flight (Tucker 1973, Weis-Fogh 1972) and terrestrial locomotion (Cavagna et al. 1977). Burton (1966, Chapter 11) gives a good discussion of this topic as it applies to the heart. At rest the heart is only about 3% efficient; that is, 97% of the chemical energy it uses is converted into heat. At higher work loads this efficiency doubles, though, with little increase in heat load.
 
-## LITERATURE CITED
+## Literature Cited {#thermodynamicsexamples-litcited}
 
 Bartholomew, G. A. 1977. Chapter 3; Energy Metabolism; and Chapter 8; Body Temperature and Energy Metabolism. M. S. Gordon, ed. In Animal Function: Principles and Adaptation. Macmillian Company, New York. 
 
@@ -471,9 +476,9 @@ Wilke, D. R. 1975. Thermodynamic errors by international commission. Nature 257:
 
 ***
 
-## BIBLIOGRAPHY
+## Bibliography {#thermodynamicsexamples-bibliography}
 
-### General Texts and Papers on Energy Budgets
+### General Texts and Papers on Energy Budgets {#thermodynamicsexamples-gen}
 
 Agricultural Meteorology. 1965. Meteorological Monographs, American Meteorological Society, Boston, Mass. Vol. 6:28. 
 
@@ -525,7 +530,7 @@ Van Wijk, W. R. (ed.). 1963. Physics of Plant Environment. North-Holland Publish
 
 Weigert, R. G. (ed.). 1976. Ecolog1c..1 Energetics. Benchmark Papers in Ecology/4. Dowden, Hutchir r,, lid Ross, Inc., Stroudsburg, PA.
 
-### Meteorology
+### Meteorology {#thermodynamicsexamples-meteorology}
 
 Byers, H. R. 1974. General Meteorology. McGraw-Hill Book Co., New York. 461 pp.
 
@@ -548,7 +553,7 @@ Monteith, J. L. 1972. Survey of Instruments for Micrometeorology. IBP Handbook N
 
 SellArs, W. D. 1965. Physical Climatology. Univ. Chicago Press, Chicago. 272 pp.
 
-### Thermodynamics and Heat Transfer
+### Thermodynamics and Heat Transfer {#thermodynamicsexamples-themandheat}
 
 Abbott, M. M. and H. C. Van Ness. 1977. Thermodynamics. Schaum's Outline Series. McGraw-Hill Book Co. 346 pp.
 

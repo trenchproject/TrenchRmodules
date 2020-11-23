@@ -1,19 +1,24 @@
-# Calculus-Differentiation. {#calcdiff}
+---
+pagetitle: Calculus Differentiation
+---
+
+# Calculus-Differentiation {#calcdiff}  
 
 author: Hertzberg, R. H.
 
-## PREFACE
-This module is used to introduce the biology student to differential calculus, a branch of mathematics that is often used in ecological and physiological models. Since biological systems are dynamic, their mathematical models must describe rates of change of relevant variables,a process which requires calculus. The module introduces modeling in biology by reviewing differential calculus and using only examples from life sciences. A problem set reviews information in the text proper and presents additional information not included in the text. The module uses computer programming to graphically check the user's own calculations and to demonstrate the validity of general solutions.
+## Preface {#calcdiff-preface} 
+
+This module is used to introduce the biology student to differential calculus, a branch of mathematics that is often used in ecological and physiological models. Since biological systems are dynamic, their mathematical models must describe rates of change of relevant variables, a process which requires calculus. The module introduces modeling in biology by reviewing differential calculus and using only examples from life sciences. A problem set reviews information in the text proper and presents additional information not included in the text. The module uses computer programming to graphically check the user's own calculations and to demonstrate the validity of general solutions.
 
 
-## INTRODUCTION
+## Introduction  {#calcdiff-intro}
 
 Differential calculus is being used more often in recent ecological and physiological models as data become more precise and the processes become better understood. Since most biological systems are dynamic, their mathematical models must describe rates of change, not just current values, of the relevant variables. Although most models consider changes over time, the techniques of calculus depend only on the mathematical function involved and thus any independent variable may be used, such as spatial dimensions, organism weight, temperature, etc. As a result, the implications from a model of one process may be applied to the model of a different process as long as the mathematical functions involved are the same.
 
 
-## FUNCTIONS OF ONE VARIABLE
+## Functions of One Variable  {#calcdiff-onevariable} 
 
-### Rates of Change
+### Rates of Change  {#calcdiff-ratesofchange} 
 
 The simplest graph of a dynamic relationship is a straight line. The equation for a straight line is
 
@@ -79,7 +84,7 @@ Table 2.1 gives the more common functions and their derivatives. For a more comp
 |  sin $x$  |    cos $x$   |
 |  cos $x$  |   -sin $x$   |
 
-### Composite Functions
+### Composite Functions  {#calcdiff-compositefunctions} 
 
 When a function is composed of several simple functions its derivative can be evaluated in stages. In the simple cases where $y$ equals the sum or product of two functions, $f(x)$, $g(x)$, the rules for differentiation (finding the derivative) are:
 $$y(x)=f(x)+g(x),\;\;\;\;\frac{dy}{dx}=\frac{df}{dx}+\frac{dg}{dx}$$
@@ -105,7 +110,7 @@ Write $u(t)$ as $u=-be^{v(t)}$ where $v=-kt$. Then
 $$\frac{dv}{dt}=-k,\;\;\;\;\frac{du}{dt}=\frac{du}{dv}\frac{dv}{dt}=-be^v(-k)$$
 $$\frac{dN}{dt}=\frac{dN}{du}\frac{du}{dv}\frac{dv}{dt}=ae^u(-be^v)(-k)=abke^{-be^{-kt}}\cdot e^{-kt}$$
 
-### Higher Derivatives
+### Higher Derivatives  {#calcdiff-higherderivatives} 
 The derivative $dy/dx$ of a function $y(x)$ is called the **first derivative** of $y(x)$. If we write
 $$\frac{dy}{dx}=g(x)$$
 then differentiating $g(x)$ produces
@@ -115,7 +120,7 @@ which is called the **second derivative** of $y(x)$, and is written $\frac{d^2y}
 Other notation used for the first derivative includes $y'$ and $\dot{y}$, for the second derivative, $y''$ and $\ddot{y}$. Since the second derivative is also a function, it too can be differentiated to give the third derivative, and so on. The $n^{th}$ derivative is written (there is no general dot notation)
 $$\frac{d^ny}{dx^n},\;\;\;\; y^{[n]}$$
 
-### Critical Points
+### Critical Points  {#calcdiff-criticalpoints} 
 The first and second derivatives can be used to determine three special points on the graph of the function, namely, the relative maxima, relative minima and the inflection points. The relative maximum is easily visualized: the curve rises, reaches a peak, and then falls. The peak is the relative maximum. It is **relative** because the curve may rise even higher in a different place on the graph. Similarly, the relative minimum constitutes a low point on the curve. An inflection point is best illustrated by an example.
 
 The logistic growth function describing population size is
@@ -154,11 +159,28 @@ and then substituting into the original expression for $N$,
 $$N_1=N_0(1+b)(1+be^{-k(\frac{1}{k}ln\,b)})^{-1}=N_0(1+b)/2$$
 this says that the growth rate is highest when the population is one-half of the carrying capacity.
 
-## FUNCTIONS OF SEVERAL VARIABLES
+## Functions of Several Variable  {#calcdiff-severalvariables} 
 
-### Partial Derivatives
+### Using Flow Diagrams  {#calcdiff-flowdiagrams} 
 
-The models treated thus far involve functions of one variable. Oxygen uptake is given as a function of just the surrounding oxygen concentration. The population size depends only on time. A more complicated model, however, may involve many variables. Growth certainly depends on available food supply in addition to time. Oxygen consumption also depends on more factors than ambient oxygen concentration. One such model is discussed by Bayne, Thompson and Widdows (1973).
+Flow diagrams can be used to help visualize the model being evaluated. The following example from *A Biologist's Guide to Mathematical Modeling in Ecology and Evolution* by Otto and Day models the spread of a flu virus, using two populations: $N(t)$ as the population with the flu, and $S(t)$ as the population without (susceptible to) the flu.
+
+```{r fig-calcdiff-6-2, echo=FALSE, fig.height=4, out.width = "75%", fig.cap='Flu Model'}
+knitr::include_graphics('figures/fig-calcdiff-6-2.png')
+```
+In the flu model, we assume that individuals with the flu interact with susceptible individuals at a rate proportional to $N(t) S(t)$. Specifically, an infected individual has a probability $c$ of contacting any $S(t)$ susceptible individuals per day, giving a total number of contacts per day of $c S(t)$ per infected individual. With $N(t)$ infected individuals in the population, we expect a total of $c N(t) S(t)$ contacts per day across the whole population. The probability that any one contact results in the transmission of the influenza virus is $a$, and therefore we expect a total of $a c N(t) S(t)$ new cases of flu per day.
+
+To write a differential equation from this flow diagram, follow this "recipe":
+
+$$\frac{d(n(t))}{dt}=\mbox{the flow rates along arrows entering the circle + the flow rates along arrows leaving and returning to the circle - the flow rates along arrows exiting the circle}$$
+Using this recipe and the flow diagram, the resulting differential equations for the two populations are
+
+$$\frac{d(N(t))}{dt}= a c N(t)S(t)$$
+$$\frac{d(S(t))}{dt}= -a c N(t)S(t)$$
+
+### Partial Derivatives  {#calcdiff-partialderivatives} 
+
+The oxygen model treated thus far involves one variable: oxygen uptake is given as a function of just the surrounding oxygen concentration. The population size depends only on time. A more complicated model, however, may involve many variables. Growth certainly depends on available food supply in addition to time. Oxygen consumption also depends on more factors than ambient oxygen concentration. One such model is discussed by Bayne, Thompson and Widdows (1973).
 
 The model begins with the equation
 \begin{equation}
@@ -231,7 +253,7 @@ Q=1.87(m+1)W^{(0.7)}
 \end{equation}
 This last expression is similar in form to \@ref(eq:calcdiff-5) and its graph has a similar shape. Problem 3 discusses \@ref(eq:calcdiff-7) in more detail.
 
-### Critical Points in Three Dimensions
+### Critical Points in Three Dimensions  {#calcdiff-criticalpoints3} 
 
 The extension of a critical point to functions of two variables is quite natural. A point $P=(x_0,\;y_0,\;z_0)$ is a critical point for the function
 $$z=f(x,y)$$
@@ -266,7 +288,7 @@ knitr::include_graphics('figures/fig-calcdiff-10.png')
 knitr::include_graphics('figures/fig-calcdiff-11.png')
 ```
 
-## BIBLIOGRAPHY
+## Bibliography  {#calcdiff-bibliography} 
 
 **CALCULUS**
 
@@ -304,7 +326,7 @@ Nay, R., 1978. "Mathematical Aspects of the Dynamics of Animal Populations," in 
 
 Sladen,13. 1969. "The Ecology of Animal Communities," in Biology of Populations, Sladen, B. and F. Bang, eds., Elsevier, New York.
 
-## PROBLEM SET
+## Problem Set  {#calcdiff-problems} 
 1. a. The logistic population growth function satisfies the differential equation
 $$\frac{dx}{dt}=Ax(N-x)$$
 where $x=x(t)$ is the population size and $N$ is the carrying capacity of the environment. Use this equation to show that the maximum growth rate (max $dx/dt$) occurs at the inflection point $x=N/2$. Assume $A$ is positive. (HINT: write the equation with $v = dx/dt$, and set $dv/dx = 0$).
@@ -372,7 +394,7 @@ with
 $$d=(2a/\omega)^{1/2}$$
 Be sure to verify that this function satisfies the diffusion equation **and** the boundary conditions.
 
-## ANSWERS TO THE PROBLEM SET
+## Answers to the Problem Set  {#calcdiff-answers} 
 
 1. a. Find the $x$ which gives max$(dx/dt)$. Differentiate $dx/dt$ **with respect to $x$**, equate to zero and solve for $x$:
 $$\frac{d}{dx}(\frac{dx}{dt})=A(N-2x)$$
@@ -487,7 +509,7 @@ Substituting for $d$, we obtain
 $$\omega = 2a/[(2a/\omega)^{1/2}]^2=\omega$$
 Thus the equation is indeed satisfied.
 
-## ADDITIONAL PROBLEMS
+## Additional Problems  {#calcdiff-problems2} 
 
 1. In the example in the text treating oxygen consumption(see also problem 3 above), the oxygen consumption $(Q)$ depended on both the activity level $(m)$ and the dry weight $(W)$:
 $$Q=0.00187(m+1)W^{0.7}$$
@@ -543,7 +565,7 @@ where $P1$ and $P2$ depend on certain body characteristics and on the maximum do
 
 Find the dose that has "maximum sensitivity," i.e. where the **rate of increase** of $Y$ is greatest. Is this "critical point" a maximum or minimum for $Y$"? What is this point called on the graph for $Y$?  
 
-## ANSWERS TO THE ADDITIONAL PROBLEMS
+## Answers to the Additional Problems  {#calcdiff-answers2} 
 
 1. $\partial z/\partial x=(0.00187y^{0.7})=$constant for given $y$.  
 Exposed profile should be a straight line.  

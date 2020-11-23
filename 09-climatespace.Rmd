@@ -1,4 +1,5 @@
 ---
+pagetitle: Climate Space
 output:
   pdf_document: default
   html_document: default
@@ -9,10 +10,11 @@ The Climate Space Concept: Analysis of the Steady State Heat Energy Budget of An
 
 author: Stevenson, R. D., R code and example by Kearney, M. R.
 
-## PREFACE
+## Preface {#climatespace-preface}
+
 Several modules in the thermodynamic series considered the application of the First Law to biological systems and the heat transfer processes that govern the energy balance of organisms. This module discusses a model for which the animal's temperature is not changing with time. The concept 'climate space' is used as a means for quantifying the limits of an animal's thermal environment. These limits are discussed in detail and methods for calculating these limits are described. A problem set is used to check the assumptions of the climate space model as well as to extend it. A background in heat transfer processes is recommended.
 
-## INTRODUCTION
+## Introduction {#climatespace-intro}
 
 In earlier modules of the thermodynamics series, we considered the application of the First Law to biological systems (Stevenson 1977a and b) and the heat transfer processes which govern the energy balance of organisms (Stevenson 1978). The general heat budget equation for animals is 
 \begin{equation}
@@ -34,13 +36,13 @@ Equation \@ref(eq:climatespace-1) is a complicated expression with many independ
 
 In this module we will discuss a model for which the animal's temperature is not changing with time, that is the steady state assumption that $\Delta U = 0$. Porter and Gates (1969) presented the "climate space diagram" to visually display the range of environmental conditions an organism could survive. Subsequently, Monteith (1973) proposed another graphical method to represent the energy balance which we will consider briefly. The works of Hatheway (1978) and Porter et al. (1973) offer alternative methods for understanding an animal's relationship to the physical environment.
 
-## THE THERMAL ENVIRONMENT: BASIS FOR THE CLIMATE SPACE
+## The Thermal Environment: Basis for the Climate Space {#climatespace-thermalenv}
 
 To describe the physical heat energy limits that an organism can tolerate, Porter and Gates (1969) began by examining the abiotic components of the environment. Four climatic factors -- radiation, air temperature, wind speed and humidity -- were recognized as affecting an animal's thermal balance. The authors decided that evaporative losses would be small for many organisms and could be included as maximum and minimum rates without making the losses a function of the humidity.
 
 Tracy (1976) has, however, shown that when investigating the thermal and mass balance of wet-skinned animals such as slugs, frogs and salamanders, the water vapor concentration of the soil and the air must be known to accurately quantify these exchanges. The climate space concept has generally not been extended to include the environmental variable of water vapor concentration. Likewise, the formulation of Porter and Gates (1969) does not consider the effects of wind direction. Nor is surface temperature of the ground explicitly indicated (but see Equation \@ref(eq:climatespace-3) and Appendix I for calculation of $Q_a$). Radiation, air temperature and wind speed, though, which are the physical factors included in the climate space concept, are the most important abiotic variables for the thermal heat balance of most terrestrial animals.
 
-### Absorbed radiation
+### Absorbed radiation {#climatespace-absorbed}
 
 The most complex of the factors Porter and Gates (1969) considered is the absorbed radiation because it is composed of several shortwave and longwave components. In general, $Q_a$ is the product of surface absorptivity, the surface area exposed to a particular source of radiation, and the intensity of that source. This can be written:
 \begin{equation}
@@ -65,7 +67,7 @@ Q_a = \frac{1}{\pi} \bar{a} S + 0.5 [\bar{a}s + \bar{a}r(s+S) + R_g + R_a]
 
 Here it is assumed that: 1) $A_1 = 1/\pi$; 2) scattered sunlight, reflected sunlight, reflected scattered sunlight, ground radiation, and atmospheric radiation strike half the animal (see Siegel and Howell 1972 for calculation of shape factors); 3) the mean absorptivities of the sunlight, scattered sunlight and reflected light are equal to $\bar{a}$; and 4) that the mean absorptivities of the infrared sources are 1.0.
 
-### Environmental Constraints
+### Environmental Constraints {#climatespace-constraints}
 
 The climate space concept derives from the fact that there is a relation between the average incident radiation and the air temperature independent of the organism. It is generally true that warmer air temperatures occur with high radiation levels, i.e., summer or tropical conditions. Likewise colder air temperatures are usually correlated with lower radiation loadings. (Exceptions to this generalization are the high radiation levels in the mountainous regions of lower and middle latitudes during the summer when air temperatures can be low (Porter and Gates 1969).) Thus, we expect a positive correlation between the air temperature $T_a$ and the absorbed radiation $Q_a$ that the organism is exposed to in any given habitat. Initially, Porter and Gates considered a blackbody environment such as a cave or sheltered spot in thick vegetation. The relation between absorbed radiation and air temperature is given by the Stefan-Boltzmann Law and is plotted as the centerline in Figure \@ref(fig:fig-climatespace-1). Next they asked what is the relationship between these two variables when an animal is exposed to a clear sky at night. Under these conditions an object will be receiving energy from the atmosphere which is at a lower temperature than the surrounding air. 
 
@@ -103,9 +105,9 @@ knitr::include_graphics('figures/fig-climatespace-2.png')
 knitr::include_graphics('figures/fig-climatespace-3.png')
 ```
 
-Morhardt and Gates (1974) have considered the temporal variation of $Q_a$ and $T_a$ more carefully. They measured $T_g$, $T_a$, $R_p$ ($= S + s$ on a horizontal surface), $R_g$ and $R_a$ hourly for a summer's day in the Colorado mountains shown as in Figure \@ref(fig:fig-climatespace-2).  These values were used to calculate $Q_a$ for the Belding ground squirrel (*Citellus beldingi beldingi*) from an equation similar to Equation \@ref(eq:climatespace-3). In Figure \@ref(fig:fig-climatespace-3), pairs of $Q_a$ and $T_a$ are plotted as a function of time. Morhardt and Gates made similar calculations for several different microhabitats. Although there were no startling conclusions about how the animal was being influenced by thermal environment, we will consider their study further in the exercises. The next,step in constructing the climate space diagram is to see how the animal is influenced by radiation, air temperature, and wind speed.
+Morhardt and Gates (1974) have considered the temporal variation of $Q_a$ and $T_a$ more carefully. They measured $T_g$, $T_a$, $R_p$ ($= S + s$ on a horizontal surface), $R_g$ and $R_a$ hourly for a summer's day in the Colorado mountains shown as in Figure \@ref(fig:fig-climatespace-2).  These values were used to calculate $Q_a$ for the Belding ground squirrel (*Citellus beldingi beldingi*) from an equation similar to Equation \@ref(eq:climatespace-3). In Figure \@ref(fig:fig-climatespace-3), pairs of $Q_a$ and $T_a$ are plotted as a function of time. Morhardt and Gates made similar calculations for several different microhabitats. Although there were no startling conclusions about how the animal was being influenced by thermal environment, we will consider their study further in the exercises. The next step in constructing the climate space diagram is to see how the animal is influenced by radiation, air temperature, and wind speed.
 
-## PHYSIOLOGICAL CONTRAINTS OF THE ORGANISM
+## Physiological Constraints of the Organism {#climatespace-physiological}
 
 We expect two kinds of limits under steady state assumptions: one area where the environmental conditions make the organism too hot and conversely another area where it would be too cold. Furthermore, we expect an inverse relationship between air temperature and absorbed radiation because the organism must maintain an energy balance. The reader should pause here to make sure that these ideas are intuitive, as shown graphically in Figure \@ref(fig:fig-climatespace-4). Common experience suggests that increasing the air temperature will make the environment hotter, but increasing the absorbed radiation is not as obvious. Most of us, however, are familiar with the midday heat stress common in many areas on a clear summer day. Later in the afternoon when the sun is lower in the sky $Q_a$ will be reduced. Air temperature will also be dropping so that the transition that has occurred can be represented by the arrow labeled 2 in Figure \@ref(fig:fig-climatespace-4). In the wintertime or early morning the reverse is true; the sun will often feel good because it provides the extra energy to move you into the acceptable region as shown with the first arrow. The exact slope and position of these limits will depend on other environmental conditions such as wind speed and characteristics of the organism such as size and insulation. One can think of the limits as the combination of physiological factors that will allow the organism to exist in that environment. For the lower limit of the energy budget calculation of an endotherm we would assume a high metabolic rate and thick insulation.
 
@@ -123,7 +125,7 @@ We will make a climate space diagram for the survivable body temperature limits 
 
 We will use a slightly different version of the calculations above to plot the environmental constraints in R.
 
-### Defining a function for computing the bounding air temperature/radiation combinations
+### Bounding Air Temperature/Radiation {#climatespace-bounds}
 
 The first thing we will do is define a function that computes the bounding combinations of air temperature and radiation that a cylindrical object would absorb on earth. These are to be found in Figure 12 of Porter and Gates (1969). As above, the idea is to provide a range of air temperatures and compute an associated range of radiation levels for three different types of environmental scenarios - 1) the blackbody environment, as approximated in a cave, very deep shade or a room, 2) outdoors at night under a clear sky, and 3) outdoors in full sun.
 
@@ -212,7 +214,7 @@ Qbound <- function(Tair = 20, Tsub = Tair, Zenith = 0, tau = 0.6,
   }
 ```
 
-### Plotting climate space boundaries for a cylinder with varing solar absorptivity
+### Plotting Climate Space Boundaries {#climatespace-plotting}
 
 Now that we have defined the equation for computing bounding values of radiation to go with air temperature under different scenarios, we are ready to make a figure showing these boundary conditions. The figure will be similar to Figure 12 of Porter an Gates (1969) but will be in SI units with a slightly different line for clear night sky conditions (due to the apparent error in Porter and Gates discussed above). 
 
@@ -293,7 +295,7 @@ for(i in 1:length(alphas)){
 }
 ```
 
-### Plotting the climate space of the Desert Iguana
+### Desert Iguana Climate Space {#climatespace-desertiguana}
 
 The diagram we just plotted shows the range of available combinations of air temperature and radiation available to a cylindrical object on earth. Environments within this subset of environmental space will of course have very different ecological implications for different organisms, depending on their physiology and other environmental conditions (wind speed and humidity in particular). 
 
@@ -546,7 +548,7 @@ text(day_hot$Q_abs+50,day_hot$T_air, round(day_hot$T_air,1))
 
 You have now computed the climate space for a dark (0.8 absorptivity) Desert Iguana at low wind speed (0.1 m/s). Now have a go at plotting the climate space of this species at different wind speeds and with the lower value for absorptivity (0.6) and higher wind speeds.
 
-### Plotting the climate space of the Zebra Finch
+### Zebra Finch Climate Space {#climatespace-zebrafinch}
 
 Next we will plot the climate space of an desert endotherm, the Zebra Finch (from Australia), and contrast it with the Desert Iguana. The procedure is almost the same. First, subset the data for the Zebra Finch from the 'climate\_space\_pars' table and convert to SI units as before.
 
@@ -865,7 +867,7 @@ text(day_hot$Q_abs+50,day_hot$T_air, round(day_hot$T_air,1))
 ```
 
 <!--END KEARNEY TEXT -->
-### The Lizard
+### The Lizard {#climatespace-lizard}
 
 To write down the heat energy budget of a lizard we need only sum up the heat transfer components. Initially we consider only three of these components (absorbed radiation, reradiation and convection) because metabolism and water loss are small and they tend to cancel each other out (Porter et al. 1973). The energy entering the system must equal that which is leaving, so
 
@@ -989,7 +991,7 @@ knitr::include_graphics('figures/fig-climatespace-7.png')
 knitr::include_graphics('figures/fig-climatespace-8.png')
 ```
 
-### The Cardinal
+### The Cardinal {#climatespace-cardinal}
 
 Our second and final example is the climate space diagram of the cardinal (*Richmnondena cardinalis*). Several additional terms of the heat energy balance are important here. As in all homeotherms metabolism and water loss are significant sources of heat production and loss which cannot be neglected in the thermal budget. The food necessary to produce metabolic heat energy for thermoregulation is about 85% of the animal's total requirements (Bartholomew 1977). The benefits for this energetic cost probably include both the ability to process food faster and more efficiently and greater independence from the unpredictable patterns of the weather than ectotherms. The cardinal loses the majority of its water by exhaling air saturated with water vapor, although other species of birds may lose up to 50% of their water through their skin (Lasiewski et al. 1966). 
 
@@ -1069,7 +1071,7 @@ knitr::include_graphics('figures/fig-climatespace-10.png')
 
 $M$ and $E_{ex}$ in $W m^{-2}$, $d_f$ and $d_b$ in $m \times 10^{-3}$, $T_b$ and $T_r$ in $^{\circ}C$, $M_b = 0.025kg$. 
 
-### Monteith's Idea
+### Monteith's Idea {#climatespace-monteith}
 
 In Chapter 10 of his book, Monteith (1973) presents a graphical representation of the energy balance equation which has some similarities to the climate space diagram. Instead of using absorbed radiation, he defines a quantity $R_{ni}$ (also see Hatheway 1978) which is equal to $Q_a - (T_a + 273)^4$ to use on the abscissa. Next he derives an expression to represent the heat flow of the organism as though it were simply conducting heat to the environment
 $$(M - E) = \frac{C_a P}{r_{hr}} (T_o - T_e)$$
@@ -1094,13 +1096,13 @@ knitr::include_graphics('figures/fig-climatespace-12.png')
 
 ***
 
-## EXTENSIONS OF THE CLIMATE SPACE IDEA
+## Extensions of the Climate Space Idea {#climatespace-extensions}
 
 The climate space concept can be extended in several ways which we will investigate in the exercises. Heller and Gates (1971) used it in a study of interspecific competition in the genus *Eutamias* (chipmunks). Spotila et al. (1973) were able to incorporate conduction, when they constructed the climate space of the American alligator (*Alligator mississippiensis*). Zervanos and Hadley (1973) used these diagrams in their studies of the thermoregulation of the collared peccary (*Pecari tajacu*). A word of caution is in order, however, concerning this representation of an animal's thermal state. We have assumed thermal equilibrium throughout. Many poikilotherms regularly try to increase their body temperature. Homeotherms also gain and then lose heat diurnally and when exercising. Schmidt-Nielsen et al. (1957) found that the camel stores and releases heat on a daily basis. More careful field measurements will have to be made before the importance of the non-equilibrium states can be ascertained.
 
 ***
 
-## LITERATURE CITED
+## Literature Cited {#climatespace-litcited}
 
 Bartholomew, G. A. 1977. Body temperature and energy metabolism. In Animal physiology: principles and adaptations. MacMillan Publishing Co., New York, pp. 364-448.
 
@@ -1153,7 +1155,7 @@ Zervanos, S. M., and N. F. Hadley. 1973. Adaptational biology and energy relatio
 
 ***
 
-## PROBLEMS
+## Problem Set {#climatespace-problems}
 
 1. Table A provides metabolic rate, water loss, and fur and fat thicknesses for several species of animals. Using this information and Equations \@ref(eq:climatespace-10) and \@ref(eq:climatespace-11), calculate the maximum and minimum temperature differentials across the fat ($T_b - T_s$) and fur layers ($T_s - T_r$). 
 
@@ -1248,7 +1250,7 @@ knitr::include_graphics('figures/fig-climatespace-14.png')
 
 \newpage
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#climatespace-answers}
 
 Equation \@ref(eq:climatespace-10) is 
 $$M-E_{ex}=\frac{k_b}{d_b}(T_b-T_s)$$
@@ -1520,7 +1522,7 @@ If the animal were simply resting outside, to reduce its metabolism to the lowes
 knitr::include_graphics('figures/fig-climatespace-p7.png')
 ```
 
-## Appendix I
+## Appendix I {#climatespace-app1}
 **Calculation of the Right-Hand Limit of the Climate Space**  
 In their original paper, Porter and Gates (1969) state with regard to
 Equation \@ref(eq:climatespace-3), "... An estimate was made of $\overline{Q_a}$ as generally related to air temperature for value of absorptivity from 0.2 to 1.0." Gates (1977) shows how to calculate $S$ and $s$ as a function of latitude, time of year, and time of day. A representative value of 40° was chosen for latitude and then values of $S$, $s$ were calculated under clear sky conditions in the late morning and afternoon. For $r$, a representative value of 0.15 was probably used. Curves of $T_a$ and $T_g$ as a function of time of day such as shown in Figure \@ref(fig:fig-climatespace-2) were then taken from weather bureau statistics. $R_a$ and $R_g$ could then be calculated using the Stefan-Boltzmann law. All the numbers necessary to estimate $\overline{Q_a}$ are then available. The final step is to choose pairs of $T_a$ and $Q_a$ that are to be used. In Figure \@ref(fig:fig-climatespace-3), 9:00-10:00 are hours of the day when this is true. This procedure is repeated at several latitudes and times of the year, from which the right-hand boundary can be derived.
@@ -1528,7 +1530,7 @@ Equation \@ref(eq:climatespace-3), "... An estimate was made of $\overline{Q_a}$
 Campbell (1977 pp.89-92) presents simplified equations to calculate the left- and right-hand boundaries of the climate space. He includes a correction factor to average the longwave radiation from the ground and the sky for the left-hand boundary. The direct beam and diffuse shortwave radiation fluxes are simply given for the right-hand boundary. The reflected shortwave component seems to be included in the diffuse term which at 25% of the direct flux is higher than Gates (1978) gives.
 The absorbed shortwave radiation is then added to the left-hand boundary values. Therefore as $T_a$ increases the shortwave component is constant using Campbell's equations but using Gates' method the shortwave flux increases.
 
-### Appendix II
+### Appendix II {#climatespace-app2}
 **Derivation of the Constant $k_s$ for the Convection Coefficient**  
 Mitchell (1976) reported that the best overall relationship between the Reynolds and Nusselt numbers is given by
 

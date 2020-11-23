@@ -1,18 +1,22 @@
+---
+pagetitle: Mapclim
+---
+
 # Appendix 2. Mapping climate space {#mapclim}
 
 author: Kearney, M. R.
 
-## Introduction
+## Introduction {#mapclim-intro}
 
 This module integrates what you've learnt in the previous modules to make and map calculations of the climatic limits on the distribution of the Desert Iguana. Specifically, you will apply calculations of climate space from module \@ref(climatespace) to the microclimate grids that you worked with in module \@ref(microclim). You will see what the actual climate space available in Australia and North America looks like and then compute where that climate space maps to in physical space in North America.
 
-## Initial setup
+## Initial setup {#mapclim-setup}
 
 First you should set up a folder on your computer to work in, and put the materials for this prac into it. There should be this file and a csv file of the distribution of the Desert Iguana 'dipso\_dist.csv'. You'll also need to add the 'climate\_space\_pars.csv' file you used in module \@ref(climatespace), and the microclimate data you unzipped from module \@ref(microclim) (from the files 'microclim\_aust.zip' and 'microclim\_NAm.zip'). 
 
 Next, as in the previous pracs, open R-Studio and open a new script in which to paste and comment/modify the commands from this document as you go. And, as before, set the working directory to be the folder you created for the prac.
 
-## Getting the climate space available in Australia
+## Getting the climate space available in Australia {#mapclim-australia}
 
 In module \@ref(climatespace) you recreated Figure 12 of Porter and Gates (1969) which shows the bounding combinations of radiation (solar plus infra-red) and air temperature available on earth. Recall that this was an approximation that assumed, unrealistically, that the ground temperature was equal to air temperature when computing the clear night sky bounding curve. It also attempted to capture the fact that sun angles are typically lower in the places with very low air temperatures (except for high tropical mountains), but only very roughly by assuming the zenith angle declined linearly with latitude. 
 
@@ -311,7 +315,7 @@ points(Q_night, T_air, type = 'l',col = 'blue',lwd = 2)
 points(Q_day, T_air, type = 'l',col = 'red',lwd = 2)
 ```
 
-## Mapping the climate space of the Desert Iguana in North America
+## Mapping the climate space of the Desert Iguana in North America {#mapclim-iguana}
 
 In module \@ref(climate space) we computed the climate space of the Desert Iguana in terms of its survivable limits of 3-45 degrees C. Here are those limits for a wind speed of 0.1 m/s mapped onto our North America climate space diagram. This was done simply by  using the code we developed in module \@ref(climate space).
 
@@ -522,7 +526,7 @@ pars[,14:15] <- pars[,14:15] * (4.185 / 60 * 100)
 pars[,c(7:8,11,16)] <- pars[,c(7:8,11,16)] / 100 # convert cm to m
 ```
 
-## Mapping the cold limits of the Desert Iguana
+## Mapping the cold limits of the Desert Iguana {#mapclim-coldlimits}
 
 First, let's work out the radiation required for the Desert Iguana to be 3 degrees C, the low body temperature threshold for survival. This is row one in our dataset. 
 
@@ -620,7 +624,7 @@ points(dipso_dist$lon, dipso_dist$lat, col = "black", cex = 0.5)
 
 What would you conclude about cold as a limiting factor on the distribution of the Desert Iguana at this point?
 
-## Mapping the heat limit of the Desert Iguana
+## Mapping the heat limit of the Desert Iguana {#mapclim-heatlimit}
 
 Now we will repeat the procedure and map the heat limits for the Desert Iguana, but this time in the hottest month, July. Note that we will use the minimum absorptivity observed for the Desert Iguana of 0.6 rather than 0.8 that we used for the cold limit.
 
@@ -700,6 +704,6 @@ map('world', add = TRUE)
 
 What can you say from this analysis about the distribution limits of this lizard? Have you identified any areas as definitely outside the fundamental or 'thermodynamic' niche of this species?
 
-## LITERATURE CITED
+## Literature Cited {#mapclim-litcited}
 
 Porter, W. P., and D. M. Gates. 1969. Thermodynamic equilibria of animals with environment. Ecological Monographs 39:227-244.

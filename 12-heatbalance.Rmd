@@ -1,22 +1,23 @@
 ---
+pagetitle: Heat Balance
 output:
   pdf_document: default
   html_document: default
 ---
-# Heat balance of a sheep. {#heatbalance}
+# Heat Balance of a Sheep {#heatbalance}
 
 Heat Balance of a Sheep in the Sun. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes.
 
 author: Hatheway, W. H. (Note: module was edited to fill in missing pages)
 
 ***
-## PREFACE
+## Preface {#heatbalance-preface}
 
 Using the principle of conservation of energy and Fourier's Law, we show the distribution of temperature in a two-layer model of a sheep. The basic heat transfer processes are reviewed so that the model can be applied to other animals and environments. The problem set forms an important extension, allowing the student to gain insight into the importance of thermal balance to normal animal physiology. This module assumes a mathematical background obtained in a differential equations course.
 
 ***
 
-## INTRODUCTION
+## Introduction {#heatbalance-intro}
 
 In the present module, we will calculate the exchange of heat between an animal and its physical environment. This is a problem of considerable biological importance. An organism's energy balance is crucial to its survival. If it loses heat faster than it takes it or other forms of energy in, then eventually its temperature will drop to that of its surroundings. On the other hand, if the organism takes in heat faster than it gets rid of it, eventually it will become overheated. In both cases, the temperature extremes to which the organism is subjected may be outside the range in which it is able to function effectively or even to survive.
 
@@ -32,7 +33,7 @@ If we assume that the animal is in thermal equilibrium with its environment, our
 
 To fix our ideas, we choose an unshorn domestic sheep as our study organism. The sheep is convenient because it is a familiar animal which has been thoroughly studied by a number of veterinary scientists (e.g., Blaxter, 1962; Brockway, McDonald and Pullar, 1965; Joyce, Blaxter and Park, 1966). In addition, the energy balance of the sheep has been studied by Priestley (1957), Monteith (1973), Porter and Gates (1969), and Vera et al. (1975). Experimental work by Walsberg et al. (1978) and theoretical studies have shown that under certain environmental conditions it becomes important to take into consideration the penetration of radiation and wind into the wool. These complications are not included in the present model, which must therefore be considered only a first approximation to a more correct approach. In the present module, we adopt the general method of analysis put forward by Porter and Gates, but in may details we follow Priestley and, in some cases, Monteith.
 
-## ENERGY BALANCE
+## Energy Balance {#heatbalance-energybalance}
 
 Assuming that an animal's body temperature is constant (steady state), energy input to the animals must equal energy out. We can write the animal's energy balance as follows:
 \begin{equation}
@@ -41,7 +42,7 @@ M + R_+ = R_- + C + H + E
 \end{equation}
 where $M$ is the metabolic rate, $R_+$ is the amount of radiation absorbed by the animal surface, $R_-$ is the thermal radiation emitted from the animal surface, $C$ is the heat conducted from the animal to any surface it is in contact with, $H$ is the heat loss from the animal to the environment via convection, and E is evaporative heat loss.
 
-## HEAT TRANSFER BY CONDUCTION WITHIN THE ANIMAL
+## Heat Transfer by Conduction Within the Animal {#heatbalance-conduction}
 Heat is conducted between the surface of the animal and the body core with the direction determined by the relative temperatures of the animal's core and surface. Heat transfer can be modeled by approximating the animal as a series of concentric cylinders (Figure \@ref(fig:fig-heatbalance-1)). Within the animal's core, metabolic heat production is offset by respiratory moisture loss to determine the animal's core body temperature $T_b$. We additionally indicate the skin ($T_s$), fat layer ($T_f$), hair tip ($T_h$), and air ($T_a$) temperatures. 
 
 Heat is conducted within the animal based on the thickness of each layer. Boundary layer thickness, which determines rates of conduction, is proportional to the two-roots root of the diameter of the animal and is influenced by surface roughness, shape, and orientation.  The distances from the core are indicated by the radii of cylinders corresponding to the body ($r_b$), skin ($r_s$), and hair tips ($r_h$). 
@@ -141,7 +142,7 @@ M=E_r+\frac{E_s}{1+\frac{Z_f}{Z_h}}+\frac{T_b-T_h}{Z_h+Z_f}
 \end{equation}
 This important equation governs the rate of heat movement away from the animal's body. Body heat produced by metabolism $M$ is removed by evaporative losses due to respiration $E_r$ and sweating $E_s/(1 + Z_f/Z_h)$ and by conduction of sensible heat to the fleece tips $(T_b - T_h)/(Z_h + Z_f)$. 
 
-## HEAT LOSS BY CONVECTION
+## Heat Loss by Convection {#heatbalance-convection}
 We can then return to heat flow between the sheep and the external environment to calculate heat exchange via convection with the air. The sheep exchanges heat with the surrounding air at a rate determined by the temperature difference between the surface of the animal $T_h$ and the air $T_a$. The rate is also determined by the sheep's surface area exposed to the air, which we approximate here the surface area of the animal at the fleece tips $A_h$. Convection can be estimated as follows
 \begin{equation}
 H= H_L A_h(T_h-T_a)
@@ -182,7 +183,7 @@ knitr::include_graphics('figures/fig-heatbalance-3.png')
 
 It is also possible to calculate the heat lost by "free convection," which is important when wind speed is less than $1 m s^{-1}$. In this case, the buoyancy of heated air is a dominant factor in the transfer of heat away from the animal. Calculation of $H$ in this "unstable" case involves determination of the "Grashof number," which must be used in place of the Nusselt number. A problem involving free convection is offered as one of the exercises for this module.
 
-## HEAT LOSS BY RADIATION
+## Heat Loss by Radiation {#heatbalance-radiation}
 All warm bodies lose heat energy by emitting long-wave thermal radiation according to the Stefan-Boltzmann law:
 \begin{equation}
 R_\_=\varepsilon A_h\sigma T_h^4
@@ -194,7 +195,7 @@ To obtain a rough estimate of heat loss by radiation, we substitute the followin
 $$R_\_=(\pi \cdot 0.5 \cdot 1)(1 \cdot 5.67 \cdot 10^{-8} \cdot 293^4)= 656 W,$$ 
 assuming $\varepsilon=1$ and $T_h$= 293K and using $\sigma=5.67 \cdot 10^{-8} W M^{-2}K^{-4}$. 
 
-## HEAT GAINED BY ABSORPTION OF RADIATION
+## Heat Gained by Absorption of Radiation {#heatbalance-raduationgain}
 We next consider heat gained by the absorption of radiation including direct solar and sky radiation, reflected solar radiation, and long-wave radiation from the ground and air (Figure \@ref(fig:fig-heatbalance-2))
 
 ```{r fig-heatbalance-2, echo=FALSE, fig.height=5, fig.show = "hold", out.width = "100%", fig.align = "default",  fig.cap='Energy gained by sheep from envrionment. Symbols are as follows: S = direct solar radiation, s = sky radiation, $R_s$ = reflected solar radiation; $R_g$, $R_a$ = long-wave (thermal) radiation from ground and air, respectively.'}
@@ -202,19 +203,19 @@ knitr::include_graphics('figures/fig-heatbalance-2.png')
 ```
 
 
-### Direct Solar Radiation
+### Direct Solar Radiation {#heatbalance-direct}
 We may make an approximate calculation of $a_1A_1S$, the direct solar radiation absorbed by the sheep's body in unit time, if we consider the amount of sunlight intercepted by a cylinder of diameter $d$ and length $L$. Clearly, if the sun is directly overhead, the shadow cast by the cylinder on the ground has area $dL$. It follows immediately that the surface of the cylinder absorbs the same amount of radiation as would a plane of area $dL$. (The average amount of energy absorbed per unit area of the cylinder is then $a_1 (dL) S/(\pi dL/2) = 2a_1 S/\pi(W m^{-2})$, since the cylinder presents half its area to the sun.) As long as the sheep maintains its body at right angles to the sun, it intercepts the same fraction of incoming solar radiation.
 
 We obtain an estimate of the total direct solar radiation absorbed by the animal by substituting the following values for our parameters:  
 $a_1 = 0.74$; $A_1 = dL = 0.5\cdot1.0$; and $S = 1046.7 W m^{-2}$, the value corresponding to a clear June 21 day at latitude 40°N at about 10 A.M. or 2 P.M. (Bartlett and Gates, 1967). Then $a_1A_1S = 387 W$.
 
-### Sky Radiation
+### Sky Radiation {#heatbalance-sky}
 The sheep exposes an area $A_2=\pi dL/2 \;m^2$ of its upper surface (half the area of the cylinder, neglecting the ends) to diffuse radiation coming in from the sky. Then the total sky radiation absorbed is $a_2 A_2 s = a_2 \pi dLs/2$. Since sky radiation intensity is about $27.9 W m^{-2}$ (Bartlett and Gates, 1967), we calculate this component of $A Q_{abs}$ as $(0.74)(\pi\cdot0.5\cdot1.0)(27.9)/2 = 16 W$.
 
-### Reflected Short-Wave Radiation
+### Reflected Short-Wave Radiation {#heatbalance-reflected}
 The sheep's lower surface absorbs direct and scattered solar radiation that has been reflected from the grassy surface on which it stands (Fig. 3). If the grass reflectivity is 0.25 (Monteith, 1973), and if one-third of the solid angle is occupied by the sheep's shadow, the radiation received will be approximately $(0.25)(2/3)(0.74)(\pi\cdot0.5\cdot1.0/2)(1047.7+27.9)=104W$.
 
-### Long-Wave Radiation
+### Long-Wave Radiation {#heatbalance-longwave}
 The sheep is also heated by thermal radiation emitted from sky ($R_a$) and ground ($R_g$). As Priestley (1957) pointed out, development of a correct model for long-wave radiation absorbed by the sheep is a difficult problem. The major complication arises from sky radiation, which is imperfectly understood. Both Priestley (1957) and Bartlett and Gates (1967) rely on an empirical formula due to Brunt (1939) to calculate sky thermal radiation. Brunt's formula is $R_a = 1.04 B$ where $B = (0.44 + 0.08\sqrt e)\sigma T_a^4$. In this expression, $e$ is the vapor pressure of the atmosphere (millibars), $\sigma$ is Stefan's constant ($5.67\times 10^{-8} W m^{-2} K^{-4}$) and $T_a$ is the air temperature (K). Then the sky component of the long-wave radiation absorbed by the sheep is $a_4A_4R_a = 1.04 BA_4$, in which $A_4 = \pi dL/2$. To calculate $B$, we take $e = 10 mb$, and $T_a = 10^\circ C = 283 K$. Then $B = (0.69)(5.67\times10^{-8})(283^4) = 251 W m^{-2}$ and the component due to atmospheric long-wave radiation is $205 W$.
 
 
@@ -225,13 +226,13 @@ $$(\pi\cdot0.5\cdot1.0/2)(1.04\cdot251-5.67\times10^{-8}\cdot283^4)=-81W$$
 
 Since net gain is negative, we conclude that the animal suffers a net long-wave radiative loss of $81 W$ at its surface.
 
-## METABOLIC HEAT
+## Metabolic Heat {#heatbalance-meta}
 Porter and Gates (1969) have calculated estimates of $M$ for several 
 animals, including sheep, based on published data for animal oxygen consumption. Consumption of O~2~ implies oxidation of protein, fat, or carbohydrate. Since the heat released in each of these reactions is known, the Porter-Gates method consists essentially of identification of the animal's diet and conversion of quantity of O~2~ consumed to amount of metabolic energy produced. This method is most useful in studying animal species in which metabolic data are not readily available.
 
 It probably comes as no surprise to the reader to learn that metabolic rates of domestic animals such as sheep have been thoroughly studied by veterinary scientists. Brockway, McDonald, and Pullar (1965) describe a fascinating series of experiments in which total, sensible, and evaporative heat losses in sheep were carefully measured by direct calorimetry. For an animal maintained at 15°C with a fleece depth of 0.1 m, total heat loss by all routes was 132 kJ kg^-1^ day^-1^. Total evaporative heat loss was 52.3 kJ kg^-1^ day^-1^, of which 41.9 kJ was due to respiratory evaporation. Sweating heat loss was approximately 12.6 to 20.9 kJ kg^-1^day^-1^ regardless of temperature. The authors suggest that, since sheep have little or no physiological control over sensible heat loss, variation in respiratory evaporation heat loss is the chief means by which sheep adjust to their environment. When the weather is hot, they are obliged to pant!
 
-## AN ENERGY BALANCE CALCULATION
+## An Energy Balance Calculation {#heatbalance-balance}
 In making the calculations that follow, we assume fleece thickness of 0.1 m, which is the depth of wool usually attained by Cheviot sheep (Brockway et al., 1965). Then skin diameter for our "standard sheep" is 0.3 m. The layer of subcutaneous fat is about 0.01 m thick (Porter and Gates, 1969). We take thermal conductivity of sheep's wool as $5.91\times10^{-2}W m^{-2}{}^\circ C^{-1}$ (Blaxter, Graham, and Weinman, 1959) and that of fat as $20.51\times10^{-2} W m^{-2}{}^\circ C^{-1}$ (Porter and Gates, 1969). Body temperature of the sheep is taken as 39°C (Priestley, 1957). We assume a body weight of 70 kg.
 
 To consolidate our calculation, we return to our general heat balance relation (Eqn. \@ref(eq:heatbalance-1)):
@@ -331,7 +332,7 @@ Thus, in this case, net incoming radiation at the fleece tips is approximately e
 
 These examples illustrate only some of the types of problems we can solve with this technique. We have shown that, if the sheep's environment is given in terms of temperature, wind speed, and incoming radiation, it is possible to determine the range of rates of body metabolism and evaporative losses due to respiration and sweating that will allow the animal to maintain thermal equilibrium. Porter and Gates (1969) have worked out the converse problem for a number of animals: given a range of metabolic rates that the animal can maintain as well as its physical characteristics (size, thickness of fur, etc.), the range of environmental conditions within which it can survive can be calculated.
 
-## REFERENCES
+## References {#heatbalance-references}
 Barlett PN, Gates DM. 1967. The Energy Budget of a Lizard on a Tree Trunk. Ecology. 48(2):315–322.
 
 Blaxter KL. 1962. The energy metabolism of ruminants. Springfield, Ill.: Thomas.
@@ -372,7 +373,7 @@ Vera, R.R., Koong, L.J. & Morris, J.G., 1975. A model of heat flow in the sheep 
 
 Walsberg G, Campbell J, King. 1978. Animal coat color and radiative heat gain: A re-evaluation. Journal of Comparative Physiology B. 126(3):211–222.
 
-## PROBLEMS
+## Problem Set {#heatbalance-problems}
 
 Assume $T_b = 39$°C, $v=1$km/hr = 0.2778ms^-1^, $A_h = \pi d L$m^2^, $L=1$m, $r_b=0.29$m, $r_s$=0.3, $k_h = 5.91 \times 10^{-2}$, $k_f = 0.251$, $\varepsilon = 1$ and $e = 10$mb for the following problems unless specified.
 
@@ -405,7 +406,7 @@ where $\beta$ is the coefficient of thermal expansion of the fluid, $g$ is the a
 
 9. Suppose you did not know $T_h$ and wished to solve for it before proceeding further with your analysis. (Recall that we linearized terms involving $T_h^4$ by writing $T_h^4\stackrel{.}{=}T_a^4+4T_a^3(T_h-T_a)$, supposing that $T_h$ is sufficiently close to $T_a$, which is taken as known.) How would you linearize the term containing $Nu = 0.48Gr^{0.25}$?
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#heatbalance-answers}
 
 1. We need to find the total and evaporative heat losses and compare them with the results of Brockway et al. Since there are three air temperatures and three fleece thicknesses, there will be nine separate calculations. We need to calculate $T_h$ using equation \@ref(eq:heatbalance-27). To do this, we need the $\alpha$'s, $\beta$'s and the Nusselt numbers. 
 

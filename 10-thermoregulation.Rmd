@@ -1,9 +1,10 @@
 ---
+pagetitle: Thermoregulation
 output:
   pdf_document: default
   html_document: default
 ---
-# Operative temperature {#thermoregulation}
+# Operative Temperature {#thermoregulation}
 
 Animal Thermoregulation and the Operative Environmental (Equivalent) Temperature
 
@@ -11,24 +12,25 @@ author: Stevenson, R. D.
 
 ***
 
-## PREFACE
+## Preface {#thermoregulation-preface}
+
 Thermoregulation is defined as the ability of an organism to modify its body temperature. This module emphasizes animal thermoregulation from an ecological point of view and develops the concept of the operative environmental temperature, a technique which integrates the effects of all heat transfer processes into one number. Historical developments in the study of animal thermoregulation are reviewed and an attempt is made to illustrate how a quantitative knowledge of heat transfer processes can be used to clarify the adaptive significance of animal morphology, behavior, and physiology. A problem set illustrates and extends ideas developed in the text.
 
 The biological aspects of thermoregulation are investigated in this module by illustrating the limitations of purely physical models of heat balance. The importance of certain behavioral physiological and morphological traits is stressed throughout the discussions. The concept of *operative environmental temperature* is presented and discussed as a means of incorporating the relative influences of all heat transfer processes into one number. 
 
 ***
 
-## INTRODUCTION
+## Introduction {#thermoregulation-intro}
 
-Whereas previous modules dealing with heat energy have introduced physical principles (Gates and Stevenson 1978; Stevenson 1977a,b, 1978a) or methods of analysis (Ratheway 1978, Stevenson 1978b), the first section of this paper will emphasize animal thermoregulation from an ecological viewpoint. Physiologists have investigated thermoregulation more than ecologists so the student will find the best summaries in environmental physiology texts such as Gordon (1977) and Schmidt-Nielsen (1975) or summary reviews (Whittow 1970, 1971, 1973; Precht et al. 1973; Wieser 1973). Gibbons and Sharitz (1974) and Gates and Schmerl (1975) also contain papers which are of interest to students of thermal biology. [UPDATE: Thermoregulation has been of accelerating interest to ecologists since the writing of the modules. See Angilletta (2009, Thermal Adaptation) for a summary.] The material within is meant to complement these standard treatments. Even though all the examples are of animals, one can also think of plants as overstimulating. Plants modify leaf shape, position and surface characteristics as well as daily and seasonal photosynthetic periods. The last part of the module develops the concept of the operative environmental temperature, which we will see is a useful way to integrate the effects of all heat transfer processes.
+Whereas previous modules dealing with heat energy have introduced physical principles (Gates and Stevenson 1978; Stevenson 1977a,b, 1978a) or methods of analysis (Ratheway 1978, Stevenson 1978b), the first section of this paper will emphasize animal thermoregulation from an ecological viewpoint. Physiologists have investigated thermoregulation more than ecologists, so the student will find the best summaries in environmental physiology texts such as Gordon (1977) and Schmidt-Nielsen (1975) or summary reviews (Whittow 1970, 1971, 1973; Precht et al. 1973; Wieser 1973). Gibbons and Sharitz (1974) and Gates and Schmerl (1975) also contain papers which are of interest to students of thermal biology. [UPDATE: Thermoregulation has been of accelerating interest to ecologists since the writing of the modules. See Angilletta (2009, Thermal Adaptation) for a summary.] The material within is meant to complement these standard treatments. Even though all the examples are of animals, one can also think of plants as overstimulating. Plants modify leaf shape, position, and surface characteristics as well as daily and seasonal photosynthetic periods. The last part of the module develops the concept of the operative environmental temperature, which we will see is a useful way to integrate the effects of all heat transfer processes.
 
 ***
 
-## ANIMAL THERMOREGULATION
+## Animal Thermoregulation {#thermoregulation-animalthermo}
 
-The term **thermoregulation** can be defined as the ability of an organism to modify its body temperature. Although this may seem simplistic, the point is that a living organism often has a body temperature which would be different from that of an inanimate object with the same physical properties as the organism in the same thermal environment. For endothermic organisms, this fact is well known. The constancy of internal temperature of these animals helped Claude Bernard, a century ago, form his opinion that homeostasis is the central paradigm of physiology. But it was not until Heath's (1964) paper that this point was clearly made for ectotherms. Huey (1974) studied the time and energy costs of regulating body temperature by contrasting body temperatures and spatial and temporal distributions of an iguanid lizard, *Anolis cristatellis*, in two different adjacent thermal environments--an open park and a forest. This ecological viewpoint is given a more general treatment by Huey and Slatkin (1976) in which they consider the costs and benefits of thermoregulation. Biologists have always recognized that the consequences of altering body temperature are profound. Today more emphasis is being placed on interpreting the importance of thermoregulation for circadian rhythms, circannual rhythms, foraging and digestive processes of individuals in their natural environment.
+The term **thermoregulation** can be defined as the ability of an organism to modify its body temperature. Although this may seem simplistic, the point is that a living organism often has a body temperature which would be different from that of an inanimate object with the same physical properties as the organism in the same thermal environment. For endothermic organisms, this fact is well known. The constancy of internal temperature of these animals helped Claude Bernard, a century ago, form his opinion that homeostasis is the central paradigm of physiology. But it was not until Heath's (1964) paper that this point was clearly made for ectotherms. Huey (1974) studied the time and energy costs of regulating body temperature by contrasting body temperatures and spatial and temporal distributions of an iguanid lizard, *Anolis cristatellis*, in two different adjacent thermal environments: an open park and a forest. This ecological viewpoint is given a more general treatment by Huey and Slatkin (1976) in which they consider the costs and benefits of thermoregulation. Biologists have always recognized that the consequences of altering body temperature are profound. Today more emphasis is being placed on interpreting the importance of thermoregulation for circadian rhythms, circannual rhythms, foraging and digestive processes of individuals in their natural environment.
 
-One can begin to understand the costs and benefits of temperature regulation by outlining the mechanisms that allow an organism to thermoregulate. In Table 10.1, these are placed under three convenient headings: behavioral, physiological and morphological. This breakdown also chosen by King (1974) and West (1977) provides a starting point for discussion of alternative thermoregulation strategies. One might begin by determining the relative importance of each mechanism to heat transfer and its energetic cost to the organism. This kind of information is generally not known, but we will discuss one example later in the text which contrasts the effects of increasing body size and insulation thickness on heat loss.
+One can begin to understand the costs and benefits of temperature regulation by outlining the mechanisms that allow an organism to thermoregulate. In Table 10.1, these are placed under three convenient headings: behavioral, physiological, and morphological. This breakdown also chosen by King (1974) and West (1977) provides a starting point for discussion of alternative thermoregulation strategies. One might begin by determining the relative importance of each mechanism to heat transfer and its energetic cost to the organism. This kind of information is generally not known, but we will discuss one example later in the text which contrasts the effects of increasing body size and insulation thickness on heat loss.
 
 What kinds of information are available from Table 10.1? First, the time scale on which each mechanism operates gives clues about the kind of environmental changes for which the mechanism has evolved to compensate. Second, the physical environment may dictate that certain mechanisms cannot be used. One obvious example is that of evaporative cooling in dry environments (Schmidt-Nielsen 1964). Here an organism must find other means to reduce its heat load because water is in short supply and is required for other purposes. A further complication is the interaction of several mechanisms. Consider the example of metabolic output as a function of air temperature given in most physiological texts. As the air temperature is lowered, the animal can maintain a thermal equilibrium by simply restricting blood flow to peripheral areas (vasoconstriction). This reduces the temperature in these areas (see Fig. \@ref(fig:fig-thermoreg-1a)). At the end of the thermal neutral zone when all the vessels are constricted (hot-cold dividing line in Fig. \@ref(fig:fig-thermoreg-1b)), the organism must increase its metabolic rate if its body temperature is to remain constant. In contrast, the blood vessels of an active animal must be dilated to supply the muscles with oxygen. Metabolic rate may increase by 300% or more to provide the energy for activity. Figure \@ref(fig:fig-thermoreg-2) shows resting and active metabolic rates for the rabbit *Oryctolagus cuniculus* as a function of temperature. When the rabbit is active, the metabolic rate is independent of air temperature. The challenge of physiological ecologists is to understand these mechanisms and their interactions for the animal in the natural environment.
 
@@ -96,7 +98,7 @@ knitr::include_graphics('figures/fig-thermoreg-2.png')
 
 \newpage
 
-### The Physical Environment
+### The Physical Environment {#thermoregulation-physicalenv}
 
 Another approach for studying thermoregulation is to examine the temporal and spatial variation of the thermal environment. This variation is a result of the patchiness and gradients of the physical factors in the heat energy equation: solar radiation, longwave radiation, wind speed, wind direction, air temperature, substrate temperature and water vapor concentration or water temperature. Vertical temperature gradients formed in the water, soil or air may allow an organism to locate in its preferred thermal environment. The increase in wind speed above the ground surface forms another kind of gradient. Patches usually created by sun and wind shadows are the result of the landscape and vegetation. If the patches are large compared to the size of the organism, then it may be necessary for the organism to move between patches to remain in thermal comfort. Hillman (1969) describes this behavior for the lizard *Amevia leptophrys*, which makes excursions into the forest habitat to forage but returns to the shrub community where sunlight is available to increase its body temperature. If patches are small, it may be possible for the animal to "sit" in two or more different thermal environments so as to balance its thermal energy exchange. If the patches become very small relative to the organism, the environment will appear homogeneous.
 
@@ -116,7 +118,7 @@ Finally note that an organism has two ways of dealing with thermal stress. It ca
 knitr::include_graphics('figures/fig-thermoreg-3.png')
 ```
 
-### Thermoregulation and the Ecogeographical Rules
+### Thermoregulation and the Ecogeographical Rules {#thermoregulation-rules}
 
 During the course of their studies, early natural historians noted that there were clines in homeotherm size, shape and color. Three empirical ecological rules bearing the names of Bergmann, Allen and Gloger resulted from these observations. In addition, Cowles (1946) observed that there was a decrease in lizard body size at increasing latitudes. In each case, the originator proposed a reason why these observations might be true based on the animal's thermal relation to the environment. The knowledge of energy balance and heat transfer processes explained in earlier modules (Stevenson 1977a,b, 1978a) will prove to be especially helpful in clarifying and dissecting each hypothesis.
 
@@ -148,7 +150,7 @@ In 1946, Cowles suggested that lizard size should decrease with increasing latit
 
 Most models of thermoregulation have started with certain assumptions about the morphology and physiology of the organism and then attempted to ask about the control of body temperature (Huey and Slatkin 1976) or the limit of activity times (Belovsky 1977; Porter et al. 1973, Porter and Tracy 1975) and habitat (Tracy 1976). Other characteristics such as body shape and size, surface characteristics (scales, hair, feathers), preferred body temperatures, basal metabolic rate, and the design of the circulatory system also merit our attention since they too are under selective pressures. For instance, a question of interest for many years has been the evolution of homeothermy (Cowles 1946, Ricgles 1974, Whittow 1973, Heath 1968, Bakken 1971, Bakken and Gates 1975, Heinrich 1977, McNab 1978, Stevens 1973, Dawson 1975, Bouvier 1977, Calloway 1976, Crompton et al. 1978, Hainsworth and Wolf 1978). The question of preferred body temperature obviously has implications for the biochemical system of the organism which is also being investigated (Brock 1967, Hochaka and Somero 1973, Somero and Low 1975). [See Angilletta (2009, Thermal Adaptation) for recent treatments of the issues in the preceeding  paragraphs.]
 
-### Other Ecological Considerations
+### Other Ecological Considerations {#thermoregulation-considerations}
 
 Because of its very existence, every organism exchanges heat energy with its environment, it is natural to ask about the relation of thermoregulation to the tasks an individual must perform which include growth, procurement of food, avoidance of predation and reproduction. Although these are standard subjects for ecological studies, their relation to thermoregulation is largely unexplored. Several paragraphs on the interaction of feeding and temperature regulation are included to spur the reader's interest.
 
@@ -186,11 +188,11 @@ The remainder of this module returns to questions of heat balance. The ecologist
 
 ***
 
-## THE OPERATIVE ENVIRONMENTAL TEMPERATURE
+## The Operative Environmental Temperature {#thermoregulation-operative}
 
 Models of the physical processes that govern the heat energy exchange of animals involve many environmental as well as organismal parameters which make the results difficult to summarize. One must use the four heat transfer processes (radiation, convection, evaporation and conduction) to link the microclimate (air temperature, wind speed, etc.) to the animal's physiology, behavior and morphology. With such a large number of independent variables, it is apparent that it would be helpful to have a single number that would allow one to say how the animal "felt" in that environment. At first this may seem difficult. For example, if all the environmental variables and homeotherm's thermoregulatory actions are fixed, the organism will have a specific metabolic rate. It is possible, however, to change the external conditions--say reduce the body-air temperature difference but increase the wind speed so that the organism will have the same metabolic rate to maintain thermal equilibrium or one could lower the air temperature but increase the absorbed radiation so that a poikilotherm would not have a different body temperature. The concept of operative environmental temperature lets one say quantitatively which environments are equivalent thermodynamically for the organism. Because this concept undercuts the physical processes, valuable information is lost about the animal's coupling to the environment. But indeed this is the purpose of the operative environmental temperature. It may actually be that animals respond to a stimulus that has already integrated all the thermal fluxes.
 
-### Mathematical Development of the Operative Environmental Temperature
+### Mathematical Development of the Operative Environmental Temperature {#thermoregulation-math}
 
 In this section, I develop the operative environmental temperature ($T_e$) as Bakken and Gates (1975) presented it. A discussion and summary of alternative formulations can be found in Bakken (1979a) about which I will comment briefly later.
 
@@ -270,7 +272,7 @@ Tb_CampbellNorman(T_a=303, S=823, epsilon=0.96, c_p=29.3, D=0.17,
 ```
 In addition to these general models, TrenchR offers specialized operative temperature models that have been developed for a variety of organisms.
 
-### Laboratory and Field Applicatons of the Operative Environmental Temperatures
+### Laboratory and Field Applicatons of the Operative Environmental Temperatures {#thermoregulation-field}
 
 For many years, standard metabolic output has been measured as a function of air temperature. If the environmental chamber is large, the air  temperature will closely approximate the $T_e$, but small chambers can introduce error (Morhardt and Gates 1974, Porter 1969) In the natural environment, organisms experience a variety of shortwave radiation levels, But if $T_e$ for different environmental combinations is the same then one would expect the same metabolic output for homeotherm or body temperature for a poikilotherm. To test this, Mahoney and King (1977) recently completed these calculations from De Jong's (1976) experiments. Their results are shown in Fig. \@ref(fig:fig-thermoreg-5). The metabolic output of White Crown sparrows, *Zonorichia leucophrys gambelii*, corresponds closely to the predicted values. Mahoney and King (1977) also performed some laboratory preference tests using different combinations of absorbed radiation and air temperature to obtain a range of operative environmental temperatures. Their results are expressed as cumulative time spent in each microhabitat (Fig. \@ref(fig:fig-thermoreg-6)). Comparing Figs. \@ref(fig:fig-thermoreg-5) and \@ref(fig:fig-thermoreg-6) shows that the animals actually preferred to be in an environment near the lower end of their thermoneutral zone. It would be interesting to know how active the birds were to estimate the increase in metabolic rate above resting conditions. Furthermore, one would like to know the average amount of time spent in each microhabitat. The animals may just be sampling the extreme environments.
 
@@ -332,7 +334,7 @@ $K_0$ is a function of the convection coefficient, $h_c$, which depends specific
 \end{equation}
 If wind speed and orientation are constant, the only physiological characteristic of the organism that would make it different from that of an inanimate object is its ability to regulate blood flow. (As an example, see Fig. \@ref(fig:fig-thermoreg-8).)
 
-### Field Applications
+### Field Applications {#thermoregulation-fieldapp}
 
 A particularly interesting application of the $T_e$ concept will be in field studies. Bakken and Gates (1975) and Bakken (1976) have reviewed the possibility of making model organisms with the same thermal properties as the animal under study. Using the models, one could map the temporal and spatial variation of the thermal environment. Once the models have been checked in laboratory situations, it will be much easier to take one temperature than to make the many microclimatological measurements necessary to compute the energy budget. Buttemer (1979) is the first to use this method. These measurements include longwave and shortwave radiation, air temperature, wind speed, wind direction and relative humidity. With this map in hand, it will be easy to see if the animal is selective in how it uses the environment. For example, one could ask: is the laboratory behavior found in the sparrows studied by Mahoney and King (1977) exhibited out of doors? The $T_e$ concept is a straightforward method for tackling this kind of problem.
 
@@ -347,7 +349,7 @@ This approach will allow one to answer the question of whether or not animals av
 
 ***
 
-## SUMMARY
+## Summary {#thermoregulation-summary}
 
 In this module, we have reviewed some of the historical developments in the study of animal thermoregulation. Besides trying to relate the discussion to other ecological areas, especially foraging, I have endeavored to point where a quantitative knowledge of the heat transfer processes has helped to clarify the adaptive significance of animal morphology, behavior and physiology. Bakken and Gates (1975), Campbell (1977) and others (see Bakken 1979a for review) have developed the operative environmental temperature as a way to summarize how the organism "feels" the thermal environment. This concept has had useful applications in both physiology and ecology.
 
@@ -376,7 +378,7 @@ knitr::include_graphics('figures/fig-thermoreg-9.png')
 
 ***
 
-## LITERATURE CITED
+## Literature Cited {#thermoregulation-litcited}
 
 Allen, J.A. 1877. The influence of physical conditions in the genesis of species. Radical Rev. 1:108-140.
 
@@ -607,7 +609,7 @@ Zemansky, M.W. and B.C. Van Ness. 1966, Basic Engineering Thermodynamics. McGraw
 
 ***
 
-## PROBLEMS
+## Problem Set {#thermoregulation-problems}
 
 1. Pick an animal and discuss what factors in Table 10.1 will be most important in its thermoregulation strategy. Include in your response any factors that have been omitted from the table.
 
@@ -670,7 +672,7 @@ a) Will this be a high density year for the corn drill so that biological or che
 b) If so, when during the season will most of the insects be in this instar? Discuss your research plan to address these questions.
 
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#thermoregulation-answers}
 1. As a sample answer, consider the response of the bumblebee to its thermal environment. At northern latitudes these bees are active for only a small portion of the year when food and the thermal environment are favorable. Temporal partitioning of the environment is also important on a daily time scale. During inclement weather, the workers stop foraging. The general importance of habitat selection and of body orientation are unknown. Heinrich (1976) has discussed the important role of the circulation system used to maintain thermal equilibrium during flight in the bumblebee. Certainly the hairy outer coat of these animals is important in heat exchange and at higher temperatures the animals can evaporate water.
 
 2. The animal can change its blood flow rates, circulation patterns, water loss, orientation and posture to maintain a constant body temperature while the thermal environment is changing but its body temperature and metabolic rate are constant. The relative importance of orientation and posture is unknown. Figure \@ref(fig:fig-thermoreg-1b) of the module indicates that the compounded effect of blood flow and circulation patterns are important in the lower part of the thermal neutral zone while evaporative water loss becomes more important at higher environmental temperatures.

@@ -1,23 +1,25 @@
 ---
+pagetitle: Calculus-Integration
 output:
   pdf_document: default
   html_document: default
 ---
-# Calculus-Integration. {#calcint}
+# Calculus-Integration {#calcint}
 
 author: Hertzberg, R. H.
 
-## PREFACE
-Frequently in the application of calculus to ecological problems, relationships between measured quantities involve rates of change of the quantities of interest, rather than the quantities themselves. Stated in mathematical terms, it is possible to determine derivatives of functions instead of the functions themselves. It is then necessary to use an inverse operation on the derivative to determine the desired function. This operation is called integration. Each function's behavior used in this module is comparable to characteristics of the ecosystem it represents. Topics are introduced and extended in the problem sets.
+## Preface {#calcint-preface}
+Frequently in the application of calculus to ecological problems, relationships between measured quantities involve rates of change of the quantities of interest. It is then necessary to use an inverse operation on the derivative to determine the desired function. This operation is called integration. Each function's behavior used in this module is comparable to characteristics of the ecosystem it represents. Topics are introduced and extended in the problem sets.
 
-## INTRODUCTION
 
-Most applications of calculus to ecological problems involve the determination of specific relationships between measured quantities. Frequently, the obvious relations involve rates of change of the quantities of interest, and not the quantities themselves. In mathematical terms, we often can determine equations involving the derivatives of functions instead of the functions themselves. We then need to use an inverse operation on the derivative to determine the desired function. This operation is called **integration** and its field of mathematical study is called integral calculus.
+## Introduction {#calcint-intro}
+
+Most applications of calculus to ecological problems involve the determination of specific relationships between measured quantities. Frequently, the obvious relations involve rates of change of the quantities of interest, and not the quantities themselves. In mathematical terms, we often can determine equations involving the derivatives of functions instead of the functions themselves. We then need to use an inverse operation -- called **integration** in integral calculus -- on the derivative to determine the desired function.
 
 For example, we may wish to know the blood level of a toxic material that is absorbed through the skin during a certain time period. However, the mathematical model may be based on the rate of absorption through the skin and rate of excretion via the urine. Thus we wish to know the magnitude of a quantity (body level of pollutant) when we know only the rate of change of that quantity (rate of increase by absorption and rate of decrease by excretion).
 
 
-## FUNDAMENTALS
+## Fundamentals {#calcint-fundamentals}
 
 The inverse operation to differentiation is called **antidifferentiation** or, more commonly, **integration**. In models of exponential growth we assume that the growth **rate** is proportional to the population size.
 
@@ -68,7 +70,7 @@ and call $C$ the **integration constant**. Recall that the term "$dt$" identifie
 
 ***
 
-## THE DEFINITE INTEGRAL
+## The Definite Integral {#calcint-defintegral}
 
 The integration constant does not appear if the integral is a **definite integral**, written as
 
@@ -92,7 +94,7 @@ Note that the integration constant is not written since it is eliminated through
 &= f(b) - f(a) \\
 \end{align*}
 
-### Area Under the Curve
+### Area Under the Curve  {#calcint-area}
 
 Whereas the derivative can be used to represent the slope of a curve, the definite integral can represent the area under the curve (specifically, the area between the curve and the horizontal axis). For a curve given by $y = g(x)$, the area ($A$) under the curve from $x = a$ to $x = b$ is written (see fig. \@ref(fig:fig-calcint-1)).
 
@@ -141,7 +143,15 @@ A &= 2 \int^a_{-a} (-bx^2/a^2 + b)dx \\
   &= 8ab/3 \\
 \end{align*}
 
-### Improper Integrals
+We can use this equation to approximate the upper surface area of a *Kalmia latifolia* (mountain laurel) leaf. On average, the leaves are 8 cm long and 3 cm wide, thus a=4 and b=1.5, which we can use to solve for A. 
+
+\begin{align*}
+A &= 8ab/3 \\
+A &= 8(4)(1.5) / 3 \\
+A &= 16 cm^2 \\
+\end{align*}
+
+### Improper Integrals {#calcint-improper}
 
 Occasionally we are interested in long term behavior of a measured quantity. For example, when raw sewage and other chemical pollutants are continually dumped into a lake, one effect is the rapid increase in the number of microorganisms. The resultant high level of organic oxidation from metabolism of the sewage can lead to extreme oxygen depletion of the lake, with obvious detrimental effects on other aquatic life (Dugan 1972). If we know something about the rate of oxygen consumption by the microorganisms, then we obtain the amount of oxygen consumed during a time period $T$ by integrating the rate over that time period, i.e., using, a definite integral with limits 0, $T$. We then estimate the maximum oxygen depletion by integrating over an infinite time interval. Such a definite integral with at least one infinite limit is called an **improper integral**.
 
@@ -202,11 +212,11 @@ knitr::include_graphics('figures/fig-calcint-6.png')
 
 ***
 
-## METHODS OF INTEGRATION
+## Methods Of Integration {#calcint-methods}
 
 Since there are no foolproof formulae that can be used for all integrals (as there are for derivatives), the following integration methods all attempt to change a difficult integral into a simpler one. All examples use definite integrals.
 
-### Substitution
+### Substitution {#calcint-substitution}
 
 This method substitutes each part of a definite integral with a counterpart so that the result is kept the same. With the substitution $u = h(x)$, the integral 
 
@@ -252,7 +262,7 @@ The limits remain, since $u = 0$ when $t = 0$ and $u = \infty$ when $t = \infty$
 Since the second term in eqn. \@ref(eq:calcint-6) is now obvious $\int^{\infty}_0 e^{-u}du = \int^{\infty}_0 e^{-t}dt=1$, we obtain the solution to eqn. \@ref(eq:calcint-5) of
 $$C(\infty) = 1/2 + 1 = 3/2$$
 
-### Integration by Parts
+### Integration by Parts {#calcint-intbyparts}
 
 This method utilizes a relation from differential calculus concerning the total differential. Recall that the differential of a product of two functions $u(x)$, $v(x)$ can be written 
 $$d(uv) = udv + vdu$$ 
@@ -275,7 +285,7 @@ With definite integrals, we usually write this formula as
 
 Again, the goal is to change a difficult integral, the left side of eqn. \@ref(eq:calcint-8), into a simpler one, the right side of eqn. \@ref(eq:calcint-8). An example is presented later.
 
-### Partial Fractions
+### Partial Fractions {#calcint-partial}
 
 When the integrand is a ratio of two polynomials, it often can be decomposed into a sum of simpler terms. Only the case of non-repeated linear terms in the denominator is treated here. For more complicated cases in an ecological setting, see Clow and Urquhart (1974) p. 559.
 
@@ -343,11 +353,11 @@ $$\ln N - \ln (K-N) = rt + C$$
 
 ***
 
-## APPLICATIONS OF DEFINITE INTEGRALS
+## Applications Of Definite Integrals {#calcint-applications}
 
 Direct applications of integrals generally fall into discrete categories in contrast to applications of derivatives which usually are based on slopes. The first group discussed below uses the integral as the accumulation of changes in the function. The second category uses the integral as an area or generalized volume. The last application is more mathematical, although it actually relies on the accumulation concept, and uses the integral to estimate the error in a given approximation.
 
-### Accumulation of Changes in the Function
+### Accumulation of Changes in the Function {#calcint-accumulation}
 
 The integral as a total accumulation has been presented before in example 2 on oxygen depletion. This use of the integral is actually fairly intuitive. Let us call our quantity of interest $F(x)$. Then $F'(x) = dF/dx$ is certainly the rate of change of $F(x)$ and $F(x)$ is certainly the antiderivative of $F'(x)$. Then integrating the **rate** of change of $F$ gives the **total** change in $F$.
 
@@ -357,7 +367,7 @@ Thus the definite integral
 $$\int^b_a F'(x)dx$$
 is the total change in $F(x)$ as $x$ changes from $a$ to $b$.
 
-### Average Change
+### Average Change {#calcint-average}
 
 The average change in $F(x)$ is then found by dividing by the change in $x$, since the average is the change in $F$ **per unit change** in $x$. Note that this formula can be shown graphically as the average height of the function. For a given curve, the area under the curve equals the average height multiplied by the width. Thus the average height $\overline y$ of a curve $y = f(x)$ is the area $A$ divided by the width.
 $$A = \int^b_a f(x)dx = (b-a)\overline y$$
@@ -426,7 +436,7 @@ In summary, we have the averages:
 
 It is somewhat surprising that the average unrestricted ration rate is over twice that of the rate for the restricted ration. The data is deceptive visually due to the close values near $x = 3 mg/l$ and the distorted logarithmic scale. 
 
-### Distance
+### Distance {#calcint-distance}
 
 Velocity is defined as the rate of change of position. Since the distance covered is the total change in position, it must equal the integral of the velocity. 
 
@@ -438,7 +448,7 @@ S &= \int^T_0 v(t)dt = \int^T_0 (gt)dt \\
 &= \frac{1}{2}gT^2 \\
 \end{align*}
 
-### Volumes
+### Volumes {#calcint-volumes}
 
 Volumes and areas of complicated regions are also evaluated using the definite integral. Previously, the area under a curve was bounded by three straight perpendicular lines. When the bottom is not the base axis, the integration is still simple. For a region shown in figure \@ref(fig:fig-calcint-8) the area is the difference between the area under curve $f$ and the area under curve $g$. Thus
 
@@ -453,7 +463,7 @@ Note that $[f(x)-g(x)]$ is merely the height of the region at the point $x$, so 
 knitr::include_graphics('figures/fig-calcint-8.png')
 ```
 
-### Surface Area of Revolution
+### Surface Area of Revolution {#calcint-surface}
 
 When the region is not planar, the evaluation of its area must take into account the changes in the third dimension. If the surface is obtained by revolving a curve around a straight line, the evaluation needs only a single integral. The following example illustrates the method.
 
@@ -503,7 +513,7 @@ A &= \int^{0.5}_{-0.5} 2 \pi(0.28-0.24x^2)dx \\
 
 Note that any function will work in the formula, as long as the area desired is a surface area of revolution. The only problem might be in using a function which is difficult to integrate.
 
-### Volume of Revolution
+### Volume of Revolution {#calcint-volumerevolution}
 
 The volume of a solid generated by revolving a curve around an axis can be derived as an intuitive extension of the surface area of revolution. The area and volume formulae for the cylinder and the general revolved solid (figure \@ref(fig:fig-calcint-11)) are seen to be analogous.
 
@@ -543,7 +553,7 @@ V &= \lim_{dy \rightarrow 0} \sum^N_{i=1} \pi f(y_i)^2dy, \;\;\;\;\;\; N= (b-a)/
 &= \int^b_a \pi f(y)^2 dy \\
 \end{align*}
 
-### General Surface Areas
+### General Surface Areas {#calcint-surfarea}
 
 When the surface is more irregular and is not axially symmetric, its area can still be found. The surface must now, however, be described by a three dimensional function which gives the height as a function of the length and width coordinate: $z = f(x,y)$. 
 
@@ -586,11 +596,11 @@ $$ \frac{\partial z}{\partial x} = - \frac{x}{\sqrt{0.25^2 - x^2}},\;\;\; \frac{
 $$A = \int^{0.10}_{-0.10} \int^{\sqrt{0.10^2-x^2}}_0 [1 + \frac{x^2}{0.25^2 - x^2} + 0] dy \, dx$$
 This strange formula still has visual intuitive appeal since the limits on $y$ are obtained from the **width** in the $y$ direction (for a given $x$) and the limits on $x$ are from the **length** in the $x$ direction. The quantity in brackets accounts for the changing height of the surface. The remaining parts of the problem are left as an exercise.
 
-### Error Estimation
+### Error Estimation {#calcint-error}
 
 The integral can be used to develop approximate solutions to certain equations or approximate models of given data. The integral provides a qualitative error estimate for the approximation. The most well known application is the least squares fit of a line through a set of data points. One of the most recent applications is the residual norm as an error indicator for approximate solutions to partial differential equations. In each example discussed below, a function is integrated over a domain of interest. If this function represents the difference between the approximate and true solution, then the value of the integral decreases as the approximation improves. The integral is then minimized to provide the "best" approximation.
 
-#### Least Squares
+#### Least Squares {#calcint-least}
 
 Many experiments produce data as pairs of numbers
 $$(x_1,y_1),(x_2,y_2), \ldots, (x_n,y_n)$$
@@ -612,7 +622,7 @@ knitr::include_graphics('figures/fig-calcint-18.png')
 
 We then obtain two linear equations in $A$, $B$ which are easily solved (see problem 5) and can be shown to give the line with the least sum of squared deviations (see problem 6).
 
-#### Norms
+#### Norms {#calcint-norms}
 
 The squared deviation used in the least squares method is an example of a **norm**. A norm of a function $f(x)$, denoted $\|f(x)\|$, is a function (Pearson 1974, p. 946) such that, for any scalar $\alpha$, and any functions $f(x), g(x)$,
 $$\|f(x)\| \ge 0$$
@@ -692,7 +702,7 @@ The norm can also be used to estimate qualitatively the relative accuracies of a
 
 ***
 
-## DIFFERENTIAL EQUATIONS
+## Differential Equations {#calcint-diffequations}
 
 As was previously mentioned, the integral is also used to solve a differential equation. In the simplest form, if an equation is written as
 $$\frac{dx}{dt} = f(t)$$
@@ -701,7 +711,7 @@ $$x(t) = \int f(t)dt$$
 If we know the value of $x$ at $t = 0$, the **initial condition**, then the differential equation has a unique solution given by
 $$x(t) = \int^t_0 f(\tau)d \tau + x(0)$$
 
-### Separation of Variables
+### Separation of Variables {#calcint-separation}
 
 When the differential equation also involves $x$ on the right-hand side, the solution is not so easily represented. Other techniques must then be employed to represent the problem by a set of integrals whose integrands are functions of only the variable of integration. One such technique is separation of variables.
 
@@ -813,7 +823,7 @@ $$\ln[(TF^{b_2} /8.7)^{2.5} ] = \ln M$$
 $$T^{2.5} F^{2.5b_2} /(8.7^{2.5} ) = M$$
 Thus, $b_2 = 2.8/2.5 = 1.1, \;\;C = 1/(8.7)^{2.5} = 0.0045$ and the models agree.
 
-### Residual Norm
+### Residual Norm {#calcint-residual}
 
 Often a differential equation cannot be solved by any standard methods and an approximate solution is developed. In some cases, bounds on the error in the approximation can be derived. Too often, however, calculating the error bounds is as complicated as determining the solution itself. A recent idea is to use the least-squares norm (or occasionally some other norm) as a gauge of the accuracy of the approximation. With only the differential equation at hand, a new type of norm, the residual norm, is used.
 
@@ -897,7 +907,7 @@ knitr::include_graphics('figures/fig-calcint-19.png')
 
 ***
 
-## REFERENCES AND RECOMMENDED TEXTS
+## References and Recommended Texts {#calcint-references}
 
 **Calculus**
 
@@ -943,7 +953,7 @@ Handbook of Mathematical Tables, 1964. Weast, R. C., Selby, M. and Hodgman, C. D
 
 ***
 
-## PROBLEM SET
+## Problem Set {#calcint-problems}
 
 **General**
 
@@ -1012,7 +1022,7 @@ y=c(39,55,57.5,60,57)
 
 b. Now determine a "best" exponential fit to the above data. First transform the desired function $y = Axe^{Bx}$ into a linear function (with respect to $x$): $h(x,y) = f(A,B) + g(A,B)x$. A neater format is $h= f + gx$. Make a table of values for $x$ and $h$. Determine the least squares line through this new data set and, in the process, calculate $f$, $g$, and thus $A$, $B$.
 
-## ANSWERS TO THE PROBLEM SET
+## Answers to the Problem Set {#calcint-answers}
 **General**
 
 1. $A(T)$ represents the total change in the resource. Thus the rate of change, $P(t)$, is integrated:
@@ -1335,7 +1345,7 @@ knitr::include_graphics('figures/fig-calcint-p6.png')
 knitr::include_graphics('figures/fig-calcint-p6-2.png')
 ```
 
-## ADDITIONAL PROBLEMS
+## Additional Problems {#calcint-problems2}
 1. One way to use least-squares is to approximate one function by another. Here we approximate the curve
 $$y = 6.1(x+5.0)e^{-0.045x}$$
 by a straight line
@@ -1361,7 +1371,7 @@ knitr::include_graphics('figures/fig-calcint-c3.png')
 
 The illuminated area changes from a circle ($R=0$) to an elongated ellipse (as $R$ increases). For a given diameter $B$, write the illuminated area $A$ as a function of the angle of inclination $R$. Check your result by choosing values for $B$ and $R$ and calculating the dilution $D$, which equals the circle's area divided by the ellipse's area. Does $D = 0.6$ mean more dilution (less energy density) than $D = 0.3$ or vice versa? The inclination angle in Minnesota changes from about 20° in summer to 65° in winter. What is the resulting change in energy density, measured by $D$?
 
-## SOLUTION TO THE ADDITIONAL PROBLEMS
+## Solution to the Additional Problems {#calcint-answers2}
 1.
 First partial derivatives:
 \begin{align*}

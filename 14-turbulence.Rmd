@@ -1,4 +1,5 @@
 ---
+pagetitle: Turbulence
 output:
   pdf_document: default
   html_document: default
@@ -11,14 +12,14 @@ author: Simpson, James P.
 
 ***
 
-## PREFACE
+## Preface {#turbulence-preface}
 Turbulence is discussed in this module as a mode of transport for mass and energy between organisms and their environment. Transport processes of particular emphasis include heat transfer and mass fluxes of water vapor, carbon dioxide, and other trace contaminants. The transport depends upon fluid motion which occurs usually through water or air, fluids which tend to be turbulent. This module introduces some of the basic terminology and concepts of turbulence theory and provides relevant examples. These concepts are used to develop the basic form of the most widely used semi-empirical flux relationships, the so called 'K-theory'. A familiarity with calculus is required in order to understand the mathematical models used.
 
 Turbulence is discussed in this module as a mode of transport for mass and energy between organisms and their environment, The reader is assumed to have an interest in and previous exposure to problems in ecology. This module is intended to be an introduction to concepts and applications of turbulence, but the reader should be familiar with calculus in order to understand the mathematical models. Empirical techniques and actual data are used throughout for added realism and model verification.
 
 ***
 
-## INTRODUCTION
+## Introduction {#turbulence-intro}
 
 Virtually every interaction between organisms and their environment involves the transport or exchange of either mass or energy. Transport processes of particular emphasis in this series of modules include heat transfer and the mass fluxes of water vapor, carbon dioxide and other trace contaminants. For example, Stevenson (1979a) (see also Monteith 1973) has shown that by use of the concept of conservation of energy, which follows from the First Law of Thermodynamics, one can quantitatively describe the balance of energy inputs, outputs and production (e.g., metabolism) which is necessary to understand temperature dependent biological processes. Since many mass fluxes of interest are directly related to energy production or consumption (e.g., oxygen and respiration, carbon dioxide and photosynthesis, water vapor and the latent heat of vaporization), they too should be included in an energy balance description.
 
@@ -30,11 +31,11 @@ In describing the energy and mass exchanges relevant to biological systems, an e
 
 ***
 
-## DESCRIPTION OF TURBULENCE
+## Description of Turbulence {#turbulence-desc}
 
 What is **turbulence**? Perhaps the only generally agreed upon response to this question is that turbulence is difficult to define! Generally, the answer takes the form of a list of the characteristics of turbulent flows, such as is done by Lumley and Panofsky (1964, p.3 ff) and Tennekes and Lumley (1972, p.1 ff). Campbell (1977) presents a more elementary discussion of two of these characteristics, probably the easiest to conceptualize, while still conveying the ideas important for this discussion: variability and diffusivity.
 
-### Variability
+### Variability {#turbulence-variability}
 
 Anyone who has observed the plume from a smokestack and noticed the irregularity of the force of the wind on a gusty day, or simply lain on their back and witnessed the random evolution of a cumulus cloud, has an appreciation of the variability of turbulence. For example, consider the wind record of Fig. \@ref(fig:fig-turb-1). It gives three one-minute records of the elevation angle from a bidirectional wind vane. Such a wind vane can rotate in the horizontal plane (azimuth) as well as around a horizontal axis perpendicular to the mean wind (elevation). Notice that only a total of seven minutes has elapsed from the first to the last record. The intermittency of the turbulence is illustrated by the marked difference between the record from 1337-1338 and the other two.
 
@@ -68,7 +69,7 @@ It turns out that there are four equations of motion, which are nonlinear and th
 
 Although the numerical solution to the turbulence problem present a computational challenge, this should not be viewed by the biologist as an entirely negative result. In fact, the semi-empirical approach (as pointed out in the Introduction) is in many ways more suited to the type of analysis likely to be needed by, say, a physiologist or ecologist. Consider the various energy budgets involved in the examples of Stevenson (1979b). All that is required in the stream flow, leaf, or spider example is a reliable estimate of the various fluxes of energy; details about how these  fluxes occur are secondary. However, this should not be taken to minimize the importance of more detailed characteristics of turbulent flow fields in other cases of biological interest. Examples of this latter case include nutrient diffusion to plankton, location and size of stream insects, mobility and habitat of flying insects, aerosol dispersion, leaf shapes and characteristics, and even bird wing shape. Ultimately, it is important that the biologist should at least realize the general nature of the problem of turbulent flow as a prerequisite to determining the proper mix of analytic and empirical methods.
 
-### Diffusivity
+### Diffusivity {#turbulence-diffusivity}
 
 "The outstanding characteristic of turbulent motion is its ability to transport or mix momentum, kinetic energy, and contaminants such as heat, particles, and moisture" (Tennekes and Lumley 1972, p. 9). Without turbulent transport, life on the earth would either suffocate due to the slow rate of diffusion of CO~2~ or O~2~ from the upper layers of the atmosphere or be poisoned by the buildup of pollutants near the surface. This is well illustrated by a simple example taken from Monteith (1973, p. 134). The amount of CO~2~ required by a healthy crop canopy over the course of a day is equivalent to all the CO~2~ in the first 30m of the atmosphere. The actual diurnal variation of CO~2~ concentration in this layer rarely exceeds 15% of the mean concentration. These figures suggest turbulent transfer supplies CO~2~ from as high as $30m/0.15= 200m$. In fact, measurements have detected small diurnal fluctuations as high as 500m. Apparently, a relatively rapid means of transport must be supplying CO~2~ from above the surface layer to the plants.
 
@@ -120,13 +121,13 @@ Further evidence to support this explanation was obtained by Gad-el-Hak et al. t
 
 ***
 
-## ORIGINS OF TURBULENCE
+## Origins of Turbulence {#turbulence-origins}
 
 In the description of turbulence, it was noted that it is an ubiquitous property of almost all natural flows. It is of utmost importance in many processes due to its superior mixing and transport properties, while at the same time being very difficult to work with quantitatively due to its random nature. Two questions remain to be dealt with in this module: what is the origin of turbulence, and how can we quantify the transport which results without being overwhelmed by intractable complexities.
 
 As discussed by Vennard and Street (1975) and Cowan (1979a), there are two flow regimes of interest in physical and biological processes: laminar and turbulent. Laminar flow is smooth, orderly and predictable, in contrast to turbulent flow. For a given flow geometry, one can predict by the value of the Reynolds number ($Re$) whether the flow is laminar, turbulent, or in a state of transition. The Reynolds number is a combined measure of fluid velocity, viscosity, density and a characteristic dimension. In essence, laminar flow becomes turbulent when small perturbations or instabilities in the flow are provided with a sufficient input of energy to grow and destroy the orderly nature of the laminar flow. In any given situation, one can think of an increase in the Reynolds number as a velocity increase, since the other parameters presumably would not change. A large Reynolds number corresponds to a large velocity and thus a large energy input. Therefore beyond some critical point, a large Reynolds number indicates that the flow instabilities will be able to grow and cause the flow to become fully turbulent. The flow geometry, including the roughness of any surfaces in contact with the flow, can have a dramatic effect on the values of the Reynolds number which define the transition zone between laminar and turbulent flow.
 
-### Viscosity and Laminar Shear Flows
+### Viscosity and Laminar Shear Flows {#turbulence-viscosity}
 
 As has been indicated, a source of energy is required to cause turbulent flow. Indeed, turbulence requires a continuous energy input, otherwise it rapidly decays due to frictional losses as a result of the viscosity of the fluid. Two sources of energy input exist to maintain turbulence in common flows. The first source is shear in the mean flow, where friction between the surface and the fluid causes energy from the mean flow to be diverted into the creation of turbulent velocity fluctuations. The second source derives from the heating of the fluid at the surface, which causes the fluid to rise generating turbulence. These mechanisms are known respectively as mechanical and thermal (convective, buoyance driven) turbulence. To gain some insight into these turbulence maintenance mechanisms, a fundamental understanding of viscosity and shear flows is essential, starting with laminar flow and progressing from there into the more complex turbulent flow case.
 
@@ -140,7 +141,7 @@ Viscosity is the result of molecular momentum exchange (a subject discussed subs
 
 Although most flows in nature are turbulent, there are notable exceptions. For example, Cowan (1977b) treats the flow environment of plankton. Their movement can be closely approximated in many cases by treating the flow they encounter as laminar. (With their small diameter and sinking velocity, the Reynolds number here is quite small.) However, as is pointed out, the sea itself may be turbulent, as most flowing water certainly is (see Cowan 1979b or Ealgeson 1970), which may invalidate this simplified approach in some applications. 
 
-### Turbulent Shear Flow
+### Turbulent Shear Flow {#turbulence-shear}
 
 As has been described earlier (see also Tennekes and Lumley 1972 or Cowan 1977), turbulent flow is a random and irregular variation of velocity which can be thought of as being superimposed upon a steady mean flow velocity. The concept of an eddy was used to visualize that part of the flow responsible for this variation. It seems apparent that the preceding analysis of laminar shear based on only molecular interactions is not suitable for a similar treatment of turbulent flow. We will find, however, that for partial applications at least, many similarities are evident.
 
@@ -156,7 +157,7 @@ The growth and maintenance of the flow instabilities which lead to turbulent vel
 
 ***
 
-## THEORIES OF TURBULENCE
+## Theories of Turbulence {#turbulence-theories}
 
 Businger (1973) states that "the primary objective of the study of turbulence in the atmospheric boundary layer is to obtain tractable expressions for the fluxes of heat, momentum, water vapor and other atmospheric constituents." This is true not only for large scale interactions of, for example, weather systems with the earth's surface, but also on smaller scales, such as the heat balance of exposed animals or the carbon dioxide exchange of a plant leaf. We are of course not limited to atmospheric flows. Turbulent fluxes are also important in the marine or aquatic environment, where we might include such things as nutrient fluxes, or the "fluxes" of the organisms themselves, borne about by the currents. An interesting example of this latter phenomenon is the formation of cold-core rings, which are giant eddies which break off from large meanders of the Gulf Stream (Wieke, 1976). Ranging up to 300 kilometers in horizontal extent, these eddies form around a "core" of seawater of different origin, and persist for up to two years. Consequently, they are of great ecological importance, since they represent a large scale intrusion of one oceanic community by another (the one surrounded by the eddy). It is thought that a better understanding of the factors which ultimately limit the distribution of oceanic, planktonic organisms may be gained by study of such structures.
 
@@ -164,7 +165,7 @@ Despite the importance of the study of turbulence for the various types of flow 
 
 It is due primarily to this very inventiveness that the uninitiated often find themselves awash in a sea of seemingly ad hoc assumptions and oversimplifications if they should attempt to read the turbulence literature. But, as in much scientific writing, a certain level of prior knowledge of the subject is usually assumed. While a thorough understanding of this "background material" is appropriate to textbooks on the subject, this paper attempts to deal with some of the most common material. Since we are primarily interested in calculating fluxes, it is appropriate that this final section deal with flux estimating procedures, drawing upon prior developments in this paper to link the procedure to the theory and phenomenon of turbulence.
 
-### Reynolds Averaging
+### Reynolds Averaging {#turbulence-reynolds}
 
 Most semi-empirical theories are based upon a set of equations derived from the N-S equations called the Reynolds equations. The derivation is straightforward, and involves dividing the motion into its mean and fluctuating parts (see Cowan 1979a or Tennekes and Lumley 1972). The variables of interest are the pressure and the three velocity components. As an example, consider the decomposition of the velocity in the x-direction,
 $$u = \bar u + u'$$
@@ -207,7 +208,7 @@ knitr::include_graphics('figures/fig-turb-8.png')
 
 In practice, expressions such as equation \@ref(eq:turbulence-5) are used in the actual measurement of surface fluxes in the atmosphere. It has been found that the fluctuating horizontal velocity term ($u'$) can be replaced with the fluctuating component of virtually any trace constituent (such as water vapor or CO~2~), thus obtaining the flux of that quantity. However, an emphasis on obtaining the maximum amount of information with the minimum amount of measurement precludes use of this correlation technique in most biological applications at present. This is due to the fact that the quantities to be measured are generally varying quite rapidly, so that a measurement and multiplication must be accomplished up to ten times a second. The next section introduces a more common general method of flux determination, which though simpler loses some of the insight into the actual physical processes which the correlation approach provides.
 
-### K Theory 
+### K Theory {#turbulence-ktheory} 
 
 Recall the discussion of the section titled Origins of Turbulence, in particular the similarities pointed out between turbulent and laminar shear stress. These similarities, in addition to the complexity of the equations of motion, make it tempting to write the expression for turbulent stress in a manner analogous to equation \@ref(eq:turbulence-3),
 
@@ -248,7 +249,7 @@ u_* = kz \frac{d \overline u}{dz}
 \end{equation}
 This of course is tantamount to finding $\tau$. $u_*$ is important in certain mean gradient methods for finding the fluxes of heat and mass, notably the aerodynamic method (see, e.g., Campbell 1977 or Monteith 1973 or 1975) and the combination or Penman type methods. A particularly lucid exposition of these methods as applied to evapotranspiration can be found in Chapter 3 of Taylor and Ashcroft (1972). It should be apparent from the one-dimensional nature of equations \@ref(eq:turbulence-6), \@ref(eq:turbulence-9) and \@ref(eq:turbulence-10) that we are considering transport to be occurring in only one direction, normal to the surface. This is the case when we consider flow over an essentially infinitely long, horizontal and homogeneous surface. Transport to or from small objects such as animals requires a different approach.
 
-### Boundary Layers and Non-dimensional Numbers: A Bulk Approach
+### Boundary Layers and Non-dimensional Numbers: A Bulk Approach {#turbulence-boundarylayers}
 
 Implicit in the present treatment of turbulence has been the proximity of a surface to the flow. As discussed previously, much turbulence originates at surfaces. Out of the main sources of turbulence is the friction between the fluid and the surface (mechanical turbulence). Another important source is due to heating of the surface, which transfers heat to the fluid, causing the less dense, heated fluid to rise (thermal turbulence). If there is bulk movement of the fluid, mechanical turbulence is present, but of course only in the area where the frictional influence of the surface is important. This region of surface influence is known as the **boundary layer**. It can be characterized by a boundary layer depth, which corresponds to the streamline along which the velocity reaches 99% of the free stream velocity (see Fig. \@ref(fig:fig-turb-9)). This latter velocity is the one which characterizes the fluid away from the retarding influence of the surface. Notice in Fig. \@ref(fig:fig-turb-9) that the flow is initially laminar, changing to turbulent, with a transition region of mixed laminar and turbulent flow called the viscous sublayer. This flow structure is due primarily to the fact that the fluid layer immediately next to a surface has zero velocity with respect to the surface, and the flow must adjust itself accordingly. See Vennard and Street (1975) or Monteith (1930) for a further discussion of boundary layers.
 
@@ -303,13 +304,13 @@ knitr::include_graphics('figures/fig-turb-10.png')
 
 ***
 
-## RECAPITULATION 
+## Recapitulation {#turbulence-recapitulation} 
 
 The primary purpose of this module has been to acquaint the reader with enough of the rudimentary aspects of the theory of turbulent fluid flow to provide a basis for discussing fluxes of mass and energy between organisms and their environment. An attempt has been made through the use of examples to relate this development to processes of significance in biology. An introduction to the two major semi-empirical applications of turbulence to expressions for the fluxes of such quantities as heat, momentum, and mass lays the groundwork for a more comprehensive treatment of exchange processes. A major stumbling block to the uninitiated is the use of strange terminology and many seemingly ad hoc assumptions in treatments of turbulent exchange. It is hoped that this module has cleared up some of that "mystery" and provide a sound base for further discussion.
 
 ***
 
-## LITERATURE CITED
+## Literature Cited {#turbulence-litcited}
 
 Businger, J.A. 1973. Turbulent transfer in the atmospheric surface layer. In D.A. Haugen (ed.), Workshop on Micrometeorology, pp. 67-100. ANS, Boston.
 
@@ -361,7 +362,7 @@ Wiebe, P. 1976. The biology of cold core rings. Oceanus 19:69-76.
 
 ***
 
-## PROBLEMS
+## Problem Set {#turbulence-problems}
 
 1. What is the Reynolds number for an elephant in a 0.1 and a 10.0 m s^-1^ wind? Assume $\nu = 1.5\times10^{-5}$. (Make your own estimate for $d$.)
 
@@ -392,7 +393,7 @@ Notice that $u'$ represents the RMS (root-mean-square) value of the velocity flu
     Air temperature = 20°C  
 
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#turbulence-answers}
 1. 
 \begin{align*}
 Re&=\frac{\bar{u}d}{v} \\

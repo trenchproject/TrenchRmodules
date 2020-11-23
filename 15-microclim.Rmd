@@ -1,12 +1,16 @@
+---
+pagetitle: Microclim
+---
+
 # Appendix 1. Working with microclim {#microclim}
 
 author: Kearney, M. R.
 
-## Introduction
+## Introduction {#microclim-intro}
 
 In this module you will learn how to work with the 'microclim' global microclimate layers. You will go through each type of microclimatic variable and explore their variation across space and time in Australia and North America.
 
-## Initial setup
+## Initial setup {#microclim-setup}
 
 First you should set up a folder on your computer to work in, and put the materials for this module into it. There should be this file, plus files called 'microclim\_aust.zip' and 'microclim\_NAm.zip'. The latter files are compressed files of the microclimate data we will use.
 
@@ -18,7 +22,7 @@ Alternatively, use the function `setwd()`, e.g. `setwd('c:/Users/mrke/Desktop/SD
 
 As a general point, you can find help on any R command or function by simply typing a question mark and then the command or function's name, e.g. `?setwd`.
 
-## Overview of the microclimate data
+## Overview of the microclimate data {#microclim-overview}
 
 The compressed files referred to above include microclimate data for Australia and North America, and comprises a subset of the the global microclimate data set 'microclim' published by Kearney et al. (2014) and discussed in lecture. You can obtain the full data set at [this site](http://www.nature.com/articles/sdata20146#data-records). 
 
@@ -54,7 +58,7 @@ substrate\_temperature_degC
 
 As discussed in Kearney et al. (2014), these microclimate layers have been computed with the [NicheMapR microclimate model](https://camelunimelb.wordpress.com/resources/). We will look at each of these layers in turn.
 
-## Solar Radiation
+## Solar Radiation {#microclim-radiation}
 
 The microclimate model used to generate these layers includes a solar radiation sub-module that computes solar radiation reaching flat ground on the basis of time, longitude and latitude, and atmospheric properties including gridded cloud and aerosol (dust) data. The computation starts by determining the extra-terrestrial radiation reaching the outer atmosphere, given the location, day of the year and hour of the day. It then determines how that radiation is attenuated as it passes through the atmosphere to hit the ground.
 
@@ -100,7 +104,7 @@ hrs = seq(0,23) # create a sequence of hours
 plot(solar.hr ~ hrs, type = 'l', ylab = "solar radiation W/m2", xlab = "hr of day") 
 ```
 
-## Zenith Angle
+## Zenith Angle {#microclim-zenith}
 
 The solar radiation layers are for flat ground but often we need to compute radiation at different angles relative to the sun's rays, for which we need to know the zenith angle. This is the angle the sun is in the sky relative to a point directly overhead (so a zenith angle of 0 degrees is when the sun is directly overhead and 90 degrees or greater is below the horizon). This can also tell us about twilight hours, which is when there is still some solar radiation present but the zenith angle is greater than or equal to 90 (the sun has just disappeared).
 
@@ -139,7 +143,7 @@ points(ZEN_jul.hr ~ hrs, type = 'l', col = 'blue')
 legend(0, 60, c("January", "July"), col = c("red", "blue"), lty=c(1), bty = "n")
 ```
 
-## Wind Speed
+## Wind Speed {#microclim-windspeed}
 
 For wind speed, notice how there are values for two heights, 1cm and 10m. The 10m value is what comes from the New et al. (2002) data set and is the height of the weather station wind speed measurements used by New et al. (2002) to interpolate the wind speed grids. But 10m isn't a particularly useful height for calculating organismal heat and water budgets (well, except for trees and dinosaurs). The 1cm height was arbitrarily chosen as a useful general height at which to have microclimatic data, but this can be adjusted to different heights as discussed in Kearney et al. (2014).
 
@@ -189,7 +193,7 @@ points(V1cm_jul.hr ~ hrs, type = 'l', col = 'blue')
 legend(0, 5, c("10m", "1cm"), col = c("red", "blue"), lty=c(1), bty = "n")
 ```
 
-## Air Temperature
+## Air Temperature {#microclim-airtemp}
 
 As with wind speed, there are two folders for air temperature, at different heights above the ground. In the case of air temperature, the height of the measurements in the weather station data used by New et al. (2002) was 120cm. And, as for wind speed, the microclimate model has been used to estimate values for 1cm above the ground. 
 
@@ -290,7 +294,7 @@ legend(0, 45, c("120cm", "1cm, 100% shade", "1cm, 0% shade"),
        col = c("black", "blue", "red"), lty=c(1, 1, 1), bty = "n")
 ```
 
-## Sky Temperature
+## Sky Temperature {#microclim-skytemp}
 
 The sky temperature is the temperature you would measure if you pointed an infra-red thermometer at the sky. It is used to compute the downward flux of infra-red radiation and is estimated by the microclimate model as function of air temperature, cloud cover, relative humidity and shade. 
 
@@ -351,7 +355,7 @@ points(Tsky_100shade_jul.hr ~ hrs, type = 'l', col = 'red')
 legend(0, 30, c("0% shade","100% shade"), col = c("red", "blue"), lty=c(1), bty = "n")
 ```
 
-## Relative Humidity
+## Relative Humidity {#microclim-relhumid}
 
 Relative humidity, similar to air temperature, is measured at 120cm and has been estimated by the microclimate model at 1cm. In the estimation, the absolute amount of water in the air has been assumed constant, and the relative humidity has been adjusted for the 1cm air temperature (remember, relative humidity is the amount of water the air is holding relative to what it could if it were saturated at that temperature, and as temperature goes up it can hold more water at saturation). Thus, we have estimates specific to soil type and shade level, as for air temperature.
 
@@ -448,7 +452,7 @@ legend(-2, 40, c("120cm", "1cm, 100% shade", "1cm, 0% shade"), col = c("black", 
        lty=c(1, 1, 1), bty = "n")
 ```
 
-## Soil Temperature
+## Soil Temperature {#microclim-soiltemp}
 
 The final environmental data set in microclim is for substrate temperature. As with air temperature and relative humidity at 1cm, there are separate sets for each substrate type and shade level. Indeed, it is the thermal properties specified for each substrate type (thermal conductivity, specific heat capacity and density) that drive the substrate-specific differences in air temperature and relative humidity at 1cm. In this case we only have access to the soil substrate type.
 
@@ -573,13 +577,13 @@ Note how the amplitude and timing of the maximum and minimum values shift with d
 
 You can have a look at this soil temperature profile for 100% shade, or for July, by simply changing the 'shade' and 'month' values in the code chunk above. Try it, and try looking at some of these variables for other places of interest to you in Australia.
 
-## LITERATURE CITED
+## Literature Cited {#microclim-litcited}
 
 Kearney, M. R., A. P. Isaac, and W. P. Porter. 2014. microclim: Global estimates of hourly microclimate based on long-term monthly climate averages. Scientific Data 1:140006.
 
 New, M., D. Lister, M. Hulme, and I. Makin. 2002. A high-resolution data set of surface climate over global land areas. Climate Research 21:1-25.
 
-## PROBLEMS
+## Problem Set {#microclim-problems}
 
 1. You have also been supplied with the same set of microclimate data for North America. Take a look at it by simply altering the variable 'path', which we defined right at the beginning, to wherever you decompressed the North American data set archive 'microclim\_NAm.zip'. Note you'll have to choose a new location to extract hourly data from, i.e. change the variable 'lon.lat'.
 

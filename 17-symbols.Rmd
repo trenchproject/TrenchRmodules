@@ -1,3 +1,7 @@
+---
+pagetitle: Symbols
+---
+
 # List of Symbols
 
 **Symbol**|**Quantity**|**Unit**|**Dimension**

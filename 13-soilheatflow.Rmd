@@ -1,14 +1,20 @@
-# Soil Heat Flow. {#soilheatflow}
+---
+pagetitle: Soil Heat Flow
+---
+
+# Soil Heat Flow {#soilheatflow}
 
 Soil Heat Flow. Physical Processes in Terrestrial and Aquatic Ecosystems, Transport Processes.
 
 author: Simpson, James R.
 
 ***
-## PREFACE
+## Preface {#soilheatflow-preface}
+
 Soil heat flow and the resulting soil temperature distributions have ecological consequences related to plant growth, metabolic processes of soil-dwelling microorganisms, and survival strategies of soil-dwelling animals. The study of soil heat flow requires that soil temperature be obtained. In some instances, actual measurement of soil temperature profiles and heat flux can be used. In other instances, actual measurements may not be available due to lack of equipment, inaccessibility of the site, or inconvenience. In these instances a model is used to predict soil temperatures from more readily attainable environmental variables. This module focuses on the modeling approach.
 
-## INTRODUCTION
+## Introduction {#soilheatflow-intro}
+
 Soil temperature profoundly influences many biological processes, including plant growth and development, and the behavior of soil-dwelling microorganisms, insects, and higher animals. Much of the early work on soil temperature effects on plant growth is summarized in Richards et al. (1952). As an example, consider the effects of low temperature on transpiration (Fig \@ref(fig:fig-soil-1)). The warm weather plants, cotton and watermelon, are significantly more sensitive to cold temperatures than are collards, which are grown as a winter crop in the southern United States. Plants are also sensitive to the extremes of temperature between day and night, winter and summer. In many species, it is this fluctuation of temperature rather than its absolute or average value which is the key ingredient, as for example in seed germination (see e.g., Richards et al. 1952). Consequently, a complete understanding of the soil temperature dependence of plant growth and development requires knowledge of soil temperature as a function of time. As will be pointed out later, soil temperature variation with depth is another factor of importance here. The metabolic processes of soil-dwelling microorganisms are also temperature-dependent. They break down organic matter, produce nitrogen, and play a part in the aggregation of the soil itself (Richards et al. 1952). In turn, these processes affect plant growth and maintenance of the nutrient cycle. Monteith (1973) points out, however, that it is difficult to observe the behavior of the flora and fauna in an undisturbed, natural soil. Thus relatively little is known concerning temperature effects on them. Certainly, however, a model of soil temperature variation is an essential first step on the road to this understanding.
 
 ```{r fig-soil-1, echo=FALSE, fig.height=4, fig.fullwidth=FALSE, fig.cap='Effects of low soil temperatures on water absorption by four species of plants, as measured by rates of transpiration (from Kramer 1969).'}
@@ -25,7 +31,7 @@ Soil heat flow and the resulting soil temperature distributions have important e
 
 This module will focus primarily on the modelling approach. It should be pointed out that much of the physical insight developed here is also essential for establishing a proper measurement program. In the final analysis, the type of approach utilized will depend upon individual circumstances.
 
-## GOVERNING FACTORS IN SOIL HEAT FLOW
+## Governing Factors in Soil Heat Flow {#soilheatflow-factors}
 The foregoing discussion has served to illustrate the need for a quantitative grasp of a soil temperature distribution. We now ask what properties of the soil and the general environment are important in determining this distribution. Once we know these properties, equations incorporating them can be derived, and (hopefully) solutions for various conditions can be found.
 
 First, consider some actual observations of soil temperature measurements made at several depths beneath the soil over a period of several days (Fig. \@ref(fig:fig-soil-2)). Notice that at any depth the temperature is an almost periodic function of time. By this it is meant that the temperature trace (wave) repeats itself (almost) at regular intervals, in this case approximately every 24 hours. This time interval is called the **period** of the temperature wave, a variation with a periodicity of 24 hours being termed a diurnal variation. In addition to this time dependence, large differences in temperature are also evident between various depths. As one goes deeper, the amplitude of the wave is rapidly damped out. There is also a time (phase) lag associated with the occurrence of the maxima (or minima) of the temperature wave as depth increases. 
@@ -38,10 +44,10 @@ In a very qualitative sense, we have described what appear to be the pertinent q
 knitr::include_graphics('figures/fig-soil-3.png')
 ```
 
-## FORMAL DEVELOPMENT
+## Formal Development {#soilheatflow-formaldev}
 In the preceding section, a cause and effect relationship between soil heat flow and temperature distribution was implied. It is instructive to formalize this relation; indeed, the equation doing so will form the basis for subsequent discussion. First of all, however, it is necessary to present a more rigorous specification of the problem.
 
-### Fourier's Law of Heat Conduction
+### Fourier's Law of Heat Conduction {#soilheatflow-fourier}
 Van Wijk and DeVries (1966) present a good discussion of the simplifying assumptions made to facilitate the mathematical development of heat conduction. These include:
 
 1. The soil is homogeneous with respect to heat transfer by conduction. Now, conduction of heat is due to the transfer of the random vibratory motion of the molecules in the medium. Due to the natural variety of the soils, one would consequently not expect homogeneous soil heat transfer. However, if the soil thermal properties considered are bulk values, i.e., averaged over a volume of soil that is large with respect to the inhomogeneities, then this is a good assumption. It has the effect of making the heat transfer at any point independent of position.
@@ -95,7 +101,7 @@ knitr::include_graphics('figures/fig-soil-6.png')
 knitr::include_graphics('figures/fig-soil-7.png')
 ```
 
-### Heat Storage and Energy Conservation
+### Heat Storage and Energy Conservation {#soilheatflow-storage}
 Equation \@ref(eq:soil-3) embodies the concept that heat flows from high to low temperature areas at a rate proportional to the temperature gradient. The constant of proportionality, $k$, is a quantitative measure of a medium's ability to transmit heat. As was discussed in the section on governing factors, complete specification of the temperature distribution also requires knowledge of the capacity of the medium to store heat for a given temperature change, i.e., its **heat capacity**. In general, heat capacity is defined on either a volumetric or mass basis. **Specific heat** capacity or specific heat ($c$) is defined in SI units as the amount of heat required to raise the temperature of 1 kg of material 1°C. Volumetric heat capacity is defined as $C = \rho c$, where $\rho$ is the density of the material. Table A (Appendix) lists dimensions and units of these quantities, while Table 13.1 lists typical values of specific heat for various materials. Taylor and Ashcroft (1972) present a more complete discussion from the viewpoint of thermodynamics.
 
 The bulk heat capacity is generally estimated by adding up the heat capacities of the various soil constituents in a unit volume. The heat capacity per unit volume ($C$) can then be expressed as
@@ -160,7 +166,7 @@ This is also referred to as the continuity equation for heat transfer.
 
 Notice the inclusion of a minus sign. The reason for this is illustrated by Fig. \@ref(fig:fig-soil-4). If we consider the case when the soil volume is heating up, then $C (\partial T/\partial t) > 0$. Now, for this to be the case, more heat must be entering the block $(G(z))$ than is leaving $(G(z+\Delta z))$, hence $G(z,t) - G(z+\Delta z,t) > 0$, so $\partial G/\partial z > 0$, by the definition of a partial derivative. Therefore, for Equation \@ref(fig:fig-soil-7) to balance, the minus sign must be included. A similar argument holds when the soil is cooling.
 
-### Heat Conduction (Diffusion) Equation
+### Heat Conduction (Diffusion) Equation {#soilheatflow-conduction}
 Differentiation of the law of conduction (Equation \@ref(fig:fig-soil-3)) with respect to $z$ and combining the result with the continuity equation (Equation \@ref(fig:fig-soil-7)) gives
 $$-\frac{\partial G}{\partial z}=\frac{\partial}{\partial z}(k\frac{\partial T}{\partial z})=C\frac{\partial T}{\partial t}$$
 
@@ -185,10 +191,10 @@ knitr::include_graphics('figures/fig-soil-8.png')
 knitr::include_graphics('figures/fig-soil-9.png')
 ```
 
-## USE OF THE HEAT CONDUCTION EQUATION
+## Use of the Heat Conduction Equation {#soilheatflow-heatconduction}
 Experience with actual temperature data indicates that with the assumption of a constant diffusivity, Equation \@ref(eq:soil-8) describes in a general way the phenomenon of soil heat flow and resultant temperature distribution. It is the goal of this section to investigate in more detail the utility of this formalized approach through an analytical solution of Equation \@ref(eq:soil-8).
 
-### Boundary Conditions
+### Boundary Conditions {#soilheatflow-bounds}
 Hatheway (1977b) discusses in general the need for well-posed boundary conditions in order to derive a unique solution for a diffusion type equation (such as our Equation 8). It turns out that it is necessary to specify $T(z,t)$ or $\frac{\partial T}{\partial z}$at the soil surface (z=0), and at some depth in the soil, which we take as $z=\infty$. This latter choice is based on the observation that the soil temperature at substantial depths, say greater than 10 meters, is practically constant. Hence, our lower boundary condition is simply
 
 \begin{equation}
@@ -235,7 +241,7 @@ D=(2K/\omega)^{1/2}
 
 Several aspects of this solution (Equations \@ref(eq:soil-11) through \@ref(eq:soil-14)) will now be discussed in detail.
 
-### Properties of the Harmonic Solution
+### Properties of the Harmonic Solution {#soilheatflow-harmonic}
 Since the temperature is a function of both $z$ and $t$, it is useful in looking at graphical representations to present two sets of curves. As is immediately apparent from Equation \@ref(eq:soil-11), a plot of $T$ versus $t$ for various depths produces a family of sinusoids:
 
 ```{r fig-soil-10, fig.cap='Variation of temperature with depth for a sand soil. A value of $k=0.042calcm^{-1}sec^{-1}C^{-1}$ and $C=0.5cal cm^{-3}C^{-1}$ has been assumed resulting in a damping depth D=15.2cm'}
@@ -315,7 +321,7 @@ legend("bottomright", c("hr=0200","hr=0600","hr=1000","hr=1400",
                'skyblue4', 'darkblue'), lty="solid", bty = "n")
 ```
 
-### Comparison of Theory with Experiment
+### Comparison of Theory with Experiment {#soilheatflow-conparison}
 In the process of formulating a closed form solution for soil heat flow which described at least the general state of affairs in the soil profile, we made several assumptions. The acid test, of course, of the quality of these assumptions is how well our simplified solution (i.e., Equations \@ref(eq:soil-11)-\@ref(eq:soil-14)) reflects reality. Comparison of the time series we plotted in R (figure \@ref(fig:fig-soil-10)) with figures \@ref(fig:fig-soil-2) or \@ref(fig:fig-soil-9) and the soil temperature profile (figure \@ref(fig:fig-soil-11)) with figure \@ref(fig:fig-soil-12) indicate that general agreement is found. Minor discrepancies do occur, and it is instructive to examine these in light of our prior assumptions (section 3).
 
 First of all, however, an examination of our upper boundary condition reveals an obvious difficulty in that it applies well only under clear sky conditions. Variable weather conditions as well as vegetation cover can lead to substantial deviations from a sinusoidal surface temperature variation (Fig. \@ref(fig:fig-soil-13)). The more general case of a periodic surface temperature variation that is not a simple time function can be handled by a technique called Fourier analysis. In addition, it is possible to deal with small systematic nonperiodic variations superimposed upon a larger periodic variation. Treatment of these refinements is available in Van Wijk and DeVries (1966).
@@ -336,12 +342,12 @@ knitr::include_graphics('figures/fig-soil-14.png')
 
 Analogous, but somewhat more complex due to accounting for transient dynamics, soil temperatures models are available in TrenchR.
 
-### Application of Results
+### Application of Results {#soilheatflow-results}
 A major use of the quantitative solution discussed here, and of the possible refinements mentioned, is to explain and illustrate how the temperature distribution of, the soil is determined. For a bare soil under clear skies, our solution approximates reality quite well. Variable weather, vegetative cover, various soil inhomogeneities (including changing moisture content) as well as moisture movement (liquid and vapor) can further complicate attempts at solution. As indicated in the previous paragraph, some types of inhomogeneity can be handled by extension of the present analysis. The upper boundary condition can be modeled using Fourier analysis. Alternatively, since the temperature of the soil surface ultimately is a result of the partitioning of solar energy into evaporation, heating of the air and heating of the soil, we may first calculate $G(0)$, and from this obtain $T(0)$. However, this requires modeling of the energy balance (see e.g., Hatheway 1977a, Stevenson 1977a, b, c). In practice, it may be easier to measure soil temperature and heat flux directly rather than deal with the further complexities of the energy balance and surface layer of the atmosphere.
 
 In some cases, however, conditions may be close enough to ideal so that the simple model described here can give quite useful results. For example, Mitchell et al. (1975) present the results of a microclimatic model for dry desert-like areas with sparse vegetation. A finite difference scheme is used to solve the soil heat co-conduction equation. In an attempt to simplify the model, constant diffusivity and soil water content was assumed, and changes of state (i.e., evaporation) were ignored. Standard Weather Bureau data input were solar radiation and average monthly air temperature. The former parameter sets the upper boundary condition while the latter approximates the soil temperature at 0.6 m. (From our discussion of damping depth, it should be clear that there is little diurnal temperature change in the soil at 0.6 m depth.) Comparison of model prediction with actual measurements indicate that soil temperatures determined by both methods agreed within $\pm2$°C for daily variations of from 15°C to 35°C. Apparently, then, even simplified models of soil thermal behavior as discussed in this module would seem to have practical application in environmental modeling. Certainly simple models must serve as the basis of more comprehensive schemes leading to more complete understanding of the affected biological processes.
 
-## LITERATURE CITED
+## Literature Cited {#soilheatflow-litcited}
 Carrier, G.F., and C.E. Pearson. 1976. Academic Press, New York. 320 pp.
 
 Carslaw, H.S., and J.C. Jaeger. 1959. Clarendon Press, Oxford. 510 pp. Partial differential equations. Conduction of heat in solids.
@@ -386,7 +392,7 @@ Van Wijk, W.R., and W.J. Derksen. 1966. Sinusoidal temperature variation in a la
 
 Van Wijk, W.R., and D.A. DeVries. 1966. Periodic temperature variation in a homogeneous soil. Pages 102-143 in W.R. Van Wijk, ed. Physics of plant environment, second edition. North-Holland, Amsterdam.
 
-## PROBLEMS
+## Problem Set {#soilheatflow-problems}
 1. Verify that:  
     (a) Equation \@ref(eq:soil-11) is a solution to Equation \@ref(eq:soil-8).  
     (b) Boundary conditions 9 and 10 satisfy Equation \@ref(eq:soil-8).
@@ -408,7 +414,7 @@ Van Wijk, W.R., and D.A. DeVries. 1966. Periodic temperature variation in a homo
 knitr::include_graphics('figures/fig-soil-15.png')
 ```
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#soilheatflow-answers}
 1.(a) $T(z,t)=\overline{T}+A(z)\sin[\omega t+B(z)]$
 
 Now $T=\overline{T}+A(0)\exp(-z/D)\sin[\omega t-z/D]$, substituting expressions \@ref(eq:soil-12) and \@ref(eq:soil-13) into \@ref(eq:soil-11). Taking partial derivatives as indicated by Equation \@ref(eq:soil-8):

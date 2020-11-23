@@ -1,13 +1,18 @@
+---
+pagetitle: Transpiration
+---
+
 # Transpiration and Leaf Temperature {#transpiration}
 
 Transpiration and Leaf Temperature: Transport Processes
 
 author: Gates, David M.
 
-## PREFACE
+## Preface {#transpiration-preface}
+
 This module introduces two models of the thermal energy budget of a leaf. The reasoning behind the simple, heat energy budget of a leaf is developed in this module into a detailed explanation of leaf transpiration. Typical values for environment variables and leaf parameters are discussed and simple calculations are made to demonstrate how radiation, convection, and transpiration affect leaf temperature. A graphical method of analysis is used to present a more detailed energy budget model. A problem set explores the consequences of the models. Algebra and some knowledge of heat transfer physics are prerequisites.
 
-## INTRODUCTION
+## Introduction {#transpiration-intro}
 
 Water is essential to life as we know it on earth. Water acts as a medium for carrying nutrients, ions, and suspended particles from the soil into a plant and as a conducting system within a plant. Most organic tissue is permeable to water and when the external water vapor pressure is less than that inside a plant, water will evaporate from it. Plant leaves have evolved stomates or pores through which to take in carbon dioxide from the surrounding air, but since the water molecule is of lighter molecular weight than the carbon dioxide molecule, it tends to escape readily from the leaf through the stomates. Normally the air in the intercellular spaces within a leaf is at or near saturation. This process of water evaporation from a plant is known as transpiration. Energy is required to convert liquid water to vapor. As a consequence of transpiration, energy is lost by a leaf and the temperature of the leaf is reduced.
 
@@ -29,7 +34,7 @@ In the following pages, the reader is formally introduced to the leaf energy bud
 
 The graphical method of analysis used by Gates (1968) is then employed to understand a more detailed energy budget model. Problems with accompanying solutions conclude the chapter. 
 
-## LEAF ENERGY BUDGET
+## Leaf Energy Budget {#transpiration-leafenergy}
 
 Radiation incident upon a leaf includes shortwave radiation in the form of direct sunlight, skylight and reflected light, and longwave radiation emitted by the atmosphere and clouds, or by the surfaces of ground, nearby plants, and other objects.
 
@@ -67,7 +72,7 @@ where
 
 For any given value of $E$, a specific value of $T_l$ will balance Equation \@ref(eq:transpiration-1), provided all other quantities are known. However, $E$ depends on a unique set of environmental variables. It is seen in the next paragraphs that $E$ is a function of $T_l$. Therefore, it is possible to determine $E$ and $T_l$ simultaneously. If the air temperature is warmer than the leaf temperature, heat is gained by convection rather than lost and this term becomes negative on the right-hand side of the energy budget equation.
 
-### Resistance to Water Loss
+### Resistance to Water Loss {#transpiration-waterloss}
 
 There are three requirements for the loss of water from a leaf. There must be water available in the leaf, there must be energy available to convert liquid water to vapor, and finally, there must be a vapor pressure or density gradient along which water vapor may flow from inside to outside the leaf beyond the boundary layer of air which adheres to the leaf surface. Liquid water at the mesophyll cell walls within the leaf is vaporized and from the intercellular spaces, this water vapor passes out of the leaf by diffusion through the stomates or through the leaf cuticle. Usually, the cuticle is coated with a wax layer which is relatively impervious to water and as a result most of the water lost from a leaf is through the stomates. As with fluid passing through any tube or pipe, there is resistance to vapor flow by viscous drag with the walls. The resistance to water vapor diffusion through the substomatal and stomatal spaces with the leaf is $r_l$ in $s m^{-1}$ and represents an average value for the entire leaf. In addition, the water vapor must diffuse across a boundary layer of air adhering to the leaf surface and this offers a resistance $r_a$ given in $s m^{-1}$. The boundary layer resistance is affected by the wind speed across the leaf. In fact, the greater the wind speed the thinner the boundary layer thickness; and hence, diffusion resistance is greater on large leaves than on small leaves. Experimental results show that the boundary layer resistance varies directly as the square root of the leaf dimension (width) $D$ and inversely with the square root of the wind speed $V$, a relationship which is precisely the inverse of the influence of wind speed and leaf dimension on the exchange of heat by convection. Therefore, the boundary layer resistance $r_a$ is given by
 \begin{equation} 
@@ -77,7 +82,7 @@ r_a = k_2 \bigg(\frac{D}{V}\bigg)^{1/2}
 
 Although there are complexities concerning air flow about a leaf which cause $k_2$ to change its value for leaves of characteristic dimension less than $0.005 m$, we shall use a single value here for all leaf dimensions. $k_2 = 200 s^{1/2-1}m^{-1}$ when $D$ is in $m$ and $V$ is $m s^{-1}$. Since the ratio of $D/V$ is involved here, nothing is changed if $D$ is in $cm$ and $V$ in $cm s^{-1}$.
 
-### Transpiration Rate
+### Transpiration Rate {#transpiration-rate}
 
 The rate at which water vapor will diffuse out of a leaf will depend directly on the difference in water vapor density inside and outside the leaf, just as the rate at which water will flow downhill depends on the difference in height between the top and bottom of the hill.
 
@@ -89,7 +94,7 @@ E = \frac{_s d_l (T_l) - [r.h.]_s d_a (T_a)}{r_l + r_a}
 
 where $r_a$ is given by Equation \@ref(eq:transpiration-2). Here, if $_s d_l (T_l)$ and $_s d_a (T_a)$ are given in kg m^-3^ and $r_l$, and $r_a$ in s m^-1^, then $E$ is in kg m^-2^s^-1^. 
 
-## COMPLETE ENERGY BUDGET
+## Complete Energy Budget {#transpiration-energybudget}
 By substituting Equation \@ref(eq:transpiration-3) into Equation \@ref(eq:transpiration-1), and including the expression given by Equation \@ref(eq:transpiration-2) in Equation \@ref(eq:transpiration-3), one gets for the full expression of the leaf energy budget the following: 
 
 \begin{equation} 
@@ -99,17 +104,17 @@ Q_a = \varepsilon \sigma [T_l + 273]^4 + k_1 \bigg( \frac{V}{D}\bigg)^{1/2} [T_l
 
 Here all environmental variables that affect the energy status of the leaf act simultaneously. They are $Q_a$, $T_a$, $\varepsilon$, $D$, and $r_l$ while the absorptivity of the leaf surface to radiation is buried in the term $Q_a$. When all the environmental variables and appropriate leaf properties are known, a unique value of $T_l$, will balance this equation.
 
-### Values of Leaf Parameters
+### Values of Leaf Parameters {#transpiration-leafparam}
 
 Leaves are of many sizes from 1.0 $\times$ 10^-3^ m by 2.0 $\times$ 10^-2^ m for a Douglas fir needle to 0.3 m by 1.5 m for a banana leaf. Some leaves will have lengths very nearly equal to their widths. Internal diffusion resistances of leaves vary from less than 100 s m^-1^ to infinity but with commonly occurring values between 200 and 2000 s m^-1^. Most leaves will have an absorptivity to shortwave radiation of about 0.6, but it may vary from 0.4 to 0.8. Longwave absorptivity will equal the longwave emissivity of 0.96. The total amount of radiation absorbed by a leaf will vary from about 400 to 800 W m^-2^ but higher and lower amounts may be encountered.
 
-### Values of the Environmental Variables
+### Values of the Environmental Variables {#transpiration-envvars}
 
 It is relatively easy for any of us to visualize the range of values for air temperature. A leaf is likely to encounter freezing when the air temperature is 0°C. Maximum air temperature for hot desert conditions, for example, would be about 45°C. Relative humidity is also easy to visualize as a result of common experience. For example, humid air would have a relative humidity of about 70% or greater and for very dry air r.h. = 30% or less. It is easy for one to look up in tables the water vapor density of saturated air at any particular temperature. Values range from 1.289 kg m^-3^ at 0°C to 1.068 kg m^-3^ at 45°C. Wind speeds are a part of common experience. Still air usually has very slight air movement which we arbitrarily put at 0.1 m s^-1^. A gentle breeze is 1.0 m s^-1^ (2.2 mph) and a moderate wind is 10 m s^-1^ (22 mph). Radiation is the least familiar of all of the environmental variables and yet it is the most significant of them.
 
 ***
 
-## INFLUENCE OF ENERGY COMPONENTS ON LEAF TEMPERATURE
+## Influence of Energy Components on Leaf Temperature {#transpiration-energycomponents}
 
 It is useful to evaluate the major components separately of the leaf energy budget in order to get a feeling for their values and influence. If a non-transpiring leaf is in a vacuum, its temperature is determined solely by radiative exchange and its energy budget is
 \begin{equation} 
@@ -197,7 +202,7 @@ The influence of transpiration is now readily seen by including the transpiratio
 
 At $Q_a = 800 W m^{-2}$, $T_l$ = 36.8, 31.8, or 30.3°C for $V/D$ = 1.0, 10.0, and 100.0, respectively. Hence, transpiration has reduced the leaf temperature by 24.7, 7.9, and 3.2°C for the three ratios of $V/D$, as shown by comparing the values listed in columns 6, 7, and 8 with those in columns 3, 4, and 5. These temperature reductions caused by transpiration are quite striking and would be significant in terms of photosynthetic and respiration rates. At lower levels of absorbed radiation, the influence of transpiration if reduced, since there is less energy available for the evaporation of water. Transpiration always produces leaf temperatures lower than the case of radiation and convection only.
 
-## MORE DETAILED ENERGY BUDGET
+## More Detailed Energy Budget {#transpiration-details}
 
 So far, the energy budget equation has contained only the leaf width as the characteristic dimension for convective heat transfer and gas diffusion. Such a simple expression is only strictly correct for leaves which are nearly square; however, relatively few leaves are of this form. Most leaves have a long dimension which is considerably greater than the narrow dimension. Some years ago, Gates (1968) reported investigations of the heat and water vapor transfer from simulated leaves of blotting paper of a variety of lengths and widths. He found if $D$ is the characteristic dimension of the leaf in the direction of air flow and W is the dimension transverse to the wind, that the energy budget is given by
 \begin{equation} 
@@ -210,8 +215,9 @@ $k_1 = 9.14 J m^{-2} s^{-1/2} °C^{-1}$ and $k_2=183 s^{-1/2} m^{-1}$
 
 Gates elected to include W in the evaporation term only since the amount of data was not sufficient to reveal the functional relationship in both the convective and evaporative terms simultaneously. Equation \@ref(eq:transpiration-7) is more realistic than Equation \@ref(eq:transpiration-4), which, nevertheless, is a good approximation. If the wind is blowing across the leaf in the direction of the leaf width, then, the characteristic dimension $D$ is the average leaf width and $W$ is the average length. If, on the other hand, the wind is blowing along the length of the leaf, then, $D$ is the average length and $W$ is the average leaf width.
 
-## ANALYSIS OF A MORE GENERAL MODEL
-### Calculations of Leaf Temperatures and Transpiration
+## Analysis of General Model {#transpiration-genmodel}
+
+### Calculations of Leaf Temperatures and Transpiration {#transpiration-tempandtranspir}
 
 It is straightforward to obtain values of the two dependent variables, leaf temperatures and transpiration rate, as a function of any conceivable combination of values of the independent variables and leaf parameters which appear in Equation \@ref(eq:transpiration-7). The four independent variables used are radiation absorbed, air temperature, relative humidity of the air, and wind speed; and the three leaf parameters are characteristic dimension, leaf width and internal resistance. Gates and Papian (1971) published a tabulation of leaf temperatures and transpiration rates for various sets of values of the dependent variables and leaf parameters. Similar plots are shown in a paper by Gates (1968). These plots have proved useful in understanding Equation \@ref(eq:transpiration-7), and therefore at this time we will undertake an explanation of how they are produced.
 
@@ -291,7 +297,7 @@ legend("topright", c("Vary windspeed", "Vary leaf resistance"),
        col = c("black", "red"), lty=c(1), bty = "n")
 ```
 
-### Sample Plots of Transpiration and Leaf Temperature
+### Sample Plots of Transpiration and Leaf Temperature {#transpiration-sampleplots}
 
 It is possible to select as changing variables in the graph any two of the following independent variables and leaf parameters: amount of radiation absorbed, air temperature, wind speed, relative humidity, leaf dimensions, and diffusion resistance. For our first example, we shall use, as changing variables, wind speed and internal diffusion resistance. Let wind speed values be 0.1, 2.1, 4.1, and 6.1 ms^-1^, and internal diffusion resistance values be 0, 200, 400, and 600 sm^-1^.
 
@@ -538,7 +544,7 @@ Figure \@ref(fig:fig-transpiration-9) is for conditions of moderate radiation in
 
 Figure \@ref(fig:fig-transpiration-10) is for a low amount of absorbed radiation, no wind, and moderate humidity. The constant air temperature lines are very steep and the leaf temperature is always less than the air temperature. Note that for each constant resistance line, there is an optimum air temperature for which transpiration is a maximum. Why does transpiration diminish at high air temperatures? Are the environmental conditions realistic throughout the graph? Is the amount of radiation absorbed by the leaf consistent with the air temperature regime throughout the plot? If not, draw a line on the graph demarking a region of real environments from unreal ones.
 
-## CONCLUSION
+## Conclusion {#transpiration-conclusion}
 
 In this module, two simple models of the thermal energy budget of a leaf have been introduced. Radiation, convection and evaporation, the most important heat transfer processes, are included in the models (note that conduction of heat along the leaf stem is not included). Because of the multidimensionality of the models, a graphical analysis was used. The models show that
 
@@ -551,7 +557,7 @@ In this formulation, the plant "can control" leaf temperature or transpiration b
 
 Finally this work has help lead to research in related areas. Scientists have developed equations to model (1) photosynthesis which couples the interchange of water vapor and CO~2~ (Lommen et al. 1975; Tenhunen, Yocum and Gates 1976; Tenhunen et al. 1976), (2) whole-plant water transport (Farnum 1977), and (3) optimal leaf form (Taylor 1975; Parkhurst and Loucks 1972; Givnish and Vermeij 1976).
 
-## LITERATURE CITED
+## Literature Cited {#transpiration-litcited}
 
 Billings, W.D., P.J, Godfrey, B.F. Chabot, and D.P, Bourque. 1971. Metabolic Acclimation to Temperature in Arctic and Alpine Ecotypes of Oxyria digyna. Arctic and Alpine Research 3. Pp. 277-289.
 
@@ -575,7 +581,7 @@ Tenhunen, J.D., C.S. Yocum and D.M. Gates. 1976. Development of a photosynthesis
 
 Tenhunen, J.D., J.A. Weber, C.S. Yocum, and D.M. Gates. 1976. Development of a photosynthesis model with an emphasis on ecological applications. II. Analysis of a data set describing the Pm surface. Oecologia 26:101-119.
 
-## PROBLEMS
+## Problem Set {#transpiration-problems}
 
 1. Using the example of a leaf with dimensions 0.05 m by 0.05 m, this module demonstrated that under certain circumstances an increase in wind speed will increase transpiration while in other cases an increase in wind speed will decrease transpiration. Find examples of these two cases for a Douglas fir needle with D = 0.001 m, W = 0.02 m. 
 
@@ -589,7 +595,7 @@ Tenhunen, J.D., J.A. Weber, C.S. Yocum, and D.M. Gates. 1976. Development of a p
 
 (c) In Figure \@ref(fig:fig-transpiration-8), the situation indicated by the intersection of the $r_l$ = 5000 s m^-1^ and $T_a$ = 0°C lines.
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#transpiration-answers}
 1.Transpiration increases with windspeed for lines 1 and 2, i.e., $r_l$ = 168 s m^-1^ but decreases with wind speed for lines 3 or 4. 
 
 ```{r}

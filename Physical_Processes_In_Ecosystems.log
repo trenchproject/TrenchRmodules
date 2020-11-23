@@ -1,0 +1,3602 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  21 SEP 2020 17:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Physical_Processes_In_Ecosystems.tex
+(./Physical_Processes_In_Ecosystems.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen103
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/unicode-math/unicode-math.sty (
+/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-05-07 L3 programming layer (loader) 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-05-07 L3 programming layer (code)
+\c_max_int=\count101
+\l_tmpa_int=\count102
+\l_tmpb_int=\count103
+\g_tmpa_int=\count104
+\g_tmpb_int=\count105
+\g__kernel_prg_map_int=\count106
+\c__ior_term_ior=\count107
+\c_log_iow=\count108
+\l_iow_line_count_int=\count109
+\l__iow_line_target_int=\count110
+\l__iow_one_indent_int=\count111
+\l__iow_indent_int=\count112
+\c_zero_dim=\dimen112
+\c_max_dim=\dimen113
+\l_tmpa_dim=\dimen114
+\l_tmpb_dim=\dimen115
+\g_tmpa_dim=\dimen116
+\g_tmpb_dim=\dimen117
+\c_zero_skip=\skip46
+\c_max_skip=\skip47
+\l_tmpa_skip=\skip48
+\l_tmpb_skip=\skip49
+\g_tmpa_skip=\skip50
+\g_tmpb_skip=\skip51
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count113
+\l__intarray_loop_int=\count114
+\c__intarray_sp_dim=\dimen118
+\g__intarray_font_int=\count115
+\c__fp_leading_shift_int=\count116
+\c__fp_middle_shift_int=\count117
+\c__fp_trailing_shift_int=\count118
+\c__fp_big_leading_shift_int=\count119
+\c__fp_big_middle_shift_int=\count120
+\c__fp_big_trailing_shift_int=\count121
+\c__fp_Bigg_leading_shift_int=\count122
+\c__fp_Bigg_middle_shift_int=\count123
+\c__fp_Bigg_trailing_shift_int=\count124
+\g__fp_array_int=\count125
+\l__fp_array_loop_int=\count126
+\l__sort_length_int=\count127
+\l__sort_min_int=\count128
+\l__sort_top_int=\count129
+\l__sort_max_int=\count130
+\l__sort_true_max_int=\count131
+\l__sort_block_int=\count132
+\l__sort_begin_int=\count133
+\l__sort_end_int=\count134
+\l__sort_A_int=\count135
+\l__sort_B_int=\count136
+\l__sort_C_int=\count137
+\l__tl_analysis_normal_int=\count138
+\l__tl_analysis_index_int=\count139
+\l__tl_analysis_nesting_int=\count140
+\l__tl_analysis_type_int=\count141
+\l__regex_internal_a_int=\count142
+\l__regex_internal_b_int=\count143
+\l__regex_internal_c_int=\count144
+\l__regex_balance_int=\count145
+\l__regex_group_level_int=\count146
+\l__regex_mode_int=\count147
+\c__regex_cs_in_class_mode_int=\count148
+\c__regex_cs_mode_int=\count149
+\l__regex_catcodes_int=\count150
+\l__regex_default_catcodes_int=\count151
+\c__regex_catcode_L_int=\count152
+\c__regex_catcode_O_int=\count153
+\c__regex_catcode_A_int=\count154
+\c__regex_all_catcodes_int=\count155
+\l__regex_show_lines_int=\count156
+\l__regex_min_state_int=\count157
+\l__regex_max_state_int=\count158
+\l__regex_left_state_int=\count159
+\l__regex_right_state_int=\count160
+\l__regex_capturing_group_int=\count161
+\l__regex_min_pos_int=\count162
+\l__regex_max_pos_int=\count163
+\l__regex_curr_pos_int=\count164
+\l__regex_start_pos_int=\count165
+\l__regex_success_pos_int=\count166
+\l__regex_curr_char_int=\count167
+\l__regex_curr_catcode_int=\count168
+\l__regex_last_char_int=\count169
+\l__regex_case_changed_char_int=\count170
+\l__regex_curr_state_int=\count171
+\l__regex_step_int=\count172
+\l__regex_min_active_int=\count173
+\l__regex_max_active_int=\count174
+\l__regex_replacement_csnames_int=\count175
+\l__regex_match_count_int=\count176
+\l__regex_min_submatch_int=\count177
+\l__regex_submatch_int=\count178
+\l__regex_zeroth_submatch_int=\count179
+\g__regex_trace_regex_int=\count180
+\c_empty_box=\box29
+\l_tmpa_box=\box30
+\l_tmpb_box=\box31
+\g_tmpa_box=\box32
+\g_tmpb_box=\box33
+\l__box_top_dim=\dimen119
+\l__box_bottom_dim=\dimen120
+\l__box_left_dim=\dimen121
+\l__box_right_dim=\dimen122
+\l__box_top_new_dim=\dimen123
+\l__box_bottom_new_dim=\dimen124
+\l__box_left_new_dim=\dimen125
+\l__box_right_new_dim=\dimen126
+\l__box_internal_box=\box34
+\l__coffin_internal_box=\box35
+\l__coffin_internal_dim=\dimen127
+\l__coffin_offset_x_dim=\dimen128
+\l__coffin_offset_y_dim=\dimen129
+\l__coffin_x_dim=\dimen130
+\l__coffin_y_dim=\dimen131
+\l__coffin_x_prime_dim=\dimen132
+\l__coffin_y_prime_dim=\dimen133
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\g_tmpa_coffin=\box41
+\g_tmpb_coffin=\box42
+\l__coffin_bounding_shift_dim=\dimen134
+\l__coffin_left_corner_dim=\dimen135
+\l__coffin_right_corner_dim=\dimen136
+\l__coffin_bottom_corner_dim=\dimen137
+\l__coffin_top_corner_dim=\dimen138
+\l__coffin_scaled_total_height_dim=\dimen139
+\l__coffin_scaled_width_dim=\dimen140
+\c__coffin_empty_coffin=\box43
+\l__coffin_display_coffin=\box44
+\l__coffin_display_coord_coffin=\box45
+\l__coffin_display_pole_coffin=\box46
+\l__coffin_display_offset_dim=\dimen141
+\l__coffin_display_x_dim=\dimen142
+\l__coffin_display_y_dim=\dimen143
+\g__file_internal_ior=\read1
+\l__seq_internal_a_int=\count181
+\l__seq_internal_b_int=\count182
+\c__deprecation_minus_one=\count183
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvipdfmx.def 2019-04-06 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count184
+\l__driver_pdf_tmp_box=\box47
+\g__driver_pdf_object_int=\count185
+\g__driver_pdf_annotation_int=\count186
+))
+Package: unicode-math 2019/03/04 v0.8o Unicode maths in XeLaTeX and LuaLaTeX
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.s
+ty
+Package: unicode-math-xetex 2019/03/04 v0.8o Unicode maths in XeLaTeX and LuaLa
+TeX
+(/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2019-05-03 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count187
+\g__xparse_grabber_int=\count188
+\l__xparse_m_args_int=\count189
+\l__xparse_v_nesting_int=\count190
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.st
+y
+Package: l3keys2e 2019-05-03 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count191
+\l__fontspec_language_int=\count192
+\l__fontspec_strnum_int=\count193
+\l__fontspec_tmp_int=\count194
+\l__fontspec_tmpa_int=\count195
+\l__fontspec_tmpb_int=\count196
+\l__fontspec_tmpc_int=\count197
+\l__fontspec_em_int=\count198
+\l__fontspec_emdef_int=\count199
+\l__fontspec_strong_int=\count266
+\l__fontspec_strongdef_int=\count267
+\l__fontspec_tmpa_dim=\dimen144
+\l__fontspec_tmpb_dim=\dimen145
+\l__fontspec_tmpc_dim=\dimen146
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 4051.
+LaTeX Info: Redefining \slshape on input line 4056.
+LaTeX Info: Redefining \scshape on input line 4061.
+LaTeX Info: Redefining \upshape on input line 4066.
+LaTeX Info: Redefining \em on input line 4096.
+LaTeX Info: Redefining \emph on input line 4121.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+))
+\g__um_fam_int=\count268
+\g__um_fonts_used_int=\count269
+\l__um_primecount_int=\count270
+\g__um_primekern_muskip=\muskip17
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/unicode-math/unicode-math-table.t
+ex)
+
+Package unicode-math Info: I'm going to patch macro \subarray.
+
+
+Package unicode-math Info: I'm going to patch macro \r@@t.
+
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+\MT@toks=\toks21
+\MT@count=\count271
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen147
+LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
+\MT@listname@count=\count272
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2019/02/28 v2.7b Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 258.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count273
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2018/12/23 v 0.07 modify URL breaks
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdfescape.sty
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package hobsub Info: Skipping package `pdfescape' (already loaded).
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen148
+\Hy@linkcounter=\count274
+\Hy@pagecounter=\count275
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count276
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4393.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count277
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen149
+\Fld@menulength=\count278
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count279
+\c@Item=\count280
+\c@Hfootnote=\count281
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2018/11/30 v6.88e Hyperref driver for XeTeX
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box48
+\c@Hy@AnnotLevel=\count282
+\HyField@AnnotCount=\count283
+\Fld@listcount=\count284
+\c@bookmark@seq@number=\count285
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip52
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2016/05/17 v1.26 bookmark driver for dvipdfm (HO)
+\BKM@id=\count286
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2019/01/15
+Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count287
+\FV@InFile=\read2
+\FV@TabBox=\box49
+\c@FancyVerbLine=\count288
+\FV@StepNumber=\count289
+\FV@OutFile=\write3
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen152
+\fb@frh=\dimen153
+\FrameRule=\dimen154
+\FrameSep=\dimen155
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count290
+\LTcapwidth=\dimen156
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@cols=\count291
+\LT@rows=\count292
+\c@LT@tables=\count293
+\c@LT@chunks=\count294
+\LT@p@ftn=\toks22
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen157
+\lightrulewidth=\dimen158
+\cmidrulewidth=\dimen159
+\belowrulesep=\dimen160
+\belowbottomsep=\dimen161
+\aboverulesep=\dimen162
+\abovetopsep=\dimen163
+\cmidrulesep=\dimen164
+\cmidrulekern=\dimen165
+\defaultaddspace=\dimen166
+\@cmidla=\count295
+\@cmidlb=\count296
+\@aboverulesep=\dimen167
+\@belowrulesep=\dimen168
+\@thisruleclass=\count297
+\@lastruleclass=\count298
+\@thisrulewidth=\dimen169
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
+Package: footnotehyper 2018/01/23 v1.1 hyperref aware footnote.sty (JFB)
+\FNH@notes=\box54
+\FNH@width=\dimen170
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+)
+\Gin@req@height=\dimen171
+\Gin@req@width=\dimen172
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks28
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip61
+\bibsep=\skip62
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count299
+) (./Physical_Processes_In_Ecosystems.aux
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `problem-set' multiply defined.
+
+
+LaTeX Warning: Label `answers-to-the-problem-set' multiply defined.
+
+
+LaTeX Warning: Label `additional-problems' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `bibliography' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `work' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `bibliography' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `summary' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `preface' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `problem-solutions' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+
+LaTeX Warning: Label `problems' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `initial-setup' multiply defined.
+
+
+LaTeX Warning: Label `literature-cited' multiply defined.
+
+)
+\openout1 = `Physical_Processes_In_Ecosystems.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 125.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 125.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1]"[latinmodern-math.otf]/OT:script=math;langua
+ge=DFLT;"<6-8.5>s*[1]"[latinmodern-math.otf]/OT:script=math;language=DFLT;+ssty
+=0;"<-6>s*[1]"[latinmodern-math.otf]/OT:script=math;language=DFLT;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 125.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 125.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 125.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 125.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/bx/n on inp
+ut line 125.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.0001.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
+(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
+(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
+(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
+(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;l
+anguage=DFLT;"<6-8.5>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;+ssty=0;"<-6>s*[1.0001]"[latinmodern-math.otf]/OT:script=math;language=DFL
+T;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[1.0001]"[latinmodern-math.otf]/OT:script=math;lang
+uage=DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 125.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 125.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 125.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/bx/n on inp
+ut line 125.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;l
+anguage=DFLT;"<6-8.5>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;+ssty=0;"<-6>s*[0.9999]"[latinmodern-math.otf]/OT:script=math;language=DFL
+T;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999]"[latinmodern-math.otf]/OT:script=math;lang
+uage=DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+25.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 125.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 125
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/bx/n on inp
+ut line 125.
+LaTeX Info: Redefining \microtypecontext on input line 125.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
+ern Roman (RS)
+)
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring OFF on input line 125.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count300
+)
+LaTeX Info: Redefining \ref on input line 125.
+LaTeX Info: Redefining \pageref on input line 125.
+LaTeX Info: Redefining \nameref on input line 125.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 127.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 127.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.00128pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00085pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 127.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 127.
+LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Overfull \hbox (138.74405pt too wide) in paragraph at lines 127--127
+ [][] 
+ []
+
+[1
+
+
+] [2
+
+] (./Physical_Processes_In_Ecosystems.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 3.
+[3] [4] [5] [6])
+\tf@toc=\write4
+\openout4 = `Physical_Processes_In_Ecosystems.toc'.
+
+[7] [8
+
+] [9] [10] [11] [12
+
+]
+Chapter 1.
+[13] [14] [15]
+File: figures/fig-calcint-1.png Graphic file (type bmp)
+<figures/fig-calcint-1.png>
+File: figures/fig-calcint-2.png Graphic file (type bmp)
+<figures/fig-calcint-2.png>
+[16]
+File: figures/fig-calcint-p5.png Graphic file (type bmp)
+<figures/fig-calcint-p5.png>
+File: figures/fig-calcint-3.png Graphic file (type bmp)
+<figures/fig-calcint-3.png>
+[17] [18]
+File: figures/fig-calcint-4.png Graphic file (type bmp)
+<figures/fig-calcint-4.png>
+[19]
+File: figures/fig-calcint-5.png Graphic file (type bmp)
+<figures/fig-calcint-5.png>
+File: figures/fig-calcint-6.png Graphic file (type bmp)
+<figures/fig-calcint-6.png>
+[20]
+Underfull \vbox (badness 4024) has occurred while \output is active []
+
+[21] [22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
+
+ []
+
+[24]
+Underfull \hbox (badness 1895) in paragraph at lines 501--501
+[]\TU/lmr/bx/n/14.4 APPLICATIONS OF DEFINITE INTE-
+ []
+
+[25]
+File: figures/fig-calcint-7.png Graphic file (type bmp)
+<figures/fig-calcint-7.png>
+
+Underfull \vbox (badness 2065) has occurred while \output is active []
+
+[26] [27] [28]
+File: figures/fig-calcint-8.png Graphic file (type bmp)
+<figures/fig-calcint-8.png>
+File: figures/fig-calcint-8a.png Graphic file (type bmp)
+<figures/fig-calcint-8a.png>
+[29]
+File: figures/fig-calcint-9.png Graphic file (type bmp)
+<figures/fig-calcint-9.png>
+File: figures/fig-calcint-10.png Graphic file (type bmp)
+<figures/fig-calcint-10.png>
+File: figures/fig-calcint-10a.png Graphic file (type bmp)
+<figures/fig-calcint-10a.png>
+
+Underfull \vbox (badness 1762) has occurred while \output is active []
+
+[30]
+File: figures/fig-calcint-10b.png Graphic file (type bmp)
+<figures/fig-calcint-10b.png>
+File: figures/fig-calcint-10c.png Graphic file (type bmp)
+<figures/fig-calcint-10c.png>
+[31]
+File: figures/fig-calcint-11.png Graphic file (type bmp)
+<figures/fig-calcint-11.png>
+File: figures/fig-calcint-12.png Graphic file (type bmp)
+<figures/fig-calcint-12.png>
+File: figures/fig-calcint-13.png Graphic file (type bmp)
+<figures/fig-calcint-13.png>
+File: figures/fig-calcint-14.png Graphic file (type bmp)
+<figures/fig-calcint-14.png>
+File: figures/fig-calcint-15.png Graphic file (type bmp)
+<figures/fig-calcint-15.png>
+[32]
+File: figures/fig-calcint-15a.png Graphic file (type bmp)
+<figures/fig-calcint-15a.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33]
+File: figures/fig-calcint-16.png Graphic file (type bmp)
+<figures/fig-calcint-16.png>
+File: figures/fig-calcint-17.png Graphic file (type bmp)
+<figures/fig-calcint-17.png>
+[34] [35]
+File: figures/fig-calcint-18.png Graphic file (type bmp)
+<figures/fig-calcint-18.png>
+[36] [37] [38] [39] [40] [41] [42] [43] [44]
+File: figures/fig-calcint-19.png Graphic file (type bmp)
+<figures/fig-calcint-19.png>
+
+Underfull \hbox (badness 2343) in paragraph at lines 1070--1070
+[]\TU/lmr/bx/n/14.4 REFERENCES AND RECOMMENDED
+ []
+
+[45]
+Overfull \hbox (0.74792pt too wide) in paragraph at lines 1080--1081
+[]\TU/lmr/m/n/10 Bittinger, M. L. 1976. Calculus: A modeling approach, Addison-
+Wesley,Reading,
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 1102--1103
+[]\TU/lmr/m/n/10 Gold, H. 1977. Mathematicalmodelingof biological systems. Wile
+y-
+ []
+
+[46] [47] [48]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1269.
+[49] [50] [51]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-6-1.pdf
+ Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-6-1.pdf>
+
+[52] [53]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-7-1.pdf
+ Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-7-1.pdf>
+
+
+Overfull \hbox (20.46007pt too wide) detected at line 1552
+[]
+ []
+
+
+Underfull \vbox (badness 1817) has occurred while \output is active []
+
+[54] [55] [56] [57] [58]
+File: figures/fig-calcint-p6.png Graphic file (type bmp)
+<figures/fig-calcint-p6.png>
+File: figures/fig-calcint-p6-2.png Graphic file (type bmp)
+<figures/fig-calcint-p6-2.png>
+[59] [60]
+File: figures/fig-calcint-c3.png Graphic file (type bmp)
+<figures/fig-calcint-c3.png>
+
+Underfull \hbox (badness 8000) in paragraph at lines 1828--1828
+[]\TU/lmr/bx/n/14.4 SOLUTION TO THE ADDITIONAL
+ []
+
+[61] [62]
+File: figures/fig-calcint-cs3.png Graphic file (type bmp)
+<figures/fig-calcint-cs3.png>
+[63] [64]
+Chapter 2.
+[65
+
+]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-calcdiff-1-1.pdf 
+Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-calcdiff-1-1.pdf>
+[66]
+File: figures/fig-calcdiff-2.png Graphic file (type bmp)
+<figures/fig-calcdiff-2.png>
+File: figures/fig-calcdiff-3.png Graphic file (type bmp)
+<figures/fig-calcdiff-3.png>
+[67]
+File: figures/fig-calcdiff-4.png Graphic file (type bmp)
+<figures/fig-calcdiff-4.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[68] [69] [70]
+File: figures/fig-calcdiff-5.png Graphic file (type bmp)
+<figures/fig-calcdiff-5.png>
+File: figures/fig-calcdiff-6.png Graphic file (type bmp)
+<figures/fig-calcdiff-6.png>
+[71]
+Overfull \vbox (40.66692pt too high) has occurred while \output is active []
+
+[72]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-calcdiff-7-1.pdf 
+Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-calcdiff-7-1.pdf>
+[73]
+File: figures/fig-calcdiff-8.png Graphic file (type bmp)
+<figures/fig-calcdiff-8.png>
+File: figures/fig-calcdiff-9.png Graphic file (type bmp)
+<figures/fig-calcdiff-9.png>
+[74] [75]
+File: figures/fig-calcdiff-10.png Graphic file (type bmp)
+<figures/fig-calcdiff-10.png>
+File: figures/fig-calcdiff-11.png Graphic file (type bmp)
+<figures/fig-calcdiff-11.png>
+[76] [77]
+File: figures/fig-calcdiff-p20.png Graphic file (type bmp)
+<figures/fig-calcdiff-p20.png>
+[78]
+File: figures/fig-calcdiff-p21.png Graphic file (type bmp)
+<figures/fig-calcdiff-p21.png>
+[79] [80] [81] [82] [83] [84]
+File: figures/fig-calcdiff-A.png Graphic file (type bmp)
+<figures/fig-calcdiff-A.png>
+[85]
+File: figures/fig-calcdiff-B.png Graphic file (type bmp)
+<figures/fig-calcdiff-B.png>
+
+Underfull \vbox (badness 8075) has occurred while \output is active []
+
+[86] [87]
+Underfull \hbox (badness 10000) in paragraph at lines 2562--2562
+[]\TU/lmr/bx/n/14.4 ANSWERS TO THE ADDITIONAL
+ []
+
+
+Underfull \vbox (badness 1796) has occurred while \output is active []
+
+[88] [89] [90
+
+]
+Chapter 3.
+[91] [92]
+Underfull \hbox (badness 10000) in paragraph at lines 2677--2679
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2679--2681
+
+ []
+
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 2692--2694
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2694--2696
+
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 2731--2733
+
+ []
+
+[95]
+Underfull \hbox (badness 10000) in paragraph at lines 2733--2735
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2735--2737
+
+ []
+
+[96] [97]
+Underfull \hbox (badness 2213) in paragraph at lines 2804--2804
+\TU/lmr/bx/n/12 TEM TO INDICATE DECIMAL MULTIPLES
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2842--2844
+
+ []
+
+[98] [99]
+Underfull \hbox (badness 10000) in paragraph at lines 2932--2934
+
+ []
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 2940--2941
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2957--2958
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2962--2963
+
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 2969--2970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2974--2975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2980--2981
+
+ []
+
+[102] [103] [104] [105] [106] [107]
+Underfull \hbox (badness 10000) in paragraph at lines 3136--3138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3151--3153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3153--3155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3155--3157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3157--3159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3159--3161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3161--3163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3163--3165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3165--3167
+
+ []
+
+[108]
+Underfull \hbox (badness 10000) in paragraph at lines 3210--3213
+
+ []
+
+[109]
+Underfull \hbox (badness 10000) in paragraph at lines 3229--3231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3271--3273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3273--3275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3275--3277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3277--3279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3279--3281
+
+ []
+
+[110]
+Underfull \hbox (badness 10000) in paragraph at lines 3281--3283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3283--3285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3285--3287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3287--3289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3303--3305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3305--3307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3307--3309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3309--3311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3311--3313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3313--3315
+
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 3329--3331
+[]$[][][][][][][][][][][][][] [] [][][]$ \TU/lmr/m/n/10 (dimensions of kinetic 
+energy), or $[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3329--3331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3331--3333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3342--3343
+
+ []
+
+[111] [112]
+Underfull \hbox (badness 10000) in paragraph at lines 3385--3387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3387--3389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3389--3391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3391--3393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3393--3395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3395--3397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3397--3399
+
+ []
+
+[113] [114]
+Underfull \hbox (badness 10000) in paragraph at lines 3480--3482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3482--3484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3484--3486
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3499--3501
+
+ []
+
+
+Overfull \hbox (9.50783pt too wide) detected at line 3538
+[]
+ []
+
+[115]
+Underfull \hbox (badness 1242) in paragraph at lines 3543--3544
+\TU/lmr/m/n/10 Gray, D.E. (1972) Handbook of the American Journal of Physics, 3
+rd
+ []
+
+[116]
+Chapter 4.
+[117
+
+]
+File: figures/fig-physics-1.png Graphic file (type bmp)
+<figures/fig-physics-1.png>
+File: figures/fig-physics-2.png Graphic file (type bmp)
+<figures/fig-physics-2.png>
+
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 118 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[118] [119]
+File: figures/fig-physics-3.png Graphic file (type bmp)
+<figures/fig-physics-3.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 120 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[120] [121]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 122 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[122] [123]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 124 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[124] [125]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 126 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[126] [127]
+File: figures/fig-physics-4.png Graphic file (type bmp)
+<figures/fig-physics-4.png>
+File: figures/fig-physics-5.png Graphic file (type bmp)
+<figures/fig-physics-5.png>
+
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 128 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[128] [129]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 130 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[130]
+File: figures/fig-physics-6.png Graphic file (type bmp)
+<figures/fig-physics-6.png>
+File: figures/fig-physics-7.png Graphic file (type bmp)
+<figures/fig-physics-7.png>
+[131]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 132 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[132] [133]
+File: figures/fig-physics-8.png Graphic file (type bmp)
+<figures/fig-physics-8.png>
+File: figures/fig-physics-9.png Graphic file (type bmp)
+<figures/fig-physics-9.png>
+
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 134 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[134] [135]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 136 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[136]
+File: figures/fig-physics-10.png Graphic file (type bmp)
+<figures/fig-physics-10.png>
+File: figures/fig-physics-11.png Graphic file (type bmp)
+<figures/fig-physics-11.png>
+[137]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 138 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[138] [139]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 140 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[140] [141]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 142 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[142] [143]
+Underfull \hbox (badness 10000) in paragraph at lines 4015--4017
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4017--4019
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4019--4021
+
+ []
+
+
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 144 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 4021--4023
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4023--4025
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4028--4030
+
+ []
+
+[145]
+Overfull \hbox (47.07343pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 146 \TU/lmr/m/sl/10 CHAPTER 4.  FOUNDATIONS OF PHYSICAL THEORY I
+: FORCE AND ENERGY.
+ []
+
+[146
+
+]
+Chapter 5.
+[147] [148]
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+[149] [150] [151] [152]
+File: figures/fig-thermintro-1.png Graphic file (type bmp)
+<figures/fig-thermintro-1.png>
+[153] [154] [155] [156]
+File: figures/fig-thermintro-2.png Graphic file (type bmp)
+<figures/fig-thermintro-2.png>
+[157]
+File: figures/fig-thermintro-3.png Graphic file (type bmp)
+<figures/fig-thermintro-3.png>
+File: figures/fig-thermintro-4.png Graphic file (type bmp)
+<figures/fig-thermintro-4.png>
+[158] [159]
+Underfull \hbox (badness 10000) in paragraph at lines 4283--4284
+
+ []
+
+[160]
+Underfull \hbox (badness 10000) in paragraph at lines 4303--4304
+
+ []
+
+[161] [162] [163] [164] [165] [166
+
+]
+Chapter 6.
+[167] [168] [169] [170] [171]
+File: figures/fig-thermex-1.png Graphic file (type bmp)
+<figures/fig-thermex-1.png>
+[172]
+File: figures/fig-thermex-2a.png Graphic file (type bmp)
+<figures/fig-thermex-2a.png>
+File: figures/fig-thermex-2b.png Graphic file (type bmp)
+<figures/fig-thermex-2b.png>
+
+Overfull \hbox (2.22108pt too wide) in paragraph at lines 4773--4773
+[][] [] 
+ []
+
+File: figures/fig-thermex-3a.png Graphic file (type bmp)
+<figures/fig-thermex-3a.png>
+File: figures/fig-thermex-3b.png Graphic file (type bmp)
+<figures/fig-thermex-3b.png>
+
+Overfull \hbox (2.21495pt too wide) in paragraph at lines 4777--4777
+[][] [] 
+ []
+
+File: figures/fig-thermex-4a.png Graphic file (type bmp)
+<figures/fig-thermex-4a.png>
+File: figures/fig-thermex-4b.png Graphic file (type bmp)
+<figures/fig-thermex-4b.png>
+
+Overfull \hbox (2.21915pt too wide) in paragraph at lines 4781--4781
+[][] [] 
+ []
+
+[173] [174] [175] [176]
+File: figures/fig-thermex-5.png Graphic file (type bmp)
+<figures/fig-thermex-5.png>
+[177] [178]
+File: figures/fig-thermex-6.png Graphic file (type bmp)
+<figures/fig-thermex-6.png>
+File: figures/fig-thermex-7.png Graphic file (type bmp)
+<figures/fig-thermex-7.png>
+[179] [180] [181]
+Overfull \hbox (0.56937pt too wide) in paragraph at lines 4906--4907
+ []\TU/lmr/bx/n/10 Mean 
+ []
+
+
+Overfull \hbox (0.56937pt too wide) in paragraph at lines 4914--4915
+ []\TU/lmr/bx/n/10 Mean 
+ []
+
+
+Overfull \hbox (9.76936pt too wide) in paragraph at lines 4925--4926
+ []\TU/lmr/m/n/10 Latitude 
+ []
+
+
+Overfull \hbox (12.18938pt too wide) in paragraph at lines 4927--4928
+ []\TU/lmr/m/n/10 Northern 
+ []
+
+
+Overfull \hbox (21.36937pt too wide) in paragraph at lines 4927--4928
+ \TU/lmr/m/n/10 hemisphere| 
+ []
+
+
+Overfull \hbox (11.88937pt too wide) in paragraph at lines 4931--4932
+ []\TU/lmr/m/n/10 Southern 
+ []
+
+
+Overfull \hbox (21.36937pt too wide) in paragraph at lines 4931--4932
+ \TU/lmr/m/n/10 hemisphere| 
+ []
+
+
+Overfull \hbox (12.18938pt too wide) in paragraph at lines 4935--4936
+ []\TU/lmr/m/n/10 Northern 
+ []
+
+
+Overfull \hbox (11.88937pt too wide) in paragraph at lines 4939--4940
+ []\TU/lmr/m/n/10 Southern 
+ []
+
+
+Overfull \hbox (21.36937pt too wide) in paragraph at lines 4939--4940
+ \TU/lmr/m/n/10 hemisphere| 
+ []
+
+[182]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-11-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-11-1.pdf
+>
+File: figures/fig-thermex-9.png Graphic file (type bmp)
+<figures/fig-thermex-9.png>
+[183] [184] [185] [186]
+File: figures/fig-thermex-10a.png Graphic file (type bmp)
+<figures/fig-thermex-10a.png>
+File: figures/fig-thermex-10b.png Graphic file (type bmp)
+<figures/fig-thermex-10b.png>
+[187] [188] [189] [190] [191]
+Underfull \hbox (badness 1521) in paragraph at lines 5462--5463
+[]\TU/lmr/m/n/10 Obert, E. F., and R. L. Young. 1962.Transfer. McGraw-Hill, New
+
+ []
+
+[192]
+Chapter 7.
+[193
+
+] [194]
+File: figures/fig-heattrans-1.png Graphic file (type bmp)
+<figures/fig-heattrans-1.png>
+File: figures/fig-heattrans-2.png Graphic file (type bmp)
+<figures/fig-heattrans-2.png>
+File: figures/fig-heattrans-3-pngkey.png Graphic file (type bmp)
+<figures/fig-heattrans-3-pngkey.png>
+[195] [196] [197]
+File: figures/fig-heattrans-4.png Graphic file (type bmp)
+<figures/fig-heattrans-4.png>
+[198]
+Underfull \hbox (badness 5133) in paragraph at lines 5609--5610
+[]$[]$ \TU/lmr/m/n/10 is the Stephan-Boltzmann constant ($[][][][] [] [][][][][
+][][][][] [][][][] []
+ []
+
+[199] [200]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[201] [202]
+Overfull \hbox (5.30815pt too wide) detected at line 5791
+[][][][][][][][] [] [][] [] [][][][][][][] [] [][][][] [][][][] [] [][] [] [][]
+[][][][][][] [] [][][] [] [][][][][] [] [][][][][]
+ []
+
+[203]
+File: figures/fig-heattrans-5.png Graphic file (type bmp)
+<figures/fig-heattrans-5.png>
+[204] [205] [206] [207] [208]
+Overfull \hbox (79.40001pt too wide) in paragraph at lines 6027--6028
+\TU/lmr/m/n/10 or approximating the animal shape as a sphere (\TU/lmtt/m/n/10 h
+eat_transfer_coefficient_approximation()\TU/lmr/m/n/10 ),
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 6027--6028
+\TU/lmr/m/n/10 function (\TU/lmtt/m/n/10 heat_transfer_coefficient_simple()\TU/
+lmr/m/n/10 ) provides a reasonable
+ []
+
+[209] [210]
+File: figures/fig-heattrans-6.png Graphic file (type bmp)
+<figures/fig-heattrans-6.png>
+[211] [212] [213]
+Overfull \hbox (5.88022pt too wide) in paragraph at lines 6166--6167
+ \TU/lmr/m/n/10 conductivity| 
+ []
+
+
+Overfull \hbox (4.79874pt too wide) in alignment at lines 6157--6173
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (4.79874pt too wide) in alignment at lines 6173--6434
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (4.79874pt too wide) in alignment at lines 6434--6435
+ [] [] [] [] [] [] 
+ []
+
+[214] [215]
+File: figures/fig-heattrans-7.png Graphic file (type bmp)
+<figures/fig-heattrans-7.png>
+File: figures/fig-heattrans-8.png Graphic file (type bmp)
+<figures/fig-heattrans-8.png>
+File: figures/fig-heattrans-9.png Graphic file (type bmp)
+<figures/fig-heattrans-9.png>
+[216] [217] [218] [219]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-10-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-10-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-11-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-11-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-12-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-12-1.pdf
+>
+[220] [221]
+File: figures/fig-heattrans-13.png Graphic file (type bmp)
+<figures/fig-heattrans-13.png>
+File: figures/fig-heattrans-14.png Graphic file (type bmp)
+<figures/fig-heattrans-14.png>
+File: figures/fig-heattrans-15.png Graphic file (type bmp)
+<figures/fig-heattrans-15.png>
+[222] [223] [224] [225] [226]
+File: figures/fig-heattrans-p5.png Graphic file (type bmp)
+<figures/fig-heattrans-p5.png>
+[227] [228] [229] [230]
+File: figures/fig-heattrans-ps1.png Graphic file (type bmp)
+<figures/fig-heattrans-ps1.png>
+[231] [232]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps2a-1.
+pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps2a-1.p
+df>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps2b-1.
+pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps2b-1.p
+df>
+[233] [234]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps3-1.p
+df Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps3-1.pd
+f>
+[235]
+Overfull \hbox (61.58665pt too wide) in alignment at lines 6984--6988
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (61.58665pt too wide) in alignment at lines 6988--6998
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
+[236] [237]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps7-1.p
+df Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps7-1.pd
+f>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps8-1.p
+df Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-heattrans-ps8-1.pd
+f>
+[238] [239]
+Overfull \hbox (70.64pt too wide) in alignment at lines 7172--7176
+ [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (70.64pt too wide) in alignment at lines 7176--7181
+ [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[240]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[241] [242] [243] [244] [245] [246
+
+]
+Chapter 8.
+[247] [248]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-radiation-1-1.pdf
+ Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-radiation-1-1.pdf>
+
+[249] [250]
+File: figures/fig-rad-2.png Graphic file (type bmp)
+<figures/fig-rad-2.png>
+[251]
+Underfull \hbox (badness 10000) in paragraph at lines 7426--7428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7428--7430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7430--7432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7441--7443
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7443--7445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7445--7447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7460--7461
+
+ []
+
+[252] [253] [254] [255] [256]
+File: figures/fig-rad-3.png Graphic file (type bmp)
+<figures/fig-rad-3.png>
+[257] [258] [259] [260]
+Underfull \hbox (badness 10000) in paragraph at lines 7709--7712
+
+ []
+
+[261]
+File: figures/fig-rad-4.png Graphic file (type bmp)
+<figures/fig-rad-4.png>
+[262]
+File: figures/fig-rad-5.png Graphic file (type bmp)
+<figures/fig-rad-5.png>
+[263] [264]
+Underfull \hbox (badness 10000) in paragraph at lines 7780--7781
+
+ []
+
+[265] [266] [267] [268] [269] [270
+
+]
+Chapter 9.
+[271] [272]
+Overfull \hbox (13.95343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.3.  THE THERMAL ENVIRONMENT: BASIS FOR THE CLIMATE SPACE \TU/
+lmr/m/n/10 273
+ []
+
+[273] [274]
+File: figures/fig-climatespace-1.png Graphic file (type bmp)
+<figures/fig-climatespace-1.png>
+File: figures/fig-climatespace-2.png Graphic file (type bmp)
+<figures/fig-climatespace-2.png>
+File: figures/fig-climatespace-3.png Graphic file (type bmp)
+<figures/fig-climatespace-3.png>
+
+Overfull \hbox (13.95343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.3.  THE THERMAL ENVIRONMENT: BASIS FOR THE CLIMATE SPACE \TU/
+lmr/m/n/10 275
+ []
+
+[275] [276]
+Overfull \hbox (13.95343pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 9.3.  THE THERMAL ENVIRONMENT: BASIS FOR THE CLIMATE SPACE \TU/
+lmr/m/n/10 277
+ []
+
+[277]
+Underfull \hbox (badness 10000) in paragraph at lines 7981--7981
+[]\TU/lmr/bx/n/14.4 PHYSIOLOGICAL CONTRAINTS OF
+ []
+
+File: figures/fig-climatespace-4.png Graphic file (type bmp)
+<figures/fig-climatespace-4.png>
+File: figures/fig-climatespace-5.png Graphic file (type bmp)
+<figures/fig-climatespace-5.png>
+
+Underfull \vbox (badness 1748) has occurred while \output is active []
+
+[278] [279] [280] [281] [282]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[283] [284]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-24-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-24-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-25-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-25-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[285]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-26-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-26-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[286]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-27-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-27-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[287] [288] [289] [290]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-32-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-32-1.pdf
+>
+[291]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-35-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-35-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[292]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-36-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-36-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[293] [294]
+Underfull \vbox (badness 10000) detected at line 8476
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 8476
+ []
+
+[295]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-37-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-37-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[296] [297] [298]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-40-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-40-1.pdf
+>
+[299]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-43-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-43-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[300]
+Underfull \vbox (badness 1436) has occurred while \output is active []
+
+[301]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-45-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-45-1.pdf
+>
+
+Underfull \vbox (badness 2005) detected at line 8724
+ []
+
+[302]
+Overfull \vbox (0.81999pt too high) detected at line 8724
+ []
+
+[303]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-46-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-46-1.pdf
+>
+[304]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-47-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-47-1.pdf
+>
+[305] [306]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-48-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-48-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[307] [308]
+File: figures/fig-climatespace-6.png Graphic file (type bmp)
+<figures/fig-climatespace-6.png>
+[309]
+File: figures/fig-climatespace-7.png Graphic file (type bmp)
+<figures/fig-climatespace-7.png>
+File: figures/fig-climatespace-8.png Graphic file (type bmp)
+<figures/fig-climatespace-8.png>
+[310] [311] [312]
+File: figures/fig-climatespace-9.png Graphic file (type bmp)
+<figures/fig-climatespace-9.png>
+File: figures/fig-climatespace-10.png Graphic file (type bmp)
+<figures/fig-climatespace-10.png>
+[313] [314] [315]
+File: figures/fig-climatespace-11.png Graphic file (type bmp)
+<figures/fig-climatespace-11.png>
+File: figures/fig-climatespace-12.png Graphic file (type bmp)
+<figures/fig-climatespace-12.png>
+[316] [317] [318] [319]
+Overfull \hbox (47.39003pt too wide) in alignment at lines 9063--9067
+ [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (47.39003pt too wide) in alignment at lines 9067--9079
+ [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[320] [321] [322]
+File: figures/fig-climatespace-13.png Graphic file (type bmp)
+<figures/fig-climatespace-13.png>
+File: figures/fig-climatespace-14.png Graphic file (type bmp)
+<figures/fig-climatespace-14.png>
+[323] [324]
+Overfull \hbox (6.64769pt too wide) in alignment at lines 9284--9288
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.64769pt too wide) in alignment at lines 9288--9298
+ [] [] [] [] [] 
+ []
+
+[325] [326]
+File: figures/fig-climatespace-p2a.png Graphic file (type bmp)
+<figures/fig-climatespace-p2a.png>
+File: figures/fig-climatespace-p2b.png Graphic file (type bmp)
+<figures/fig-climatespace-p2b.png>
+File: figures/fig-climatespace-p2c.png Graphic file (type bmp)
+<figures/fig-climatespace-p2c.png>
+[327]
+Overfull \vbox (16.60773pt too high) has occurred while \output is active []
+
+[328] [329]
+File: figures/fig-climatespace-p6a.png Graphic file (type bmp)
+<figures/fig-climatespace-p6a.png>
+File: figures/fig-climatespace-p6b.png Graphic file (type bmp)
+<figures/fig-climatespace-p6b.png>
+[330]
+Overfull \hbox (43.55003pt too wide) in alignment at lines 9523--9527
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (43.55003pt too wide) in alignment at lines 9527--9537
+ [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+[331]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[332]
+File: figures/fig-climatespace-p7.png Graphic file (type bmp)
+<figures/fig-climatespace-p7.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[333] [334] [335]
+Overfull \vbox (19.2664pt too high) has occurred while \output is active []
+
+[336] [337] [338
+
+]
+Chapter 10.
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
+[339] [340] [341]
+File: figures/fig-thermoreg-1a.png Graphic file (type bmp)
+<figures/fig-thermoreg-1a.png>
+File: figures/fig-thermoreg-1b.png Graphic file (type bmp)
+<figures/fig-thermoreg-1b.png>
+File: figures/fig-thermoreg-2.png Graphic file (type bmp)
+<figures/fig-thermoreg-2.png>
+[342] [343] [344] [345]
+File: figures/fig-thermoreg-3.png Graphic file (type bmp)
+<figures/fig-thermoreg-3.png>
+[346] [347] [348]
+File: figures/fig-thermoreg-4.png Graphic file (type bmp)
+<figures/fig-thermoreg-4.png>
+[349] [350] [351]
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+[]\TU/lmtt/m/n/10 These considerations imply that temporal specialization shoul
+d
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 vary with food abundance in exactly the opposite manner to food
+
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 or habitat specialization. In situations of very high food abun
+dance,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 only the best item kind is taken and only the best patch type i
+s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 foraged in. Hence specialization on food type and habitat is at
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 its maximum. But under situations of greatest food abundance,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 there should be no time during which feeding results in a great
+er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 loss of energy than waiting. Hence temporal specialization is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 at its minimum. With decreasing food abundance, item kinds and
+ []
+
+
+Overfull \hbox (1.5pt too wide) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 habitat types are added, but it is possible that food availabil
+ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 becomes so low during certain periods of time that it is less
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 expensive to wait those periods out. Hence food and habitat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9857--9858
+\TU/lmtt/m/n/10 type broaden while diet activity periods shrink as abundance
+ []
+
+[352]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9859--9860
+[]\TU/lmtt/m/n/10 ... Of course it is possible that animals will not be as gene
+ralized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 with respect to time as contingency models imply, if by being
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 so generalized they gain more food than they can process. Such
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 animals, or any animal with a fixed caloric requirement should
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 specialize with respect to time as food abundance increases,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 just as they should for food or habitat. Thus contingency feede
+rs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 and restricted feeders should react in opposite ways to changes
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 in overall food abundance. Williams (10) reports that during
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 poor weather when yield from the best feeding periods is less,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 certain animals (daddy-longlegs, cattle) enlarge their activity
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9859--9860
+\TU/lmtt/m/n/10 times.Such animals are behaving as if they have a fixed caloric
+
+ []
+
+[353] [354] [355]
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
+[]\TU/lmtt/m/n/10 Te may be identified as the temperature of an inanimate objec
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
+\TU/lmtt/m/n/10 of zero heat capacity with the same size, shape  and radiative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
+\TU/lmtt/m/n/10 properties as the animal and exposed to the same microclimate.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
+\TU/lmtt/m/n/10 It is also equivalent to the temperature of a blackbody cavity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
+\TU/lmtt/m/n/10 producing the same thermal load on the animal as the actual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9925--9926
+\TU/lmtt/m/n/10 non-blackbody microclimate, and therefore may be regarded as th
+e
+ []
+
+[356] [357] [358]
+File: figures/fig-thermoreg-5.png Graphic file (type bmp)
+<figures/fig-thermoreg-5.png>
+File: figures/fig-thermoreg-6.png Graphic file (type bmp)
+<figures/fig-thermoreg-6.png>
+File: figures/fig-thermoreg-7.png Graphic file (type bmp)
+<figures/fig-thermoreg-7.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[359] [360] [361] [362]
+File: figures/fig-thermoreg-8.png Graphic file (type bmp)
+<figures/fig-thermoreg-8.png>
+[363] [364]
+Overfull \hbox (29.24004pt too wide) in alignment at lines 10066--10070
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (29.24004pt too wide) in alignment at lines 10070--10085
+ [] [] [] [] [] [] [] 
+ []
+
+File: figures/fig-thermoreg-9.png Graphic file (type bmp)
+<figures/fig-thermoreg-9.png>
+[365] [366]
+Underfull \hbox (badness 1264) in paragraph at lines 10153--10154
+[]\TU/lmr/m/n/10 Crompton, A.W., C.R. Taylor and J.A. Jagger. 1978. Evolution o
+f
+ []
+
+[367] [368] [369] [370] [371] [372]
+File: figures/fig-thermoreg-10.png Graphic file (type bmp)
+<figures/fig-thermoreg-10.png>
+[373] [374]
+Overfull \hbox (18.44797pt too wide) in alignment at lines 10396--10400
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (18.44797pt too wide) in alignment at lines 10400--10406
+ [] [] [] [] [] [] [] [] 
+ []
+
+[375]
+Underfull \hbox (badness 10000) in paragraph at lines 10414--10415
+
+ []
+
+[376] [377]
+Overfull \hbox (49.65445pt too wide) in alignment at lines 10477--10481
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (49.65445pt too wide) in alignment at lines 10481--10494
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (49.65445pt too wide) in alignment at lines 10498--10502
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (49.65445pt too wide) in alignment at lines 10502--10515
+ [] [] [] [] [] [] [] [] 
+ []
+
+[378]
+Overfull \hbox (6.41399pt too wide) in alignment at lines 10535--10539
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.41399pt too wide) in alignment at lines 10539--10545
+ [] [] [] [] [] [] 
+ []
+
+[379] [380] [381] [382]
+Chapter 11.
+[383
+
+]
+File: figures/fig-transpiration-1.png Graphic file (type bmp)
+<figures/fig-transpiration-1.png>
+[384] [385] [386] [387] [388] [389]
+Underfull \hbox (badness 4181) in paragraph at lines 10770--10770
+[]\TU/lmr/bx/n/14.4 INFLUENCE OF ENERGY COMPO-
+ []
+
+[390]
+Overfull \hbox (23.21342pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 11.5.  INFLUENCE OF ENERGY COMPONENTS ON LEAF TEMPERATURE \TU/l
+mr/m/n/10 391
+ []
+
+[391]
+Overfull \hbox (15.32938pt too wide) in paragraph at lines 10883--10884
+ []\TU/lmr/m/n/10 Radiation 
+ []
+
+
+Overfull \hbox (11.54242pt too wide) in alignment at lines 10878--10898
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.93042pt too wide) in paragraph at lines 10906--10907
+ []\TU/lmr/m/n/10 10.0| 
+ []
+
+
+Overfull \hbox (8.48232pt too wide) in paragraph at lines 10908--10909
+ []\TU/lmr/m/n/10 100.0| 
+ []
+
+
+Overfull \hbox (6.93042pt too wide) in paragraph at lines 10912--10913
+ []\TU/lmr/m/n/10 10.0| 
+ []
+
+
+Overfull \hbox (8.48232pt too wide) in paragraph at lines 10914--10915
+ []\TU/lmr/m/n/10 100.0| 
+ []
+
+
+Overfull \hbox (7.18042pt too wide) in paragraph at lines 10923--10924
+ []\TU/lmr/m/n/10 39.7| 
+ []
+
+
+Overfull \hbox (3.73232pt too wide) in paragraph at lines 10925--10926
+ []\TU/lmr/m/n/10 33.5| 
+ []
+
+
+Overfull \hbox (7.18042pt too wide) in paragraph at lines 10929--10930
+ []\TU/lmr/m/n/10 31.8| 
+ []
+
+
+Overfull \hbox (3.73232pt too wide) in paragraph at lines 10931--10932
+ []\TU/lmr/m/n/10 30.3| 
+ []
+
+
+Overfull \hbox (7.18042pt too wide) in paragraph at lines 10940--10941
+ []\TU/lmr/m/n/10 34.0| 
+ []
+
+
+Overfull \hbox (3.73232pt too wide) in paragraph at lines 10942--10943
+ []\TU/lmr/m/n/10 31.2| 
+ []
+
+
+Overfull \hbox (7.18042pt too wide) in paragraph at lines 10946--10947
+ []\TU/lmr/m/n/10 28.5| 
+ []
+
+
+Overfull \hbox (3.73232pt too wide) in paragraph at lines 10948--10949
+ []\TU/lmr/m/n/10 28.7| 
+ []
+
+
+Overfull \hbox (7.18042pt too wide) in paragraph at lines 10957--10958
+ []\TU/lmr/m/n/10 28.3| 
+ []
+
+
+Overfull \hbox (3.73232pt too wide) in paragraph at lines 10959--10960
+ []\TU/lmr/m/n/10 29.4| 
+ []
+
+
+Overfull \hbox (7.18042pt too wide) in paragraph at lines 10963--10964
+ []\TU/lmr/m/n/10 24.9| 
+ []
+
+
+Overfull \hbox (3.73232pt too wide) in paragraph at lines 10965--10966
+ []\TU/lmr/m/n/10 27.1| 
+ []
+
+
+Overfull \hbox (11.54242pt too wide) in alignment at lines 10898--10968
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \vbox (92.0019pt too high) has occurred while \output is active []
+
+[392]
+Underfull \hbox (badness 2809) in paragraph at lines 10993--10993
+[]\TU/lmr/bx/n/14.4 ANALYSIS OF A MORE GENERAL
+ []
+
+[393]
+Underfull \vbox (badness 1590) detected at line 11075
+ []
+
+[394]
+Underfull \vbox (badness 10000) detected at line 11075
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 11075
+ []
+
+[395]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-2-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-2-1.
+pdf>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-3-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-3-1.
+pdf>
+[396]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[397]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-4-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-4-1.
+pdf>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-5-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-5-1.
+pdf>
+[398]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-6-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-6-1.
+pdf>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-7-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-7-1.
+pdf>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-8-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-8-1.
+pdf>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-9-1
+.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-9-1.
+pdf>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-10-
+1.pdf Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-transpiration-10-1
+.pdf>
+[399] [400] [401] [402] [403] [404] [405]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-53-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-53-1.pdf
+>
+[406]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-54-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-54-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-55-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-55-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[407] [408]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-55-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-55-2.pdf
+>
+[409]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-55-3.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-55-3.pdf
+>
+[410]
+Chapter 12.
+[411
+
+] [412] [413]
+File: figures/fig-heatbalance-1.png Graphic file (type bmp)
+<figures/fig-heatbalance-1.png>
+[414] [415] [416] [417] [418]
+Underfull \hbox (badness 1675) in paragraph at lines 11659--11660
+[][] [] [][][][][][][][][][][][][][][] [] [][][][] [] [][][][] [] [][][]$\TU/lm
+r/m/n/10 , and we calculate $[][] []
+ []
+
+File: figures/fig-heatbalance-3.png Graphic file (type bmp)
+<figures/fig-heatbalance-3.png>
+[419] [420]
+File: figures/fig-heatbalance-2.png Graphic file (type bmp)
+<figures/fig-heatbalance-2.png>
+[421] [422]
+Underfull \hbox (badness 2662) in paragraph at lines 11741--11741
+[]\TU/lmr/bx/n/14.4 AN ENERGY BALANCE CALCULA-
+ []
+
+[423] [424] [425] [426] [427]
+Overfull \vbox (2.6892pt too high) has occurred while \output is active []
+
+[428] [429] [430] [431] [432]
+Overfull \hbox (2.135pt too wide) detected at line 12115
+[][] [] [][][][] [] [][] [] [][][] [] [][][][] [] [] [] [][][] [] [][][][] [] [
+][][][] [] [][][][][][] [] [][][][] [] [][][][][][] [] [][][][][][]
+ []
+
+[433] [434] [435] [436
+
+]
+Chapter 13.
+[437]
+File: figures/fig-soil-1.png Graphic file (type bmp)
+<figures/fig-soil-1.png>
+File: figures/fig-soil-2.png Graphic file (type bmp)
+<figures/fig-soil-2.png>
+[438] [439] [440]
+File: figures/fig-soil-3.png Graphic file (type bmp)
+<figures/fig-soil-3.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[441] [442]
+File: figures/fig-soil-4.png Graphic file (type bmp)
+<figures/fig-soil-4.png>
+[443] [444]
+File: figures/fig-soil-5.png Graphic file (type bmp)
+<figures/fig-soil-5.png>
+[445]
+File: figures/fig-soil-6.png Graphic file (type bmp)
+<figures/fig-soil-6.png>
+File: figures/fig-soil-7.png Graphic file (type bmp)
+<figures/fig-soil-7.png>
+[446] [447]
+Overfull \hbox (8.2416pt too wide) in alignment at lines 12376--12392
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (17.2179pt too wide) in paragraph at lines 12420--12421
+\TU/lmr/m/n/10 components|  
+ []
+
+
+Overfull \hbox (2.2479pt too wide) in paragraph at lines 12446--12447
+\TU/lmr/m/n/10 minerals|  
+ []
+
+
+Overfull \hbox (8.2416pt too wide) in alignment at lines 12392--12628
+ [] [] [] [] [] [] 
+ []
+
+[448] [449] [450]
+File: figures/fig-soil-8.png Graphic file (type bmp)
+<figures/fig-soil-8.png>
+
+Overfull \hbox (87.66382pt too wide) in paragraph at lines 12673--12673
+[][] 
+ []
+
+File: figures/fig-soil-9.png Graphic file (type bmp)
+<figures/fig-soil-9.png>
+
+Underfull \hbox (badness 2245) in paragraph at lines 12681--12681
+[]\TU/lmr/bx/n/14.4 USE OF THE HEAT CONDUCTION
+ []
+
+[451] [452] [453] [454]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-soil-10-1.pdf Gra
+phic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-soil-10-1.pdf>
+
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+[455]
+Underfull \vbox (badness 10000) detected at line 12822
+ []
+
+[456]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/fig-soil-11-1.pdf Gra
+phic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/fig-soil-11-1.pdf>
+[457]
+File: figures/fig-soil-12.png Graphic file (type bmp)
+<figures/fig-soil-12.png>
+File: figures/fig-soil-13.png Graphic file (type bmp)
+<figures/fig-soil-13.png>
+File: figures/fig-soil-14.png Graphic file (type bmp)
+<figures/fig-soil-14.png>
+[458] [459] [460] [461] [462]
+Underfull \hbox (badness 10000) in paragraph at lines 12920--12922
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12931--12933
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12933--12935
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12935--12937
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12946--12948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12948--12950
+
+ []
+
+[463]
+File: figures/fig-soil-15.png Graphic file (type bmp)
+<figures/fig-soil-15.png>
+[464]
+Underfull \hbox (badness 10000) in paragraph at lines 12992--12994
+
+ []
+
+
+Overfull \hbox (34.4093pt too wide) detected at line 12998
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12998--13000
+
+ []
+
+[465] [466] [467] [468
+
+]
+Chapter 14.
+[469] [470]
+File: figures/fig-turb-1.png Graphic file (type bmp)
+<figures/fig-turb-1.png>
+[471] [472]
+File: figures/fig-turb-2.png Graphic file (type bmp)
+<figures/fig-turb-2.png>
+[473] [474] [475]
+File: figures/fig-turb-3.png Graphic file (type bmp)
+<figures/fig-turb-3.png>
+
+Overfull \hbox (3.31828pt too wide) in paragraph at lines 13154--13154
+[][] 
+ []
+
+[476]
+File: figures/fig-turb-4.png Graphic file (type bmp)
+<figures/fig-turb-4.png>
+[477] [478]
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+[479]
+File: figures/fig-turb-5.png Graphic file (type bmp)
+<figures/fig-turb-5.png>
+[480] [481]
+File: figures/fig-turb-6.png Graphic file (type bmp)
+<figures/fig-turb-6.png>
+[482] [483]
+File: figures/fig-turb-7.png Graphic file (type bmp)
+<figures/fig-turb-7.png>
+[484] [485]
+File: figures/fig-turb-8.png Graphic file (type bmp)
+<figures/fig-turb-8.png>
+[486] [487] [488] [489]
+File: figures/fig-turb-9.png Graphic file (type bmp)
+<figures/fig-turb-9.png>
+[490] [491]
+File: figures/tab-turb-1.png Graphic file (type bmp)
+<figures/tab-turb-1.png>
+File: figures/fig-turb-10.png Graphic file (type bmp)
+<figures/fig-turb-10.png>
+
+Underfull \vbox (badness 3690) has occurred while \output is active []
+
+[492] [493] [494]
+Underfull \hbox (badness 2680) in paragraph at lines 13399--13400
+[]\TU/lmr/m/n/10 Campbell, G.S. 1977. An Introduction to Environmental Biophysi
+cs.
+ []
+
+[495] [496] [497] [498]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-56-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-56-1.pdf
+>
+[499] [500
+
+]
+Chapter 15.
+
+Overfull \hbox (13.80402pt too wide) in paragraph at lines 13595--13596
+[]\TU/lmr/m/n/10 Alternatively, use the function \TU/lmtt/m/n/10 setwd()\TU/lmr
+/m/n/10 , e.g. \TU/lmtt/m/n/10 setwd([]c:/Users/mrke/Desktop/SDM
+ []
+
+[501] [502]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-58-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-58-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[503]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-59-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-59-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[504]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-60-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-60-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[505]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-60-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-60-2.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[506] [507]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-61-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-61-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-62-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-62-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[508] [509]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-63-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-63-1.pdf
+>
+[510]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-64-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-64-1.pdf
+>
+[511]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-65-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-65-1.pdf
+>
+
+Overfull \vbox (1.75728pt too high) detected at line 13870
+ []
+
+[512]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-66-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-66-1.pdf
+>
+[513]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-67-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-67-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[514]
+Overfull \vbox (0.40201pt too high) detected at line 13953
+ []
+
+[515]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-68-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-68-1.pdf
+>
+[516]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-69-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-69-1.pdf
+>
+[517]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-70-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-70-1.pdf
+>
+[518]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-71-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-71-1.pdf
+>
+
+Overfull \vbox (1.40007pt too high) detected at line 14099
+ []
+
+[519]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-72-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-72-1.pdf
+>
+[520]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-73-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-73-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[521]
+Underfull \vbox (badness 4316) detected at line 14176
+ []
+
+
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+[522]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-74-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-74-1.pdf
+>
+[523]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-75-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-75-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[524] [525] [526]
+Chapter 16.
+[527
+
+] [528] [529]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-79-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-79-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[530]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-80-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-80-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[531]
+Overfull \vbox (1.90944pt too high) detected at line 14440
+ []
+
+[532]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-81-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-81-1.pdf
+>
+
+Underfull \vbox (badness 2229) has occurred while \output is active []
+
+[533]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-82-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-82-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-83-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-83-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[534]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-84-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-84-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (84.23904pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 16.4.  MAPPING THE CLIMATE SPACE OF THE DESERT IGUANA IN NORTH 
+AMERICA \TU/lmr/m/n/10 535
+ []
+
+[535]
+Overfull \vbox (1.90944pt too high) detected at line 14495
+ []
+
+[536]
+Underfull \vbox (badness 1354) detected at line 14525
+ []
+
+
+Overfull \hbox (84.23904pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 16.4.  MAPPING THE CLIMATE SPACE OF THE DESERT IGUANA IN NORTH 
+AMERICA \TU/lmr/m/n/10 537
+ []
+
+[537] [538]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-91-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-91-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-92-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-92-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[539]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-93-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-93-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[540]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-93-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-93-2.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[541]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-94-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-94-1.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[542]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-94-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-94-2.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[543]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-95-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-95-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-95-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-95-2.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[544]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[545]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-96-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-96-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-96-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-96-2.pdf
+>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[546]
+Underfull \hbox (badness 1253) in paragraph at lines 14663--14663
+[]\TU/lmr/bx/n/14.4 Mapping the heat limit of the Desert
+ []
+
+[547]
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-98-1.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-98-1.pdf
+>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-98-2.pd
+f Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-98-2.pdf
+>
+
+Underfull \vbox (badness 6300) has occurred while \output is active []
+
+[548]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[549]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 14739--14739
+[]\TU/lmtt/m/n/10 times <- paste0(seq(0,23),":00 hrs") # sequence of labels of 
+hours of the day[] 
+ []
+
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-100-1.p
+df Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-100-1.pd
+f>
+File: Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-100-2.p
+df Graphic file (type pdf)
+<use Physical_Processes_In_Ecosystems_files/figure-latex/unnamed-chunk-100-2.pd
+f>
+
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+[550] [551] [552
+
+]
+Chapter 17.
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[553] [554]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[555]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[556]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[557]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[558]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[559]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[560]
+Missing character: There is no θ in font [lmroman10-regular]:mapping=tex-text;!
+[561] [562]
+No file Physical_Processes_In_Ecosystems.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16576.
+[563]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 16576.
+(./Physical_Processes_In_Ecosystems.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 16576.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 16576.
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 29678 strings out of 492916
+ 560993 string characters out of 6133346
+ 859235 words of memory out of 5000000
+ 33214 multiletter control sequences out of 15000+600000
+ 538788 words of font info for 84 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 58i,14n,115p,2140b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on Physical_Processes_In_Ecosystems.pdf (563 pages).

@@ -1,4 +1,5 @@
 ---
+pagetitle: Thermodynamics Intro
 output:
   html_document: default
   pdf_document: default
@@ -10,12 +11,13 @@ The First Law of Thermodynamics for Ecosystems
 
 author: Stevenson, R. D.
 
-## PREFACE 
+## Preface {#thermodynamicsintro-preface}
+
 This module and the subsequent companion module address how elementary concepts of thermodynamics can be applied to ecological processes. The First Law of Thermodynamics states that during any biological, physical, or chemical process, energy can neither be created nor destroyed. The relationship between an organism and its environment can be studied by examining the exchange of energy in the form of the flow of heat and the transfer of mass. The primary focus in the module is on the microclimate and the exchange of heat between organisms and their environment. The law is also used to study the energetic cost of locomotion, rate of food assimilation, and energy flow in ecosystems. A basic knowledge of algebra is required in order to understand the text and complete the problem set.
 
 The First Law of Thermodynamics is discussed in this module both in its difference and differential forms. An undergraduate student in the life sciences with a background in algebra should be able to understand all of the material herein. The problem set should be worked as it extends as well as reviews concepts developed in the text.
 
-## ENERGY EXCHANGE OF ORGANISMS
+## Energy Exchange of Organisms {#thermodynamicsintro-exchange}
 
 This module develops elementary concepts of thermodynamics as they apply to ecological processes.	The First Law of Thermodynamics deals with the conservation of energy and is of fundamental importance.	It states that during any biological, physical, or chemical process energy can be neither created nor destroyed. This module and its companion "Application of the First Law to Ecological Systems" serve as a foundation for other modules in the thermodynamics series.
 
@@ -37,19 +39,19 @@ It should be noted that the patterns we observed in the above examples may not b
 
 The above examples have been included to emphasize the importance of the microclimate for both plants and animals. All organisms exchange heat with the environment. In this module we will focus on the First Law of Thermodynamics, the physical principle needed to understand this heat balance. The First Law can also be useful for other kinds of ecological interests such as the energetic coat of locomotion, rate of food assimilation and energy flow in ecosystems. Some discussion of these topics is also included. More biological examples of the physical principles elaborated here can be found in the module titled "Applications of the First Law to Ecological Systems." The reader may wish to review the principles and definitions of this module, which may be difficult to absorb entirely without the examples of the second module.
 
-## THERMODYNAMICS
+## Thermodynamics {#thermodynamicsintro-thermo}
 
 Thermodynamics is the study of energy and its transformations. The First and Second Laws of Thermodynamics form the basis for this science. They can be stated simply as follows: First Law--energy is conserved; Second Law--all available energy cannot be converted to useful work. The First Law is intuitively easy to grasp, as biologists are aware of many kinds of conservation processes. The Second Law, on the other hand, is more difficult to apply but is fundamental to all organisms. Using the example of a living tree, we know from the Second Law that all the energy made available from photosynthesis cannot be converted into useful chemicals for maintenance and growth. There is a certain price paid for the use of energy represented by the structure of the tree. When the tree dies evidence of the Second Law is more obvious. The energy from the sun needed to maintain the tree in an ordered living state can no longer be utilized and the molecules of the tree become scattered in the environment. Schrodinger (1945) has called living things machines that pump out disorder. Further discussion of the Second Law will be found in other modules.
 
 The usefulness of thermodynamics is in the wide range of applications of its concepts and in our ability to represent these ideas mathematically. Thermodynamics was developed to answer practical problems in engineering sciences. The traditional subject areas that are associated with thermodynamic theory are power generation and heating and ventilating (mechanical engineering), industrial chemical processes (chemical engineering), rates of reaction (chemistry), and statistical mechanics (physics). The universality of physical laws makes the use of thermodynamic processes in ecological systems a natural step. Scientists such as meteorologists, physiologists, climatologists, foresters, and agronomists use thermodynamics to study natural and/or biological systems.
 
-### Scope of Thermodynamics
+### Scope of Thermodynamics {#thermodynamicsintro-scope}
 
 Thermodynamics is applied at the **microscopic** scale to understand the properties of individual particles. Kinetic theory or statistical mechanics, as this subject is known, describes the position and velocity of all the molecules in a system. Our interest here is the **macroscopic** scale. Although macroscopic theory can be derived from statistical mechanics, historically it was developed first from experimental results. Macroscopic theory describes properties of the system that are general across materials. Furthermore, the variables needed to describe the macroscopic view of the system are few, perceptually obvious (for the First Law), and usually measurable. For example, we may wish to calculate the heat loss of a deer. The surface temperature of the different appendages of the deer would refine our estimates, but the temperature distribution of the cells of the deer's ear is not necessary to understand the heat energy balance of the animal with its environment.
 
 Included within the scope of thermodynamics are heat energy and mass flow, both of which are important in biology. Energy flow usually involves heat transfer such as a lizard using the sun to elevate its body temperature. The release of water vapor is an important example of mass flow. In order to photosynthesize a green plant must release water vapor to absorb carbon dioxide. This process is called transpiration. Transpiration also affects the heat balance so that the heat and mass flow are coupled processes. Another example of the importance of mass flow is the study of carbon dioxide cycle in the process of photosynthesis. For animals, mass flow in the form of water vapor is commonly used to reduce heat stress. Mechanisms include heat lost during evaporation of water by respiration, sweating, and/or directly through the skin.
 
-### Systems Concepts
+### Systems Concepts {#thermodynamicsintro-concepts}
 
 The focal object is called the **system** in thermodynamics. The boundaries of the system are arbitrary and need not represent real physical boundaries. The system might be a spider or ground squirrel, but it could be a group of huddling penguins. A plant, a leaf, and a canopy are other examples of systems. An ecologist might very well be interested in an inanimate part of the environment because of the organisms found in that system. Examples are a dead tree trunk, a pond, or the soil. Anything outside of the system that affects its behavior (thermodynamically) is called the **surroundings**. Identifying the system and its surroundings is usually straightforward. The terms are useful for describing a problem in general terms.
 
@@ -61,11 +63,13 @@ All real systems and especially biological systems are **open**. That is, they e
 
 A **reversible process** is an idealized thermodynamic process in which no energy is lost. Although no such process exists, the distinction will prove to be useful just as the distinction among open, closed, and isolated systems is useful. In any real energy exchange there is heat loss due to friction that is not recoverable. This fact is one manifestation of the Second Law.
 
-### Temperature
+### Temperature {#thermodynamicsintro-temperature}
 
 Considering the definition of temperature is instructive when applying thermodynamics to biology. **Temperature** is a macroscopic measure of the molecular vibrations within a system (see discussion of internal energy below). If two systems A and B are in **thermal equilibrium** with a third body (a thermometer) then A and B are in thermal equilibrium. Formally this is the Zeroth Law of Thermodynamics and can be stated: "there exists a scalar quantity temperature, which is a property of all thermodynamic systems (in equilibrium states), such that temperature equality is a necessary and sufficient condition for thermal equilibrium."
 
-The three most common temperature scales are Fahrenheit ($^{\circ}F$), Celsius ($^{\circ}C$), and Kelvin ($K$). These are based on a single fixed point, the unique triple point of water which by international agreement was set at $273.16 K$. In Figure \@ref(fig:fig-thermintro-1), pressure $P$ is plotted against temperature $T$ for some substance such as water. Solid, liquid, and vapor regions occur at different combinations of temperature and pressure; however, there is a single point at which the three phases occur simultaneously. This fact allows the definition of temperature scales with reference to a unique physical value.
+The three most common temperature scales are Fahrenheit ($^{\circ}F$), Celsius ($^{\circ}C$), and Kelvin ($K$). These are based on a single fixed point, the unique triple point of water which by international agreement was set at $273.16 K$. In Figure \@ref(fig:fig-thermintro-1), pressure $P$ is plotted against temperature $T$ for some
+
+substance such as water. Solid, liquid, and vapor regions occur at different combinations of temperature and pressure; however, there is a single point at which the three phases occur simultaneously. This fact allows the definition of temperature scales with reference to a unique physical value.
 
 > Table 5.1 summarized some of the common temperatures expressed in the different scales. Formulae are given to convert a measurement in one scale to that of another.
 
@@ -94,7 +98,7 @@ The definitions included above should serve as a basis for thermodynamic languag
 
 ***
 
-## FIRST LAW OF THERMODYNAMICS
+## First Law of Thermodynamics {#thermodynamicsintro-first}
 
 The First Law of Thermodynamics applies the principle of energy conservation to the boundaries of a system of interest. The First Law says that the change in internal energy is equal to the heat added to the system minus the work done by the system to the surroundings. This is written
 \begin{equation}
@@ -117,16 +121,15 @@ dU = \delta Q - \delta W
 
 This formulation is important for describing infinitesimal changes and reversible processes. Thermodynamics texts often use $d$ and $\delta$ symbols to make the distinction between exact and inexact differentials, respectively. To clarify this consider the following example. If we were to call the internal energy of an ideal gas system $U_A$ at state A, then as we will discuss in more detail later, the state variables of the system are $P$ for pressure, $V$ for volume, and $T$ for temperature which together specify $U_A$. Now if the system changes to a new state B, where $U_B = f (P_B,V_B, T_B)$, we know that this change in state is described by equation \@ref(eq:thermintro-2). However, work and heat cannot be uniquely expressed in terms of the system variables $P$, $V$ and $T$. Thus, although we know the magnitude of the difference for the change of state, $dU$, we cannot resolve it into components of heat and work. The total change in $W$ and $Q$ depends upon the particular "path" through which the system goes from $U_A$ to $U_B$ (see Figure \@ref(fig:fig-thermintro-4) for a simplified representation which is described in detail later), i.e., the path of integration of $\delta W$ and $\delta Q$ between $U_A$ and $U_B$. The inexact differential, $\delta$, is used to remind the reader of this fact.
 
- 
 One will find other sign conventions for the First Law. Here, we defined $dU$ to be positive when the energy flows into the system. Therefore the heat $Q$ flows into the system adds to its internal energy while the work $W$ done by the system subtracts from the internal energy. It is important to realize that once a convention has been agreed upon one must be consistent to account properly for the changes in the internal energy of the system.
 
 The units of equation \@ref(eq:thermintro-1) are energy units. A variety of different units are used in the engineering as well as the biological literature. The calorie is a common unit for biological measurements. It is defined as the energy necessary to raise one gram of water from $14.5^{\circ}C$ to $15.5^{\circ}C$ at atmospheric pressure. We will use the International System of Units (SI), consistent with most scientific research. Therefore, the joule will be used as the basic energy unit. Appendix I is included to help the reader with units. One may also wish to review the module devoted to units and dimensions. Furthermore, the student should also be aware that the First Law is often used with other dimensions such as (1) energy per unit area, (2) energy per unit time (power or flux), and (3) power per unit area (flux density).
 
-### Internal Energy
+### Internal Energy {#thermodynamicsintro-internal}
 
 The internal energy $U$ is often intended to mean the thermal energy of the system represented by its temperature. In general, the chemical energy, or the energy holding atoms together, of the system is included as part of the internal energy function. Many studies have measured the energy flows of ecological systems to learn about trophic levels, food webs, and ecological transfer efficiencies. Commonly, the mass of each standing crop and the flow are measured and then converted into total chemical energy by a laboratory procedure such as bomb calorimetry. The thermal internal energy is the vibrational energy of the molecules and is indicated by the temperature of the system. In most instances there will be no structural changes of the material within the range of temperatures normally found in the environment. The most common exception of thermobiological importance is the increase of internal energy of H~2~O during melting (ice to liquid), sublimation (ice to vapor) and evaporation (liquid to vapor) (See Figure \@ref(fig:fig-thermintro-1).)
 
-### Heat and Heat Transfer Processes
+### Heat and Heat Transfer Processes {#thermodynamicsintro-heat}
 
 The second term, $Q$, in the equation for the First Law of Thermodynamics is called heat. **Heat** is energy in transit. **Heat transfer** is a spontaneous process in which heat flows from warmer objects to colder objects. The study of heat transfer involves measuring the rate and magnitude of heat flow.
 
@@ -158,7 +161,7 @@ C_P = (\frac{\delta Q}{dT})_P
 \end{equation}
 In eq. \@ref(eq:thermintro-3) $V$ means that the process of adding heat to the system is carried out at constant volume. $C_V$ represents the proportionality constant for the change in temperature per unit amount of heat added. Similarly in eq. \@ref(eq:thermintro-4) $P$ stands for a constant pressure process.
 
-### Work
+### Work {#thermodynamicsintro-work}
 To complete the introduction of the First Law of Thermodynamics we need to examine the concept of work. When considering work we usually think of mechanical work, which is a force times a distance operating in some system. In this module work is done by the system on the surroundings, thus decreasing the system's energy. Furthermore we consider only **external work** and are not concerned with processes that go on inside the system.
 
 If our system is an organism then we would not be concerned with the work associated with internal chemical reactions. On the other hand if the system of interest is the heart then one would wish to know the work done by the heart on the rest of the body.
@@ -214,7 +217,7 @@ In this introduction to thermodynamics we have tried to stimulate the reader's i
 
 ***
 
-## PROBLEMS
+## Problem Set {#thermodynamicsintro-problems}
 1. (a) Definitions to review: temperature, system, radiation, equilibrium, convection, steady-state, reversible, evaporation, heat, work, conduction, thermodynamics, internal energy, The First Law 
 
 (b) True or false  
@@ -254,7 +257,7 @@ Acquaint yourself with the activity times of several different kinds of organism
 
 7. In general if an organism is at a warmer temperature does it grow and reproduce more quickly? What implications might this have for ecology? How might thermodynamics be helpful?
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#thermodynamicsintro-answers}
 1. (a) Definitions are in the text. 
 
 (b) All false.  
@@ -325,7 +328,7 @@ $$\frac{984}{2 kg\cdot 4184Jkg^{-1}°C^{-1}}=0.12°C$$
 
 (c) The First Law is the basis for describing energy relations from the molecular to the ecosystem level. Since life depends on degrading energy (Second Law) one would expect that thermodynamics might yield important insights into ecological relationships and the nature of life itself.
 
-## LITERATURE CITED
+## Literature Cited {#thermodynamicsintro-litcited}
 
 Belovsky, G.E. 1977. Life history strategies of the moose. Dissertation, Harvard University.
 
@@ -351,9 +354,7 @@ SchrOdinger, E. 1945. What is Life? Cambridge University Press, Cambridge.
 
 Zemansky, M.W. and H.C. Van Ness. 1966. Basic Engineering Thermodynamics. McGraw-Hill Book Co., New York. XI + 380 pp.
 
-***
-
-## BIBLIOGRAPHY
+**Bibliography**
 
 Gallucci, V.F. 1973. On the principles of thermodynamics in ecology. Annu. Rev. Ecol. and Syst. 4:329-357.
 
@@ -368,5 +369,3 @@ Morowitz, H.J. 1971. Entropy for Biologists: An Introduction to Thermo- dynamics
 Peusher, L. 1974. Concepts in Bioenergetics. Prentice-Hall, Englewood Cliffs. XIV + 305 pp.
 
 Weigert, R.G. (ed.). 1976. Ecological Energetics. Benchmark Papers in Ecology/4. Dowden, Hutchinson & Ross, Inc., Stroudsburg, Penn.
-
-***

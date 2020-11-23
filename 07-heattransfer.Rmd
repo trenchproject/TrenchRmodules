@@ -1,18 +1,20 @@
 ---
+pagetitle: Heat Transfer
 output:
   pdf_document: default
   html_document: default
 ---
-# Heat Transfer. {#heattransfer}
+# Heat Transfer {#heattransfer}
 
-Heat Transfer Processes for the Thermal Energy Balance of Organisms.
+Heat Transfer Processes for the Thermal Energy Balance of Organisms
 
 author: Stevenson, R. D.
 
-## PREFACE
+## Preface {#heattransfer-preface}
+
 This module describes heat transfer processes involved in the exchange of heat between an organism and its environment. Emphasis is placed on conduction, convection, and evaporation, three of the physical processes that affect the physiological, behavioral, and ecological activities of all organisms. Radiation transfer is described in a separate module. Four examples taken from the ecological literature are used to emphasize the biological effects of temperature and energy budgets. Three systems are used to illustrate heat transfer principles and their biological importance. These include heat flow in soil, a leaf, and a lizard. Ecological examples are used throughout the text and problem set. The way in which an organism exchanges heat with its environment explains several characteristics of its behavior and its preferred habitat. This module presents a thorough introduction to heat transfer processes and assumes the reader has a background in calculus and first-year physics. 
 
-## INTRODUCTION
+## Introduction {#heattransfer-intro}
 
 The purpose of this module is to further elucidate the physics of the heat transfer processes: radiation, evaporation, conduction, and convection. An understanding of these processes and their interactions will provide a clearer ecological interpretation of the thermal energy environment. Two ideas need to be recalled about the First Law of Thermodynamics (Zemansky and Van Ness 1966, Stevenson 1979a): first, that the heat energy budget is based on the conservation principle of the First Law, and second, that this law can be applied to any system of arbitrary boundaries. Although organisms seem a natural choice, Collins et al. (1971) have found the nasal passageway to be a useful system for study of nasal vapor recovery. In a previous module (Stevenson 1979b), we considered a stream, a leaf, and a spider as well defined thermodynamic systems for understanding the biological importance of heat fluxes.
 
@@ -54,11 +56,11 @@ devtools::install_github(build_vignettes = TRUE,
 library(TrenchR)
 ```
 
-## HEAT TRANSFER PROCESSES
+## Heat Transfer Processes {#heattransfer-heat}
 
-### Radiation
+### Radiation {#heattransfer-radiation}
 
-Radiation is a process of energy transfer that requires no intervening medium. The dual nature of radiation, its particle (photon) and wavelike properties have important biological consequences. All matter radiates energy as individual photons (Kreith 1973) but for heat transfer problems the wavelike description is more useful. This is because energy at different wavelengths interacts with matter it different ways (but see Problem 2). Figure \@ref(fig:fig-heattrans-3) shows the different wavelengths of electromagnetic spectrum.
+Radiation is a process of energy transfer that requires no intervening medium. The dual nature of radiation, its particle (photon) and wavelike properties have important biological consequences. All matter radiates energy as individual photons (Kreith 1973) but for heat transfer problems the wavelike description is more useful. This is because energy at different wavelengths interacts with matter it different ways (see Problem 2). Figure \@ref(fig:fig-heattrans-3) shows the different wavelengths of electromagnetic spectrum.
 
 Since radiation travels at the speed of light $c_L$, the product of the frequency $f$ and the wavelength $\lambda$ is a constant:
 \begin{equation}
@@ -277,7 +279,7 @@ Qradiation_absorbed(a=0.9, A=1, psa_dir=0.4, psa_ref=0.4,
 ```
 Additional TrenchR functions are available to estimate the radiation components.
 
-### Conduction
+### Conduction {#heattransfer-conduction}
 
 **Conduction**, $Q_{cond}$, describes the physical process of molecular thermal energy flow within a solid, fluid or gas. In fluids and especially gases, motion of the medium usually makes the process of convection a more important mechanism of heat transfer than conduction. Heat flows by conduction when nearby molecules have more internal energy (higher temperature) and thus a greater mean kinetic energy. Energy can be transferred by molecular collisions (fluids) or by diffusion (solids) (Kreith 1973, pages 4-5).
 
@@ -304,7 +306,7 @@ knitr::include_graphics('figures/fig-heattrans-5.png')
 
 The thermal conductivity depends on the molecular structure of the material. Some cooking pots have copper-coated bottoms because this metal transfers heat better than other materials. Home insulation materials reduce the flow of heat because they trap air which has a low thermal conductivity. The hollow centers of the hair shafts of some mammals reduces the conduction of heat along the fiber. The thermal conductivity can be calculated by measuring the heat flow when the temperature slope (Fig. \@ref(fig:fig-heattrans-5)) is one.
 
-As an example of conduction, we will examine the heat flow between the alligator, *Alligator mississippiensis*, and substratum. We assume that the skin is she same temperature as the ground and that the animal is in good thermal contact with the surface (there are no air pockets reducing heat flow). The conduction exchange can now be calculated as follows. The thermal conductivity of fat is 0.20 $W m^{-1} {^{\circ}C^{-1}}$ while the soil-rock range of conductivity is between 0.556 and 3.25 $W m^{-1} {^{\circ}C^{-1}}$. Since the fat layer of 0.7 cm has a lower conductivity, it controls the rate of heat flow. Here we also assume that 0.5 $m^2$ of the alligator at $T_b = 22^{\circ}C$ are in contact with the ground at $T_g = 30 ^{\circ}C$. In steady state, the conductive heat flux is then a linear function of the potential, as given in equation \@ref(eq:heattrans-7).
+As an example of conduction, we will examine the heat flow between the alligator, *Alligator mississippiensis*, and substratum. We assume that the skin is the same temperature as the ground and that the animal is in good thermal contact with the surface (there are no air pockets reducing heat flow). The conduction exchange can now be calculated as follows. The thermal conductivity of fat is 0.20 $W m^{-1} {^{\circ}C^{-1}}$ while the soil-rock range of conductivity is between 0.556 and 3.25 $W m^{-1} {^{\circ}C^{-1}}$. Since the fat layer of 0.7 cm has a lower conductivity, it controls the rate of heat flow. Here we also assume that 0.5 $m^2$ of the alligator at $T_b = 22^{\circ}C$ are in contact with the ground at $T_g = 30 ^{\circ}C$. In steady state, the conductive heat flux is then a linear function of the potential, as given in equation \@ref(eq:heattrans-7).
 
 \begin{equation}
 Q_{cond} = \frac{k A_c}{x} (T_b - T_g) = \frac{0.198 \times 0.5}{0.007} (22-30) = -114 W
@@ -347,7 +349,7 @@ The rate of heat flow is then equal to a conductance $k_g$ times a potential, th
 
 Conduction is often ignored in the heat transfer of plants and animals because one must know or make assumptions about the temperatures, boundary layer thickness, thermal conductivity, and contact resistance. There are not many actual measurements reported in the ecological literature but Mount (1968), Derby and Gates (1966), Gatesby (1977), and Thockelson and Maxwell (1974) offer some interesting examples of the importance of conduction.
 
-### Convection
+### Convection {#heattransfer-convection}
 
 **Convection** is the transfer of heat between solids and fluids (i.e., gases and liquids) or when fluids of different temperatures are in contact. Conduction takes place with nearby particles on the molecular level but the additional factor of the circulation of the fluid distinguishes convection from conduction. When there is no motion in the fluid except that caused by density gradients and by the resultant buoyant forces, this process is called "free convection." If the fluid is moving relative to the other fluid or solid, the process is called "forced convection." If the flow is turbulent, besides the molecular processes, there will be increased heat transfer caused by the bulk transport of fluid. Also, at certain fluid velocities, free and forced convection may both contribute to the convection term. Indeed convection is comprised of several complex physical processes occurring simultaneously.
 
@@ -439,7 +441,7 @@ Q_{conv} = k_1 \bigg(\frac{V}{D}\bigg)^{0.5} (T_s - T_a)
 \end{equation}
 where
 <ul class="list-unstyled">
-<li> $Q_{conv}$ is the convective heat flux ($W m^{-2}$, positive for heat flow frog the leaf to the air), </li>
+<li> $Q_{conv}$ is the convective heat flux ($W m^{-2}$, positive for heat flow from the leaf to the air), </li>
 <li> $k_1$ is 9.14 ($J m^{-2} {^{\circ}C^{-1}} s^{-1/2}$), </li>
 <li> $V$ is wind velocity ($m s^{-1}$), </li>
 <li> $D$ is the characteristic dimension (widest point) of the leaf in the direction of the wind ($m$), </li>
@@ -451,7 +453,7 @@ After using this convection term $Q_{conv}$ in the energy budget equation, Tibba
 
 The theory of convective transfer is more complex than presented here. Although some additional material will be included in the problems, the reader may wish to refer to Kreith (1973), Monteith (1973) or Campbell (1977).
 
-### Evaporation
+### Evaporation {#heattransfer-evaporation}
 
 Evaporation is the process of water changing from a liquid to a gas. For animals, water can be lost through respiration, through special glands, or through any part of the skin. Water loss is usually a small component of the heat balance for animals but may be large for animals with moist skins. It usually increases quickly at higher temperatures. Figure \@ref(fig:fig-heattrans-6) from Dawson and Templeton (1963), shows this effect for the collared lizard, *Crotaphytus collaris*. In general, the water loss, $E$, is given by equation \@ref(eq:heattrans-15). Again, this is in the form of a potential divided by a resistance (an Ohm's Law analogy).
 \begin{equation}
@@ -486,7 +488,7 @@ where
 
 As an example of the energy flux, the water loss at $T_a = 40^{\circ}C$ for *C. collaris* is 0.8 mg of $H_2 O\,g^{-1} {hr}^{-1}$ Correcting the units to kg $s^{-1}$ for a 30 g lizard yields $6.67 \times 10^{-9} kg\:s^{-1}$. Therefore, using equation \@ref(eq:heattrans-16), the energy loss for the animal is $1.6 \times 10^{-2} W$. In this example, we have not calculated $E$ explicitly, mechanistically accounting for wind speed or water vapor concentration of the environment, but animal physiologists often report evaporation as a function of air or body temperature only. These factors become more important when water loss is a larger fraction of the total energy budget or when one is concerned with the water balance of the organism (Welsh and Tracy 1977). Later in the text, a functional relationship to include these factors is given for water loss from a leaf. Generally, transpiration is a significant energy loss for plants which has led Monteith (1973) to make the distinction between "wet" and "dry" systems.
 
-## THERMAL PROPERTIES OF MATERIALS
+## Thermal Properties of Materials {#heattransfer-thermalproperties}
 
 In the above examples, we have mentioned several thermal properties such as thermal capacity and specific heat. Now we wish to define them more carefully.
 
@@ -563,11 +565,11 @@ K = \frac{k}{\rho c} \bigg(\frac{J m^{-1} {^{\circ}C^{-1}} s^{-1}}{kg \, m^{-3} 
 \end{equation}
 The thermal diffusity is important in non-steady state conduction problems where thermal energy can be stored or transported as shown in the first example of heat flow in the soil.
 
-## EXAMPLES OF HEAT ENERGY BUDGET
+## Examples of Heat Energy Budget {#heattransfer-heatenergy}
 
 To illustrate the heat transfer principles and their biological importance, we chose three systems: the soil, a leaf, and a lizard. Again, the reader is asked to think of the ecological importance of the system and how the thermal balance influences physiological processes as the examples are presented.
 
-### Heat Flow in Soil
+### Heat Flow in Soil {#heattransfer-soil}
 
 In soil, heat flow has great biological importance. Not only does the energy balance control the soil temperature, but it greatly affects the moisture content. Both factors are important for photosynthesis in green plants. Soil temperature also influences nutrient uptake as we have seen in our example at the beginning of the module. Fungi, bacteria, insects, as well as many other invertebrates and vertebrates, commonly spend part or all of their life cycles in or surrounded by the soil. Soil temperatures influence metabolic rates and may serve as a behavioral cue for daily and seasonal activity patterns.
 
@@ -602,7 +604,7 @@ knitr::include_graphics('figures/fig-heattrans-8.png')
 knitr::include_graphics('figures/fig-heattrans-9.png')
 ```
 
-### A Leaf
+### A Leaf {#heattransfer-leaf}
 
 Our second example is the energy balance of a leaf. Gates (1968) chose to model the heat balance of a leaf because it has a distinct physical geometry and because it is the unit of photosynthesis. The governing heat flux equation for the steady state condition was given in the module on the First Law of Thermodynamics and is repeated here:
 
@@ -767,7 +769,7 @@ legend("topright", c("r_l=0", "r_l=200","r_l=400","r_l=600"), col = c('skyblue',
 
 ```
 
-### A Lizard
+### A Lizard {#heattransfer-lizard}
 
 As a final example, we will review the work of Bartlett and Gates (1967) who computed the heat energy budget for the Western fence lizard, *Sceloporus occidentalis*, on a tree trunk. They hypothesized that *S. occidentalis* oriented itself on the tree trunk so as to maintain its body temperature relatively high and constant. The daily temperature variation of the tree surfaces supported their idea (Fig. \@ref(fig:fig-heattrans-13)). The heat energy equation for equilibrium is 
 
@@ -830,7 +832,7 @@ Finally, they calculated the energy losses and gains every hour at $45^{\circ}$ 
 
 This module has attempted to develop the aspects of heat transfer that are important to biology. Emphasis has been placed on the physical processes, radiation, evaporation, conduction and convection, that influence the physiological, behavioral and ecological activities of all organisms. The discussion in conjunction with the modules on the First Law of Thermodynamics presents the basic physical laws that are needed to describe the heat energy balance of ecological systems.
 
-## PROBLEMS
+## Problem Set {#heattransfer-problems}
 1a. To measure the oxygen consumption of resting homeotherms as a function of the thermal environment, animals are commonly placed in an environmental chamber where the air temperature can be changed and monitored. The results of the experiment are given as a plot of O~2~ consumption versus air temperature. Imagine that for some reason the wall temperature is not equal to the air temperature. Plot the radiation emitted by the wall per unit surface area, $Q_{ew}$, as a function of wall temperature using Stefan-Boltzmann's Law (assume emissivity equals 0.96).
 
 1b. If the emissivity of an environmental chamber with plastic walls is 0.6 for longwave radiation what is its absorptivity to longwave radiation? Imagine that the air is much cooler than the animal's surface. The radiation leaving the animal, incident on the walls, could heat the walls above the air temperature and increase the radiation incidence on the animal. Name two ways to avoid this problem. A chamber with metal walls will have a small emissivity (~0.15) to longwave radiation. What will be its reflectivity? What will happen to the radiation leaving the animal in this case? How can this effect be minimized?
@@ -965,7 +967,7 @@ Calculate $Q_a$ values for each hour of the day. What part of this is shortwave 
 Assuming that the wind speed is 1.0 m/s and that the diameter of the fruit is 0.04 m and using the convection coefficient you have derived, calculate the fruit's equilibrium temperature for each hour of the day.
 Using $Q_a$ and $T_a$ values for 7 and 12 o'clock calculate the equilibrium fruit temperature for all combinations of $V$ = 0.1, 1.0 and 10.0 m/s and $D$ = 0.01, 0.04, 0.10 m. Size and wind speed affect the fruit temperature in opposite ways at the two times. Why is this? What are the problems with this approach?
 
-## PROBLEM SOLUTIONS
+## Answers to the Problem Set {#heattransfer-answers}
 1
 
 ```{r fig-heattrans-ps1, echo=FALSE, fig.height=4, fig.show = "hold", out.width = "100%", fig.align = "default", fig.cap=''}
@@ -1281,7 +1283,7 @@ The $T_f$ values given can be more accurately computed for the conditions given 
 
 The fruits grow and change color during the season. Smart and Sinclair (1976) have investigated some of these problems as well as the temperature differences within one fruit and non-steady state conditions.
 
-## LITERATURE CITED
+## Bibliography {#heattransfer-bibliography}
 
 Bartholomew, G. A. 1977. Body temperature and energy metabolism. Pages 364-448 in M. S. Gordon, ed. Animal physiology: Principles and adaptation. Macmillan Publ. Co., New York.
 
